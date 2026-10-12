@@ -1,0 +1,86 @@
+# Unity generated directories
+/[Ll]ibrary/
+/[Tt]emp/
+/[Ll]ogs/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Unity / IDE generated project files
+/*.csproj
+/*.sln
+/*.slnx
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.user
+*.userprefs
+/.vs/
+/.vscode/
+/.idea/
+
+# Runtime bridge outputs and per-run overrides
+/runtime/*
+!/runtime/README.md
+
+# Python generated files and local environments
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+/.venv/
+/.venv-*/
+/.uv-cache/
+/venv/
+/.coverage
+/htmlcov/
+
+# Agent-local settings (shared instructions remain tracked)
+/.claude/settings.local.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+sysinfo.txt
+
+# Claude Code review worktrees (disposable review copies)
+/.claude/worktrees/
+
+# P1-ENG-ASSET-001 AC-4 修订 1 / AC-6 修订 1：面板落点移出 runtime/ 归档枚举根
+/outputs/eng-asset/P1-ENG-ASSET-001/
+
+# P1-ENG-SFT-002 本地工具输出（数据/上传包/面板/回传；A2）
+/outputs/eng-sft/
+
+# P1-ENG-LOOP-001 模型/测量临时件（可链接到外挂 T7）；仅证据摘要入库
+/outputs/eng-loop/
+# P1-ENG-LOOP-002 正式操作输出根 $OUT（play_ops 原流/收据/会话归档；IR-OPS-8，整树干净核不被自身输出自挡）；仅证据摘要入库
+/outputs/eng-loop2/
+
+# P1-ENG-FAST-001 探针产物（缓存/检测/图包/回传）；仅证据摘要入库
+/outputs/eng-fast/
+
+# P1-ENG-FAST-002 数据集/训练/检测缓存/权重（线 A，Mac）；仅证据摘要入库，权重不入库
+/outputs/eng-det/
+
+# P1-ENG-ACQ-001 离线 E1/E2 线束产物（记录流、计时、中间表；证据入 docs/evidence/）
+/outputs/eng-acq/
+
+# P1-ENG-JET-001 板端探测原始日志、代码束、桌面机中继运行目录（仅证据摘要入库）
+/outputs/eng-jet/
+
+# P1-ENG-CAPTURE-001 阶段 A 回放/保真/预登记产物（CAPTURE:A:1 磁盘额度内；AC-20 修订 3，仅证据摘要入库）
+/outputs/eng-capture/
+
+# P1-ENG-FASTFIX-001：回放缓存、会话与计量输出（大文件与原件不入仓；证据摘要入 docs/evidence/）。
+/outputs/eng-fastfix/

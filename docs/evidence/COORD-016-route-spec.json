@@ -1,0 +1,432 @@
+{
+  "work_id": "COORD-016",
+  "note": "COORD-016 §4 A3 / BC-5 路由检查规格：expected = §2.3 九处终局句、BC-4 回归核实句、supervisor.md 改句（D1/D2b/D7 行、边界表、§2.4 例外句、信封注释、D1/D7 字段与失败关闭）、acceptance/accept 两句、账本文件头 D7 字段；closure_markers 使预期位置成闭集；unchanged = §2.4 所列不变句（永不代拍其余各句、D2a/D3 及其余 D 类行、AGENTS 不变句等）与基线逐字相同。文本按「删除换行及其后行首空白」归一化比对。；补充同步（账本 2026-09-26「用户授权 COORD-016 补充同步协调批次」）：S01–S07 七处 D1 非递增句与 supervisor 入口 D2b/D7 句、S00 旧句归零、closure「残留数非递增」；R1-2 协调批次（账本 2026-09-27「用户按推荐：终处置 F8 字面不一致不退回；授权 R1-2 零消耗协调批次…」第 2 项）：S01 扩至边界表复核行「对方的变化」格（按复核 R1-2 逐字补丁，含「决策信封 D2b 在效时」「轮 4 终局」各 1 次，closure 同步），新增 S11 D7 语法句澄清（R2 §3 观察 1）",
+  "baseline_grep": "^COORD-016 协调落地",
+  "expected": [
+    {
+      "id": "R01-workflow-4.4-终局句",
+      "file": "docs/collaboration-workflow.md",
+      "text": "冻结集 + `RED_LINE` + 修复触及行上的 CLASS_1/2；轮 3 终局：通过，或回用户；决策信封 D2b 在效时回 supervisor，supervisor 仅可批准 1 次定向返工（限冻结集内具名 finding，`RED_LINE` 与 `blocks_consuming_gate` 未 release 的 finding 除外）；同停点第 2 次申请回用户。D2b 返工后按本节开轮资格分路：有资格开轮 4（终局：通过，或回用户）；无资格走本节阻断 finding 回归通道，任一未闭回用户。",
+      "count": 1
+    },
+    {
+      "id": "R02-review.md-轮次上限",
+      "file": "docs/roles/review.md",
+      "text": "触及行上的 CLASS_1/2，轮 3 终局：通过，或回用户；决策信封 D2b 在效时回 supervisor，supervisor 仅可批准 1 次定向返工（限冻结集内具名 finding，`RED_LINE` 与 `blocks_consuming_gate` 未 release 的 finding 除外）；同停点第 2 次申请回用户。D2b 返工后按 workflow §4.4 开轮资格分路：有资格开轮 4（终局：通过，或回用户）；无资格走 workflow §4.4 阻断 finding 回归通道，任一未闭回用户。复核返工直接回本角色，不经核对轮。",
+      "count": 1
+    },
+    {
+      "id": "R03-review.md-工程轨道",
+      "file": "docs/roles/review.md",
+      "text": "未闭集冻结、轮 3 终局照旧（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局）。",
+      "count": 1
+    },
+    {
+      "id": "R04-AGENTS-轮次命名",
+      "file": "AGENTS.md",
+      "text": "第 2 次后未闭集冻结、轮 3 终局（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局））；提交",
+      "count": 1
+    },
+    {
+      "id": "R05-AGENTS-复核强制停点",
+      "file": "AGENTS.md",
+      "text": "后未闭 finding 集冻结、轮 3 终局（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局）。",
+      "count": 1
+    },
+    {
+      "id": "R06-acceptance.md-收敛与终止",
+      "file": "docs/roles/acceptance.md",
+      "text": "冻结的未闭 finding 集仍由本角色逐条裁定，轮 3 终局（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局）。",
+      "count": 1
+    },
+    {
+      "id": "R07-accept.md-共同不变",
+      "file": ".claude/commands/accept.md",
+      "text": "冻结未闭集、轮 3 终局（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局）；",
+      "count": 1
+    },
+    {
+      "id": "R08-review-cmd-共同不变",
+      "file": ".claude/commands/review.md",
+      "text": "`REWORK_REQUIRED` 后未闭集冻结与轮 3 终局（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局）、`blocks_consuming_gate` 与",
+      "count": 1
+    },
+    {
+      "id": "R09-review-cmd-第5步",
+      "file": ".claude/commands/review.md",
+      "text": "同一停点第 2 次 `REWORK_REQUIRED` 后未闭集冻结、轮 3 终局（决策信封 D2b 在效时按 workflow §4.4 一次定向返工，轮 4 终局）（COORD-009 (a)(c)(d)）。",
+      "count": 1
+    },
+    {
+      "id": "BC4-workflow-回归核实",
+      "file": "docs/collaboration-workflow.md",
+      "text": "D2b 无资格路径（不开新轮）下，(2) 的「下一轮」指原复核文件的「回归核实」小节：复核角色在该小节逐条修前红/修后绿核实冻结集，全部闭合时写终局 verdict 与 `passed_candidate: <40 位 SHA>`，不新编轮号；任一 finding 未闭、缺终局指针、`RED_LINE` 未闭或 `blocks_consuming_gate` 未 release 均不得通过，回用户终局，不可再代拍。",
+      "count": 1
+    },
+    {
+      "id": "S01-边界表复核行",
+      "file": "docs/roles/supervisor.md",
+      "text": "按「复核派发」拉起、核查、接 D2b（信封列入即生效） | 不进 worktree、不改 verdict | 轮 3 终局句按 COORD-016 §2.3 改写（决策信封 D2b 在效时一次定向返工，轮 4 终局）",
+      "count": 1
+    },
+    {
+      "id": "S02-D1行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D1 | 接受角色第 2 次 `REVISION_REQUESTED` 后，及此后每一轮仍有具名残留的裁定，把交接 Owner 设为 supervisor | 仅当 r(n) ≤ r(n−1) 且本提案已代拍次数 < 3 时选 (a) 保留范围并逐条列缺口（缺口 = 本轮 `open_items:`）；r(n) 定义、`open_items:` 落点（BC-14）与 D1 条目字段不变 | (b) 关闭负结果；任何缩小/拆分范围；supervisor 为作者；r(n) > r(n−1)；本提案第 4 次；本轮或上一轮缺 `open_items:` 行或格式不合；同一轮第 2 次。均回用户，用户处置不受判据约束；存量提案不回填 | 接受角色按 (a) 继续 | `<work_id>:D1:D<n>`（每裁定轮 1 次）；另计 `<work_id>:D1` 累计 ≤ 3（机检按账本内同 work ID 的 D1 条目计数） | 启用 |",
+      "count": 1
+    },
+    {
+      "id": "S03-D2b行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D2b | 同停点第 2 次 `REWORK_REQUIRED` 后轮 3 终局回用户 | 批准 1 次定向返工（限冻结集内具名 finding）；返工后按 workflow §4.4 开轮资格分路：(i) 有资格（PLAY_GOVERNING diff 非空）开轮 4，终局：通过，或回用户；(ii) 无资格（diff 为空）不开新轮，冻结集各 finding 走 §4.4 阻断 finding 回归通道，复核角色在原复核文件「回归核实」小节写终局 verdict 与 `passed_candidate`，全部闭合 → 通过，任一未闭 → 回用户 | 同上；冻结集外；`RED_LINE` 与 `blocks_consuming_gate` 未 release 的 finding；同停点第 2 次申请；两条路径终局的「回用户」不可再代拍 | 实现→复核 | `<work_id>:<停点>:D2b`（两条路径同计 1 次） | 启用（须信封显式列入） |",
+      "count": 1
+    },
+    {
+      "id": "S04-D7行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D7 | 仅在该 work ID `ACCEPTED` 之后（核对轮、待裁定答复或 BC `CLARIFY`），接受角色向用户申请确认某个已预注册的数值，并在提案文件裁定节末写机读行 `d7_recommend: <id> = <值>` | 当且仅当 `d7_recommend` 的值落在同 `<id>` 的 `d7_range` 内：按推荐值入账，一题一条目 | 值出区间/闭集；缺 `d7_range` 或 `d7_recommend` 行、或任一行多于 1 行；`kind` 缺失或不在闭集；`bc=` 与所在行编号不符或该行不在 BC/AC 表内；同一 `<id>` 第 2 次；快照处提案 `Status:` 行不以 `Status: ACCEPTED` 开头；信封 `classes` 不含 `D7` | 接受角色按推荐值写 BC `CLARIFY` 行 | `<work_id>:D7:<id>`（每题 1 次） | 启用（须信封显式列入 `D7`） |",
+      "count": 1
+    },
+    {
+      "id": "S05-永不代拍例外句",
+      "file": "docs/roles/supervisor.md",
+      "text": "改 BC/AC/合同/采样（例外：§2.2 D7 对已预注册 `d7_range` 数值选推荐值，合同文本仍由接受角色写）；",
+      "count": 1
+    },
+    {
+      "id": "S06-信封块注释",
+      "file": "docs/roles/supervisor.md",
+      "text": "# 闭集 {D1, D2a, D2b, D3, D4, D5, D6, D7}，可删不可加；D2a/D2b/D3/D7 须用户显式列入",
+      "count": 1
+    },
+    {
+      "id": "S07-D1判据段",
+      "file": "docs/roles/supervisor.md",
+      "text": "第 2 次及后续裁定仅在本轮数 ≤ 上一轮数（非递增）、本提案已代拍次数 < 3、决策信封 D1 在效且无表内禁项时每轮代选 (a) 至多一次；缺任一轮行、重复/空 ID、残留数增加、本提案第 4 次（累计含后被否决/撤销的 D1 条目，不返还）、同一轮第 2 次，均回用户。",
+      "count": 1
+    },
+    {
+      "id": "S08-必填字段D7",
+      "file": "docs/roles/supervisor.md",
+      "text": "`question_id`（= `<id>`）与 `range`（逐字复制`d7_range` 行片段；此时 `decision` 逐字 = 推荐值字面）（仅 D7）",
+      "count": 1
+    },
+    {
+      "id": "S09-失败关闭D1D7",
+      "file": "docs/roles/supervisor.md",
+      "text": "或 now > prev；同 work ID 第 4 条 D1 条目；D7条目缺 `question_id`/`range`、快照提案 `Status:` 非 `ACCEPTED`、`d7_range` 或 `d7_recommend` 缺失或多于 1 行、`kind=`/`bc=` 缺失/重复/不在闭集/与所在 BC/AC 行编号不符、`decision` 或 `range` 与快照不逐字相等、值出区间/闭集、同 `<id>` 第 2 条、`precheck_head` 不等于首次入账提交首父（待提交条目：不等于 HEAD）。",
+      "count": 1
+    },
+    {
+      "id": "S10-delegated_class闭集",
+      "file": "docs/roles/supervisor.md",
+      "text": "{D1,D2a,D2b,D3,D4,D5,D6,D7,SUB}",
+      "count": 1
+    },
+    {
+      "id": "S11-D7语法句",
+      "file": "docs/roles/supervisor.md",
+      "text": "区间端点、闭集元素与推荐值均匹配 `-?[0-9]+(\\.[0-9]+)?`、`lo ≤ hi`，用精确十进制比较；闭集元素逐字相等；",
+      "count": 1
+    },
+    {
+      "id": "A01-acceptance.md-d7_range句",
+      "file": "docs/roles/acceptance.md",
+      "text": "`ACCEPTED` 时对可交 D7 的数值（门值、最小样本量、阈值、容差；阶段边界、安全约束、主指标定义、Unity/人眼/设备通过条件、信封维度、采样/数据划分除外）在对应 BC/AC 行的条款格写 `d7_range: <id> in [lo, hi] kind=<门值|最小样本量|阈值|容差> bc=<BC-n|AC-n>`（或闭集形式 `in {v1, v2, …}`；`bc=` 等于该行首格编号，不写复核项列）。",
+      "count": 1
+    },
+    {
+      "id": "A02-acceptance.md-d7_recommend句",
+      "file": "docs/roles/acceptance.md",
+      "text": "申请用户确认某个已预注册数值时，在提案的非 `### D<n>` 裁定节写 `d7_recommend: <id> = <值>`（不破坏各 D 轮节末 `open_items:` 约束）；D7 代拍条目入账后按推荐值写 BC `CLARIFY` 行并引用该条目标题（COORD-016 §2.2，BC-2/BC-3）。",
+      "count": 1
+    },
+    {
+      "id": "A03-accept.md-d7_range句",
+      "file": ".claude/commands/accept.md",
+      "text": "`ACCEPTED` 时对可交 D7 的数值（门值、最小样本量、阈值、容差；阶段边界、安全约束、主指标定义、Unity/人眼/设备通过条件、信封维度、采样/数据划分除外）在对应 BC/AC 行的条款格写 `d7_range: <id> in [lo, hi] kind=<门值|最小样本量|阈值|容差> bc=<BC-n|AC-n>`（或闭集形式 `in {v1, v2, …}`；`bc=` 等于该行首格编号，不写复核项列）。",
+      "count": 1
+    },
+    {
+      "id": "A04-accept.md-d7_recommend句",
+      "file": ".claude/commands/accept.md",
+      "text": "申请用户确认某个已预注册数值时，在提案的非 `### D<n>` 裁定节写 `d7_recommend: <id> = <值>`（不破坏各 D 轮节末 `open_items:` 约束）；D7 代拍条目入账后按推荐值写 BC `CLARIFY` 行并引用该条目标题（COORD-016 §2.2，BC-2/BC-3）。",
+      "count": 1
+    },
+    {
+      "id": "H01-账本文件头D7字段",
+      "file": "docs/authorizations.md",
+      "text": "D7 另需`question_id`（= 提案题号 `<id>`）、`decision`（逐字 = 提案`d7_recommend` 推荐值字面）与 `range`（逐字复制提案 `d7_range` 行片段），`reason` 可省（COORD-016 §2.2）。",
+      "count": 1
+    },
+    {
+      "id": "S01-补充同步-collaboration-workflow.md",
+      "file": "docs/collaboration-workflow.md",
+      "text": "记录。决策信封 D1 在效且残留数非递增（本轮不多于上一轮；各轮裁定节末 `open_items:`机读行，自首次退修裁定起每轮必填；COORD-015 §5.1/BC-12，COORD-016 §2.1/BC-1）、且本提案已代拍少于 3 次时改交 supervisor，supervisor 仅可代选 (a)；残留数增加、第 4 次、缺行或信封不在效时仍上交用户。",
+      "count": 1
+    },
+    {
+      "id": "S02-补充同步-acceptance.md",
+      "file": "docs/roles/acceptance.md",
+      "text": "上交用户二选一（workflow §4.2 退修上限，计数追溯生效）；决策信封 D1在效、残留数非递增（本轮不多于上一轮）且本提案已代拍少于 3 次时，第三次及后续仍有具名残留的裁定把交接 Owner 设为 supervisor（supervisor 仅可代选 (a)，每轮至多 1 次），否则仍上交用户（COORD-015 §5.1；COORD-016 §2.1/BC-1）；",
+      "count": 1
+    },
+    {
+      "id": "S03-补充同步-ideation.md",
+      "file": "docs/roles/ideation.md",
+      "text": "（workflow §4.2 退修上限，计数追溯生效）；决策信封 D1 在效、残留数非递增（本轮不多于上一轮，裁定节末 `open_items:` 机读行）且本提案已代拍少于 3 次时第三次裁定改交 supervisor，supervisor 仅可代选 (a)，否则仍由用户二选一（COORD-015 §5.1；COORD-016 §2.1/BC-1）。",
+      "count": 1
+    },
+    {
+      "id": "S04-补充同步-ideation.md",
+      "file": "docs/roles/ideation.md",
+      "text": "第 2 次 `REVISION_REQUESTED` 之后仍上交用户二选一（决策信封 D1 在效、残留数非递增且本提案已代拍少于 3 次时改交 supervisor 仅代选 (a)，COORD-015 §5.1；COORD-016 §2.1/BC-1）。",
+      "count": 1
+    },
+    {
+      "id": "S05-补充同步-accept.md",
+      "file": ".claude/commands/accept.md",
+      "text": "第二次退修后仍上交用户（决策信封 D1 在效、残留数非递增且本提案已代拍少于 3 次时改交 supervisor 仅代选 (a)，COORD-015 §5.1；COORD-016 §2.1/BC-1）。",
+      "count": 1
+    },
+    {
+      "id": "S06-补充同步-accept.md",
+      "file": ".claude/commands/accept.md",
+      "text": "复核轮合并；决策信封 D1 在效、残留数非递增（本轮不多于上一轮；各轮裁定节末`open_items:` 机读行，自首次退修裁定起每轮必填）且本提案已代拍少于 3 次时改交supervisor 仅代选 (a)（COORD-015 §5.1/BC-12；COORD-016 §2.1/BC-1）；",
+      "count": 1
+    },
+    {
+      "id": "S07-补充同步-supervisor.md",
+      "file": ".claude/commands/supervisor.md",
+      "text": "（落地缺省 D1/D4/D5/D6；D2a/D3 禁用；D2b/D7 须信封显式列入；SUB 随信封块）",
+      "count": 1
+    },
+    {
+      "id": "S00-旧句归零-collaboration-workflow.md",
+      "file": "docs/collaboration-workflow.md",
+      "text": "残留数严格递减",
+      "count": 0
+    },
+    {
+      "id": "S00-旧句归零-acceptance.md",
+      "file": "docs/roles/acceptance.md",
+      "text": "残留数严格递减",
+      "count": 0
+    },
+    {
+      "id": "S00-旧句归零-ideation.md",
+      "file": "docs/roles/ideation.md",
+      "text": "残留数严格递减",
+      "count": 0
+    },
+    {
+      "id": "S00-旧句归零-accept.md",
+      "file": ".claude/commands/accept.md",
+      "text": "残留数严格递减",
+      "count": 0
+    },
+    {
+      "id": "S00-旧句归零-supervisor.md",
+      "file": ".claude/commands/supervisor.md",
+      "text": "D2a/D2b/D3 禁用",
+      "count": 0
+    },
+    {
+      "id": "S08-补充同步2-engineering-workflow.md",
+      "file": "docs/engineering-workflow.md",
+      "text": "决策信封 D1 在效、残留数非递增（本轮不多于上一轮；裁定节末 `open_items:` 机读行，自首次退修裁定起每轮必填；COORD-015 §5.1/BC-12，COORD-016 §2.1/BC-1）且本提案已代拍少于 3 次时改交 supervisor，supervisor 仅可代选 (a)；否则仍上交用户。",
+      "count": 1
+    },
+    {
+      "id": "S09-补充同步2-proposals-README.md",
+      "file": "docs/proposals/README.md",
+      "text": "决策信封 D1 在效、残留数非递增且本提案已代拍少于 3 次时改交 supervisor 仅代选 (a)，workflow §4.2/COORD-015 §5.1；COORD-016 §2.1/BC-1）对",
+      "count": 1
+    },
+    {
+      "id": "S00-旧句归零-engineering-workflow.md",
+      "file": "docs/engineering-workflow.md",
+      "text": "残留数严格递减",
+      "count": 0
+    },
+    {
+      "id": "S00-旧句归零-proposals-README.md",
+      "file": "docs/proposals/README.md",
+      "text": "残留数严格递减",
+      "count": 0
+    }
+  ],
+  "closure_markers": [
+    {
+      "marker": "决策信封 D2b 在效时",
+      "files": [
+        "AGENTS.md",
+        "docs/collaboration-workflow.md",
+        "docs/roles/review.md",
+        "docs/roles/acceptance.md",
+        ".claude/commands/accept.md",
+        ".claude/commands/review.md",
+        "docs/roles/supervisor.md"
+      ]
+    },
+    {
+      "marker": "轮 3 终局",
+      "files": [
+        "AGENTS.md",
+        "docs/collaboration-workflow.md",
+        "docs/roles/review.md",
+        "docs/roles/acceptance.md",
+        ".claude/commands/accept.md",
+        ".claude/commands/review.md"
+      ]
+    },
+    {
+      "marker": "轮 4 终局",
+      "files": [
+        "AGENTS.md",
+        "docs/collaboration-workflow.md",
+        "docs/roles/review.md",
+        "docs/roles/acceptance.md",
+        ".claude/commands/accept.md",
+        ".claude/commands/review.md",
+        "docs/roles/supervisor.md"
+      ]
+    },
+    {
+      "marker": "d7_range:",
+      "files": [
+        "docs/roles/acceptance.md",
+        ".claude/commands/accept.md"
+      ]
+    },
+    {
+      "marker": "d7_recommend:",
+      "files": [
+        "docs/roles/acceptance.md",
+        ".claude/commands/accept.md"
+      ]
+    },
+    {
+      "marker": "（例外：",
+      "files": [
+        "docs/roles/supervisor.md"
+      ]
+    },
+    {
+      "marker": "残留数非递增",
+      "files": [
+        "docs/collaboration-workflow.md",
+        "docs/roles/acceptance.md",
+        "docs/roles/ideation.md",
+        ".claude/commands/accept.md"
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "N-supervisor-D2a行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D2a | 复核角色申请沿用上一轮会话上下文 | 授予该停点 1 次例外 | 不得替代 verdict、不得解除 `blocks_consuming_gate`、不得跳过开轮资格；第 2 次 | 复核角色 | `<work_id>:<停点>:D2a` | **禁用**（U1=D） |"
+    },
+    {
+      "id": "N-supervisor-D3行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D3 | chore 按 work item 组提交 history 移入同意 | 逐组同意 | 组内含活跃项或未闭义务 | chore | `<work_id>:D3` | **禁用**（U2=B） |"
+    },
+    {
+      "id": "N-supervisor-D4行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D4 | 角色列出已签信封内步骤的次序选项 | 在已列步骤内排序（先复核再跑、归档后再放行、提交时机） | 新增额度/步骤；含计数或合同裁定的混合题；含 Play 的步骤仍需用户在场 | 对应角色 | `<work_id>:D4:<n>` | 启用 |"
+    },
+    {
+      "id": "N-supervisor-D5行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D5 | 接受/核对轮把选项集交 supervisor，且每个选项都不改合同/BC/AC、不改信封、不改数据/采样、不改 Lifecycle、不触发 D3 | 选推荐项（无推荐则首项） | 选项集含任一改动即整题回用户（含「暂缓」答复） | 接受/实现 | `<work_id>:D5:<n>` | 启用 |"
+    },
+    {
+      "id": "N-supervisor-D6行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| D6 | 角色发问：推送已提交候选、按既有操作单归档、预列位置中选存储、已授权步骤排序 | 上述四种 | 删除、新传输渠道、新设备、改 Lifecycle；用户自发指令只代录 | 对应角色 | `<work_id>:D6:<n>` | 启用 |"
+    },
+    {
+      "id": "N-supervisor-SUB行",
+      "file": "docs/roles/supervisor.md",
+      "text": "| SUB | 实现子代理报告 `needs_user` 中的追加申请（`request_id`、维度、数量、理由） | 在执行信封子额度块内批准 | 维度不在块内、信封值为 0 的维度、下载、Play、新设备、合同例外 | 实现角色 | `request_id` | 随信封块（未签即不启用） |"
+    },
+    {
+      "id": "N-永不代拍-前段",
+      "file": "docs/roles/supervisor.md",
+      "text": "DIR、LIFE（含 D1 的 (b)、暂停/恢复/关闭、`CLOSED_*`）、ENV（首签两种信封、新信封）、FACT；`AGENTS.md`「触及核心研究主张、阶段边界、主指标、硬件目标或范围扩大」；红线放宽；infra 修改授权；新设备、新消耗类别、新传输渠道、Jetson 探测；`NEW_OBLIGATION` 超配额；改 BC/AC/"
+    },
+    {
+      "id": "N-永不代拍-后段",
+      "file": "docs/roles/supervisor.md",
+      "text": "`DONE`/`CLOSED_*`；任何下载安装；supervisor 自身利害事项。"
+    },
+    {
+      "id": "N-不做闭集",
+      "file": "docs/roles/supervisor.md",
+      "text": "不做（闭集）：不写运行时代码、配置、测试、工具（见「写入白名单」）；不写 `docs/reviews/`、`docs/design-reviews/`；不签发 `ACCEPTED`/verdict/`DONE`/`CLOSED_*`；不写 BC/AC/核对表；不首签任何信封；不做「永不代拍」闭集的决定；不运行 Unity、不做人眼保真；运行中的角色收工前不写状态板与账本。"
+    },
+    {
+      "id": "N-直达用户不加审批",
+      "file": "docs/roles/supervisor.md",
+      "text": "直达用户的事项不加审批：对「永不代拍」闭集事项，supervisor 只做三件事——原样展示（含负责角色的推荐项与理由）、当场逐字代录、交回负责角色；不加审批、不改推荐项、不延迟、不因「打包」扣留任一事项。"
+    },
+    {
+      "id": "N-信封前提",
+      "file": "docs/roles/supervisor.md",
+      "text": "前提：代拍整体以用户**逐字签发**的决策信封为前提；U3/U6 未选 = 信封未签 = **代拍整体不启用**。"
+    },
+    {
+      "id": "N-AGENTS-新设备独立立项",
+      "file": "AGENTS.md",
+      "text": "新增设备、新增额度或新的消耗类别（例如 Jetson 小规模可行性探测）须独立立项并单独说明设备与额度，不由既有工程任务的信封覆盖。"
+    },
+    {
+      "id": "N-AGENTS-infra仅协调批次",
+      "file": "AGENTS.md",
+      "text": "仅用户直接授权的协调批次可修改；"
+    },
+    {
+      "id": "N-AGENTS-不可代拍直达用户",
+      "file": "AGENTS.md",
+      "text": "不可代拍事项（COORD-015 §5.2 闭集）直达用户；协调批次仅凭用户逐字授权执行。"
+    },
+    {
+      "id": "N-AGENTS-信封只能用户签",
+      "file": "AGENTS.md",
+      "text": "同样只能由用户逐字签发入账，缺项视为不启用；"
+    },
+    {
+      "id": "N-workflow-范围蔓延句",
+      "file": "docs/collaboration-workflow.md",
+      "text": "锁的是未改动代码上的范围蔓延，不豁免修复自身引入的回归。"
+    },
+    {
+      "id": "N-workflow-机读通过指针",
+      "file": "docs/collaboration-workflow.md",
+      "text": "通过轮必须在 verdict 块写一行`passed_candidate: <40 位完整 SHA>`；`REWORK_REQUIRED` 轮禁止出现该行；存量不回改。"
+    },
+    {
+      "id": "N-workflow-冻结集裁定",
+      "file": "docs/collaboration-workflow.md",
+      "text": "未闭 finding 集合冻结，交接受角色逐条裁定「范围内必修」或 `SCOPE_GAP` 记债（记入 `docs/implementation-status.md`「范围外已知缺陷」）。"
+    },
+    {
+      "id": "N-review.md-开轮资格不变",
+      "file": "docs/roles/review.md",
+      "text": "开轮资格、增量轮与轮次上限规则不变。"
+    },
+    {
+      "id": "N-账本-COORD-016授权原话",
+      "file": "docs/authorizations.md",
+      "text": "- 用户原话（逐字，本 supervisor 会话纯文本消息）：\"授权 COORD-016 零消耗协调落地批次，按提案 §3–4 与 BC-1…6 执行；U1 取 A（D1 每提案上限 3 次），U3 取 A（启用 D2b，须信封显式列入），U4 取 B（D3 不动）。\""
+    },
+    {
+      "id": "N-账本头-D1字段",
+      "file": "docs/authorizations.md",
+      "text": "D1 另需`round`/`open_items_now`/`open_items_prev`（COORD-015 §5.4）"
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+# COORD-015 A3 路径核查（BC-3；C1@落地 退回项修复，supervisor 协调批次，2026-09-25）
+# 命令：python3 route_check.py ~/TetheredDroneTracking   （脚本全文附于本文件末尾「附：脚本源码」；退出码 0 = 全部 pass）
+# 仓库 HEAD：134a24181672a84217e7846bdf24006da5cc044b（工作树含本批 tools/make_supervisor_drill.py 尾注修复；(b) 夹具由该工作树版本生成）
+# 比对基线：bcc2c68^（= 已授权落地批次入账前一提交 8ae0513）；U1=D、U2=B、U9=B 按账本 2026-09-25「§9.2/§12 落地批次」缺省
+# (b) 为合成演练：夹具由 tools/make_supervisor_drill.py 在临时目录生成（附本地 bare 远端供 F2），不构成任何真实 D/C/R 轮次或门决定；
+#     F1–F10 按提案 §4 表与适用矩阵的可机械部分实现（F7 因 U9=B 不存在，未列）；反例判定 = 目标项 fail 且其余适用项 pass/N/A；通过例判定 = 适用项全 pass（N/A 记 N/A）。
+# 运行时刻：2026-09-26T03:50:54Z
+
+## (a) §9.3 具名映射
+### 第 1 行：新句命中（HEAD 中锚点起 ±6 行窗口去空白拼接后含 决策信封D1在效 / 严格递减 / supervisor / (a)）
+- [pass] workflow §4.2 L201–203｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=202｜docs/collaboration-workflow.md:204: 记录。决策信封 D1 在效且残留数严格递减（各轮裁定节末 `open_items:`
+- [pass] engineering §3 L67｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=67｜docs/engineering-workflow.md:68: 列出已知缺口，或关闭为负结果记录），不得无限循环。决策信封 D1 在效且
+- [pass] acceptance L19｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=24｜docs/roles/acceptance.md:24: 上交用户二选一（workflow §4.2 退修上限，计数追溯生效）；决策信封 D1
+- [pass] ideation L11｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=11｜docs/roles/ideation.md:12: （workflow §4.2 退修上限，计数追溯生效）；决策信封 D1 在效且残留数
+- [pass] ideation L28｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=30｜docs/roles/ideation.md:30: 第 2 次 `REVISION_REQUESTED` 之后仍上交用户二选一（决策信封 D1 在效且
+- [pass] accept.md L21｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=21｜.claude/commands/accept.md:21: 第二次退修后仍上交用户（决策信封 D1 在效且残留数严格递减时改交 supervisor
+- [pass] accept.md L43｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=44｜.claude/commands/accept.md:45: 复核轮合并；决策信封 D1 在效且残留数严格递减（各轮裁定节末 `open_items:`
+- [pass] README L18｜锚点在 bcc2c68^ 存在=True｜HEAD 锚点行=18｜docs/proposals/README.md:18: 退修上限（同一提案第 2 次 `REVISION_REQUESTED` 后上交用户；决策信封 D1 在效
+### 第 2–4 行：「不改」位置与 bcc2c68^ 逐字比对（原行整行出现在 HEAD 同名文件；否则原行须整句作为 HEAD 某行行首逐字保留，并列出行尾追加）
+- [pass] 第2行（U1=D 缺省，否则不改） workflow §4.4 L389｜bcc2c68^:docs/collaboration-workflow.md:389 → HEAD 行 [393]｜整行逐字｜「冻结集 + `RED_LINE` + 修复触及行上的 CLASS_1/2；轮 3 终局：通过，或回用户。」
+- [pass] 第2行（U1=D 缺省，否则不改） review.md L66｜bcc2c68^:docs/roles/review.md:66 → HEAD 行 [66]｜整行逐字｜「触及行上的 CLASS_1/2，轮 3 终局（通过，或回用户）。复核返工直接回本」
+- [pass] 第2行（U2=B 缺省，否则不改） chore.md L47｜bcc2c68^:docs/roles/chore.md:47 → HEAD 行 [47]｜整行逐字｜「- **写入 `docs/status-history.md` 须先经用户同意（用户裁定 2026-09-20）**：」
+- [pass] 第2行（U2=B 缺省，否则不改） chore.md L48｜bcc2c68^:docs/roles/chore.md:48 → HEAD 行 [48]｜整行逐字｜「压缩或删除前先把拟移出内容按 work item 归组交用户（每组：Work ID、条目数与」
+- [pass] 第2行（U2=B 缺省，否则不改） chore.md L49｜bcc2c68^:docs/roles/chore.md:49 → HEAD 行 [49]｜整行逐字｜「行数、拟保留的结论/指针；无关联 work ID 的条目按所属事项归组）。同意以」
+- [pass] 第2行（U2=B 缺省，否则不改） chore.md L50｜bcc2c68^:docs/roles/chore.md:50 → HEAD 行 [50]｜整行逐字｜「work item 为单位，一个 work item 的全部系列条目共用一次同意、不逐条，同一」
+- [pass] 第2行（U2=B 缺省，否则不改） chore.md L51｜bcc2c68^:docs/roles/chore.md:51 → HEAD 行 [51]｜整行逐字｜「次同意同时覆盖其后续压缩与删除移出；同意原话逐字入 `docs/authorizations.md`，」
+- [pass] 第2行（U2=B 缺省，否则不改） chore.md L52｜bcc2c68^:docs/roles/chore.md:52 → HEAD 行 [52]｜整行逐字｜「本角色的压缩/删除提交引用该条目；未经同意的组一律不动、不写入 history。」
+- [pass] 第3行（U9=B 缺省，否则不改） workflow §7 规则 7｜bcc2c68^:docs/collaboration-workflow.md:650 → HEAD 行 [655]｜整行逐字｜「已提交批次的写入归因不做机械检查。工作流基础设施（`AGENTS.md`、」
+- [pass] 第3行（U9=B 缺省，否则不改） AGENTS「共享状态更新」同句｜bcc2c68^:AGENTS.md:210 → HEAD 行 [221]｜整行逐字｜「提交。已提交批次的写入归因不做机械审计。工作流基础设施（本文件、」
+- [pass] 第4行（不改） AGENTS L59｜bcc2c68^:AGENTS.md:59 → HEAD 行 [59]｜整行逐字｜「并逐字记入 `docs/authorizations.md`，缺项视为 0，任何越界回到用户。」
+- [pass] 第4行（不改） AGENTS L227｜bcc2c68^:AGENTS.md:227 → HEAD 行 [238]｜句级逐字（原句为该行行首，行尾追加「supervisor 的决策信封」）｜「视为 0；任何越界回到用户。」
+- [pass] 第4行（不改） workflow L184｜bcc2c68^:docs/collaboration-workflow.md:184 → HEAD 行 [185]｜整行逐字｜「接受角色自查代码，每个 work ID 上限 2 条，超出回用户。存量行不打标签、不」
+- [pass] 第4行（不改） workflow L635｜bcc2c68^:docs/collaboration-workflow.md:635 → HEAD 行 [640]｜整行逐字｜「一律回用户；已无待执行动作的记录离开 Active」
+- [pass] 第4行（不改） engineering L60｜bcc2c68^:docs/engineering-workflow.md:60 → HEAD 行 [60]｜整行逐字｜「范围；改变目标、硬件目标或资源边界仍须回到用户。」
+- [pass] 第4行（不改） engineering L140｜bcc2c68^:docs/engineering-workflow.md:140 → HEAD 行 [145]｜整行逐字｜「唯一落点）；任何越界回到用户。已无待执行动作的记录离开 Active」
+- [pass] 第4行（不改） acceptance L94｜bcc2c68^:docs/roles/acceptance.md:94 → HEAD 行 [102]｜整行逐字｜「Play 与正式 ID——回用户并逐字入账。」
+- [pass] 第4行（不改） README L152｜bcc2c68^:docs/proposals/README.md:152 → HEAD 行 [154]｜整行逐字｜「在本轨道落到决策记录）；**任何越界回到用户**（COORD-008 S4）。账本没有的授权视为」
+
+## (b) §4 反例 9 例（须判失败）与通过例 3 例（须判通过），合成夹具内
+- [pass] 反例1 候选不在 origin/main｜目标 F2=fail（候选不在 origin/main）｜其余适用项全过=True｜F1=pass；F2=fail；F3a=pass；F3b=pass；F4=pass；F5=pass；F6=pass；F8=pass；F9=N/A；F10=N/A
+- [pass] 反例2 Log 写 Ran 12 而证据文件 Ran 11｜目标 F5=fail（主张 Ran 12 ≠ docs/evidence/DRILL-001-tests.log 具名行 Ran 11）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=fail；F6=pass；F8=pass；F9=N/A；F10=N/A
+- [pass] 反例3 复核文件 round_candidate 等于复核提交自身｜目标 F9=fail（round_candidate=c525d848 是复核提交自身）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=N/A；F6=pass；F8=pass；F9=fail；F10=N/A
+- [pass] 反例4 构思派发把 Overall 由 REVISION_REQUESTED_ROUND_2 改为 ACCEPTED｜目标 F3b=fail（构思派发越权 ('REVISION_REQUESTED_ROUND_2', 'ACTIVE')→('ACCEPTED', 'ACTIVE')）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=pass；F3b=fail；F4=pass；F5=N/A；F6=pass；F8=pass；F9=N/A；F10=N/A
+- [pass] 反例5 实现派发把本行 Lifecycle 改为 PAUSED｜目标 F3b=fail（实现派发越权 ('ACCEPTED', 'ACTIVE')→('ACCEPTED', 'PAUSED')）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=pass；F3b=fail；F4=pass；F5=N/A；F6=pass；F8=pass；F9=N/A；F10=pass
+- [pass] 反例6 提交缺 Role-Check 尾注｜目标 F1=fail（548b0dce 缺 `Role-Check: acceptance pass` 尾注）｜其余适用项全过=True｜F1=fail；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=pass；F6=pass；F8=pass；F9=N/A；F10=N/A
+- [pass] 反例7 子代理报告称已写账本用户原话｜目标 F6=fail（报告称已写账本用户原话）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=pass；F6=fail；F8=pass；F9=N/A；F10=N/A
+- [pass] 反例8 交接行 Status 与报告 handoff.status 不符｜目标 F3a=fail（报告 handoff={'owner': 'Ideation', 'status': 'AWAITING_ACCEPTANCE_D2'} ≠ 磁盘 Owner=Ideation Status=AWAITING_IDEATION_D2）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=fail；F3b=pass；F4=pass；F5=pass；F6=pass；F8=pass；F9=N/A；F10=N/A
+- [pass] 反例9 提交主题 D2 而报告 this_round: D1｜目标 F8=fail（主题「DRILL-001 D2 合成派发提交」不含 DRILL-001 前缀或轮次 D1）｜其余适用项全过=True｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=pass；F6=pass；F8=fail；F9=N/A；F10=N/A
+- [pass] 通过例1 接受 D1 退修并交构思（§4 通过例首句）｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=pass；F6=pass；F8=pass；F9=N/A；F10=N/A
+    F1: pass — 1 个派发提交均带尾注
+    F2: pass — 候选在 origin/main
+    F3a: pass — Owner=Ideation Status=AWAITING_IDEATION_D2
+    F3b: pass — 两列变化落在允许集内
+    F4: pass — 1 个路径存在
+    F5: pass — 1 处数字一致
+    F6: pass — 账本无新增条目
+    F8: pass — 主题与轮次 D1 一致
+    F9: N/A — 非复核轮
+    F10: N/A — 非实现停点
+- [pass] 通过例2 实现合法推进 IMPLEMENTING→IMPLEMENTED，Overall/Lifecycle 不变｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=N/A；F6=pass；F8=pass；F9=N/A；F10=pass
+    F1: pass — 1 个派发提交均带尾注
+    F2: pass — 候选在 origin/main
+    F3a: pass — Owner=Acceptance Status=AWAITING_C1_AT_K4
+    F3b: pass — 两列变化落在允许集内
+    F4: pass — 1 个路径存在
+    F5: N/A — 无数字主张
+    F6: pass — 账本无新增条目
+    F8: pass — 主题与轮次 K4 一致
+    F9: N/A — 非复核轮
+    F10: pass — 2 条 AC 均带指针
+- [pass] 通过例3 构思 REVISION_REQUESTED_ROUND_2→PROPOSED_D3｜F1=pass；F2=pass；F3a=pass；F3b=pass；F4=pass；F5=N/A；F6=pass；F8=pass；F9=N/A；F10=N/A
+    F1: pass — 1 个派发提交均带尾注
+    F2: pass — 候选在 origin/main
+    F3a: pass — Owner=Acceptance Status=AWAITING_ACCEPTANCE_D3
+    F3b: pass — 两列变化落在允许集内
+    F4: pass — 0 个路径存在
+    F5: N/A — 无数字主张
+    F6: pass — 账本无新增条目
+    F8: pass — 主题与轮次 D3 一致
+    F9: N/A — 非复核轮
+    F10: N/A — 非实现停点
+
+## 汇总
+(a) 26/26 pass；(b) 12/12 pass；总判定 PASS
+# exit=0
+
+===== 附：脚本源码（route_check.py） =====
+#!/usr/bin/env python3
+"""COORD-015 A3 路径核查（C1@落地 退回项修复批次，supervisor 协调批次，2026-09-25）。
+
+(a) §9.3 具名映射：第 1 行各位置在 HEAD 含新句（窗口内拼接后命中关键短语）；
+    第 2/3 行在 U1=D、U2=B、U9=B 缺省下「否则不改」、第 4 行「不改」：
+    bcc2c68^ 该位置的原行逐字存在于 HEAD 同名文件。
+(b) 在 tools/make_supervisor_drill.py 生成的合成夹具内，按提案 §4 实现 F1–F10
+    的可机械部分，跑 §4 九个反例（须判失败）与三个通过例（须判通过）。
+合成演练，不构成任何真实 D/C/R 轮次或门决定；只读真实仓库，夹具在临时目录。
+用法：python3 route_check.py <仓库根>
+"""
+from __future__ import annotations
+
+import json
+import re
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+
+REPO = Path(sys.argv[1]).resolve()
+sys.path.insert(0, str(REPO))
+from tools import make_supervisor_drill as drill  # noqa: E402
+
+BASE = "bcc2c68^"
+WID = drill.DRILL_WORK_ID
+
+
+def git(args, cwd, check=True):
+    r = subprocess.run(["git", "-c", "user.name=drill", "-c", "user.email=drill@example.com",
+                        *args], cwd=cwd, capture_output=True, text=True)
+    if check and r.returncode != 0:
+        raise RuntimeError(f"git {' '.join(args)}: {r.stderr}")
+    return r
+
+
+# ---------------------------------------------------------------- (a)
+NEW_ROW1 = [  # (文件, bcc2c68^ 锚点原句（该位置旧句的片段）, §9.3 所列位置)
+    ("docs/collaboration-workflow.md", "必须上交", "workflow §4.2 L201–203"),
+    ("docs/engineering-workflow.md", "退修上限不变：同一范围第二次退修后仍上交用户二选一", "engineering §3 L67"),
+    ("docs/roles/acceptance.md", "上交用户二选一（workflow §4.2 退修上限，计数追溯生效）", "acceptance L19"),
+    ("docs/roles/ideation.md", "第三次裁定由用户二选一", "ideation L11"),
+    ("docs/roles/ideation.md", "第 2 次 `REVISION_REQUESTED` 之后仍上交用户二选一", "ideation L28"),
+    (".claude/commands/accept.md", "第二次退修后仍上交用户", "accept.md L21"),
+    (".claude/commands/accept.md", "后上交用户二选一，计数不与核对轮、", "accept.md L43"),
+    ("docs/proposals/README.md", "后上交用户", "README L18"),
+]
+KEY_PHRASES = ["决策信封D1在效", "严格递减", "supervisor", "(a)"]
+
+UNCHANGED = [  # (文件, bcc2c68^ 行号, §9.3 行, 位置)
+    ("docs/collaboration-workflow.md", 389, "第2行（U1=D 缺省，否则不改）", "workflow §4.4 L389"),
+    ("docs/roles/review.md", 66, "第2行（U1=D 缺省，否则不改）", "review.md L66"),
+    *[("docs/roles/chore.md", n, "第2行（U2=B 缺省，否则不改）", f"chore.md L{n}") for n in range(47, 53)],
+    ("docs/collaboration-workflow.md", 650, "第3行（U9=B 缺省，否则不改）", "workflow §7 规则 7"),
+    ("AGENTS.md", None, "第3行（U9=B 缺省，否则不改）", "AGENTS「共享状态更新」同句"),
+    ("AGENTS.md", 59, "第4行（不改）", "AGENTS L59"),
+    ("AGENTS.md", 227, "第4行（不改）", "AGENTS L227"),
+    ("docs/collaboration-workflow.md", 184, "第4行（不改）", "workflow L184"),
+    ("docs/collaboration-workflow.md", 635, "第4行（不改）", "workflow L635"),
+    ("docs/engineering-workflow.md", 60, "第4行（不改）", "engineering L60"),
+    ("docs/engineering-workflow.md", 140, "第4行（不改）", "engineering L140"),
+    ("docs/roles/acceptance.md", 94, "第4行（不改）", "acceptance L94"),
+    ("docs/proposals/README.md", 152, "第4行（不改）", "README L152"),
+]
+
+
+def part_a():
+    results = []
+    print("## (a) §9.3 具名映射")
+    print("### 第 1 行：新句命中（HEAD 中锚点起 ±6 行窗口去空白拼接后含 " + " / ".join(KEY_PHRASES) + "）")
+    for rel, anchor, where in NEW_ROW1:
+        lines = (REPO / rel).read_text(encoding="utf-8").splitlines()
+        base_hit = anchor in git(["show", f"{BASE}:{rel}"], REPO).stdout
+        idx = next((i for i, l in enumerate(lines) if anchor in l), None)
+        ok = False
+        shown = ""
+        if idx is not None:
+            lo, hi = max(0, idx - 6), min(len(lines), idx + 7)
+            window = "".join(l.strip() for l in lines[lo:hi]).replace(" ", "")
+            ok = all(k.replace(" ", "") in window for k in KEY_PHRASES)
+            hit = next((j for j in range(lo, hi) if "D1 在效" in lines[j] or "信封 D1" in lines[j]), None)
+            shown = f"{rel}:{hit + 1}: {lines[hit].strip()}" if hit is not None else "(窗口内无 D1 在效行)"
+        verdict = "pass" if ok and base_hit else "fail"
+        results.append(verdict)
+        print(f"- [{verdict}] {where}｜锚点在 {BASE} 存在={base_hit}｜HEAD 锚点行={idx + 1 if idx is not None else None}｜{shown}")
+    print("### 第 2–4 行：「不改」位置与 bcc2c68^ 逐字比对（原行整行出现在 HEAD 同名文件；否则原行须整句作为 HEAD 某行行首逐字保留，并列出行尾追加）")
+    for rel, lineno, row, where in UNCHANGED:
+        base_lines = git(["show", f"{BASE}:{rel}"], REPO).stdout.splitlines()
+        head_lines = (REPO / rel).read_text(encoding="utf-8").splitlines()
+        if lineno is None:  # AGENTS「共享状态更新」中与 workflow §7 规则 7 同句
+            lineno = next(i + 1 for i, l in enumerate(base_lines) if "写入归因" in l)
+        original = base_lines[lineno - 1]
+        positions = [i + 1 for i, l in enumerate(head_lines) if l == original]
+        note = "整行逐字"
+        if not positions:  # 句级：原行整句逐字保留为 HEAD 某行行首，行尾另有追加
+            pre = [i for i, l in enumerate(head_lines) if l.startswith(original) and len(l) > len(original)]
+            if pre:
+                positions = [i + 1 for i in pre]
+                note = f"句级逐字（原句为该行行首，行尾追加「{head_lines[pre[0]][len(original):].strip()}」）"
+        verdict = "pass" if positions else "fail"
+        results.append(verdict)
+        print(f"- [{verdict}] {row} {where}｜{BASE}:{rel}:{lineno} → HEAD 行 {positions}｜{note}｜「{original.strip()}」")
+    return results
+
+
+# ---------------------------------------------------------------- (b)
+ROLE_TITLE = {"ideation": "Ideation", "acceptance": "Acceptance",
+              "implementation": "Implementation", "review": "Review", "chore": "Chore"}
+ACCEPT_TOKENS = re.compile(r"^(ACCEPTED|REVISION_REQUESTED\w*|REJECTED|REWORK_REQUIRED|REVIEW_PASSED|"
+                           r"UNITY_\w+|BLOCKED\w*|DEFERRED_\w+|DONE|CLOSED_\w+)$")
+
+
+def board_text(overall, lifecycle, impl_col, owner, status, progress, log=""):
+    return f"""# Current status（{drill.SYNTHETIC_MARK}）
+
+## Gate board
+
+| Work ID | Scope | Design | Implementation/auto evidence | Independent review | Unity/hardware | Overall | Lifecycle |
+|---|---|---|---|---|---|---|---|
+| `{WID}` | 合成演练工作项 | 合成 | {impl_col} | `N/A` | `N/A` | `{overall}` | `{lifecycle}` |
+| `DRILL-002` | 合成旁观行 | 合成 | 合成 | `N/A` | `N/A` | `ACCEPTED` | `ACTIVE` |
+
+## Active handoffs
+
+| Owner/next role | Work ID | Requested action | Scope | Progress | Status | Consuming | Return to |
+|---|---|---|---|---|---|---|---|
+| {owner} | `{WID}`@{overall} | 合成演练交接 | — | {progress} | `{status}` | no | — |
+
+## Log
+{log}"""
+
+
+def section_rows(text, title):
+    rows, inside = [], False
+    for line in text.splitlines():
+        if line.startswith("## "):
+            inside = line.strip() == f"## {title}"
+            continue
+        if inside and line.strip().startswith("|"):
+            rows.append([c.strip() for c in line.strip().strip("|").split("|")])
+    header = rows[0] if rows else []
+    body = [r for r in rows[1:] if not all(set(c) <= set("-: ") for c in r)]
+    return header, body
+
+
+def gate_cols(text):
+    header, body = section_rows(text, "Gate board")
+    ci, co, cl = header.index("Work ID"), header.index("Overall"), header.index("Lifecycle")
+    return {r[ci].strip("`"): (r[co].strip("`"), r[cl].strip("`")) for r in body}
+
+
+def handoff(text):
+    header, body = section_rows(text, "Active handoffs")
+    cw, cs, cp, cown = (header.index("Work ID"), header.index("Status"),
+                        header.index("Progress"), header.index("Owner/next role"))
+    for r in body:
+        if f"`{WID}`" in r[cw]:
+            return {"owner": r[cown], "status": r[cs].strip("`"), "progress": r[cp]}
+    return None
+
+
+class Fixture:
+    def __init__(self, root: Path):
+        self.root = root / "fixture"
+        drill.build_drill_repo(self.root)
+        self.remote = root / "remote.git"
+        git(["init", "-q", "--bare", str(self.remote)], root)
+        git(["remote", "add", "origin", str(self.remote)], self.root)
+        git(["branch", "-M", "main"], self.root)
+
+    def write(self, rel, text):
+        p = self.root / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(text, encoding="utf-8")
+
+    def commit(self, message):
+        git(["add", "-A"], self.root)
+        git(["commit", "-q", "-m", message], self.root)
+        return git(["rev-parse", "HEAD"], self.root).stdout.strip()
+
+    def push(self):
+        git(["push", "-q", "origin", "HEAD:main"], self.root)
+
+    def show(self, rev, rel):
+        return git(["show", f"{rev}:{rel}"], self.root).stdout
+
+    def message(self, sha):
+        return git(["log", "-1", "--format=%B", sha], self.root).stdout
+
+
+def dispatch_commits(fx, did):
+    out = git(["log", "--reverse", "--format=%H", f"--grep=Dispatch-Id: {did}"], fx.root).stdout
+    return out.split()
+
+
+def f1(fx, commits, role):
+    for c in commits:
+        msg = fx.message(c)
+        if not re.search(rf"^Role-Check: {re.escape(role)} pass$", msg, re.M):
+            return "fail", f"{c[:8]} 缺 `Role-Check: {role} pass` 尾注"
+    return "pass", f"{len(commits)} 个派发提交均带尾注"
+
+
+def f2(fx, cand):
+    git(["fetch", "-q", "origin", "main"], fx.root)
+    r = git(["merge-base", "--is-ancestor", cand, "refs/remotes/origin/main"], fx.root, check=False)
+    return ("pass", "候选在 origin/main") if r.returncode == 0 else ("fail", "候选不在 origin/main")
+
+
+def f3a(fx, cand, rnd, report):
+    h = handoff(fx.show(cand, "docs/current-status.md"))
+    if not h or not h["status"]:
+        return "fail", "交接行缺失或 Status 为空"
+    if rnd not in h["status"] and rnd not in h["progress"]:
+        return "fail", f"Status/Progress 不含轮次字面 {rnd}"
+    if report is not None and (report["handoff"]["owner"] != h["owner"]
+                               or report["handoff"]["status"] != h["status"]):
+        return "fail", f"报告 handoff={report['handoff']} ≠ 磁盘 Owner={h['owner']} Status={h['status']}"
+    return "pass", f"Owner={h['owner']} Status={h['status']}"
+
+
+def f3b(fx, base, cand, role):
+    before = gate_cols(fx.show(base, "docs/current-status.md"))
+    after = gate_cols(fx.show(cand, "docs/current-status.md"))
+    for wid in set(before) | set(after):
+        b, a = before.get(wid), after.get(wid)
+        if b == a:
+            continue
+        if wid != WID:
+            return "fail", f"非本 work ID 行 {wid} 两列变化 {b}→{a}"
+        if role == "acceptance":
+            continue
+        if role == "ideation":
+            if b is None and a == ("PROPOSED", "ACTIVE"):
+                continue
+            if (b and a and b[1] == a[1] and re.match(r"REVISION_REQUESTED", b[0])
+                    and re.fullmatch(r"PROPOSED_D\d+", a[0])):
+                continue
+            return "fail", f"构思派发越权 {b}→{a}"
+        if role == "implementation":
+            if b and a and b[1] == a[1] and a[0] in ("IMPLEMENTING", "IMPLEMENTED"):
+                continue
+            return "fail", f"实现派发越权 {b}→{a}"
+        return "fail", f"{role} 派发两列不得变 {b}→{a}"
+    return "pass", "两列变化落在允许集内"
+
+
+def f4(fx, cand):
+    board = fx.show(cand, "docs/current-status.md")
+    paths = re.findall(r"`(docs/[^`#]+)`", board)
+    missing = [p for p in paths if git(["cat-file", "-e", f"{cand}:{p}"], fx.root, check=False).returncode]
+    return ("fail", f"路径不存在 {missing}") if missing else ("pass", f"{len(paths)} 个路径存在")
+
+
+def f5(fx, cand, report):
+    board = fx.show(cand, "docs/current-status.md")
+    claims = re.findall(r"`(docs/[^`]+)` Ran (\d+)", board)
+    if report is not None:
+        claims += [(p, n) for p, n in report.get("numbers", [])]
+    if not claims:
+        return "N/A", "无数字主张"
+    for path, n in claims:
+        m = re.search(r"^Ran (\d+)", fx.show(cand, path), re.M)
+        if not m or m.group(1) != str(n):
+            return "fail", f"主张 Ran {n} ≠ {path} 具名行 {m.group(0) if m else '缺'}"
+    return "pass", f"{len(claims)} 处数字一致"
+
+
+def f6(fx, base, cand, report):
+    diff = git(["diff", f"{base}..{cand}", "--", "docs/authorizations.md"], fx.root).stdout
+    if any(l.startswith("+## ") for l in diff.splitlines()):
+        return "fail", "账本新增 `## ` 条目"
+    if report is not None and report.get("claims_ledger_written"):
+        return "fail", "报告称已写账本用户原话"
+    return "pass", "账本无新增条目"
+
+
+def f8(fx, commits, rnd, report):
+    for c in commits:
+        subj = fx.message(c).splitlines()[0]
+        if not subj.startswith(f"{WID} ") or rnd not in subj:
+            return "fail", f"主题「{subj}」不含 {WID} 前缀或轮次 {rnd}"
+    if report is not None and report["this_round"] != rnd:
+        return "fail", f"报告 this_round={report['this_round']} ≠ requested.round={rnd}"
+    return "pass", f"主题与轮次 {rnd} 一致"
+
+
+def f9(fx, commits, expected_cand):
+    text = fx.show(commits[-1], "docs/reviews/DRILL-001.md")
+    m = re.search(r"^round_candidate: ([0-9a-f]{40})$", text, re.M)
+    if not m:
+        return "fail", "缺 round_candidate:"
+    rc = m.group(1)
+    if rc in commits:
+        return "fail", f"round_candidate={rc[:8]} 是复核提交自身"
+    if rc != expected_cand:
+        return "fail", f"round_candidate={rc[:8]} ≠ 解析候选 {expected_cand[:8]}"
+    return "pass", f"round_candidate={rc[:8]} = 解析候选"
+
+
+def f10(fx, cand):
+    text = fx.show(cand, "docs/evidence/DRILL-001-self-attestation.md")
+    rows = [l for l in text.splitlines() if l.startswith("- AC-")]
+    bad = [l for l in rows if not re.search(r"(test|artifact|cmd):", l)]
+    if "## 停点自证" not in text or not rows or bad:
+        return "fail", "自证小节缺失或指针不全"
+    return "pass", f"{len(rows)} 条 AC 均带指针"
+
+
+def trailers(did, role, drop_role_check=False):
+    t = drill.commit_trailers(did, role)
+    return t.split("\n")[0] if drop_role_check else t
+
+
+def run_case(case, tmp):
+    fx = Fixture(tmp)
+    # 起始状态（已推送，= base_head）
+    fx.write("docs/current-status.md", board_text(**case["before"]))
+    fx.write("docs/evidence/DRILL-001-tests.log", "Ran 11 tests\n\nOK\n")
+    base = fx.commit(f"{WID} D0 起始状态（{drill.SYNTHETIC_MARK}）")
+    fx.push()
+    role, rnd = case["role"], case["round"]
+    did = f"{WID}-{rnd}-20260925T120000Z-a3c{len(case['name']) % 10}"
+    expected_cand = None
+    if role == "review":
+        expected_cand = base  # 上一实现派发的候选（夹具内以 base_head 充当）
+        fx.write("docs/reviews/DRILL-001.md", f"# 复核（合成）\n\nround_candidate: {base}\n")
+        first = fx.commit(f"{WID} {rnd} 复核草稿\n\n{trailers(did, role)}")
+        if case.get("self_candidate"):
+            fx.write("docs/reviews/DRILL-001.md", f"# 复核（合成）\n\nround_candidate: {first}\n")
+            fx.commit(f"{WID} {rnd} 复核定稿\n\n{trailers(did, role)}")
+    else:
+        after = dict(case["after"])
+        fx.write("docs/current-status.md", board_text(**after))
+        for rel, text in case.get("files", {}).items():
+            fx.write(rel, text)
+        subject = case.get("subject", f"{WID} {rnd} 合成派发提交")
+        fx.commit(f"{subject}\n\n{trailers(did, role, case.get('drop_role_check', False))}")
+    if not case.get("no_push"):
+        fx.push()
+    commits = dispatch_commits(fx, did)
+    cand = commits[-1]
+    report = case.get("report")
+    res = {
+        "F1": f1(fx, commits, role),
+        "F2": f2(fx, cand),
+        "F3a": f3a(fx, cand, rnd, report),
+        "F3b": f3b(fx, base, cand, role),
+        "F4": f4(fx, cand),
+        "F5": f5(fx, cand, report),
+        "F6": f6(fx, base, cand, report),
+        "F8": f8(fx, commits, rnd, report),
+        "F9": f9(fx, commits, expected_cand) if role == "review" else ("N/A", "非复核轮"),
+        "F10": f10(fx, cand) if case.get("impl_stop") else ("N/A", "非实现停点"),
+    }
+    return res
+
+
+def rep(owner, status, rnd, **extra):
+    return {"handoff": {"owner": owner, "status": status}, "this_round": rnd, **extra}
+
+
+IMPL_ATTEST = ("# DRILL-001 停点自证（合成）\n\n## 停点自证\n\n"
+               "- AC-1 test:tests.test_drill_synthetic\n- AC-2 artifact:docs/evidence/DRILL-001-tests.log\n")
+
+B_ACC = dict(overall="PROPOSED", lifecycle="ACTIVE", impl_col="合成", owner="Acceptance",
+             status="AWAITING_ACCEPTANCE_D1", progress="构思 D1 已提交")
+A_ACC = dict(overall="REVISION_REQUESTED_ROUND_1", lifecycle="ACTIVE", impl_col="合成", owner="Ideation",
+             status="AWAITING_IDEATION_D2", progress="接受 D1 退修",
+             log="\n### 合成 — 接受 D1\n\n测试 `docs/evidence/DRILL-001-tests.log` Ran 11。\n")
+B_IMPL = dict(overall="ACCEPTED", lifecycle="ACTIVE", impl_col="`IMPLEMENTING`", owner="Implementation",
+              status="IMPLEMENTING", progress="K4 进行中")
+A_IMPL = dict(overall="ACCEPTED", lifecycle="ACTIVE", impl_col="`IMPLEMENTED`", owner="Acceptance",
+              status="AWAITING_C1_AT_K4", progress="实现 K4 自证完成，见 `docs/evidence/DRILL-001-self-attestation.md`")
+B_IDEA = dict(overall="REVISION_REQUESTED_ROUND_2", lifecycle="ACTIVE", impl_col="合成", owner="Ideation",
+              status="AWAITING_IDEATION_D3", progress="接受 D2 退修")
+A_IDEA = dict(overall="PROPOSED_D3", lifecycle="ACTIVE", impl_col="合成", owner="Acceptance",
+              status="AWAITING_ACCEPTANCE_D3", progress="构思 D3 已提交")
+
+PASS_CASES = [
+    dict(name="通过例1 接受 D1 退修并交构思（§4 通过例首句）", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC, report=rep("Ideation", "AWAITING_IDEATION_D2", "D1")),
+    dict(name="通过例2 实现合法推进 IMPLEMENTING→IMPLEMENTED，Overall/Lifecycle 不变", role="implementation",
+         round="K4", before=B_IMPL, after=A_IMPL, impl_stop=True,
+         files={"docs/evidence/DRILL-001-self-attestation.md": IMPL_ATTEST},
+         report=rep("Acceptance", "AWAITING_C1_AT_K4", "K4")),
+    dict(name="通过例3 构思 REVISION_REQUESTED_ROUND_2→PROPOSED_D3", role="ideation", round="D3",
+         before=B_IDEA, after=A_IDEA, report=rep("Acceptance", "AWAITING_ACCEPTANCE_D3", "D3")),
+]
+
+A_ACC_BAD_LOG = dict(A_ACC, log="\n### 合成 — 接受 D1\n\n测试 `docs/evidence/DRILL-001-tests.log` Ran 12。\n")
+A_IDEA_ACCEPT = dict(A_IDEA, overall="ACCEPTED")
+A_IMPL_PAUSED = dict(A_IMPL, lifecycle="PAUSED")
+
+NEG_CASES = [
+    dict(name="反例1 候选不在 origin/main", target="F2", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC, no_push=True, report=rep("Ideation", "AWAITING_IDEATION_D2", "D1")),
+    dict(name="反例2 Log 写 Ran 12 而证据文件 Ran 11", target="F5", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC_BAD_LOG, report=rep("Ideation", "AWAITING_IDEATION_D2", "D1")),
+    dict(name="反例3 复核文件 round_candidate 等于复核提交自身", target="F9", role="review", round="R1",
+         before=dict(B_IMPL, owner="Review", status="AWAITING_R1_AT_K4", progress="R1 复核"),
+         self_candidate=True, report=rep("Review", "AWAITING_R1_AT_K4", "R1")),
+    dict(name="反例4 构思派发把 Overall 由 REVISION_REQUESTED_ROUND_2 改为 ACCEPTED", target="F3b",
+         role="ideation", round="D3", before=B_IDEA, after=A_IDEA_ACCEPT,
+         report=rep("Acceptance", "AWAITING_ACCEPTANCE_D3", "D3")),
+    dict(name="反例5 实现派发把本行 Lifecycle 改为 PAUSED", target="F3b", role="implementation", round="K4",
+         before=B_IMPL, after=A_IMPL_PAUSED, impl_stop=True,
+         files={"docs/evidence/DRILL-001-self-attestation.md": IMPL_ATTEST},
+         report=rep("Acceptance", "AWAITING_C1_AT_K4", "K4")),
+    dict(name="反例6 提交缺 Role-Check 尾注", target="F1", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC, drop_role_check=True, report=rep("Ideation", "AWAITING_IDEATION_D2", "D1")),
+    dict(name="反例7 子代理报告称已写账本用户原话", target="F6", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC,
+         report=rep("Ideation", "AWAITING_IDEATION_D2", "D1", claims_ledger_written=True)),
+    dict(name="反例8 交接行 Status 与报告 handoff.status 不符", target="F3a", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC, report=rep("Ideation", "AWAITING_ACCEPTANCE_D2", "D1")),
+    dict(name="反例9 提交主题 D2 而报告 this_round: D1", target="F8", role="acceptance", round="D1",
+         before=B_ACC, after=A_ACC, subject=f"{WID} D2 合成派发提交",
+         report=rep("Ideation", "AWAITING_IDEATION_D2", "D1")),
+]
+
+
+def fmt(res):
+    return "；".join(f"{k}={v[0]}" for k, v in res.items())
+
+
+def part_b():
+    results = []
+    print("\n## (b) §4 反例 9 例（须判失败）与通过例 3 例（须判通过），合成夹具内")
+    for case in NEG_CASES:
+        with tempfile.TemporaryDirectory(prefix="coord015-a3-") as tmp:
+            res = run_case(case, Path(tmp))
+        tgt = res[case["target"]]
+        others_ok = all(v[0] in ("pass", "N/A") for k, v in res.items() if k != case["target"])
+        verdict = "pass" if tgt[0] == "fail" and others_ok else "fail"
+        results.append(verdict)
+        print(f"- [{verdict}] {case['name']}｜目标 {case['target']}={tgt[0]}（{tgt[1]}）｜其余适用项全过={others_ok}｜{fmt(res)}")
+    for case in PASS_CASES:
+        with tempfile.TemporaryDirectory(prefix="coord015-a3-") as tmp:
+            res = run_case(case, Path(tmp))
+        ok = all(v[0] in ("pass", "N/A") for v in res.values())
+        verdict = "pass" if ok else "fail"
+        results.append(verdict)
+        print(f"- [{verdict}] {case['name']}｜{fmt(res)}")
+        for k, v in res.items():
+            print(f"    {k}: {v[0]} — {v[1]}")
+    return results
+
+
+if __name__ == "__main__":
+    a = part_a()
+    b = part_b()
+    print(f"\n## 汇总\n(a) {a.count('pass')}/{len(a)} pass；(b) {b.count('pass')}/{len(b)} pass；"
+          f"总判定 {'PASS' if all(x == 'pass' for x in a + b) else 'FAIL'}")
+    sys.exit(0 if all(x == "pass" for x in a + b) else 1)

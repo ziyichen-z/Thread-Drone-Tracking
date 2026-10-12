@@ -1,0 +1,44 @@
+{
+    "schema_version": "p1-m3-body-001-anchor-audit/v1",
+    "work_id": "P1-M3-BODY-001",
+    "status": "CLEAR",
+    "rejection_reason": "",
+    "source_scenario_id": "deterministic-loop-default",
+    "source_scenario_sha256": "f9c9205249aacf7487579ca42f727c766800cc329d0523ec82a96140564a2ce3",
+    "road_data_sha256": "111e0759d4b52821d08ce4ddd1aae3fc8cc8d24e12e6fa62513403c00b401894",
+    "anchor_contract_sha256": "e0a7f14c36a745b0ed26ffd4891836956ce48ed897d0f4ac95dd7e041b314433",
+    "audited_anchor_world_m": {
+        "x": 132.0,
+        "y": 0.20000000298023225,
+        "z": 117.0
+    },
+    "hover_point_world_m": {
+        "x": 132.0,
+        "y": 25.200000762939454,
+        "z": 117.0
+    },
+    "anchor_effective_radius_m": 1.5,
+    "hover_effective_radius_m": 1.5,
+    "corridor_effective_radius_m": 1.0,
+    "support_status": "PASS",
+    "clearance_status": "PASS",
+    "support_surface_y_m": 0.20000043511390687,
+    "support_height_error_m": -4.3213367462158205e-7,
+    "support_matches": [
+        {
+            "id": "Road Lane_01 (30)@140,120",
+            "source": "road_surface",
+            "surface_y_m": 0.20000043511390687
+        }
+    ],
+    "scene_root_count": 896,
+    "audited_obstacle_count": 764,
+    "blocker_count": 0,
+    "blockers": [],
+    "route_centerline_distance_m": 0.5,
+    "route_corridor_half_width_m": 1.5,
+    "support_surface_allowlist": [
+        "Natures_Grass Tile",
+        "Natures_Grass Tile Small"
+    ]
+}

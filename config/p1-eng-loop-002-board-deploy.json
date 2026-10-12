@@ -1,0 +1,23 @@
+{
+  "schema_version": "p1-eng-loop-002-board-deploy/v1",
+  "work_id": "P1-ENG-LOOP-002",
+  "note": "Board source-root closed set (proposal A2(e)); paths are repository-relative and placed verbatim under one board source root; tools/ stays a namespace package (no __init__.py). Hashes are computed at run time by tools/eng_loop2/deploy_digest.py, never written here.",
+  "paths": [
+    "config/p1-eng-loop-002-board-deploy.json",
+    "config/vlm-three-state.schema.json",
+    "controller/__init__.py",
+    "controller/language_bridge.py",
+    "controller/language_selector.py",
+    "controller/protocol.py",
+    "controller/reanchor.py",
+    "controller/resident_core.py",
+    "controller/trackers.py",
+    "tools/eng_loop2/__init__.py",
+    "tools/eng_loop2/deploy_digest.py",
+    "tools/eng_loop2/llama_adapter.py",
+    "tools/eng_sft/__init__.py",
+    "tools/eng_sft/parse.py",
+    "tools/eng_sft/prompt_v2.py",
+    "tools/language_serve.py"
+  ]
+}

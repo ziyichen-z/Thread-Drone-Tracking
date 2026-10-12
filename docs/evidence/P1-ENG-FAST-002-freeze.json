@@ -1,0 +1,122 @@
+{
+  "all_runs": [
+    {
+      "ended_at": "2026-09-28T07:17:01Z",
+      "run_id": "run-1",
+      "status": "DONE"
+    }
+  ],
+  "association": {
+    "algorithm": "botsort",
+    "args": {
+      "appearance_thresh": 0.8,
+      "fuse_score": true,
+      "gmc_method": "sparseOptFlow",
+      "match_thresh": 0.7,
+      "model": "auto",
+      "new_track_thresh": 0.25,
+      "proximity_thresh": 0.5,
+      "track_buffer": 30,
+      "track_high_thresh": 0.25,
+      "track_low_thresh": 0.1,
+      "tracker_type": "botsort",
+      "with_reid": false
+    },
+    "match_thresh": 0.7,
+    "track_buffer": 30
+  },
+  "chosen_run": "run-1",
+  "conf": 0.25,
+  "conf_flag": null,
+  "frozen_at": "2026-09-28T07:20:39Z",
+  "git_head_at_freeze": "002e8553263c83d191f82c0aedb2b0c82e9cc615",
+  "h_used_in_selection": false,
+  "imgsz": 640,
+  "nms_iou": 0.7,
+  "selection_basis": {
+    "association_rule": "V 序列 13 s 保持率最高；并列 ByteTrack → buffer 30 → match 0.8",
+    "conf_rule": "{0.25, 0.40} 中使 V FP/帧 ≤ 0.50 的最小值",
+    "per_run": {
+      "run-1": {
+        "target_S_rate_050": 0.917431,
+        "v_gates_passed": 4
+      }
+    },
+    "run_rule": "V-门通过数最多；并列取 V target S @0.5 高者；再并列 run-1"
+  },
+  "spec_core_sha256": "18f07f296f9be55aee79ed5c2d80322355c93e3fc22a163492f66b090be2c965",
+  "spec_path": "config/det-assoc-v1.models.json",
+  "v_gates": {
+    "V-1": {
+      "cells": {
+        "target|L": {
+          "n": 439,
+          "threshold": 0.9,
+          "value": 0.977221,
+          "verdict": "MET"
+        },
+        "target|M": {
+          "n": 1072,
+          "threshold": 0.9,
+          "value": 0.927239,
+          "verdict": "MET"
+        }
+      },
+      "verdict": "MET"
+    },
+    "V-1s": {
+      "cells": {
+        "target|S": {
+          "n": 109,
+          "threshold": 0.7,
+          "value": 0.917431,
+          "verdict": "MET"
+        }
+      },
+      "verdict": "MET"
+    },
+    "V-2": {
+      "cells": {
+        "vehicle|L": {
+          "n": 2304,
+          "threshold": 0.9,
+          "value": 0.922743,
+          "verdict": "MET"
+        },
+        "vehicle|M": {
+          "n": 2225,
+          "threshold": 0.9,
+          "value": 0.945169,
+          "verdict": "MET"
+        },
+        "vehicle|S": {
+          "n": 276,
+          "threshold": 0.7,
+          "value": 0.971014,
+          "verdict": "MET"
+        }
+      },
+      "verdict": "MET"
+    },
+    "V-3": {
+      "cells": {
+        "fp_per_frame": {
+          "n": 3168,
+          "threshold": 0.5,
+          "value": 0.076389,
+          "verdict": "MET"
+        }
+      },
+      "verdict": "MET"
+    }
+  },
+  "valid_runs": [
+    "run-1"
+  ],
+  "weights": {
+    "bytes": 5458330,
+    "path": "outputs/eng-det/runs/run-1/weights/last.pt",
+    "sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+  },
+  "work_id": "P1-ENG-FAST-002"
+}

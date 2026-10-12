@@ -1,0 +1,4804 @@
+{
+  "AC-2": "见 S1.verdict 与交接「AC-n 逐条证据指针」（本文件不自判 AC）",
+  "AC-3": "见 S2.verdict 与交接「AC-n 逐条证据指针」（本文件不自判 AC）",
+  "S1": {
+    "binary_compat_note": "官方 cu130 torch 2.9.1 无 sm_87 原生 SASS，按同主版本二进制兼容（sm_80 cubin）运行；检测推理走原生支持 SM 87 的系统 TensorRT 10.16（AC-2 修订 6）",
+    "engines": {
+      "480x640": {
+        "export": {
+          "engine": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-fp16-480x640.engine",
+          "export_args": {
+            "device": 0,
+            "dynamic": false,
+            "format": "engine",
+            "half": true,
+            "imgsz": [
+              480,
+              640
+            ],
+            "simplify": false,
+            "workspace": null
+          },
+          "onnx": {
+            "path": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-480x640.onnx",
+            "sha256": "b41bb29a471948e73ad9c3931b36cfe8c6bad4ec86b38e56f4ab841f5c7e36ae",
+            "size_bytes": 10523785
+          },
+          "pt_sha256_after": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+          "pt_sha256_before": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+          "runtime_stack": {
+            "cuda_arch_list": [
+              "sm_80",
+              "sm_90",
+              "sm_100",
+              "sm_110",
+              "sm_120",
+              "compute_120"
+            ],
+            "cuda_available": true,
+            "cuda_capability": [
+              8,
+              7
+            ],
+            "cuda_device": "Orin",
+            "cudnn": 91300,
+            "cv2": "4.11.0",
+            "image_env": {
+              "CUDA_VERSION": null,
+              "ENG_JET_IMAGE": null,
+              "NVIDIA_PYTORCH_VERSION": null,
+              "PYTORCH_VERSION": null,
+              "TRT_VERSION": null
+            },
+            "in_container": false,
+            "lap": "0.5.13",
+            "ld_library_path": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/../../lib64:",
+            "machine": "aarch64",
+            "module_files": {
+              "cv2": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/__init__.py",
+              "lap": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/lap/__init__.py",
+              "numpy": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+              "onnx": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/onnx/__init__.py",
+              "tensorrt": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+              "torch": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torch/__init__.py",
+              "torchvision": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torchvision/__init__.py",
+              "ultralytics": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/ultralytics/__init__.py"
+            },
+            "numpy": "1.26.4",
+            "onnx": "1.18.0",
+            "python": "3.12.3",
+            "tensorrt": "10.16.2.10",
+            "torch": "2.9.1+cu130",
+            "torch_cuda": "13.0",
+            "torchvision": "0.24.1",
+            "ultralytics": "8.4.104",
+            "venv": {
+              "is_venv": true,
+              "pyvenv_cfg": {
+                "command": "/usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv",
+                "executable": "/usr/bin/python3.12",
+                "home": "/usr/bin",
+                "include-system-site-packages": "true",
+                "version": "3.12.3"
+              },
+              "sys_base_prefix": "/usr",
+              "sys_prefix": "/home/jetson/eng-jet/sysvenv",
+              "system_site_packages": true
+            }
+          },
+          "sha256": "c047cc34d3d7f25263ed6f9cc243fc4f625419610cdc438e197a31b23d730331",
+          "size_bytes": 8379885,
+          "started_unix": 1790987198.836,
+          "tensorrt_version": "10.16.2.10",
+          "wall_s": 367.9
+        },
+        "s1": {
+          "comparison": {
+            "box_max_abs_diff_norm": 0.025914099999999995,
+            "count_frames_window": 50,
+            "count_mismatch_frames_all": 0,
+            "count_mismatch_frames_first_window": 0,
+            "count_window": {
+              "frame_ids": [
+                0,
+                49
+              ],
+              "n": 50
+            },
+            "frames_compared": 321,
+            "gate_window": {
+              "frame_ids": [
+                1,
+                320
+              ],
+              "n": 320
+            },
+            "inconsistent_frames": [
+              {
+                "frame_id": 41,
+                "max_abs_diff": 0.0021111000000000046,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 78,
+                "max_abs_diff": 0.0014079000000000175,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 79,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 80,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 81,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 82,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 83,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 84,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 85,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 86,
+                "max_abs_diff": 0.0010796000000000139,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 169,
+                "max_abs_diff": 0.0012694000000000039,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 170,
+                "max_abs_diff": 0.0018988999999999812,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 223,
+                "max_abs_diff": 0.0012641999999999998,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 238,
+                "max_abs_diff": 0.025914099999999995,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 278,
+                "max_abs_diff": 0.0010962000000000055,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 279,
+                "max_abs_diff": 0.0010962000000000055,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 280,
+                "max_abs_diff": 0.0010962000000000055,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              }
+            ],
+            "init_frames_box_max_abs_diff_norm": [
+              {
+                "frame_id": 0,
+                "max_abs_diff": 6.540000000000712e-05
+              }
+            ],
+            "iou_histogram": [
+              {
+                "count": 0,
+                "high": 0.5,
+                "low": 0.0
+              },
+              {
+                "count": 0,
+                "high": 0.75,
+                "low": 0.5
+              },
+              {
+                "count": 1,
+                "high": 0.9,
+                "low": 0.75
+              },
+              {
+                "count": 0,
+                "high": 0.95,
+                "low": 0.9
+              },
+              {
+                "count": 18,
+                "high": 0.99,
+                "low": 0.95
+              },
+              {
+                "count": 226,
+                "high": 0.999,
+                "low": 0.99
+              },
+              {
+                "count": 510,
+                "high": 1.0000001,
+                "low": 0.999
+              }
+            ],
+            "iou_min": 0.8738291420216371,
+            "limit": 0.001,
+            "matched_pairs": 755,
+            "per_frame_max_diff_histogram": [
+              {
+                "count": 17,
+                "high": 1e-06,
+                "low": 0.0
+              },
+              {
+                "count": 0,
+                "high": 1e-05,
+                "low": 1e-06
+              },
+              {
+                "count": 159,
+                "high": 0.0001,
+                "low": 1e-05
+              },
+              {
+                "count": 122,
+                "high": 0.0005,
+                "low": 0.0001
+              },
+              {
+                "count": 5,
+                "high": 0.001,
+                "low": 0.0005
+              },
+              {
+                "count": 15,
+                "high": 0.002,
+                "low": 0.001
+              },
+              {
+                "count": 1,
+                "high": 0.005,
+                "low": 0.002
+              },
+              {
+                "count": 0,
+                "high": 0.01,
+                "low": 0.005
+              },
+              {
+                "count": 1,
+                "high": null,
+                "low": 0.01
+              }
+            ],
+            "unmatched_engine_total": 0,
+            "unmatched_reference_total": 0
+          },
+          "cpu_occupancy_basis": "进程 user+sys CPU 秒 / init+320 帧 update 墙钟（100% = 一个核）",
+          "cpu_occupancy_pct": 80.49,
+          "engine": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-fp16-480x640.engine",
+          "engine_sha256": "c047cc34d3d7f25263ed6f9cc243fc4f625419610cdc438e197a31b23d730331",
+          "finished_unix": 1790987619.784,
+          "frames": {
+            "n_update": 320,
+            "update_frame_ids": [
+              1,
+              320
+            ]
+          },
+          "frozen_v_header": {
+            "conf": 0.25,
+            "device": "mps",
+            "imgsz": 640,
+            "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+          },
+          "imgsz_override": [
+            480,
+            640
+          ],
+          "imgsz_passed_to_predict": [
+            480,
+            640
+          ],
+          "init": {
+            "box_norm": [
+              0.4446039270172931,
+              0.7078459879432423,
+              0.0553960729827069,
+              0.16146109855182247
+            ],
+            "frame_id": 0,
+            "t_init_ms": 2470.7929
+          },
+          "manifest_identity": {
+            "association": {
+              "algorithm": "botsort",
+              "args": {
+                "appearance_thresh": 0.8,
+                "fuse_score": true,
+                "gmc_method": "sparseOptFlow",
+                "match_thresh": 0.7,
+                "model": "auto",
+                "new_track_thresh": 0.25,
+                "proximity_thresh": 0.5,
+                "track_buffer": 30,
+                "track_high_thresh": 0.25,
+                "track_low_thresh": 0.1,
+                "tracker_type": "botsort",
+                "with_reid": false
+              }
+            },
+            "backend": "ultralytics",
+            "bind_iou": 0.5,
+            "device": "cuda:0",
+            "device_fallback": null,
+            "freeze_sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c",
+            "gmc_source": null,
+            "history_depth": null,
+            "imgsz": 640,
+            "level2": null,
+            "mode": "compat",
+            "name": "det-assoc-v1",
+            "nms_iou": 0.7,
+            "pinned_version": "8.4.104",
+            "resolver": null,
+            "score_threshold": 0.25,
+            "spec_sha256": "76919cf73ff47b2dffca84419758b06171393bdf9d19d6a108f40bea547e6c1d",
+            "threshold_source": "spec",
+            "ultralytics_version": "8.4.104",
+            "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+          },
+          "plugin_state_counts": {
+            "lost": 291,
+            "ok": 29
+          },
+          "raw_frames_file": "s1-det-assoc-v1-fp16-480x640-frames.json",
+          "raw_frames_sha256": "45a723cdb3d36e20d13cf3feb728eb272a0d774bba02f6a11e81d24eb50806d2",
+          "rss_mb_after_updates": 1719.62890625,
+          "ru_maxrss_mb": 1719.26,
+          "runtime_stack": {
+            "cuda_arch_list": [
+              "sm_80",
+              "sm_90",
+              "sm_100",
+              "sm_110",
+              "sm_120",
+              "compute_120"
+            ],
+            "cuda_available": true,
+            "cuda_capability": [
+              8,
+              7
+            ],
+            "cuda_device": "Orin",
+            "cudnn": 91300,
+            "cv2": "4.11.0",
+            "image_env": {
+              "CUDA_VERSION": null,
+              "ENG_JET_IMAGE": null,
+              "NVIDIA_PYTORCH_VERSION": null,
+              "PYTORCH_VERSION": null,
+              "TRT_VERSION": null
+            },
+            "in_container": false,
+            "lap": "0.5.13",
+            "ld_library_path": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/../../lib64:",
+            "machine": "aarch64",
+            "module_files": {
+              "cv2": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/__init__.py",
+              "lap": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/lap/__init__.py",
+              "numpy": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+              "onnx": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/onnx/__init__.py",
+              "tensorrt": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+              "torch": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torch/__init__.py",
+              "torchvision": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torchvision/__init__.py",
+              "ultralytics": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/ultralytics/__init__.py"
+            },
+            "numpy": "1.26.4",
+            "onnx": "1.18.0",
+            "python": "3.12.3",
+            "tensorrt": "10.16.2.10",
+            "torch": "2.9.1+cu130",
+            "torch_cuda": "13.0",
+            "torchvision": "0.24.1",
+            "ultralytics": "8.4.104",
+            "venv": {
+              "is_venv": true,
+              "pyvenv_cfg": {
+                "command": "/usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv",
+                "executable": "/usr/bin/python3.12",
+                "home": "/usr/bin",
+                "include-system-site-packages": "true",
+                "version": "3.12.3"
+              },
+              "sys_base_prefix": "/usr",
+              "sys_prefix": "/home/jetson/eng-jet/sysvenv",
+              "system_site_packages": true
+            }
+          },
+          "started_unix": 1790987598.727,
+          "timing": {
+            "t_assoc_ms": {
+              "max": 3.6331,
+              "min": 0.8822,
+              "n": 320,
+              "p50": 2.0338,
+              "p95": 2.8479
+            },
+            "t_detect_ms": {
+              "max": 20.6506,
+              "min": 10.9653,
+              "n": 320,
+              "p50": 18.8895,
+              "p95": 19.9079
+            },
+            "t_gmc_ms": {
+              "max": 94.6489,
+              "min": 4.8169,
+              "n": 320,
+              "p50": 12.7514,
+              "p95": 40.04
+            },
+            "t_update_ms": {
+              "max": 116.5893,
+              "min": 19.0244,
+              "n": 320,
+              "p50": 34.4904,
+              "p95": 58.9542
+            }
+          },
+          "verdict": {
+            "consistency": {
+              "box_max_abs_diff_norm": 0.025914099999999995,
+              "count_mismatch_first_50": 0,
+              "limit": 0.001,
+              "pass": false,
+              "unmatched_detections": 0
+            },
+            "latency": {
+              "gate_ms": 200.0,
+              "n": 320,
+              "pass": true,
+              "update_p95_ms": 58.9542,
+              "within_50ms": false
+            },
+            "verdict": "STOP(FP16_BOX_DIVERGENCE)"
+          }
+        },
+        "trtexec": {
+          "command": "/usr/src/tensorrt/bin/trtexec --loadEngine=/home/jetson/eng-jet/results/d/det-assoc-v1-fp16-480x640.plan --warmUp=1000 --duration=10 --iterations=100 --avgRuns=100",
+          "log": "trtexec-det-assoc-v1-fp16-480x640.log",
+          "log_sha256": "5ed20d485e8ae51cd8b5be1d71f8a068dda61c3e74af490e889f937c2293a3e1",
+          "metadata": {
+            "args": {
+              "batch": 1,
+              "data": null,
+              "dynamic": false,
+              "fraction": 1.0,
+              "nms": false,
+              "opset": null,
+              "quantize": 16,
+              "simplify": false,
+              "workspace": null
+            },
+            "author": "Ultralytics",
+            "batch": 1,
+            "channels": 3,
+            "date": "2026-10-02T20:26:40.075650",
+            "description": "Ultralytics YOLO11n model trained on ~/TetheredDroneTracking/outputs/eng-det/yolo/data.yaml",
+            "docs": "https://docs.ultralytics.com",
+            "end2end": false,
+            "head": "Detect",
+            "imgsz": [
+              480,
+              640
+            ],
+            "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+            "names": {
+              "0": "vehicle",
+              "1": "target"
+            },
+            "stride": 32,
+            "task": "detect",
+            "version": "8.4.104"
+          },
+          "parsed": {
+            "D2H Latency": {
+              "max": 0.0246582,
+              "mean": 0.018557,
+              "median": 0.019043,
+              "min": 0.00878906,
+              "percentile(90%)": 0.0214844,
+              "percentile(95%)": 0.0219727,
+              "percentile(99%)": 0.0224609
+            },
+            "Enqueue Time": {
+              "max": 3.11328,
+              "mean": 2.77028,
+              "median": 2.7583,
+              "min": 2.59766,
+              "percentile(90%)": 2.875,
+              "percentile(95%)": 2.90088,
+              "percentile(99%)": 2.93066
+            },
+            "GPU Compute Time": {
+              "max": 3.94434,
+              "mean": 3.92032,
+              "median": 3.9209,
+              "min": 3.86035,
+              "percentile(90%)": 3.9292,
+              "percentile(95%)": 3.93213,
+              "percentile(99%)": 3.93604
+            },
+            "H2D Latency": {
+              "max": 0.258789,
+              "mean": 0.243261,
+              "median": 0.245483,
+              "min": 0.168945,
+              "percentile(90%)": 0.249023,
+              "percentile(95%)": 0.25,
+              "percentile(99%)": 0.25293
+            },
+            "Latency": {
+              "max": 4.20996,
+              "mean": 4.18214,
+              "median": 4.18457,
+              "min": 4.10352,
+              "percentile(90%)": 4.19336,
+              "percentile(95%)": 4.19629,
+              "percentile(99%)": 4.20312
+            },
+            "Throughput": 254.867,
+            "tensorrt_version_line": "[TensorRT v101602]"
+          },
+          "plan_sha256": "b36ac2eb58c7fb6fa09dc9ed5555568cc06386756bf58fc5575e9110fdc43bb7",
+          "returncode": 0
+        }
+      },
+      "640": {
+        "export": {
+          "engine": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-fp16-640.engine",
+          "export_args": {
+            "device": 0,
+            "dynamic": false,
+            "format": "engine",
+            "half": true,
+            "imgsz": 640,
+            "simplify": false,
+            "workspace": null
+          },
+          "onnx": {
+            "path": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-640.onnx",
+            "sha256": "cb6745e362c00968985a134b054ad5bbce9c146657e572a4d45f00c5c15585a7",
+            "size_bytes": 10565785
+          },
+          "pt_sha256_after": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+          "pt_sha256_before": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+          "runtime_stack": {
+            "cuda_arch_list": [
+              "sm_80",
+              "sm_90",
+              "sm_100",
+              "sm_110",
+              "sm_120",
+              "compute_120"
+            ],
+            "cuda_available": true,
+            "cuda_capability": [
+              8,
+              7
+            ],
+            "cuda_device": "Orin",
+            "cudnn": 91300,
+            "cv2": "4.11.0",
+            "image_env": {
+              "CUDA_VERSION": null,
+              "ENG_JET_IMAGE": null,
+              "NVIDIA_PYTORCH_VERSION": null,
+              "PYTORCH_VERSION": null,
+              "TRT_VERSION": null
+            },
+            "in_container": false,
+            "lap": "0.5.13",
+            "ld_library_path": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/../../lib64:",
+            "machine": "aarch64",
+            "module_files": {
+              "cv2": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/__init__.py",
+              "lap": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/lap/__init__.py",
+              "numpy": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+              "onnx": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/onnx/__init__.py",
+              "tensorrt": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+              "torch": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torch/__init__.py",
+              "torchvision": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torchvision/__init__.py",
+              "ultralytics": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/ultralytics/__init__.py"
+            },
+            "numpy": "1.26.4",
+            "onnx": "1.18.0",
+            "python": "3.12.3",
+            "tensorrt": "10.16.2.10",
+            "torch": "2.9.1+cu130",
+            "torch_cuda": "13.0",
+            "torchvision": "0.24.1",
+            "ultralytics": "8.4.104",
+            "venv": {
+              "is_venv": true,
+              "pyvenv_cfg": {
+                "command": "/usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv",
+                "executable": "/usr/bin/python3.12",
+                "home": "/usr/bin",
+                "include-system-site-packages": "true",
+                "version": "3.12.3"
+              },
+              "sys_base_prefix": "/usr",
+              "sys_prefix": "/home/jetson/eng-jet/sysvenv",
+              "system_site_packages": true
+            }
+          },
+          "sha256": "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963",
+          "size_bytes": 8459869,
+          "started_unix": 1790986816.067,
+          "tensorrt_version": "10.16.2.10",
+          "wall_s": 375.4
+        },
+        "s1": {
+          "comparison": {
+            "box_max_abs_diff_norm": 0.09919050000000001,
+            "count_frames_window": 50,
+            "count_mismatch_frames_all": 64,
+            "count_mismatch_frames_first_window": 3,
+            "count_window": {
+              "frame_ids": [
+                0,
+                49
+              ],
+              "n": 50
+            },
+            "frames_compared": 321,
+            "gate_window": {
+              "frame_ids": [
+                1,
+                320
+              ],
+              "n": 320
+            },
+            "inconsistent_frames": [
+              {
+                "frame_id": 0,
+                "max_abs_diff": 0.0021715999999999958,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 1,
+                "max_abs_diff": 0.0021715999999999958,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 2,
+                "max_abs_diff": 0.0021715999999999958,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 3,
+                "max_abs_diff": 0.002391100000000007,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 4,
+                "max_abs_diff": 0.0024978999999999973,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 5,
+                "max_abs_diff": 0.0022804000000000157,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 6,
+                "max_abs_diff": 0.0022011999999999865,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 7,
+                "max_abs_diff": 0.0017339999999999856,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 8,
+                "max_abs_diff": 0.003852300000000003,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 9,
+                "max_abs_diff": 0.0025007999999999975,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 10,
+                "max_abs_diff": 0.0012898000000000076,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 11,
+                "max_abs_diff": 0.0010102000000000722,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 12,
+                "max_abs_diff": 0.001076699999999986,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 14,
+                "max_abs_diff": 0.0013382000000000116,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 17,
+                "max_abs_diff": 0.0013041000000000025,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 18,
+                "max_abs_diff": 0.0013420000000000099,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 19,
+                "max_abs_diff": 0.001731399999999994,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 20,
+                "max_abs_diff": 0.002658700000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 21,
+                "max_abs_diff": 0.002412900000000051,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 22,
+                "max_abs_diff": 0.0015074000000000476,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 24,
+                "max_abs_diff": 0.0019945999999999853,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 25,
+                "max_abs_diff": 0.0031442999999999888,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 26,
+                "max_abs_diff": 0.001364000000000004,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 27,
+                "max_abs_diff": 0.001959699999999981,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 28,
+                "max_abs_diff": 0.001959699999999981,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 29,
+                "max_abs_diff": 0.001959699999999981,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 30,
+                "max_abs_diff": 0.008249699999999999,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 31,
+                "max_abs_diff": 0.016588199999999997,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 32,
+                "max_abs_diff": 0.007678100000000021,
+                "n_engine": 2,
+                "n_reference": 1,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 33,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 34,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 35,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 36,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 37,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 38,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 39,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 40,
+                "max_abs_diff": 0.0013019999999999976,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 41,
+                "max_abs_diff": 0.002627400000000002,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 42,
+                "max_abs_diff": 0.0,
+                "n_engine": 1,
+                "n_reference": 0,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 43,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 44,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 45,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 46,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 47,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 48,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 49,
+                "max_abs_diff": 0.043101,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 50,
+                "max_abs_diff": 0.01737850000000002,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 51,
+                "max_abs_diff": 0.004480600000000001,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 52,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 53,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 54,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 55,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 56,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 57,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 58,
+                "max_abs_diff": 0.002794800000000014,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 59,
+                "max_abs_diff": 0.0071793,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 60,
+                "max_abs_diff": 0.016061099999999995,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 61,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 62,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 63,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 64,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 65,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 66,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 67,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 68,
+                "max_abs_diff": 0.008404999999999996,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 69,
+                "max_abs_diff": 0.001393099999999925,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 77,
+                "max_abs_diff": 0.0014380999999999977,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 78,
+                "max_abs_diff": 0.001255100000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 79,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 80,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 81,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 82,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 83,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 84,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 85,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 86,
+                "max_abs_diff": 0.07354050000000001,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 87,
+                "max_abs_diff": 0.040377799999999964,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 88,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 89,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 90,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 91,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 92,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 93,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 94,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 95,
+                "max_abs_diff": 0.0012664000000000009,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 97,
+                "max_abs_diff": 0.0006016000000000077,
+                "n_engine": 1,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 2
+              },
+              {
+                "frame_id": 98,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 99,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 100,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 101,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 102,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 103,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 104,
+                "max_abs_diff": 0.0004084999999999783,
+                "n_engine": 1,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 105,
+                "max_abs_diff": 0.0035643000000000202,
+                "n_engine": 1,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 2
+              },
+              {
+                "frame_id": 106,
+                "max_abs_diff": 0.007302399999999987,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 107,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 108,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 109,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 110,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 111,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 112,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 113,
+                "max_abs_diff": 0.0036491000000000162,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 114,
+                "max_abs_diff": 0.004728599999999972,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 115,
+                "max_abs_diff": 0.0052788,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 116,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 117,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 118,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 119,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 120,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 121,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 122,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 123,
+                "max_abs_diff": 0.0020122999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 124,
+                "max_abs_diff": 0.0026932999999999957,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 125,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 126,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 127,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 128,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 129,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 130,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 131,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 132,
+                "max_abs_diff": 0.0037062000000000067,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 133,
+                "max_abs_diff": 0.0018762999999999974,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 134,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 135,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 136,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 137,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 138,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 139,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 140,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 141,
+                "max_abs_diff": 0.0012372000000000494,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 142,
+                "max_abs_diff": 0.0016260000000000163,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 151,
+                "max_abs_diff": 0.0092584,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 152,
+                "max_abs_diff": 0.004715000000000025,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 153,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 154,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 155,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 156,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 157,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 158,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 159,
+                "max_abs_diff": 0.002323500000000006,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 160,
+                "max_abs_diff": 0.001424700000000001,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 161,
+                "max_abs_diff": 0.0017160999999999982,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 169,
+                "max_abs_diff": 0.0020507000000000164,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 170,
+                "max_abs_diff": 0.014998700000000004,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 171,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 172,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 173,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 174,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 175,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 176,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 177,
+                "max_abs_diff": 0.007954299999999997,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 178,
+                "max_abs_diff": 0.09919050000000001,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 179,
+                "max_abs_diff": 0.004928500000000002,
+                "n_engine": 3,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 180,
+                "max_abs_diff": 0.0020456999999999836,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 181,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 182,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 183,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 184,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 185,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 186,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 187,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 188,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 189,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 190,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 191,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 192,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 193,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 194,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 195,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 196,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 197,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 198,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 199,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 200,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 201,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 202,
+                "max_abs_diff": 0.004631599999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 203,
+                "max_abs_diff": 0.004544899999999991,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 204,
+                "max_abs_diff": 0.0041534000000000015,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 205,
+                "max_abs_diff": 0.004133400000000009,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 206,
+                "max_abs_diff": 0.003882500000000011,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 207,
+                "max_abs_diff": 0.003539799999999982,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 208,
+                "max_abs_diff": 0.0023062000000000082,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 209,
+                "max_abs_diff": 0.0018285000000000107,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 210,
+                "max_abs_diff": 0.001058300000000012,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 211,
+                "max_abs_diff": 0.0024027000000000076,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 212,
+                "max_abs_diff": 0.012385899999999998,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 213,
+                "max_abs_diff": 0.008873900000000004,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 214,
+                "max_abs_diff": 0.007568400000000003,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 215,
+                "max_abs_diff": 0.004038600000000003,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 216,
+                "max_abs_diff": 0.0041463000000000055,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 217,
+                "max_abs_diff": 0.0018501999999999963,
+                "n_engine": 3,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 218,
+                "max_abs_diff": 0.0041513999999999995,
+                "n_engine": 3,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 219,
+                "max_abs_diff": 0.0018487000000000017,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 220,
+                "max_abs_diff": 0.0019840999999999956,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 221,
+                "max_abs_diff": 0.004539399999999999,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 222,
+                "max_abs_diff": 0.006543099999999996,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 223,
+                "max_abs_diff": 0.0045065999999999995,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 224,
+                "max_abs_diff": 0.004808899999999998,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 225,
+                "max_abs_diff": 0.004808899999999998,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 226,
+                "max_abs_diff": 0.004808899999999998,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 227,
+                "max_abs_diff": 0.004506200000000002,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 228,
+                "max_abs_diff": 0.018423300000000004,
+                "n_engine": 3,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 229,
+                "max_abs_diff": 0.06792500000000001,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 230,
+                "max_abs_diff": 0.02183500000000002,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 231,
+                "max_abs_diff": 0.0018714999999999982,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 232,
+                "max_abs_diff": 0.002794799999999986,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 233,
+                "max_abs_diff": 0.0027670999999999946,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 234,
+                "max_abs_diff": 0.0029206999999999983,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 235,
+                "max_abs_diff": 0.002798900000000021,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 238,
+                "max_abs_diff": 0.0008074999999999888,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 239,
+                "max_abs_diff": 0.0007058000000000064,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 240,
+                "max_abs_diff": 0.006399399999999944,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 241,
+                "max_abs_diff": 0.005222500000000019,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 242,
+                "max_abs_diff": 0.004035899999999981,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 243,
+                "max_abs_diff": 0.003893499999999994,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 244,
+                "max_abs_diff": 0.0028722999999999943,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 245,
+                "max_abs_diff": 0.0025402999999999953,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 246,
+                "max_abs_diff": 0.0014112000000000013,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 247,
+                "max_abs_diff": 0.001698199999999983,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 248,
+                "max_abs_diff": 0.0016512000000000748,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 249,
+                "max_abs_diff": 0.00268560000000001,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 250,
+                "max_abs_diff": 0.002467300000000061,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 251,
+                "max_abs_diff": 0.0010601999999999834,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 252,
+                "max_abs_diff": 0.0016401000000000332,
+                "n_engine": 3,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 253,
+                "max_abs_diff": 0.015207600000000002,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 254,
+                "max_abs_diff": 0.0064467,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 255,
+                "max_abs_diff": 0.00886140000000002,
+                "n_engine": 6,
+                "n_reference": 6,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 256,
+                "max_abs_diff": 0.002728399999999992,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 257,
+                "max_abs_diff": 0.002927900000000011,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 258,
+                "max_abs_diff": 0.0072324,
+                "n_engine": 6,
+                "n_reference": 6,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 259,
+                "max_abs_diff": 0.0050524999999999876,
+                "n_engine": 6,
+                "n_reference": 6,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 260,
+                "max_abs_diff": 0.0026175999999999977,
+                "n_engine": 6,
+                "n_reference": 6,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 261,
+                "max_abs_diff": 0.003218700000000005,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 262,
+                "max_abs_diff": 0.002388399999999999,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 263,
+                "max_abs_diff": 0.004055000000000003,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 264,
+                "max_abs_diff": 0.009078300000000011,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 265,
+                "max_abs_diff": 0.003702700000000003,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 266,
+                "max_abs_diff": 0.0032420000000000226,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 267,
+                "max_abs_diff": 0.0026259000000000143,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 268,
+                "max_abs_diff": 0.001787900000000009,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 269,
+                "max_abs_diff": 0.0016747999999999763,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 270,
+                "max_abs_diff": 0.0016747999999999763,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 271,
+                "max_abs_diff": 0.0016747999999999763,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 272,
+                "max_abs_diff": 0.0013909000000000282,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 273,
+                "max_abs_diff": 0.0015614999999999995,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 274,
+                "max_abs_diff": 0.0036189000000000082,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 275,
+                "max_abs_diff": 0.0024576999999999997,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 276,
+                "max_abs_diff": 0.0010528999999999998,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 277,
+                "max_abs_diff": 0.0018677,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 278,
+                "max_abs_diff": 0.0012073999999999974,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 279,
+                "max_abs_diff": 0.0012073999999999974,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 280,
+                "max_abs_diff": 0.0012073999999999974,
+                "n_engine": 5,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 281,
+                "max_abs_diff": 0.004060099999999983,
+                "n_engine": 6,
+                "n_reference": 6,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 282,
+                "max_abs_diff": 0.005876100000000009,
+                "n_engine": 7,
+                "n_reference": 8,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 283,
+                "max_abs_diff": 0.011965299999999957,
+                "n_engine": 7,
+                "n_reference": 6,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 284,
+                "max_abs_diff": 0.003994999999999971,
+                "n_engine": 6,
+                "n_reference": 6,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 285,
+                "max_abs_diff": 0.0011867999999999879,
+                "n_engine": 4,
+                "n_reference": 5,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 286,
+                "max_abs_diff": 0.0016994999999999927,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 287,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 288,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 289,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 290,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 291,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 292,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 293,
+                "max_abs_diff": 0.005627799999999961,
+                "n_engine": 4,
+                "n_reference": 4,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 294,
+                "max_abs_diff": 0.007587400000000022,
+                "n_engine": 3,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 295,
+                "max_abs_diff": 0.00785950000000002,
+                "n_engine": 2,
+                "n_reference": 2,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 296,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 297,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 298,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 299,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 300,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 301,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 302,
+                "max_abs_diff": 0.012869199999999997,
+                "n_engine": 2,
+                "n_reference": 3,
+                "unmatched_engine": 0,
+                "unmatched_reference": 1
+              },
+              {
+                "frame_id": 303,
+                "max_abs_diff": 0.009124800000000044,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 304,
+                "max_abs_diff": 0.015529999999999988,
+                "n_engine": 1,
+                "n_reference": 1,
+                "unmatched_engine": 0,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 313,
+                "max_abs_diff": 0.08100769999999999,
+                "n_engine": 4,
+                "n_reference": 3,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 314,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 315,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 316,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 317,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 318,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 319,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              },
+              {
+                "frame_id": 320,
+                "max_abs_diff": 0.030208000000000013,
+                "n_engine": 3,
+                "n_reference": 2,
+                "unmatched_engine": 1,
+                "unmatched_reference": 0
+              }
+            ],
+            "init_frames_box_max_abs_diff_norm": [
+              {
+                "frame_id": 0,
+                "max_abs_diff": 0.0021715999999999958
+              }
+            ],
+            "iou_histogram": [
+              {
+                "count": 0,
+                "high": 0.5,
+                "low": 0.0
+              },
+              {
+                "count": 10,
+                "high": 0.75,
+                "low": 0.5
+              },
+              {
+                "count": 28,
+                "high": 0.9,
+                "low": 0.75
+              },
+              {
+                "count": 48,
+                "high": 0.95,
+                "low": 0.9
+              },
+              {
+                "count": 378,
+                "high": 0.99,
+                "low": 0.95
+              },
+              {
+                "count": 246,
+                "high": 0.999,
+                "low": 0.99
+              },
+              {
+                "count": 0,
+                "high": 1.0000001,
+                "low": 0.999
+              }
+            ],
+            "iou_min": 0.639065742777624,
+            "limit": 0.001,
+            "matched_pairs": 710,
+            "per_frame_max_diff_histogram": [
+              {
+                "count": 17,
+                "high": 1e-06,
+                "low": 0.0
+              },
+              {
+                "count": 0,
+                "high": 1e-05,
+                "low": 1e-06
+              },
+              {
+                "count": 0,
+                "high": 0.0001,
+                "low": 1e-05
+              },
+              {
+                "count": 8,
+                "high": 0.0005,
+                "low": 0.0001
+              },
+              {
+                "count": 23,
+                "high": 0.001,
+                "low": 0.0005
+              },
+              {
+                "count": 69,
+                "high": 0.002,
+                "low": 0.001
+              },
+              {
+                "count": 118,
+                "high": 0.005,
+                "low": 0.002
+              },
+              {
+                "count": 42,
+                "high": 0.01,
+                "low": 0.005
+              },
+              {
+                "count": 43,
+                "high": null,
+                "low": 0.01
+              }
+            ],
+            "unmatched_engine_total": 21,
+            "unmatched_reference_total": 45
+          },
+          "cpu_occupancy_basis": "进程 user+sys CPU 秒 / init+320 帧 update 墙钟（100% = 一个核）",
+          "cpu_occupancy_pct": 81.45,
+          "engine": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-fp16-640.engine",
+          "engine_sha256": "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963",
+          "finished_unix": 1790987595.845,
+          "frames": {
+            "n_update": 320,
+            "update_frame_ids": [
+              1,
+              320
+            ]
+          },
+          "frozen_v_header": {
+            "conf": 0.25,
+            "device": "mps",
+            "imgsz": 640,
+            "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+          },
+          "imgsz_override": null,
+          "imgsz_passed_to_predict": 640,
+          "init": {
+            "box_norm": [
+              0.4446039270172931,
+              0.7078459879432423,
+              0.0553960729827069,
+              0.16146109855182247
+            ],
+            "frame_id": 0,
+            "t_init_ms": 2492.6404
+          },
+          "manifest_identity": {
+            "association": {
+              "algorithm": "botsort",
+              "args": {
+                "appearance_thresh": 0.8,
+                "fuse_score": true,
+                "gmc_method": "sparseOptFlow",
+                "match_thresh": 0.7,
+                "model": "auto",
+                "new_track_thresh": 0.25,
+                "proximity_thresh": 0.5,
+                "track_buffer": 30,
+                "track_high_thresh": 0.25,
+                "track_low_thresh": 0.1,
+                "tracker_type": "botsort",
+                "with_reid": false
+              }
+            },
+            "backend": "ultralytics",
+            "bind_iou": 0.5,
+            "device": "cuda:0",
+            "device_fallback": null,
+            "freeze_sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c",
+            "gmc_source": null,
+            "history_depth": null,
+            "imgsz": 640,
+            "level2": null,
+            "mode": "compat",
+            "name": "det-assoc-v1",
+            "nms_iou": 0.7,
+            "pinned_version": "8.4.104",
+            "resolver": null,
+            "score_threshold": 0.25,
+            "spec_sha256": "76919cf73ff47b2dffca84419758b06171393bdf9d19d6a108f40bea547e6c1d",
+            "threshold_source": "spec",
+            "ultralytics_version": "8.4.104",
+            "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+          },
+          "plugin_state_counts": {
+            "lost": 291,
+            "ok": 29
+          },
+          "raw_frames_file": "s1-det-assoc-v1-fp16-640-frames.json",
+          "raw_frames_sha256": "5d689539ec75d733694153c2754302089a444b4c140a2012759816796410bf42",
+          "rss_mb_after_updates": 1726.90234375,
+          "ru_maxrss_mb": 1726.66,
+          "runtime_stack": {
+            "cuda_arch_list": [
+              "sm_80",
+              "sm_90",
+              "sm_100",
+              "sm_110",
+              "sm_120",
+              "compute_120"
+            ],
+            "cuda_available": true,
+            "cuda_capability": [
+              8,
+              7
+            ],
+            "cuda_device": "Orin",
+            "cudnn": 91300,
+            "cv2": "4.11.0",
+            "image_env": {
+              "CUDA_VERSION": null,
+              "ENG_JET_IMAGE": null,
+              "NVIDIA_PYTORCH_VERSION": null,
+              "PYTORCH_VERSION": null,
+              "TRT_VERSION": null
+            },
+            "in_container": false,
+            "lap": "0.5.13",
+            "ld_library_path": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/../../lib64:",
+            "machine": "aarch64",
+            "module_files": {
+              "cv2": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/__init__.py",
+              "lap": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/lap/__init__.py",
+              "numpy": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+              "onnx": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/onnx/__init__.py",
+              "tensorrt": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+              "torch": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torch/__init__.py",
+              "torchvision": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torchvision/__init__.py",
+              "ultralytics": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/ultralytics/__init__.py"
+            },
+            "numpy": "1.26.4",
+            "onnx": "1.18.0",
+            "python": "3.12.3",
+            "tensorrt": "10.16.2.10",
+            "torch": "2.9.1+cu130",
+            "torch_cuda": "13.0",
+            "torchvision": "0.24.1",
+            "ultralytics": "8.4.104",
+            "venv": {
+              "is_venv": true,
+              "pyvenv_cfg": {
+                "command": "/usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv",
+                "executable": "/usr/bin/python3.12",
+                "home": "/usr/bin",
+                "include-system-site-packages": "true",
+                "version": "3.12.3"
+              },
+              "sys_base_prefix": "/usr",
+              "sys_prefix": "/home/jetson/eng-jet/sysvenv",
+              "system_site_packages": true
+            }
+          },
+          "started_unix": 1790987574.486,
+          "timing": {
+            "t_assoc_ms": {
+              "max": 6.4203,
+              "min": 0.8379,
+              "n": 320,
+              "p50": 1.9428,
+              "p95": 2.6687
+            },
+            "t_detect_ms": {
+              "max": 24.8564,
+              "min": 10.2751,
+              "n": 320,
+              "p50": 16.1598,
+              "p95": 22.8679
+            },
+            "t_gmc_ms": {
+              "max": 95.1275,
+              "min": 4.4114,
+              "n": 320,
+              "p50": 12.2422,
+              "p95": 39.0198
+            },
+            "t_update_ms": {
+              "max": 116.5879,
+              "min": 18.9492,
+              "n": 320,
+              "p50": 33.6532,
+              "p95": 59.2934
+            }
+          },
+          "verdict": {
+            "consistency": {
+              "box_max_abs_diff_norm": 0.09919050000000001,
+              "count_mismatch_first_50": 3,
+              "limit": 0.001,
+              "pass": false,
+              "unmatched_detections": 66
+            },
+            "latency": {
+              "gate_ms": 200.0,
+              "n": 320,
+              "pass": true,
+              "update_p95_ms": 59.2934,
+              "within_50ms": false
+            },
+            "verdict": "STOP(FP16_BOX_DIVERGENCE)"
+          }
+        },
+        "trtexec": {
+          "command": "/usr/src/tensorrt/bin/trtexec --loadEngine=/home/jetson/eng-jet/results/d/det-assoc-v1-fp16-640.plan --warmUp=1000 --duration=10 --iterations=100 --avgRuns=100",
+          "log": "trtexec-det-assoc-v1-fp16-640.log",
+          "log_sha256": "9d49a6f6b123d9433acd5e2cd8a130d1785735a569be8c991c399a3ca253604d",
+          "metadata": {
+            "args": {
+              "batch": 1,
+              "data": null,
+              "dynamic": false,
+              "fraction": 1.0,
+              "nms": false,
+              "opset": null,
+              "quantize": 16,
+              "simplify": false,
+              "workspace": null
+            },
+            "author": "Ultralytics",
+            "batch": 1,
+            "channels": 3,
+            "date": "2026-10-02T20:20:17.559805",
+            "description": "Ultralytics YOLO11n model trained on ~/TetheredDroneTracking/outputs/eng-det/yolo/data.yaml",
+            "docs": "https://docs.ultralytics.com",
+            "end2end": false,
+            "head": "Detect",
+            "imgsz": [
+              640,
+              640
+            ],
+            "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+            "names": {
+              "0": "vehicle",
+              "1": "target"
+            },
+            "stride": 32,
+            "task": "detect",
+            "version": "8.4.104"
+          },
+          "parsed": {
+            "D2H Latency": {
+              "max": 0.0205078,
+              "mean": 0.0180444,
+              "median": 0.0185547,
+              "min": 0.0107422,
+              "percentile(90%)": 0.0195312,
+              "percentile(95%)": 0.0195312,
+              "percentile(99%)": 0.0197754
+            },
+            "Enqueue Time": {
+              "max": 3.79053,
+              "mean": 3.36725,
+              "median": 3.4082,
+              "min": 2.08594,
+              "percentile(90%)": 3.46143,
+              "percentile(95%)": 3.48926,
+              "percentile(99%)": 3.64111
+            },
+            "GPU Compute Time": {
+              "max": 4.75879,
+              "mean": 4.7393,
+              "median": 4.73926,
+              "min": 4.67188,
+              "percentile(90%)": 4.74561,
+              "percentile(95%)": 4.74731,
+              "percentile(99%)": 4.75195
+            },
+            "H2D Latency": {
+              "max": 0.367188,
+              "mean": 0.335468,
+              "median": 0.335449,
+              "min": 0.30957,
+              "percentile(90%)": 0.339844,
+              "percentile(95%)": 0.342773,
+              "percentile(99%)": 0.350586
+            },
+            "Latency": {
+              "max": 5.13086,
+              "mean": 5.0928,
+              "median": 5.09229,
+              "min": 5.02051,
+              "percentile(90%)": 5.10156,
+              "percentile(95%)": 5.10449,
+              "percentile(99%)": 5.11621
+            },
+            "Throughput": 210.823,
+            "tensorrt_version_line": "[TensorRT v101602]"
+          },
+          "plan_sha256": "f2939f6b9b48d2ac93d42e130d29cf6713a80f787b44b991ae916d748ff034b8",
+          "returncode": 0
+        }
+      }
+    },
+    "execution_stack": {
+      "env": [
+        "unset LD_LIBRARY_PATH",
+        "export YOLO_AUTOINSTALL=false YOLO_OFFLINE=true",
+        "export YOLO_CONFIG_DIR=$HOME/eng-jet/home/yolo-config",
+        "export CUDA_CACHE_PATH=$HOME/eng-jet/home/cuda-cache",
+        "export PYTHONDONTWRITEBYTECODE=1",
+        "cd $HOME/eng-jet/code"
+      ],
+      "runtime_stack_ref": "engines.640.s1.runtime_stack（实跑读数，AC-2 修订 5）",
+      "venv": "~/eng-jet/sysvenv"
+    },
+    "kept_note": "S1 保持 STOP(FP16_BOX_DIVERGENCE)（用户题 7 (α)：记录偏差并继续，verdict 不改写）；本轮不重跑 S1、不重导出、不换矩形引擎作对象；账本：2026-10-03 P1-ENG-JET-001 — 用户选题 7 (α)：S1 STOP 记录偏差、以方形 FP16 引擎继续（supervisor 会话代录）",
+    "planned_protocol": {
+      "comparison": "frozen-V（MPS）：帧 0…49 计数不一致 = 0、帧 1…320 配对最大差 ≤ 1e-3、两侧未配对 0（AC-2 修订 1）",
+      "frames": "a7 帧 0（init）+ 帧 1..320 update（n = 320，AC-2 修订 1 / IR-6）",
+      "init_box": [
+        0.4446039270172931,
+        0.7078459879432423,
+        0.0553960729827069,
+        0.16146109855182247
+      ],
+      "init_box_source": "docs/evidence/P1-ENG-FAST-002-latency.json frames.init_box（G-7 离线用户框替身，AC-2 修订 1 / IR-5；非检测器产出；不读不传真值）"
+    },
+    "readings_round": "K1K3K4补跑D",
+    "rect_480x640_not_in_verdict": {
+      "consistency": {
+        "box_max_abs_diff_norm": 0.025914099999999995,
+        "count_mismatch_first_50": 0,
+        "limit": 0.001,
+        "pass": false,
+        "unmatched_detections": 0
+      },
+      "latency": {
+        "gate_ms": 200.0,
+        "n": 320,
+        "pass": true,
+        "update_p95_ms": 58.9542,
+        "within_50ms": false
+      },
+      "verdict": "STOP(FP16_BOX_DIVERGENCE)"
+    },
+    "square": {
+      "consistency": {
+        "box_max_abs_diff_norm": 0.09919050000000001,
+        "count_mismatch_first_50": 3,
+        "limit": 0.001,
+        "pass": false,
+        "unmatched_detections": 66
+      },
+      "latency": {
+        "gate_ms": 200.0,
+        "n": 320,
+        "pass": true,
+        "update_p95_ms": 59.2934,
+        "within_50ms": false
+      },
+      "verdict": "STOP(FP16_BOX_DIVERGENCE)"
+    },
+    "tegrastats_s1_window": {
+      "gr3d_pct": {
+        "max": 91.0,
+        "min": 0.0,
+        "n": 47,
+        "p50": 14.0,
+        "p95": 79.0
+      },
+      "ram_total_mb": 7485,
+      "ram_used_mb": {
+        "max": 2730.0,
+        "min": 1845.0,
+        "n": 47,
+        "p50": 2717.0,
+        "p95": 2727.0
+      },
+      "samples": 47,
+      "unit_note": "tegrastats 原文单位 MB；Orin 统一内存（CPU/GPU 共享）"
+    },
+    "verdict": "STOP(FP16_BOX_DIVERGENCE)",
+    "verdict_basis": "方形引擎（imgsz=640）两分量（AC-2 / AC-2 修订 1）；矩形引擎同口径单独报告、不进 verdict（§2.1、AC-2 修订 4）"
+  },
+  "S2": {
+    "binary_compat_note": "官方 cu130 torch 2.9.1 无 sm_87 原生 SASS，按同主版本二进制兼容（sm_80 cubin）运行；检测推理走原生支持 SM 87 的系统 TensorRT 10.16（AC-2 修订 6）",
+    "detection_path": "系统 TensorRT 10.16 方形 FP16 引擎（补跑D 导出，身份见 S1.engines.640.export；本轮使用前板上 sha 复核见 engine_identity_check）",
+    "engine_identity_check": [
+      {
+        "board": "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963",
+        "expected": "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963",
+        "match": true,
+        "path": "results/d/engines/det-assoc-v1-fp16-640.engine"
+      }
+    ],
+    "engine_sha_at_start": [
+      "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963  /home/jetson/eng-jet/results/d/engines/det-assoc-v1-fp16-640.engine"
+    ],
+    "no_kernel_image": false,
+    "overall": {
+      "missing": [],
+      "per_rate": {
+        "15hz": "STOP(FRAME_DROP)"
+      },
+      "verdict": "STOP(FRAME_DROP)"
+    },
+    "plan": {
+      "add_30hz": false,
+      "rates_hz": [
+        15.0
+      ],
+      "rule": "S1 p95 ≤ 33.0 ms 时加测 30 Hz（§2.1 S2 字面）",
+      "square_s1_update_p95_ms": 59.2934
+    },
+    "resumed": "RESUMED_AFTER_USER_RULING(S1)",
+    "resumed_ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户选题 7 (α)：S1 STOP 记录偏差、以方形 FP16 引擎继续（supervisor 会话代录）",
+    "round": "K1K3K4补跑E",
+    "rule_note": "§2.1 S2 三项合取（AC-3 修订 1）：热降频 → STOP(THERMAL_THROTTLE)；丢帧 → STOP(FRAME_DROP)；末/首 5 min p95 > 1.2 倍 → STOP(LATENCY_OVER)；30 Hz 加测条件为 S1 方形 p95 ≤ 33 ms（未达，plan.add_30hz=false）",
+    "runs": {
+      "15hz": {
+        "bins": [
+          {
+            "bin": 0,
+            "cpu_cur_freq_khz": {
+              "max": 1728000.0,
+              "min": 729600.0,
+              "n": 1782,
+              "p50": 729600.0,
+              "p95": 1574400.0
+            },
+            "cpu_max_freq_khz_min": 1728000,
+            "dropped": 78,
+            "gpu_cur_freq_hz": {
+              "max": 1020000000.0,
+              "min": 1020000000.0,
+              "n": 297,
+              "p50": 1020000000.0,
+              "p95": 1020000000.0
+            },
+            "gpu_max_freq_hz_min": 1020000000,
+            "max": 126.739,
+            "min": 18.566,
+            "n": 4407,
+            "p50": 40.746,
+            "p95": 66.993,
+            "samples": 297,
+            "t_from_s": 0.0,
+            "t_to_s": 300.0,
+            "temps_c_max": {
+              "cpu-thermal": 50.843,
+              "cv0-thermal": -0.001,
+              "cv1-thermal": -0.001,
+              "cv2-thermal": -0.001,
+              "gpu-thermal": 50.781,
+              "soc0-thermal": 50.843,
+              "soc1-thermal": 50.312,
+              "soc2-thermal": 50.093,
+              "tj-thermal": 50.875
+            }
+          },
+          {
+            "bin": 1,
+            "cpu_cur_freq_khz": {
+              "max": 1728000.0,
+              "min": 729600.0,
+              "n": 1776,
+              "p50": 729600.0,
+              "p95": 1420800.0
+            },
+            "cpu_max_freq_khz_min": 1728000,
+            "dropped": 28,
+            "gpu_cur_freq_hz": {
+              "max": 1020000000.0,
+              "min": 1020000000.0,
+              "n": 296,
+              "p50": 1020000000.0,
+              "p95": 1020000000.0
+            },
+            "gpu_max_freq_hz_min": 1020000000,
+            "max": 127.744,
+            "min": 19.04,
+            "n": 4458,
+            "p50": 40.724,
+            "p95": 67.148,
+            "samples": 296,
+            "t_from_s": 300.0,
+            "t_to_s": 600.0,
+            "temps_c_max": {
+              "cpu-thermal": 51.093,
+              "cv0-thermal": -0.001,
+              "cv1-thermal": -0.001,
+              "cv2-thermal": -0.001,
+              "gpu-thermal": 51.031,
+              "soc0-thermal": 51.156,
+              "soc1-thermal": 50.593,
+              "soc2-thermal": 50.468,
+              "tj-thermal": 51.187
+            }
+          },
+          {
+            "bin": 2,
+            "cpu_cur_freq_khz": {
+              "max": 1728000.0,
+              "min": 729600.0,
+              "n": 1776,
+              "p50": 729600.0,
+              "p95": 1420800.0
+            },
+            "cpu_max_freq_khz_min": 1728000,
+            "dropped": 28,
+            "gpu_cur_freq_hz": {
+              "max": 1020000000.0,
+              "min": 1020000000.0,
+              "n": 296,
+              "p50": 1020000000.0,
+              "p95": 1020000000.0
+            },
+            "gpu_max_freq_hz_min": 1020000000,
+            "max": 126.824,
+            "min": 18.921,
+            "n": 4458,
+            "p50": 40.855,
+            "p95": 67.169,
+            "samples": 296,
+            "t_from_s": 600.0,
+            "t_to_s": 900.0,
+            "temps_c_max": {
+              "cpu-thermal": 51.25,
+              "cv0-thermal": -0.001,
+              "cv1-thermal": -0.001,
+              "cv2-thermal": -0.001,
+              "gpu-thermal": 51.156,
+              "soc0-thermal": 51.25,
+              "soc1-thermal": 50.687,
+              "soc2-thermal": 50.5,
+              "tj-thermal": 51.25
+            }
+          },
+          {
+            "bin": 3,
+            "cpu_cur_freq_khz": {
+              "max": 1728000.0,
+              "min": 729600.0,
+              "n": 1776,
+              "p50": 729600.0,
+              "p95": 1497600.0
+            },
+            "cpu_max_freq_khz_min": 1728000,
+            "dropped": 28,
+            "gpu_cur_freq_hz": {
+              "max": 1020000000.0,
+              "min": 1020000000.0,
+              "n": 296,
+              "p50": 1020000000.0,
+              "p95": 1020000000.0
+            },
+            "gpu_max_freq_hz_min": 1020000000,
+            "max": 129.004,
+            "min": 19.047,
+            "n": 4458,
+            "p50": 40.749,
+            "p95": 67.453,
+            "samples": 296,
+            "t_from_s": 900.0,
+            "t_to_s": 1200.0,
+            "temps_c_max": {
+              "cpu-thermal": 51.375,
+              "cv0-thermal": -0.001,
+              "cv1-thermal": -0.001,
+              "cv2-thermal": -0.001,
+              "gpu-thermal": 51.218,
+              "soc0-thermal": 51.281,
+              "soc1-thermal": 50.781,
+              "soc2-thermal": 50.593,
+              "tj-thermal": 51.406
+            }
+          },
+          {
+            "bin": 4,
+            "cpu_cur_freq_khz": {
+              "max": 1728000.0,
+              "min": 729600.0,
+              "n": 1776,
+              "p50": 729600.0,
+              "p95": 1497600.0
+            },
+            "cpu_max_freq_khz_min": 1728000,
+            "dropped": 28,
+            "gpu_cur_freq_hz": {
+              "max": 1020000000.0,
+              "min": 1020000000.0,
+              "n": 296,
+              "p50": 1020000000.0,
+              "p95": 1020000000.0
+            },
+            "gpu_max_freq_hz_min": 1020000000,
+            "max": 126.642,
+            "min": 19.092,
+            "n": 4458,
+            "p50": 40.791,
+            "p95": 67.158,
+            "samples": 296,
+            "t_from_s": 1200.0,
+            "t_to_s": 1500.0,
+            "temps_c_max": {
+              "cpu-thermal": 51.375,
+              "cv0-thermal": -0.001,
+              "cv1-thermal": -0.001,
+              "cv2-thermal": -0.001,
+              "gpu-thermal": 51.218,
+              "soc0-thermal": 51.312,
+              "soc1-thermal": 50.75,
+              "soc2-thermal": 50.531,
+              "tj-thermal": 51.406
+            }
+          },
+          {
+            "bin": 5,
+            "cpu_cur_freq_khz": {
+              "max": 1728000.0,
+              "min": 729600.0,
+              "n": 1782,
+              "p50": 729600.0,
+              "p95": 1420800.0
+            },
+            "cpu_max_freq_khz_min": 1728000,
+            "dropped": 28,
+            "gpu_cur_freq_hz": {
+              "max": 1020000000.0,
+              "min": 1020000000.0,
+              "n": 297,
+              "p50": 1020000000.0,
+              "p95": 1020000000.0
+            },
+            "gpu_max_freq_hz_min": 1020000000,
+            "max": 126.511,
+            "min": 19.133,
+            "n": 4458,
+            "p50": 40.687,
+            "p95": 67.131,
+            "samples": 297,
+            "t_from_s": 1500.0,
+            "t_to_s": 1800.0,
+            "temps_c_max": {
+              "cpu-thermal": 51.312,
+              "cv0-thermal": -0.001,
+              "cv1-thermal": -0.001,
+              "cv2-thermal": -0.001,
+              "gpu-thermal": 51.218,
+              "soc0-thermal": 51.25,
+              "soc1-thermal": 50.718,
+              "soc2-thermal": 50.531,
+              "tj-thermal": 51.312
+            }
+          }
+        ],
+        "engine": "/home/jetson/eng-jet/results/d/engines/det-assoc-v1-fp16-640.engine",
+        "engine_sha256": "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963",
+        "finished_unix": 1791004832.596,
+        "frequency_evidence_gaps": [],
+        "hz": 15.0,
+        "imgsz_override": null,
+        "inits": 85,
+        "inits_rejected": 0,
+        "minutes": 30.0,
+        "other_cooling_changes": {
+          "devices": {
+            "cooling_device10:soc2-throttle-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device11:hot-surface-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device2:pwm-fan": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device5:cv0-throttle-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device6:cv1-throttle-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device7:cv2-throttle-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device8:soc0-throttle-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            },
+            "cooling_device9:soc1-throttle-alert": {
+              "first_nonzero_t_s": null,
+              "max_state": 0
+            }
+          },
+          "unconfirmed_alerts": []
+        },
+        "raw_file": "s2-det-assoc-v1-fp16-640-15hz.json",
+        "raw_sha256": "d728660f1f4f3809015a57e824146222099ac6538d009c271d107c5c507e4845",
+        "runtime_stack": {
+          "cuda_arch_list": [
+            "sm_80",
+            "sm_90",
+            "sm_100",
+            "sm_110",
+            "sm_120",
+            "compute_120"
+          ],
+          "cuda_available": true,
+          "cuda_capability": [
+            8,
+            7
+          ],
+          "cuda_device": "Orin",
+          "cudnn": 91300,
+          "cv2": "4.11.0",
+          "image_env": {
+            "CUDA_VERSION": null,
+            "ENG_JET_IMAGE": null,
+            "NVIDIA_PYTORCH_VERSION": null,
+            "PYTORCH_VERSION": null,
+            "TRT_VERSION": null
+          },
+          "in_container": false,
+          "lap": "0.5.13",
+          "ld_library_path": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/../../lib64:",
+          "machine": "aarch64",
+          "module_files": {
+            "cv2": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/__init__.py",
+            "lap": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/lap/__init__.py",
+            "numpy": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+            "onnx": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/onnx/__init__.py",
+            "tensorrt": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+            "torch": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torch/__init__.py",
+            "torchvision": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torchvision/__init__.py",
+            "ultralytics": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/ultralytics/__init__.py"
+          },
+          "numpy": "1.26.4",
+          "onnx": "1.18.0",
+          "python": "3.12.3",
+          "tensorrt": "10.16.2.10",
+          "torch": "2.9.1+cu130",
+          "torch_cuda": "13.0",
+          "torchvision": "0.24.1",
+          "ultralytics": "8.4.104",
+          "venv": {
+            "is_venv": true,
+            "pyvenv_cfg": {
+              "command": "/usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv",
+              "executable": "/usr/bin/python3.12",
+              "home": "/usr/bin",
+              "include-system-site-packages": "true",
+              "version": "3.12.3"
+            },
+            "sys_base_prefix": "/usr",
+            "sys_prefix": "/home/jetson/eng-jet/sysvenv",
+            "system_site_packages": true
+          }
+        },
+        "samples": 1778,
+        "t0_unix": 1791003031.993,
+        "tegrastats": {
+          "gr3d_pct": {
+            "max": 33.0,
+            "min": 0.0,
+            "n": 1797,
+            "p50": 0.0,
+            "p95": 32.0
+          },
+          "ram_total_mb": 7485,
+          "ram_used_mb": {
+            "max": 2125.0,
+            "min": 918.0,
+            "n": 1797,
+            "p50": 2090.0,
+            "p95": 2098.0
+          },
+          "samples": 1797,
+          "unit_note": "tegrastats 原文单位 MB；Orin 统一内存（CPU/GPU 共享）"
+        },
+        "tegrastats_bins": [
+          {
+            "bin": 0,
+            "gr3d_pct_p50": 0.0,
+            "ram_used_mb_max": 1950,
+            "samples": 298,
+            "t_from_s": 0.0,
+            "t_to_s": 300.0,
+            "temps_c_max": {
+              "cpu": 50.843,
+              "gpu": 50.812,
+              "soc0": 50.968,
+              "soc1": 50.312,
+              "soc2": 50.218,
+              "tj": 50.968
+            },
+            "vdd_mw": {
+              "VDD_CPU_GPU_CV": {
+                "max": 2308,
+                "p50": 2070.0
+              },
+              "VDD_IN": {
+                "max": 6658,
+                "p50": 6379.0
+              },
+              "VDD_SOC": {
+                "max": 1515,
+                "p50": 1515.0
+              }
+            }
+          },
+          {
+            "bin": 1,
+            "gr3d_pct_p50": 0.0,
+            "ram_used_mb_max": 2075,
+            "samples": 298,
+            "t_from_s": 300.0,
+            "t_to_s": 600.0,
+            "temps_c_max": {
+              "cpu": 51.156,
+              "gpu": 51.125,
+              "soc0": 51.156,
+              "soc1": 50.687,
+              "soc2": 50.406,
+              "tj": 51.156
+            },
+            "vdd_mw": {
+              "VDD_CPU_GPU_CV": {
+                "max": 2269,
+                "p50": 2070.0
+              },
+              "VDD_IN": {
+                "max": 6618,
+                "p50": 6379.0
+              },
+              "VDD_SOC": {
+                "max": 1515,
+                "p50": 1515.0
+              }
+            }
+          },
+          {
+            "bin": 2,
+            "gr3d_pct_p50": 0.0,
+            "ram_used_mb_max": 2096,
+            "samples": 298,
+            "t_from_s": 600.0,
+            "t_to_s": 900.0,
+            "temps_c_max": {
+              "cpu": 51.343,
+              "gpu": 51.218,
+              "soc0": 51.25,
+              "soc1": 50.718,
+              "soc2": 50.531,
+              "tj": 51.343
+            },
+            "vdd_mw": {
+              "VDD_CPU_GPU_CV": {
+                "max": 2269,
+                "p50": 2070.0
+              },
+              "VDD_IN": {
+                "max": 6618,
+                "p50": 6379.0
+              },
+              "VDD_SOC": {
+                "max": 1515,
+                "p50": 1515.0
+              }
+            }
+          },
+          {
+            "bin": 3,
+            "gr3d_pct_p50": 0.0,
+            "ram_used_mb_max": 2094,
+            "samples": 298,
+            "t_from_s": 900.0,
+            "t_to_s": 1200.0,
+            "temps_c_max": {
+              "cpu": 51.312,
+              "gpu": 51.187,
+              "soc0": 51.281,
+              "soc1": 50.781,
+              "soc2": 50.562,
+              "tj": 51.312
+            },
+            "vdd_mw": {
+              "VDD_CPU_GPU_CV": {
+                "max": 2269,
+                "p50": 2070.0
+              },
+              "VDD_IN": {
+                "max": 6658,
+                "p50": 6379.0
+              },
+              "VDD_SOC": {
+                "max": 1515,
+                "p50": 1515.0
+              }
+            }
+          },
+          {
+            "bin": 4,
+            "gr3d_pct_p50": 0.0,
+            "ram_used_mb_max": 2099,
+            "samples": 299,
+            "t_from_s": 1200.0,
+            "t_to_s": 1500.0,
+            "temps_c_max": {
+              "cpu": 51.218,
+              "gpu": 51.218,
+              "soc0": 51.343,
+              "soc1": 50.718,
+              "soc2": 50.531,
+              "tj": 51.343
+            },
+            "vdd_mw": {
+              "VDD_CPU_GPU_CV": {
+                "max": 2308,
+                "p50": 2070.0
+              },
+              "VDD_IN": {
+                "max": 6738,
+                "p50": 6379.0
+              },
+              "VDD_SOC": {
+                "max": 1515,
+                "p50": 1515.0
+              }
+            }
+          },
+          {
+            "bin": 5,
+            "gr3d_pct_p50": 0.0,
+            "ram_used_mb_max": 2099,
+            "samples": 298,
+            "t_from_s": 1500.0,
+            "t_to_s": 1800.0,
+            "temps_c_max": {
+              "cpu": 51.468,
+              "gpu": 51.218,
+              "soc0": 51.312,
+              "soc1": 50.75,
+              "soc2": 50.531,
+              "tj": 51.468
+            },
+            "vdd_mw": {
+              "VDD_CPU_GPU_CV": {
+                "max": 2344,
+                "p50": 2070.0
+              },
+              "VDD_IN": {
+                "max": 6767,
+                "p50": 6379.0
+              },
+              "VDD_SOC": {
+                "max": 1515,
+                "p50": 1515.0
+              }
+            }
+          }
+        ],
+        "tegrastats_utc_offset_s": -14400,
+        "throttle_events": [],
+        "updates": 26697,
+        "verdict": {
+          "dropped_total": 218,
+          "first_p95_ms": 66.993,
+          "last_p95_ms": 67.131,
+          "p95_ratio": 1.0021,
+          "ratio_limit": 1.2,
+          "ratio_ok": true,
+          "ruling_needed": [],
+          "throttle_events": 0,
+          "verdict": "STOP(FRAME_DROP)"
+        }
+      }
+    },
+    "trt_log_warnings": [
+      "[10/03/2026-00:50:32] [TRT] [W] Using an engine plan file across different models of devices is not supported and is likely to affect performance or even cause errors or deadlock."
+    ],
+    "verdict": "STOP(FRAME_DROP)"
+  },
+  "history": [
+    {
+      "AC-2": "不满足（NOT_RUN 步骤对应 AC 不得记满足，§2.1）",
+      "AC-3": "不满足（NOT_RUN）",
+      "S1": {
+        "container_setup": {
+          "board_only_shim": "~/eng-jet/code/tools/__init__.py（0 字节，仅板上）：镜像内 nvfuser egg 自带顶层 `tools` 普通包，遮蔽仓库的 `tools` 命名空间包导致 `python -m tools.eng_jet.fastlayer_bench` 找不到模块；加空 __init__ 使仓库 tools 优先，仓库未改",
+          "pip": [
+            {
+              "bytes": 8847917,
+              "package": "ultralytics",
+              "version": "8.4.104",
+              "wheel_bytes": 1413385,
+              "wheel_sha256": "2625e73863b06dd882b4024b7a3a033ce712d200e3de58af5252939fb74aa403"
+            },
+            {
+              "bytes": 2691526,
+              "package": "lap",
+              "version": "0.5.13",
+              "wheel_bytes": 1725964,
+              "wheel_sha256": "355600a369281c830f900a9a215f8a8729c89ce3f2bf75e1943386fe3d8d1c88"
+            },
+            {
+              "bytes": 146246,
+              "package": "ultralytics-thop",
+              "version": "2.2.2",
+              "wheel_bytes": 32582,
+              "wheel_sha256": "10ef0f4ab45261516008660619fef114cddc2b7c8383d9d3bd76c1e551208ca3"
+            },
+            {
+              "bytes": 114285416,
+              "package": "opencv-python",
+              "status": "installed_then_uninstalled（容器无 libGL.so.1，import cv2 失败）",
+              "version": "4.11.0.86",
+              "wheel_bytes": 42230439,
+              "wheel_sha256": "1b92ae2c8852208817e6776ba1ea0d6b1e0a1b5431e971a2a0ddd2a8cc398202"
+            },
+            {
+              "bytes": 76898874,
+              "package": "opencv-python-headless",
+              "status": "--no-deps 替换 opencv-python（同版本无 GUI 构建）；见交接 IR-11",
+              "version": "4.11.0.86",
+              "wheel_bytes": 29487060,
+              "wheel_sha256": "6efabcaa9df731f29e5ea9051776715b1bdd1845d7c9530065c7951d2a2899eb"
+            }
+          ],
+          "pip_logs": [
+            {
+              "bytes": 11584,
+              "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/pip-install.log",
+              "sha256": "31daa9722e14e94bda837d3a18baa3534285cfbe1725bf706212dac695b9a9e1"
+            },
+            {
+              "bytes": 6311,
+              "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/pip-headless.log",
+              "sha256": "0ab32aec5e3c6c31360b312f78ef5c52ecf96a7132ff9b1dd04cca1268b21b3f"
+            },
+            {
+              "bytes": 91958,
+              "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/pip-install-report.json",
+              "sha256": "071c42a731bcf2e525603f49357a997fa8d1499c6c44b4768a0e45e2c5e30c48"
+            },
+            {
+              "bytes": 21853,
+              "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/pip-headless-report.json",
+              "sha256": "377a625f839b1ce733b66d9cdfdb558b0c4076e8184e24b3ec60700c95ed4242"
+            }
+          ],
+          "venv": "~/eng-jet/venv（容器内 python3 -m venv --system-site-packages，复用镜像 torch/TensorRT，未重装 torch）"
+        },
+        "engines_exported": [],
+        "execution_stack": {
+          "image": "nvcr.io/nvidia/pytorch:25.08-py3",
+          "runtime_stack_ref": "docs/evidence/P1-ENG-JET-001-env.json s1s2_container_stack"
+        },
+        "export_args": {
+          "device": 0,
+          "dynamic": false,
+          "format": "engine",
+          "half": true,
+          "imgsz": 640,
+          "simplify": false,
+          "workspace": null
+        },
+        "export_attempts": [
+          {
+            "kind": "engine_export",
+            "label": "方形 imgsz=640 FP16 导出（容器 TRT 10.13.2.6）",
+            "log": {
+              "bytes": 5691,
+              "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/ej-export640.log",
+              "sha256": "5a05149eda98306ec2e19d17bc470a52dfbcf02b8352ed38e4ae19afb70c7941"
+            },
+            "log_excerpt": [
+              "PyTorch: starting from '/work/code/outputs/eng-det/runs/run-1/weights/last.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 6, 8400) (5.2 MB)",
+              "ONNX: starting export with onnx 1.18.0 opset 17...",
+              "ONNX: export success ✅ 1.6s, saved as '/work/code/outputs/eng-det/runs/run-1/weights/last.onnx' (10.1 MB)",
+              "TensorRT: starting export with TensorRT 10.13.2.6...",
+              "TensorRT: building FP16 engine as /work/code/outputs/eng-det/runs/run-1/weights/last.engine",
+              "[10/02/2026-21:16:32] [TRT] [E] IBuilder::buildSerializedNetwork: Error Code 9: API Usage Error (Target GPU SM 87 is not supported by this TensorRT release. In checkCurrentSMEnabled at optimizer/common/builderHelpers.cpp:707)",
+              "ERROR ❌ TensorRT: export failure 2.1s: TensorRT engine build failed, check logs for errors"
+            ],
+            "onnx_byproduct": {
+              "bytes": 10565785,
+              "path": "~/eng-jet/code/outputs/eng-det/runs/run-1/weights/last.onnx",
+              "sha256": "5d0d1548aad267a7f8d3628c8c723b66aa57b7d372b79eeff2c94d72675a938f"
+            },
+            "pt_sha256_after": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+            "recorded_utc": "2026-10-02T21:18:53Z",
+            "started_utc": "2026-10-02T21:16:24Z",
+            "status": "failed: TensorRT Error Code 9 Target GPU SM 87 is not supported by this TensorRT release",
+            "wall_s": 9.7
+          }
+        ],
+        "planned_protocol": {
+          "comparison": "frozen-V（MPS）：帧 0…49 计数不一致 = 0、帧 1…320 配对最大差 ≤ 1e-3、两侧未配对 0（AC-2 修订 1）",
+          "frames": "a7 帧 0（init）+ 帧 1..320 update（n = 320，AC-2 修订 1 / IR-6）",
+          "init_box": [
+            0.4446039270172931,
+            0.7078459879432423,
+            0.0553960729827069,
+            0.16146109855182247
+          ],
+          "init_box_source": "docs/evidence/P1-ENG-FAST-002-latency.json frames.init_box（G-7 离线用户框替身，AC-2 修订 1 / IR-5；非检测器产出；不读不传真值）"
+        },
+        "previous_round": {
+          "board_torch_reading": {
+            "python_import_tensorrt_torch": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'torch'\nrc=1\ntensorrt 10.16.2.10\nModuleNotFoundError: No module named 'torch'\n",
+            "source": "docs/evidence/P1-ENG-JET-001-env.json readings.python_import_tensorrt_torch / readings.torch_availability",
+            "torch_availability": "/usr/bin/python3: No module named pip\nls: cannot access '/usr/lib/python3*/dist-packages/torch': No such file or directory\nls: cannot access '/usr/local/lib/python3*/dist-packages/torch': No such file or directory\nnvcr.io/nvidia/pytorch:25.08-py3 33.9GB\nCUDA_VERSION=13.0.0.044\nTRT_VERSION=10.13.2.6\nPYTORCH_VERSION=2.8.0a0+34c6371\nNVIDIA_PYTORCH_VERSION=25.08\n"
+          },
+          "verdict": "NOT_RUN(PATH_UNAVAILABLE(system-torch))"
+        },
+        "pt_sha256_after_attempt": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9（板上 sha256sum，与规格一致；未被改写）",
+        "reason": "提案决策记录「S1/S2 容器栈落实」把 S1/S2 执行栈定为板上 NGC 容器 nvcr.io/nvidia/pytorch:25.08-py3。容器内 torch CUDA 可用（Orin，torch 2.8.0a0 / CUDA 13.0），冻结 .pt → ONNX 导出成功，但 TensorRT 10.13.2.6 建 FP16 引擎报 `Error Code 9: Target GPU SM 87 is not supported by this TensorRT release`；同一 ONNX 用容器自带 trtexec --fp16 复证同错。该镜像的 TensorRT 不支持 Orin 的 SM 87，§2.1/§3.1 要求的 TRT FP16 引擎无法在合同执行栈产出；按 §2.1「不自行修复环境」与派发「容器路径因运行时不可用而走不通时不变通」，S1/S2 记 NOT_RUN(PATH_UNAVAILABLE(container-tensorrt-sm87))（与 IR-3 已接受的形状同型），不改用宿主 TensorRT 10.16 拼接、不换镜像、不装其他包，路径选择交用户。",
+        "rect_engine": "未尝试：方形引擎已在 TRT 建引擎阶段失败，同一镜像同一 SM 87 限制，矩形引擎（imgsz=480,640）不会不同；不重复消耗",
+        "tensorrt_cross_check": {
+          "command": "trtexec --onnx=<last.onnx> --fp16 --skipInference（容器 /opt/tensorrt/bin/trtexec）",
+          "excerpt": [
+            "[10/02/2026-21:17:16] [I] Compute Capability: 8.7",
+            "[10/02/2026-21:17:16] [I] TensorRT version: 10.13.2",
+            "[10/02/2026-21:17:17] [E] Error[9]: IBuilder::buildSerializedNetwork: Error Code 9: API Usage Error (Target GPU SM 87 is not supported by this TensorRT release. In checkCurrentSMEnabled at optimizer/common/builderHelpers.cpp:707)",
+            "&&&& FAILED TensorRT.trtexec [TensorRT v101302] [b6] # /opt/tensorrt/bin/trtexec --onnx=/work/code/outputs/eng-det/runs/run-1/weights/last.onnx --fp16 --skipInference"
+          ],
+          "raw": {
+            "bytes": 9312,
+            "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/trtexec-onnx-sm87-check.log",
+            "sha256": "fcf0d799de61b9ad1d16ff297a939a84341b77d69443269777c8410ffbbdefdb"
+          }
+        },
+        "verdict": "NOT_RUN(PATH_UNAVAILABLE(container-tensorrt-sm87))"
+      },
+      "S2": {
+        "bins": [],
+        "reason": "依赖 S1 方形 TRT 引擎；同 S1。",
+        "verdict": "NOT_RUN(PATH_UNAVAILABLE(container-tensorrt-sm87))"
+      },
+      "round": "K1K3K4补跑"
+    },
+    {
+      "AC-2": "不满足（NOT_RUN 步骤对应 AC 不得记满足，§2.1）",
+      "AC-3": "不满足（NOT_RUN）",
+      "S1": {
+        "engines_exported": [],
+        "execution_stack": {
+          "runtime_stack_ref": "docs/evidence/P1-ENG-JET-001-env.json s1s2_system_stack",
+          "venv": "~/eng-jet/sysvenv"
+        },
+        "export_attempts": [],
+        "ledger_ref": "docs/evidence/P1-ENG-JET-001-ledger.json dimensions.sub1_torch",
+        "planned_protocol": {
+          "comparison": "frozen-V（MPS）：帧 0…49 计数不一致 = 0、帧 1…320 配对最大差 ≤ 1e-3、两侧未配对 0（AC-2 修订 1）",
+          "frames": "a7 帧 0（init）+ 帧 1..320 update（n = 320，AC-2 修订 1 / IR-6）",
+          "init_box": [
+            0.4446039270172931,
+            0.7078459879432423,
+            0.0553960729827069,
+            0.16146109855182247
+          ],
+          "init_box_source": "docs/evidence/P1-ENG-FAST-002-latency.json frames.init_box（G-7 离线用户框替身，AC-2 修订 1 / IR-5；非检测器产出；不读不传真值）"
+        },
+        "reason": "提案决策记录「S1/S2 系统栈落实（B）」与「needs_user」题 4（CLARIFY-B2）：在板上系统 Python 的 --system-site-packages venv 中从官方 cu130 索引安装 torch 2.9.1+cu130 / torchvision 0.24.1，依赖从 PyPI 解析，SUB:1 额度 ≤ 32 包 / 下载 ≤ 3.5 GB / 新增磁盘 ≤ 8 GB。本轮先以 pip download --no-deps 取回两枚官方轮子（520,271,881 B，sha 与题 4 一致），再以 pip 24.0 `install --dry-run --report --no-cache-dir` 解析依赖——该版 pip 干跑会把每个依赖的轮子体完整取回到临时目录后丢弃，22 个轮子共 2,318,455,950 B（含解析器选中的 PyPI 同名 torchvision 2,386,737 B）被取回且未留存。累计下载按保守口径（板上外网接口收包）3,093,609,695 B ≤ 3.5 GB；完成安装还须重新取回 21 个依赖轮子 2,316,069,213 B，合计约 5.4 GB（收包口径约 5.6 GB）> 3.5 GB。按派发「任一上限将超即停」停在安装之前：torch 未安装，题 4 的安装后先验证（get_arch_list / CUDA matmul / TensorRT 共存）未执行，S1/S2 未运行；未换源、未 --no-deps 变通、未 sudo/apt。",
+        "rect_engine": "未尝试（同一原因）",
+        "verdict": "NOT_RUN(PATH_UNAVAILABLE(system-torch))",
+        "verify": "NOT_RUN（torch 未安装）"
+      },
+      "S2": {
+        "bins": [],
+        "reason": "依赖 S1 方形 TRT 引擎；同 S1。",
+        "verdict": "NOT_RUN(PATH_UNAVAILABLE(system-torch))"
+      },
+      "round": "K1K3K4补跑B"
+    },
+    {
+      "AC-2": "不满足（NOT_RUN 步骤对应 AC 不得记满足，§2.1）",
+      "AC-3": "不满足（NOT_RUN）",
+      "S1": {
+        "engines_exported": [],
+        "execution_stack": {
+          "runtime_stack_ref": "docs/evidence/P1-ENG-JET-001-env.json s1s2_system_stack_c.runtime_stack",
+          "venv": "~/eng-jet/sysvenv"
+        },
+        "export_attempts": [],
+        "ledger_ref": "docs/evidence/P1-ENG-JET-001-ledger.json dimensions.sub1_torch / board_pip",
+        "planned_protocol": {
+          "comparison": "frozen-V（MPS）：帧 0…49 计数不一致 = 0、帧 1…320 配对最大差 ≤ 1e-3、两侧未配对 0（AC-2 修订 1）",
+          "frames": "a7 帧 0（init）+ 帧 1..320 update（n = 320，AC-2 修订 1 / IR-6）",
+          "init_box": [
+            0.4446039270172931,
+            0.7078459879432423,
+            0.0553960729827069,
+            0.16146109855182247
+          ],
+          "init_box_source": "docs/evidence/P1-ENG-FAST-002-latency.json frames.init_box（G-7 离线用户框替身，AC-2 修订 1 / IR-5；非检测器产出；不读不传真值）"
+        },
+        "reason": "提案「needs_user」题 4（CLARIFY-B2）与决策记录「SUB:3 落实与安装方式合同解释」装后顺序：先 `fastlayer_bench verify`——`torch.cuda.get_arch_list()` 输出含 `sm_87`、板上 CUDA matmul 读回核对、与系统 TensorRT 10.16 共存核对点——不可用即停回用户、不在信封内换源。K1K3K4补跑C 按合同方式（逐个 `pip download --no-deps` 哈希锁定、离线按文件安装）装好官方 cu130 torch 2.9.1+cu130 / torchvision 0.24.1 后 verify：`get_arch_list()` = sm_80, sm_90, sm_100, sm_110, sm_120, compute_120，**不含 sm_87**（设备算力 8.7）；CUDA matmul 读回（fp32/fp16/全 1 精确）、torch 与系统 TensorRT 同进程建引擎并推理、无 torch 干净进程建引擎三项均通过。第一项未过 → verify 判不通过，按「任一失败即停下回用户改来源」停在 S1 之前：引擎导出 0 次、S1/S2 未运行；未换源、未改判据、未以 sm_80 二进制兼容自行放行。附加只读诊断（cuDNN conv2d fp32/fp16、torchvision CUDA nms、逐元素归约）均通过，仅供裁定参考，不构成 verify 通过。",
+        "rect_engine": "未尝试（同一原因）",
+        "verdict": "NOT_RUN(PATH_UNAVAILABLE(system-torch))",
+        "verdict_shape_note": "沿用 IR-3/IR-14 已接受形状 PATH_UNAVAILABLE(system-torch)（不自造 STOP 码；STOP 闭集无对应码）；本轮具体停因 = 装后 verify 未过，形状是否另记见交接「待裁定（补跑C）」IR-16",
+        "verify_ref": "docs/evidence/P1-ENG-JET-001-env.json s1s2_system_stack_c.verify"
+      },
+      "S2": {
+        "bins": [],
+        "reason": "依赖 S1 方形 TRT 引擎；同 S1（verify 未过，未导出引擎）。",
+        "verdict": "NOT_RUN(PATH_UNAVAILABLE(system-torch))"
+      },
+      "round": "K1K3K4补跑C"
+    },
+    {
+      "S2": {
+        "plan": {
+          "add_30hz": false,
+          "rates_hz": [
+            15.0
+          ],
+          "rule": "S1 p95 ≤ 33.0 ms 时加测 30 Hz（§2.1 S2 字面）",
+          "square_s1_update_p95_ms": 59.2934
+        },
+        "runs": {},
+        "verdict": "NOT_RUN(S1 STOP FP16_BOX_DIVERGENCE)"
+      },
+      "note": "补跑E 前的 S2 记录原文；S1 读数仍为当前 S1（补跑D），不重复入 history",
+      "round": "K1K3K4补跑D"
+    }
+  ],
+  "raw": [
+    {
+      "bytes": 48464,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/board-sha-d-expected.json",
+      "sha256": "50bcc7b0e075550e179c828e414ab0314a83dc2d0324bce6fc1b9ac0551bd980"
+    },
+    {
+      "bytes": 1643,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/cleanup-sub1-list.tsv",
+      "sha256": "c6d619a9125267f587ef3982904b2858055ce239154e0f2b2d21fbd45be1cdbe"
+    },
+    {
+      "bytes": 0,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/cleanup-sub1-nonwheel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 129,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/df-0.txt",
+      "sha256": "2000736350477190c696825c9655d6508f60672490c49d273e16000635a42d11"
+    },
+    {
+      "bytes": 129,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/df-3.txt",
+      "sha256": "880606ed934c991cc9182989fd98a8d4ee9cf4f3b3b35d36b495464baa3289a7"
+    },
+    {
+      "bytes": 373,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/du-0.txt",
+      "sha256": "93010dd16900b748097766add0464a7858f6ee47c381600f344bd4bc03dec2aa"
+    },
+    {
+      "bytes": 30,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/du-1a.txt",
+      "sha256": "2b7965c862757e6000d0d5a064be23e6f8292e27a2f2c5d50582a3ff82ed9dd9"
+    },
+    {
+      "bytes": 30,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/du-1b.txt",
+      "sha256": "ca8e64303b189ab92ce2018540acd58700a1afdca53177e7d6d919cc3344d855"
+    },
+    {
+      "bytes": 377,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/du-3.txt",
+      "sha256": "3bb6143a71f69de5222079929318fcdbb4b8a28d9dcc20cad65187d57790ae8e"
+    },
+    {
+      "bytes": 232,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/env.sh",
+      "sha256": "f2be65c966fa2ad46d36731ea5be73397e567390d45a7f2de9fb19f9e4b4299b"
+    },
+    {
+      "bytes": 5956,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/export-480,640.log",
+      "sha256": "1ec035a67568d3dba9a6e88c6fd40bac78e77db6c19f87f48a186d139fd47059"
+    },
+    {
+      "bytes": 6146,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/export-640.log",
+      "sha256": "3cb5c6307545922c7f88eb8541c87a38604460cc3bac553f03c39f794c82551c"
+    },
+    {
+      "bytes": 5,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/export-done.txt",
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2"
+    },
+    {
+      "bytes": 1321,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/netdev-0.txt",
+      "sha256": "8d1f8b177d20df004e9bdfe7c4419d94af0dddd631a6141c99360780827c04f5"
+    },
+    {
+      "bytes": 1321,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/netdev-3.txt",
+      "sha256": "ac41f8f23b6b00b2ac9267e54cf9a3ea638f33498c0f76af580236f3f0baa43f"
+    },
+    {
+      "bytes": 28,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/nvpmodel-q.txt",
+      "sha256": "0b2b014222ef469cdedd81787c44a2d5a52a68c1bb03e65e598f22208115ec6e"
+    },
+    {
+      "bytes": 598,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/outside-after.txt",
+      "sha256": "14ab731c3c855c95572ababe9d2148417d41bfc16d3ce561070d5d252b14b1a5"
+    },
+    {
+      "bytes": 422,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/outside-baseline.txt",
+      "sha256": "d6c2f6a847e7902165021185d2f7c9df76b9a1868cc1c6be4e5f00da937af5a7"
+    },
+    {
+      "bytes": 99,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/outside-newer.txt",
+      "sha256": "7dcefb149a76c9216d3e0e0e10d17f674a1b751802df5d2e83faa00ee9d9a610"
+    },
+    {
+      "bytes": 2896,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/export-480x640-summary.json",
+      "sha256": "2d84b4293fd3e95fbcee144de47f33dd471cbdbaa517ca40af29b994d723d494"
+    },
+    {
+      "bytes": 2863,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/export-640-summary.json",
+      "sha256": "6cf8f6fc3a0ae201570a3bee4d4cdb28cc01170cac65149dc7cab170ebfa2019"
+    },
+    {
+      "bytes": 176521,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/s1-det-assoc-v1-fp16-480x640-frames.json",
+      "sha256": "45a723cdb3d36e20d13cf3feb728eb272a0d774bba02f6a11e81d24eb50806d2"
+    },
+    {
+      "bytes": 10873,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/s1-det-assoc-v1-fp16-480x640-summary.json",
+      "sha256": "f325b892c0d732e929579cd08c338dffd64788a6ea03eda91081d25f0fd71224"
+    },
+    {
+      "bytes": 174003,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/s1-det-assoc-v1-fp16-640-frames.json",
+      "sha256": "5d689539ec75d733694153c2754302089a444b4c140a2012759816796410bf42"
+    },
+    {
+      "bytes": 64331,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/s1-det-assoc-v1-fp16-640-summary.json",
+      "sha256": "001ba818feca343df1b6d0f07aa57930b5e7a07d1d420151343a8545846116a0"
+    },
+    {
+      "bytes": 2708,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/trtexec-det-assoc-v1-fp16-480x640-summary.json",
+      "sha256": "8b6d154c4733a5e01881cfe907f1bcccff5c3672c7d27b183349cbef136384a8"
+    },
+    {
+      "bytes": 9252,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/trtexec-det-assoc-v1-fp16-480x640.log",
+      "sha256": "5ed20d485e8ae51cd8b5be1d71f8a068dda61c3e74af490e889f937c2293a3e1"
+    },
+    {
+      "bytes": 2699,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/trtexec-det-assoc-v1-fp16-640-summary.json",
+      "sha256": "a21ad4d0cb8669ecd8dd78017d1160805a09647442bd23d514910c5905a695bf"
+    },
+    {
+      "bytes": 8777,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/results-d/trtexec-det-assoc-v1-fp16-640.log",
+      "sha256": "9d49a6f6b123d9433acd5e2cd8a130d1785735a569be8c991c399a3ca253604d"
+    },
+    {
+      "bytes": 615,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/run-export.sh",
+      "sha256": "5459c0f56ad180b65295719fbcda7c2eac531da447f3469fa8fe88cdefd1da2a"
+    },
+    {
+      "bytes": 1322,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/run-s1.sh",
+      "sha256": "b50c9c27e6b4c6ca9abfb0c204c0eb2dc36db8d23e45c7fcea9a5295b390f00d"
+    },
+    {
+      "bytes": 695,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/run-s2.sh",
+      "sha256": "659ab80c5accff2b2f5a22849b9a0fa85f013d18b5d2c928c6f755d1e6fc5565"
+    },
+    {
+      "bytes": 612,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/s1-480x640.log",
+      "sha256": "bf2d95b1e492784dc9b3712fdec49130dae908e37cd8869d532bbee5c89900f9"
+    },
+    {
+      "bytes": 609,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/s1-640.log",
+      "sha256": "3d77522eddd3234a1c184fa16de5c06a1b6247f5695ec02bb9455186bb5a2e7e"
+    },
+    {
+      "bytes": 5,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/s1-done.txt",
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2"
+    },
+    {
+      "bytes": 15438,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/s1-tegrastats.log",
+      "sha256": "049774c48bfbec27393ba08cf63d36e6034de58291dd70a693e98abd291fbf7b"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-cleanup-end.txt",
+      "sha256": "760d91f3f4226b80e2e452c61b0382b4ba235ae8d208ae7bb5734bd61ab23565"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-cleanup-start.txt",
+      "sha256": "a0e24ff138e11920196ca1274a41be9b968647e3875904b528a7b697238b2096"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-end.txt",
+      "sha256": "06696e3574550ef18e8b30020d01c6d35d6ba9096f784183569c39edbd424dfe"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-export-480,640-end.txt",
+      "sha256": "a2bf0b3a5c2f7b0447ae33540c4e9c42d63d2edd55bb228ca14151e2df4af270"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-export-480,640-start.txt",
+      "sha256": "4ab522ceb791de38b3fb3a365efd91c70ee3124f1a4580945824d653be24e09c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-export-640-end.txt",
+      "sha256": "4ab522ceb791de38b3fb3a365efd91c70ee3124f1a4580945824d653be24e09c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-export-640-start.txt",
+      "sha256": "9875028e79d456af691a5ba407fa6a1cd172f988ca4d80baed8368f10af5a3b2"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-s1-end.txt",
+      "sha256": "163efead8aa3c6886698909f5d0eca98026b9bfbed49b56e9419e71cdce243e7"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-s1-start.txt",
+      "sha256": "43f22d8dbb636ba62ef59f35c7a07c8b4985816e68c4ecc7e2954c1109065b3e"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-start.txt",
+      "sha256": "5522d5af930fc240533154adcedf98887e0e77e145bc67450c92006f5ff2891e"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/t-trtexec-end.txt",
+      "sha256": "a3c3ca45dd77efa98a3bbafe3e476e9a9c8eb3f2c636e9f27f9fcfc87b254358"
+    },
+    {
+      "bytes": 1139,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/trtexec-run-det-assoc-v1-fp16-480x640.log",
+      "sha256": "84074f7099876b717151933ef5e7ece80c6be7b56d6a0900ff4827579d6a72f8"
+    },
+    {
+      "bytes": 1127,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/trtexec-run-det-assoc-v1-fp16-640.log",
+      "sha256": "a6b49ab022ea2419cf1e5bab0a45287f69f4f74b0a1b533163aca546827a67c3"
+    }
+  ],
+  "raw_e": [
+    {
+      "bytes": 82088,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/board-sha-e-expected.json",
+      "sha256": "a191f322a57a34a936ac36940b21496a14a7d329c03c7a80241dea30f5781e12"
+    },
+    {
+      "bytes": 558,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/board-sha-e.json",
+      "sha256": "568b744714204ad0194d5e231d7dbacb5f6d2ff3b58f6b71a0c3d34bb99a4f34"
+    },
+    {
+      "bytes": 6,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/board-utc-offset.txt",
+      "sha256": "01bc4442d1fdbf0e9dd5d8f22a78fa59db87e52e9d055ba51f510a126685123b"
+    },
+    {
+      "bytes": 1494,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/container-venv-delete.json",
+      "sha256": "ae0faf273c2dff99c48dd0a324638e1cc5106690b4a6162fc57d80d6b579881e"
+    },
+    {
+      "bytes": 129,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/df-0.txt",
+      "sha256": "be4f2f0b88f83bb53b3fc2cf2ff23e3598d7b1995a656225aba6622acbcc5070"
+    },
+    {
+      "bytes": 129,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/df-1.txt",
+      "sha256": "13d92660ca5f210441389b561134005003bfbfb75b31f1afc3c73996683c47bf"
+    },
+    {
+      "bytes": 129,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/df-3.txt",
+      "sha256": "a442401a9f5de1d9cc2bba297585a15ca0ee30c90c9dd4ada0147cd659c8ddcd"
+    },
+    {
+      "bytes": 129,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/df-venv-before.txt",
+      "sha256": "a246404ed8b0bc6c9e52270e9493c70eb7323e004e72e0f1b27470ab96e1c184"
+    },
+    {
+      "bytes": 30,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/du-0.txt",
+      "sha256": "00b6d97a1485a76878b123af9c3ea9470d39beda286a2695deedaa9b76e56af6"
+    },
+    {
+      "bytes": 377,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/du-1.txt",
+      "sha256": "e14744213d5956d190b40940652c91a9cb1c4ccdda0513e4dd70d6caa3bf9332"
+    },
+    {
+      "bytes": 343,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/du-3.txt",
+      "sha256": "464dcfb28f74561c322b6fbfca88ddb30e6d5e64edcaf67245ba2bc23b1615aa"
+    },
+    {
+      "bytes": 30,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/du-eng-jet-before-venv-delete.txt",
+      "sha256": "65bfd6364ccb302d68b7f60ba48199d73c69124342bca347b5284a5675bfff79"
+    },
+    {
+      "bytes": 34,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/du-venv-before.txt",
+      "sha256": "5247a32afde6322d1452181c833cf0e8e7f7b1d14df0961a905f64ec13af7c6b"
+    },
+    {
+      "bytes": 132,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/engine-sha-at-start.txt",
+      "sha256": "4eeed49f0c586eff57316771ea9c497b62e9f7fd965b77f8b30ad398779c240b"
+    },
+    {
+      "bytes": 260,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/env-actual.txt",
+      "sha256": "9f3ba6d3a2ffdf3487bddfac467102e6a81b6b3146694920d263b3394e2dbbed"
+    },
+    {
+      "bytes": 275,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/env.sh",
+      "sha256": "316c0f81c4a0bf594f76dbc90987e45269711034abb3e70ea678fd1b1c75b56a"
+    },
+    {
+      "bytes": 1316,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/netdev-0.txt",
+      "sha256": "fa357e7c3429aa9950e68e42d30bd150dc64eef86504a59b8b27f4c982225c5e"
+    },
+    {
+      "bytes": 1316,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/netdev-3.txt",
+      "sha256": "320ad543c2d77cc3d91e27efdfe189558acffc2ee5746465bae494699e347f55"
+    },
+    {
+      "bytes": 28,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/nvpmodel-q.txt",
+      "sha256": "0b2b014222ef469cdedd81787c44a2d5a52a68c1bb03e65e598f22208115ec6e"
+    },
+    {
+      "bytes": 1155,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/outside-after.txt",
+      "sha256": "c4c9e85448b70df56f6cf799fb08a03d1922361f498f2347bcdfcd12008f8f81"
+    },
+    {
+      "bytes": 1696,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/outside-baseline.txt",
+      "sha256": "23b7af5231cddee8107a3ac9a690d37d903834e1f4ebc686c27e00227b87fb65"
+    },
+    {
+      "bytes": 0,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/outside-newer.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/procs-after.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9488,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/results-e/s2-det-assoc-v1-fp16-640-15hz-summary.json",
+      "sha256": "293607cf7ebc0c601ac310a981a3e98d5c46b89425a258b143820c148b3392cc"
+    },
+    {
+      "bytes": 5062073,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/results-e/s2-det-assoc-v1-fp16-640-15hz.json",
+      "sha256": "d728660f1f4f3809015a57e824146222099ac6538d009c271d107c5c507e4845"
+    },
+    {
+      "bytes": 0,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/run-s2.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1194,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/run-s2.sh",
+      "sha256": "0a941ceaf0b246b40f3f8bbf2b22b47bf307539f45344108668cf973d1c94265"
+    },
+    {
+      "bytes": 5,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/s2-15hz-done.txt",
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2"
+    },
+    {
+      "bytes": 583382,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/s2-15hz-tegrastats.log",
+      "sha256": "8e4de7750881f152b3bf70ee65f0de1802ebf61ba4ab856e45423066feee17ae"
+    },
+    {
+      "bytes": 696,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/s2-15hz.log",
+      "sha256": "8c90a4392aeb723595816feea9072f75877def71627815341c68a871b0dcd4b3"
+    },
+    {
+      "bytes": 104,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/sysvenv-intact.txt",
+      "sha256": "8a145ff87ebe82a59d3511ecc88931e8a7037d5444da101bf0103a253fd55239"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-board-first.txt",
+      "sha256": "8fee1fb075a36fc12ff7f0dab593876d011ceb7dbc0a5df4793bcb37fc2a037c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-board-last.txt",
+      "sha256": "b607bf17a6d29dde299060636c0651dae0416ce882ab980dfa931bdfe0e37e3c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-diag-end.txt",
+      "sha256": "5816cb3ebc8ecc770127c741060236cc78e68a78e5c88b2926f9f1d793de6e5e"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-diag-start.txt",
+      "sha256": "366a459535a71e7915be931f998e96740f2c05ca9c5de05c140d9af006492487"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-end.txt",
+      "sha256": "b607bf17a6d29dde299060636c0651dae0416ce882ab980dfa931bdfe0e37e3c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-launch.txt",
+      "sha256": "ce69b3dd0882ae7d782e9331c39f50382c12f6fc06be84a4e19ae31a21fbf46c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-post-start.txt",
+      "sha256": "f31d75bc2d01179a54b805d7b2b3744c2f349ec614f56f8ac6b8ea15b40579a2"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-s2-15hz-end.txt",
+      "sha256": "03e15900ddfae914804e59f05ccb9029a75957237f3f54544440fab6aeb685dd"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-s2-15hz-start.txt",
+      "sha256": "ce69b3dd0882ae7d782e9331c39f50382c12f6fc06be84a4e19ae31a21fbf46c"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-start.txt",
+      "sha256": "9a8ec7a8f12dbc7b38aec1cf46963daa8405e275acfdce8606980602569b46a8"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-venv-delete-end.txt",
+      "sha256": "47340387aa0d4863ea9105d2cc2da3bc6ce8809c146fd1150b69d2dbb328738e"
+    },
+    {
+      "bytes": 21,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/t-venv-delete-start.txt",
+      "sha256": "47340387aa0d4863ea9105d2cc2da3bc6ce8809c146fd1150b69d2dbb328738e"
+    },
+    {
+      "bytes": 377,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/trt-warning-diag.json",
+      "sha256": "9865a7bc769b854245046ea800eb8f48ab8a1d83e63cdd8dd3194416b942632d"
+    },
+    {
+      "bytes": 98,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/uptime.txt",
+      "sha256": "5b3bf6b8c004533765447b7db3f17a85a6b39f157222acf496e7d4d4058489e9"
+    },
+    {
+      "bytes": 49,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/venv-counts.txt",
+      "sha256": "90054dc1de5a5e8be486c685deb6392f514960a3690067f35eb0efc06b5a7017"
+    },
+    {
+      "bytes": 5,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/venv-delete-result.txt",
+      "sha256": "4b9f2c32577beb1ebc8ab2a1e226faaa9176a81cd4eedbaa22f8a0db919972b5"
+    },
+    {
+      "bytes": 163303,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/venv-listing.tsv",
+      "sha256": "8cb4c4dfa9cb274d5a7e3e7a022e413203b67d6d77db197cc8bbf80881c61cb7"
+    }
+  ],
+  "round": "K1K3K4补跑E",
+  "work_id": "P1-ENG-JET-001"
+}

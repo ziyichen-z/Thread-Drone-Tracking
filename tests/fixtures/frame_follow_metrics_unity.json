@@ -1,0 +1,61 @@
+{
+    "schema_version": "tethered-evaluation/v1",
+    "scenario_id": "deterministic-loop-untethered",
+    "elapsed_simulation_s": 295.9859313964844,
+    "thresholds": {
+        "minimum_visible_sample_fraction": 0.20000000298023225,
+        "tracking_iou": 0.30000001192092898
+    },
+    "current": {
+        "frame_id": 1479,
+        "target_intersects_frustum": false,
+        "target_unoccluded": false,
+        "c_geom": false,
+        "tracking_observation_received": false,
+        "tracking_success": false,
+        "tracking_iou": 0.0,
+        "visible_sample_fraction": 0.0,
+        "target_bbox_area_px": 0.0,
+        "target_center_error_px": 0.0
+    },
+    "aggregate": {
+        "c_geom": 0.9668807983398438,
+        "c_track": 0.9189902544021606,
+        "c_track_given_geom": 0.9504690170288086,
+        "mean_visible_sample_fraction": 0.9592311978340149,
+        "mean_target_bbox_area_px_when_visible": 3539.5341796875,
+        "rms_target_center_error_px_when_visible": 55.287086486816409,
+        "sensor_frames": 1480,
+        "matched_tracking_observations": 1360,
+        "unmatched_tracking_observations": 0,
+        "incorrect_tracking_observations": 0
+    },
+    "qualification_release": {
+        "schema_version": "p1-detect-qualification-metrics-origin/v1",
+        "protocol_id": "",
+        "run_id": "",
+        "scenario_id": "",
+        "command_id": "",
+        "release_command_sha256": "",
+        "active_marker_sha256": "",
+        "release_frame_id": 0,
+        "release_monotonic_s": 0.0,
+        "release_simulation_s": 0.0
+    },
+    "occlusion_geometry": {
+        "candidate_renderers": 913,
+        "mesh_collider_proxies": 913,
+        "existing_colliders": 0,
+        "failed_proxies": 0,
+        "excluded_renderers": 8,
+        "layer": 29,
+        "used_default_layer_fallback": false
+    },
+    "gimbal_saturated": false,
+    "tether_saturated": false,
+    "evaluation_projection": {
+        "sensor_width_px": 640,
+        "sensor_height_px": 480,
+        "aspect_width_over_height": 1.3333333730697632
+    }
+}

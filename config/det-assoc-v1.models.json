@@ -1,0 +1,47 @@
+{
+  "association": {
+    "algorithm": "botsort",
+    "args": {
+      "appearance_thresh": 0.8,
+      "fuse_score": true,
+      "gmc_method": "sparseOptFlow",
+      "match_thresh": 0.7,
+      "model": "auto",
+      "new_track_thresh": 0.25,
+      "proximity_thresh": 0.5,
+      "track_buffer": 30,
+      "track_high_thresh": 0.25,
+      "track_low_thresh": 0.1,
+      "tracker_type": "botsort",
+      "with_reid": false
+    }
+  },
+  "classes": {
+    "0": "vehicle",
+    "1": "target"
+  },
+  "conf": 0.25,
+  "device_policy": {
+    "fallback": "cpu",
+    "preferred": "mps"
+  },
+  "freeze": {
+    "path": "docs/evidence/P1-ENG-FAST-002-freeze.json",
+    "sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c"
+  },
+  "imgsz": 640,
+  "nms_iou": 0.7,
+  "provenance": {
+    "run_id": "run-1",
+    "selection": "V only（SELECTION_DOMAIN）",
+    "work_id": "P1-ENG-FAST-002"
+  },
+  "schema_version": "tethered-tracker-models/v1",
+  "tracker": "det-assoc-v1",
+  "ultralytics_version": "8.4.104",
+  "weights": {
+    "path": "outputs/eng-det/runs/run-1/weights/last.pt",
+    "sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+    "size_bytes": 5458330
+  }
+}

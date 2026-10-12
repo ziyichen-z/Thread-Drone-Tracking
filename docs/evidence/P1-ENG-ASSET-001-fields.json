@@ -1,0 +1,3012 @@
+{
+  "attempt": "attempt-2",
+  "buckets": [
+    {
+      "family": "detect-scout1",
+      "frame_vehicle_pairs": 1535,
+      "frames": 768,
+      "frames_with_referable_vehicles": 657,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VALID_SCOUTING_CLOSED"
+    },
+    {
+      "family": "m3-armA",
+      "frame_vehicle_pairs": 1411,
+      "frames": 640,
+      "frames_with_referable_vehicles": 516,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VALID_FORMAL"
+    },
+    {
+      "family": "m3-armA",
+      "frame_vehicle_pairs": 512,
+      "frames": 256,
+      "frames_with_referable_vehicles": 256,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VOID_TRIAL_HOLD"
+    },
+    {
+      "family": "m3-armB",
+      "frame_vehicle_pairs": 512,
+      "frames": 512,
+      "frames_with_referable_vehicles": 512,
+      "layout_class": "default",
+      "split": "test",
+      "usage_class": "VALID_FORMAL"
+    },
+    {
+      "family": "m3-armB",
+      "frame_vehicle_pairs": 256,
+      "frames": 128,
+      "frames_with_referable_vehicles": 128,
+      "layout_class": "default",
+      "split": "test",
+      "usage_class": "VALID_PARENT_HOLD"
+    },
+    {
+      "family": "p1-vlm-survey-a1-p1-c1-s2",
+      "frame_vehicle_pairs": 1697,
+      "frames": 1486,
+      "frames_with_referable_vehicles": 885,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "p1-vlm-survey-a1-p1-c1-s2",
+      "frame_vehicle_pairs": 1943,
+      "frames": 1430,
+      "frames_with_referable_vehicles": 893,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a2-p1-c1-s1",
+      "frame_vehicle_pairs": 1893,
+      "frames": 1286,
+      "frames_with_referable_vehicles": 901,
+      "layout_class": "default",
+      "split": "train",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "p1-vlm-survey-a2-p1-c1-s1",
+      "frame_vehicle_pairs": 1412,
+      "frames": 1237,
+      "frames_with_referable_vehicles": 732,
+      "layout_class": "default",
+      "split": "train",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a3-p1-c1-s1",
+      "frame_vehicle_pairs": 1454,
+      "frames": 1426,
+      "frames_with_referable_vehicles": 646,
+      "layout_class": "default",
+      "split": "test",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a3-p1-c1-s1",
+      "frame_vehicle_pairs": 1579,
+      "frames": 1392,
+      "frames_with_referable_vehicles": 693,
+      "layout_class": "default",
+      "split": "unassigned",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "p1-vlm-survey-a4-p1-c1-s1",
+      "frame_vehicle_pairs": 1907,
+      "frames": 1426,
+      "frames_with_referable_vehicles": 816,
+      "layout_class": "default",
+      "split": "test",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a4-p1-c1-s1",
+      "frame_vehicle_pairs": 2045,
+      "frames": 1396,
+      "frames_with_referable_vehicles": 940,
+      "layout_class": "default",
+      "split": "unassigned",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "p1-vlm-survey-a6-p1-c1-s1",
+      "frame_vehicle_pairs": 2167,
+      "frames": 1421,
+      "frames_with_referable_vehicles": 1062,
+      "layout_class": "default",
+      "split": "test",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a6-p1-c1-s1",
+      "frame_vehicle_pairs": 2354,
+      "frames": 1522,
+      "frames_with_referable_vehicles": 1216,
+      "layout_class": "default",
+      "split": "unassigned",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "p1-vlm-survey-a7-p1-c1-s1",
+      "frame_vehicle_pairs": 2675,
+      "frames": 1740,
+      "frames_with_referable_vehicles": 1399,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "p1-vlm-survey-a7-p1-c1-s1",
+      "frame_vehicle_pairs": 2130,
+      "frames": 1428,
+      "frames_with_referable_vehicles": 1046,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a9-p1-c1-s1",
+      "frame_vehicle_pairs": 2134,
+      "frames": 1132,
+      "frames_with_referable_vehicles": 890,
+      "layout_class": "default",
+      "split": "test",
+      "usage_class": "VALID_SURVEY"
+    },
+    {
+      "family": "p1-vlm-survey-a9-p1-c1-s1",
+      "frame_vehicle_pairs": 4170,
+      "frames": 1664,
+      "frames_with_referable_vehicles": 1459,
+      "layout_class": "default",
+      "split": "unassigned",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "rate",
+      "frame_vehicle_pairs": 196,
+      "frames": 98,
+      "frames_with_referable_vehicles": 98,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "CALIBRATION"
+    },
+    {
+      "family": "rate",
+      "frame_vehicle_pairs": 3025,
+      "frames": 2027,
+      "frames_with_referable_vehicles": 1515,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "rate",
+      "frame_vehicle_pairs": 1377,
+      "frames": 701,
+      "frames_with_referable_vehicles": 700,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "SMOKE"
+    },
+    {
+      "family": "rate",
+      "frame_vehicle_pairs": 3604,
+      "frames": 2314,
+      "frames_with_referable_vehicles": 1802,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VALID_FORMAL"
+    },
+    {
+      "family": "scene-val",
+      "frame_vehicle_pairs": 512,
+      "frames": 256,
+      "frames_with_referable_vehicles": 256,
+      "layout_class": "default",
+      "split": "dev",
+      "usage_class": "VALID_FORMAL"
+    },
+    {
+      "family": "s004-qual",
+      "frame_vehicle_pairs": 0,
+      "frames": 188,
+      "frames_with_referable_vehicles": 0,
+      "layout_class": "scene-004",
+      "split": "unassigned",
+      "usage_class": "CALIBRATION"
+    },
+    {
+      "family": "s004-qual",
+      "frame_vehicle_pairs": 3594,
+      "frames": 3668,
+      "frames_with_referable_vehicles": 2769,
+      "layout_class": "scene-004",
+      "split": "unassigned",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "s004-qual",
+      "frame_vehicle_pairs": 3107,
+      "frames": 4096,
+      "frames_with_referable_vehicles": 2259,
+      "layout_class": "scene-004",
+      "split": "unassigned",
+      "usage_class": "VALID_PARENT_HOLD"
+    },
+    {
+      "family": "s004-scout",
+      "frame_vehicle_pairs": 2801,
+      "frames": 2405,
+      "frames_with_referable_vehicles": 1932,
+      "layout_class": "scene-004",
+      "split": "test",
+      "usage_class": "VALID_SCOUTING_CLOSED"
+    },
+    {
+      "family": "s004-scout",
+      "frame_vehicle_pairs": 2846,
+      "frames": 2431,
+      "frames_with_referable_vehicles": 1957,
+      "layout_class": "scene-004",
+      "split": "unassigned",
+      "usage_class": "PROTOCOL_INVALID"
+    },
+    {
+      "family": "s004-smoke",
+      "frame_vehicle_pairs": 2582,
+      "frames": 3061,
+      "frames_with_referable_vehicles": 2417,
+      "layout_class": "scene-004",
+      "split": "unassigned",
+      "usage_class": "SMOKE"
+    }
+  ],
+  "domain": {
+    "definition": "S3 行中 layout_binding_valid ∧ sidecar_complete",
+    "excluded_rows": 0,
+    "frame_vehicle_pairs": 57430,
+    "frames": 43535
+  },
+  "field_classification": [
+    {
+      "classification": "USABLE",
+      "count": 93,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2 payload.objects[*].class_verified",
+      "field": "class（类别词）",
+      "scope": "S5 目录车 93/93 class_verified"
+    },
+    {
+      "classification": "USABLE",
+      "count": 37,
+      "evidence": "S5 color_status=VERIFIED；已验证词表 blue/gray/green/purple/red/yellow",
+      "field": "color（颜色词）",
+      "scope": "color_status=VERIFIED"
+    },
+    {
+      "classification": "UNVERIFIED",
+      "count": 37,
+      "evidence": "S5 color_downgrade_reason=GROUP_INCONSISTENT；P1-VLM-DATA-002 颜色诊断（`docs/current-status.md` 2026-09-07 条目：补采不会移动 U_F1）",
+      "field": "color（颜色词）",
+      "scope": "GROUP_INCONSISTENT 降级"
+    },
+    {
+      "classification": "UNVERIFIED",
+      "count": 19,
+      "evidence": "S5 color_status=UNVERIFIED 且无 GROUP_INCONSISTENT 降级理由",
+      "field": "color（颜色词）",
+      "scope": "无主色（无 color_evidence 主色）"
+    },
+    {
+      "classification": "UNVERIFIED",
+      "count": 57430,
+      "evidence": "S3 几何投影框，来源为 Unity 几何投影而非人工标注；语义正确性只有 AC-4 的 n≤60 描述性抽查，DATA-001 S6 人工审计从未执行（`docs/implementation-status.md` 工程继承清单）",
+      "field": "visible_norm_xywh（框）",
+      "scope": "对账域全部 (帧, 车) 行"
+    },
+    {
+      "classification": "UNUSABLE",
+      "count": 8,
+      "evidence": "从未以 OK 出现于任何 BOUND 帧；Vehicle_Bus_color01、Vehicle_Car_color01 (2)、Vehicle_Car_color02 (3)、Vehicle_Pick up Truck_color02 (3)、Vehicle_Police Car (3)、Vehicle_SUV_color01 (7)、Vehicle_SUV_color02 (1)、Vehicle_SUV_color03 (2)",
+      "field": "布局车（无 S5 条目）",
+      "scope": "layout ∖ S5"
+    }
+  ],
+  "instruction_row_count": 57430,
+  "layout_vehicle_counts": {
+    "per_layout_class": {
+      "default": 101,
+      "scene-004": 101
+    },
+    "total": 101,
+    "without_s5_entry": 8
+  },
+  "layout_vehicles": [
+    {
+      "best_short_side_px": 94.46562586595402,
+      "class": "ambulance",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Ambulance",
+      "ok_frames_total": 88,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 12,
+        "train": 68,
+        "unassigned": 8
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 108.63430554306026,
+      "class": "ambulance",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Ambulance (1)",
+      "ok_frames_total": 331,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 169,
+        "train": 52,
+        "unassigned": 110
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 238.6925916759233,
+      "class": "ambulance",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Ambulance (2)",
+      "ok_frames_total": 1157,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 1157,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 82.1452940808372,
+      "class": "ambulance",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Ambulance (3)",
+      "ok_frames_total": 346,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 105,
+        "train": 0,
+        "unassigned": 241
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 130.1877029825282,
+      "class": "ambulance",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Ambulance (4)",
+      "ok_frames_total": 89,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 89,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Bus_color01",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 215.2729459091022,
+      "class": "bus",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Bus_color01 (1)",
+      "ok_frames_total": 756,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 391,
+        "train": 0,
+        "unassigned": 365
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 118.7292004230932,
+      "class": "bus",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Bus_color02",
+      "ok_frames_total": 254,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 156,
+        "train": 0,
+        "unassigned": 98
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 44.301721367191476,
+      "class": "bus",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Bus_color02 (1)",
+      "ok_frames_total": 40,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 39,
+        "test": 0,
+        "train": 0,
+        "unassigned": 1
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 296.7052803430158,
+      "class": "bus",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Bus_color03",
+      "ok_frames_total": 482,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 262,
+        "train": 25,
+        "unassigned": 195
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 140.7963757229882,
+      "class": "bus",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Bus_color03 (1)",
+      "ok_frames_total": 2831,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 1311,
+        "test": 546,
+        "train": 0,
+        "unassigned": 974
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 84.79799155604343,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color01",
+      "ok_frames_total": 312,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 12,
+        "test": 115,
+        "train": 0,
+        "unassigned": 185
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 53.299233879866335,
+      "class": "car",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color01 (1)",
+      "ok_frames_total": 42,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 42,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color01 (2)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 168.8578326898642,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color02",
+      "ok_frames_total": 683,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 683,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 65.33498771767415,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color02 (1)",
+      "ok_frames_total": 302,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 57,
+        "test": 72,
+        "train": 0,
+        "unassigned": 173
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 29.960805073649027,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color02 (2)",
+      "ok_frames_total": 17,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 12,
+        "train": 0,
+        "unassigned": 5
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color02 (3)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 106.2137792047397,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color02 (4)",
+      "ok_frames_total": 70,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 70,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 63.09825364453681,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color02 (5)",
+      "ok_frames_total": 56,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 36,
+        "train": 0,
+        "unassigned": 20
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 56.481331485502096,
+      "class": "car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color03",
+      "ok_frames_total": 97,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 97,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 163.3285250614573,
+      "class": "car",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color03 (1)",
+      "ok_frames_total": 424,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 203,
+        "train": 23,
+        "unassigned": 198
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 95.83941777290246,
+      "class": "car",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Car_color03 (3)",
+      "ok_frames_total": 204,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 182,
+        "test": 0,
+        "train": 0,
+        "unassigned": 22
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 116.9835385106058,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color01",
+      "ok_frames_total": 5792,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 2607,
+        "test": 815,
+        "train": 0,
+        "unassigned": 2370
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 86.40855911353378,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color01 (1)",
+      "ok_frames_total": 101,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 101,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 140.05657574151238,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "blue",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color02",
+      "ok_frames_total": 190,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 190,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 294.87511942305,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "blue",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color02 (1)",
+      "ok_frames_total": 504,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 504,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 326.3993854009444,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "blue",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color02 (2)",
+      "ok_frames_total": 4457,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 1246,
+        "train": 0,
+        "unassigned": 3211
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 78.43502351730505,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "blue",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color02 (3)",
+      "ok_frames_total": 43,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 30,
+        "train": 0,
+        "unassigned": 13
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 195.45552030253592,
+      "class": "container truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color02 (5)",
+      "ok_frames_total": 1416,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 421,
+        "train": 124,
+        "unassigned": 871
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 339.3795764231642,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "red",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color03",
+      "ok_frames_total": 1517,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 666,
+        "train": 0,
+        "unassigned": 851
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 202.575207649204,
+      "class": "container truck",
+      "class_verified": true,
+      "color": "red",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Container_color03 (1)",
+      "ok_frames_total": 283,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 283,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 50.62285540398929,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01",
+      "ok_frames_total": 509,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 25,
+        "train": 458,
+        "unassigned": 26
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 197.05237693616124,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (1)",
+      "ok_frames_total": 965,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 956,
+        "test": 7,
+        "train": 0,
+        "unassigned": 2
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 204.5578064655449,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (2)",
+      "ok_frames_total": 1305,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 1305,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 81.18204262965878,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (3)",
+      "ok_frames_total": 36,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 36,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 109.3337024034688,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (4)",
+      "ok_frames_total": 13,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 13,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 54.51552818531826,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (5)",
+      "ok_frames_total": 142,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 96,
+        "train": 0,
+        "unassigned": 46
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 158.51198283182362,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (6)",
+      "ok_frames_total": 64,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 48,
+        "train": 0,
+        "unassigned": 16
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 43.52467876848607,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (7)",
+      "ok_frames_total": 1,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 1
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 133.50013296520117,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (8)",
+      "ok_frames_total": 166,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 90,
+        "train": 0,
+        "unassigned": 76
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 155.9603860600862,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color01 (9)",
+      "ok_frames_total": 585,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 316,
+        "train": 0,
+        "unassigned": 269
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 89.00450031911728,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02",
+      "ok_frames_total": 224,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 222,
+        "test": 0,
+        "train": 0,
+        "unassigned": 2
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 182.9907453374703,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (1)",
+      "ok_frames_total": 508,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 266,
+        "train": 0,
+        "unassigned": 242
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 82.25712308550317,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (2)",
+      "ok_frames_total": 64,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 64,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (3)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 148.84230716755636,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (4)",
+      "ok_frames_total": 236,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 236,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 104.05526646944392,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (5)",
+      "ok_frames_total": 723,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 100,
+        "train": 0,
+        "unassigned": 623
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 50.85976501983458,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (6)",
+      "ok_frames_total": 2,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 2,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 54.9717605640254,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (7)",
+      "ok_frames_total": 52,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 52,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 46.44186891439438,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color02 (8)",
+      "ok_frames_total": 35,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 24,
+        "train": 0,
+        "unassigned": 11
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 147.5309770648248,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color03",
+      "ok_frames_total": 770,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 105,
+        "train": 499,
+        "unassigned": 166
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 91.31335656373219,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color03 (1)",
+      "ok_frames_total": 36,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 1,
+        "test": 24,
+        "train": 0,
+        "unassigned": 11
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 168.53488412363083,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color03 (2)",
+      "ok_frames_total": 248,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 151,
+        "train": 0,
+        "unassigned": 97
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 90.70242195054811,
+      "class": "pickup truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Pick up Truck_color03 (3)",
+      "ok_frames_total": 17,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 12,
+        "train": 0,
+        "unassigned": 5
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 28.839259761958004,
+      "class": "police car",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Police Car",
+      "ok_frames_total": 10,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 10,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 77.17523418278853,
+      "class": "police car",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Police Car (1)",
+      "ok_frames_total": 1489,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 1362,
+        "test": 55,
+        "train": 0,
+        "unassigned": 72
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Police Car (3)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 83.35951665256079,
+      "class": "police car",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Police Car (4)",
+      "ok_frames_total": 123,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 79,
+        "train": 1,
+        "unassigned": 43
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 127.72693235661714,
+      "class": "police car",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Police Car (5)",
+      "ok_frames_total": 246,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 205,
+        "test": 25,
+        "train": 0,
+        "unassigned": 16
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 152.54506172690287,
+      "class": "suv",
+      "class_verified": true,
+      "color": "purple",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01",
+      "ok_frames_total": 315,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 159,
+        "train": 0,
+        "unassigned": 156
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 115.71999037801984,
+      "class": "suv",
+      "class_verified": true,
+      "color": "purple",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (1)",
+      "ok_frames_total": 9085,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 2994,
+        "test": 1301,
+        "train": 0,
+        "unassigned": 4790
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 38.79600500769186,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (2)",
+      "ok_frames_total": 17,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 17,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 82.24037986473326,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (3)",
+      "ok_frames_total": 326,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 183,
+        "test": 25,
+        "train": 0,
+        "unassigned": 118
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 63.616018629505106,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (4)",
+      "ok_frames_total": 289,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 225,
+        "test": 24,
+        "train": 0,
+        "unassigned": 40
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 87.16878157353833,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (5)",
+      "ok_frames_total": 150,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 150,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 88.12537558142404,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (6)",
+      "ok_frames_total": 272,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 156,
+        "train": 7,
+        "unassigned": 109
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (7)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 73.97194797990102,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (8)",
+      "ok_frames_total": 41,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 25,
+        "train": 0,
+        "unassigned": 16
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 120.92428199860393,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color01 (9)",
+      "ok_frames_total": 43,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 24,
+        "train": 0,
+        "unassigned": 19
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 55.13873635290864,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color02",
+      "ok_frames_total": 22,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 19,
+        "unassigned": 3
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color02 (1)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 54.7229079619828,
+      "class": "suv",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03",
+      "ok_frames_total": 99,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 48,
+        "train": 26,
+        "unassigned": 25
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 87.69974029650626,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (1)",
+      "ok_frames_total": 370,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 53,
+        "test": 37,
+        "train": 204,
+        "unassigned": 76
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": null,
+      "class": null,
+      "class_verified": false,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": null,
+      "dual_verified": false,
+      "evidence": "runtime/dist-data/field_catalog/attempt-2/field_catalog.json（payload.objects 无该 object_id）；提案 §6「8 辆布局车在 S5 无条目」",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (2)",
+      "ok_frames_total": 0,
+      "s5_entry": false,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNUSABLE",
+      "usability_reason": "NO_S5_ENTRY"
+    },
+    {
+      "best_short_side_px": 52.4579848079309,
+      "class": "suv",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (3)",
+      "ok_frames_total": 34,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 24,
+        "train": 0,
+        "unassigned": 10
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 167.5936020620939,
+      "class": "suv",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (4)",
+      "ok_frames_total": 682,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 682,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 42.341225761099906,
+      "class": "suv",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (5)",
+      "ok_frames_total": 18,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 6,
+        "train": 0,
+        "unassigned": 12
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 79.7988893652726,
+      "class": "suv",
+      "class_verified": true,
+      "color": "green",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (6)",
+      "ok_frames_total": 18,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 13,
+        "train": 0,
+        "unassigned": 5
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 150.3088746832392,
+      "class": "suv",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_SUV_color03 (7)",
+      "ok_frames_total": 58,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 43,
+        "train": 0,
+        "unassigned": 15
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 213.05804787060856,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi",
+      "ok_frames_total": 615,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 615,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 54.74504884077652,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (1)",
+      "ok_frames_total": 134,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 105,
+        "test": 13,
+        "train": 11,
+        "unassigned": 5
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 132.68263771076715,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (10)",
+      "ok_frames_total": 1106,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 298,
+        "train": 64,
+        "unassigned": 744
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 73.71663274998284,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (11)",
+      "ok_frames_total": 73,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 56,
+        "train": 0,
+        "unassigned": 17
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 43.33353022603478,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (12)",
+      "ok_frames_total": 9,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 7,
+        "train": 0,
+        "unassigned": 2
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 123.55465145794648,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (2)",
+      "ok_frames_total": 5520,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 3606,
+        "test": 300,
+        "train": 0,
+        "unassigned": 1614
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 234.88963026671178,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (3)",
+      "ok_frames_total": 953,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 397,
+        "train": 0,
+        "unassigned": 556
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 91.15651117604818,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (4)",
+      "ok_frames_total": 180,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 90,
+        "train": 34,
+        "unassigned": 56
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 203.11853940316007,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (5)",
+      "ok_frames_total": 337,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 205,
+        "train": 0,
+        "unassigned": 132
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 96.20460856823982,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (6)",
+      "ok_frames_total": 259,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 93,
+        "train": 0,
+        "unassigned": 166
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 72.16961953444297,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (7)",
+      "ok_frames_total": 87,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 62,
+        "train": 0,
+        "unassigned": 25
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 26.872148570545562,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (8)",
+      "ok_frames_total": 86,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 76,
+        "test": 6,
+        "train": 0,
+        "unassigned": 4
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 119.96347398543344,
+      "class": "taxi",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": "GROUP_INCONSISTENT",
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=GROUP_INCONSISTENT）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Taxi (9)",
+      "ok_frames_total": 473,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 226,
+        "train": 36,
+        "unassigned": 211
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "GROUP_INCONSISTENT"
+    },
+    {
+      "best_short_side_px": 236.02631274632057,
+      "class": "truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color01",
+      "ok_frames_total": 922,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 166,
+        "train": 429,
+        "unassigned": 327
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 318.21064880840726,
+      "class": "truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color01 (1)",
+      "ok_frames_total": 2132,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 524,
+        "train": 427,
+        "unassigned": 1181
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 284.90970276791904,
+      "class": "truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color02",
+      "ok_frames_total": 333,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 163,
+        "train": 0,
+        "unassigned": 170
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 273.40120741837455,
+      "class": "truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color02 (1)",
+      "ok_frames_total": 494,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 42,
+        "train": 426,
+        "unassigned": 26
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 64.54723887835769,
+      "class": "truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color02 (2)",
+      "ok_frames_total": 54,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 54,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 50.07593925888844,
+      "class": "truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color02 (3)",
+      "ok_frames_total": 84,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 84,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    },
+    {
+      "best_short_side_px": 156.87633510427338,
+      "class": "truck",
+      "class_verified": true,
+      "color": "gray",
+      "color_downgrade_reason": null,
+      "color_status": "VERIFIED",
+      "dual_verified": true,
+      "evidence": "S5 记录 color_status=VERIFIED；dual_verified_object_ids 成员",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color03",
+      "ok_frames_total": 199,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 0,
+        "test": 18,
+        "train": 169,
+        "unassigned": 12
+      },
+      "usability": "USABLE",
+      "usability_reason": "CLASS_AND_COLOR_VERIFIED"
+    },
+    {
+      "best_short_side_px": 152.3305424475562,
+      "class": "truck",
+      "class_verified": true,
+      "color": null,
+      "color_downgrade_reason": null,
+      "color_status": "UNVERIFIED",
+      "dual_verified": false,
+      "evidence": "S5 记录 color_status=UNVERIFIED（downgrade_reason=None）；P1-VLM-DATA-002 颜色诊断（状态板 2026-09-07 条目）",
+      "layout_classes": [
+        "default",
+        "scene-004"
+      ],
+      "object_id": "Vehicle_Truck_color03 (1)",
+      "ok_frames_total": 88,
+      "s5_entry": true,
+      "split_ok_frames": {
+        "d3": 0,
+        "dev": 88,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      },
+      "usability": "UNVERIFIED",
+      "usability_reason": "NO_DOMINANT_COLOR"
+    }
+  ],
+  "reconciliation": {
+    "artifact_sha256": {
+      "contract": "24865505acfe103d8faec18b4337567639da0977a6c830ebdcbe70b6d620fc12",
+      "field_catalog": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+      "frames_catalog": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da",
+      "inventory": "11738a88f78491bdc4dc3fd5d13727ef543b9d1579a85cb02d8229700513024a",
+      "layout": "391e5a1c56b53e1c4f01b8e46170c6ce3f3455cfe7cc9c38839bd3f1589dfe40",
+      "splits": "e7e4e1d3726f737c9adaf9ffd49fa764d51fd64936e7aacfe20d36ee2d4dbef4"
+    },
+    "field_catalog": {
+      "dual_verified": 37,
+      "objects": 690,
+      "vehicles": 93,
+      "verified_color_vocabulary": [
+        "blue",
+        "gray",
+        "green",
+        "purple",
+        "red",
+        "yellow"
+      ]
+    },
+    "frames_catalog": {
+      "all_sha256_match": true,
+      "frame_count": 43535,
+      "row_count": 43535,
+      "shards": 151,
+      "skipped_invalid_frames": 19,
+      "skipped_unbound_frames": 157
+    },
+    "splits": {
+      "all_sha256_match": true,
+      "d3": 0,
+      "dev": 13144,
+      "dropped_frames": 19418,
+      "shards": 7,
+      "test": 8450,
+      "train": 2523
+    }
+  },
+  "schema_version": "p1-eng-asset-001/fields/v1",
+  "source_artifact_sha256": {
+    "contract": "24865505acfe103d8faec18b4337567639da0977a6c830ebdcbe70b6d620fc12",
+    "field_catalog": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+    "frames_catalog": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da",
+    "inventory": "11738a88f78491bdc4dc3fd5d13727ef543b9d1579a85cb02d8229700513024a",
+    "layout": "391e5a1c56b53e1c4f01b8e46170c6ce3f3455cfe7cc9c38839bd3f1589dfe40",
+    "splits": "e7e4e1d3726f737c9adaf9ffd49fa764d51fd64936e7aacfe20d36ee2d4dbef4"
+  },
+  "work_id": "P1-ENG-ASSET-001"
+}

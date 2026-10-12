@@ -1,0 +1,51 @@
+{
+  "schema_version": "p1-scene-004-anchor-placement/v1",
+  "work_id": "P1-SCENE-004",
+  "requested_anchor_world_m": {
+    "x": 140.0,
+    "z": 112.0
+  },
+  "hover_offset_y_m": 25.0,
+  "support_surface_allowlist": [
+    "Natures_Grass Tile",
+    "Natures_Grass Tile Small"
+  ],
+  "support_height_tolerance_m": 0.05,
+  "anchor_nominal_radius_m": 1.0,
+  "hover_nominal_radius_m": 1.0,
+  "corridor_nominal_radius_m": 0.5,
+  "clearance_margin_m": 0.5,
+  "lattice_step_m": 0.5,
+  "lattice_radius_m": 10.0,
+  "target_plane_y_m": 0.2,
+  "envelope_max_slant_range_m": 32.0,
+  "envelope_max_off_nadir_deg": 45.0,
+  "envelope_off_nadir_margin_min_deg": 5.0,
+  "envelope_route_sample_spacing_m": 0.25,
+  "circuit_world_m": [
+    {
+      "x": 128.0,
+      "z": 116.0
+    },
+    {
+      "x": 152.0,
+      "z": 116.0
+    },
+    {
+      "x": 154.5,
+      "z": 118.5
+    },
+    {
+      "x": 152.0,
+      "z": 121.0
+    },
+    {
+      "x": 128.0,
+      "z": 121.0
+    },
+    {
+      "x": 125.5,
+      "z": 118.5
+    }
+  ]
+}

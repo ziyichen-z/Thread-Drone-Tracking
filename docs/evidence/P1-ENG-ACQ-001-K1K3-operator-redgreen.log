@@ -1,0 +1,125 @@
+# P1-ENG-ACQ-001 K1K3 操作页 — tests/test_eng_acq_operator_web.py 修前红 / 变异红 / 修后绿
+# 解释器: Python 3.12.13 (.venv-yoloe, 只读使用); 命令: ACQ_OPERATOR_WEB_PATH=<页面> <PY> -m unittest discover -s tests -p test_eng_acq_operator_web.py
+# 修前 = 旧 LOOP-001 页面（本批未改）；变异 = 本批页面逐一撤掉一项门（副本在会话暂存目录，不入库）；修后 = 本批页面
+# 零消耗：临时目录夹具 + 假 CLI；不起会话、不读 runtime/、不加载权重、不调检测器/VLM
+== 修前（旧 LOOP-001 页面 docs/evidence/P1-ENG-LOOP-001-operator-web.py）  exit=1  Ran 56 tests in 0.786s / FAILED (failures=4, errors=49)
+   red: LegalActionTableTests.test_acquiring_offers_only_stop
+   red: CliExitTests.test_actions_outside_table_do_not_run_cli
+   red: SidGuardTests.test_active_session_or_fresh_number_allowed
+   red: SidDuringRunTests.test_activity_after_close_record_blocked
+   red: ConfirmGateTests.test_applied_is_not_reported_as_bound
+   red: SidDuringRunTests.test_archive_appearing_disables_every_action
+   red: SidGuardTests.test_archive_same_sid_refused
+   red: CliExitTests.test_argv_same_interpreter_same_worktree_language_loop_cli
+   red: ReceiptBindingTests.test_candidates_receipt_bound_to_session_and_config_ok
+   red: SidGuardTests.test_closed_session_directory_refused
+   red: ConfirmGateTests.test_corrupt_missing_or_cross_session_preview_not_confirmable
+   red: SidGuardTests.test_dead_or_foreign_lock_refused
+   red: PlayTimerTests.test_deadline_only_prompts_no_auto_stop
+   red: SidGuardTests.test_directory_without_session_started_refused
+   red: ReceiptBindingTests.test_effective_R_mismatch_disables_confirm
+   red: OperatorLogTests.test_every_click_refusal_unknown_retry_and_timer_logged
+   red: LegalActionTableTests.test_every_non_terminal_state_has_stop
+   red: ConfirmGateTests.test_expired_deadline_refuses_without_cli
+   red: ConfirmGateTests.test_frame_gate_exceeded_refuses_without_cli
+   red: ReceiptValuesTests.test_gate_values_read_from_receipt_not_hand_copied
+   red: CliExitTests.test_instruction_known_only_from_accepted_ask
+   red: HttpBoundaryTests.test_listens_on_loopback_only
+   red: CliExitTests.test_main_uses_this_interpreter_and_repository
+   red: PlayTimerTests.test_mark_persisted_restart_and_refresh_do_not_reset
+   red: ConfirmGateTests.test_misaligned_index_not_confirmable
+   red: ReceiptBindingTests.test_missing_receipt_or_report_disables_confirm
+   red: LegalActionTableTests.test_nine_state_closed_table_per_state
+   red: CliExitTests.test_no_automatic_confirmation_or_action_while_polling
+   red: ConfirmGateTests.test_non_candidates_result_or_other_k_ret_not_confirmable
+   red: ReceiptBindingTests.test_not_yet_started_session_is_unbound
+   red: ReceiptBindingTests.test_old_loop001_receipt_refused_and_confirm_disabled
+   red: ConfirmGateTests.test_old_token_view_refused
+   red: CliExitTests.test_page_never_writes_bridge_request_or_lock
+   red: OperationSheetSection4Tests.test_page_usage_documented_and_parses
+   red: ConfirmGateTests.test_poll_refresh_and_restart_never_renew_deadline
+   red: HttpBoundaryTests.test_post_requires_nonce_and_same_origin
+   red: HttpBoundaryTests.test_preview_endpoint_serves_only_the_bound_bytes
+   red: ConfirmGateTests.test_preview_not_displayed_or_other_image_refused
+   red: ConfirmGateTests.test_preview_replaced_after_display_refused
+   red: ReceiptBindingTests.test_report_bytes_changed_disables_confirm
+   red: SidGuardTests.test_retired_acq_d1_1_refused_at_start
+   red: SidDuringRunTests.test_retired_number_never_gets_actions
+   red: SidDuringRunTests.test_second_session_started_disables_every_action
+   red: SidGuardTests.test_second_session_started_refused
+   red: ReceiptBindingTests.test_session_started_with_other_receipt_disables_confirm
+   red: SidGuardTests.test_sid_format_enforced
+   red: ConfirmGateTests.test_stale_or_unreadable_snapshot_refuses
+   red: ConfirmGateTests.test_three_deadlines_earliest_wins_from_session_times
+   red: CliExitTests.test_track_ended_acquiring_path_shows_only_automatic_progress
+   red: LegalActionTableTests.test_tracking_allows_ask
+   red: PlayTimerTests.test_unmarked_never_uses_page_or_session_start
+   red: PlayTimerTests.test_unreadable_log_means_manual_timing_without_remaining
+   red: ConfirmGateTests.test_wrong_index_refused
+== 变异 M1 ACQUIRING 无按钮（旧页行为）  exit=1  Ran 56 tests in 2.574s / FAILED (failures=5)
+   red: LegalActionTableTests.test_acquiring_offers_only_stop
+   red: CliExitTests.test_actions_outside_table_do_not_run_cli
+   red: LegalActionTableTests.test_every_non_terminal_state_has_stop
+   red: LegalActionTableTests.test_nine_state_closed_table_per_state
+   red: CliExitTests.test_track_ended_acquiring_path_shows_only_automatic_progress
+== 变异 M2 不查收据身份  exit=1  Ran 56 tests in 2.587s / FAILED (failures=1)
+   red: ReceiptBindingTests.test_old_loop001_receipt_refused_and_confirm_disabled
+== 变异 M3 不查 session_started 绑定  exit=1  Ran 56 tests in 2.611s / FAILED (failures=1)
+   red: ReceiptBindingTests.test_session_started_with_other_receipt_disables_confirm
+== 变异 M4 确认不核预览 sha  exit=1  Ran 56 tests in 2.599s / FAILED (failures=2)
+   red: ConfirmGateTests.test_preview_not_displayed_or_other_image_refused
+   red: ConfirmGateTests.test_preview_replaced_after_display_refused
+== 变异 M5 未标记时拿页面启动当 Play 开始  exit=1  Ran 56 tests in 2.594s / FAILED (failures=3)
+   red: OperatorLogTests.test_every_click_refusal_unknown_retry_and_timer_logged
+   red: PlayTimerTests.test_mark_persisted_restart_and_refresh_do_not_reset
+   red: PlayTimerTests.test_unmarked_never_uses_page_or_session_start
+== 变异 M6 到点自动 stop  exit=1  Ran 56 tests in 2.587s / FAILED (failures=1)
+   red: PlayTimerTests.test_deadline_only_prompts_no_auto_stop
+== 变异 M7 不拦已用号 acq-d1-1  exit=1  Ran 56 tests in 2.582s / FAILED (failures=2)
+   red: SidGuardTests.test_retired_acq_d1_1_refused_at_start
+   red: SidDuringRunTests.test_retired_number_never_gets_actions
+== 变异 M8 时效手抄 LOOP-001 常数  exit=1  Ran 56 tests in 2.618s / FAILED (failures=2)
+   red: ReceiptValuesTests.test_gate_values_read_from_receipt_not_hand_copied
+   red: ConfirmGateTests.test_three_deadlines_earliest_wins_from_session_times
+== 变异 M9 表外 respecify 无条件出现  exit=1  Ran 56 tests in 2.625s / FAILED (failures=3)
+   red: CliExitTests.test_instruction_known_only_from_accepted_ask
+   red: LegalActionTableTests.test_nine_state_closed_table_per_state
+   red: SidDuringRunTests.test_second_session_started_disables_every_action
+== 变异 M10 第二个 session_started 不拦  exit=1  Ran 56 tests in 2.616s / FAILED (failures=1)
+   red: SidDuringRunTests.test_second_session_started_disables_every_action
+== 修后（本批 docs/evidence/P1-ENG-ACQ-001-operator-web.py）  exit=0  Ran 56 tests in 2.600s / OK
+
+# ==== K1K3 操作页返工（C2@K1K3 退回 C2-1/C2-2；Dispatch-Id P1-ENG-ACQ-001-K1K3操作页返工-20260930T031648Z-14ac；2026-09-29） ====
+# 修前 = 返工前 HEAD 的页面（git show HEAD:docs/evidence/P1-ENG-ACQ-001-operator-web.py，即 C2 核对的候选），临时复制到 docs/evidence/ 同目录运行（REPO 推导不变）后删除；修后 = 本轮页面
+# 解释器 .venv-yoloe Python 3.12.13（只读）；node v26.3.0（PageScriptButtonTests 执行页面脚本 paintButtons；无 node 时该 2 例 skip）
+== 修前（返工前页面） exit=1  Ran 68 tests in 3.099s / FAILED (failures=11, errors=1)
+   red(ERROR): RetryStateTransitionTests.test_unchanged_view_retry_resends_the_same_request
+   red(FAIL): PageScriptButtonTests.test_mark_button_disabled_on_same_number_block
+   red(FAIL): PageScriptButtonTests.test_retry_button_follows_current_state_table
+   red(FAIL): RetryStateTransitionTests.test_ask_unknown_then_acquiring_retry_sends_nothing
+   red(FAIL): RetryStateTransitionTests.test_confirm_unknown_past_deadline_retry_sends_nothing
+   red(FAIL): RetryStateTransitionTests.test_confirm_unknown_preview_replaced_retry_sends_nothing
+   red(FAIL): RetryStateTransitionTests.test_confirm_unknown_then_new_result_token_retry_sends_nothing
+   red(FAIL): RetryStateTransitionTests.test_confirm_unknown_then_terminal_retry_sends_nothing
+   red(FAIL): RetryStateTransitionTests.test_release_unknown_then_backend_fatal_retry_sends_nothing
+   red(FAIL): SidDuringRunTests.test_archive_or_activity_after_close_disables_play_mark
+   red(FAIL): SidDuringRunTests.test_second_session_started_disables_play_mark
+   red(FAIL): SidDuringRunTests.test_unreadable_state_does_not_let_the_mark_through
+   失败原因：C2-1 六例为修前页面在状态/令牌/时效/预览已变时仍发出 CLI（Tuples differ: (True, [argv]) != (False, [])）；
+   C2-2 三例为修前 mark_play_start 在同号阻断/读不到状态时仍写入 play_start_marked（True is not false）；
+   页面脚本两例为修前 paintButtons 不停用重试（[False] != [True]）与计时按钮（False is not true）；
+   正对照 test_unchanged_view_retry_resends_the_same_request 修前 ERROR 是缺 retry_allowed 字段（KeyError），非行为差异。
+   红的恰为本轮新增 12 例；原 56 例在修前页面上全绿。
+== 修后（本轮页面） exit=0  Ran 68 tests in 2.958s / OK
+
+# ==== R2@K1K3返工（K1K3-R2-1；Dispatch-Id P1-ENG-ACQ-001-R2@K1K3返工-20260930T040057Z-ce72；2026-09-30） ====
+# 修前 = 返工前 HEAD 的页面（git show HEAD:docs/evidence/P1-ENG-ACQ-001-operator-web.py，即 R2@K1K3 round_candidate 的页面），临时复制到 docs/evidence/ 同目录运行后删除；修后 = 本轮页面
+# 变异 = 本轮页面逐一撤掉一项（临时文件同目录，运行后删除）；解释器 .venv-yoloe Python 3.12.13（只读）；node v26.3.0
+== 修前（返工前页面）  exit=1  Ran 72 tests in 3.204s / FAILED (failures=2)
+   red: SidDuringRunTests.test_concurrent_poll_with_older_state_read_is_not_reuse
+   red: SidDuringRunTests.test_normal_end_between_journal_and_state_is_not_reuse
+== 变异 V1 撤掉轮询串行（poll_lock）  exit=1  Ran 72 tests in 3.118s / FAILED (failures=1)
+   red: SidDuringRunTests.test_concurrent_poll_with_older_state_read_is_not_reuse
+== 变异 V2 撤掉「状态信封晚于 TERMINAL 记录」判据  exit=1  Ran 72 tests in 3.532s / FAILED (errors=1)
+   red: SidDuringRunTests.test_new_state_after_close_record_blocked_without_seeing_terminal_state
+== 修后（本轮页面）  exit=0  Ran 72 tests in 3.435s / OK

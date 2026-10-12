@@ -1,0 +1,5 @@
+# Tested for P1-TRACK-001 on macOS arm64 with CPython 3.12.
+# This environment must not be merged with .venv-yoloe because both OpenCV
+# wheel families provide the same cv2 namespace.
+opencv-contrib-python==5.0.0.93
+numpy==2.5.1

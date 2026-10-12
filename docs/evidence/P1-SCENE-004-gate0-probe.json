@@ -1,0 +1,4386 @@
+{
+ "closed_loop_recall_claimed": false,
+ "decision": "PROCEED_TO_IMPLEMENTATION",
+ "embedding": {
+  "distractor_cosine": {
+   "count": 157,
+   "max": 0.6643118558378989,
+   "mean": 0.5875392136201728,
+   "median": 0.6000181718463359,
+   "min": 0.2739681515477503
+  },
+  "excluded_reference_frames": 3,
+  "feasibility_decision": "REQUIRES_REVIEW",
+  "separation_margin_passes": 142,
+  "separation_opportunities": 157,
+  "target_cosine": {
+   "count": 201,
+   "max": 0.9395165339530033,
+   "mean": 0.7136265742929901,
+   "median": 0.7687190866857532,
+   "min": 0.38032701721630696
+  },
+  "target_threshold_passes": 161
+ },
+ "frozen_probe_protocol": {
+  "detector_confidence_min": 0.25,
+  "detector_iou_min": 0.3,
+  "headline_denominator": "ALL_NEAR_FIELD_PAIRED_VISIBLE_FRAMES",
+  "near_slant_range_max_m": 31.0,
+  "near_slant_range_min_m": 25.0,
+  "proceed_recall_min": 0.7,
+  "reference_exclusion_radius_frames": 1,
+  "reid_margin": 0.1,
+  "reid_threshold": 0.5,
+  "selection_block_recall_max": 0.5
+ },
+ "interpretation": "ORACLE_POINTED_DETECTABILITY_UPPER_BOUND",
+ "model_identity": {
+  "appearance_source_sha256": "c27dcdaf50e9fb5bbdf2bb529da357716372e19c6afab17d5350f3f0094aed4b",
+  "appearance_weights_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "detector_weights_sha256": "8e439445c87338b79d9ce21dec109f4621e26df67e94d26ea1a98c1e64dce3e3",
+  "minimum_crop_side_px": 2,
+  "reanchor_config_path": "~/TetheredDroneTracking/config/detector-reanchor.models.json",
+  "reanchor_config_sha256": "593734d67ada73a0304d67d27c6ae536be616d2180f744336b85ff6e0ac706d2"
+ },
+ "recall": {
+  "denominator": 204,
+  "hits": 183,
+  "tick_subset_denominator": 64,
+  "tick_subset_hits": 56,
+  "tick_subset_value": 0.875,
+  "unpaired_in_band": 0,
+  "value": 0.8970588235294118
+ },
+ "samples": [
+  {
+   "distractors": [
+    {
+     "cosine": 0.4910637583523347,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 0,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.7710950356059009,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 0.12393191456794739,
+   "target_box_height_px": 83.64154815673828,
+   "target_box_width_px": 79.81769561767578,
+   "target_cosine": 0.5732214469043158,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.765104293823242
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4433969937910353,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 1,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.5771451478857306,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 0.322228342294693,
+   "target_box_height_px": 64.25532817840576,
+   "target_box_width_px": 87.02127456665039,
+   "target_cosine": 0.5658863415700194,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.6723690032959
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4308716561993003,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 2,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8853174089584056,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 0.5118349194526672,
+   "target_box_height_px": 72.67908096313477,
+   "target_box_width_px": 76.53400421142578,
+   "target_cosine": 0.5244635912665808,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.58913230895996
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5352794740645944,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 3,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8978229107719533,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 0.7117571830749512,
+   "target_box_height_px": 78.83527278900146,
+   "target_box_width_px": 61.79237365722656,
+   "target_cosine": 0.5808445249808238,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.50718116760254
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6033626481116392,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 4,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9274916940835883,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 0.8115120530128479,
+   "target_box_height_px": 74.06315803527832,
+   "target_box_width_px": 41.42566680908203,
+   "target_cosine": 0.8223331195797369,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.468538284301758
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5686015427618456,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 6,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9035347515032734,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 1.111477255821228,
+   "target_box_height_px": 74.44657802581787,
+   "target_box_width_px": 42.49624252319336,
+   "target_cosine": 0.8030857786773749,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.361438751220703
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5729467276705111,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 8,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9037021448667737,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 1.4105591773986816,
+   "target_box_height_px": 74.68451499938965,
+   "target_box_width_px": 43.40126037597656,
+   "target_cosine": 0.8179019804965422,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.268388748168945
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5693754502035004,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 9,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9085916630408349,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 1.511085033416748,
+   "target_box_height_px": 74.97166156768799,
+   "target_box_width_px": 44.30891036987305,
+   "target_cosine": 0.7785474075643479,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.24022102355957
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5977058719253512,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 10,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9129388350026294,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 1.6117075681686401,
+   "target_box_height_px": 75.11611461639404,
+   "target_box_width_px": 44.8704719543457,
+   "target_cosine": 0.7974242748168666,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.213598251342773
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5963120989919768,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 11,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.9135004386317802,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 1.8108584880828857,
+   "target_box_height_px": 75.21451950073242,
+   "target_box_width_px": 45.54859161376953,
+   "target_cosine": 0.7895827609871435,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.165569305419922
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5899689089647252,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 12,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9317915025693341,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 1.9116097688674927,
+   "target_box_height_px": 75.60725212097168,
+   "target_box_width_px": 46.92584991455078,
+   "target_cosine": 0.7588986965548401,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.143638610839844
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5775589448989533,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 13,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9015510731141807,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 2.1115529537200928,
+   "target_box_height_px": 75.718674659729,
+   "target_box_width_px": 47.841758728027344,
+   "target_cosine": 0.7308297749996825,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.104854583740234
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5618783762266008,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 14,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8659908934382656,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 2.211552619934082,
+   "target_box_height_px": 76.32861614227295,
+   "target_box_width_px": 49.88100051879883,
+   "target_cosine": 0.7098911648951756,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.08782386779785
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5497482937281115,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 15,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9281905811054689,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 2.411661148071289,
+   "target_box_height_px": 76.92008972167969,
+   "target_box_width_px": 51.22476577758789,
+   "target_cosine": 0.6858970509588583,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.05850601196289
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5456886857517026,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 16,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8908694938950437,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 2.5111634731292725,
+   "target_box_height_px": 77.84807682037354,
+   "target_box_width_px": 54.52005386352539,
+   "target_cosine": 0.6426771957722852,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.046295166015625
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5487849679018924,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 17,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9093155270742905,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 2.6118602752685547,
+   "target_box_height_px": 78.36919784545898,
+   "target_box_width_px": 56.69771194458008,
+   "target_cosine": 0.690130902533546,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.035541534423828
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.511071406819773,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 18,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.9029237947329521,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 2.811711072921753,
+   "target_box_height_px": 78.90778541564941,
+   "target_box_width_px": 59.42573547363281,
+   "target_cosine": 0.7148728268561357,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.01898956298828
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5236719980182433,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 19,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 3.011630058288574,
+   "target_box_height_px": 79.00845050811768,
+   "target_box_width_px": 66.80522918701172,
+   "target_cosine": 0.599657199151982,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.008813858032227
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.47504830375405493,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 20,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 3.2125625610351562,
+   "target_box_height_px": 73.33328247070312,
+   "target_box_width_px": 76.72599792480469,
+   "target_cosine": 0.5717379449729963,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.005023956298828
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.457791178619054,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 21,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 3.411508560180664,
+   "target_box_height_px": 54.648942947387695,
+   "target_box_width_px": 78.16686630249023,
+   "target_cosine": 0.5915328951244083,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.00763511657715
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4741693604042023,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 22,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8809873561422634,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 3.611581325531006,
+   "target_box_height_px": 43.628926277160645,
+   "target_box_width_px": 74.62417602539062,
+   "target_cosine": 0.7156395292415646,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.016643524169922
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5145397035602389,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 23,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 3.8116276264190674,
+   "target_box_height_px": 66.68181896209717,
+   "target_box_width_px": 78.97415161132812,
+   "target_cosine": 0.6031219416534663,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.03204345703125
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5587730790304113,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 24,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8973752751862265,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.011406898498535,
+   "target_box_height_px": 78.0862283706665,
+   "target_box_width_px": 69.6098518371582,
+   "target_cosine": 0.6377711364585542,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.053791046142578
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5955599701542517,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 25,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9078363054076014,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.111534118652344,
+   "target_box_height_px": 77.87797451019287,
+   "target_box_width_px": 55.20160675048828,
+   "target_cosine": 0.6748241072518227,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.067079544067383
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5862088985136565,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 26,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8724713456766175,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.21170711517334,
+   "target_box_height_px": 77.32971668243408,
+   "target_box_width_px": 53.252010345458984,
+   "target_cosine": 0.6962124076704888,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.081966400146484
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6056410739299389,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 27,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8856924217506648,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.411074161529541,
+   "target_box_height_px": 76.94316387176514,
+   "target_box_width_px": 51.577110290527344,
+   "target_cosine": 0.7324689932401482,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.11632537841797
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6072812212298776,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 28,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9093465452443471,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 4.511564254760742,
+   "target_box_height_px": 76.28889083862305,
+   "target_box_width_px": 49.062843322753906,
+   "target_cosine": 0.7711299457632304,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.136022567749023
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6240816401120943,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 29,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9095578758345904,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.611561298370361,
+   "target_box_height_px": 76.04968070983887,
+   "target_box_width_px": 48.028526306152344,
+   "target_cosine": 0.7888680551218891,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.157201766967773
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6148391017394798,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 30,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.9070132069890919,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.811493873596191,
+   "target_box_height_px": 75.90794563293457,
+   "target_box_width_px": 47.071590423583984,
+   "target_cosine": 0.8146063547136452,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.204256057739258
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6255828375997008,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 31,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8874963648306634,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 4.911431789398193,
+   "target_box_height_px": 75.44511795043945,
+   "target_box_width_px": 45.61296463012695,
+   "target_cosine": 0.8098664562767262,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.230117797851562
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6300417507108698,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 32,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8831957082086793,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.111528396606445,
+   "target_box_height_px": 75.31924724578857,
+   "target_box_width_px": 44.90924835205078,
+   "target_cosine": 0.8435961948615373,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.286569595336914
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6375353621595957,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 33,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8781665265971071,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.211315155029297,
+   "target_box_height_px": 74.94712829589844,
+   "target_box_width_px": 43.854732513427734,
+   "target_cosine": 0.8587656026832009,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.317039489746094
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6495596980149949,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 34,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8839946967897294,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.312518119812012,
+   "target_box_height_px": 74.79489326477051,
+   "target_box_width_px": 43.36601257324219,
+   "target_cosine": 0.8602587311408104,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.34950828552246
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6502231334200528,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 35,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8876226891691293,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.412293910980225,
+   "target_box_height_px": 74.64364528656006,
+   "target_box_width_px": 42.910099029541016,
+   "target_cosine": 0.8781644704776151,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.383058547973633
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6321239824575512,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 36,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8826150624740737,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.511663913726807,
+   "target_box_height_px": 74.49747562408447,
+   "target_box_width_px": 42.492027282714844,
+   "target_cosine": 0.9022682615477242,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.417987823486328
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6592588877057388,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 37,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8853082584713471,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.711769104003906,
+   "target_box_height_px": 74.34695720672607,
+   "target_box_width_px": 42.028770446777344,
+   "target_cosine": 0.9055252285807431,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.492877960205078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6296840626289851,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 38,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8791550365167998,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 5.911086559295654,
+   "target_box_height_px": 74.03866767883301,
+   "target_box_width_px": 41.31216049194336,
+   "target_cosine": 0.915710845125313,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.573482513427734
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6518336188264692,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 39,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8674547343174268,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 6.011592388153076,
+   "target_box_height_px": 73.7682294845581,
+   "target_box_width_px": 40.753936767578125,
+   "target_cosine": 0.926167160936368,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.616382598876953
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6643118558378989,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 40,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8683863489157594,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 6.111703872680664,
+   "target_box_height_px": 73.61663818359375,
+   "target_box_width_px": 40.4570198059082,
+   "target_cosine": 0.9381051253340958,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.66061019897461
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.647411899332284,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 41,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8613363518147239,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 6.31162166595459,
+   "target_box_height_px": 73.4044075012207,
+   "target_box_width_px": 40.08953094482422,
+   "target_cosine": 0.9224499515410296,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.75336265563965
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6542219303001773,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 42,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8500250268369922,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 6.411428451538086,
+   "target_box_height_px": 73.14515590667725,
+   "target_box_width_px": 39.64384078979492,
+   "target_cosine": 0.9395165339530033,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.801862716674805
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6506913432137006,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 43,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8495308883182229,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 6.6110520362854,
+   "target_box_height_px": 72.8981065750122,
+   "target_box_width_px": 39.30337905883789,
+   "target_cosine": 0.8982676586092623,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.903207778930664
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6440575127580402,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 44,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8505997214785165,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 6.711526870727539,
+   "target_box_height_px": 72.63957023620605,
+   "target_box_width_px": 38.91633987426758,
+   "target_cosine": 0.8977272610772704,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.956390380859375
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6445223371546313,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 45,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8655488041411383,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 6.811710357666016,
+   "target_box_height_px": 72.46182918548584,
+   "target_box_width_px": 38.687477111816406,
+   "target_cosine": 0.8939460666894228,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.010854721069336
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6524235902325202,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": true,
+   "frame_id": 46,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.857818805884204,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 6.911576747894287,
+   "target_box_height_px": 72.28009700775146,
+   "target_box_width_px": 38.465576171875,
+   "target_cosine": 0.9250055688088729,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.066570281982422
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6262865287772823,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": true,
+   "frame_id": 47,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8615216806595878,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 7.111673831939697,
+   "target_box_height_px": 71.97275161743164,
+   "target_box_width_px": 38.15187454223633,
+   "target_cosine": 0.976511636793484,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.182430267333984
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6373476040738021,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": true,
+   "frame_id": 48,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8556171941041956,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 7.31253719329834,
+   "target_box_height_px": 71.57082080841064,
+   "target_box_width_px": 37.73080825805664,
+   "target_cosine": 0.9385558778385027,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.304346084594727
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6642302441589505,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 49,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8545735072820569,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 7.4115071296691895,
+   "target_box_height_px": 71.30181312561035,
+   "target_box_width_px": 37.43122100830078,
+   "target_cosine": 0.9077690058211974,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.366458892822266
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6388057087120045,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 50,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8865550519886936,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 7.61166524887085,
+   "target_box_height_px": 70.93648910522461,
+   "target_box_width_px": 37.13308334350586,
+   "target_cosine": 0.8939090767495737,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.496150970458984
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6094201597170712,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 51,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8919571020572744,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 7.8111891746521,
+   "target_box_height_px": 70.49137115478516,
+   "target_box_width_px": 36.75151824951172,
+   "target_cosine": 0.924704529297567,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.630796432495117
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6492888166121389,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 52,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8809846794435162,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 7.911584377288818,
+   "target_box_height_px": 70.2081298828125,
+   "target_box_width_px": 36.48923873901367,
+   "target_cosine": 0.8561054904569397,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.700544357299805
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6276452172775412,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 53,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8905461587956405,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 8.11172103881836,
+   "target_box_height_px": 69.7884750366211,
+   "target_box_width_px": 36.19802474975586,
+   "target_cosine": 0.8807170554789742,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.843524932861328
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6063711315124811,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 54,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8729058234612265,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 8.310935974121094,
+   "target_box_height_px": 69.30091381072998,
+   "target_box_width_px": 35.8416748046875,
+   "target_cosine": 0.8438819210512536,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.990995407104492
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6543679813869765,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 55,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8867355063602355,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 8.411499977111816,
+   "target_box_height_px": 69.00355339050293,
+   "target_box_width_px": 35.60539245605469,
+   "target_cosine": 0.8467505693585125,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.067358016967773
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.650002924518341,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 56,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8822537502546173,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 8.61126708984375,
+   "target_box_height_px": 68.53723526000977,
+   "target_box_width_px": 35.31999588012695,
+   "target_cosine": 0.8957647264997054,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.222827911376953
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6219209715642102,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 57,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8861761139442088,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 8.711552619934082,
+   "target_box_height_px": 68.23229312896729,
+   "target_box_width_px": 35.09563446044922,
+   "target_cosine": 0.8159821044687118,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.30274772644043
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6363797555391326,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 58,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8810952525937383,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 8.811653137207031,
+   "target_box_height_px": 67.9676628112793,
+   "target_box_width_px": 34.92851257324219,
+   "target_cosine": 0.8439853389461492,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.383747100830078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6000181718463359,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 59,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8761278357696692,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.011724472045898,
+   "target_box_height_px": 67.46725559234619,
+   "target_box_width_px": 34.64509963989258,
+   "target_cosine": 0.8578837590674758,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.54929542541504
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5989224249366354,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 60,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8944373734788218,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.111529350280762,
+   "target_box_height_px": 67.15363025665283,
+   "target_box_width_px": 34.434547424316406,
+   "target_cosine": 0.8669702833733218,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.63367462158203
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6203511125377651,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 61,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8874773562883322,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.211688995361328,
+   "target_box_height_px": 66.87536716461182,
+   "target_box_width_px": 34.272212982177734,
+   "target_cosine": 0.8600358672215274,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.71953773498535
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6216793769773806,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 62,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8981723598956826,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.412393569946289,
+   "target_box_height_px": 66.34454727172852,
+   "target_box_width_px": 33.99015426635742,
+   "target_cosine": 0.894693251261276,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.89513397216797
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6270780269437428,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 63,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9019214021904789,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.511337280273438,
+   "target_box_height_px": 66.0245418548584,
+   "target_box_width_px": 33.79112243652344,
+   "target_cosine": 0.8928606938777761,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.983413696289062
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5981426621754378,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 64,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8834996369945207,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.711694717407227,
+   "target_box_height_px": 65.47614097595215,
+   "target_box_width_px": 33.5114860534668,
+   "target_cosine": 0.8843507156709345,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.16558074951172
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.611471130039972,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 65,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8647360086669872,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 9.911595344543457,
+   "target_box_height_px": 64.88385200500488,
+   "target_box_width_px": 33.196048736572266,
+   "target_cosine": 0.8194597906741103,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.3518123626709
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6213776850889191,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 66,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8652134653466552,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 10.111720085144043,
+   "target_box_height_px": 64.2824649810791,
+   "target_box_width_px": 32.8843879699707,
+   "target_cosine": 0.8421140128127481,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.542648315429688
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6037829226177425,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 67,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8537176807328676,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 10.311468124389648,
+   "target_box_height_px": 63.674397468566895,
+   "target_box_width_px": 32.57587432861328,
+   "target_cosine": 0.7595071258386933,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.737417221069336
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5754103856875339,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 68,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.834321213692026,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 10.511709213256836,
+   "target_box_height_px": 63.05801868438721,
+   "target_box_width_px": 32.27012634277344,
+   "target_cosine": 0.8213904667986086,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.936887741088867
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5990891709249296,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 69,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8723714802596294,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 10.711692810058594,
+   "target_box_height_px": 62.436604499816895,
+   "target_box_width_px": 31.967391967773438,
+   "target_cosine": 0.8215745108512271,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.14023208618164
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5711368082758438,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 70,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8578419613603957,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 10.911500930786133,
+   "target_box_height_px": 61.810383796691895,
+   "target_box_width_px": 31.667957305908203,
+   "target_cosine": 0.8029885449447138,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.347434997558594
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6006501525900435,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 71,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8833731076811469,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 11.114602088928223,
+   "target_box_height_px": 61.17058753967285,
+   "target_box_width_px": 31.367454528808594,
+   "target_cosine": 0.8252904429741974,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.562105178833008
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5969721770868908,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 72,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8805384673505201,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 11.312540054321289,
+   "target_box_height_px": 60.54156303405762,
+   "target_box_width_px": 31.07534408569336,
+   "target_cosine": 0.799947933503366,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.775156021118164
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.549209924140631,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 73,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8830392257697199,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 11.512606620788574,
+   "target_box_height_px": 59.90522861480713,
+   "target_box_width_px": 30.78439712524414,
+   "target_cosine": 0.8478827279522226,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.994272232055664
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5918621622284521,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 74,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8753747614034972,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 11.71165657043457,
+   "target_box_height_px": 59.26933765411377,
+   "target_box_width_px": 30.49713134765625,
+   "target_cosine": 0.79387258779622,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.215957641601562
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5745371659003253,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 75,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8624202611237893,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 11.811450004577637,
+   "target_box_height_px": 58.92880439758301,
+   "target_box_width_px": 30.335159301757812,
+   "target_cosine": 0.7111375846705161,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.328454971313477
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5863912790908397,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 76,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8518899717268492,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 11.911677360534668,
+   "target_box_height_px": 58.608455657958984,
+   "target_box_width_px": 30.192813873291016,
+   "target_cosine": 0.7904849285586444,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.44234275817871
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5792096599054796,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 77,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8663311695940289,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 12.011574745178223,
+   "target_box_height_px": 58.28927993774414,
+   "target_box_width_px": 30.05168914794922,
+   "target_cosine": 0.7687190866857532,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.55674171447754
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5576484164144823,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 78,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8742074124523281,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 12.111690521240234,
+   "target_box_height_px": 57.969231605529785,
+   "target_box_width_px": 29.910964965820312,
+   "target_cosine": 0.7601450158379868,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.672264099121094
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5414516850595862,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 79,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8757725887785813,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 12.311692237854004,
+   "target_box_height_px": 57.34950542449951,
+   "target_box_width_px": 29.648265838623047,
+   "target_cosine": 0.770753163499798,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.905643463134766
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 628,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8730485355880938,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 98.61131286621094,
+   "target_box_height_px": 62.26534366607666,
+   "target_box_width_px": 53.536415100097656,
+   "target_cosine": 0.47908262986572386,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.807554244995117
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 629,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8839683815640708,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 98.81094360351562,
+   "target_box_height_px": 62.80986785888672,
+   "target_box_width_px": 54.2943000793457,
+   "target_cosine": 0.4106274414153478,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.611425399780273
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 630,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8755502268131373,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 98.91088104248047,
+   "target_box_height_px": 63.050265312194824,
+   "target_box_width_px": 54.809608459472656,
+   "target_cosine": 0.4780377259199561,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.514728546142578
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 631,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8815599746971418,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.01131439208984,
+   "target_box_height_px": 63.31222057342529,
+   "target_box_width_px": 55.19895553588867,
+   "target_cosine": 0.4748917833938146,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.418575286865234
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 632,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8796312697297209,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.11152648925781,
+   "target_box_height_px": 63.568968772888184,
+   "target_box_width_px": 55.59120178222656,
+   "target_cosine": 0.45991675954852235,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.32364845275879
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 633,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8807217565182817,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.21261596679688,
+   "target_box_height_px": 63.823256492614746,
+   "target_box_width_px": 55.98712921142578,
+   "target_cosine": 0.4773916178874615,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.22892951965332
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 634,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8753811255886167,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.4116439819336,
+   "target_box_height_px": 64.34992790222168,
+   "target_box_width_px": 56.63494110107422,
+   "target_cosine": 0.4601614088630476,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.045562744140625
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 635,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.881801445320335,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.51162719726562,
+   "target_box_height_px": 64.54380512237549,
+   "target_box_width_px": 57.177772521972656,
+   "target_cosine": 0.44481190140396387,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.955015182495117
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 636,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8698115618524807,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.71160125732422,
+   "target_box_height_px": 65.0503921508789,
+   "target_box_width_px": 57.83109664916992,
+   "target_cosine": 0.46925658691343153,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.777116775512695
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 637,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8570832337863502,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 99.91149139404297,
+   "target_box_height_px": 65.48583984375,
+   "target_box_width_px": 58.63838195800781,
+   "target_cosine": 0.48461150007625065,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.603628158569336
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 638,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8667667632619998,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 100.11165618896484,
+   "target_box_height_px": 65.89403629302979,
+   "target_box_width_px": 59.45211410522461,
+   "target_cosine": 0.5064380150187011,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.4343204498291
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 639,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8797368597806401,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 100.31173706054688,
+   "target_box_height_px": 66.2706184387207,
+   "target_box_width_px": 60.270652770996094,
+   "target_cosine": 0.4960413387345249,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.269577026367188
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 640,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8679497536033377,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 100.510986328125,
+   "target_box_height_px": 66.61067962646484,
+   "target_box_width_px": 61.09031677246094,
+   "target_cosine": 0.4799813351203911,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.11005973815918
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 641,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8760964430980867,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 100.611083984375,
+   "target_box_height_px": 66.66725635528564,
+   "target_box_width_px": 61.67091369628906,
+   "target_cosine": 0.45754900707322943,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.031652450561523
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 642,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.862120633021654,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 100.7116470336914,
+   "target_box_height_px": 66.80886268615723,
+   "target_box_width_px": 62.085628509521484,
+   "target_cosine": 0.48962579784253274,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.954063415527344
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 643,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8589124559957876,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 100.8115463256836,
+   "target_box_height_px": 66.93755149841309,
+   "target_box_width_px": 62.499237060546875,
+   "target_cosine": 0.4814613117845058,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.87816619873047
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 644,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8490770616593653,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 101.01128387451172,
+   "target_box_height_px": 67.29303359985352,
+   "target_box_width_px": 63.14643859863281,
+   "target_cosine": 0.4592157395747128,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.72998046875
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 645,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8439271142918527,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 101.11161804199219,
+   "target_box_height_px": 67.25724220275879,
+   "target_box_width_px": 63.73270034790039,
+   "target_cosine": 0.4807879880626913,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.657360076904297
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 646,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8545582755248751,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 101.31262969970703,
+   "target_box_height_px": 67.56604671478271,
+   "target_box_width_px": 64.37370300292969,
+   "target_cosine": 0.4633295468320954,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.51555633544922
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 647,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8389608957087096,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 101.41157531738281,
+   "target_box_height_px": 67.45795726776123,
+   "target_box_width_px": 64.95523452758789,
+   "target_cosine": 0.4673425289334979,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.447580337524414
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 648,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8613396597990588,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 101.61170959472656,
+   "target_box_height_px": 67.71158695220947,
+   "target_box_width_px": 65.5769157409668,
+   "target_cosine": 0.4728729365774386,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.313817977905273
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 649,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8450408191247389,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 101.81165313720703,
+   "target_box_height_px": 67.73380279541016,
+   "target_box_width_px": 66.36468887329102,
+   "target_cosine": 0.4680602300621556,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.185232162475586
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 650,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 101.9114990234375,
+   "target_box_height_px": 67.49560832977295,
+   "target_box_width_px": 66.9260025024414,
+   "target_cosine": 0.4794360830075104,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.122922897338867
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 651,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 102.01142120361328,
+   "target_box_height_px": 67.45199203491211,
+   "target_box_width_px": 67.3065185546875,
+   "target_cosine": 0.46236158232679553,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.06185531616211
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 652,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 102.21170806884766,
+   "target_box_height_px": 67.57422924041748,
+   "target_box_width_px": 67.88333892822266,
+   "target_cosine": 0.4359059975257637,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.943347930908203
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 653,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8313136333503867,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 102.41462707519531,
+   "target_box_height_px": 67.38418579101562,
+   "target_box_width_px": 68.6114501953125,
+   "target_cosine": 0.45433509306579534,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.828651428222656
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 654,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 102.61467742919922,
+   "target_box_height_px": 67.09636688232422,
+   "target_box_width_px": 69.30519104003906,
+   "target_cosine": 0.47554474572780836,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.72092628479004
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 655,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8503206241680927,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 102.81471252441406,
+   "target_box_height_px": 66.7263650894165,
+   "target_box_width_px": 69.9557876586914,
+   "target_cosine": 0.48151531804942455,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.618589401245117
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 656,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8454523063883789,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 103.01471710205078,
+   "target_box_height_px": 66.2601900100708,
+   "target_box_width_px": 70.56110382080078,
+   "target_cosine": 0.4061789146124443,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.521697998046875
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 657,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 103.11457824707031,
+   "target_box_height_px": 65.561842918396,
+   "target_box_width_px": 70.95943450927734,
+   "target_cosine": 0.3843318720528938,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.475374221801758
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 658,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 103.31472778320312,
+   "target_box_height_px": 65.36786556243896,
+   "target_box_width_px": 71.36800765991211,
+   "target_cosine": 0.40849235576819753,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.386676788330078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 659,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 103.5156021118164,
+   "target_box_height_px": 64.63465690612793,
+   "target_box_width_px": 71.82876586914062,
+   "target_cosine": 0.3906442463690502,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.303266525268555
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 660,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 103.71479797363281,
+   "target_box_height_px": 63.77755165100098,
+   "target_box_width_px": 72.2140121459961,
+   "target_cosine": 0.38032701721630696,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.22616195678711
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 661,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 103.81458282470703,
+   "target_box_height_px": 62.717227935791016,
+   "target_box_width_px": 72.40715026855469,
+   "target_cosine": 0.42168659302126305,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.189645767211914
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 662,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 104.0113754272461,
+   "target_box_height_px": 62.271552085876465,
+   "target_box_width_px": 72.63307571411133,
+   "target_cosine": 0.476232111466958,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.12179183959961
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 663,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 104.11150360107422,
+   "target_box_height_px": 61.05329990386963,
+   "target_box_width_px": 72.70942687988281,
+   "target_cosine": 0.4501338656437114,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.089399337768555
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 664,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 104.31117248535156,
+   "target_box_height_px": 60.49488544464111,
+   "target_box_width_px": 72.8428840637207,
+   "target_cosine": 0.4700024468670004,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.02911376953125
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 665,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8384942148850295,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 104.51172637939453,
+   "target_box_height_px": 59.13269519805908,
+   "target_box_width_px": 72.84870147705078,
+   "target_cosine": 0.4799794942429831,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.974380493164062
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 666,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 104.71163940429688,
+   "target_box_height_px": 57.62736797332764,
+   "target_box_width_px": 72.7346420288086,
+   "target_cosine": 0.47497198296059623,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.9256591796875
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 667,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.810398836799548,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 104.91168212890625,
+   "target_box_height_px": 55.99120616912842,
+   "target_box_width_px": 72.49454498291016,
+   "target_cosine": 0.5172214343809158,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.882770538330078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 668,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.806475687969256,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 105.11167907714844,
+   "target_box_height_px": 54.15706157684326,
+   "target_box_width_px": 72.08290100097656,
+   "target_cosine": 0.5514885495684962,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.882770538330078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 669,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.5420302767523547,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 105.3107681274414,
+   "target_box_height_px": 86.46974086761475,
+   "target_box_width_px": 86.62717819213867,
+   "target_cosine": 0.45642698913864027,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.76007652282715
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 670,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.575678013101292,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 105.5115737915039,
+   "target_box_height_px": 85.98073482513428,
+   "target_box_width_px": 86.02008819580078,
+   "target_cosine": 0.5325147725860202,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.64178466796875
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 671,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.5819018565396024,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 105.71248626708984,
+   "target_box_height_px": 85.32473087310791,
+   "target_box_width_px": 85.25741577148438,
+   "target_cosine": 0.5241354365962123,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.528982162475586
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4019663243394832,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 672,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.6083145648634674,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 105.91162872314453,
+   "target_box_height_px": 84.48660850524902,
+   "target_box_width_px": 84.32428359985352,
+   "target_cosine": 0.5131225248686005,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.422733306884766
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2739681515477503,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 673,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.6349287103010284,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 106.11165618896484,
+   "target_box_height_px": 83.46402168273926,
+   "target_box_width_px": 83.21407318115234,
+   "target_cosine": 0.5746809800581616,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.3216495513916
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3456375158804962,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 675,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.695167496011367,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 106.41152954101562,
+   "target_box_height_px": 80.57936668395996,
+   "target_box_width_px": 80.26660919189453,
+   "target_cosine": 0.6182817139561158,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.180824279785156
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4364548032983925,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 677,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.7705371105185929,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 106.81168365478516,
+   "target_box_height_px": 77.9441499710083,
+   "target_box_width_px": 77.44617462158203,
+   "target_cosine": 0.5842223331573475,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.01326560974121
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6571229672371942,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 680,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.7970269071957015,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 107.410400390625,
+   "target_box_height_px": 77.10312366485596,
+   "target_box_width_px": 76.87644958496094,
+   "target_cosine": 0.5957021345654286,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.86947250366211
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6571229672371942,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 681,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8344727264757964,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 107.51102447509766,
+   "target_box_height_px": 80.88845729827881,
+   "target_box_width_px": 62.111778259277344,
+   "target_cosine": 0.6373811444264611,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.818546295166016
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6294241610493655,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 684,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.892550136009702,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 108.0116195678711,
+   "target_box_height_px": 72.99365043640137,
+   "target_box_width_px": 38.85538101196289,
+   "target_cosine": 0.7783015013564986,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.58722686767578
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6367827018386645,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 685,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8970152481159585,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 108.21166229248047,
+   "target_box_height_px": 73.20952892303467,
+   "target_box_width_px": 39.30429458618164,
+   "target_cosine": 0.75598112081482,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.50519561767578
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6324774934168728,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 686,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9051444949503374,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 108.41129302978516,
+   "target_box_height_px": 73.41040134429932,
+   "target_box_width_px": 39.794864654541016,
+   "target_cosine": 0.7383859850761035,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.429346084594727
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6105974822297452,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 688,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8879453318465838,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 108.61157989501953,
+   "target_box_height_px": 73.69359970092773,
+   "target_box_width_px": 40.56720733642578,
+   "target_cosine": 0.7362220377545468,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.35933494567871
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5915368716906263,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 689,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8866524290760466,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 108.71155548095703,
+   "target_box_height_px": 73.79392147064209,
+   "target_box_width_px": 40.885887145996094,
+   "target_cosine": 0.7760709547363153,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.326688766479492
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5693527584838594,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 690,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9122126849581719,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 108.91163635253906,
+   "target_box_height_px": 73.87331485748291,
+   "target_box_width_px": 41.291046142578125,
+   "target_cosine": 0.7556520294358837,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.265975952148438
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5790167431786242,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 691,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.899219501818712,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.11107635498047,
+   "target_box_height_px": 74.06278610229492,
+   "target_box_width_px": 42.054405212402344,
+   "target_cosine": 0.7164272363645605,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.21163558959961
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5577471609094857,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 692,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8895669691906138,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.21094512939453,
+   "target_box_height_px": 74.32960510253906,
+   "target_box_width_px": 42.90891647338867,
+   "target_cosine": 0.766616816907373,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.18675422668457
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.580063235296818,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 693,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9237398456114672,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.3112564086914,
+   "target_box_height_px": 74.45631980895996,
+   "target_box_width_px": 43.440513610839844,
+   "target_cosine": 0.7517065785829047,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.163331985473633
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5682930469596581,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 694,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.89500619406976,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.41108703613281,
+   "target_box_height_px": 74.5969820022583,
+   "target_box_width_px": 44.03684616088867,
+   "target_cosine": 0.7302578040679496,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.141592025756836
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5875598869468486,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 695,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8828164497856938,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.51090240478516,
+   "target_box_height_px": 74.7533655166626,
+   "target_box_width_px": 44.706878662109375,
+   "target_cosine": 0.7829740504868373,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.121423721313477
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5837714409930002,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 696,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8247642293382405,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.71121978759766,
+   "target_box_height_px": 74.8989486694336,
+   "target_box_width_px": 45.5164909362793,
+   "target_cosine": 0.7708347070623007,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.085689544677734
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5799484705091298,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 697,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.869815555481565,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 109.91223907470703,
+   "target_box_height_px": 75.78367710113525,
+   "target_box_width_px": 47.43064880371094,
+   "target_cosine": 0.7492477755750104,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.05622100830078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5677482955129466,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 698,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8886567385797524,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 110.0108871459961,
+   "target_box_height_px": 76.75137519836426,
+   "target_box_width_px": 50.109500885009766,
+   "target_cosine": 0.7245524622185271,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.04410743713379
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5598673421341681,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 699,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8854533935814746,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 110.11083984375,
+   "target_box_height_px": 77.35834121704102,
+   "target_box_width_px": 51.90521240234375,
+   "target_cosine": 0.7167578664425622,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.033414840698242
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5517136051291015,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 700,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8823876983168913,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 110.31145477294922,
+   "target_box_height_px": 78.08940410614014,
+   "target_box_width_px": 54.219627380371094,
+   "target_cosine": 0.6949304299170969,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.01675796508789
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5650677665804789,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 701,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8839689024257127,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 110.5108871459961,
+   "target_box_height_px": 79.32497978210449,
+   "target_box_width_px": 61.06706619262695,
+   "target_cosine": 0.7004661763493951,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.00657081604004
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.49838486420239325,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 702,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 110.61107635498047,
+   "target_box_height_px": 77.3770523071289,
+   "target_box_width_px": 72.85234451293945,
+   "target_cosine": 0.5889102799691031,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.00385284423828
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4494539831307962,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 703,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 110.81122589111328,
+   "target_box_height_px": 71.94714546203613,
+   "target_box_width_px": 77.88082122802734,
+   "target_cosine": 0.47631878248782694,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.003231048583984
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.46079570293963135,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 704,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.9068637969097326,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 111.01165008544922,
+   "target_box_height_px": 51.969895362854004,
+   "target_box_width_px": 77.58098602294922,
+   "target_cosine": 0.5861428755660167,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.009031295776367
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4742194978857301,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 705,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.9231345560087629,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 111.21141815185547,
+   "target_box_height_px": 47.30536937713623,
+   "target_box_width_px": 76.07860565185547,
+   "target_cosine": 0.595391146619858,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.02120018005371
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5021037421182529,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 706,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 111.31155395507812,
+   "target_box_height_px": 69.0679121017456,
+   "target_box_width_px": 78.76636505126953,
+   "target_cosine": 0.5219000328974425,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.02969741821289
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.49909445638109684,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 707,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.0,
+   "proposal_count": 0,
+   "recall_hit": false,
+   "simulation_time_s": 111.51116943359375,
+   "target_box_height_px": 75.57522296905518,
+   "target_box_width_px": 74.90095138549805,
+   "target_cosine": 0.58527723640432,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.051406860351562
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5782648126912855,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 708,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8487501009269777,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 111.711669921875,
+   "target_box_height_px": 78.46389770507812,
+   "target_box_width_px": 57.757530212402344,
+   "target_cosine": 0.7519950656792065,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.07958984375
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6183773133096768,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 709,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8846550922825679,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 111.91267395019531,
+   "target_box_height_px": 75.95887184143066,
+   "target_box_width_px": 48.10283660888672,
+   "target_cosine": 0.7519843112568692,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.114242553710938
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6271161199210178,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 710,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.90565928491543,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 112.0114517211914,
+   "target_box_height_px": 75.34496784210205,
+   "target_box_width_px": 46.09663009643555,
+   "target_cosine": 0.825656200984356,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.133607864379883
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6153698417961622,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 711,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8924773152964464,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 112.2116470336914,
+   "target_box_height_px": 75.23632049560547,
+   "target_box_width_px": 45.25026321411133,
+   "target_cosine": 0.8566680610569049,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.177570343017578
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6525551617246659,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 712,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8772371322643243,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 112.41129302978516,
+   "target_box_height_px": 74.87734794616699,
+   "target_box_width_px": 43.91254425048828,
+   "target_cosine": 0.87461268577894,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.227663040161133
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6417256412416218,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 713,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8815304914608473,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 112.51160430908203,
+   "target_box_height_px": 74.5240831375122,
+   "target_box_width_px": 42.90599822998047,
+   "target_cosine": 0.8837969149672176,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.255178451538086
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5932128304589078,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 714,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8737544532293894,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 112.71166229248047,
+   "target_box_height_px": 74.43617820739746,
+   "target_box_width_px": 42.39114761352539,
+   "target_cosine": 0.8717160622119106,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.31471061706543
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6356145839925801,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 715,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.866651008467387,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 112.91168975830078,
+   "target_box_height_px": 74.17343616485596,
+   "target_box_width_px": 41.58740997314453,
+   "target_cosine": 0.9065648024699134,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.380401611328125
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6464323634191316,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 716,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8611366549594273,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 113.11077117919922,
+   "target_box_height_px": 73.9202070236206,
+   "target_box_width_px": 40.89824676513672,
+   "target_cosine": 0.8881560980348949,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.45185661315918
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6386443741198939,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 717,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8487446019349624,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 113.21148681640625,
+   "target_box_height_px": 73.67998123168945,
+   "target_box_width_px": 40.365447998046875,
+   "target_cosine": 0.9150427241520505,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.490299224853516
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6385153536545138,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 718,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8568328333206703,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 113.41165161132812,
+   "target_box_height_px": 73.5366153717041,
+   "target_box_width_px": 40.01516342163086,
+   "target_cosine": 0.895246202480085,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.57124137878418
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6623837587709805,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 719,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8642608829272019,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 113.51156616210938,
+   "target_box_height_px": 73.3084774017334,
+   "target_box_width_px": 39.57672119140625,
+   "target_cosine": 0.8815469816084693,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.613889694213867
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6248708589952605,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 720,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8652286968595647,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 113.71167755126953,
+   "target_box_height_px": 73.13075065612793,
+   "target_box_width_px": 39.25912857055664,
+   "target_cosine": 0.895510599061325,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.703765869140625
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.65795561325322,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 721,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8600719307065078,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 113.91168975830078,
+   "target_box_height_px": 72.84144401550293,
+   "target_box_width_px": 38.805084228515625,
+   "target_cosine": 0.8792027126548442,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.799489974975586
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6409019799048059,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 722,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8568952577170244,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 114.11244201660156,
+   "target_box_height_px": 72.53421306610107,
+   "target_box_width_px": 38.38024139404297,
+   "target_cosine": 0.8937851194730935,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.901426315307617
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6087149976482205,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 723,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8426365572370061,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 114.21151733398438,
+   "target_box_height_px": 72.30593204498291,
+   "target_box_width_px": 38.068885803222656,
+   "target_cosine": 0.7545868636857798,
+   "target_embedding_error": null,
+   "target_slant_range_m": 25.953874588012695
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6270786217410894,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 724,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8435851689673377,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 114.3116455078125,
+   "target_box_height_px": 72.14365482330322,
+   "target_box_width_px": 37.87864685058594,
+   "target_cosine": 0.8637499852618961,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.00830841064453
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6086956028713776,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 725,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8499894316480259,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 114.51073455810547,
+   "target_box_height_px": 71.86457633972168,
+   "target_box_width_px": 37.600669860839844,
+   "target_cosine": 0.8642339623614289,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.120763778686523
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5857581307558228,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 726,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8539863534804866,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 114.61154174804688,
+   "target_box_height_px": 71.62539482116699,
+   "target_box_width_px": 37.32961654663086,
+   "target_cosine": 0.8319704106856003,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.179824829101562
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.632302997248731,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 727,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8807746586975335,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 114.81167602539062,
+   "target_box_height_px": 71.3075065612793,
+   "target_box_width_px": 37.05615997314453,
+   "target_cosine": 0.8579876904961435,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.30127716064453
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6252056176866936,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 728,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8806263082037441,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 115.01127624511719,
+   "target_box_height_px": 70.91129779815674,
+   "target_box_width_px": 36.70886993408203,
+   "target_cosine": 0.8877441306115444,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.427885055541992
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6040873010044004,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 729,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8771037390119889,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 115.1115493774414,
+   "target_box_height_px": 70.65582275390625,
+   "target_box_width_px": 36.47209167480469,
+   "target_cosine": 0.7917749845344311,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.493532180786133
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5787872356741086,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 730,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8664173235992124,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 115.31163024902344,
+   "target_box_height_px": 70.27884006500244,
+   "target_box_width_px": 36.203956604003906,
+   "target_cosine": 0.8238642993418851,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.628551483154297
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.575478821020162,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 731,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8797158162284382,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 115.41156768798828,
+   "target_box_height_px": 70.01299381256104,
+   "target_box_width_px": 35.98184585571289,
+   "target_cosine": 0.8298360624216197,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.697982788085938
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6011207255167338,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 732,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8756509410096036,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 115.51162719726562,
+   "target_box_height_px": 69.78906154632568,
+   "target_box_width_px": 35.821495056152344,
+   "target_cosine": 0.8295142637982474,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.768814086914062
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.611693864703716,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 733,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8728877650224673,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 115.71131134033203,
+   "target_box_height_px": 69.36990737915039,
+   "target_box_width_px": 35.555763244628906,
+   "target_cosine": 0.8165044936884575,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.914051055908203
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6043469666023024,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 734,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8740765768106994,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 115.81109619140625,
+   "target_box_height_px": 69.09104347229004,
+   "target_box_width_px": 35.34872055053711,
+   "target_cosine": 0.8562214964384316,
+   "target_embedding_error": null,
+   "target_slant_range_m": 26.988554000854492
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6419030506891265,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 735,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8800777552896186,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 116.01171875,
+   "target_box_height_px": 68.64020347595215,
+   "target_box_width_px": 35.08256912231445,
+   "target_cosine": 0.8447642772134208,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.142166137695312
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.607197767783663,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 736,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8922457818419193,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 116.21151733398438,
+   "target_box_height_px": 68.1337308883667,
+   "target_box_width_px": 34.77212905883789,
+   "target_cosine": 0.8193289623884255,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.30014991760254
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6114427964978719,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 737,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.876002898602216,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 116.31157684326172,
+   "target_box_height_px": 67.83828735351562,
+   "target_box_width_px": 34.578704833984375,
+   "target_cosine": 0.8099936631055769,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.381118774414062
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6232390077826917,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 738,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8753085950440107,
+   "proposal_count": 2,
+   "recall_hit": true,
+   "simulation_time_s": 116.51145935058594,
+   "target_box_height_px": 67.34539031982422,
+   "target_box_width_px": 34.313316345214844,
+   "target_cosine": 0.858122361902273,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.546497344970703
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6282012747102748,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 739,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8993953640737249,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 116.61149597167969,
+   "target_box_height_px": 67.04154968261719,
+   "target_box_width_px": 34.12630081176758,
+   "target_cosine": 0.8608516876692298,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.63106918334961
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6077965401389972,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 740,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.9024123087803875,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 116.71156311035156,
+   "target_box_height_px": 66.76890850067139,
+   "target_box_width_px": 33.97645950317383,
+   "target_cosine": 0.8280426954611396,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.71685218811035
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5995725479652216,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 741,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.880783834411412,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 116.91169738769531,
+   "target_box_height_px": 66.24547004699707,
+   "target_box_width_px": 33.71065139770508,
+   "target_cosine": 0.8741959135613617,
+   "target_embedding_error": null,
+   "target_slant_range_m": 27.891937255859375
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6079974788075526,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 742,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8654728231464004,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.11153411865234,
+   "target_box_height_px": 65.67762851715088,
+   "target_box_width_px": 33.41299057006836,
+   "target_cosine": 0.9010862383399437,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.071367263793945
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.604163486300294,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 743,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8566737990231433,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.31105041503906,
+   "target_box_height_px": 65.10037422180176,
+   "target_box_width_px": 33.11847686767578,
+   "target_cosine": 0.8238614748186208,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.25501251220703
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.58544856648746,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 744,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.867908170916365,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.41150665283203,
+   "target_box_height_px": 64.77753639221191,
+   "target_box_width_px": 32.94424057006836,
+   "target_cosine": 0.8219069925369941,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.349153518676758
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6237464738492193,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 745,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8740952058608055,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.5114517211914,
+   "target_box_height_px": 64.48286533355713,
+   "target_box_width_px": 32.79848098754883,
+   "target_cosine": 0.8205264971006314,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.44391632080078
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5965189541789406,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 746,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8479647792875714,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.71076202392578,
+   "target_box_height_px": 63.91530990600586,
+   "target_box_width_px": 32.534122467041016,
+   "target_cosine": 0.7795845660338995,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.636117935180664
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5781891840537257,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 747,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8789925983495773,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.81075286865234,
+   "target_box_height_px": 63.587422370910645,
+   "target_box_width_px": 32.36541748046875,
+   "target_cosine": 0.7594060085151074,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.734142303466797
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5862787869023182,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 748,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8827737037438174,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 117.91162872314453,
+   "target_box_height_px": 63.28186511993408,
+   "target_box_width_px": 32.220821380615234,
+   "target_cosine": 0.7078961345020799,
+   "target_embedding_error": null,
+   "target_slant_range_m": 28.83409309387207
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5781932904014226,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 749,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8874291900077413,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 118.11084747314453,
+   "target_box_height_px": 62.69773006439209,
+   "target_box_width_px": 31.95690155029297,
+   "target_cosine": 0.8415259837370449,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.034608840942383
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5890232451993562,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 750,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8851016796230161,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 118.21183013916016,
+   "target_box_height_px": 62.362332344055176,
+   "target_box_width_px": 31.79180145263672,
+   "target_cosine": 0.8298239650256805,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.13780403137207
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6058557945332026,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 751,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8994992741747503,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 118.31167602539062,
+   "target_box_height_px": 62.05342769622803,
+   "target_box_width_px": 31.650028228759766,
+   "target_cosine": 0.8106297385988689,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.240848541259766
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6292462039567968,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 752,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.861525158125074,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 118.51115417480469,
+   "target_box_height_px": 61.45571708679199,
+   "target_box_width_px": 31.38723373413086,
+   "target_cosine": 0.8055990867094648,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.449703216552734
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6015746726984842,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 753,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8765518876879651,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 118.71155548095703,
+   "target_box_height_px": 60.827436447143555,
+   "target_box_width_px": 31.105194091796875,
+   "target_cosine": 0.8393659346640979,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.66343116760254
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6138547934544258,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 754,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8766203071282128,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 118.81160736083984,
+   "target_box_height_px": 60.49067974090576,
+   "target_box_width_px": 30.947189331054688,
+   "target_cosine": 0.7756239416658121,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.771595001220703
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5876158127643013,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 755,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8710551685035381,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 119.01130676269531,
+   "target_box_height_px": 59.88123893737793,
+   "target_box_width_px": 30.68634033203125,
+   "target_cosine": 0.7941039295518921,
+   "target_embedding_error": null,
+   "target_slant_range_m": 29.990291595458984
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5424879039739096,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 756,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8458368821047973,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 119.21151733398438,
+   "target_box_height_px": 59.24670696258545,
+   "target_box_width_px": 30.409317016601562,
+   "target_cosine": 0.7522770642945884,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.213260650634766
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5620802614576882,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 757,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8536123254964879,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 119.31157684326172,
+   "target_box_height_px": 58.908934593200684,
+   "target_box_width_px": 30.256061553955078,
+   "target_cosine": 0.7335970044834913,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.32607078552246
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5864131807759322,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 758,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8636968106068055,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 119.51158905029297,
+   "target_box_height_px": 58.2927131652832,
+   "target_box_width_px": 29.997920989990234,
+   "target_cosine": 0.7689240879578018,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.554224014282227
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5490814383909993,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 759,
+   "in_tick_subset": true,
+   "maximum_target_iou": 0.8737604113198817,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 119.71167755126953,
+   "target_box_height_px": 57.65589237213135,
+   "target_box_width_px": 29.726123809814453,
+   "target_cosine": 0.7414727490062154,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.785980224609375
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5669221368105142,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "excluded_from_cosine_statistics": false,
+   "frame_id": 760,
+   "in_tick_subset": false,
+   "maximum_target_iou": 0.8546839860590131,
+   "proposal_count": 1,
+   "recall_hit": true,
+   "simulation_time_s": 119.8115005493164,
+   "target_box_height_px": 57.32039451599121,
+   "target_box_width_px": 29.57763671875,
+   "target_cosine": 0.7828513270153767,
+   "target_embedding_error": null,
+   "target_slant_range_m": 30.902891159057617
+  }
+ ],
+ "schema_version": "p1-scene-004-gate0-probe/v1",
+ "source_capture": {
+  "gimbal_driver": "truth_directed_scouting",
+  "read_only_sandbox_copy": true,
+  "reference_box_xywh_norm": [
+   0.46875,
+   0.41041666666666665,
+   0.0625,
+   0.14375
+  ],
+  "reference_frame_id": 47,
+  "reference_image_sha256": "f3c701926838d1e02259a3f80cde7bebb9622260b74494aa48a5db0966e5f16e",
+  "reference_metadata_sha256": "3f6a9d375501f90f0ee6a0d4ab95feb04e98aa2027f9f562aa8a11b7367a681d",
+  "reference_simulation_time_s": 7.111673831939697,
+  "scenario_id": "p1-detect-scouting",
+  "session_id": "p1-detect-001-scout-1",
+  "work_id": "P1-DETECT-001"
+ },
+ "target_box_pixels": {
+  "height": {
+   "count": 204,
+   "max": 86.46974086761475,
+   "median": 69.57919120788574,
+   "min": 43.628926277160645,
+   "p05": 57.969231605529785,
+   "p25": 64.48286533355713
+  },
+  "minimum_side": {
+   "count": 204,
+   "max": 86.46974086761475,
+   "median": 42.909507751464844,
+   "min": 29.57763671875,
+   "p05": 30.49713134765625,
+   "p25": 35.34872055053711
+  },
+  "width": {
+   "count": 204,
+   "max": 87.02127456665039,
+   "median": 42.909507751464844,
+   "min": 29.57763671875,
+   "p05": 30.49713134765625,
+   "p25": 35.34872055053711
+  }
+ },
+ "work_id": "P1-SCENE-004"
+}

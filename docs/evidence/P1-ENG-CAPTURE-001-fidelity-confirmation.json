@@ -1,0 +1,28 @@
+{
+ "schema_version": "p1-eng-capture-001-fidelity-confirmation/v1",
+ "work_id": "P1-ENG-CAPTURE-001",
+ "ac": "AC-27",
+ "confirmed_by": "ziyichen-z",
+ "confirmed_by_role": "user",
+ "conclusion": "consistent",
+ "source": "docs/authorizations.md 2026-10-10「P1-ENG-CAPTURE-001 — 用户 AC-27 人眼保真确认 consistent，并完成 AC-17 两点剧本预登记（supervisor 会话代录；不是额度授权）」",
+ "written_by": "implementation（阶段A续，Dispatch-Id P1-ENG-CAPTURE-001-阶段A续-20261010T005430Z-8e0f）；结论只照账本该条，实现者不另作判断",
+ "samples": [
+  {"kind": "synthetic_roll", "path": "outputs/eng-capture/fidelity/roll-fidelity-omega25-turning-pos-base0026-frame0027.png", "sha256": "8a14b29e4dd10e7ee380647069b86966c2158737442b1e6fe2110c6aeb1fe3be"},
+  {"kind": "synthetic_roll", "path": "outputs/eng-capture/fidelity/roll-fidelity-omega25-turning-neg-base0026-frame0027.png", "sha256": "b04d10f06e2b09b6b9ca0c7ab933a186c8dc33c32215415dc765b43775bae31e"},
+  {"kind": "synthetic_roll", "path": "outputs/eng-capture/fidelity/roll-fidelity-theta120-hold-pos-base0026-frame0041.png", "sha256": "198bc432eddc1ac04602805406095128e2b6e36537893db533d5e9682aca8181"},
+  {"kind": "synthetic_roll", "path": "outputs/eng-capture/fidelity/roll-fidelity-theta120-hold-neg-base0026-frame0041.png", "sha256": "1f08a20bee8fb50e0818dd5355ae32e7a166c70a58351c74fd1c93f46929e1da"},
+  {"kind": "click_page", "path": "outputs/eng-capture/fidelity/user/click-fidelity-01-frame0243.png", "sha256": "9444875c95c42dce6ece397df25af700b792949ea558c06d8a9f6a83edb5ed46", "label": "static_car", "frame_id": 243},
+  {"kind": "click_page", "path": "outputs/eng-capture/fidelity/user/click-fidelity-02-frame0557.png", "sha256": "e771fe03f0b824f480cf8e4a8f0fc2c93888e6a37f9fff71e8b34f3666f6e620", "label": "red_car", "frame_id": 557}
+ ],
+ "ac17_click_script": {
+  "path": "outputs/eng-capture/fidelity/user/click-script.json",
+  "sha256": "956a387f67e418064b14b9e07a1a70eb5995a929719e89081393ffc9710fe880",
+  "registered_by": "ziyichen-z",
+  "frame_image_sha256": {
+   "243": "9c3c3bc8a9a79cf0b03f889924fa769defb92fbcecdd3464e10a9fb92a00d536",
+   "557": "707c92b2c7288f568f8752efd51778fb03ff23c220b6831856593433cb3688fa"
+  }
+ },
+ "not_covered": "AC-28 六基点击预登记不在本确认内（账本同条：尚未进行）"
+}

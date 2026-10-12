@@ -1,0 +1,480 @@
+..............ssss...........ANALYSIS_FAIL_CLOSED:compare_requires_create_once_output
+ANALYSIS_FAIL_CLOSED:compare_output_create_once
+......................................E.........................................................E..............................................................................................................ssss............................sssssssssss............ss................................ssssssss..s.....s.......................ssssss.............................................sssss...........................................................sssssss..s........................................................................................................................................................................................s.....................................................s[23:38:19Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:19Z] 阶段 zero-shot 完成（0 s）
+[23:38:19Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:19Z] 阶段 smoke 完成（0 s）
+[23:38:19Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:19Z] 阶段 C1 完成（0 s）
+[23:38:19Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:19Z] 作业 A sft-20260921T233819Z-d32b408f 结束：failed:RuntimeError；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-4u8kuy4v/work/returned/sft-20260921T233819Z-d32b408f；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+[23:38:19Z] 阶段 C2（train 第 3 次，总第 5 次）开始
+[23:38:19Z] 阶段 C2 完成（0 s）
+[23:38:19Z] 阶段 C3（train 第 4 次，总第 6 次）开始
+[23:38:19Z] 阶段 C3 完成（0 s）
+[23:38:19Z] 作业 A sft-20260921T233819Z-d32b408f 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-4u8kuy4v/work/returned/sft-20260921T233819Z-d32b408f；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.[23:38:20Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:20Z] 阶段 zero-shot 完成（0 s）
+[23:38:20Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:20Z] 阶段 smoke 完成（0 s）
+[23:38:20Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:20Z] 阶段 C1 完成（0 s）
+[23:38:20Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:20Z] 阶段 C2 完成（0 s）
+[23:38:20Z] 阶段 C3（train 第 3 次，总第 5 次）开始
+[23:38:20Z] 阶段 C3 完成（0 s）
+[23:38:20Z] 作业 A sft-20260921T233820Z-f99d9039 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-p0wdacvx/work/returned/sft-20260921T233820Z-f99d9039；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.usage: python3.14 -m unittest [-h]
+                              {bundle,verify,budget-plan,budget-init,selfcheck-pack,job-a,job-b,selfcheck,status} ...
+python3.14 -m unittest: error: unrecognized arguments: --allow-version-drift
+.[23:38:23Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:23Z] 阶段 zero-shot 完成（0 s）
+[23:38:23Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:23Z] 阶段 smoke 完成（0 s）
+[23:38:23Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:23Z] 阶段 C1 完成（0 s）
+[23:38:23Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:23Z] 作业 A sft-20260921T233823Z-ba735c9e 结束：failed:RuntimeError；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-u3dxf243/work/returned/sft-20260921T233823Z-ba735c9e；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.[23:38:24Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:24Z] 阶段 zero-shot 完成（0 s）
+[23:38:24Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:24Z] 作业 A sft-20260921T233824Z-bae17e8f 结束：failed:SMOKE_FAILED；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-kqt_4yec/work/returned/sft-20260921T233824Z-bae17e8f；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.[23:38:26Z] 作业 A sft-20260921T233826Z-110ff230 结束：failed:TOKENIZER_MISMATCH；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-gy2rvast/work/returned/sft-20260921T233826Z-110ff230；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+..usage: python3.14 -m unittest budget-plan [-h]
+                                          --gpu-usd-per-hour GPU_USD_PER_HOUR
+                                          --storage-usd-per-hour STORAGE_USD_PER_HOUR
+                                          --inbound-usd-per-tb INBOUND_USD_PER_TB
+                                          --outbound-usd-per-tb OUTBOUND_USD_PER_TB
+                                          [--inbound-gb INBOUND_GB]
+                                          [--outbound-gb OUTBOUND_GB]
+python3.14 -m unittest budget-plan: error: the following arguments are required: --storage-usd-per-hour, --inbound-usd-per-tb, --outbound-usd-per-tb
+.[23:38:28Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:28Z] 作业 A sft-20260921T233828Z-26c31ef4 结束：stopped_budget；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-494xwfjd/work/returned/sft-20260921T233828Z-26c31ef4；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+..[23:38:30Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:30Z] 阶段 zero-shot 完成（0 s）
+[23:38:30Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:30Z] 阶段 smoke 完成（0 s）
+[23:38:30Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:30Z] 阶段 C1 完成（0 s）
+[23:38:30Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:30Z] 阶段 C2 完成（0 s）
+[23:38:30Z] 阶段 C3（train 第 3 次，总第 5 次）开始
+[23:38:30Z] 阶段 C3 完成（0 s）
+[23:38:30Z] 作业 A sft-20260921T233830Z-057c8e21 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-uhmdmu6h/work/returned/sft-20260921T233830Z-057c8e21；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+预算看门狗：到达守卫时刻，运行器已停。请下载 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-uhmdmu6h/work/returned/sft-20260921T233830Z-057c8e21 并在 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 之前销毁实例。
+.....[23:38:35Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:35Z] 阶段 zero-shot 完成（0 s）
+[23:38:35Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:35Z] 阶段 smoke 完成（0 s）
+[23:38:35Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:35Z] 阶段 C1 完成（0 s）
+[23:38:35Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:35Z] 阶段 C2 完成（0 s）
+[23:38:35Z] 阶段 C3（train 第 3 次，总第 5 次）开始
+[23:38:35Z] 阶段 C3 完成（0 s）
+[23:38:35Z] 作业 A sft-20260921T233835Z-0bc5c3e8 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-fll6l5zo/work/returned/sft-20260921T233835Z-0bc5c3e8；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+[23:38:36Z] 阶段 eval（eval 第 1 次，总第 6 次）开始
+[23:38:36Z] 阶段 eval 完成（0 s）
+[23:38:36Z] 作业 B sft-20260921T233836Z-0bc5c3e8 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-fll6l5zo/work/returned/sft-20260921T233836Z-0bc5c3e8；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+{
+  "functional_gate": {
+    "checks": {
+      "a_g3_report_rate": {
+        "direction": "min",
+        "pass": false,
+        "threshold": 0.7,
+        "value": 0.5
+      },
+      "a_g3_strict_success": {
+        "direction": "min",
+        "pass": false,
+        "threshold": 0.5,
+        "value": 0.0
+      },
+      "b_false_ambiguous": {
+        "direction": "max",
+        "pass": false,
+        "threshold": 0.1,
+        "value": 0.4
+      },
+      "b_false_none": {
+        "direction": "max",
+        "pass": false,
+        "threshold": 0.05,
+        "value": 0.25
+      },
+      "c_g5_none_rate": {
+        "direction": "min",
+        "pass": false,
+        "threshold": 0.8,
+        "value": 0.21739130434782608
+      }
+    },
+    "status": "GATE_NOT_MET"
+  },
+  "transfer": {
+    "ratios": {},
+    "status": "NOT_RUN(SFT_003_NOT_DONE)"
+  },
+  "vocabulary_non_inferiority": {
+    "ci_pp": [
+      0.0,
+      15.0
+    ],
+    "point_estimate_pp": 5.0,
+    "status": "NON_INFERIOR",
+    "threshold_pp": -2.0
+  }
+}
+[23:38:37Z] 阶段 eval（eval 第 2 次，总第 7 次）开始
+[23:38:37Z] 阶段 eval 完成（0 s）
+[23:38:37Z] 作业 B sft-20260921T233837Z-0bc5c3e8 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-fll6l5zo/work/returned/sft-20260921T233837Z-0bc5c3e8；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.[23:38:39Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:39Z] 阶段 zero-shot 完成（0 s）
+[23:38:39Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:39Z] 阶段 smoke 完成（0 s）
+[23:38:39Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:39Z] 阶段 C1 完成（0 s）
+[23:38:39Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:39Z] 阶段 C2 完成（0 s）
+[23:38:39Z] 阶段 C3（train 第 3 次，总第 5 次）开始
+[23:38:39Z] 阶段 C3 完成（0 s）
+[23:38:39Z] 作业 A sft-20260921T233839Z-9bf3812e 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-7l2lj3la/work/returned/sft-20260921T233839Z-9bf3812e；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.[23:38:40Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:40Z] 阶段 zero-shot 完成（0 s）
+[23:38:40Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:40Z] 阶段 smoke 完成（0 s）
+[23:38:40Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:40Z] 阶段 C1 完成（0 s）
+[23:38:40Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:40Z] 阶段 C2 完成（0 s）
+[23:38:40Z] 阶段 C3（train 第 3 次，总第 5 次）开始
+[23:38:40Z] 阶段 C3 完成（0 s）
+[23:38:40Z] 作业 A sft-20260921T233840Z-3917ac28 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-81zowcrq/work/returned/sft-20260921T233840Z-3917ac28；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+.[23:38:41Z] 阶段 zero-shot（zero_shot 第 1 次，总第 1 次）开始
+[23:38:41Z] 阶段 zero-shot 完成（0 s）
+[23:38:41Z] 阶段 smoke（smoke 第 1 次，总第 2 次）开始
+[23:38:41Z] 阶段 smoke 完成（0 s）
+[23:38:41Z] 阶段 C1（train 第 1 次，总第 3 次）开始
+[23:38:41Z] 阶段 C1 完成（0 s）
+[23:38:41Z] 阶段 C2（train 第 2 次，总第 4 次）开始
+[23:38:41Z] 阶段 C2 完成（0 s）
+[23:38:41Z] 阶段 C3（train 第 3 次，总第 5 次）开始
+[23:38:41Z] 作业 A sft-20260921T233841Z-27b14a39 结束：failed:RuntimeError；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-26rdl3dx/work/returned/sft-20260921T233841Z-27b14a39；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+[23:38:41Z] 阶段 C3（train 第 4 次，总第 6 次）开始
+[23:38:41Z] 阶段 C3 完成（0 s）
+[23:38:41Z] 作业 A sft-20260921T233841Z-27b14a39 结束：complete；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-26rdl3dx/work/returned/sft-20260921T233841Z-27b14a39；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+..[23:38:44Z] 自检结束：failed；报告 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-3f3rp69r/laptop/work/selfcheck-20260921T233844Z/selfcheck.json
+..[23:38:46Z] 自检结束：succeeded；报告 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-11ubp2de/laptop/work/selfcheck-20260921T233846Z/selfcheck.json
+[23:38:46Z] 自检结束：succeeded；报告 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-11ubp2de/laptop/work/selfcheck-20260921T233846Z/selfcheck.json
+[23:38:46Z] 自检结束：succeeded；报告 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-11ubp2de/laptop/work/selfcheck-20260921T233846Z/selfcheck.json
+.[23:38:47Z] 作业 A sft-20260921T233847Z-3d9d9dce 结束：stopped_budget；回传目录 /var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/eng-sft-cloud-xyqykkxc/work/returned/sft-20260921T233847Z-3d9d9dce；实例最迟 2026-09-20 16:00 UTC（本机时区 2026-09-20 12:00 EDT） 前销毁
+......评分失败（OUTPUT_PATH_FORBIDDEN）：写出路径落入禁写闭集（原件保护）：runtime/dist-data/attempt-2/summary.json
+评分失败（INPUT_HASH_CHANGED）：G3′ 取框的源未与 `build` 输入清单绑定（缺源 / 未登记 / 字节已变）
+................................................................................................................................ss.........................................................................................................s.................................................s......usage: python3.14 -m unittest [-h] [--runtime RUNTIME] [--finalize RUN_ID |
+                              --dump-frame FRAME_ID |
+                              --release-qualification RUN_ID]
+                              [--output OUTPUT]
+                              [--tracker {csrt,nanotrack-v2}]
+                              [--tracker-model-spec TRACKER_MODEL_SPEC]
+                              [--tracker-model-dir TRACKER_MODEL_DIR]
+                              [--reanchor-config REANCHOR_CONFIG]
+                              [--init-frame INIT_FRAME]
+                              [--init-box X Y WIDTH HEIGHT]
+                              [--track-id TRACK_ID]
+                              [--scenario-id SCENARIO_ID]
+                              [--condition {follow,nadir}]
+                              [--ground-plane-y-m GROUND_PLANE_Y_M]
+                              [--planned-duration-s PLANNED_DURATION_S]
+                              [--run-id RUN_ID]
+                              [--rate-study-rate-hz RATE_STUDY_RATE_HZ]
+                              [--rate-study-replicate RATE_STUDY_REPLICATE]
+                              [--rate-study-replicate-id RATE_STUDY_REPLICATE_ID]
+                              [--rate-study-attempt-id RATE_STUDY_ATTEMPT_ID]
+                              [--loop-duration-s LOOP_DURATION_S]
+                              [--scenario-config-sha256 SCENARIO_CONFIG_SHA256]
+                              [--init-image-sha256 INIT_IMAGE_SHA256]
+                              [--reference-image-sha256 REFERENCE_IMAGE_SHA256]
+                              [--reference-frame-id REFERENCE_FRAME_ID]
+                              [--reference-simulation-time-s REFERENCE_SIMULATION_TIME_S]
+                              [--rate2-session] [--rate3-session]
+                              [--qualification-release-barrier]
+                              [--maximum-ground-range-m MAXIMUM_GROUND_RANGE_M]
+                              [--expires-after-s EXPIRES_AFTER_S]
+                              [--poll-interval-s POLL_INTERVAL_S]
+                              [--body-policy {hold,threshold}]
+                              [--body-planner-config BODY_PLANNER_CONFIG]
+                              [--body-scenario-config BODY_SCENARIO_CONFIG]
+python3.14 -m unittest: error: --body-policy requires --body-planner-config and --body-scenario-config
+....../opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/traceback.py:270: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/tmpg2tj_ecj/runs/bad-wiring/frames.jsonl' mode='a' encoding='utf-8'>
+  tb.tb_frame.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/case.py:615: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/tmpz86mg5s0/runs/body-qual/frames.jsonl' mode='a' encoding='utf-8'>
+  result = method()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...........................................................................................................s..........E..............s..........E......susage: python3.14 -m unittest [-h] [--runtime RUNTIME] [--finalize RUN_ID |
+                              --dump-frame FRAME_ID |
+                              --release-qualification RUN_ID]
+                              [--output OUTPUT]
+                              [--tracker {csrt,nanotrack-v2}]
+                              [--tracker-model-spec TRACKER_MODEL_SPEC]
+                              [--tracker-model-dir TRACKER_MODEL_DIR]
+                              [--reanchor-config REANCHOR_CONFIG]
+                              [--init-frame INIT_FRAME]
+                              [--init-box X Y WIDTH HEIGHT]
+                              [--track-id TRACK_ID]
+                              [--scenario-id SCENARIO_ID]
+                              [--condition {follow,nadir}]
+                              [--ground-plane-y-m GROUND_PLANE_Y_M]
+                              [--planned-duration-s PLANNED_DURATION_S]
+                              [--run-id RUN_ID]
+                              [--rate-study-rate-hz RATE_STUDY_RATE_HZ]
+                              [--rate-study-replicate RATE_STUDY_REPLICATE]
+                              [--rate-study-replicate-id RATE_STUDY_REPLICATE_ID]
+                              [--rate-study-attempt-id RATE_STUDY_ATTEMPT_ID]
+                              [--loop-duration-s LOOP_DURATION_S]
+                              [--scenario-config-sha256 SCENARIO_CONFIG_SHA256]
+                              [--init-image-sha256 INIT_IMAGE_SHA256]
+                              [--reference-image-sha256 REFERENCE_IMAGE_SHA256]
+                              [--reference-frame-id REFERENCE_FRAME_ID]
+                              [--reference-simulation-time-s REFERENCE_SIMULATION_TIME_S]
+                              [--rate2-session] [--rate3-session]
+                              [--qualification-release-barrier]
+                              [--maximum-ground-range-m MAXIMUM_GROUND_RANGE_M]
+                              [--expires-after-s EXPIRES_AFTER_S]
+                              [--poll-interval-s POLL_INTERVAL_S]
+                              [--body-policy {hold,threshold}]
+                              [--body-planner-config BODY_PLANNER_CONFIG]
+                              [--body-scenario-config BODY_SCENARIO_CONFIG]
+python3.14 -m unittest: error: --rate2-session and --rate3-session are mutually exclusive
+..E......................................................................E............................EE.....................E.....错误：会话 p1-vlm-survey-a1-p1-c1-s1 的 manifest：采集协议已漂移——钉住 0000000000000000000000000000000000000000000000000000000000000000，当前投影 b4ad4f7bde5fa22d7913aa5e4adf2ddfd724c33dc7116904ddb53c87045b80bf。受管常量改动后必须重新发布 plan/manifest/S0，不得在旧钉子下继续。
+...............................................................................................................................................sssss........s...s....................ss.
+======================================================================
+ERROR: test_benchmark_reanchor (unittest.loader._FailedTest.test_benchmark_reanchor)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_benchmark_reanchor
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_benchmark_reanchor.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_detector_scouting (unittest.loader._FailedTest.test_detector_scouting)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_detector_scouting
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_detector_scouting.py", line 8, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_rate2_protocol (unittest.loader._FailedTest.test_rate2_protocol)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_rate2_protocol
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_rate2_protocol.py", line 10, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_rate3_difficulty_audit (unittest.loader._FailedTest.test_rate3_difficulty_audit)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_rate3_difficulty_audit
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_rate3_difficulty_audit.py", line 10, in <module>
+    from tools.build_rate3_difficulty_audit import (
+    ...<8 lines>...
+    )
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tools/build_rate3_difficulty_audit.py", line 44, in <module>
+    from tools.build_scene004_geometry import SCENARIO_PATH as D1_SCENARIO_PATH
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tools/build_scene004_geometry.py", line 43, in <module>
+    from tools.run_detector_scouting import sha256_file
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tools/run_detector_scouting.py", line 15, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_rate3_reanchor_clock_mismatch_raises_defensively (test_rate3_protocol.Rate3GuardTests.test_rate3_reanchor_clock_mismatch_raises_defensively)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_rate3_protocol.py", line 868, in test_rate3_reanchor_clock_mismatch_raises_defensively
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+======================================================================
+ERROR: test_rate_study (unittest.loader._FailedTest.test_rate_study)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_rate_study
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_rate_study.py", line 9, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_scene004_gate0_probe (unittest.loader._FailedTest.test_scene004_gate0_probe)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scene004_gate0_probe
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_scene004_gate0_probe.py", line 7, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_scene004_scouting (unittest.loader._FailedTest.test_scene004_scouting)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scene004_scouting
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_scene004_scouting.py", line 6, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_scene006_probe (unittest.loader._FailedTest.test_scene006_probe)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scene006_probe
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/test_scene006_probe.py", line 8, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+----------------------------------------------------------------------
+Ran 1524 tests in 107.335s
+
+FAILED (errors=9, skipped=68)
+{
+  "functional_gate": {
+    "status": "GATE_NOT_MET",
+    "checks": {
+      "a_g3_report_rate": {
+        "value": 0.0,
+        "threshold": 0.7,
+        "direction": "min",
+        "pass": false
+      },
+      "a_g3_strict_success": {
+        "value": 0.0,
+        "threshold": 0.5,
+        "direction": "min",
+        "pass": false
+      },
+      "b_false_ambiguous": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "direction": "max",
+        "pass": true
+      },
+      "b_false_none": {
+        "value": 1.0,
+        "threshold": 0.05,
+        "direction": "max",
+        "pass": false
+      },
+      "c_g5_none_rate": {
+        "value": 1.0,
+        "threshold": 0.8,
+        "direction": "min",
+        "pass": true
+      }
+    }
+  },
+  "vocabulary_non_inferiority": {
+    "status": "INFERIOR",
+    "point_estimate_pp": null,
+    "ci_pp": null,
+    "threshold_pp": -2.0
+  }
+}
+{
+  "functional_gate": {
+    "status": "GATE_NOT_MET",
+    "checks": {
+      "a_g3_report_rate": {
+        "value": 0.0,
+        "threshold": 0.7,
+        "direction": "min",
+        "pass": false
+      },
+      "a_g3_strict_success": {
+        "value": 0.0,
+        "threshold": 0.5,
+        "direction": "min",
+        "pass": false
+      },
+      "b_false_ambiguous": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "direction": "max",
+        "pass": true
+      },
+      "b_false_none": {
+        "value": 1.0,
+        "threshold": 0.05,
+        "direction": "max",
+        "pass": false
+      },
+      "c_g5_none_rate": {
+        "value": 1.0,
+        "threshold": 0.8,
+        "direction": "min",
+        "pass": true
+      }
+    }
+  },
+  "vocabulary_non_inferiority": {
+    "status": "INFERIOR",
+    "point_estimate_pp": null,
+    "ci_pp": null,
+    "threshold_pp": -2.0
+  }
+}
+OK /private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/fixtures/scene006-trace-v2-sample.json: states=3 recorded=b09b28261ddd03b2… recomputed=b09b28261ddd03b2…
+MISMATCH /private/tmp/claude-501/-Users-zc-TetheredDroneTracking/1f9a3d14-3ae3-4ad6-8f44-03705eef0e51/scratchpad/wt13/tests/fixtures/.tmp-mismatch.json: states=3 recorded=b09b28261ddd03b2… recomputed=9cfd4cf063f172d9…
+exit=1

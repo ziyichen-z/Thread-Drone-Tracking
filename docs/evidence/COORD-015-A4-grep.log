@@ -1,0 +1,17 @@
+# COORD-015 A4 — 六个角色入口报告段与尾注 grep -c 验收（2026-09-26T03:12:34Z，supervisor 协调批次）
+# 命令：grep -c '被 supervisor 拉起时\|Dispatch-Id\|Role-Check' <入口>（输出为匹配行数；设计要求三要素俱在，三要素缺一则 <3 或字段计数 <9）
+.claude/commands/fable.md:3
+.claude/commands/accept.md:3
+.claude/commands/implement.md:3
+.claude/commands/review.md:3
+.claude/commands/chore.md:3
+~/.codex/prompts/codex.md:3
+# 字段逐项（work_id this_round commits handoff next_owner needs_user consumed checks claims）每入口命中数：
+.claude/commands/fable.md:9/9
+.claude/commands/accept.md:9/9
+.claude/commands/implement.md:9/9
+.claude/commands/review.md:9/9
+.claude/commands/chore.md:9/9
+~/.codex/prompts/codex.md:9/9
+# 仓库内 .claude/commands/codex.md 与 ~/.codex/prompts/codex.md 一致性：
+differ（仓库内 .claude/commands/codex.md 为已拆分的跳转入口，A4 对象是仓库外 ~/.codex/prompts/codex.md）

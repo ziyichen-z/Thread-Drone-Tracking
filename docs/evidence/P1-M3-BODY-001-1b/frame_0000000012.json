@@ -1,0 +1,47 @@
+{
+    "schema_version": "tethered-sensor-frame/v3",
+    "scenario_id": "deterministic-loop-default",
+    "frame_id": 12,
+    "simulation_time_s": 2.580455780029297,
+    "capture_unix_s": 1786161986.098,
+    "camera_position_world_m": [
+        132.0,
+        25.200000762939454,
+        117.0
+    ],
+    "camera_rotation_xyzw": [
+        0.7071068286895752,
+        0.0,
+        0.0,
+        0.7071068286895752
+    ],
+    "camera_forward_world": [
+        0.0,
+        -1.0000001192092896,
+        -1.1920928955078126e-7
+    ],
+    "camera_right_world": [
+        1.0,
+        0.0,
+        0.0
+    ],
+    "camera_up_world": [
+        0.0,
+        -1.1920928955078126e-7,
+        1.0000001192092896
+    ],
+    "vertical_fov_deg": 60.0,
+    "horizontal_fov_deg": 75.17817687988281,
+    "width": 640,
+    "height": 480,
+    "intrinsics_px": {
+        "fx": 415.69219970703127,
+        "fy": 415.69219970703127,
+        "cx": 320.0,
+        "cy": 240.0
+    },
+    "gimbal_saturated": false,
+    "tether_saturated": false,
+    "capture_monotonic_s": 34276.0761384,
+    "capture_monotonic_clock_id": "system-stopwatch/v1"
+}

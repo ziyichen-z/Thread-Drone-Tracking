@@ -1,0 +1,264 @@
+{
+  "domain_assertions": {
+    "T_H_atom": [],
+    "T_H_sha": [],
+    "T_V_family": [],
+    "T_V_sha": [],
+    "V_H_atom": [],
+    "V_H_sha": [],
+    "eval_frame_ids_not_in_H": [],
+    "eval_frame_ids_not_in_H_retained": [],
+    "eval_sha_not_in_H": [],
+    "eval_sha_not_in_H_retained": [],
+    "passed": true
+  },
+  "domain_of_family": {
+    "detect-scout1": "T",
+    "m3-armA": "T",
+    "m3-armB": "H",
+    "p1-vlm-survey-a1-p1-c1-s2": "T",
+    "p1-vlm-survey-a2-p1-c1-s1": "T",
+    "p1-vlm-survey-a3-p1-c1-s1": "H",
+    "p1-vlm-survey-a4-p1-c1-s1": "H",
+    "p1-vlm-survey-a6-p1-c1-s1": "H",
+    "p1-vlm-survey-a7-p1-c1-s1": "V",
+    "p1-vlm-survey-a9-p1-c1-s1": "H",
+    "rate": "T",
+    "s004-qual": "H",
+    "s004-scout": "H",
+    "s004-smoke": "H",
+    "scene-val": "T"
+  },
+  "eval_jsonl_sha256": "5d86013f06b4d64a9e3fd92a1d8f99eb06b4910187a0851cf595d75ebe93d0bb",
+  "family_group": {
+    "detect-scout1": "demo-route",
+    "m3-armA": "demo-route",
+    "m3-armB": "m3-armB",
+    "p1-vlm-survey-a1-p1-c1-s2": "survey-dev",
+    "p1-vlm-survey-a2-p1-c1-s1": "a2",
+    "p1-vlm-survey-a3-p1-c1-s1": "survey-H",
+    "p1-vlm-survey-a4-p1-c1-s1": "survey-H",
+    "p1-vlm-survey-a6-p1-c1-s1": "survey-H",
+    "p1-vlm-survey-a7-p1-c1-s1": "a7",
+    "p1-vlm-survey-a9-p1-c1-s1": "survey-H",
+    "rate": "rate",
+    "s004-qual": "s004",
+    "s004-scout": "s004",
+    "s004-smoke": "s004",
+    "scene-val": "scene-val"
+  },
+  "frames_manifest": {
+    "path": "docs/evidence/P1-ENG-FAST-002-dataset-frames.jsonl.gz",
+    "sha256": "3bcfc89944c6ca277ff40814fd833f96fac77beeda894b4b08a964fd019fa3ef"
+  },
+  "identity": {
+    "catalog_manifest": "runtime/dist-data/frames_catalog/attempt-2/frames_catalog.json",
+    "catalog_manifest_sha256": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da",
+    "data_root": "~/TetheredDroneTracking-full",
+    "rows": 43535,
+    "shards": 151
+  },
+  "index": {
+    "in_repo": false,
+    "path": "outputs/eng-det/dataset/index.jsonl.gz",
+    "sha256": "30becfc95ce1ca9591a68c62b46366fed296e2d01ce05e492871b79ca50a52b9"
+  },
+  "inventory_sha256": "11738a88f78491bdc4dc3fd5d13727ef543b9d1579a85cb02d8229700513024a",
+  "label_rules": {
+    "box": "visible_px 裁剪到画幅后归一化 top-left xywh",
+    "clarify_source": "提案「Q-1/Q-2 用户选 (a) 后的 AC-n 合同修订（CLARIFY，2026-09-28）」AC-1 两行",
+    "classes": {
+      "0": "vehicle（object_id 以 Vehicle_ 开头）",
+      "1": "target（dynamic-target，target_blocker_px 裁剪到画幅）"
+    },
+    "frame_exclusion": "unity_s3.wildcard_reason 非空（目标车在视野内但无可用框）；Q-1：target_unbounded=true（TARGET_UNBOUNDED）",
+    "ignore": {
+      "i_small": "纳入状态但短边 < 12 px",
+      "ii_phantom": "PHANTOM 且带框",
+      "iii_stratum": "STRATUM_IGNORED 层",
+      "iv_truth_invisible": "Q-2：演示路线会话既有真值可见性标志为 False 的目标框（训练填充、评估 IoA 过滤）"
+    },
+    "min_short_side_px": 12.0,
+    "positive_statuses": [
+      "OK",
+      "TRUNCATED",
+      "EXCLUDED_OCCLUDED",
+      "TOO_SMALL"
+    ],
+    "q2_flag_families": [
+      "detect-scout1",
+      "m3-armA",
+      "m3-armB"
+    ],
+    "q2_flag_fields": {
+      "m3": "geometrically_visible",
+      "scouting": "target_visible"
+    },
+    "spotcheck_sha256": "16523e774db5b2835d8e05b15e392657445bfc9c064d35f73d4e176c8c762aca",
+    "stratum_ignored_layers": [
+      "vehicle|EXCLUDED_OCCLUDED|12-31",
+      "vehicle|EXCLUDED_OCCLUDED|32-63",
+      "vehicle|EXCLUDED_OCCLUDED|>=64",
+      "vehicle|TRUNCATED|12-31",
+      "vehicle|TRUNCATED|32-63",
+      "vehicle|TRUNCATED|>=64"
+    ]
+  },
+  "q2_visibility_flags": {
+    "detect-scout1": {
+      "excluded|flag=None": 63,
+      "target_box|flag=False": 46,
+      "target_box|flag=True": 659
+    },
+    "m3-armA": {
+      "no_target_box|flag=False": 214,
+      "target_box|flag=False": 90,
+      "target_box|flag=True": 592
+    },
+    "m3-armB": {
+      "no_target_box|flag=False": 487,
+      "target_box|flag=False": 4,
+      "target_box|flag=True": 149
+    },
+    "s004-scout": {
+      "target_box|flag=shadow:True": 4836
+    }
+  },
+  "splits_sha256": "e7e4e1d3726f737c9adaf9ffd49fa764d51fd64936e7aacfe20d36ee2d4dbef4",
+  "stage": "final",
+  "summary": {
+    "H": {
+      "atoms": [
+        "be829623e398789299aff47f90b9a074094148dc033bb06999b453f4c666cbf4",
+        "c0b2c7bab4108e265365ebc87042aed99d9bdccce37005708279b063fefe104b"
+      ],
+      "excluded_frames": 11013,
+      "exclusion_reasons": {
+        "TARGET_UNBOUNDED": 11013
+      },
+      "families": {
+        "m3-armB": 640,
+        "p1-vlm-survey-a3-p1-c1-s1": 2818,
+        "p1-vlm-survey-a4-p1-c1-s1": 2822,
+        "p1-vlm-survey-a6-p1-c1-s1": 2943,
+        "p1-vlm-survey-a9-p1-c1-s1": 2796,
+        "s004-qual": 7952,
+        "s004-scout": 4836,
+        "s004-smoke": 3061
+      },
+      "frames": 27868,
+      "frames_with_target": 10263,
+      "ignore_counts": {
+        "i_small": 7871,
+        "ii_phantom": 14,
+        "iii_stratum": 40701,
+        "iv_truth_invisible": 4
+      },
+      "positives_by_class_status_stratum": {
+        "target|-|L": 3624,
+        "target|-|M": 6233,
+        "target|-|S": 406,
+        "vehicle|OK|L": 13610,
+        "vehicle|OK|M": 8477,
+        "vehicle|OK|S": 2138
+      },
+      "retained_frames": 16855,
+      "status_counts": {
+        "EXCLUDED_OCCLUDED|ignore_iii": 45267,
+        "NOT_IN_VIEW|none": 2717324,
+        "OK|positive": 33508,
+        "PHANTOM|ignore_ii": 14,
+        "PHANTOM|no_box": 47533,
+        "TARGET|ignore_i": 175,
+        "TARGET|ignore_iv": 4,
+        "TARGET|positive": 10263,
+        "TOO_SMALL|ignore_i": 11214,
+        "TRUNCATED|ignore_iii": 7355
+      },
+      "target_unbounded_frames": 11013
+    },
+    "T": {
+      "atoms": [
+        "3d828ddfd53fc0c679b38ae7c043d85d2c4eb584404ff02aa045b6541d234ab4",
+        "f560884847210b315d6c6b8b66caa3db19844a7d56917167526140acfff7e1e8"
+      ],
+      "excluded_frames": 5459,
+      "exclusion_reasons": {
+        "TARGET_UNBOUNDED": 5459
+      },
+      "families": {
+        "detect-scout1": 768,
+        "m3-armA": 896,
+        "p1-vlm-survey-a1-p1-c1-s2": 2916,
+        "p1-vlm-survey-a2-p1-c1-s1": 2523,
+        "rate": 5140,
+        "scene-val": 256
+      },
+      "frames": 12499,
+      "frames_with_target": 3677,
+      "ignore_counts": {
+        "i_small": 7320,
+        "iii_stratum": 28758,
+        "iv_truth_invisible": 136
+      },
+      "positives_by_class_status_stratum": {
+        "target|-|L": 1005,
+        "target|-|M": 1750,
+        "target|-|S": 922,
+        "vehicle|OK|L": 3504,
+        "vehicle|OK|M": 4803,
+        "vehicle|OK|S": 1847
+      },
+      "retained_frames": 7040,
+      "status_counts": {
+        "EXCLUDED_OCCLUDED|ignore_iii": 45520,
+        "NOT_IN_VIEW|none": 1178113,
+        "OK|positive": 19117,
+        "PHANTOM|ignore_ii": 4,
+        "PHANTOM|no_box": 4778,
+        "TARGET|ignore_i": 55,
+        "TARGET|ignore_iv": 136,
+        "TARGET|positive": 3677,
+        "TOO_SMALL|ignore_i": 16159,
+        "TRUNCATED|ignore_iii": 3490
+      },
+      "target_unbounded_frames": 5459
+    },
+    "V": {
+      "atoms": [
+        "3d828ddfd53fc0c679b38ae7c043d85d2c4eb584404ff02aa045b6541d234ab4"
+      ],
+      "excluded_frames": 0,
+      "exclusion_reasons": {},
+      "families": {
+        "p1-vlm-survey-a7-p1-c1-s1": 3168
+      },
+      "frames": 3168,
+      "frames_with_target": 1620,
+      "ignore_counts": {
+        "i_small": 1456,
+        "iii_stratum": 9207
+      },
+      "positives_by_class_status_stratum": {
+        "target|-|L": 439,
+        "target|-|M": 1072,
+        "target|-|S": 109,
+        "vehicle|OK|L": 2304,
+        "vehicle|OK|M": 2225,
+        "vehicle|OK|S": 276
+      },
+      "retained_frames": 3168,
+      "status_counts": {
+        "EXCLUDED_OCCLUDED|ignore_iii": 8086,
+        "NOT_IN_VIEW|none": 304533,
+        "OK|positive": 4805,
+        "TARGET|ignore_i": 33,
+        "TARGET|positive": 1620,
+        "TOO_SMALL|ignore_i": 1423,
+        "TRUNCATED|ignore_iii": 1121
+      },
+      "target_unbounded_frames": 0
+    }
+  },
+  "work_id": "P1-ENG-FAST-002"
+}

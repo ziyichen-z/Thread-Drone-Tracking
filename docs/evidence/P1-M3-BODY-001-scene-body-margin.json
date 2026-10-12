@@ -1,0 +1,225 @@
+{
+ "c_geom": {
+  "arm_b_lower_bound_with_box_occlusion": 0.5845070422535211,
+  "domain": "whole loop including the occluded arc (BC-BODY1-2)",
+  "gap_from_saturation": 0.4342723004694836,
+  "lower_bound_with_box_occlusion": 0.5657276995305164,
+  "upper_bound_frustum_only": 1.0
+ },
+ "c_quality_projection": {
+  "arm_a_gimbal_only": {
+   "area_px": {
+    "count": 125,
+    "max": 5648.640300807328,
+    "median": 1217.9090114208536,
+    "min": 560.8660017808721,
+    "p10": 705.1673295513742
+   },
+   "center_error_px": {
+    "count": 125,
+    "max": 132.30118955483417,
+    "median": 5.973296873305877,
+    "min": 0.534189399806273,
+    "p10": 2.393837152786755
+   },
+   "gimbal_saturated_fraction": 0.488,
+   "minimum_side_at_or_above_floor_fraction": 0.912,
+   "minimum_side_px": {
+    "count": 125,
+    "max": 75.14064600382895,
+    "median": 28.041491233037377,
+    "min": 18.383300365258997,
+    "p10": 20.285831810791066
+   },
+   "sample_count": 125
+  },
+  "arm_b_body_displacement_m": {
+   "count": 426,
+   "max": 24.450000000000003,
+   "median": 21.35,
+   "min": 0.0,
+   "p10": 0.0
+  },
+  "arm_b_threshold_allocation": {
+   "area_px": {
+    "count": 125,
+    "max": 5648.640300807328,
+    "median": 2222.581504445378,
+    "min": 1672.7032558678984,
+    "p10": 1995.5648427605804
+   },
+   "center_error_px": {
+    "count": 125,
+    "max": 6.417680132470221,
+    "median": 4.91356189958514,
+    "min": 0.534189399806273,
+    "p10": 2.393837152786755
+   },
+   "gimbal_saturated_fraction": 0.0,
+   "minimum_side_at_or_above_floor_fraction": 1.0,
+   "minimum_side_px": {
+    "count": 125,
+    "max": 75.14064600382895,
+    "median": 34.6053463558135,
+    "min": 29.262218312909276,
+    "p10": 32.613720673028084
+   },
+   "sample_count": 125
+  },
+  "basis": "measurement-window samples that are geometrically visible; uniform route-mileage sampling makes plain statistics mileage-weighted (BC-BODY1-2)",
+  "minimum_side_floor_px": 20.0
+ },
+ "carrier": {
+  "anchor_world_m": {
+   "x": 132.0,
+   "y": 0.2,
+   "z": 117.0
+  },
+  "hover_point_world_m": {
+   "x": 132.0,
+   "y": 25.2,
+   "z": 117.0
+  },
+  "maximum_off_nadir_deg": 45.0,
+  "minimum_visible_sample_fraction": 0.2,
+  "perimeter_m": 212.97056274847714,
+  "route_sample_count": 426,
+  "route_sample_spacing_m": 0.5,
+  "target_plane_y_m": 0.2,
+  "vertical_drop_m": 25.0
+ },
+ "identity": {
+  "anchor_audit_sha256": "ebf931df891f257cc2005793425aaec2ca34462ada7eb8bbab703838fefd2125",
+  "obstacle_instance_count": 779,
+  "scenario_id": "deterministic-loop-default",
+  "scenario_sha256": "f9c9205249aacf7487579ca42f727c766800cc329d0523ec82a96140564a2ce3",
+  "scene_geometry_sha256": "77834bd3e52e6ed937b1f54f05195f5585fc4104ca98389d9bd28f4d02ef9c13"
+ },
+ "occlusion_attribution": {
+  "blocked_point_samples": 3069,
+  "by_canonical_name": [
+   {
+    "blocking_point_samples": 2808,
+    "canonical_name": "Building_Stadium"
+   },
+   {
+    "blocking_point_samples": 298,
+    "canonical_name": "Props_Street Light"
+   },
+   {
+    "blocking_point_samples": 233,
+    "canonical_name": "Props_Traffic Signal_big"
+   },
+   {
+    "blocking_point_samples": 153,
+    "canonical_name": "Natures_Fir Tree"
+   },
+   {
+    "blocking_point_samples": 1,
+    "canonical_name": "Props_Hydrant"
+   }
+  ],
+  "by_instance": [
+   {
+    "blocking_point_samples": 2808,
+    "canonical_name": "Building_Stadium",
+    "scene_object_name": "Building_Stadium"
+   },
+   {
+    "blocking_point_samples": 153,
+    "canonical_name": "Natures_Fir Tree",
+    "scene_object_name": "Natures_Fir Tree (10)"
+   },
+   {
+    "blocking_point_samples": 112,
+    "canonical_name": "Props_Traffic Signal_big",
+    "scene_object_name": "Props_Traffic Signal_big (23)"
+   },
+   {
+    "blocking_point_samples": 90,
+    "canonical_name": "Props_Street Light",
+    "scene_object_name": "Props_Street Light (126)"
+   },
+   {
+    "blocking_point_samples": 76,
+    "canonical_name": "Props_Traffic Signal_big",
+    "scene_object_name": "Props_Traffic Signal_big (11)"
+   },
+   {
+    "blocking_point_samples": 70,
+    "canonical_name": "Props_Street Light",
+    "scene_object_name": "Props_Street Light (20)"
+   },
+   {
+    "blocking_point_samples": 55,
+    "canonical_name": "Props_Street Light",
+    "scene_object_name": "Props_Street Light (123)"
+   },
+   {
+    "blocking_point_samples": 35,
+    "canonical_name": "Props_Street Light",
+    "scene_object_name": "Props_Street Light (23)"
+   },
+   {
+    "blocking_point_samples": 31,
+    "canonical_name": "Props_Street Light",
+    "scene_object_name": "Props_Street Light (88)"
+   },
+   {
+    "blocking_point_samples": 31,
+    "canonical_name": "Props_Traffic Signal_big",
+    "scene_object_name": "Props_Traffic Signal_big (9)"
+   },
+   {
+    "blocking_point_samples": 17,
+    "canonical_name": "Props_Street Light",
+    "scene_object_name": "Props_Street Light (89)"
+   },
+   {
+    "blocking_point_samples": 14,
+    "canonical_name": "Props_Traffic Signal_big",
+    "scene_object_name": "Props_Traffic Signal_big (29)"
+   },
+   {
+    "blocking_point_samples": 1,
+    "canonical_name": "Props_Hydrant",
+    "scene_object_name": "Props_Hydrant (24)"
+   }
+  ]
+ },
+ "pre_registered_reductions": {
+  "R1_route_domain": "frozen scenario polyline sampled every 0.5 m; heading is the segment direction",
+  "R2_gimbal_aim": "target ground point, the zero-tracker-error limit",
+  "R3_arm_a": "body held at the hover point above the anchor",
+  "R4_arm_b": "quasi-static: smallest displacement along the target bearing reaching the 20.0 deg release margin, clamped by the tether sphere, then shortened in 0.05 m steps until the corridor is clear, else hold; ignores body and gimbal dynamics",
+  "R5_occluders": "779 road-audit obstacle instances as world AABBs; AABBs over-estimate blocking, road surfaces are not occluders here"
+ },
+ "schema_version": "p1-m3-body-001-scene-body-margin/v1",
+ "visible_arc": {
+  "interval_count": 1,
+  "intervals_m": [
+   {
+    "end_m": 275.5,
+    "length_m": 120.5,
+    "start_m": 155.0,
+    "wraps": true
+   }
+  ],
+  "longest_interval_length_m": 120.5,
+  "measurement_window_length_m": 62.5,
+  "measurement_window_m": [
+   0.0,
+   62.5
+  ],
+  "measurement_window_note": "one Play = one trial; the window starts at route[0] (the position Configure always sets) and ends where the target first enters the occluded arc, so it is the *remaining* part of the visible arc, not its full length",
+  "route_zero_inside_arc": true,
+  "route_zero_interval_m": {
+   "end_m": 275.5,
+   "length_m": 120.5,
+   "start_m": 155.0,
+   "wraps": true
+  },
+  "sha256": "4fe2eea5e831301be8fea76e4757e151113dcd0251941e88a2c21b1e1a6bdf55"
+ },
+ "work_id": "P1-M3-BODY-001"
+}

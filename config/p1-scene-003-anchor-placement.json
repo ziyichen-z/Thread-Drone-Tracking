@@ -1,0 +1,17 @@
+{
+  "schema_version": "p1-scene-003-anchor-placement/v1",
+  "work_id": "P1-SCENE-003",
+  "requested_anchor_world_m": { "x": 150.0, "y": 0.2, "z": 90.0 },
+  "hover_offset_y_m": 25.0,
+  "support_surface_allowlist": [
+    "Natures_Grass Tile",
+    "Natures_Grass Tile Small"
+  ],
+  "support_height_tolerance_m": 0.05,
+  "anchor_nominal_radius_m": 1.0,
+  "hover_nominal_radius_m": 1.0,
+  "corridor_nominal_radius_m": 0.5,
+  "clearance_margin_m": 0.5,
+  "lattice_step_m": 0.5,
+  "lattice_radius_m": 10.0
+}

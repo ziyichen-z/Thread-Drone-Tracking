@@ -1,0 +1,102 @@
+{
+  "schema_version": "tethered-scenario/v1",
+  "scenario_id": "p1-scene-006-difficult-v1",
+  "random_seed": 0,
+  "road_data_sha256": "111e0759d4b52821d08ce4ddd1aae3fc8cc8d24e12e6fa62513403c00b401894",
+  "anchor_world_m": { "x": 197.0, "y": 0.0000013113417480781209, "z": 30.0 },
+  "drone": {
+    "initial_altitude_m": 16.0,
+    "tether_length_m": 35.0,
+    "minimum_altitude_m": 8.0,
+    "maximum_altitude_m": 32.0,
+    "maximum_speed_mps": 4.0,
+    "maximum_acceleration_mps2": 4.0
+  },
+  "gimbal": {
+    "maximum_off_nadir_deg": 45.0,
+    "slew_rate_deg_per_second": 120.0
+  },
+  "sensor": {
+    "width": 640,
+    "height": 480,
+    "vertical_fov_deg": 40.0,
+    "capture_hz": 5.0,
+    "jpeg_quality": 85,
+    "retained_frame_count": 128
+  },
+  "target": {
+    "track_id": "target-0",
+    "speed_mps": 2.0,
+    "route_world_m": [
+      { "x": 185.5, "y": 0.2, "z": 57.5 },
+      { "x": 234.5, "y": 0.2, "z": 57.5 },
+      { "x": 237.5, "y": 0.2, "z": 54.5 },
+      { "x": 237.5, "y": 0.2, "z": 5.5 },
+      { "x": 234.5, "y": 0.2, "z": 2.5 },
+      { "x": 185.5, "y": 0.2, "z": 2.5 },
+      { "x": 182.5, "y": 0.2, "z": 5.5 },
+      { "x": 182.5, "y": 0.2, "z": 54.5 }
+    ]
+  },
+  "scene_adjustments": {
+    "vehicle_relocations": [
+      {
+        "prefab_name": "Vehicle_Ambulance",
+        "original_xz_m": { "x": 183.600, "z": 29.406 },
+        "match_tolerance_m": 0.1,
+        "new_position_m": { "x": 179.000, "y": 0.0, "z": 29.406 },
+        "remove_from_scene": false,
+        "mark_as_distractor": false
+      },
+      {
+        "prefab_name": "Vehicle_Container_color01",
+        "original_xz_m": { "x": 231.800, "z": 3.200 },
+        "match_tolerance_m": 0.1,
+        "new_position_m": { "x": 231.800, "y": 0.0, "z": -1.400 },
+        "remove_from_scene": false,
+        "mark_as_distractor": false
+      },
+      {
+        "prefab_name": "Vehicle_Pick up Truck_color01",
+        "original_xz_m": { "x": 179.100, "z": 2.800 },
+        "match_tolerance_m": 0.1,
+        "new_position_m": { "x": 178.534, "y": 0.0, "z": 2.234 },
+        "remove_from_scene": false,
+        "mark_as_distractor": false
+      },
+      {
+        "prefab_name": "Vehicle_Pick up Truck_color01",
+        "original_xz_m": { "x": 236.937, "z": 38.580 },
+        "match_tolerance_m": 0.1,
+        "new_position_m": { "x": 241.137, "y": 0.0, "z": 38.580 },
+        "remove_from_scene": false,
+        "mark_as_distractor": false
+      },
+      {
+        "prefab_name": "Vehicle_Taxi",
+        "original_xz_m": { "x": 206.325, "z": 56.713 },
+        "match_tolerance_m": 0.1,
+        "new_position_m": { "x": 206.325, "y": 0.0, "z": 61.013 },
+        "remove_from_scene": false,
+        "mark_as_distractor": false
+      }
+    ],
+    "expected_distractor_count": 0,
+    "route_corridor": {
+      "target_half_width_m": 1.0,
+      "clearance_margin_m": 0.5,
+      "target_bottom_offset_m": 0.0,
+      "target_height_m": 1.55,
+      "vertical_clearance_margin_m": 0.5,
+      "road_sample_spacing_m": 0.5,
+      "enable_dynamic_intersection_audit": false,
+      "enable_jump_diagnostic": false,
+      "jump_epsilon_m": 0.001
+    }
+  },
+  "evaluation": {
+    "minimum_visible_sample_fraction": 0.2,
+    "tracking_iou_threshold": 0.3,
+    "maximum_pending_frame_count": 512
+  }
+}

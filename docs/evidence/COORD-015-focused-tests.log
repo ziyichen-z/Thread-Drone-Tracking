@@ -1,0 +1,26 @@
+# COORD-015 C1@落地 退回项修复后聚焦测试（supervisor 协调批次，2026-09-25）
+# cmd: python3 -m unittest tests.test_check_ledger tests.test_check_role_writes tests.test_supervisor_drill
+# base HEAD: 134a24181672a84217e7846bdf24006da5cc044b（工作树含本批 tools/check_ledger.py、tools/make_supervisor_drill.py 及三测试文件改动，未提交）
+# python: Python 3.14.6
+
+..................................................................................
+----------------------------------------------------------------------
+Ran 82 tests in 4.530s
+
+OK
+# exit=0
+
+===== 附：本批 check_ledger 两项修复的红绿（修复前必失败） =====
+# 红 = 本批新增测试 + 修复前 tools/check_ledger.py（HEAD 134a241 版）；cmd: python3 -m unittest tests.test_check_ledger
+FAIL: test_missing_active_handoffs_section_expired (tests.test_check_ledger.BoardExpiredFailClosedTests.test_missing_active_handoffs_section_expired)
+FAIL: test_missing_active_handoffs_table_expired (tests.test_check_ledger.BoardExpiredFailClosedTests.test_missing_active_handoffs_table_expired)
+FAIL: test_missing_status_column_expired (tests.test_check_ledger.BoardExpiredFailClosedTests.test_missing_status_column_expired)
+FAIL: test_precommit_rejects_when_handoff_header_missing (tests.test_check_ledger.BoardExpiredFailClosedTests.test_precommit_rejects_when_handoff_header_missing)
+FAIL: test_non_utc_offset_at_rejected (tests.test_check_ledger.StructuralTests.test_non_utc_offset_at_rejected) (at='2026-09-21T17:00:00+08:00')
+FAIL: test_non_utc_offset_at_rejected (tests.test_check_ledger.StructuralTests.test_non_utc_offset_at_rejected) (at='2026-09-21T04:00:00-05:00')
+FAIL: test_non_utc_offset_at_rejected (tests.test_check_ledger.StructuralTests.test_non_utc_offset_at_rejected) (at='2026-09-21T09:00:00+0000')
+Ran 46 tests in 3.857s
+FAILED (failures=7)
+# 绿 = 同一测试 + 本批修复后 tools/check_ledger.py
+Ran 46 tests in 3.934s
+OK

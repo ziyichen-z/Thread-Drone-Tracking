@@ -1,0 +1,222 @@
+{
+ "all_match": true,
+ "assets": [
+  {
+   "expected": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+   "label": "detector weights last.pt",
+   "match": true,
+   "path": "outputs/eng-det/runs/run-1/weights/last.pt",
+   "sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+   "size_bytes": 5458330,
+   "source": "config/det-assoc-v1.models.json weights.sha256（提案事实 3）"
+  },
+  {
+   "expected": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c",
+   "label": "freeze.json",
+   "match": true,
+   "path": "docs/evidence/P1-ENG-FAST-002-freeze.json",
+   "sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c",
+   "size_bytes": 2899,
+   "source": "config/det-assoc-v1.models.json freeze.sha256（提案事实 3）"
+  },
+  {
+   "expected": "412592fb…da5c",
+   "label": "frozen-B.jsonl.gz",
+   "match": true,
+   "path": "outputs/eng-det/dets/frozen-B.jsonl.gz",
+   "sha256": "412592fbe55119c55a1076460886804c366b7bb3cc3bead41a4755e66818da5c",
+   "size_bytes": 210923,
+   "source": "提案事实 10（本会话前由构思角色只读复核）"
+  },
+  {
+   "expected": "783ec7e2…c41",
+   "label": "frozen-V.jsonl.gz",
+   "match": true,
+   "path": "outputs/eng-det/dets/frozen-V.jsonl.gz",
+   "sha256": "783ec7e26b6b33decf6a96c2026fb69987e8571b586637e240f7743ac65a7c41",
+   "size_bytes": 130702,
+   "source": "提案事实 10"
+  },
+  {
+   "baseline": {
+    "basis": "提案决策记录「C1 待用户裁定落实（2026-09-29；CLARIFY）」AC-11 修订 1；本值是后续比对基线，不是既存来源记录",
+    "file_mtime_local": "2026-09-24 22:02:39",
+    "fixed_on": "2026-09-29",
+    "label": "既往不可核",
+    "sha256": "80971838f79a39b9763eb0d586d5d12a0aa787c4672d31423e60bc71e6de0fbb",
+    "size_bytes": 1998848,
+    "status": "BASELINE_FIXED_PRIOR_UNVERIFIABLE"
+   },
+   "expected": null,
+   "label": "catalog-index.jsonl.gz",
+   "match": null,
+   "path": "~/TetheredDroneTracking-full/outputs/eng-fast/P1-ENG-FAST-001/cache/catalog-index.jsonl.gz",
+   "prior_record_search": {
+    "conclusion": "NOT_FOUND：无独立既存的该文件散列记录",
+    "dispatch_id": "P1-ENG-ACQ-001-K1K2K3-20260929T171016Z-c5a7",
+    "performed_utc": "2026-09-29",
+    "scope_and_result": [
+     {
+      "file_hash_record": false,
+      "hits": [
+       "docs/evidence/P1-ENG-ACQ-001-assets.json（本工作项 08ac1b1 首次写入的本次实测值，非独立既存来源）"
+      ],
+      "how": "grep -rl 完整散列 / 文件名",
+      "where": "主仓库工作树（排除 .git/）全部文本文件"
+     },
+     {
+      "file_hash_record": false,
+      "hits": [
+       "08ac1b1（本工作项，同上）",
+       "-S'catalog-index' 命中 5659e02/a5b6bda/fd78169/2e7f942/08ac1b1：均为路径、构建代码或文字引用，无该文件散列"
+      ],
+      "how": "git log --all -S80971838；git log --all -S'catalog-index'",
+      "where": "主仓库 git 全历史（git log --all，1,091 个提交）"
+     },
+     {
+      "file_hash_record": false,
+      "hits": [],
+      "how": "gzip -cd | grep 散列前缀或文件名",
+      "where": "主仓库 outputs/ 下 < 50 MB 的 .gz"
+     },
+     {
+      "file_hash_record": false,
+      "hits": [
+       "docs/proposals/P1-ENG-FAST-002-in-domain-detector-association-fast-layer.md（路径引用与行数统计，无散列）"
+      ],
+      "how": "grep -l 散列 / 文件名",
+      "where": "数据根 ~/TetheredDroneTracking-full 的 outputs/ docs/ config/ tools/ 下 .json/.jsonl/.md/.log/.txt/.csv/.tsv/.sha256（< 200 MB，2,865 个文件；只读）"
+     },
+     {
+      "file_hash_record": false,
+      "hits": [],
+      "how": "gzip -cd | grep 散列前缀或文件名",
+      "where": "数据根 outputs/ 下 < 50 MB 的 .gz（11 个，含 FAST-001 ledger/runtime-before|after、transfer 代码包、detections 缓存；只读）"
+     },
+     {
+      "file_hash_record": false,
+      "hits": [
+       "-S80971838 无",
+       "-S'catalog-index' 命中 a5b6bda/5659e02：同上，无散列"
+      ],
+      "how": "git log --all -S80971838；-S'catalog-index'",
+      "where": "数据根 git 全历史（HEAD 29a94db，943 个提交）"
+     },
+     {
+      "file_hash_record": false,
+      "hits": [
+       "只把上游 identity 头（manifest_sha256、field_catalog_sha256、shards、rows）写入索引首行并在加载时核对；从不计算或记录索引文件自身散列"
+      ],
+      "how": "阅读",
+      "where": "FAST-001 构建代码 tools/eng_fast/inputs.py::build_catalog_index/load_catalog_index"
+     }
+    ],
+    "supplementary_content_identity_check": {
+     "independent_record": "docs/evidence/P1-ENG-FAST-001-inputs.json「catalog_index」（5659e02，2026-09-24 入库）",
+     "index_header_identity": {
+      "field_catalog_sha256": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+      "manifest_sha256": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da",
+      "rows": 43535,
+      "shards": 151
+     },
+     "index_lines": 43536,
+     "match": true,
+     "note": "不是文件散列比对，不冒充来源记录；只证明索引内容身份头与 FAST-001 当时入库证据一致",
+     "record": {
+      "field_catalog_sha256": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+      "manifest_sha256": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da",
+      "rows": 43535,
+      "shards": 151
+     },
+     "upstream_current_sha256": {
+      "runtime/dist-data/field_catalog/attempt-2/field_catalog.json": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+      "runtime/dist-data/frames_catalog/attempt-2/frames_catalog.json": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da"
+     }
+    },
+    "target": "文件级 sha256（完整 64 位或前 8 位 80971838）与文件名 catalog-index 的既存记录"
+   },
+   "sha256": "80971838f79a39b9763eb0d586d5d12a0aa787c4672d31423e60bc71e6de0fbb",
+   "size_bytes": 1998848,
+   "source": "提案事实 11（FAST-001 缓存）；按 AC-11 修订 1 先查找独立既存文件散列记录，确无，固定本次基线（既往不可核），见 prior_record_search"
+  },
+  {
+   "expected": null,
+   "label": "catalog-sim-times.jsonl.gz",
+   "match": null,
+   "path": "~/TetheredDroneTracking-full/outputs/eng-fast/P1-ENG-FAST-001/cache/catalog-sim-times.jsonl.gz",
+   "sha256": "65a09ee11888b1c4904ee022846bf14b21b2a6b1fd0f91513dc1c7389e0c24c2",
+   "size_bytes": 474806,
+   "source": "提案事实 11（同上）"
+  },
+  {
+   "expected": null,
+   "label": "P1-ENG-FAST-002-dataset-frames.jsonl.gz",
+   "match": null,
+   "path": "docs/evidence/P1-ENG-FAST-002-dataset-frames.jsonl.gz",
+   "sha256": "3bcfc89944c6ca277ff40814fd833f96fac77beeda894b4b08a964fd019fa3ef",
+   "size_bytes": 1406385,
+   "source": "逐帧 JPEG sha 参照（FAST-002 数据集清单，已入库）"
+  },
+  {
+   "expected": "530bdd0cd00f19afab79a863e71ba71e3312395a5dc9151af675082bdaaa2fc4",
+   "label": "nanotrack-v2 backbone",
+   "match": true,
+   "path": "~/TetheredDroneTracking-full/runtime/models/nanotrack-v2/nanotrack_backbone_sim.onnx",
+   "sha256": "530bdd0cd00f19afab79a863e71ba71e3312395a5dc9151af675082bdaaa2fc4",
+   "size_bytes": 1056849,
+   "source": "config/nanotrack-v2.models.json（提案事实 17）"
+  },
+  {
+   "expected": "0d8c0637be849f092cc7236cae02e55c8b9455ebe37ba50601d6115db4247cd9",
+   "label": "nanotrack-v2 neckhead",
+   "match": true,
+   "path": "~/TetheredDroneTracking-full/runtime/models/nanotrack-v2/nanotrack_head_sim.onnx",
+   "sha256": "0d8c0637be849f092cc7236cae02e55c8b9455ebe37ba50601d6115db4247cd9",
+   "size_bytes": 726198,
+   "source": "config/nanotrack-v2.models.json（提案事实 17）"
+  }
+ ],
+ "baselines_fixed": [
+  {
+   "label": "catalog-index.jsonl.gz",
+   "sha256": "80971838f79a39b9763eb0d586d5d12a0aa787c4672d31423e60bc71e6de0fbb",
+   "status": "BASELINE_FIXED_PRIOR_UNVERIFIABLE"
+  }
+ ],
+ "frame_integrity": {
+  "jpeg_sha_checked": 4832,
+  "mismatches": 0,
+  "sidecar_frame_id_and_time_checked": 4832,
+  "sim_time_tolerance_s": 0.001
+ },
+ "sequences": {
+  "a7": {
+   "frames": 3168,
+   "red_frames": 1653,
+   "segments": 1,
+   "static_pairs": 4805,
+   "tag": "SELECTION_DOMAIN"
+  },
+  "m3-armA": {
+   "frames": 896,
+   "red_frames": 682,
+   "segments": 7,
+   "static_pairs": 1923,
+   "tag": "TRAINED_ON_ATOM"
+  },
+  "scout-1": {
+   "frames": 768,
+   "red_frames": 705,
+   "segments": 1,
+   "static_pairs": 1535,
+   "tag": "TRAINED_ON_ATOM"
+  }
+ },
+ "unverifiable_without_prior_record": [
+  "catalog-index.jsonl.gz",
+  "catalog-sim-times.jsonl.gz",
+  "P1-ENG-FAST-002-dataset-frames.jsonl.gz"
+ ],
+ "weights_size_matches_spec": true,
+ "work_id": "P1-ENG-ACQ-001"
+}

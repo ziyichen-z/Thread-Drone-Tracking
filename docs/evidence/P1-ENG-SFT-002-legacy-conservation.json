@@ -1,0 +1,4075 @@
+{
+  "legacy_manifest_sha256": "7c259a347603d0065709b8f70ff28ccf70ea85edb915b5aa2de94e28f3879bd3",
+  "rows": [
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-6159ada8ef1ec287",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000091.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0001",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-592c481117274bb5",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000942.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0002",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-0b1db8666e3d87c0",
+      "frame_path": "runtime/test-results/p1-m3-body-001-arm-b-trial-5-post-run/frames/frame_0000000644.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0003",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-12c700cd076872d4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000265.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0004",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-36273a100e9dcb75",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000002248.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0005",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f5a5bf69b3f55201",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001316.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0006",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-89fc55ea23cac917",
+      "frame_path": "runtime/test-results/p1-m3-body-001-arm-b-trial-5-post-run/frames/frame_0000000614.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0007",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1799ab747afa8874",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001669.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0008",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-5ae4d919b12d5a74",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002576.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0009",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-412d06f1ebfc1f91",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001025.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0010",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3a3ff72de1ce1b0d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000185.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0011",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-bae2eae392b32070",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000495.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0012",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-8e696ee30ddd3ca9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001132.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0013",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-470eddf2c45c59f3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000980.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0014",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a174eda87d2227de",
+      "frame_path": "runtime/test-results/p1-m3-body-001-arm-b-trial-2-post-run/frames/frame_0000000704.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0015",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-ea71261ad4391d33",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000726.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0016",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-dbec200806df902e",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000061.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0017",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-caafd27ec2517bc3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002053.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0018",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-861a233a3dc78d96",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000405.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0019",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-7b33274891e88ac3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000057.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0020",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-90ce1c40e0f3450d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001650.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0021",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-126773cbd288fa94",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000557.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0022",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-483470cf87579aee",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000127.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0023",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-27dad326e3f2d174",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000149.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0024",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-58bdea7079e93f7b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000300.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0025",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-eb24c30151a18155",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001724.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0026",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3791880a7d2f8c88",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000374.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0027",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-62ec9c687ae38378",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000055.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0028",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-57e13a51555286f3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002643.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0029",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a756164e4641664c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000192.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0030",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-cb9e5955d3ccd68f",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000965.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0031",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-53328b73e915d0b3",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000404.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0032",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d4306fc38275f29d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000265.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0033",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-043c38f48360d354",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000031.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0034",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-db0fa3f355d7f332",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001316.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0035",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-81bf5db95c55a234",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001177.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0036",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-e7d161c32aba504b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000977.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0037",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-de834130864c9d25",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000972.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0038",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-4bca7b504e9692f2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000301.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0039",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f2b03d2013456525",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000092.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0040",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-404780e2829a00cb",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001175.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0041",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-569ba8c863a953d9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000858.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0042",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-2e333932cd510c50",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000511.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0043",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d52903b6ac744468",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000156.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0044",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-bfe4593fce01c5f6",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000360.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0045",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f2f4b7a4dee6a7f7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000087.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0046",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-50afd061b8ae6e90",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000907.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0047",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b062c95696b02400",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000972.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0048",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1ddc32fc2bb3cfa5",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000074.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0049",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-36edc890c6b690da",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000207.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0050",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9f7a825829aab2f3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000207.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0051",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1b1721fc62b44dac",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000320.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0052",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-cd2b7ebe7bb52a8e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000073.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0053",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-8bdc623a070116ea",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000475.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0054",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-822e7490048d5f06",
+      "frame_path": "runtime/test-results/p1-m3-body-001-arm-b-trial-2-post-run/frames/frame_0000000674.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0055",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-49f94ad8cf9f0411",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000085.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0056",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-fe5de4380ab75cbb",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000794.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0057",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-110dc3205f664e1e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000413.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0058",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-2f887920be1230b1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000294.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0059",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-43eda76e129664f8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001696.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0060",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-acdbcb754e142cfc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000192.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0061",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a45f3156fdb01d31",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000120.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0062",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-eaf864d3684de083",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000283.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0063",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a082907180c2b196",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000940.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0064",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-0c87e9c64fcbe352",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000054.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0065",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-0209c783ead0c0c4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000207.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0066",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d788bcc7966ca303",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000140.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0067",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-422847c4eaaeba58",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000413.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0068",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f9d9e3b9d0deeeff",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000303.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0069",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-00ea2fb6863b49c7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001383.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0070",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d497fc7362c42275",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001769.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0071",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-5cfa2b3b9517e9ee",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001175.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0072",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-046a314ccc6757e1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001254.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0073",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-2d96da73b5cdd59b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001513.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0074",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-2bba25b8242f83c6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000333.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0075",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-56858e0bbfa164d8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000046.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0076",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9dc2d288fbb43b43",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000887.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0077",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-c2c6a1009a580098",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000818.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0078",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-fa223a29768cdad8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001172.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0079",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9dbadeff8f6fc175",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000119.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0080",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-622e0430af2a5a98",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000120.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0081",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3b904a7cbef29883",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001196.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0082",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-37472ab4fdeec14f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000148.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0083",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3ef5963587d6908f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000963.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0084",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f297fe30d7d365ed",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000907.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0085",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-04076093e2d39dc4",
+      "frame_path": "runtime/frames.arm-b-trial-3-shared-residue-hold/frame_0000000997.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0086",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-775b17be9e98bc38",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000185.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0087",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-82169ea010be9069",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001657.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0088",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-23ca421dcf787a0c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001515.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0089",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-efb3ba7e5b77011d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002617.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0090",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-4c04d35d31698cae",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000349.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0091",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-0742004cace95f04",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000788.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0092",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f36500aa567effb2",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000726.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0093",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d27c79111f42fa16",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002129.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0094",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-c6dc8b3b65707602",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000349.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0095",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-566c2cc10b13b0cd",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000435.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0096",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-8de1c5b64e0b6746",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002249.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0097",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-784d80b3c1ec7dc9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001316.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0098",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-7aa75882ce441786",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000576.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0099",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-5149ddf4d3a5f2c7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001570.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0100",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-7b36c3e99e5e7d94",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002318.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0101",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b4f2b43ed8e0e3e6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000980.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0102",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-fdf51e1184d5c3b0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001730.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0103",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-914030fdd39e3b4d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001560.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0104",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-51f0f8152608e234",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002624.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0105",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-c08e7d695fbe0529",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001724.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0106",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f044af603457ae0e",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000465.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0107",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-abdc5d138d159fc2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000148.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0108",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3fe7d7ca3fa51802",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001369.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0109",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-dfbbfd9e051ee25b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000465.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0110",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-4f2bf6c39ce57e24",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000393.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0111",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-171f59704d1df11c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000182.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0112",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f5ca10a4ba01460b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000174.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0113",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-020b6021f2f539af",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001378.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0114",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-97ad60fe581c84b4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000775.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0115",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f3a7ec7f5dd3aa5d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001477.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0116",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-e1a541fc613ea890",
+      "frame_path": "runtime/frames.arm-b-trial-3-shared-residue-hold/frame_0000000967.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0117",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-2edf8cd1e34f143c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002569.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0118",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3dd508ea7346f268",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000300.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0119",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-422a1bf77e2cdb1e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000501.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0120",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d8c3207e581b0fed",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000292.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0121",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-c8e90e13ad78eec6",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000262.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0122",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3b96e7c77e3e3fe6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000393.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0123",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-90a2cac84000fb89",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001496.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0124",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-5268e5af431366df",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000404.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0125",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-77792a85853831e7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001560.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0126",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f9e046fd9693d83f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002631.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0127",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-cc0d2aa1742b3d4a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000556.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0128",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-09cf9a6dc07894ff",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000383.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0129",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f82cf1b3c1a48398",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000002043.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0130",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-6f087720fc1f56ce",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002218.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0131",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1466dbb72d5b36c4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001478.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0132",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b03d2015bb564ea4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001353.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0133",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-36cd56710d0fc523",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001371.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0134",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-7d31ca27b7fa4dca",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000148.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0135",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-45d24385c9f017c9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002242.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0136",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-496bf50f4eef87e9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001144.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0137",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-07b4c6a51f80427c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000968.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0138",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d7e6fe7c7cf3aa9a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001957.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0139",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b2cee3787fff622a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001776.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0140",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b3784f85b2a2938c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002242.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0141",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-02dcea346475b0d2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001176.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0142",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1a19620aaa7f924c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001578.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0143",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a435fe2f071b0bbc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001965.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0144",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-02b8dd9fe39373e0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000788.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0145",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-e969c1ee4593b987",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000991.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0146",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3571ccbb4f2003a0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000119.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0147",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1f6bca215e96e398",
+      "frame_path": "runtime/frames.arm-b-trial-3-shared-residue-hold/frame_0000000937.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0148",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-812e2b7d598554b4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002435.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0149",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-4179d8a310867218",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001905.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0150",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b5d488434db019e7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002631.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0151",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-8ea067a00b583550",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001785.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0152",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-5ea2faa2b48eab96",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000001.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0153",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-51c297dd5f466493",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000754.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0154",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-05900e7888eb6097",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001569.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0155",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d193bd5ce549cd4b",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000322.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0156",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-6e0fb0cbc9f59da6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001369.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0157",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-7496184826473bd4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001181.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0158",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a0f15665f69b88bc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000972.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0159",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-c33c5093fa23fda3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002055.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0160",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-752a4b0e3f87f3c4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001162.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0161",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-fc64d834a9646a9e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000182.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0162",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-7689160bce7a4df7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001896.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0163",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-0d653d35e1c785e0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002679.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0164",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-8b3adaa34cc3faa6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001374.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0165",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-77b55dee370634e6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001316.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0166",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-72022216eba339d1",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000866.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0167",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-836203abb2e0c301",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000557.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0168",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9409ef2d0072d218",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002087.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0169",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-f9fcaeec9dad4620",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000121.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0170",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a34fe70ef523079a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000980.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0171",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-483148fc476a0e68",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000908.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0172",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-0a8632d7816e7d06",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000393.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0173",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-bee5319afaa9b067",
+      "frame_path": "runtime/frames.arm-b-trial-3-shared-residue-hold/frame_0000000907.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0174",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b5106ce0f77b7b8e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001794.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0175",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-fc89c0565881fbd1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001578.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0176",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-536d3481ed3be03e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001172.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0177",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-33db5a9ad9f824ea",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001515.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0178",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-119a51b1bfcca9a2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002517.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0179",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-13663470fd0633e6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000412.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0180",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-332875e77f75927f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001766.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0181",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-64caaa35246fc54c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001581.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0182",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-d088866bea7861ce",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001966.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0183",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-23e7467b49f60f8a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001785.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0184",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-aefe43894fdcac08",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001779.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0185",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-425041e6fc0d0d2e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001515.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0186",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-1c5c86d5533a95b0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002328.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0187",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-c19c33db6a22365e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000182.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0188",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-ce476541533a89e3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001378.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0189",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-40ed73578f7acde6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001776.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0190",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9958bd301c0bbcf0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000002089.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0191",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-6893c6f2b931c2e8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002304.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0192",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-64de746bddd69224",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002495.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0193",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9a486ffe2df5900b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001738.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0194",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-9d5628b91c3e2d4b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001360.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0195",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-a3702515e8b7d677",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001785.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0196",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-eb9ded9badae66e3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002681.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0197",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-aa00524a38f0281f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000185.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0198",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-4c16df6d7be49cc6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000174.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0199",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-ff38108645757f7b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000393.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0200",
+      "surface": "the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-16488b024bc74c59",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000763.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0201",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-6aff9d2e04b6174e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001751.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0202",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b9dac853a7cb773f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000002116.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0203",
+      "surface": "the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-06ef63081fe8de22",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001578.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0204",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-2d5d670dfcd7be8b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000794.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0205",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3540b95a5c2ba2a2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002505.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0206",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-3948ac2bac124479",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002092.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0207",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-06f42ec0cac1c845",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001769.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0208",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-b6aaa22842b887c1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000174.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0209",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G1-71625434cbd5bec6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002325.jpg",
+      "group": "G1",
+      "group_v1": "G1_CLASS",
+      "new_state": "unique",
+      "row_id": "G1_CLASS-0210",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-0f66bad9ea69ed73",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000398.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0211",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-99e5d1275fac2c78",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000110.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0212",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-411e8b356ddb3902",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000531.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0213",
+      "surface": "the purple suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-101a16db2761cdc7",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000002346.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0214",
+      "surface": "the purple suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-c888fb5616d2445e",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000575.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0215",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-709eb07b3ad77cd6",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000001136.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0216",
+      "surface": "the purple suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-7ed4c332a59da8fc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000403.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0217",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-bb582a06db2b79e9",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000369.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0218",
+      "surface": "the green container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-a9dceb79c803468f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000797.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0219",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-98b556c973a985a4",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000001003.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0220",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-fb201049acf9e385",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002642.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0221",
+      "surface": "the green container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-9bcceeab2cd9a614",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000604.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0222",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-36391c3105f2ec1b",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000545.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0223",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-af024d6983a54712",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002504.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0224",
+      "surface": "the green container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-843db913504c44e7",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000001741.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0225",
+      "surface": "the purple suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-e45e15109dd3b131",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000974.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0226",
+      "surface": "the green container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-a404d7b768298bf3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000403.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0227",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-7a0dd44999fff743",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000195.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0228",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-5b0edeb5ba489325",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002486.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0229",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-0999a09ba4a405bc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000365.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0230",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-c00e960e0e1115cb",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002562.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0231",
+      "surface": "the gray car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-3d611aaba71f52b5",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000797.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0232",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-69c24446562c3c53",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002124.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0233",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-52fca34014721ccc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001911.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0234",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-a183bf9bde531813",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002304.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0235",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-b630ff74446ae3d7",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000146.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0236",
+      "surface": "the green container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-b4ab9a50f4370049",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002323.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0237",
+      "surface": "the green suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-7491c1faf1cf4cf8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000604.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0238",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-c1fe0d7a8af9d444",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002323.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0239",
+      "surface": "the purple suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-1d87565ab4f07afc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001380.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0240",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-e8e91dc6bf30bd2c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000167.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0241",
+      "surface": "the gray car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-2120e236e07d81f1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001712.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0242",
+      "surface": "the gray car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-78a1d64e6eafda62",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002133.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0243",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-2f0e26b3e8c436da",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001730.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0244",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-18350aa66ae00f53",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000119.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0245",
+      "surface": "the gray car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-27b5c657f315f0af",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000752.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0246",
+      "surface": "the green container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-bb59b81ec4453ce9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001912.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0247",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-848cb356c7e3ad06",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002304.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0248",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-cdbe7a4b4a15f7bc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001730.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0249",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-4d9c9e559e74cbd8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001951.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0250",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-fd983f2ae693dd10",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000000568.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0251",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-e7996b0ccd008e97",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002679.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0252",
+      "surface": "the gray car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-5dc0a3121b195308",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002453.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0253",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-c8e491042c0abb58",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001551.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0254",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-59ce888eaccf9cdd",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002636.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0255",
+      "surface": "the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-39117c48623d6ecd",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000001778.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0256",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-f7838a86bfa8d063",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000002384.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0257",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-05e07d53740981ec",
+      "frame_path": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames/frame_0000001173.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0258",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G2-179d5b5c507cc14c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001523.jpg",
+      "group": "G2",
+      "group_v1": "G2_COLOR",
+      "new_state": "unique",
+      "row_id": "G2_COLOR-0259",
+      "surface": "the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-046ad7a4db212cb1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001466.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0260",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-c7fec7b96d122aaa",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002154.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0261",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-f23b446fa1ea4e62",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000852.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0262",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-a78c7cad99f1505f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002074.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0263",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-28b08434aae5966d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000393.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0264",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-ebb1ee69a67eb77a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001875.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0265",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-af36e62561902b21",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001435.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0266",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-23ffaaceff0342e8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000986.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0267",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-c8196f2a836bec49",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000940.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0268",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-564360c4c659b791",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000501.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0269",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-bb52f9a2b89d7eef",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001702.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0270",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-215af9c5b30109c3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000319.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0271",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-ef01450372ab5c38",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000090.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0272",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-2dcfdc7f91338902",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000164.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0273",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-c37b0db13392f11e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001924.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0274",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-c8180a43593718e6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000176.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0275",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-a3b78b2da175bd3f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000165.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0276",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-cd1fca456a2329b9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000531.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0277",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-0ac8f525b73fdc7a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001140.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0278",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-c7fec7b96d122aaa",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002154.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0279",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-30b20d44d4f275e5",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002251.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0280",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-6bad35d0e2572090",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001802.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0281",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-29f90fbc89d83ba1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000164.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0282",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-2797ab91d5f1486a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000548.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0283",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-ab09506ac26ae19a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002691.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0284",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-7833a318c5b196bd",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001581.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0285",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-5f41ec72f684ba85",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000176.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0286",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-f4a4811b91f5e0de",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001738.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0287",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-29ea5bd7b5f99348",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001859.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0288",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-18c851be031c4f3b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001389.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0289",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-7b60dca2e9e3ca1e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002453.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0290",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-21916d7d3e2d73fe",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002145.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0291",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-917497f5c279b42c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001551.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0292",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-de9bfb55cf349fd6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001984.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0293",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-7171c2f1cb6b531f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000374.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0294",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-0a3d51a425c5555a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001761.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0295",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-8b8715830427baff",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002231.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0296",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-fff0e5f94a6b4d9d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000384.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0297",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-a8ad7ce23699199e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000386.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0298",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3t-83451f237401605d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002145.jpg",
+      "group": "G3t",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0299",
+      "surface": "the car"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-38f9577223cf4f91",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000998.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0300",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-498630e4d08221b0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002508.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0301",
+      "surface": "the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3t-6851b3af0101096e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001572.jpg",
+      "group": "G3t",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0302",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-4d0d5800df2c0a96",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001523.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0303",
+      "surface": "the car"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-fdb808efe82bd801",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000357.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0304",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-d635a4c096b9b083",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002460.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0305",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-b0e1295dc4b15d3d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002460.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0306",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-7171c2f1cb6b531f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000374.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0307",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-4d1b8aa532fcd60e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001965.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0308",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-1671483ced6e80d6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001570.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0309",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-6276d54156dd7379",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000000357.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0310",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-4b7d47acfffecd98",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001176.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0311",
+      "surface": "the car"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-d7b587eab6a4e39f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002154.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0312",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-0eddbeba3ce1676d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002142.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0313",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-dd3de57cad61bef0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001738.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0314",
+      "surface": "the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-7678b95a28f9b560",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002272.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0315",
+      "surface": "the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-5cc015eb092edffa",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002156.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0316",
+      "surface": "the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3p-520ef09f4ad7fc43",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001751.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0317",
+      "surface": "the bus"
+    },
+    {
+      "disposition": "LEGACY_ONLY",
+      "eval_row_id": "LEGACY_ONLY-d7b587eab6a4e39f",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002154.jpg",
+      "group": "G3p",
+      "group_v1": "G3_AMBIG",
+      "new_state": "gray_definite_plus_uncertain",
+      "row_id": "G3_AMBIG-0318",
+      "surface": "the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G3-a874906d1df80145",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002504.jpg",
+      "group": "G3",
+      "group_v1": "G3_AMBIG",
+      "new_state": "ambiguous",
+      "row_id": "G3_AMBIG-0319",
+      "surface": "the police car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-08e114feb1adc599",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002499.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0320",
+      "surface": "the suv to the viewer's left of the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-b02715a219f87975",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001769.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0321",
+      "surface": "the taxi to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-25d657d23406ea0e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001693.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0322",
+      "surface": "the bus to the viewer's right of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-538c4732b56befd7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001911.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0323",
+      "surface": "the taxi to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-eaf88b1446931655",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001569.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0324",
+      "surface": "the bus to the viewer's right of the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-74c126d22a65b8e5",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001587.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0325",
+      "surface": "the taxi to the viewer's left of the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-b9bff3fa0e2336fe",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001838.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0326",
+      "surface": "the taxi to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-6049415cac9e77b7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001756.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0327",
+      "surface": "the suv to the viewer's right of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-cbde397b3c009138",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001788.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0328",
+      "surface": "the taxi to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-6cac8f5c8fe25b05",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001144.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0329",
+      "surface": "the bus to the viewer's left of the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-1c754b8c51971b8a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000492.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0330",
+      "surface": "the taxi to the viewer's left of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-abfc82f9688c11d4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000375.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0331",
+      "surface": "the bus to the viewer's right of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-52fbe42fa57cb4a5",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001874.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0332",
+      "surface": "the pickup truck to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-b018797f95ea1211",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000763.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0333",
+      "surface": "the truck to the viewer's left of the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-83f397c23d219dc2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001878.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0334",
+      "surface": "the truck to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-c4158899f05acc40",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002661.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0335",
+      "surface": "the pickup truck to the viewer's left of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-5f278e065d8bc728",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001504.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0336",
+      "surface": "the taxi to the viewer's left of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-67676fc97e5aca82",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002517.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0337",
+      "surface": "the taxi to the viewer's right of the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-07c0bd9ae1638e4d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000000788.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0338",
+      "surface": "the pickup truck to the viewer's left of the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-f77101e69959ff91",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001714.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0339",
+      "surface": "the truck to the viewer's left of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-3ea2cbe9f55af82c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000931.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0340",
+      "surface": "the bus to the viewer's left of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-df300659a2eddd27",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001687.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0341",
+      "surface": "the taxi to the viewer's left of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-030eec470ab4d94a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002325.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0342",
+      "surface": "the car to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-66cf5dd632522c00",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001144.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0343",
+      "surface": "the bus to the viewer's right of the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-38cb951af3d21de4",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001769.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0344",
+      "surface": "the suv to the viewer's right of the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-284daf121ab60f25",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000002043.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0345",
+      "surface": "the truck to the viewer's right of the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-bf5f3936a7248d4e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002334.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0346",
+      "surface": "the suv to the viewer's right of the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-a77fdd63617e936d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002268.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0347",
+      "surface": "the car to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-223e97979958fac2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001756.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0348",
+      "surface": "the pickup truck to the viewer's right of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-5b930dd2a29800c1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001398.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0349",
+      "surface": "the bus to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-e21d304a54d28d55",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001784.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0350",
+      "surface": "the car to the viewer's left of the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-4a438921f23ee542",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000000375.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0351",
+      "surface": "the bus to the viewer's left of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-bb073f2625666ae3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001579.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0352",
+      "surface": "the suv to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-e7883fa3c48e07cc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002151.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0353",
+      "surface": "the taxi to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-07bc6dac7c6f7edc",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001965.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0354",
+      "surface": "the gray car to the viewer's right of the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-660bfdf0546bf6f2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001579.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0355",
+      "surface": "the taxi to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-c72d4306ecb63dea",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001969.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0356",
+      "surface": "the taxi to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-5764af60b1c24470",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001785.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0357",
+      "surface": "the suv to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-00967485db9990e9",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001523.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0358",
+      "surface": "the taxi to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-e42c63cdd76859d8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001544.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0359",
+      "surface": "the taxi to the viewer's right of the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-6737fef7aa721539",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002325.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0360",
+      "surface": "the taxi to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-857bf265b6ac8607",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001793.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0361",
+      "surface": "the suv to the viewer's left of the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-009ca9dfa9b8344a",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002661.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0362",
+      "surface": "the suv to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-021d195ae38f10c8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002334.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0363",
+      "surface": "the container truck to the viewer's left of the car"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-c69fc71299a7a580",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001569.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0364",
+      "surface": "the suv to the viewer's left of the pickup truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-ad757c3210ba504c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002142.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0365",
+      "surface": "the suv to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-1a019b5abdbbda84",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000383.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0366",
+      "surface": "the suv to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-d1dd0afe566c6725",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001590.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0367",
+      "surface": "the suv to the viewer's left of the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-ffcc81cb743d8e9c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002450.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0368",
+      "surface": "the car to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-c24721a07edc9363",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001766.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0369",
+      "surface": "the bus to the viewer's left of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-0cd581c28a241d45",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002697.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0370",
+      "surface": "the suv to the viewer's left of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-a911ac43cfc162c6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001513.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0371",
+      "surface": "the taxi to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-8f21f7590c929636",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001398.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0372",
+      "surface": "the suv to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-64a14fbddd41ef7c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001751.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0373",
+      "surface": "the suv to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-a6f56249a51518a1",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001976.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0374",
+      "surface": "the red container truck to the viewer's left of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-b546e89ef4731f63",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002325.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0375",
+      "surface": "the car to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-a358e06ca4646751",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002508.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0376",
+      "surface": "the ambulance to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-f033f163e22fcf0d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001960.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0377",
+      "surface": "the pickup truck to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-092720ae949bf3d8",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001587.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0378",
+      "surface": "the container truck to the viewer's left of the truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-9f34c146b8d34c1b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001784.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0379",
+      "surface": "the gray car to the viewer's right of the red container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-ac6e217486207a68",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000383.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0380",
+      "surface": "the bus to the viewer's left of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-e86b973546ecb39e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001785.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0381",
+      "surface": "the taxi to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-15004486bae9a382",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000763.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0382",
+      "surface": "the truck to the viewer's right of the suv"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-6253d0843e2213a7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000501.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0383",
+      "surface": "the taxi to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-b0d6f56e9001d942",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002328.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0384",
+      "surface": "the pickup truck to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-8ee91ab5018ef335",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001966.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0385",
+      "surface": "the pickup truck to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-5b5d6953b6782335",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001578.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0386",
+      "surface": "the pickup truck to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-59e7764f6e60ebe6",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002147.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0387",
+      "surface": "the suv to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-5df1ba9f7e558606",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000000556.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0388",
+      "surface": "the bus to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-2331eaad91413a75",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001976.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0389",
+      "surface": "the blue container truck to the viewer's left of the taxi"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-08f5f5443c106b1c",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001581.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0390",
+      "surface": "the suv to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-3c338d17ae587c77",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001569.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0391",
+      "surface": "the bus to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-f578e996ea7d2632",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001751.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0392",
+      "surface": "the taxi to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-bf98f37a095359f0",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001960.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0393",
+      "surface": "the police car to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-8afa90a550054313",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001176.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0394",
+      "surface": "the taxi to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-71e757438358f1d2",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000002147.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0395",
+      "surface": "the pickup truck to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-1e61fc7b73e4c2b3",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000001975.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0396",
+      "surface": "the suv to the viewer's left of the blue container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-7a1652cc3943b259",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a6-p1-c1-s1/frames/frame_0000002661.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0397",
+      "surface": "the taxi to the viewer's right of the container truck"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-c5f9aa436505743d",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001966.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0398",
+      "surface": "the taxi to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-eff1a88951e5be36",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002142.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0399",
+      "surface": "the police car to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-8a532f1c9600294e",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a9-p1-c1-s1/frames/frame_0000001569.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0400",
+      "surface": "the taxi to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-1d85bcce6a95dc96",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001966.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0401",
+      "surface": "the suv to the viewer's right of the ambulance"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-93aa5ee8ea68f005",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002323.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0402",
+      "surface": "the police car to the viewer's right of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-a217c26d98fd96a7",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000002323.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0403",
+      "surface": "the police car to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-fef041bf7893aaaa",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a3-p1-c1-s1/frames/frame_0000001570.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0404",
+      "surface": "the police car to the viewer's left of the bus"
+    },
+    {
+      "disposition": "ADMITTED",
+      "eval_row_id": "G4-5df062f5c7ad361b",
+      "frame_path": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a4-p1-c1-s1/frames/frame_0000001966.jpg",
+      "group": "G4",
+      "group_v1": "G4_RELATION",
+      "new_state": "unique",
+      "row_id": "G4_RELATION-0405",
+      "surface": "the suv to the viewer's left of the ambulance"
+    }
+  ],
+  "schema_version": "p1-eng-sft-002/legacy-conservation/v1",
+  "totals": {
+    "admitted_by_group": {
+      "G1": 210,
+      "G2": 49,
+      "G3": 12,
+      "G3p": 37,
+      "G3t": 2,
+      "G4": 86
+    },
+    "by_disposition": {
+      "ADMITTED": 396,
+      "LEGACY_ONLY": 9
+    },
+    "legacy_only_by_group": {
+      "G3p": 9
+    },
+    "rows": 405
+  },
+  "work_id": "P1-ENG-SFT-002"
+}

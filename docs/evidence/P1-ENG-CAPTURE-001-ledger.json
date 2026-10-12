@@ -1,0 +1,435 @@
+{
+ "counters": {
+  "board": 0,
+  "candidates_started": 3,
+  "cloud_gpu": 0,
+  "download_install": 0,
+  "focused_real_weight_loads": 8,
+  "mini_new_disk_bytes": 358408592,
+  "replay_inference_frames": 7924,
+  "replay_yolo_loads": 3,
+  "run_id": 0,
+  "scenario_id": 0,
+  "session_id": 0,
+  "stop_suite_real_yolo_constructions": 6,
+  "stop_suite_runs": 3,
+  "unity_play": 0,
+  "vlm_api": 0
+ },
+ "envelope": {
+  "board": 0,
+  "candidates": 3,
+  "cloud_gpu": 0,
+  "download_install": 0,
+  "fault_injection_inference_frames": 0,
+  "focused_real_weight_loads_total": 20,
+  "mini_new_disk_bytes_total": 3221225472,
+  "replay_inference_frames_per_candidate": 5500,
+  "replay_inference_frames_total": 16500,
+  "replay_wall_minutes_per_run": 30,
+  "replay_yolo_loads_per_candidate": 2,
+  "replay_yolo_loads_total": 6,
+  "run_id": 0,
+  "scenario_id": 0,
+  "session_id": 0,
+  "stop_suite_real_yolo_constructions_per_run": 2,
+  "stop_suite_real_yolo_constructions_total": 6,
+  "stop_suite_runs_per_candidate": 1,
+  "stop_suite_runs_total": 3,
+  "stop_suite_wall_minutes_per_run": 30,
+  "unity_play": 0,
+  "vlm_api": 0
+ },
+ "envelope_id": "CAPTURE:A:1",
+ "envelope_source": "docs/authorizations.md 2026-10-09「P1-ENG-CAPTURE-001 — 用户签发第一轮阶段 A 额度 CAPTURE:A:1 并确认阶段 A STOP 处置…」；提案「信封落实（2026-10-09，Acceptance）」",
+ "events": [
+  {
+   "amount": 2,
+   "at": "2026-10-10T00:03:02Z",
+   "candidate": 1,
+   "cmd": ".venv-yoloe/bin/python -m unittest discover -s tests -p test_det_assoc_carrier.py",
+   "counter": "focused_real_weight_loads",
+   "env": "YOLO_OFFLINE/YOLO_AUTOINSTALL 未在该次进程显式设置（偏差，如实记）",
+   "note": "开发期 focused：F12 清单 CarrierSelfTest 两个用例各真实构造 1 次（数据根缺省存在，未 skip）。偏差：启动前未核该文件含真实构造即运行（AR1-6「启动前逐维核账」未做到），事后按实际尝试补记；余额 20−2。"
+  },
+  {
+   "amount": 2,
+   "at": "2026-10-10T00:03:02Z",
+   "candidate": 1,
+   "cmd": ".venv-yoloe/bin/python -m unittest discover -s tests -p test_det_assoc_carrier.py -v",
+   "counter": "focused_real_weight_loads",
+   "env": "同上（偏差）",
+   "note": "同上第二次（为看清哪一用例失败而重跑）；同一偏差；余额 20−4。此后真实加载前一律先核账并设两个环境变量。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T00:03:15Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python -m unittest test_det_assoc_carrier.CarrierSelfTest.test_carrier_matches_caliber_b_from_first_update（-s tests）",
+   "counter": "focused_real_weight_loads",
+   "note": "开发期 focused：只取该失败用例的断言原文（1 次真实构造）；启动前余额 16。"
+  },
+  {
+   "amount": 0,
+   "at": "2026-10-10T00:04:25Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "（HEAD b7191ed 的一次性 worktree，outputs/ 只读符号链接）YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python -m unittest test_det_assoc_carrier.CarrierSelfTest.test_carrier_matches_caliber_b_from_first_update",
+   "counter": "focused_real_weight_loads",
+   "note": "基线归因：同一用例在修改前代码上是否已失败（1 次真实构造）；启动前余额 15。（实际：worktree 缺 outputs/eng-det 致用例 skip，零构造；计数回退，记 0。）"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T00:04:42Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "同上，worktree 补 outputs/eng-det 只读符号链接后重跑",
+   "counter": "focused_real_weight_loads",
+   "note": "基线归因（1 次真实构造）；启动前余额 15。"
+  },
+  {
+   "amount": 1439303,
+   "at": "2026-10-10T00:31:24Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "mini_new_disk_bytes",
+   "note": "outputs/eng-capture/ 实测字节（find+stat 合计）：input-check.json（S-A-INPUT 零模型）+ fidelity/（合成滚转 4 张零推理样帧 + 点击页实现者自检 2 张）；不入仓。另：基线归因用一次性 worktree 位于会话 scratchpad（/private/tmp，收工删除），不在 outputs/eng-capture/。"
+  },
+  {
+   "amount": 321653,
+   "at": "2026-10-10T01:08:37Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "mini_new_disk_bytes",
+   "note": "阶段A续：outputs/eng-capture/ 实测合计 1,760,956 B（find+stat）。增量 = 用户 AC-27/AC-17 会话点击页产物 fidelity/user/（2 张标记样帧、click-script.json、samples、click-web.jsonl，共 320,570 B）+ AC-28 六基计划 roll-clicks/roll-base-plan.json（1,083 B，零模型 prepare-roll）。不入仓。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T01:28:31Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "replay_yolo_loads",
+   "note": "正式回放启动加载（尝试即记，失败不返还）"
+  },
+  {
+   "amount": 0,
+   "at": "2026-10-10T01:30:05Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "replay_yolo_loads",
+   "note": "阶段A回放：上一条正式回放启动加载（01:28:31Z，HEAD 1881569）在 ultralytics 内被拒（TypeError：formal_run 把规格 JSON 路径当权重交给加载器），未得模型、推理 0；按「尝试即记、失败不返还」该次已计 1。本条只注明原因，不另计。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T01:30:05Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python <scratchpad>/smoke_real_load.py",
+   "counter": "focused_real_weight_loads",
+   "env": "YOLO_OFFLINE=True、YOLO_AUTOINSTALL=False",
+   "note": "开发期 focused：正式回放崩溃重载前，用真实权重核真实加载路径（formal_run.spec_weights_path → CountingModel → build_caches 两策略、基线导出包与新臂 live 推理各一帧），少量帧、输出只在会话 scratchpad；启动前余额 14。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T01:30:56Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "replay_yolo_loads",
+   "note": "正式回放启动加载（尝试即记，失败不返还）"
+  },
+  {
+   "amount": 1658,
+   "at": "2026-10-10T01:31:27Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "replay_inference_frames",
+   "note": "原始帧 × 两策略检测缓存"
+  },
+  {
+   "amount": 2304,
+   "at": "2026-10-10T01:33:12Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "replay_inference_frames",
+   "note": "合成滚转实推理帧（两臂）"
+  },
+  {
+   "amount": 7325635,
+   "at": "2026-10-10T01:35:42Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "mini_new_disk_bytes",
+   "note": "阶段A回放：outputs/eng-capture/ 实测合计 9,086,591 B（find -type f + stat；符号链接不计）。增量 = replay/ 下首次被拒尝试目录与日志、正式回放 candidate1-20261010T013055Z（基线导出源、缓存外报告、新臂逐帧与 tm_inputs、provisional-readings.json）与两份启动/运行日志。正式回放墙钟 137.7 s（/usr/bin/time real），≤ 30 min。不入仓。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T01:35:52Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python -m unittest discover -s tests > docs/evidence/P1-ENG-CAPTURE-001-tests.log 2>&1（HEAD 2d12c50）",
+   "counter": "stop_suite_runs",
+   "note": "AC-20 停点全套，候选 1 唯一一次（失败也占次）；启动前余额 全套 3、构造 6；F12 清单内真实构造预计 ≤ 2（test_det_assoc_carrier CarrierSelfTest 两处），结束后按实际补记。"
+  },
+  {
+   "amount": 2,
+   "at": "2026-10-10T01:50:46Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "counter": "stop_suite_real_yolo_constructions",
+   "note": "AC-20 全套（候选 1）实际：F12 清单 test_det_assoc_carrier.CarrierSelfTest 两例均未 skip（_ready() 成立），各真实构造 1 次 = 2，未超清单；墙钟 549.6 s（≤ 30 min）；exit 1（失败分列见交接证据 §6）。"
+  },
+  {
+   "amount": 0,
+   "at": "2026-10-10T01:50:46Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "（接受基线 9f1a8cc 的一次性 worktree，outputs/ 与 .venv-yoloe 符号链接）YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python -m unittest discover -s tests -p test_det_assoc_carrier.py -k test_carrier_matches_caliber_b_from_first_update",
+   "counter": "focused_real_weight_loads",
+   "env": "YOLO_OFFLINE=True、YOLO_AUTOINSTALL=False",
+   "note": "AC-20 基线归因：全套中该用例 FAIL，核其在接受基线代码上是否同样失败（1 次真实构造）；启动前余额 12。（实际：worktree 的 outputs/ 是已跟踪目录，符号链接落成 outputs/outputs，权重不可见致用例 skip，零构造；计数回退，记 0。）"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T01:51:08Z",
+   "balance_checked_before_start": true,
+   "candidate": 1,
+   "cmd": "同上，worktree 改为 outputs/eng-det 只读符号链接后重跑",
+   "counter": "focused_real_weight_loads",
+   "env": "YOLO_OFFLINE=True、YOLO_AUTOINSTALL=False",
+   "note": "AC-20 基线归因（1 次真实构造）；启动前余额 12。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T02:42:38Z",
+   "candidate": 1,
+   "counter": "candidates_started",
+   "note": "C1返工补记（C1-5 计数/事件一致性）：候选 1（阶段A实现首候选）开始时只改了计数、未落事件；本条只补事件，计数不再加。"
+  },
+  {
+   "amount": 0,
+   "at": "2026-10-10T02:42:38Z",
+   "candidate": 1,
+   "counter": "focused_real_weight_loads",
+   "note": "C1返工补核（核对表「资源与稳定停点核对」）：2026-10-10T00:03:02Z 两条 carrier focused（共 4 次真实构造）启动前未核账、未显式设 YOLO_OFFLINE/YOLO_AUTOINSTALL，第二次带 -v 重跑违测试输出纪律；已按实际尝试计入、余额已扣，偏差保留不追认；此后不再主张「所有启动前核账」（该主张对上述两条不成立）。本条金额 0。"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T02:42:38Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "candidates_started",
+   "note": "C1返工（Dispatch-Id P1-ENG-CAPTURE-001-C1返工-20261010T022016Z-8465）：C1@K1K2K3K4 唯一退回 C1-1…C1-5 的真实返工 diff（controller/target_manager.py KF 消费 fail-closed、点击 ①→⑤ 顺序与控制限速/端口结果可重放；controller/language_loop.py 追平点击先提交后授权；tools/eng_capture/{replay,formal_run,analyze_play,ledger}.py AC-18/24 原检测判据、同帧状态/效果一致评分、逐帧共账与启动门）→ 候选 2；候选 1 加载 2/2、全套 1/1 已用尽，不换号规避"
+  },
+  {
+   "amount": 30380346,
+   "at": "2026-10-10T02:42:38Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "mini_new_disk_bytes",
+   "note": "C1返工补核磁盘账（核对表指出的证据缺失）：非 outputs/eng-capture 根的已知产物实测保守上界 = 本会话目录 scratchpad/tasks 自 2026-10-09T23:30Z 起全部普通文件 20,769,162 B（含候选 1 零模型试跑 dry1/dry2/smoke1、补丁备份、红绿日志与本轮零模型彩排；亦含接受/supervisor 产物，按保守计入）+ 仓内 docs/evidence/P1-ENG-CAPTURE-001-* 124,781 B + 接受基线以来改动/新建的代码测试配置文件现大小 1,372,243 B + git 对象 base..HEAD 磁盘 6,947,729 B（含其他角色提交，保守）+ 仓内 *.pyc 1,166,431 B；合计 30,380,346 B。一次性 worktree 已删除，现不占用、历史峰值未测（UNKNOWN，不据以推余额）"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T02:43:19Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "replay_yolo_loads",
+   "note": "正式回放启动加载（尝试即记，失败不返还）"
+  },
+  {
+   "amount": 1658,
+   "at": "2026-10-10T02:43:19Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "replay_inference_frames",
+   "last_at": "2026-10-10T02:43:50Z",
+   "note": "原始帧 × 两策略检测缓存（逐帧提交前落盘）",
+   "settled_at": "2026-10-10T02:43:50Z",
+   "status": "settled"
+  },
+  {
+   "amount": 2304,
+   "at": "2026-10-10T02:43:55Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "replay_inference_frames",
+   "last_at": "2026-10-10T02:45:42Z",
+   "note": "合成滚转实推理帧（两臂；逐帧提交前落盘）",
+   "settled_at": "2026-10-10T02:45:42Z",
+   "status": "settled"
+  },
+  {
+   "amount": 6741842,
+   "at": "2026-10-10T02:45:42Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "mini_new_disk_bytes",
+   "note": "正式回放输出目录 candidate2-20261010T024317Z 实测字节（find 普通文件，符号链接不计）；启动/运行日志另记"
+  },
+  {
+   "amount": 6757,
+   "at": "2026-10-10T02:46:12Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "cmd": "YOLO_OFFLINE=True YOLO_AUTOINSTALL=False /usr/bin/time -l .venv-yoloe/bin/python -m tools.eng_capture.replay run … --candidate 2（HEAD 9bb0430，墙钟 146.18 s real）",
+   "counter": "mini_new_disk_bytes",
+   "note": "候选 2 正式回放启动/运行日志（candidate2-launch.txt 108 B、candidate2-run.log 777 B）与零模型 rescore 写入的 provisional-readings.json 5,872 B；outputs/eng-capture/ 现实测合计 15,835,190 B（find 普通文件，符号链接不计）"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T02:46:35Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "cmd": "YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python -m unittest discover -s tests > docs/evidence/P1-ENG-CAPTURE-001-tests.log 2>&1（HEAD 9bb0430）",
+   "counter": "stop_suite_runs",
+   "env": "YOLO_OFFLINE=True、YOLO_AUTOINSTALL=False",
+   "note": "AC-20 停点全套，候选 2 唯一一次（失败也占次）；启动前核账：全套余额 2、构造余额 4；F12 清单 CarrierSelfTest _ready()=True，预计真实构造 2（结束后按实际补记）"
+  },
+  {
+   "amount": 2,
+   "at": "2026-10-10T02:56:09Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "stop_suite_real_yolo_constructions",
+   "note": "AC-20 全套（候选 2）实际：F12 清单 test_det_assoc_carrier.CarrierSelfTest 两例 _ready()=True 均未 skip，各真实构造 1 次 = 2，未超清单；墙钟 550 s（unittest 报 549.988 s，≤ 30 min）；exit 1（Ran 2656，failures 28 / errors 34 / skipped 56；失败 id 集与候选 1 逐条相同，分列见交接证据 §6）"
+  },
+  {
+   "amount": 803929,
+   "at": "2026-10-10T02:59:50Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "mini_new_disk_bytes",
+   "note": "C1返工收尾补记（非 outputs 根，2026-10-10T02:42Z 补核之后新增，实测）：会话目录 scratchpad/tasks 新文件 556,873 B（全套前后日志、重放核验输出等）+ 仓内 docs/evidence/P1-ENG-CAPTURE-001-* 增量 24,558 B + git 对象 97dd6d3..9bb0430 磁盘 222,498 B；代码文件与 *.pyc 增量 0。本条之后的收尾提交自身 git 对象未测，留待下一轮补记（不据以推余额）"
+  },
+  {
+   "amount": 81477632,
+   "at": "2026-10-10T18:34:13Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "mini_new_disk_bytes",
+   "note": "R1返工开工补记（用户 2026-10-10「以后的临时工作区必须实测记账」）：R1@K1K2K3K4 复核一次性副本 .claude/worktrees/review-P1-ENG-CAPTURE-001 检出峰值 81,477,632 B（复核文件 §0 du -sk 读数，符号链接目标不计；已删除，净新增 0，按峰值保守计入）"
+  },
+  {
+   "amount": 27131904,
+   "at": "2026-10-10T18:34:13Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "mini_new_disk_bytes",
+   "note": "R1返工开工补记：R1@K1K2K3K4 复核会话暂存目录 27,131,904 B（复核文件 §0 读数，含 focused 日志与两份探针脚本）"
+  },
+  {
+   "amount": 2396607,
+   "at": "2026-10-10T18:34:13Z",
+   "balance_checked_before_start": true,
+   "candidate": 2,
+   "counter": "mini_new_disk_bytes",
+   "note": "R1返工开工补记：git 对象 9bb0430..a6a7e4a（8 个提交、48 个对象，git cat-file objectsize:disk 合计 2,396,607 B；含 C1返工收尾提交及接受/复核/supervisor 提交，保守计入；C1返工末条所留「收尾提交自身 git 对象未测」由本条覆盖）"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T18:41:51Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "candidates_started",
+   "note": "R1返工（Dispatch-Id P1-ENG-CAPTURE-001-R1返工-20261010T182657Z-2adb）：R1@K1K2K3K4 REWORK_REQUIRED 的 R1-1（controller/target_manager.py 重放端口按序逐段消费、缺行/截断/乱序/多余即拒）、R1-2（tools/eng_capture/formal_run.py S-A-INPUT 早退按输出目录实测字节记磁盘；写报告前墙钟判定）、R1-3（tools/eng_capture/analyze_play.py 点击按 click_id 配对与墙钟、AC-25 缺真值帧不计带内并出非 FOLLOW 帧数、AC-23 红车段；tools/eng_capture/click_web.py 写 click_id/click_submitted）与 CLASS_3/IR-C2-5（replay.py、analyze_play.py 缺原键 prior 记 EVIDENCE_MISSING）真实返工 diff；不换号规避共账"
+  },
+  {
+   "amount": 1,
+   "at": "2026-10-10T18:42:10Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "cmd": "YOLO_OFFLINE=True YOLO_AUTOINSTALL=False .venv-yoloe/bin/python -m unittest discover -s tests > docs/evidence/P1-ENG-CAPTURE-001-tests.log 2>&1（HEAD ddaf982）",
+   "counter": "stop_suite_runs",
+   "env": "YOLO_OFFLINE=True、YOLO_AUTOINSTALL=False",
+   "note": "AC-20 停点全套，候选 3 唯一一次（失败也占次）；启动前核账：全套余额 1、构造余额 2；F12 清单 CarrierSelfTest 预计真实构造 2（结束后按实际补记）"
+  },
+  {
+   "amount": 2,
+   "at": "2026-10-10T18:51:52Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "stop_suite_real_yolo_constructions",
+   "note": "AC-20 全套（候选 3）实际：F12 清单 test_det_assoc_carrier.CarrierSelfTest 类级 skipUnless(_ready()) 为真、两例均执行（其一以基线不一致帧列表 [2, 4, 5, 6, 8, 12, 17, 18, 19, 20] 失败），各真实构造 1 次 = 2，未超清单；墙钟 557.70 s real（unittest 报 555.392 s，≤ 30 min）；exit 1（Ran 2666，failures 28 / errors 34 / skipped 56；失败 id 集 62 条与候选 2 全套逐条相同）"
+  },
+  {
+   "amount": 11945456,
+   "at": "2026-10-10T18:54:17Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "R1返工收尾补记（实测，保守）：会话目录（scratchpad/tasks，含红绿与全套日志、暂存手稿、代码备份）现存普通文件 1,648,151 B + 已删除的两份临时导出峰值（修前红导出树 8,818,688 B、候选 2 controller 导出 1,286,144 B，du -sk×1024）+ 仓内 docs/evidence/P1-ENG-CAPTURE-001-* 增量 34,782 B（不含账本）+ 账本增量上界 2,000 B + git 对象 a6a7e4a..候选3代码提交 155,691 B；*.pyc 增量 0；单元测试临时目录随测清理未计。本条之后的收尾提交自身 git 对象未测，留待下一轮补记（不据以推余额）"
+  },
+  {
+   "amount": 80961536,
+   "at": "2026-10-10T19:26:36Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "R2文档闭合补记（Dispatch-Id P1-ENG-CAPTURE-001-R2文档闭合-20261010T192319Z-db92；依同名提案「R2冻结裁定」「IR-R1-3答复落实」与用户 2026-10-10「以后的临时工作区必须实测记账」）：R2@K1K2K3K4 复核一次性副本检出峰值 80,961,536 B（复核文件 R2 §0 du -sk 读数，不含符号链接目标；已删除，净新增 0，仍按峰值计入）；归候选 3（R2 复核对象），不新增候选号；查重：账内此前无该笔（R1 复核副本 81,477,632 B 为另一笔）"
+  },
+  {
+   "amount": 17797120,
+   "at": "2026-10-10T19:26:36Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "R2文档闭合补记：R2@K1K2K3K4 复核会话暂存目录 17,797,120 B（复核文件 R2 §0 读数：focused/红绿日志、两份重放输出、探针脚本与探针产物；即 supervisor 会话 scratchpad/r2，本轮实测现存普通文件 15,610,374 B ≤ 该读数，按复核读数计、不另计）；归候选 3，不新增候选号；查重：账内此前无该笔（R1 复核暂存 27,131,904 B 为另一笔）"
+  },
+  {
+   "amount": 4637031,
+   "at": "2026-10-10T19:26:36Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "R2文档闭合补记（R1返工末条所留「收尾提交自身 git 对象未测」）：git 对象 ddaf982..d8ca5d5（候选3代码提交之后至本轮派发登记，16 个提交、90 个对象，git rev-list --objects | git cat-file objectsize:disk 合计 4,637,031 B；含 R1返工收尾、R1-4记债、R2复核、R2冻结裁定、IR-R1-3答复与落实及 supervisor 登记/核销提交，保守计入；范围不与此前 a6a7e4a..ddaf982 重叠）"
+  },
+  {
+   "amount": 1851741,
+   "at": "2026-10-10T19:29:00Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "R2文档闭合补记（实测）：supervisor 派发会话暂存中 R1返工收尾实测（2026-10-10T18:54:17Z）之后新增、此前未入账的普通文件 1,851,741 B（接受三轮 codex 运行目录 acc-r14 292,745 + acc-r2f 777,319 + acc-ir13 766,587、派发提示 prompt-review-r2.md 10,364 + prompt-capture-r2docs.md 4,179、任务输出 66；find -newermt 后 stat 字节和；不含已由 R2 复核暂存笔覆盖的 r2 目录）；codex 进程自身 ~/.codex/ 会话日志与缓存未测（UNKNOWN，不假记 0）"
+  },
+  {
+   "amount": 17447,
+   "at": "2026-10-10T19:29:00Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "R2文档闭合收尾补记（实测+上界）：本轮文档相对 HEAD d8ca5d5 的字节增量 docs/evidence/P1-ENG-CAPTURE-001-play-ops.md 4,443 + -K1K2K3K4-handoff.md 7,579 + docs/current-status.md 485 = 12,507，账本此前三笔增量 1,940，加本笔与 handoff §R7.3 数字回填上界 3,000；本轮会话暂存仅一份 3 行合成核验文件（已删除，<1 KiB，含于上界）；本条之后的收尾提交自身 git 对象未测，留待下一轮补记（不据以推余额）"
+  },
+  {
+   "amount": 81022976,
+   "at": "2026-10-10T19:49:33Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "Air预检补记（Dispatch-Id P1-ENG-CAPTURE-001-Air预检-20261010T194445Z-0e28；依同名提案「通过轮消费」资源补记义务与交接行）：R2回归核实复核一次性副本检出峰值 81,022,976 B（docs/reviews/P1-ENG-CAPTURE-001.md「回归核实」§5 du -sk 读数，未建符号链接；已删除、净新增 0，仍按峰值计入）；归候选 3（回归核实对象代码 = 候选 3），不新增候选号；查重：账内此前无该金额（R1 复核副本 81,477,632 B、R2 复核副本 80,961,536 B 为另两笔）；该复核会话暂存新增 0 B（同节读数）"
+  },
+  {
+   "amount": 2124548,
+   "at": "2026-10-10T19:49:33Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "Air预检补记（Dispatch-Id P1-ENG-CAPTURE-001-Air预检-20261010T194445Z-0e28；依同名提案「通过轮消费」资源补记义务与交接行）：git 对象 d8ca5d5..353812a（R2文档闭合提交起至通过轮消费 supervisor 核销，8 个提交、45 个对象），在 mini 仓库只读 ssh 实测 git rev-list --objects | cut -f1 | git cat-file objectsize:disk 合计 2,124,548 B（同范围 Air 打包后仅 35,941 B，按 mini 实测计）；承接上笔 17,447 B 所留「收尾提交自身 git 对象未测」；范围不与此前 ddaf982..d8ca5d5 重叠"
+  },
+  {
+   "amount": 25129,
+   "at": "2026-10-10T19:49:34Z",
+   "balance_checked_before_start": true,
+   "candidate": 3,
+   "counter": "mini_new_disk_bytes",
+   "note": "Air预检补记（Dispatch-Id P1-ENG-CAPTURE-001-Air预检-20261010T194445Z-0e28；依同名提案「通过轮消费」资源补记义务与交接行）：mini 工作树文档净增 4d94187..353812a（git blob 字节差）：docs/reviews/P1-ENG-CAPTURE-001.md 9,579 + 提案 5,990 + docs/evidence/supervisor-dispatch.jsonl 8,831 + docs/current-status.md 729 = 25,129 B（回归核实所留「本文件与状态板增量见下一轮补记」及通过轮消费文档）；通过轮消费 codex 运行目录与 supervisor 暂存、~/.codex/ 缓存未测（UNKNOWN，不假记 0）；本轮 Air 预检文档增量在 Air（Air 无 A 磁盘维度），mini 拉取后的对象与工作树字节留待下一轮补记（不据以推余额）"
+  }
+ ],
+ "machine": "Mac mini；.venv-yoloe/bin/python；YOLO_OFFLINE=True、YOLO_AUTOINSTALL=False；不装包",
+ "not_counted": {
+  "zero_model_focused_tests": "注入替身的 focused 测试不计模型加载；其输出若落盘计 A 磁盘（本账只记 outputs/eng-capture/ 新增字节）"
+ },
+ "schema_version": "p1-eng-capture-ledger/v1",
+ "stage": "A",
+ "work_id": "P1-ENG-CAPTURE-001"
+}

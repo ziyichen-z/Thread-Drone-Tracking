@@ -1,0 +1,73 @@
+{
+ "batch_1c_obligation": "batch 1c must report the measured residual distribution on the M3' carrier against this value; re-standardising Q or R requires returning to Acceptance (BC-BODY1-7)",
+ "counts": {
+  "first_loss_frame": null,
+  "frames_evaluated": 2404,
+  "frames_listed": 2405,
+  "initialised_on_frame": 0,
+  "residual_samples": 2404,
+  "tracker_lost": 0,
+  "truth_unavailable": 0
+ },
+ "extrapolation_risks": [
+  "the archive's `manifest.gimbal_driver = truth_directed_scouting`, i.e. these frames come from a truth-directed scouting sweep, not from a tracking loop",
+  "SCENE-004 is a benign near-nadir geometry with a narrow slant-range band, while this batch's carrier is the main circuit at up to about 70 degrees off-nadir; the calibration is extrapolated across that gap"
+ ],
+ "label": "conservative initial value, not a carrier measurement",
+ "pre_registered_policy": {
+  "P1_initialisation": "first VALID truth box, one init, offline only",
+  "P2_residual": "signed box-centre pixel offset, both axes",
+  "P3_aggregation": "sigma_px = RMS of per-axis signed residuals",
+  "P4_outliers": "nothing trimmed; drift inflates the conservative prior",
+  "P5_label": "conservative initial value; both risks recorded"
+ },
+ "residual_axis_px": {
+  "mean_x": -1.636743409463053,
+  "mean_y": -0.31201786308637436,
+  "stdev_x": 2.6722016051125057,
+  "stdev_y": 2.551911351408888
+ },
+ "residual_magnitude_px": {
+  "max": 12.374182162495101,
+  "median": 2.791571004141416,
+  "p95": 7.84060358587084
+ },
+ "schema_version": "p1-m3-body-001-sigma-px/v1",
+ "sigma_px": 2.8661120964750415,
+ "source": {
+  "frame_dir": "runtime/test-results/p1-scene-004-scout-4-closed-exchange/frames",
+  "gimbal_driver": "truth_directed_scouting",
+  "session_manifest_sha256": "7f18c71003bd107bfea920644baa23e9d178ffab304c26267e0b104650c908d8",
+  "tracker": {
+   "backend": "opencv-dnn-default/cpu",
+   "dnn_backend": "DNN_BACKEND_DEFAULT",
+   "dnn_target": "DNN_TARGET_CPU",
+   "model_sha256": {
+    "backbone": "530bdd0cd00f19afab79a863e71ba71e3312395a5dc9151af675082bdaaa2fc4",
+    "neckhead": "0d8c0637be849f092cc7236cae02e55c8b9455ebe37ba50601d6115db4247cd9"
+   },
+   "model_source": {
+    "commit": "248663fde6bf7c40190cf10ee396d5662919ecd3",
+    "license_path": "NanoTrack/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "license_spdx": "Apache-2.0",
+    "license_url": "https://github.com/HonglinChu/SiamTrackers/blob/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/LICENSE",
+    "repository": "https://github.com/HonglinChu/SiamTrackers",
+    "tree_url": "https://github.com/HonglinChu/SiamTrackers/tree/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/models/nanotrackv2",
+    "urls": {
+     "backbone": "https://raw.githubusercontent.com/HonglinChu/SiamTrackers/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/models/nanotrackv2/nanotrack_backbone_sim.onnx",
+     "neckhead": "https://raw.githubusercontent.com/HonglinChu/SiamTrackers/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/models/nanotrackv2/nanotrack_head_sim.onnx"
+    }
+   },
+   "name": "nanotrack-v2",
+   "opencv_package_pin": "opencv-contrib-python==5.0.0.93",
+   "opencv_version": "5.0.0",
+   "pinned_version": "5.0.0",
+   "preprocessing_id": "opencv-tracker-nano-5.0.0-default-v1",
+   "score_threshold": null,
+   "threshold_source": "none"
+  },
+  "truth_dir": "runtime/p1-scene-004-scouting/p1-scene-004-scout-4/truth"
+ },
+ "work_id": "P1-M3-BODY-001"
+}

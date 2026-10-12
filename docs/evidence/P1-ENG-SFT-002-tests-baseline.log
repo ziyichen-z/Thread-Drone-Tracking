@@ -1,0 +1,231 @@
+..............ssss...........ANALYSIS_FAIL_CLOSED:compare_requires_create_once_output
+ANALYSIS_FAIL_CLOSED:compare_output_create_once
+......................................E........................................E..............................................................................................................ssss............................sssssssssss............ss................................ssssssss..s.....s.......................ssssss.............................................sssss...........................................................sssssss..s........................................................................................................................................................................................s........................usage: python3.14 -m unittest [-h] [--runtime RUNTIME] [--finalize RUN_ID |
+                              --dump-frame FRAME_ID |
+                              --release-qualification RUN_ID]
+                              [--output OUTPUT]
+                              [--tracker {csrt,nanotrack-v2}]
+                              [--tracker-model-spec TRACKER_MODEL_SPEC]
+                              [--tracker-model-dir TRACKER_MODEL_DIR]
+                              [--reanchor-config REANCHOR_CONFIG]
+                              [--init-frame INIT_FRAME]
+                              [--init-box X Y WIDTH HEIGHT]
+                              [--track-id TRACK_ID]
+                              [--scenario-id SCENARIO_ID]
+                              [--condition {follow,nadir}]
+                              [--ground-plane-y-m GROUND_PLANE_Y_M]
+                              [--planned-duration-s PLANNED_DURATION_S]
+                              [--run-id RUN_ID]
+                              [--rate-study-rate-hz RATE_STUDY_RATE_HZ]
+                              [--rate-study-replicate RATE_STUDY_REPLICATE]
+                              [--rate-study-replicate-id RATE_STUDY_REPLICATE_ID]
+                              [--rate-study-attempt-id RATE_STUDY_ATTEMPT_ID]
+                              [--loop-duration-s LOOP_DURATION_S]
+                              [--scenario-config-sha256 SCENARIO_CONFIG_SHA256]
+                              [--init-image-sha256 INIT_IMAGE_SHA256]
+                              [--reference-image-sha256 REFERENCE_IMAGE_SHA256]
+                              [--reference-frame-id REFERENCE_FRAME_ID]
+                              [--reference-simulation-time-s REFERENCE_SIMULATION_TIME_S]
+                              [--rate2-session] [--rate3-session]
+                              [--qualification-release-barrier]
+                              [--maximum-ground-range-m MAXIMUM_GROUND_RANGE_M]
+                              [--expires-after-s EXPIRES_AFTER_S]
+                              [--poll-interval-s POLL_INTERVAL_S]
+                              [--body-policy {hold,threshold}]
+                              [--body-planner-config BODY_PLANNER_CONFIG]
+                              [--body-scenario-config BODY_SCENARIO_CONFIG]
+python3.14 -m unittest: error: --body-policy requires --body-planner-config and --body-scenario-config
+....../opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/traceback.py:270: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/tmpuvij4z7v/runs/bad-wiring/frames.jsonl' mode='a' encoding='utf-8'>
+  tb.tb_frame.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/case.py:615: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/jg/1yygvdgs6813xcxn23ml4vy40000gn/T/tmpwt864obn/runs/body-qual/frames.jsonl' mode='a' encoding='utf-8'>
+  result = method()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...........................................................................................................s..........E..............s..........E......susage: python3.14 -m unittest [-h] [--runtime RUNTIME] [--finalize RUN_ID |
+                              --dump-frame FRAME_ID |
+                              --release-qualification RUN_ID]
+                              [--output OUTPUT]
+                              [--tracker {csrt,nanotrack-v2}]
+                              [--tracker-model-spec TRACKER_MODEL_SPEC]
+                              [--tracker-model-dir TRACKER_MODEL_DIR]
+                              [--reanchor-config REANCHOR_CONFIG]
+                              [--init-frame INIT_FRAME]
+                              [--init-box X Y WIDTH HEIGHT]
+                              [--track-id TRACK_ID]
+                              [--scenario-id SCENARIO_ID]
+                              [--condition {follow,nadir}]
+                              [--ground-plane-y-m GROUND_PLANE_Y_M]
+                              [--planned-duration-s PLANNED_DURATION_S]
+                              [--run-id RUN_ID]
+                              [--rate-study-rate-hz RATE_STUDY_RATE_HZ]
+                              [--rate-study-replicate RATE_STUDY_REPLICATE]
+                              [--rate-study-replicate-id RATE_STUDY_REPLICATE_ID]
+                              [--rate-study-attempt-id RATE_STUDY_ATTEMPT_ID]
+                              [--loop-duration-s LOOP_DURATION_S]
+                              [--scenario-config-sha256 SCENARIO_CONFIG_SHA256]
+                              [--init-image-sha256 INIT_IMAGE_SHA256]
+                              [--reference-image-sha256 REFERENCE_IMAGE_SHA256]
+                              [--reference-frame-id REFERENCE_FRAME_ID]
+                              [--reference-simulation-time-s REFERENCE_SIMULATION_TIME_S]
+                              [--rate2-session] [--rate3-session]
+                              [--qualification-release-barrier]
+                              [--maximum-ground-range-m MAXIMUM_GROUND_RANGE_M]
+                              [--expires-after-s EXPIRES_AFTER_S]
+                              [--poll-interval-s POLL_INTERVAL_S]
+                              [--body-policy {hold,threshold}]
+                              [--body-planner-config BODY_PLANNER_CONFIG]
+                              [--body-scenario-config BODY_SCENARIO_CONFIG]
+python3.14 -m unittest: error: --rate2-session and --rate3-session are mutually exclusive
+..E......................................................................E............................EE.....................E.....错误：会话 p1-vlm-survey-a1-p1-c1-s1 的 manifest：采集协议已漂移——钉住 0000000000000000000000000000000000000000000000000000000000000000，当前投影 b4ad4f7bde5fa22d7913aa5e4adf2ddfd724c33dc7116904ddb53c87045b80bf。受管常量改动后必须重新发布 plan/manifest/S0，不得在旧钉子下继续。
+...............................................................................................................................................sssss........s...s....................ss.
+======================================================================
+ERROR: test_benchmark_reanchor (unittest.loader._FailedTest.test_benchmark_reanchor)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_benchmark_reanchor
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_benchmark_reanchor.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_detector_scouting (unittest.loader._FailedTest.test_detector_scouting)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_detector_scouting
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_detector_scouting.py", line 8, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_rate2_protocol (unittest.loader._FailedTest.test_rate2_protocol)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_rate2_protocol
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_rate2_protocol.py", line 10, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_rate3_difficulty_audit (unittest.loader._FailedTest.test_rate3_difficulty_audit)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_rate3_difficulty_audit
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_rate3_difficulty_audit.py", line 10, in <module>
+    from tools.build_rate3_difficulty_audit import (
+    ...<8 lines>...
+    )
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tools/build_rate3_difficulty_audit.py", line 44, in <module>
+    from tools.build_scene004_geometry import SCENARIO_PATH as D1_SCENARIO_PATH
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tools/build_scene004_geometry.py", line 43, in <module>
+    from tools.run_detector_scouting import sha256_file
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tools/run_detector_scouting.py", line 15, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_rate3_reanchor_clock_mismatch_raises_defensively (test_rate3_protocol.Rate3GuardTests.test_rate3_reanchor_clock_mismatch_raises_defensively)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_rate3_protocol.py", line 868, in test_rate3_reanchor_clock_mismatch_raises_defensively
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+======================================================================
+ERROR: test_rate_study (unittest.loader._FailedTest.test_rate_study)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_rate_study
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_rate_study.py", line 9, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_scene004_gate0_probe (unittest.loader._FailedTest.test_scene004_gate0_probe)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scene004_gate0_probe
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_scene004_gate0_probe.py", line 7, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_scene004_scouting (unittest.loader._FailedTest.test_scene004_scouting)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scene004_scouting
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_scene004_scouting.py", line 6, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_scene006_probe (unittest.loader._FailedTest.test_scene006_probe)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scene006_probe
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/test_scene006_probe.py", line 8, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+----------------------------------------------------------------------
+Ran 1156 tests in 49.555s
+
+FAILED (errors=9, skipped=63)
+OK /private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/fixtures/scene006-trace-v2-sample.json: states=3 recorded=b09b28261ddd03b2… recomputed=b09b28261ddd03b2…
+MISMATCH /private/tmp/claude-501/-Users-zc-TetheredDroneTracking/afccd00c-3e0e-430e-b985-e2d2881262b6/scratchpad/baseline/tests/fixtures/.tmp-mismatch.json: states=3 recorded=b09b28261ddd03b2… recomputed=9cfd4cf063f172d9…
+
+================================================================================
+本文件是什么
+================================================================================
+基线全套输出：在**开工前提交 4306485** 的一次性 git worktree 里运行
+`python3 -m unittest discover -s tests`（与本批次同一命令、同一解释器）所得，
+供核对 `P1-ENG-SFT-002-tests.log` 的「基线已有失败」主张。worktree 已删除。
+注意 worktree 不带 git 忽略的 `runtime/` 归档，故依赖真实归档的用例在此跳过而非执行；
+9 项 errors 是**导入期**失败，与工作副本是否有归档无关，两侧逐项同名同因。

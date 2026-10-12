@@ -1,0 +1,31 @@
+{
+  "schema_version": "p1-eng-capture-001/v1",
+  "work_id": "P1-ENG-CAPTURE-001",
+  "note": "同名提案 §3.7：类别按 v3.1 B9；「待标定」值只是让代码可运行的占位，不是默认值、不声称最优；依赖它们的读数一律标「暂定（n=…）」。",
+  "params": {
+    "delta_t_s": {"value": 0.2, "category": "known_constraint", "basis": "场景 5 Hz"},
+    "t_report_frames": {"value": 3, "category": "design_budget", "basis": "用户占位（USER-4A）；草案「≤ 5 帧」"},
+    "n_adopt_frames": {"value": 2, "category": "design_budget", "basis": "用户占位（USER-4A）；v3 下限；非 R-3 标定"},
+    "rho_click": {"value": 1.5, "category": "design_budget", "basis": "用户占位（USER-4A）"},
+    "t_pred_frames": {"value": 4, "category": "to_calibrate", "basis": "草案「3 到 5 帧」；结构约束 T_pred ≤ T_repair − 1"},
+    "t_repair_frames": {"value": 5, "category": "to_calibrate", "basis": "v3 占位；补偿修正后剩余机制未测"},
+    "g_motion": {"value": 9.21, "category": "to_calibrate", "basis": "χ²₂ 0.99 分位；像面 NIS 未标定"},
+    "g_size": {"value": 0.5, "category": "to_calibrate", "basis": "面积平方根 log 比；v3 占位"},
+    "r_gate_max_px": {"value": 80.0, "category": "to_calibrate", "basis": "像面像素占位"},
+    "m_nis": {"value": 4.6, "category": "to_calibrate", "basis": "占位"},
+    "r_jump_diag": {"value": 0.5, "category": "to_calibrate", "basis": "框对角线倍数占位"},
+    "sigma_p": {"value": 0.05, "category": "vendor", "basis": "ultralytics 8.4.104 KalmanFilterXYWH._std_weight_position = 1/20（F13）"},
+    "h_c_m": {"value": 0.775, "category": "known_constraint", "basis": "target_height_m 1.55 / 2，相对 ground_plane_y_m"},
+    "auto_repair": {"value": true, "category": "config_axis", "basis": "v3 §13 配置轴；off 只作故障注入对照臂"}
+  },
+  "body_band_formula": {
+    "category": "formula",
+    "basis": "§3.7：N = ⌈(d₀ − 14)/(v_max − v_target)⌉ + t_lead + slack 秒；d₀ ≤ 14 m 时取常数项；测前固定",
+    "band_m": [10.0, 14.0],
+    "v_max_mps": 4.0,
+    "v_target_mps": 2.0,
+    "t_lead_s": 2.5,
+    "slack_s": 2.0,
+    "not_evaluable_below_m": 10.0
+  }
+}

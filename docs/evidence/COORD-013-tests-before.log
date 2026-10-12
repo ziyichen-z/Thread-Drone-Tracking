@@ -1,0 +1,68 @@
+...........................FFFFFF.F
+======================================================================
+FAIL: test_changed_active_rows_byte_cap (tests.test_check_docs.RelayCostTest.test_changed_active_rows_byte_cap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 630, in test_changed_active_rows_byte_cap
+    self.assertIn("Gate board", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Gate board' not found in ''
+
+======================================================================
+FAIL: test_ended_rows_are_not_kept_on_the_board (tests.test_check_docs.RelayCostTest.test_ended_rows_are_not_kept_on_the_board)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 589, in test_ended_rows_are_not_kept_on_the_board
+    self.assertIn("P1-CLOSED-001", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'P1-CLOSED-001' not found in ''
+
+======================================================================
+FAIL: test_new_log_entry_byte_cap (tests.test_check_docs.RelayCostTest.test_new_log_entry_byte_cap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 654, in test_new_log_entry_byte_cap
+    self.assertIn("600", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+AssertionError: '600' not found in ''
+
+======================================================================
+FAIL: test_parked_ended_table_done_rows_need_evidence (tests.test_check_docs.RelayCostTest.test_parked_ended_table_done_rows_need_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 679, in test_parked_ended_table_done_rows_need_evidence
+    self.assertIn("P1-OLD-001", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'P1-OLD-001' not found in ''
+
+======================================================================
+FAIL: test_paused_gate_row_byte_cap (tests.test_check_docs.RelayCostTest.test_paused_gate_row_byte_cap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 599, in test_paused_gate_row_byte_cap
+    self.assertIn("P1-PAUSED-001", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'P1-PAUSED-001' not found in ''
+
+======================================================================
+FAIL: test_paused_handoff_row_byte_cap (tests.test_check_docs.RelayCostTest.test_paused_handoff_row_byte_cap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 607, in test_paused_handoff_row_byte_cap
+    self.assertIn("P1-M7-DEPLOY-001", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'P1-M7-DEPLOY-001' not found in ''
+
+======================================================================
+FAIL: test_structure_bytes_cap (tests.test_check_docs.RelayCostTest.test_structure_bytes_cap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 667, in test_structure_bytes_cap
+    self.assertIn("30000", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: '30000' not found in ''
+
+----------------------------------------------------------------------
+Ran 35 tests in 1.561s
+
+FAILED (failures=7)

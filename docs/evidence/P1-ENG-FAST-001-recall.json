@@ -1,0 +1,4921 @@
+{
+  "applicability_matrix": {
+    "body-armA": {
+      "T0-bank": "✓（池 a2）",
+      "T0-oracle": "N/A(NO_SESSION_REFERENCE)",
+      "T1a/T1b": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)",
+      "distance_table": "slant_range"
+    },
+    "body-armB": {
+      "T0-bank": "✓（池 td）",
+      "T0-oracle": "N/A(NO_SESSION_REFERENCE)",
+      "T1a/T1b": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)",
+      "distance_table": "slant_range"
+    },
+    "catalog-448": {
+      "T0-bank": "✓（池 td）",
+      "T0-oracle": "N/A(NO_SESSION_REFERENCE)",
+      "T1a/T1b": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)",
+      "distance_table": "axial_depth"
+    },
+    "scout-1": {
+      "T0-bank": "✓（池 a2）",
+      "T0-oracle": "✓（reference.json）",
+      "T1a/T1b": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)",
+      "distance_table": "slant_range"
+    },
+    "scout-4": {
+      "T0-bank": "✓（池 td）",
+      "T0-oracle": "✓（reference.json）",
+      "T1a/T1b": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)",
+      "distance_table": "slant_range"
+    }
+  },
+  "bank_status": {
+    "a2": {
+      "target_primitive": "COMPLETE",
+      "vehicle": "BANK_PARTIAL(5/9)"
+    },
+    "td": {
+      "target_primitive": "COMPLETE",
+      "vehicle": "COMPLETE"
+    }
+  },
+  "bootstrap": {
+    "rounds": 2000,
+    "seed": 20260923
+  },
+  "detector_identity": {
+    "T0-bank-a2": {
+      "classes": [
+        "vehicle",
+        "target-primitive"
+      ],
+      "detector_id": "T0-bank",
+      "device": "cpu",
+      "embedding_sha256": "51dc60944ead43abce38094d4d95704ac33474dc3795763a5c05ac97dbbb5a57",
+      "embedding_shape": [
+        1,
+        2,
+        512
+      ],
+      "embedding_status": "MULTI_FRAME_MEAN",
+      "per_class_frame_counts": {
+        "target-primitive": 1,
+        "vehicle": 2
+      },
+      "per_frame_classes": {
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a2-p1-c1-s1/frames/frame_0000000112.jpg": [
+          "target-primitive"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a2-p1-c1-s1/frames/frame_0000000570.jpg": [
+          "vehicle"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a2-p1-c1-s1/frames/frame_0000001466.jpg": [
+          "vehicle"
+        ]
+      }
+    },
+    "T0-bank-td": {
+      "classes": [
+        "vehicle",
+        "target-primitive"
+      ],
+      "detector_id": "T0-bank",
+      "device": "cpu",
+      "embedding_sha256": "5b44b7297d88bdb33f907816f352b2c10b840bd8fb08b75504fcca1b9aebc471",
+      "embedding_shape": [
+        1,
+        2,
+        512
+      ],
+      "embedding_status": "MULTI_FRAME_MEAN",
+      "per_class_frame_counts": {
+        "target-primitive": 1,
+        "vehicle": 5
+      },
+      "per_frame_classes": {
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a1-p1-c1-s2/frames/frame_0000001987.jpg": [
+          "vehicle"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a1-p1-c1-s2/frames/frame_0000002152.jpg": [
+          "vehicle"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a1-p1-c1-s2/frames/frame_0000002160.jpg": [
+          "vehicle"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a2-p1-c1-s1/frames/frame_0000000112.jpg": [
+          "target-primitive"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a7-p1-c1-s1/frames/frame_0000001423.jpg": [
+          "vehicle"
+        ],
+        "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a7-p1-c1-s1/frames/frame_0000002550.jpg": [
+          "vehicle"
+        ]
+      }
+    },
+    "T0-oracle-scout-1": {
+      "detector_id": "T0-oracle",
+      "device": "cpu",
+      "embedding_sha256": "24ad89f59bb2a9c8eaf96be75d7291d572f7e3c6710200812eb9ed9c72500fec",
+      "reference": {
+        "box_xywh_norm": [
+          0.46875,
+          0.41041666666666665,
+          0.0625,
+          0.14375
+        ],
+        "frame_id": 47,
+        "image_path": "runtime/p1-detect-scouting/p1-detect-001-scout-1/reference-preview.jpg",
+        "image_sha256": "f3c701926838d1e02259a3f80cde7bebb9622260b74494aa48a5db0966e5f16e",
+        "reference_json_sha256": "ec8152ac8cd9c5ac900bb87e1c387a50db566425a3edca4f4d9fb4f587b3d131",
+        "simulation_time_s": 7.111673831939697
+      },
+      "reference_box_xywh_norm": [
+        0.46875,
+        0.41041666666666665,
+        0.0625,
+        0.14375
+      ],
+      "reference_image": "runtime/p1-detect-scouting/p1-detect-001-scout-1/reference-preview.jpg",
+      "reference_image_sha256": "f3c701926838d1e02259a3f80cde7bebb9622260b74494aa48a5db0966e5f16e"
+    },
+    "T0-oracle-scout-4": {
+      "detector_id": "T0-oracle",
+      "device": "cpu",
+      "embedding_sha256": "a8c9278d681666ac1fea68fb231b7ba305a70ae77afd4c3e9eabb3780b593d8c",
+      "reference": {
+        "box_xywh_norm": [
+          0.440625,
+          0.4375,
+          0.11875,
+          0.10625
+        ],
+        "frame_id": 140,
+        "image_path": "runtime/p1-scene-004-scouting/p1-scene-004-scout-4/reference-preview.jpg",
+        "image_sha256": "0704650f5b42c4dd32b2dd0dcce7e393af51c5b3ba3a42ea2841f6ee648c05f8",
+        "reference_json_sha256": "8105b0d3fae19e288864e695e8afc63573c6e464f88ab756fbd0adc27d1033bb",
+        "simulation_time_s": 7.030570030212402
+      },
+      "reference_box_xywh_norm": [
+        0.440625,
+        0.4375,
+        0.11875,
+        0.10625
+      ],
+      "reference_image": "runtime/p1-scene-004-scouting/p1-scene-004-scout-4/reference-preview.jpg",
+      "reference_image_sha256": "0704650f5b42c4dd32b2dd0dcce7e393af51c5b3ba3a42ea2841f6ee648c05f8"
+    },
+    "config_sha256": "593734d67ada73a0304d67d27c6ae536be616d2180f744336b85ff6e0ac706d2"
+  },
+  "detector_threshold": 0.25,
+  "distance_bins_m": [
+    "<35",
+    "35-50",
+    "50-65",
+    ">=65"
+  ],
+  "fp_per_frame": {
+    "body-armA|T0-bank-a2": {
+      "detections": 424,
+      "fp_per_frame": 0.626563,
+      "frames": 640,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 401
+    },
+    "body-armB|T0-bank-td": {
+      "detections": 1134,
+      "fp_per_frame": 2.019531,
+      "frames": 512,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 1034
+    },
+    "catalog-448|T0-bank-td": {
+      "detections": 941,
+      "fp_per_frame": 0.674107,
+      "frames": 448,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 302
+    },
+    "scout-1|T0-bank-a2": {
+      "detections": 1628,
+      "fp_per_frame": 1.731915,
+      "frames": 705,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 1221
+    },
+    "scout-1|T0-oracle": {
+      "detections": 340,
+      "fp_per_frame": 0.028369,
+      "frames": 705,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 20
+    },
+    "scout-4|T0-bank-td": {
+      "detections": 2679,
+      "fp_per_frame": 0.276091,
+      "frames": 2405,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 664
+    },
+    "scout-4|T0-oracle": {
+      "detections": 2346,
+      "fp_per_frame": 0.059875,
+      "frames": 2405,
+      "note": "描述性；真值清单之外的场景车辆被检出也计为未匹配（scout 真值只列 1–2 辆干扰车，BODY 真值不列干扰车）",
+      "unmatched_detections": 144
+    }
+  },
+  "gold": "amodal 投影 AABB（UNVERIFIED）",
+  "iou_thresholds": [
+    0.3,
+    0.5
+  ],
+  "legacy_alignment": {
+    "scout-1": {
+      "aligned": true,
+      "disposition": "ALIGNED",
+      "expected": {
+        "denominator": 45,
+        "hits": 0
+      },
+      "legacy_result": "runtime/p1-detect-scouting/p1-detect-001-scout-1/scouting-result-bbox-schema-v2.json",
+      "legacy_result_sha256": "295f17df3bbbb1fd30ca3c4a2afec9789af860672dd4c6351a76867026ff779d",
+      "max_abs_iou_delta_vs_legacy": 0.0,
+      "per_tick_hit_mismatches": [],
+      "recomputed": {
+        "denominator": 45,
+        "hits": 0
+      },
+      "ticks": [
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 13
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 15
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 17
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 18
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 19
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 24
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 26
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 28
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 33
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 42
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 43
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 49
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 50
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 60
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 61
+        },
+        {
+          "frame_id": 312,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 83
+        },
+        {
+          "frame_id": 315,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 84
+        },
+        {
+          "frame_id": 318,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 85
+        },
+        {
+          "frame_id": 322,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 86
+        },
+        {
+          "frame_id": 325,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 87
+        },
+        {
+          "frame_id": 328,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 88
+        },
+        {
+          "frame_id": 331,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 89
+        },
+        {
+          "frame_id": 334,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 90
+        },
+        {
+          "frame_id": 337,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 91
+        },
+        {
+          "frame_id": 340,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 92
+        },
+        {
+          "frame_id": 344,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 93
+        },
+        {
+          "frame_id": 347,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 94
+        },
+        {
+          "frame_id": 350,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 95
+        },
+        {
+          "frame_id": 352,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 96
+        },
+        {
+          "frame_id": 355,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 97
+        },
+        {
+          "frame_id": 359,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 98
+        },
+        {
+          "frame_id": 362,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 99
+        },
+        {
+          "frame_id": 365,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 100
+        },
+        {
+          "frame_id": 367,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 101
+        },
+        {
+          "frame_id": 370,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 102
+        },
+        {
+          "frame_id": 372,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 103
+        },
+        {
+          "frame_id": 376,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 104
+        },
+        {
+          "frame_id": 379,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 105
+        },
+        {
+          "frame_id": 384,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 106
+        },
+        {
+          "frame_id": 387,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 107
+        },
+        {
+          "frame_id": 390,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 108
+        },
+        {
+          "frame_id": 393,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "REMOTE_VISIBLE",
+          "tick_index": 109
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 198
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 200
+        },
+        {
+          "hit": false,
+          "legacy_hit": false,
+          "status": "MISSING_IMAGE_TRUTH_PAIR",
+          "tick_index": 201
+        }
+      ]
+    },
+    "scout-4": {
+      "aligned": true,
+      "disposition": "ALIGNED",
+      "expected": {
+        "denominator": 187,
+        "hits": 172
+      },
+      "legacy_result": "runtime/p1-scene-004-scouting/p1-scene-004-scout-4/scouting-result.json",
+      "legacy_result_sha256": "4a29f20da8696ef277ff5628f83cc51a531f52f431596dc13f8db703b183188b",
+      "max_abs_iou_delta_vs_legacy": 1e-06,
+      "per_tick_hit_mismatches": [],
+      "recomputed": {
+        "denominator": 187,
+        "hits": 172
+      },
+      "ticks": [
+        {
+          "frame_id": 140,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8131783231665975,
+          "max_iou": 0.813178,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 0
+        },
+        {
+          "frame_id": 150,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.891999327386941,
+          "max_iou": 0.892,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 1
+        },
+        {
+          "frame_id": 160,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8547078718287423,
+          "max_iou": 0.854708,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 2
+        },
+        {
+          "frame_id": 170,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8577413658836129,
+          "max_iou": 0.857741,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 3
+        },
+        {
+          "frame_id": 180,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8584758106304193,
+          "max_iou": 0.858476,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 4
+        },
+        {
+          "frame_id": 190,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8421378407268375,
+          "max_iou": 0.842138,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 5
+        },
+        {
+          "frame_id": 200,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8553843877462223,
+          "max_iou": 0.855385,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 6
+        },
+        {
+          "frame_id": 210,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8634565091983636,
+          "max_iou": 0.863456,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 7
+        },
+        {
+          "frame_id": 220,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.868510653779002,
+          "max_iou": 0.868511,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 8
+        },
+        {
+          "frame_id": 230,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8642326092619468,
+          "max_iou": 0.864232,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 9
+        },
+        {
+          "frame_id": 241,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.2573925592117753,
+          "max_iou": 0.257393,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 10
+        },
+        {
+          "frame_id": 250,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.2519845748970485,
+          "max_iou": 0.251985,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 11
+        },
+        {
+          "frame_id": 260,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.2579892681689203,
+          "max_iou": 0.25799,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 12
+        },
+        {
+          "frame_id": 270,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 13
+        },
+        {
+          "frame_id": 281,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3199960601759035,
+          "max_iou": 0.319996,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 14
+        },
+        {
+          "frame_id": 291,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.32311179407521456,
+          "max_iou": 0.323112,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 15
+        },
+        {
+          "frame_id": 301,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.414317215037497,
+          "max_iou": 0.414317,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 16
+        },
+        {
+          "frame_id": 311,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8088413638043317,
+          "max_iou": 0.808842,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 17
+        },
+        {
+          "frame_id": 321,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7259706443280708,
+          "max_iou": 0.72597,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 18
+        },
+        {
+          "frame_id": 330,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8605351185346237,
+          "max_iou": 0.860535,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 19
+        },
+        {
+          "frame_id": 340,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8474657805906775,
+          "max_iou": 0.847466,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 20
+        },
+        {
+          "frame_id": 350,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8168865879277996,
+          "max_iou": 0.816887,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 21
+        },
+        {
+          "frame_id": 360,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8365197394609555,
+          "max_iou": 0.83652,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 22
+        },
+        {
+          "frame_id": 371,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8119583334710903,
+          "max_iou": 0.811958,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 23
+        },
+        {
+          "frame_id": 380,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8584453749853815,
+          "max_iou": 0.858445,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 24
+        },
+        {
+          "frame_id": 390,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.83952104111243,
+          "max_iou": 0.839521,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 25
+        },
+        {
+          "frame_id": 400,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8127787737799047,
+          "max_iou": 0.812778,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 26
+        },
+        {
+          "frame_id": 410,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7978966718788405,
+          "max_iou": 0.797897,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 27
+        },
+        {
+          "frame_id": 420,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8599834444356333,
+          "max_iou": 0.859984,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 28
+        },
+        {
+          "frame_id": 430,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8397236797828148,
+          "max_iou": 0.839724,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 29
+        },
+        {
+          "frame_id": 440,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8469750026221647,
+          "max_iou": 0.846975,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 30
+        },
+        {
+          "frame_id": 451,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8584793532270825,
+          "max_iou": 0.85848,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 31
+        },
+        {
+          "frame_id": 460,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8591831810682995,
+          "max_iou": 0.859184,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 32
+        },
+        {
+          "frame_id": 470,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8181530780210893,
+          "max_iou": 0.818153,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 33
+        },
+        {
+          "frame_id": 480,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8361260876037693,
+          "max_iou": 0.836126,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 34
+        },
+        {
+          "frame_id": 490,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8370838996957585,
+          "max_iou": 0.837084,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 35
+        },
+        {
+          "frame_id": 501,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8391410766217141,
+          "max_iou": 0.83914,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 36
+        },
+        {
+          "frame_id": 510,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8583784366793954,
+          "max_iou": 0.858378,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 37
+        },
+        {
+          "frame_id": 521,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8982563023558704,
+          "max_iou": 0.898256,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 38
+        },
+        {
+          "frame_id": 530,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8386453251757295,
+          "max_iou": 0.838646,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 39
+        },
+        {
+          "frame_id": 540,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3045728564839144,
+          "max_iou": 0.304573,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 40
+        },
+        {
+          "frame_id": 550,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3067934671199883,
+          "max_iou": 0.306794,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 41
+        },
+        {
+          "frame_id": 560,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3165643420686646,
+          "max_iou": 0.316564,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 42
+        },
+        {
+          "frame_id": 570,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.34579947635677416,
+          "max_iou": 0.3458,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 43
+        },
+        {
+          "frame_id": 581,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.35951557941794837,
+          "max_iou": 0.359516,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 44
+        },
+        {
+          "frame_id": 590,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3723694049926923,
+          "max_iou": 0.372369,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 45
+        },
+        {
+          "frame_id": 600,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3783259449938698,
+          "max_iou": 0.378326,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 46
+        },
+        {
+          "frame_id": 610,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8223681471168722,
+          "max_iou": 0.822368,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 47
+        },
+        {
+          "frame_id": 620,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8769393811997224,
+          "max_iou": 0.87694,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 48
+        },
+        {
+          "frame_id": 630,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8078243094009667,
+          "max_iou": 0.807824,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 49
+        },
+        {
+          "frame_id": 640,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8386774662217275,
+          "max_iou": 0.838678,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 50
+        },
+        {
+          "frame_id": 651,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8378944236642525,
+          "max_iou": 0.837895,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 51
+        },
+        {
+          "frame_id": 660,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 52
+        },
+        {
+          "frame_id": 671,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8564818819106532,
+          "max_iou": 0.856482,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 53
+        },
+        {
+          "frame_id": 680,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8471827836248124,
+          "max_iou": 0.847183,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 54
+        },
+        {
+          "frame_id": 691,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8337732496000532,
+          "max_iou": 0.833773,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 55
+        },
+        {
+          "frame_id": 700,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8475184043269813,
+          "max_iou": 0.847519,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 56
+        },
+        {
+          "frame_id": 710,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8535936550628159,
+          "max_iou": 0.853594,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 57
+        },
+        {
+          "frame_id": 721,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8044108167953787,
+          "max_iou": 0.804412,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 58
+        },
+        {
+          "frame_id": 731,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8459525342185874,
+          "max_iou": 0.845952,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 59
+        },
+        {
+          "frame_id": 740,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7636479012502894,
+          "max_iou": 0.763648,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 60
+        },
+        {
+          "frame_id": 750,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8447172423662951,
+          "max_iou": 0.844718,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 61
+        },
+        {
+          "frame_id": 761,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8323686500303391,
+          "max_iou": 0.832369,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 62
+        },
+        {
+          "frame_id": 770,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8253304748131185,
+          "max_iou": 0.825331,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 63
+        },
+        {
+          "frame_id": 780,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8234128798819406,
+          "max_iou": 0.823413,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 64
+        },
+        {
+          "frame_id": 790,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8171827649341638,
+          "max_iou": 0.817183,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 65
+        },
+        {
+          "frame_id": 800,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8239323248343806,
+          "max_iou": 0.823933,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 66
+        },
+        {
+          "frame_id": 810,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8403098020926477,
+          "max_iou": 0.84031,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 67
+        },
+        {
+          "frame_id": 821,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8406759730917998,
+          "max_iou": 0.840676,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 68
+        },
+        {
+          "frame_id": 830,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8381245520520308,
+          "max_iou": 0.838124,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 69
+        },
+        {
+          "frame_id": 841,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.425261320995035,
+          "max_iou": 0.425261,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 70
+        },
+        {
+          "frame_id": 850,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.2514289686367715,
+          "max_iou": 0.251429,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 71
+        },
+        {
+          "frame_id": 860,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.25639341434433544,
+          "max_iou": 0.256393,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 72
+        },
+        {
+          "frame_id": 870,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 73
+        },
+        {
+          "frame_id": 881,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.30036827615643485,
+          "max_iou": 0.300368,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 74
+        },
+        {
+          "frame_id": 890,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.31254094388139514,
+          "max_iou": 0.312541,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 75
+        },
+        {
+          "frame_id": 900,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3230072313427593,
+          "max_iou": 0.323007,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 76
+        },
+        {
+          "frame_id": 911,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8267906596296244,
+          "max_iou": 0.826791,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 77
+        },
+        {
+          "frame_id": 920,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7574563203219734,
+          "max_iou": 0.757457,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 78
+        },
+        {
+          "frame_id": 931,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8704068165730299,
+          "max_iou": 0.870407,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 79
+        },
+        {
+          "frame_id": 940,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8474794477235489,
+          "max_iou": 0.847479,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 80
+        },
+        {
+          "frame_id": 950,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8257037621701072,
+          "max_iou": 0.825703,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 81
+        },
+        {
+          "frame_id": 960,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8300050769944792,
+          "max_iou": 0.830005,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 82
+        },
+        {
+          "frame_id": 970,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8346908749286976,
+          "max_iou": 0.834691,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 83
+        },
+        {
+          "frame_id": 981,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8175256201622267,
+          "max_iou": 0.817526,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 84
+        },
+        {
+          "frame_id": 990,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8690225998438451,
+          "max_iou": 0.869023,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 85
+        },
+        {
+          "frame_id": 1001,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8199771620466654,
+          "max_iou": 0.819977,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 86
+        },
+        {
+          "frame_id": 1010,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8012867019218017,
+          "max_iou": 0.801287,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 87
+        },
+        {
+          "frame_id": 1021,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.836030024153341,
+          "max_iou": 0.83603,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 88
+        },
+        {
+          "frame_id": 1030,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8622885294618599,
+          "max_iou": 0.862289,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 89
+        },
+        {
+          "frame_id": 1041,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8495505975341686,
+          "max_iou": 0.849551,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 90
+        },
+        {
+          "frame_id": 1050,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8481860131270611,
+          "max_iou": 0.848186,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 91
+        },
+        {
+          "frame_id": 1060,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8551524769717519,
+          "max_iou": 0.855152,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 92
+        },
+        {
+          "frame_id": 1070,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8512724120149598,
+          "max_iou": 0.851272,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 93
+        },
+        {
+          "frame_id": 1080,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8118828915189537,
+          "max_iou": 0.811883,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 94
+        },
+        {
+          "frame_id": 1090,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8356690982461469,
+          "max_iou": 0.83567,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 95
+        },
+        {
+          "frame_id": 1100,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8243909499305256,
+          "max_iou": 0.824391,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 96
+        },
+        {
+          "frame_id": 1110,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.836077686799479,
+          "max_iou": 0.836079,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 97
+        },
+        {
+          "frame_id": 1121,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8758620448052443,
+          "max_iou": 0.875862,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 98
+        },
+        {
+          "frame_id": 1131,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8556415100330789,
+          "max_iou": 0.855642,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 99
+        },
+        {
+          "frame_id": 1140,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8315466174703313,
+          "max_iou": 0.831547,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 100
+        },
+        {
+          "frame_id": 1150,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.29281592056186845,
+          "max_iou": 0.292816,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 101
+        },
+        {
+          "frame_id": 1160,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.31817093312921635,
+          "max_iou": 0.318171,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 102
+        },
+        {
+          "frame_id": 1170,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.33135569539591053,
+          "max_iou": 0.331356,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 103
+        },
+        {
+          "frame_id": 1180,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8655765213052113,
+          "max_iou": 0.865576,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 104
+        },
+        {
+          "frame_id": 1190,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3703481019810505,
+          "max_iou": 0.370348,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 105
+        },
+        {
+          "frame_id": 1201,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.38067408721226714,
+          "max_iou": 0.380674,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 106
+        },
+        {
+          "frame_id": 1210,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.6548783820936444,
+          "max_iou": 0.654879,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 107
+        },
+        {
+          "frame_id": 1220,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.842473898149059,
+          "max_iou": 0.842474,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 108
+        },
+        {
+          "frame_id": 1231,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 109
+        },
+        {
+          "frame_id": 1240,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.843503841000286,
+          "max_iou": 0.843504,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 110
+        },
+        {
+          "frame_id": 1251,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8506746897052443,
+          "max_iou": 0.850674,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 111
+        },
+        {
+          "frame_id": 1260,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8327282364665987,
+          "max_iou": 0.832729,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 112
+        },
+        {
+          "frame_id": 1271,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8431294775236573,
+          "max_iou": 0.843129,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 113
+        },
+        {
+          "frame_id": 1280,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8526735795098841,
+          "max_iou": 0.852673,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 114
+        },
+        {
+          "frame_id": 1290,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8385048078160756,
+          "max_iou": 0.838505,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 115
+        },
+        {
+          "frame_id": 1300,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8379984068986048,
+          "max_iou": 0.837998,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 116
+        },
+        {
+          "frame_id": 1310,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8565395392221644,
+          "max_iou": 0.85654,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 117
+        },
+        {
+          "frame_id": 1320,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.677273242111843,
+          "max_iou": 0.677273,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 118
+        },
+        {
+          "frame_id": 1331,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8742300924030044,
+          "max_iou": 0.87423,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 119
+        },
+        {
+          "frame_id": 1341,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8080194297663946,
+          "max_iou": 0.80802,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 120
+        },
+        {
+          "frame_id": 1351,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7818094778889914,
+          "max_iou": 0.78181,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 121
+        },
+        {
+          "frame_id": 1360,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8558905077468657,
+          "max_iou": 0.855891,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 122
+        },
+        {
+          "frame_id": 1370,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8321438572256769,
+          "max_iou": 0.832144,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 123
+        },
+        {
+          "frame_id": 1380,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8263407570274419,
+          "max_iou": 0.826341,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 124
+        },
+        {
+          "frame_id": 1390,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8302424142763751,
+          "max_iou": 0.830242,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 125
+        },
+        {
+          "frame_id": 1400,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.817573046140667,
+          "max_iou": 0.817573,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 126
+        },
+        {
+          "frame_id": 1410,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8387483115289006,
+          "max_iou": 0.838748,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 127
+        },
+        {
+          "frame_id": 1420,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8512737457555786,
+          "max_iou": 0.851274,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 128
+        },
+        {
+          "frame_id": 1431,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8547166501998767,
+          "max_iou": 0.854717,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 129
+        },
+        {
+          "frame_id": 1440,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8530701021082475,
+          "max_iou": 0.853071,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 130
+        },
+        {
+          "frame_id": 1450,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.2566720380496316,
+          "max_iou": 0.256672,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 131
+        },
+        {
+          "frame_id": 1460,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.2524504570756567,
+          "max_iou": 0.252451,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 132
+        },
+        {
+          "frame_id": 1470,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.25752339574362204,
+          "max_iou": 0.257523,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 133
+        },
+        {
+          "frame_id": 1480,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 134
+        },
+        {
+          "frame_id": 1491,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3186161209523151,
+          "max_iou": 0.318616,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 135
+        },
+        {
+          "frame_id": 1500,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.31761592744294465,
+          "max_iou": 0.317616,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 136
+        },
+        {
+          "frame_id": 1510,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.32078369656124905,
+          "max_iou": 0.320784,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 137
+        },
+        {
+          "frame_id": 1520,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8274059480650666,
+          "max_iou": 0.827406,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 138
+        },
+        {
+          "frame_id": 1530,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7505416153445177,
+          "max_iou": 0.750541,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 139
+        },
+        {
+          "frame_id": 1540,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8569644076515999,
+          "max_iou": 0.856964,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 140
+        },
+        {
+          "frame_id": 1551,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8470686776291692,
+          "max_iou": 0.847068,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 141
+        },
+        {
+          "frame_id": 1560,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8156581361008831,
+          "max_iou": 0.815659,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 142
+        },
+        {
+          "frame_id": 1570,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8360606565137039,
+          "max_iou": 0.836061,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 143
+        },
+        {
+          "frame_id": 1580,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8105485250506655,
+          "max_iou": 0.810548,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 144
+        },
+        {
+          "frame_id": 1590,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8421462564458932,
+          "max_iou": 0.842146,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 145
+        },
+        {
+          "frame_id": 1600,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8389280315199921,
+          "max_iou": 0.838928,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 146
+        },
+        {
+          "frame_id": 1610,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8130952571758798,
+          "max_iou": 0.813095,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 147
+        },
+        {
+          "frame_id": 1620,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8013607089408933,
+          "max_iou": 0.801361,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 148
+        },
+        {
+          "frame_id": 1630,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8617639814670962,
+          "max_iou": 0.861765,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 149
+        },
+        {
+          "frame_id": 1640,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8429235173974675,
+          "max_iou": 0.842924,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 150
+        },
+        {
+          "frame_id": 1650,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8533188333753206,
+          "max_iou": 0.853319,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 151
+        },
+        {
+          "frame_id": 1660,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8657330873152246,
+          "max_iou": 0.865732,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 152
+        },
+        {
+          "frame_id": 1670,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8434106691113202,
+          "max_iou": 0.843411,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 153
+        },
+        {
+          "frame_id": 1680,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8190769982881069,
+          "max_iou": 0.819077,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 154
+        },
+        {
+          "frame_id": 1690,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8350342706447708,
+          "max_iou": 0.835034,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 155
+        },
+        {
+          "frame_id": 1701,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.827549791275322,
+          "max_iou": 0.82755,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 156
+        },
+        {
+          "frame_id": 1710,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8680391977590143,
+          "max_iou": 0.868039,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 157
+        },
+        {
+          "frame_id": 1720,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8513932185328356,
+          "max_iou": 0.851393,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 158
+        },
+        {
+          "frame_id": 1730,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8923928742815348,
+          "max_iou": 0.892393,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 159
+        },
+        {
+          "frame_id": 1740,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.837506015443036,
+          "max_iou": 0.837506,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 160
+        },
+        {
+          "frame_id": 1750,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3021156806882522,
+          "max_iou": 0.302116,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 161
+        },
+        {
+          "frame_id": 1760,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3057754062083885,
+          "max_iou": 0.305776,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 162
+        },
+        {
+          "frame_id": 1770,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.31660060781402405,
+          "max_iou": 0.316601,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 163
+        },
+        {
+          "frame_id": 1780,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.34718799538659917,
+          "max_iou": 0.347188,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 164
+        },
+        {
+          "frame_id": 1790,
+          "hit": false,
+          "legacy_hit": false,
+          "legacy_max_iou": 0.0,
+          "max_iou": 0.0,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 165
+        },
+        {
+          "frame_id": 1800,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.37290623897418806,
+          "max_iou": 0.372906,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 166
+        },
+        {
+          "frame_id": 1811,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.3734286924532952,
+          "max_iou": 0.373429,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 167
+        },
+        {
+          "frame_id": 1820,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8213952720772084,
+          "max_iou": 0.821396,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 168
+        },
+        {
+          "frame_id": 1830,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8797162205834698,
+          "max_iou": 0.879715,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 169
+        },
+        {
+          "frame_id": 1840,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.9196199486559807,
+          "max_iou": 0.91962,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 170
+        },
+        {
+          "frame_id": 1850,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8337857176836769,
+          "max_iou": 0.833786,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 171
+        },
+        {
+          "frame_id": 1860,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8399078667111698,
+          "max_iou": 0.839908,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 172
+        },
+        {
+          "frame_id": 1870,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8372461728524987,
+          "max_iou": 0.837246,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 173
+        },
+        {
+          "frame_id": 1881,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.86959618294803,
+          "max_iou": 0.869596,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 174
+        },
+        {
+          "frame_id": 1890,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8451361343020322,
+          "max_iou": 0.845136,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 175
+        },
+        {
+          "frame_id": 1900,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8372350957259512,
+          "max_iou": 0.837235,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 176
+        },
+        {
+          "frame_id": 1910,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8422763382289372,
+          "max_iou": 0.842277,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 177
+        },
+        {
+          "frame_id": 1920,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8544991742030326,
+          "max_iou": 0.854499,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 178
+        },
+        {
+          "frame_id": 1931,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8136342770935491,
+          "max_iou": 0.813635,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 179
+        },
+        {
+          "frame_id": 1940,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.814003851014212,
+          "max_iou": 0.814004,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 180
+        },
+        {
+          "frame_id": 1951,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.7553602120282692,
+          "max_iou": 0.755361,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 181
+        },
+        {
+          "frame_id": 1960,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8435821855414164,
+          "max_iou": 0.843582,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 182
+        },
+        {
+          "frame_id": 1970,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8358252293394003,
+          "max_iou": 0.835825,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 183
+        },
+        {
+          "frame_id": 1980,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.82240304144414,
+          "max_iou": 0.822403,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 184
+        },
+        {
+          "frame_id": 1990,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8233862868172235,
+          "max_iou": 0.823386,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 185
+        },
+        {
+          "frame_id": 2000,
+          "hit": true,
+          "legacy_hit": true,
+          "legacy_max_iou": 0.8161116263018816,
+          "max_iou": 0.816111,
+          "status": "PAIRED_VISIBLE",
+          "tick_index": 186
+        }
+      ]
+    }
+  },
+  "no_unbucketed_total": true,
+  "strata_px": {
+    "L": ">=64",
+    "M": "32-64",
+    "S": "<32"
+  },
+  "tables": {
+    "axial_depth": {
+      "catalog-448|T0-bank-td": {
+        "catalog_vehicle|not_in_bank": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.590717,
+                0.708861
+              ],
+              "ci95_050": [
+                0.57384,
+                0.691983
+              ],
+              "hit_030": 155,
+              "hit_050": 150,
+              "n": 237,
+              "rate_030": 0.654008,
+              "rate_050": 0.632911
+            },
+            "50-65": {
+              "ci95_030": [
+                0.527607,
+                0.674847
+              ],
+              "ci95_050": [
+                0.490798,
+                0.644172
+              ],
+              "hit_030": 98,
+              "hit_050": 93,
+              "n": 163,
+              "rate_030": 0.601227,
+              "rate_050": 0.570552
+            },
+            "<35": {
+              "ci95_030": [
+                0.418919,
+                0.507722
+              ],
+              "ci95_050": [
+                0.401544,
+                0.492278
+              ],
+              "hit_030": 240,
+              "hit_050": 232,
+              "n": 518,
+              "rate_030": 0.46332,
+              "rate_050": 0.447876
+            },
+            ">=65": {
+              "ci95_030": [
+                0.211111,
+                0.388889
+              ],
+              "ci95_050": [
+                0.211111,
+                0.388889
+              ],
+              "hit_030": 27,
+              "hit_050": 27,
+              "n": 90,
+              "rate_030": 0.3,
+              "rate_050": 0.3
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.388372,
+                0.486047
+              ],
+              "ci95_050": [
+                0.37907,
+                0.476744
+              ],
+              "hit_030": 189,
+              "hit_050": 185,
+              "n": 430,
+              "rate_030": 0.439535,
+              "rate_050": 0.430233
+            },
+            "M": {
+              "ci95_030": [
+                0.580311,
+                0.678756
+              ],
+              "ci95_050": [
+                0.546632,
+                0.642487
+              ],
+              "hit_030": 243,
+              "hit_050": 229,
+              "n": 386,
+              "rate_030": 0.629534,
+              "rate_050": 0.593264
+            },
+            "S": {
+              "ci95_030": [
+                0.390625,
+                0.526042
+              ],
+              "ci95_050": [
+                0.390625,
+                0.526042
+              ],
+              "hit_030": 88,
+              "hit_050": 88,
+              "n": 192,
+              "rate_030": 0.458333,
+              "rate_050": 0.458333
+            }
+          },
+          "stratum_x_distance": {
+            "L|35-50": {
+              "ci95_030": [
+                0.318182,
+                0.613636
+              ],
+              "ci95_050": [
+                0.272727,
+                0.545455
+              ],
+              "hit_030": 20,
+              "hit_050": 18,
+              "n": 44,
+              "rate_030": 0.454545,
+              "rate_050": 0.409091
+            },
+            "L|50-65": {
+              "ci95_030": [
+                0.25,
+                1.0
+              ],
+              "ci95_050": [
+                0.25,
+                1.0
+              ],
+              "hit_030": 3,
+              "hit_050": 3,
+              "n": 4,
+              "rate_030": 0.75,
+              "rate_050": 0.75
+            },
+            "L|<35": {
+              "ci95_030": [
+                0.384817,
+                0.484293
+              ],
+              "ci95_050": [
+                0.379581,
+                0.481675
+              ],
+              "hit_030": 166,
+              "hit_050": 164,
+              "n": 382,
+              "rate_030": 0.434555,
+              "rate_050": 0.429319
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.690476,
+                0.821429
+              ],
+              "ci95_050": [
+                0.672619,
+                0.803571
+              ],
+              "hit_030": 127,
+              "hit_050": 124,
+              "n": 168,
+              "rate_030": 0.755952,
+              "rate_050": 0.738095
+            },
+            "M|50-65": {
+              "ci95_030": [
+                0.409091,
+                0.651515
+              ],
+              "ci95_050": [
+                0.333333,
+                0.575758
+              ],
+              "hit_030": 35,
+              "hit_050": 30,
+              "n": 66,
+              "rate_030": 0.530303,
+              "rate_050": 0.454545
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.466165,
+                0.631579
+              ],
+              "ci95_050": [
+                0.421053,
+                0.586466
+              ],
+              "hit_030": 73,
+              "hit_050": 67,
+              "n": 133,
+              "rate_030": 0.548872,
+              "rate_050": 0.503759
+            },
+            "M|>=65": {
+              "ci95_030": [
+                0.210526,
+                0.631579
+              ],
+              "ci95_050": [
+                0.210526,
+                0.631579
+              ],
+              "hit_030": 8,
+              "hit_050": 8,
+              "n": 19,
+              "rate_030": 0.421053,
+              "rate_050": 0.421053
+            },
+            "S|35-50": {
+              "ci95_030": [
+                0.12,
+                0.52
+              ],
+              "ci95_050": [
+                0.12,
+                0.52
+              ],
+              "hit_030": 8,
+              "hit_050": 8,
+              "n": 25,
+              "rate_030": 0.32,
+              "rate_050": 0.32
+            },
+            "S|50-65": {
+              "ci95_030": [
+                0.548387,
+                0.741935
+              ],
+              "ci95_050": [
+                0.548387,
+                0.741935
+              ],
+              "hit_030": 60,
+              "hit_050": 60,
+              "n": 93,
+              "rate_030": 0.645161,
+              "rate_050": 0.645161
+            },
+            "S|<35": {
+              "ci95_030": [
+                0.0,
+                1.0
+              ],
+              "ci95_050": [
+                0.0,
+                1.0
+              ],
+              "hit_030": 1,
+              "hit_050": 1,
+              "n": 3,
+              "rate_030": 0.333333,
+              "rate_050": 0.333333
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.169014,
+                0.380282
+              ],
+              "ci95_050": [
+                0.169014,
+                0.380282
+              ],
+              "hit_030": 19,
+              "hit_050": 19,
+              "n": 71,
+              "rate_030": 0.267606,
+              "rate_050": 0.267606
+            }
+          }
+        },
+        "catalog_vehicle|same_instance_in_bank": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.869565,
+                1.0
+              ],
+              "ci95_050": [
+                0.869565,
+                1.0
+              ],
+              "hit_030": 22,
+              "hit_050": 22,
+              "n": 23,
+              "rate_030": 0.956522,
+              "rate_050": 0.956522
+            },
+            "50-65": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 3,
+              "hit_050": 3,
+              "n": 3,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            "<35": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 2,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            ">=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 5,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 2,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            "M": {
+              "ci95_030": [
+                0.88,
+                1.0
+              ],
+              "ci95_050": [
+                0.88,
+                1.0
+              ],
+              "hit_030": 24,
+              "hit_050": 24,
+              "n": 25,
+              "rate_030": 0.96,
+              "rate_050": 0.96
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.5
+              ],
+              "ci95_050": [
+                0.0,
+                0.5
+              ],
+              "hit_030": 1,
+              "hit_050": 1,
+              "n": 6,
+              "rate_030": 0.166667,
+              "rate_050": 0.166667
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 2,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.869565,
+                1.0
+              ],
+              "ci95_050": [
+                0.869565,
+                1.0
+              ],
+              "hit_030": 22,
+              "hit_050": 22,
+              "n": 23,
+              "rate_030": 0.956522,
+              "rate_050": 0.956522
+            },
+            "M|50-65": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 2,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            "S|50-65": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 1,
+              "hit_050": 1,
+              "n": 1,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 5,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        },
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "NA": {
+              "ci95_030": [
+                0.362445,
+                0.49345
+              ],
+              "ci95_050": [
+                0.323144,
+                0.454148
+              ],
+              "hit_030": 98,
+              "hit_050": 89,
+              "n": 229,
+              "rate_030": 0.427948,
+              "rate_050": 0.388646
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.452055,
+                0.671233
+              ],
+              "ci95_050": [
+                0.328767,
+                0.547945
+              ],
+              "hit_030": 41,
+              "hit_050": 32,
+              "n": 73,
+              "rate_030": 0.561644,
+              "rate_050": 0.438356
+            },
+            "M": {
+              "ci95_030": [
+                0.359375,
+                0.523438
+              ],
+              "ci95_050": [
+                0.359375,
+                0.523438
+              ],
+              "hit_030": 57,
+              "hit_050": 57,
+              "n": 128,
+              "rate_030": 0.445312,
+              "rate_050": 0.445312
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 28,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|NA": {
+              "ci95_030": [
+                0.452055,
+                0.671233
+              ],
+              "ci95_050": [
+                0.328767,
+                0.547945
+              ],
+              "hit_030": 41,
+              "hit_050": 32,
+              "n": 73,
+              "rate_030": 0.561644,
+              "rate_050": 0.438356
+            },
+            "M|NA": {
+              "ci95_030": [
+                0.359375,
+                0.523438
+              ],
+              "ci95_050": [
+                0.359375,
+                0.523438
+              ],
+              "hit_030": 57,
+              "hit_050": 57,
+              "n": 128,
+              "rate_030": 0.445312,
+              "rate_050": 0.445312
+            },
+            "S|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 28,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "catalog-448|T0-oracle": {
+        "status": "N/A(NO_SESSION_REFERENCE)"
+      },
+      "catalog-448|T1a": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "catalog-448|T1b": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      }
+    },
+    "slant_range": {
+      "body-all|T0-bank(a2 armA, td armB)": {
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.130208,
+                0.239583
+              ],
+              "ci95_050": [
+                0.104167,
+                0.203125
+              ],
+              "hit_030": 35,
+              "hit_050": 29,
+              "n": 192,
+              "rate_030": 0.182292,
+              "rate_050": 0.151042
+            },
+            "50-65": {
+              "ci95_030": [
+                0.025,
+                0.079167
+              ],
+              "ci95_050": [
+                0.0,
+                0.0125
+              ],
+              "hit_030": 12,
+              "hit_050": 1,
+              "n": 240,
+              "rate_030": 0.05,
+              "rate_050": 0.004167
+            },
+            "<35": {
+              "ci95_030": [
+                0.441379,
+                0.6
+              ],
+              "ci95_050": [
+                0.441379,
+                0.6
+              ],
+              "hit_030": 76,
+              "hit_050": 76,
+              "n": 145,
+              "rate_030": 0.524138,
+              "rate_050": 0.524138
+            },
+            ">=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 3,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 12,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M": {
+              "ci95_030": [
+                0.283784,
+                0.381081
+              ],
+              "ci95_050": [
+                0.240541,
+                0.332432
+              ],
+              "hit_030": 123,
+              "hit_050": 106,
+              "n": 370,
+              "rate_030": 0.332432,
+              "rate_050": 0.286486
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 198,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 12,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.13587,
+                0.244565
+              ],
+              "ci95_050": [
+                0.103261,
+                0.211957
+              ],
+              "hit_030": 35,
+              "hit_050": 29,
+              "n": 184,
+              "rate_030": 0.190217,
+              "rate_050": 0.157609
+            },
+            "M|50-65": {
+              "ci95_030": [
+                0.109091,
+                0.327273
+              ],
+              "ci95_050": [
+                0.0,
+                0.054545
+              ],
+              "hit_030": 12,
+              "hit_050": 1,
+              "n": 55,
+              "rate_030": 0.218182,
+              "rate_050": 0.018182
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.496183,
+                0.664122
+              ],
+              "ci95_050": [
+                0.496183,
+                0.664122
+              ],
+              "hit_030": 76,
+              "hit_050": 76,
+              "n": 131,
+              "rate_030": 0.580153,
+              "rate_050": 0.580153
+            },
+            "S|35-50": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 8,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|50-65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 185,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|<35": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 2,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 3,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "body-armA|T0-bank-a2": {
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.036232,
+                0.130435
+              ],
+              "ci95_050": [
+                0.007246,
+                0.072464
+              ],
+              "hit_030": 11,
+              "hit_050": 5,
+              "n": 138,
+              "rate_030": 0.07971,
+              "rate_050": 0.036232
+            },
+            "50-65": {
+              "ci95_030": [
+                0.025,
+                0.079167
+              ],
+              "ci95_050": [
+                0.0,
+                0.0125
+              ],
+              "hit_030": 12,
+              "hit_050": 1,
+              "n": 240,
+              "rate_030": 0.05,
+              "rate_050": 0.004167
+            },
+            "<35": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 50,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            ">=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 3,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 12,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M": {
+              "ci95_030": [
+                0.065502,
+                0.139738
+              ],
+              "ci95_050": [
+                0.008734,
+                0.048035
+              ],
+              "hit_030": 23,
+              "hit_050": 6,
+              "n": 229,
+              "rate_030": 0.100437,
+              "rate_050": 0.026201
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 190,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 12,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.036232,
+                0.130435
+              ],
+              "ci95_050": [
+                0.007246,
+                0.072464
+              ],
+              "hit_030": 11,
+              "hit_050": 5,
+              "n": 138,
+              "rate_030": 0.07971,
+              "rate_050": 0.036232
+            },
+            "M|50-65": {
+              "ci95_030": [
+                0.109091,
+                0.327273
+              ],
+              "ci95_050": [
+                0.0,
+                0.054545
+              ],
+              "hit_030": 12,
+              "hit_050": 1,
+              "n": 55,
+              "rate_030": 0.218182,
+              "rate_050": 0.018182
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 36,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|50-65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 185,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|<35": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 2,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 3,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "body-armA|T0-oracle": {
+        "status": "N/A(NO_SESSION_REFERENCE)"
+      },
+      "body-armA|T1a": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "body-armA|T1b": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "body-armB|T0-bank-td": {
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.314815,
+                0.574074
+              ],
+              "ci95_050": [
+                0.314815,
+                0.574074
+              ],
+              "hit_030": 24,
+              "hit_050": 24,
+              "n": 54,
+              "rate_030": 0.444444,
+              "rate_050": 0.444444
+            },
+            "<35": {
+              "ci95_030": [
+                0.715789,
+                0.873684
+              ],
+              "ci95_050": [
+                0.715789,
+                0.873684
+              ],
+              "hit_030": 76,
+              "hit_050": 76,
+              "n": 95,
+              "rate_030": 0.8,
+              "rate_050": 0.8
+            }
+          },
+          "by_stratum": {
+            "M": {
+              "ci95_030": [
+                0.631206,
+                0.780142
+              ],
+              "ci95_050": [
+                0.631206,
+                0.780142
+              ],
+              "hit_030": 100,
+              "hit_050": 100,
+              "n": 141,
+              "rate_030": 0.70922,
+              "rate_050": 0.70922
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 8,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "M|35-50": {
+              "ci95_030": [
+                0.369565,
+                0.673913
+              ],
+              "ci95_050": [
+                0.369565,
+                0.673913
+              ],
+              "hit_030": 24,
+              "hit_050": 24,
+              "n": 46,
+              "rate_030": 0.521739,
+              "rate_050": 0.521739
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.715789,
+                0.873684
+              ],
+              "ci95_050": [
+                0.715789,
+                0.873684
+              ],
+              "hit_030": 76,
+              "hit_050": 76,
+              "n": 95,
+              "rate_030": 0.8,
+              "rate_050": 0.8
+            },
+            "S|35-50": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 8,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "body-armB|T0-oracle": {
+        "status": "N/A(NO_SESSION_REFERENCE)"
+      },
+      "body-armB|T1a": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "body-armB|T1b": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "default-geometry(scout-1+BODY)|T0-bank(a2 for scout-1/armA, td for armB)": {
+        "catalog_vehicle|not_in_bank": {
+          "by_distance": {
+            "NA": {
+              "ci95_030": [
+                0.733813,
+                0.830935
+              ],
+              "ci95_050": [
+                0.733813,
+                0.830935
+              ],
+              "hit_030": 218,
+              "hit_050": 218,
+              "n": 278,
+              "rate_030": 0.784173,
+              "rate_050": 0.784173
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.920705,
+                0.977974
+              ],
+              "ci95_050": [
+                0.920705,
+                0.977974
+              ],
+              "hit_030": 216,
+              "hit_050": 216,
+              "n": 227,
+              "rate_030": 0.951542,
+              "rate_050": 0.951542
+            },
+            "M": {
+              "ci95_030": [
+                0.0,
+                0.192308
+              ],
+              "ci95_050": [
+                0.0,
+                0.192308
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 26,
+              "rate_030": 0.076923,
+              "rate_050": 0.076923
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 25,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|NA": {
+              "ci95_030": [
+                0.920705,
+                0.977974
+              ],
+              "ci95_050": [
+                0.920705,
+                0.977974
+              ],
+              "hit_030": 216,
+              "hit_050": 216,
+              "n": 227,
+              "rate_030": 0.951542,
+              "rate_050": 0.951542
+            },
+            "M|NA": {
+              "ci95_030": [
+                0.0,
+                0.192308
+              ],
+              "ci95_050": [
+                0.0,
+                0.192308
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 26,
+              "rate_030": 0.076923,
+              "rate_050": 0.076923
+            },
+            "S|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 25,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        },
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.163823,
+                0.255973
+              ],
+              "ci95_050": [
+                0.146758,
+                0.235495
+              ],
+              "hit_030": 61,
+              "hit_050": 55,
+              "n": 293,
+              "rate_030": 0.208191,
+              "rate_050": 0.187713
+            },
+            "50-65": {
+              "ci95_030": [
+                0.040773,
+                0.085837
+              ],
+              "ci95_050": [
+                0.021459,
+                0.055794
+              ],
+              "hit_030": 29,
+              "hit_050": 18,
+              "n": 466,
+              "rate_030": 0.062232,
+              "rate_050": 0.038627
+            },
+            "<35": {
+              "ci95_030": [
+                0.473146,
+                0.567775
+              ],
+              "ci95_050": [
+                0.473146,
+                0.567775
+              ],
+              "hit_030": 204,
+              "hit_050": 204,
+              "n": 391,
+              "rate_030": 0.521739,
+              "rate_050": 0.521739
+            },
+            ">=65": {
+              "ci95_030": [
+                0.0,
+                0.05618
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 2,
+              "hit_050": 0,
+              "n": 89,
+              "rate_030": 0.022472,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.177778,
+                0.444444
+              ],
+              "ci95_050": [
+                0.177778,
+                0.444444
+              ],
+              "hit_030": 14,
+              "hit_050": 14,
+              "n": 45,
+              "rate_030": 0.311111,
+              "rate_050": 0.311111
+            },
+            "M": {
+              "ci95_030": [
+                0.31993,
+                0.40035
+              ],
+              "ci95_050": [
+                0.291958,
+                0.368881
+              ],
+              "hit_030": 206,
+              "hit_050": 189,
+              "n": 572,
+              "rate_030": 0.36014,
+              "rate_050": 0.33042
+            },
+            "S": {
+              "ci95_030": [
+                0.096463,
+                0.149518
+              ],
+              "ci95_050": [
+                0.094855,
+                0.144695
+              ],
+              "hit_030": 76,
+              "hit_050": 74,
+              "n": 622,
+              "rate_030": 0.122186,
+              "rate_050": 0.118971
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.177778,
+                0.444444
+              ],
+              "ci95_050": [
+                0.177778,
+                0.444444
+              ],
+              "hit_030": 14,
+              "hit_050": 14,
+              "n": 45,
+              "rate_030": 0.311111,
+              "rate_050": 0.311111
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.117371,
+                0.215962
+              ],
+              "ci95_050": [
+                0.093897,
+                0.183099
+              ],
+              "hit_030": 35,
+              "hit_050": 29,
+              "n": 213,
+              "rate_030": 0.164319,
+              "rate_050": 0.13615
+            },
+            "M|50-65": {
+              "ci95_030": [
+                0.109091,
+                0.327273
+              ],
+              "ci95_050": [
+                0.0,
+                0.054545
+              ],
+              "hit_030": 12,
+              "hit_050": 1,
+              "n": 55,
+              "rate_030": 0.218182,
+              "rate_050": 0.018182
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.467105,
+                0.578947
+              ],
+              "ci95_050": [
+                0.467105,
+                0.578947
+              ],
+              "hit_030": 159,
+              "hit_050": 159,
+              "n": 304,
+              "rate_030": 0.523026,
+              "rate_050": 0.523026
+            },
+            "S|35-50": {
+              "ci95_030": [
+                0.225,
+                0.4375
+              ],
+              "ci95_050": [
+                0.225,
+                0.4375
+              ],
+              "hit_030": 26,
+              "hit_050": 26,
+              "n": 80,
+              "rate_030": 0.325,
+              "rate_050": 0.325
+            },
+            "S|50-65": {
+              "ci95_030": [
+                0.021898,
+                0.06326
+              ],
+              "ci95_050": [
+                0.021898,
+                0.06326
+              ],
+              "hit_030": 17,
+              "hit_050": 17,
+              "n": 411,
+              "rate_030": 0.041363,
+              "rate_050": 0.041363
+            },
+            "S|<35": {
+              "ci95_030": [
+                0.619048,
+                0.857143
+              ],
+              "ci95_050": [
+                0.619048,
+                0.857143
+              ],
+              "hit_030": 31,
+              "hit_050": 31,
+              "n": 42,
+              "rate_030": 0.738095,
+              "rate_050": 0.738095
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.0,
+                0.05618
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 2,
+              "hit_050": 0,
+              "n": 89,
+              "rate_030": 0.022472,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "scout-1|T0-bank-a2": {
+        "catalog_vehicle|not_in_bank": {
+          "bank_status": "BANK_PARTIAL(5/9)",
+          "by_distance": {
+            "NA": {
+              "ci95_030": [
+                0.733813,
+                0.830935
+              ],
+              "ci95_050": [
+                0.733813,
+                0.830935
+              ],
+              "hit_030": 218,
+              "hit_050": 218,
+              "n": 278,
+              "rate_030": 0.784173,
+              "rate_050": 0.784173
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.920705,
+                0.977974
+              ],
+              "ci95_050": [
+                0.920705,
+                0.977974
+              ],
+              "hit_030": 216,
+              "hit_050": 216,
+              "n": 227,
+              "rate_030": 0.951542,
+              "rate_050": 0.951542
+            },
+            "M": {
+              "ci95_030": [
+                0.0,
+                0.192308
+              ],
+              "ci95_050": [
+                0.0,
+                0.192308
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 26,
+              "rate_030": 0.076923,
+              "rate_050": 0.076923
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 25,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|NA": {
+              "ci95_030": [
+                0.920705,
+                0.977974
+              ],
+              "ci95_050": [
+                0.920705,
+                0.977974
+              ],
+              "hit_030": 216,
+              "hit_050": 216,
+              "n": 227,
+              "rate_030": 0.951542,
+              "rate_050": 0.951542
+            },
+            "M|NA": {
+              "ci95_030": [
+                0.0,
+                0.192308
+              ],
+              "ci95_050": [
+                0.0,
+                0.192308
+              ],
+              "hit_030": 2,
+              "hit_050": 2,
+              "n": 26,
+              "rate_030": 0.076923,
+              "rate_050": 0.076923
+            },
+            "S|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 25,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        },
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.168317,
+                0.346535
+              ],
+              "ci95_050": [
+                0.168317,
+                0.346535
+              ],
+              "hit_030": 26,
+              "hit_050": 26,
+              "n": 101,
+              "rate_030": 0.257426,
+              "rate_050": 0.257426
+            },
+            "50-65": {
+              "ci95_030": [
+                0.039823,
+                0.110619
+              ],
+              "ci95_050": [
+                0.039823,
+                0.110619
+              ],
+              "hit_030": 17,
+              "hit_050": 17,
+              "n": 226,
+              "rate_030": 0.075221,
+              "rate_050": 0.075221
+            },
+            "<35": {
+              "ci95_030": [
+                0.45935,
+                0.585366
+              ],
+              "ci95_050": [
+                0.45935,
+                0.585366
+              ],
+              "hit_030": 128,
+              "hit_050": 128,
+              "n": 246,
+              "rate_030": 0.520325,
+              "rate_050": 0.520325
+            },
+            ">=65": {
+              "ci95_030": [
+                0.0,
+                0.05814
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 2,
+              "hit_050": 0,
+              "n": 86,
+              "rate_030": 0.023256,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.272727,
+                0.606061
+              ],
+              "ci95_050": [
+                0.272727,
+                0.606061
+              ],
+              "hit_030": 14,
+              "hit_050": 14,
+              "n": 33,
+              "rate_030": 0.424242,
+              "rate_050": 0.424242
+            },
+            "M": {
+              "ci95_030": [
+                0.341584,
+                0.480198
+              ],
+              "ci95_050": [
+                0.341584,
+                0.480198
+              ],
+              "hit_030": 83,
+              "hit_050": 83,
+              "n": 202,
+              "rate_030": 0.410891,
+              "rate_050": 0.410891
+            },
+            "S": {
+              "ci95_030": [
+                0.141509,
+                0.216981
+              ],
+              "ci95_050": [
+                0.136792,
+                0.212264
+              ],
+              "hit_030": 76,
+              "hit_050": 74,
+              "n": 424,
+              "rate_030": 0.179245,
+              "rate_050": 0.174528
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.272727,
+                0.606061
+              ],
+              "ci95_050": [
+                0.272727,
+                0.606061
+              ],
+              "hit_030": 14,
+              "hit_050": 14,
+              "n": 33,
+              "rate_030": 0.424242,
+              "rate_050": 0.424242
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 29,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.404624,
+                0.554913
+              ],
+              "ci95_050": [
+                0.404624,
+                0.554913
+              ],
+              "hit_030": 83,
+              "hit_050": 83,
+              "n": 173,
+              "rate_030": 0.479769,
+              "rate_050": 0.479769
+            },
+            "S|35-50": {
+              "ci95_030": [
+                0.25,
+                0.472222
+              ],
+              "ci95_050": [
+                0.25,
+                0.472222
+              ],
+              "hit_030": 26,
+              "hit_050": 26,
+              "n": 72,
+              "rate_030": 0.361111,
+              "rate_050": 0.361111
+            },
+            "S|50-65": {
+              "ci95_030": [
+                0.039823,
+                0.110619
+              ],
+              "ci95_050": [
+                0.039823,
+                0.110619
+              ],
+              "hit_030": 17,
+              "hit_050": 17,
+              "n": 226,
+              "rate_030": 0.075221,
+              "rate_050": 0.075221
+            },
+            "S|<35": {
+              "ci95_030": [
+                0.65,
+                0.9
+              ],
+              "ci95_050": [
+                0.65,
+                0.9
+              ],
+              "hit_030": 31,
+              "hit_050": 31,
+              "n": 40,
+              "rate_030": 0.775,
+              "rate_050": 0.775
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.0,
+                0.05814
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 2,
+              "hit_050": 0,
+              "n": 86,
+              "rate_030": 0.023256,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "scout-1|T0-oracle": {
+        "catalog_vehicle|not_in_bank": {
+          "by_distance": {
+            "NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 278,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 227,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 26,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 25,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 227,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "M|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 26,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 25,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        },
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "35-50": {
+              "ci95_030": [
+                0.871287,
+                0.970297
+              ],
+              "ci95_050": [
+                0.871287,
+                0.970297
+              ],
+              "hit_030": 93,
+              "hit_050": 93,
+              "n": 101,
+              "rate_030": 0.920792,
+              "rate_050": 0.920792
+            },
+            "50-65": {
+              "ci95_030": [
+                0.004425,
+                0.035398
+              ],
+              "ci95_050": [
+                0.004425,
+                0.035398
+              ],
+              "hit_030": 4,
+              "hit_050": 4,
+              "n": 226,
+              "rate_030": 0.017699,
+              "rate_050": 0.017699
+            },
+            "<35": {
+              "ci95_030": [
+                0.853659,
+                0.934959
+              ],
+              "ci95_050": [
+                0.853659,
+                0.934959
+              ],
+              "hit_030": 220,
+              "hit_050": 220,
+              "n": 246,
+              "rate_030": 0.894309,
+              "rate_050": 0.894309
+            },
+            ">=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 86,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.393939,
+                0.727273
+              ],
+              "ci95_050": [
+                0.393939,
+                0.727273
+              ],
+              "hit_030": 19,
+              "hit_050": 19,
+              "n": 33,
+              "rate_030": 0.575758,
+              "rate_050": 0.575758
+            },
+            "M": {
+              "ci95_030": [
+                0.90099,
+                0.965347
+              ],
+              "ci95_050": [
+                0.90099,
+                0.965347
+              ],
+              "hit_030": 189,
+              "hit_050": 189,
+              "n": 202,
+              "rate_030": 0.935644,
+              "rate_050": 0.935644
+            },
+            "S": {
+              "ci95_030": [
+                0.214623,
+                0.301887
+              ],
+              "ci95_050": [
+                0.214623,
+                0.301887
+              ],
+              "hit_030": 109,
+              "hit_050": 109,
+              "n": 424,
+              "rate_030": 0.257075,
+              "rate_050": 0.257075
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.393939,
+                0.727273
+              ],
+              "ci95_050": [
+                0.393939,
+                0.727273
+              ],
+              "hit_030": 19,
+              "hit_050": 19,
+              "n": 33,
+              "rate_030": 0.575758,
+              "rate_050": 0.575758
+            },
+            "M|35-50": {
+              "ci95_030": [
+                0.896552,
+                1.0
+              ],
+              "ci95_050": [
+                0.896552,
+                1.0
+              ],
+              "hit_030": 28,
+              "hit_050": 28,
+              "n": 29,
+              "rate_030": 0.965517,
+              "rate_050": 0.965517
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.890173,
+                0.965318
+              ],
+              "ci95_050": [
+                0.890173,
+                0.965318
+              ],
+              "hit_030": 161,
+              "hit_050": 161,
+              "n": 173,
+              "rate_030": 0.930636,
+              "rate_050": 0.930636
+            },
+            "S|35-50": {
+              "ci95_030": [
+                0.833333,
+                0.972222
+              ],
+              "ci95_050": [
+                0.833333,
+                0.972222
+              ],
+              "hit_030": 65,
+              "hit_050": 65,
+              "n": 72,
+              "rate_030": 0.902778,
+              "rate_050": 0.902778
+            },
+            "S|50-65": {
+              "ci95_030": [
+                0.004425,
+                0.035398
+              ],
+              "ci95_050": [
+                0.004425,
+                0.035398
+              ],
+              "hit_030": 4,
+              "hit_050": 4,
+              "n": 226,
+              "rate_030": 0.017699,
+              "rate_050": 0.017699
+            },
+            "S|<35": {
+              "ci95_030": [
+                1.0,
+                1.0
+              ],
+              "ci95_050": [
+                1.0,
+                1.0
+              ],
+              "hit_030": 40,
+              "hit_050": 40,
+              "n": 40,
+              "rate_030": 1.0,
+              "rate_050": 1.0
+            },
+            "S|>=65": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 86,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        }
+      },
+      "scout-1|T1a": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "scout-1|T1b": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "scout-4|T0-bank-td": {
+        "catalog_vehicle|not_in_bank": {
+          "by_distance": {
+            "NA": {
+              "ci95_030": [
+                0.284743,
+                0.318731
+              ],
+              "ci95_050": [
+                0.029079,
+                0.043051
+              ],
+              "hit_030": 798,
+              "hit_050": 94,
+              "n": 2648,
+              "rate_030": 0.30136,
+              "rate_050": 0.035498
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.338003,
+                0.379123
+              ],
+              "ci95_050": [
+                0.032987,
+                0.049254
+              ],
+              "hit_030": 794,
+              "hit_050": 90,
+              "n": 2213,
+              "rate_030": 0.358789,
+              "rate_050": 0.040669
+            },
+            "M": {
+              "ci95_030": [
+                0.004484,
+                0.035874
+              ],
+              "ci95_050": [
+                0.004484,
+                0.035874
+              ],
+              "hit_030": 4,
+              "hit_050": 4,
+              "n": 223,
+              "rate_030": 0.017937,
+              "rate_050": 0.017937
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 212,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|NA": {
+              "ci95_030": [
+                0.338003,
+                0.379123
+              ],
+              "ci95_050": [
+                0.032987,
+                0.049254
+              ],
+              "hit_030": 794,
+              "hit_050": 90,
+              "n": 2213,
+              "rate_030": 0.358789,
+              "rate_050": 0.040669
+            },
+            "M|NA": {
+              "ci95_030": [
+                0.004484,
+                0.035874
+              ],
+              "ci95_050": [
+                0.004484,
+                0.035874
+              ],
+              "hit_030": 4,
+              "hit_050": 4,
+              "n": 223,
+              "rate_030": 0.017937,
+              "rate_050": 0.017937
+            },
+            "S|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 212,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        },
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "<35": {
+              "ci95_030": [
+                0.485239,
+                0.52474
+              ],
+              "ci95_050": [
+                0.36341,
+                0.401247
+              ],
+              "hit_030": 1215,
+              "hit_050": 918,
+              "n": 2405,
+              "rate_030": 0.505198,
+              "rate_050": 0.381705
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.340887,
+                0.399015
+              ],
+              "ci95_050": [
+                0.061084,
+                0.094581
+              ],
+              "hit_030": 376,
+              "hit_050": 79,
+              "n": 1015,
+              "rate_030": 0.370443,
+              "rate_050": 0.077833
+            },
+            "M": {
+              "ci95_030": [
+                0.578417,
+                0.630216
+              ],
+              "ci95_050": [
+                0.578417,
+                0.630216
+              ],
+              "hit_030": 839,
+              "hit_050": 839,
+              "n": 1390,
+              "rate_030": 0.603597,
+              "rate_050": 0.603597
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.340887,
+                0.399015
+              ],
+              "ci95_050": [
+                0.061084,
+                0.094581
+              ],
+              "hit_030": 376,
+              "hit_050": 79,
+              "n": 1015,
+              "rate_030": 0.370443,
+              "rate_050": 0.077833
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.578417,
+                0.630216
+              ],
+              "ci95_050": [
+                0.578417,
+                0.630216
+              ],
+              "hit_030": 839,
+              "hit_050": 839,
+              "n": 1390,
+              "rate_030": 0.603597,
+              "rate_050": 0.603597
+            }
+          }
+        }
+      },
+      "scout-4|T0-oracle": {
+        "catalog_vehicle|not_in_bank": {
+          "by_distance": {
+            "NA": {
+              "ci95_030": [
+                0.000755,
+                0.004154
+              ],
+              "ci95_050": [
+                0.000755,
+                0.004154
+              ],
+              "hit_030": 6,
+              "hit_050": 6,
+              "n": 2648,
+              "rate_030": 0.002266,
+              "rate_050": 0.002266
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.000904,
+                0.004971
+              ],
+              "ci95_050": [
+                0.000904,
+                0.004971
+              ],
+              "hit_030": 6,
+              "hit_050": 6,
+              "n": 2213,
+              "rate_030": 0.002711,
+              "rate_050": 0.002711
+            },
+            "M": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 223,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 212,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          },
+          "stratum_x_distance": {
+            "L|NA": {
+              "ci95_030": [
+                0.000904,
+                0.004971
+              ],
+              "ci95_050": [
+                0.000904,
+                0.004971
+              ],
+              "hit_030": 6,
+              "hit_050": 6,
+              "n": 2213,
+              "rate_030": 0.002711,
+              "rate_050": 0.002711
+            },
+            "M|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 223,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            },
+            "S|NA": {
+              "ci95_030": [
+                0.0,
+                0.0
+              ],
+              "ci95_050": [
+                0.0,
+                0.0
+              ],
+              "hit_030": 0,
+              "hit_050": 0,
+              "n": 212,
+              "rate_030": 0.0,
+              "rate_050": 0.0
+            }
+          }
+        },
+        "red_primitive|same_instance_by_design": {
+          "by_distance": {
+            "<35": {
+              "ci95_030": [
+                0.889397,
+                0.913098
+              ],
+              "ci95_050": [
+                0.770062,
+                0.802911
+              ],
+              "hit_030": 2169,
+              "hit_050": 1893,
+              "n": 2405,
+              "rate_030": 0.901871,
+              "rate_050": 0.78711
+            }
+          },
+          "by_stratum": {
+            "L": {
+              "ci95_030": [
+                0.741872,
+                0.794089
+              ],
+              "ci95_050": [
+                0.46601,
+                0.526108
+              ],
+              "hit_030": 780,
+              "hit_050": 504,
+              "n": 1015,
+              "rate_030": 0.768473,
+              "rate_050": 0.496552
+            },
+            "M": {
+              "ci95_030": [
+                0.997842,
+                1.0
+              ],
+              "ci95_050": [
+                0.997842,
+                1.0
+              ],
+              "hit_030": 1389,
+              "hit_050": 1389,
+              "n": 1390,
+              "rate_030": 0.999281,
+              "rate_050": 0.999281
+            }
+          },
+          "stratum_x_distance": {
+            "L|<35": {
+              "ci95_030": [
+                0.741872,
+                0.794089
+              ],
+              "ci95_050": [
+                0.46601,
+                0.526108
+              ],
+              "hit_030": 780,
+              "hit_050": 504,
+              "n": 1015,
+              "rate_030": 0.768473,
+              "rate_050": 0.496552
+            },
+            "M|<35": {
+              "ci95_030": [
+                0.997842,
+                1.0
+              ],
+              "ci95_050": [
+                0.997842,
+                1.0
+              ],
+              "hit_030": 1389,
+              "hit_050": 1389,
+              "n": 1390,
+              "rate_030": 0.999281,
+              "rate_050": 0.999281
+            }
+          }
+        }
+      },
+      "scout-4|T1a": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      },
+      "scout-4|T1b": {
+        "status": "N/A(NOT_AUTHORIZED_T1_UNSIGNED)"
+      }
+    }
+  },
+  "work_id": "P1-ENG-FAST-001"
+}

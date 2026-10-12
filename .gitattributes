@@ -1,0 +1,20 @@
+# Keep source/document line endings deterministic.
+*.cs text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# Unity YAML represents empty scalar values with a trailing space. Preserve
+# useful text diffs while preventing git diff --check from treating those
+# engine-authored lines as source whitespace errors.
+*.anim whitespace=-blank-at-eol
+*.asset whitespace=-blank-at-eol
+*.controller whitespace=-blank-at-eol
+*.lighting whitespace=-blank-at-eol
+*.mat whitespace=-blank-at-eol
+*.meta whitespace=-blank-at-eol
+*.physicMaterial whitespace=-blank-at-eol
+*.prefab whitespace=-blank-at-eol
+*.preset whitespace=-blank-at-eol
+*.shadergraph whitespace=-blank-at-eol
+*.unity whitespace=-blank-at-eol

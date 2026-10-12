@@ -1,0 +1,94 @@
+# COORD-015 A1 红绿证据（tests.test_check_role_writes 新增 supervisor 六例，修复前必失败）
+# 来源：落地批次 ee8f08b 当时的临时输出 /tmp/coord015-a1-prefail.txt 与 /tmp/coord015-a1-postfix.txt，
+#       由 C1@落地 退回项修复批次（supervisor 协调批次，2026-09-25）逐字合并入库，内容未改。
+# 原命令：python3 -m unittest tests.test_check_role_writes（不带 -v）
+# 红 = ee8f08b 的测试文件 + ee8f08b^ 的 tools/check_role_writes.py（尚无 ROLE_RULES["supervisor"]）
+# 绿 = ee8f08b 的测试文件 + ee8f08b 的 tools/check_role_writes.py
+# 本批复现（可复算）：在空目录放 tools/ tests/ 两个包，
+#   git show ee8f08b^:tools/check_role_writes.py > tools/check_role_writes.py
+#   git show ee8f08b:tests/test_check_role_writes.py > tests/test_check_role_writes.py
+#   python3 -m unittest tests.test_check_role_writes   → Ran 26 / FAILED (errors=6)
+#   git show ee8f08b:tools/check_role_writes.py > tools/check_role_writes.py
+#   python3 -m unittest tests.test_check_role_writes   → Ran 26 / OK
+#   （2026-09-25 本批复现结果与下列原始输出的计数一致）
+
+===== [红] /tmp/coord015-a1-prefail.txt（修复前） =====
+.....EEEEEE...............
+======================================================================
+ERROR: test_supervisor_cannot_write_infra (tests.test_check_role_writes.SupervisorRoleTests.test_supervisor_cannot_write_infra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_role_writes.py", line 201, in test_supervisor_cannot_write_infra
+    violations = violations_for_role("supervisor", ["AGENTS.md"])
+  File "~/TetheredDroneTracking/tools/check_role_writes.py", line 188, in violations_for_role
+    rules = ROLE_RULES[role]
+            ~~~~~~~~~~^^^^^^
+KeyError: 'supervisor'
+
+======================================================================
+ERROR: test_supervisor_cannot_write_p1_proposal (tests.test_check_role_writes.SupervisorRoleTests.test_supervisor_cannot_write_p1_proposal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_role_writes.py", line 186, in test_supervisor_cannot_write_p1_proposal
+    violations = violations_for_role("supervisor", ["docs/proposals/P1-X.md"])
+  File "~/TetheredDroneTracking/tools/check_role_writes.py", line 188, in violations_for_role
+    rules = ROLE_RULES[role]
+            ~~~~~~~~~~^^^^^^
+KeyError: 'supervisor'
+
+======================================================================
+ERROR: test_supervisor_cannot_write_reviews (tests.test_check_role_writes.SupervisorRoleTests.test_supervisor_cannot_write_reviews)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_role_writes.py", line 191, in test_supervisor_cannot_write_reviews
+    violations = violations_for_role("supervisor", ["docs/reviews/x.md"])
+  File "~/TetheredDroneTracking/tools/check_role_writes.py", line 188, in violations_for_role
+    rules = ROLE_RULES[role]
+            ~~~~~~~~~~^^^^^^
+KeyError: 'supervisor'
+
+======================================================================
+ERROR: test_supervisor_cannot_write_tests (tests.test_check_role_writes.SupervisorRoleTests.test_supervisor_cannot_write_tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_role_writes.py", line 196, in test_supervisor_cannot_write_tests
+    violations = violations_for_role("supervisor", ["tests/x.py"])
+  File "~/TetheredDroneTracking/tools/check_role_writes.py", line 188, in violations_for_role
+    rules = ROLE_RULES[role]
+            ~~~~~~~~~~^^^^^^
+KeyError: 'supervisor'
+
+======================================================================
+ERROR: test_supervisor_coord_batch_combo_passes (tests.test_check_role_writes.SupervisorRoleTests.test_supervisor_coord_batch_combo_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_role_writes.py", line 211, in test_supervisor_coord_batch_combo_passes
+    self.assertEqual(violations_for_role("supervisor", paths), [])
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "~/TetheredDroneTracking/tools/check_role_writes.py", line 188, in violations_for_role
+    rules = ROLE_RULES[role]
+            ~~~~~~~~~~^^^^^^
+KeyError: 'supervisor'
+
+======================================================================
+ERROR: test_supervisor_parked_status_denied_by_default (tests.test_check_role_writes.SupervisorRoleTests.test_supervisor_parked_status_denied_by_default)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_role_writes.py", line 215, in test_supervisor_parked_status_denied_by_default
+    violations = violations_for_role("supervisor", ["docs/parked-status.md"])
+  File "~/TetheredDroneTracking/tools/check_role_writes.py", line 188, in violations_for_role
+    rules = ROLE_RULES[role]
+            ~~~~~~~~~~^^^^^^
+KeyError: 'supervisor'
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.589s
+
+FAILED (errors=6)
+
+===== [绿] /tmp/coord015-a1-postfix.txt（修复后） =====
+..........................
+----------------------------------------------------------------------
+Ran 26 tests in 0.581s
+
+OK

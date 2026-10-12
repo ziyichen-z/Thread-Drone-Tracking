@@ -1,0 +1,2058 @@
+{
+  "consuming": "no",
+  "dimensions": {
+    "board_disk": {
+      "bytes": 5163883873,
+      "cleanups": [
+        {
+          "at_utc": "2026-10-03T00:20:01Z",
+          "basis": "IR-16 (d)：S1 引擎导出前只删已安装轮子文件（21 依赖 + 官方 cu130 torch/torchvision），不动 sysvenv（未 pip uninstall）；du -sb ~/eng-jet 7,783,134,099 → 4,946,793,035；下载字节与包数不回退",
+          "bytes": 2836341094,
+          "files": 23,
+          "kind": "board_cleanup",
+          "list": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/cleanup-sub1-list.tsv",
+          "path": "~/eng-jet/wheels/sub1/*.whl",
+          "recorded_utc": "2026-10-03T00:36:01Z",
+          "round": "K1K3K4补跑D"
+        },
+        {
+          "at_utc": "2026-10-03T05:21:11Z",
+          "basis": "IR-19 与决策记录「S1/S2 系统栈落实（B）」：系统栈 S1（补跑D）与 S2（本轮）均已实跑有读数 → 删除容器 venv；不动 sysvenv；pip 包数/下载字节不回退；du -sb ~/eng-jet 5,172,051,851 → 5,070,463,807",
+          "bytes": 101751706,
+          "files": 1796,
+          "kind": "board_cleanup",
+          "kind_detail": "container_venv_delete",
+          "list": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/venv-listing.tsv",
+          "path": "~/eng-jet/venv",
+          "recorded_utc": "2026-10-03T05:22:33Z",
+          "round": "K1K3K4补跑E"
+        }
+      ],
+      "limit_basis": "§5 阶段 A ≤ 5 GB；SUB:1 签发后生效值 ≤ 13 GB（账本同日 SUB:1 条目）",
+      "limit_bytes": 13000000000,
+      "path": "~/eng-jet/"
+    },
+    "board_pip": {
+      "bytes": 242752639,
+      "items": [
+        {
+          "bytes": 8847917,
+          "bytes_basis": "max(轮子, 安装后 RECORD 合计)",
+          "installed_bytes": 8847917,
+          "kind": "board_pip",
+          "machine": "Jetson NGC 容器 nvcr.io/nvidia/pytorch:25.08-py3（venv ~/eng-jet/venv，--system-site-packages）",
+          "package": "ultralytics",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "version": "8.4.104",
+          "wheel": "ultralytics-8.4.104-py3-none-any.whl",
+          "wheel_bytes": 1413385,
+          "wheel_sha256": "2625e73863b06dd882b4024b7a3a033ce712d200e3de58af5252939fb74aa403"
+        },
+        {
+          "bytes": 2691526,
+          "bytes_basis": "max(轮子, 安装后 RECORD 合计)",
+          "installed_bytes": 2691526,
+          "kind": "board_pip",
+          "machine": "Jetson NGC 容器 venv",
+          "package": "lap",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "version": "0.5.13",
+          "wheel": "lap-0.5.13-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+          "wheel_bytes": 1725964,
+          "wheel_sha256": "355600a369281c830f900a9a215f8a8729c89ce3f2bf75e1943386fe3d8d1c88"
+        },
+        {
+          "bytes": 146246,
+          "bytes_basis": "max(轮子, 安装后 RECORD 合计)",
+          "installed_bytes": 146246,
+          "kind": "board_pip",
+          "machine": "Jetson NGC 容器 venv",
+          "package": "ultralytics-thop",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "transitive_of": "ultralytics",
+          "version": "2.2.2",
+          "wheel": "ultralytics_thop-2.2.2-py3-none-any.whl",
+          "wheel_bytes": 32582,
+          "wheel_sha256": "10ef0f4ab45261516008660619fef114cddc2b7c8383d9d3bd76c1e551208ca3"
+        },
+        {
+          "bytes": 114285416,
+          "bytes_basis": "安装后估计（venv du 139,138,248 − 换装后 101,751,706 + headless 76,898,874）；已卸载",
+          "installed_bytes_estimate": 114285416,
+          "kind": "board_pip",
+          "machine": "Jetson NGC 容器 venv",
+          "package": "opencv-python",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "status": "installed_then_uninstalled（容器无 libGL.so.1，import cv2 失败）",
+          "transitive_of": "ultralytics",
+          "version": "4.11.0.86",
+          "wheel": "opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "wheel_bytes": 42230439,
+          "wheel_sha256": "1b92ae2c8852208817e6776ba1ea0d6b1e0a1b5431e971a2a0ddd2a8cc398202"
+        },
+        {
+          "bytes": 76898874,
+          "bytes_basis": "max(轮子, 安装后 RECORD 合计)",
+          "installed_bytes": 76898874,
+          "kind": "board_pip",
+          "machine": "Jetson NGC 容器 venv",
+          "package": "opencv-python-headless",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "status": "--no-deps 替换 opencv-python（同版本无 GUI 构建）；见交接 IR-11",
+          "version": "4.11.0.86",
+          "wheel": "opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "wheel_bytes": 29487060,
+          "wheel_sha256": "6efabcaa9df731f29e5ea9051776715b1bdd1845d7c9530065c7951d2a2899eb"
+        },
+        {
+          "bytes": 37570547,
+          "bytes_basis": "max(轮子, 安装后 RECORD 合计)",
+          "installed_bytes": 37570547,
+          "kind": "board_pip",
+          "machine": "Jetson 系统 venv ~/eng-jet/sysvenv（--system-site-packages）",
+          "network_rx_bytes": 19807906,
+          "package": "onnx",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "AC-10 修订 2（IR-15）：导出必需，pip download --no-deps 哈希锁定后离线安装",
+          "transitive_of": null,
+          "version": "1.18.0",
+          "wheel": "onnx-1.18.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "wheel_bytes": 17421291,
+          "wheel_sha256": "e4da451bf1c5ae381f32d430004a89f0405bc57a8471b0bddb6325a5b334aa40"
+        },
+        {
+          "bytes": 2312113,
+          "bytes_basis": "max(轮子, 安装后 RECORD 合计)",
+          "installed_bytes": 2312113,
+          "kind": "board_pip",
+          "machine": "Jetson 系统 venv ~/eng-jet/sysvenv（--system-site-packages）",
+          "network_rx_bytes": null,
+          "package": "protobuf",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "AC-10 修订 2（IR-15）：导出必需，pip download --no-deps 哈希锁定后离线安装；onnx 的依赖",
+          "transitive_of": "onnx",
+          "version": "6.31.1",
+          "wheel": "protobuf-6.31.1-cp39-abi3-manylinux2014_aarch64.whl",
+          "wheel_bytes": 322115,
+          "wheel_sha256": "a40fc12b84c154884d7d4c4ebd675d5b3b5283e155f324049ae396b95ddebc39"
+        }
+      ],
+      "limit_bytes": 300000000,
+      "limit_packages": 8,
+      "packages": 7
+    },
+    "board_vlm_queries": {
+      "limit": 0,
+      "used": 0
+    },
+    "board_wall_clock": {
+      "engine_export_items": [
+        {
+          "kind": "engine_export",
+          "label": "方形 imgsz=640 FP16 导出（容器 TRT 10.13.2.6）",
+          "onnx_byproduct": {
+            "bytes": 10565785,
+            "path": "~/eng-jet/code/outputs/eng-det/runs/run-1/weights/last.onnx",
+            "sha256": "5d0d1548aad267a7f8d3628c8c723b66aa57b7d372b79eeff2c94d72675a938f"
+          },
+          "pt_sha256_after": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9",
+          "recorded_utc": "2026-10-02T21:18:53Z",
+          "started_utc": "2026-10-02T21:16:24Z",
+          "status": "failed: TensorRT Error Code 9 Target GPU SM 87 is not supported by this TensorRT release",
+          "wall_s": 9.7
+        },
+        {
+          "end_utc": "2026-10-03T00:26:35Z",
+          "engine": "det-assoc-v1-fp16-640.engine",
+          "imgsz": 640,
+          "kind": "engine_export",
+          "recorded_utc": "2026-10-03T00:36:01Z",
+          "round": "K1K3K4补跑D",
+          "sha256": "5e45529a76fabb5282a5b6a1108e78f60a4200554e74eb6cee8194663f494963",
+          "start_utc": "2026-10-03T00:20:11Z",
+          "tensorrt": "10.16.2.10",
+          "wall_s": 375.4
+        },
+        {
+          "end_utc": "2026-10-03T00:32:50Z",
+          "engine": "det-assoc-v1-fp16-480x640.engine",
+          "imgsz": [
+            480,
+            640
+          ],
+          "kind": "engine_export",
+          "recorded_utc": "2026-10-03T00:36:01Z",
+          "round": "K1K3K4补跑D",
+          "sha256": "c047cc34d3d7f25263ed6f9cc243fc4f625419610cdc438e197a31b23d730331",
+          "start_utc": "2026-10-03T00:26:35Z",
+          "tensorrt": "10.16.2.10",
+          "wall_s": 367.9
+        }
+      ],
+      "engine_export_limit_s_each": 1200,
+      "engine_exports": 3,
+      "limit_s": 28800,
+      "seconds": 8545.0,
+      "sessions": [
+        {
+          "end_utc": "2026-10-02T19:22:32Z",
+          "kind": "board_session",
+          "label": "S0 环境核验（只读：读数、5 min 空闲 tegrastats、包清单与 docker 镜像元数据只读查询）",
+          "machine": "Jetson（ssh，Tailscale）",
+          "recorded_utc": "2026-10-02T19:35:37Z",
+          "start_utc": "2026-10-02T19:13:17Z"
+        },
+        {
+          "end_utc": "2026-10-02T19:44:36Z",
+          "kind": "board_session",
+          "label": "SR TAILSCALE_SMOKE 第 1 轮（代码束上板、板侧中继 + 回声应答器 420 s、取回日志、板上清单只读扫描）",
+          "machine": "Jetson（ssh，Tailscale）",
+          "recorded_utc": "2026-10-02T19:44:44Z",
+          "start_utc": "2026-10-02T19:32:48Z"
+        },
+        {
+          "end_utc": "2026-10-02T21:17:53Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑 S1/S2 容器路径：板上只读状态核验、容器内包探测与 pip 干跑、到板件上传与 sha 核对、容器 venv 安装 5 包、方形引擎导出 1 次（TRT 不支持 SM 87 失败）、trtexec 复证、日志取回、板上清单扫描",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "start_utc": "2026-10-02T21:05:16Z"
+        },
+        {
+          "end_utc": "2026-10-02T21:19:40Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑：容器实跑栈读数（fastlayer_bench stack，AC-2 修订 2）与镜像摘要只读查询",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T21:19:34Z",
+          "start_utc": "2026-10-02T21:19:09Z"
+        },
+        {
+          "end_utc": "2026-10-02T21:20:48Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑：板上清单只读扫描（AC-12；含此前一次同口径扫描，合并计）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T21:20:48Z",
+          "start_utc": "2026-10-02T21:20:46Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:00:25Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：板上只读核验（MAXN_SUPER、磁盘、系统 Python 包可用性、ultralytics 轮子源码只读检查；多次短 ssh，按首尾连续计）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "start_utc": "2026-10-02T22:58:22Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:04:54Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：代码更新件上板解包、基线读数（netdev、ldconfig cudss、ldd trtexec、python3.12 dpkg、df/du）、python3 -m venv --system-site-packages ~/eng-jet/sysvenv",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "start_utc": "2026-10-02T23:04:47Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:05:27Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：SUB:1 pip download --no-deps（官方 cu130 索引）torch 2.9.1+cu130、torchvision 0.24.1",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "start_utc": "2026-10-02T23:05:04Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:07:08Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：SUB:1 依赖解析 pip install --dry-run --report（PyPI + 本地 cu130 轮子）——pip 24.0 干跑实际取回 22 个轮子体并丢弃",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "start_utc": "2026-10-02T23:05:33Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:08:09Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：核实无缓存轮子残留、netdev/df/du 读数（停于额度将超）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "start_utc": "2026-10-02T23:08:07Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:08:49Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：代码更新件板上逐文件 sha 复核与板上清单只读扫描（AC-12）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "start_utc": "2026-10-02T23:08:47Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:09:28Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑B：取回 sysvenv/pyvenv.cfg（只读）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:09:28Z",
+          "start_utc": "2026-10-02T23:09:27Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:33:30Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑C：板上只读状态核验",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "start_utc": "2026-10-02T23:33:29Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:44:16Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑C：代码更新件上板、SUB:1 依赖逐个 pip download --no-deps、onnx/protobuf 取回、离线安装、verify（sm_87 不在 arch list → 停）、附加 GPU 诊断、读数取回",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "start_utc": "2026-10-02T23:37:18Z"
+        },
+        {
+          "end_utc": "2026-10-02T23:44:27Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑C：板上清单只读扫描（AC-12）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "start_utc": "2026-10-02T23:44:24Z"
+        },
+        {
+          "end_utc": "2026-10-03T00:35:25Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑D：只读核验、资产使用前 sha 复核、wheels/sub1 装后清理（IR-16 (d)）、两版 TRT FP16 引擎导出、S1 方形/矩形 320 帧计时与比对、trtexec ×2、读数取回、板上清单扫描（保守口径：首末之间连续计时，含间隙）",
+          "machine": "Jetson（ssh，Tailscale；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-03T00:36:01Z",
+          "start_utc": "2026-10-03T00:17:50Z"
+        },
+        {
+          "end_utc": "2026-10-03T05:21:28Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑E：只读核验、资产/引擎使用前 sha 复核、S2 15 Hz/30 min（04:50:25–05:20:34）、外部写入核查、TRT 告警只读诊断、容器 venv 删除（IR-19）、板上清单扫描、读数取回（保守口径：首末之间连续计时，含间隙）",
+          "machine": "Jetson（ssh jetson@192.168.8.2 有线直连，StrictHostKeyChecking=yes；桌面端 Mac mini）",
+          "recorded_utc": "2026-10-03T05:22:33Z",
+          "round": "K1K3K4补跑E",
+          "start_utc": "2026-10-03T04:48:25Z"
+        },
+        {
+          "end_utc": "2026-10-03T17:02:23Z",
+          "kind": "board_session",
+          "label": "K1K3K4补跑F：只读核验、到板件上传与 30 件使用前 sha 复核（含方形引擎）、应答器预检（引擎加载、无帧）、正式 SR 4 轮（f1-echo 返工轮、f2-echo、f3-track、f4-track-drops）、读数取回、板上清单扫描、对时状态只读查询（保守口径：首末之间连续计时，含间隙）",
+          "machine": "Jetson（ssh jetson@192.168.8.2 有线直连，BatchMode + StrictHostKeyChecking=yes；桌面端 Mac mini 192.168.8.1）",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "start_utc": "2026-10-03T16:16:04Z"
+        }
+      ]
+    },
+    "mac": {
+      "limit_outputs_bytes": 2000000000,
+      "models": 6,
+      "models_basis": "Mac 本机模型加载/构造尝试次数合计（SUB:2 已签前全部场景为 0；签后只在停点全套一次内按 sub2 四种分列与 sub5 det-assoc 计入，回放不计模型加载）",
+      "outputs_eng_jet_bytes": 70231574,
+      "pip": 0,
+      "sub2": {
+        "effective": {
+          "downloads": 0,
+          "full_suite_runs_max": 1,
+          "machine": "Mac mini 本机 CPU",
+          "model_loads_max": {
+            "csrt": 2,
+            "dinov2": 2,
+            "nanotrack": 4,
+            "yoloe": 2
+          },
+          "new_models": 0,
+          "not_covered": [
+            "SR 重跑",
+            "阶段 B",
+            "§7 (i)–(m)",
+            "S3–S5"
+          ],
+          "other_models_max": 0,
+          "pip": 0
+        },
+        "full_suite_run_items": [
+          {
+            "command": "~/TetheredDroneTracking-full/.venv-yoloe/bin/python -m unittest discover -s tests > docs/evidence/P1-ENG-JET-001-full-suite.log 2>&1",
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套CPU1-20261003T205839Z-8433",
+            "end_utc": "2026-10-03T21:10:46Z",
+            "env_vars_added": "none",
+            "exit_code": 1,
+            "kind": "mac_full_suite_run",
+            "log": "docs/evidence/P1-ENG-JET-001-full-suite.log",
+            "machine": "Mac mini 本机 CPU",
+            "recorded_utc": "2026-10-03T21:11:57Z",
+            "request_ids": [
+              "P1-ENG-JET-001:b0a5f79c:SUB:2",
+              "P1-ENG-JET-001:b0a5f79c:SUB:5"
+            ],
+            "rerun": false,
+            "round": "K1K3K4全套CPU1",
+            "start_utc": "2026-10-03T21:06:48Z",
+            "summary": [
+              "Ran 2136 tests in 235.682s",
+              "FAILED (failures=27, errors=10, skipped=56)"
+            ],
+            "tested_head": "fba6e4f8c889255f2ad22cd115447f45f076f06e"
+          }
+        ],
+        "full_suite_runs": 1,
+        "ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户按推荐签发 SUB:2：停点全套的 Mac 本机 CPU 模型额度（一次全套）（supervisor 会话代录）",
+        "load_items": [
+          {
+            "count": 2,
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套CPU1-20261003T205839Z-8433",
+            "kind": "mac_model_load",
+            "model": "csrt",
+            "recorded_utc": "2026-10-03T21:11:57Z",
+            "status": "failed（opencv 5.0.0 无 TrackerCSRT_create，构造即失败，真实实例 0、无权重）",
+            "tests": [
+              "tests/test_trackers.py::TrackerAdapterTests::test_pinned_opencv_csrt_initializes_and_updates（ERROR）",
+              "tests/test_track_loop.py::TrackLoopTests::test_cli_runs_pinned_csrt_to_a_versioned_summary（FAIL）"
+            ]
+          },
+          {
+            "count": 2,
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套CPU1-20261003T205839Z-8433",
+            "kind": "mac_model_load",
+            "model": "nanotrack",
+            "recorded_utc": "2026-10-03T21:11:57Z",
+            "status": "保守上界：tests/test_preflight_reanchor_env.py 两条真实 CLI 子进程构造 NanoTrackV2Tracker 的尝试，主树无模型文件、在 _verify_model_file 读权重前失败；真实权重读取 0（未插桩，不能从聚合日志实测）"
+          }
+        ],
+        "model_loads": {
+          "csrt": 2,
+          "dinov2": 0,
+          "nanotrack": 2,
+          "yoloe": 0
+        },
+        "other_model_loads": {},
+        "prechecks": [
+          {
+            "decision": "NOT_RUN：按合同指定解释器跑全套预计出现 SUB:2 未列名模型加载 2 次（> 0），按「预计超任一额度即不跑、停下回用户」不启动全套；SUB:2 一次全套未消费",
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套-20261003T181204Z-f491",
+            "interpreter_per_contract": {
+              "lap": "0.5.13",
+              "opencv": "5.0.0（有 TrackerNano_create，无 TrackerCSRT_create）",
+              "path": "~/TetheredDroneTracking-full/.venv-yoloe/bin/python",
+              "python": "3.12.14",
+              "tokenizers": "0.23.2",
+              "torch": "2.13.0",
+              "ultralytics": "8.4.104"
+            },
+            "interpreter_repo": {
+              "lap": "缺",
+              "note": "缺 lap：需 lap 的测试在此解释器下 skip，故合同指定数据根 .venv-yoloe",
+              "path": ".venv-yoloe/bin/python",
+              "python": "3.12.14"
+            },
+            "kind": "mac_full_suite_precheck",
+            "machine": "Mac mini（Macmini9,1，本机 CPU）",
+            "method": "只读静态核对：沿用 FRAME-001 R7 全 tests 树闭集审计（docs/evidence/P1-ENG-FRAME-001-R7-full-suite-preparation.md），自 R7 全套提交以来 tests/、controller/、tools/*.py 只新增 tests/test_eng_jet_{bench,guards,relay,track_responder}.py（注入假插件/假工厂，无真实加载器）；逐条核对本机环境差异（模型文件、解释器包、数据根）。未调用任何模型构造器、推理或 unittest discover。",
+            "other_findings": [
+              {
+                "models": 0,
+                "note": "零模型（缓存检测替身），只读数据根 scout-1 帧；该测试文档写明每次运行在 P1-ENG-ACQ-001 消耗账本记 2 次部分序列回放（该项 PAUSED_BY_USER，其 CPU 序列回放维度有上限），本信封未覆盖该维度",
+                "test": "tests/test_det_assoc_carrier.py::ResidentCarrierReplay::test_resident_carrier_matches_replay"
+              }
+            ],
+            "outputs_eng_jet_bytes_before": 70218799,
+            "outputs_limit_bytes": 2000000000,
+            "predicted_named_loads": {
+              "csrt": {
+                "count_max_attempts": 2,
+                "real_instances": 0,
+                "why": "两条 CsrtTracker 入口在 opencv 5.0.0 缺 TrackerCSRT_create，构造即失败（无权重）"
+              },
+              "dinov2": {
+                "count": 0,
+                "why": "主树 runtime/models/dinov2/ 不存在，构造顺序在 Nano/YOLOE 之后"
+              },
+              "nanotrack": {
+                "count": 0,
+                "why": "主树 runtime/models/nanotrack-v2/ 不存在：tests/test_trackers.py 与 tests/test_track_loop.py 的 pinned NanoTrack 用例 skipIf 模型缺失；tests/test_preflight_reanchor_env.py 两条真实 CLI 子进程在 NanoTrackV2Tracker._verify_model_file 处 FileNotFoundError（构造后端之前）"
+              },
+              "yoloe": {
+                "count": 0,
+                "why": "主树 runtime/yoloe/yoloe-11s-seg.pt 不存在，且 re-anchor 构造顺序在 Nano 之后（Nano 已先拒绝）"
+              }
+            },
+            "predicted_outside_quota": [
+              {
+                "count": 2,
+                "gate": "_ready()：数据根解释器有 ultralytics+lap+cv2、冻结规格与权重在主树、数据根帧存在 → 在本机会运行（FRAME-001 R7 在 Air 上因数据根缺失而 skip，故未进 SUB:2 数量）",
+                "model": "det-assoc 冻结检测器（ultralytics YOLO，outputs/eng-det/runs/run-1/weights/last.pt，sha256 d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9）",
+                "path": "create_tracker(\"det-assoc-v1\") → DetAssocTracker → _default_model_loader → ultralytics.YOLO(last.pt)；首条另在 CPU 上推理数据根 scout-1 子序列 768 帧",
+                "quota": "不在 SUB:2 四种具名模型内；未列名模型额度 0（AC-10 修订 3、IR-9：测试夹具真实加载计入）",
+                "tests": [
+                  "tests/test_det_assoc_carrier.py::CarrierSelfTest::test_carrier_matches_caliber_b_from_first_update",
+                  "tests/test_det_assoc_carrier.py::CarrierSelfTest::test_init_false_uses_existing_failure_path"
+                ]
+              }
+            ],
+            "recorded_utc": "2026-10-03T18:21:21Z",
+            "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:2",
+            "round": "K1K3K4全套"
+          },
+          {
+            "contract": "提案决策记录「CPU-1 落实与下一实现范围（2026-10-03，CLARIFY）」步骤 1–2（AC-10 修订 6）；「SUB:5 A 落实与 CPU 执行方案核对」AC-10 修订 5",
+            "decision": "RUN：两处 CPU-1 测试改动经静态 AST 核对仅两例构造与导入变化；全 tests 可达真实加载器预计（上界）均在 SUB:2 + SUB:5 A 内；两例执行设备显式 cpu；不需 MPS／改设备探测／改 skip／设环境变量；不缺包、不需下载安装；Mac outputs 余量充足 → 跑一次全套",
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套CPU1-20261003T205839Z-8433",
+            "execution_device": {
+              "CarrierSelfTest 两例": "cpu（显式 device='cpu'，跳过 _resolve_device，_detect 原样传给 predict）",
+              "ResidentCarrierReplay": "cpu（显式 device='cpu' + CachedModel 替身，零推理）",
+              "note": "本机 MPS 可用，但本次全套内无任何真实推理走 _resolve_device；其他真实推理入口 0"
+            },
+            "full_suite_runs_planned": 1,
+            "interpreter_per_contract": {
+              "absent": [
+                "transformers",
+                "peft",
+                "timm",
+                "clip",
+                "mobileclip",
+                "omegaconf",
+                "scipy",
+                "safetensors"
+              ],
+              "huggingface_hub": "1.31.0",
+              "lap": "0.5.13",
+              "mps_available": true,
+              "opencv": "5.0.0（有 TrackerNano_create，无 TrackerCSRT_create）",
+              "path": "~/TetheredDroneTracking-full/.venv-yoloe/bin/python",
+              "python": "3.12.14",
+              "tokenizers": "0.23.2",
+              "torch": "2.13.0",
+              "torchvision": "0.28.0",
+              "ultralytics": "8.4.104"
+            },
+            "kind": "mac_full_suite_precheck",
+            "known_environment_side_effects_not_measured": "合同禁止附加离线环境变量，故未设 YOLO_OFFLINE：ultralytics 导入时 is_online() 对 one.one.one.one/dns.google 做 DNS 解析；本机 Ultralytics settings sync=True，predict 起始回调可能发匿名 usage 事件。二者非下载、非安装；未监测流量，不能断言外联为 0",
+            "machine": "Mac mini（Macmini9,1，8 GB，本机 CPU）",
+            "method": "只读静态核对，未调用任何模型构造器、推理或 unittest discover：(1) git diff + ast 对比 CarrierSelfTest 两例；(2) 以 FRAME-001 R7 全 tests 树闭集审计为底（docs/evidence/P1-ENG-FRAME-001-R7-full-suite-preparation.md），自 R7 全套提交以来 tests/、controller/、tools/ 仅新增 tools/eng_jet/* 与四个 tests/test_eng_jet_*.py（假插件/假工厂/注入 yolo_factory，无真实加载器）及本轮 CarrierSelfTest 两处改动；(3) 逐条核对本机环境门（主树 runtime/ 模型文件、数据根帧、解释器包、cv2 构造器）；(4) last.pt 的 data.pkl 以 pickletools 列 GLOBAL 模块（未反序列化），全部可在数据根解释器 site-packages 定位，不触发 torch_safe_load 的 ModuleNotFoundError→自动安装分支",
+            "outputs_eng_jet_bytes_before": 70222459,
+            "outputs_limit_bytes": 2000000000,
+            "partial_replays": {
+              "attribution": "本项（SUB:5 A (2)），不计入、不消费 P1-ENG-ACQ-001 信封，ACQ-001 暂停不变",
+              "count": 2,
+              "frames_each": 60,
+              "gate": "_acq_ready()：数据根 scout-1 frames 目录存在（1,537 个文件）",
+              "models": 0,
+              "test": "tests/test_det_assoc_carrier.py::ResidentCarrierReplay::test_resident_carrier_matches_replay"
+            },
+            "predicted_named_loads_upper_bound": {
+              "csrt": {
+                "count_max_attempts": 2,
+                "quota": "SUB:2 ≤ 2",
+                "real_instances": 0,
+                "why": "tests/test_trackers.py 与 tests/test_track_loop.py 两条 CsrtTracker(cv2) 真实入口，opencv 5.0.0 无 TrackerCSRT_create，构造即失败（无权重）"
+              },
+              "det_assoc": {
+                "count": 2,
+                "path": "CarrierSelfTest 两例各一次 DetAssocTracker(spec_path=SPEC, device='cpu') → _default_model_loader → ultralytics.YOLO(last.pt)；首例在 CPU 推理数据根 scout-1 子序列 768 帧，次例在 CPU 推理 1 帧（init）",
+                "quota": "SUB:5 A ≤ 2"
+              },
+              "dinov2": {
+                "count": 0,
+                "quota": "SUB:2 ≤ 2",
+                "why": "主树 runtime/models/dinov2/ 不存在，构造顺序在 Nano/YOLOE 之后"
+              },
+              "nanotrack": {
+                "count_max_attempts": 2,
+                "quota": "SUB:2 ≤ 4",
+                "real_weight_reads": 0,
+                "why": "主树 runtime/models/nanotrack-v2/ 不存在：两条 pinned NanoTrack 用例 skipIf；tests/test_preflight_reanchor_env.py 两条真实 CLI 子进程（sys.executable）过四项版本门后构造 NanoTrackV2Tracker，在 _verify_model_file 处 FileNotFoundError（读权重之前），按构造失败尝试保守计 2；ResidentCarrierReplay 的第二级 NanoTrack 只在一级未唯一命中时进入，而该测试线束侧 runner=None 会先报错，载体侧不可达"
+              },
+              "other_models": {
+                "count": 0,
+                "why": "Qwen/HF/tokenizer：tests 无 transformers 路径（本解释器亦无 transformers）；eng_sft 测试替换 _load_tokenizer、FakeEngine.ensure_base 返回本地目录故 tokenizer_files 不走 hf_hub_download；其余见 R7 闭集表"
+              },
+              "yoloe": {
+                "count": 0,
+                "quota": "SUB:2 ≤ 2",
+                "why": "主树 runtime/yoloe/yoloe-11s-seg.pt 不存在，且 re-anchor 构造顺序在 Nano 之后（Nano 已先拒绝）"
+              }
+            },
+            "recorded_utc": "2026-10-03T21:06:33Z",
+            "request_ids": [
+              "P1-ENG-JET-001:b0a5f79c:SUB:2",
+              "P1-ENG-JET-001:b0a5f79c:SUB:5"
+            ],
+            "round": "K1K3K4全套CPU1",
+            "static_test_change_check": {
+              "assert_calls_CarrierSelfTest_old_new": [
+                16,
+                16
+              ],
+              "changed_statements": [
+                "test_carrier_matches_caliber_b_from_first_update：导入增 controller.det_assoc_tracker.DetAssocTracker、controller.trackers 导入去 create_tracker；tracker = DetAssocTracker(spec_path=SPEC, device='cpu')",
+                "test_init_false_uses_existing_failure_path：导入改为 controller.det_assoc_tracker.DetAssocTracker；tracker = DetAssocTracker(spec_path=SPEC, device='cpu')"
+              ],
+              "other_nodes": "其余顶层节点与语句 AST 完全相同",
+              "skip_decorator_unchanged": "unittest.skipUnless(_ready(), …)",
+              "tool": "ast 逐节点对比 HEAD 与工作树 tests/test_det_assoc_carrier.py",
+              "top_level_nodes": [
+                33,
+                33
+              ]
+            },
+            "supersedes_reading_of": "K1K3K4全套（dispatch P1-ENG-JET-001-K1K3K4全套-20261003T181204Z-f491）precheck 中「首条另在 CPU 上推理 768 帧」的读法：按「K1K3K4全套记录核对」纠正，原样会选 MPS；本轮经 CPU-1 显式 device='cpu' 后才为 CPU。原记录保留不改",
+            "worktree_note": "并行线 B 的接受角色在同一工作树对提案有未提交编辑（只改 docs/proposals/…，不在 tests 读取范围），本轮不触碰"
+          }
+        ],
+        "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:2",
+        "signed": true,
+        "within": true
+      },
+      "sub5": {
+        "cpu1_ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户选 SUB:5 CPU 执行方案 CPU-1：CarrierSelfTest 两例改用既存显式 CPU 构造参数（supervisor 会话代录）",
+        "det_assoc_load_items": [
+          {
+            "basis": "类级 skip 门成立且首例出现在失败列表（类未跳过）；无 -v，次例按未出现在失败列表读作通过",
+            "count": 2,
+            "device": "cpu",
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套CPU1-20261003T205839Z-8433",
+            "kind": "mac_sub5_det_assoc_load",
+            "recorded_utc": "2026-10-03T21:11:57Z",
+            "status": "success（两例均构造成功：首例过 weights_sha256 断言后在 CPU 推理至逐帧比较断言失败，次例通过）",
+            "tests": [
+              "tests/test_det_assoc_carrier.py::CarrierSelfTest::test_carrier_matches_caliber_b_from_first_update",
+              "tests/test_det_assoc_carrier.py::CarrierSelfTest::test_init_false_uses_existing_failure_path"
+            ]
+          }
+        ],
+        "det_assoc_loads": 2,
+        "effective": {
+          "acq_001": "两次部分回放不计入、不消费 P1-ENG-ACQ-001 信封，ACQ-001 暂停不变",
+          "det_assoc_loads_max": 2,
+          "det_assoc_model": "config/det-assoc-v1.models.json 冻结 weights（ultralytics YOLO）",
+          "execution": "CPU-1：CarrierSelfTest 两例 DetAssocTracker(spec_path=SPEC, device=\"cpu\")",
+          "full_suite": "与 SUB:2 共用 dimensions.mac.sub2.full_suite_runs（≤ 1），不另立全套额度",
+          "machine": "Mac mini 本机 CPU（不授权 MPS 推理）",
+          "not_covered": [
+            "MPS 推理",
+            "第二次全套",
+            "SR 重跑",
+            "阶段 B",
+            "§7 (i)–(m)",
+            "S3–S5",
+            "其他未列名模型"
+          ],
+          "partial_replay_frames_each": 60,
+          "partial_replay_test": "tests/test_det_assoc_carrier.py::ResidentCarrierReplay::test_resident_carrier_matches_replay",
+          "partial_replays_max": 2
+        },
+        "full_suite_runs_shared_with_sub2": 1,
+        "ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户选 SUB:5 方案 A：停点全套内追加 det-assoc 检测器加载 ≤ 2 次、两次零模型部分回放归本项（supervisor 会话代录）",
+        "partial_replay_items": [
+          {
+            "attribution": "本项（SUB:5 A (2)），不计入、不消费 P1-ENG-ACQ-001",
+            "basis": "_acq_ready() 跑前成立、未出现在失败列表；按门成立保守计 2（无 -v 不能逐名区分通过与跳过）",
+            "count": 2,
+            "dispatch_id": "P1-ENG-JET-001-K1K3K4全套CPU1-20261003T205839Z-8433",
+            "frames_each": 60,
+            "kind": "mac_sub5_partial_replay",
+            "models": 0,
+            "recorded_utc": "2026-10-03T21:11:57Z",
+            "test": "tests/test_det_assoc_carrier.py::ResidentCarrierReplay::test_resident_carrier_matches_replay"
+          }
+        ],
+        "partial_replays": 2,
+        "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:5",
+        "signed": true,
+        "within": true
+      },
+      "sub6": {
+        "exhausted": {
+          "csrt_construct_attempts": "上界 2/2",
+          "det_assoc_cpu_loads": "2/2 已耗尽",
+          "full_suite_runs": "1/1 已耗尽",
+          "nanotrack_construct_attempts": "上界 2/2",
+          "partial_replays": "2/2 已耗尽"
+        },
+        "full_suite_log": "docs/evidence/P1-ENG-JET-001-SUB6-full-suite.log",
+        "items": [
+          {
+            "auto_install_branch": "last.pt data.pkl 的 GLOBAL/STACK_GLOBAL 模块在数据根 site-packages 全部 find_spec 可定位（__builtin__ 为 pickle 兼容映射），不触发自动安装（未反序列化）",
+            "conclusion": "可跑（各维度预计不超 SUB:6；无需安装/下载；NanoTrack 读权重 0；CSRT 实例 0）",
+            "csrt": "预计构造尝试 ≤ 2、实例 0：cv2 无 TrackerCSRT_create 且无 cv2.legacy",
+            "det_assoc": "预计 2：CarrierSelfTest 两例 DetAssocTracker(spec_path=SPEC, device='cpu') 真实默认加载器；门 _ready 成立（权重 outputs/eng-det/runs/run-1/weights/last.pt sha d6a0d6a9… 与冻结规格一致、数据根帧存在）；其余 DetAssocTracker 构造均注入 model_loader",
+            "device": "Carrier/Resident 显式 cpu；全套内无走 _resolve_device 的真实推理；MPS 可用但不用",
+            "env_vars": "不附加；会话环境原有 PYTHONDONTWRITEBYTECODE=1（非本轮设置，披露）；未设 ENG_DET_DATA_ROOT/YOLO_OFFLINE",
+            "event": "mac_full_suite_precheck_sub6",
+            "expected_increment": "< 0.1 MB（CPU1 全套 eng-jet 增量约 9.1 KB）",
+            "expected_wall": "全套约 4 min + 跑前核对约 1 min，合计 ≤ 15 min",
+            "interpreter": "~/TetheredDroneTracking-full/.venv-yoloe/bin/python 3.12.14；cv2 5.0.0 无 TrackerCSRT_create；torch 2.13.0 MPS 可用；ultralytics 8.4.104",
+            "kind": "note",
+            "machine": "zc5s-Mac-mini.local",
+            "nanotrack": "预计构造尝试 ≤ 2、读权重 0：主树 runtime/ 仅 README.md，无 runtime/models/nanotrack-v2/",
+            "outputs_before": {
+              "outputs_all_bytes": 1139564987,
+              "outputs_eng_jet_bytes": 70231574
+            },
+            "partial_replays": "预计 2（ResidentCarrierReplay 单例记 2 次各 60 帧零模型回放，缓存替身；门 _acq_ready 成立：数据根 scout-1 帧目录存在），归本项、不扣 ACQ-001",
+            "pip_download_board_sr": 0,
+            "precheck_start_utc": "2026-10-04T01:54:09Z",
+            "recorded_utc": "2026-10-04T01:55:14Z",
+            "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:6",
+            "round": "K1K3K4全套SUB6",
+            "sub": "SUB:6",
+            "tests_diff_since_cpu1_start": "仅 tools/eng_jet/{assets,evidence,ledger,relay}.py 与 tests/test_eng_jet_{guards,relay}.py（R1-1…4 补丁）；新增行无真实加载器/子进程模型加载（grep YOLO/torch/create_tracker/DetAssoc/cv2/onnx/subprocess）",
+            "yoloe_dinov2_other": "0：主树无 runtime/yoloe、runtime/models；scene006 首检 YOLOE 权重哈希拒绝"
+          },
+          {
+            "command": "~/TetheredDroneTracking-full/.venv-yoloe/bin/python -m unittest discover -s tests > docs/evidence/P1-ENG-JET-001-SUB6-full-suite.log 2>&1",
+            "csrt_construct_attempts_upper": 2,
+            "csrt_instances": 0,
+            "det_assoc_basis": "CarrierSelfTest 两例显式 cpu 构造；首例失败在构造之后（line 141 逐帧比较），次例无失败记录",
+            "det_assoc_loads": 2,
+            "dinov2": 0,
+            "end_utc": "2026-10-04T01:59:14Z",
+            "event": "mac_full_suite_run_sub6",
+            "exit_code": 1,
+            "kind": "note",
+            "nanotrack_construct_attempts_upper": 2,
+            "nanotrack_weight_reads": 0,
+            "other_models": 0,
+            "outputs_after_run": {
+              "outputs_all_bytes": 1139567380,
+              "outputs_eng_jet_bytes": 70233967
+            },
+            "outputs_increment_note": "+2,393 B，恰为跑前核对 note 事件一行；全套本身对 outputs/ 增量 0 B",
+            "partial_replay_basis": "ResidentCarrierReplay 门成立、无失败记录，按测试文档每次运行 2 次各 60 帧零模型回放计（保守读法）",
+            "partial_replays": 2,
+            "pip_download_board_sr": 0,
+            "recorded_utc": "2026-10-04T01:59:58Z",
+            "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:6",
+            "rerun": false,
+            "round": "K1K3K4全套SUB6",
+            "start_utc": "2026-10-04T01:55:20Z",
+            "sub": "SUB:6",
+            "summary": "Ran 2146 tests in 231.849s / FAILED (failures=27, errors=10, skipped=56)",
+            "tested_head": "1395059 (运行时：git log 主题 ^P1-ENG-JET-001 K1K3K4全套SUB6 supervisor 派发登记：started；工作树干净)",
+            "wall_precheck_start_to_run_end_s": 305,
+            "yoloe": 0
+          }
+        ],
+        "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:6",
+        "signed": true,
+        "used": {
+          "csrt_construct_attempts": 2,
+          "csrt_construct_attempts_basis": "静态上界，未插桩（两入口均以 cv2 无 TrackerCSRT_create 失败）",
+          "csrt_instances": 0,
+          "det_assoc_cpu_loads": 2,
+          "dinov2_loads": 0,
+          "downloads": 0,
+          "full_suite_runs": 1,
+          "mps_inference": 0,
+          "nanotrack_construct_attempts": 2,
+          "nanotrack_construct_attempts_basis": "静态上界，未插桩",
+          "nanotrack_weight_reads": 0,
+          "other_model_loads": {},
+          "outputs_all_bytes": {
+            "after_run": 1139567380,
+            "basis": "主树 outputs/ 全部常规文件字节和（os.walk，不跟符号链接）",
+            "before": 1139564987
+          },
+          "outputs_eng_jet_bytes": {
+            "after_accounting": 70235427,
+            "after_run": 70233967,
+            "basis": "common.disk_usage_bytes(outputs/eng-jet)；增量全部为本轮两条 SUB:6 note 事件行（2,393 B + 1,460 B），全套本身对 outputs/ 增量 0 B",
+            "before": 70231574,
+            "increment_total": 3853
+          },
+          "partial_replays": 2,
+          "partial_replays_basis": "ResidentCarrierReplay 门成立、失败列表无该例，按测试每次运行 2 次各 60 帧零模型回放保守计；未插桩、未逐名区分执行/跳过（skip 聚合 56 与 CPU1 相同）",
+          "pip": 0,
+          "reruns": 0,
+          "sr_rounds": 0,
+          "to_board_bytes": 0,
+          "wall_clock": {
+            "accounting_end_utc": "2026-10-04T01:59:58Z",
+            "basis": "跑前核对开始取自本轮首条核对命令的 date -u；开工读文档的时间不计入",
+            "precheck_start_utc": "2026-10-04T01:54:09Z",
+            "run_end_utc": "2026-10-04T01:59:14Z",
+            "run_start_utc": "2026-10-04T01:55:20Z",
+            "seconds_precheck_to_accounting_end": 349,
+            "seconds_precheck_to_run_end": 305
+          },
+          "yoloe_loads": 0
+        },
+        "within": true,
+        "within_basis": "只比较本块已记账数量与 SUB:6 各上限（NanoTrack/CSRT/回放为静态上界或保守读数）；不检测执行设备、网络外联或系统设置；不并入顶层 within_envelope 与 mac.models（SUB:2/SUB:5 已用计数不覆盖、不重复扣）"
+      }
+    },
+    "model_api": 0,
+    "model_downloads": {
+      "bytes": 0,
+      "items": [],
+      "limit": 0,
+      "used": 0
+    },
+    "public_release": "no",
+    "quant_host": {
+      "gpu_h": 0,
+      "instances": [],
+      "limit": 0,
+      "usd": 0
+    },
+    "scenario_session_run_ids": 0,
+    "sr_rounds": {
+      "items": [
+        {
+          "bytes": 59136004,
+          "bytes_basis": "前向负载 55,533,238 B + 回程负载 559,556 B + 每消息头 ≤400 B 上界（含心跳）；对时 UDP 可忽略",
+          "end_utc": "2026-10-02T19:40:01Z",
+          "frames_replayed": 1500,
+          "kind": "sr_round",
+          "label": "tailscale-smoke-1",
+          "link": "Tailscale（桌面机 Mac ↔ Jetson 100.100.100.100）",
+          "mode": "TAILSCALE_SMOKE",
+          "recorded_utc": "2026-10-02T19:44:44Z",
+          "start_utc": "2026-10-02T19:32:59Z"
+        },
+        {
+          "bytes": 60568780,
+          "bytes_basis": "前向负载 + 回程负载 + 每消息头 ≤400 B 上界（含双向心跳）；对时 UDP 可忽略",
+          "end_utc": "2026-10-03T16:35:18Z",
+          "frames_replayed": 1500,
+          "kind": "sr_round",
+          "label": "f1-echo",
+          "link": "有线直连（Mac mini 192.168.8.1 ↔ Jetson 192.168.8.2，板侧中继 bind 192.168.8.2）",
+          "mode": "FORMAL_WIRED_ECHO",
+          "outcome": "STOP(RELAY_INTEGRITY)：桌面机中继转发残留旧会话 latest.json，本会话帧全部按顺序违反被拒；返工后重跑（计入轮数）",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "start_utc": "2026-10-03T16:29:48Z"
+        },
+        {
+          "bytes": 61704978,
+          "bytes_basis": "前向负载 + 回程负载 + 每消息头 ≤400 B 上界（含双向心跳）；对时 UDP 可忽略",
+          "end_utc": "2026-10-03T16:43:35Z",
+          "frames_replayed": 1500,
+          "kind": "sr_round",
+          "label": "f2-echo",
+          "link": "有线直连（Mac mini 192.168.8.1 ↔ Jetson 192.168.8.2，板侧中继 bind 192.168.8.2）",
+          "mode": "FORMAL_WIRED_ECHO",
+          "outcome": "forward 全程零链路事件；回声应答",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "start_utc": "2026-10-03T16:38:05Z"
+        },
+        {
+          "bytes": 60562705,
+          "bytes_basis": "前向负载 + 回程负载 + 每消息头 ≤400 B 上界（含双向心跳）；对时 UDP 可忽略",
+          "end_utc": "2026-10-03T16:50:49Z",
+          "frames_replayed": 1500,
+          "kind": "sr_round",
+          "label": "f3-track",
+          "link": "有线直连（Mac mini 192.168.8.1 ↔ Jetson 192.168.8.2，板侧中继 bind 192.168.8.2）",
+          "mode": "FORMAL_WIRED_TRACK",
+          "outcome": "forward 全程零链路事件；真实 TrackLoop + 方形 TRT FP16 插件",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "start_utc": "2026-10-03T16:45:16Z"
+        },
+        {
+          "bytes": 48696714,
+          "bytes_basis": "前向负载 + 回程负载 + 每消息头 ≤400 B 上界（含双向心跳）；对时 UDP 可忽略",
+          "end_utc": "2026-10-03T17:00:05Z",
+          "frames_replayed": 1500,
+          "kind": "sr_round",
+          "label": "f4-track-drops",
+          "link": "有线直连（Mac mini 192.168.8.1 ↔ Jetson 192.168.8.2，板侧中继 bind 192.168.8.2）",
+          "mode": "FORMAL_WIRED_TRACK_DISCONNECT",
+          "outcome": "有意断链轮：软件定时断链 10 s（60 s 处）+ 60 s（160 s 处），双通道与对时同断（IR-8 / D5）；真实 TrackLoop",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "start_utc": "2026-10-03T16:54:35Z"
+        }
+      ],
+      "limit_bytes_each": 100000000,
+      "limit_rounds": 5,
+      "limit_tailscale_smoke": 1,
+      "rounds": 5,
+      "tailscale_smoke_rounds": 1
+    },
+    "sub1_torch": {
+      "disk_items": [
+        {
+          "at_utc": "2026-10-02T23:08:09Z",
+          "basis": "du -sb ~/eng-jet 774,399,627 − 本轮开工前 240,491,182（含 sysvenv 13,271,416、wheels/sub1 520,271,881、日志与代码更新件）",
+          "kind": "sub1_disk",
+          "new_disk_bytes": 533908445,
+          "recorded_utc": "2026-10-02T23:09:11Z"
+        },
+        {
+          "at_utc": "2026-10-02T23:44:16Z",
+          "basis": "du -sb ~/eng-jet 7,783,123,942 − 补跑B开工前 240,491,182（保守：含 sysvenv 4,687,931,480 中 ultralytics/onnx 等既有 pip 维度件与 wheels/ 下 onnx/protobuf 轮子、日志）；wheels/sub1 2,836,341,094 留存",
+          "kind": "sub1_disk",
+          "new_disk_bytes": 7542632760,
+          "recorded_utc": "2026-10-02T23:45:22Z"
+        },
+        {
+          "at_utc": "2026-10-03T00:34:37Z",
+          "basis": "IR-16 (d) 重计：本轮末 du -sb ~/eng-jet 5,166,250,022 − 补跑B开工前 240,491,182（保守：含两版引擎/ONNX/plan 约 55 MB、CUDA JIT 缓存 ~/eng-jet/home/cuda-cache 174,763,394 B、日志）；wheels/sub1 已清空",
+          "kind": "sub1_disk",
+          "new_disk_bytes": 4925758840,
+          "recorded_utc": "2026-10-03T00:36:01Z",
+          "round": "K1K3K4补跑D"
+        },
+        {
+          "at_utc": "2026-10-03T05:21:21Z",
+          "basis": "本轮末（容器 venv 删除后）du -sb ~/eng-jet 5,070,463,807 − 补跑B开工前 240,491,182（保守口径同补跑D：含引擎/ONNX、CUDA JIT 缓存、日志与本轮 S2 原始读数 ~5 MB）",
+          "kind": "sub1_disk",
+          "new_disk_bytes": 4829972625,
+          "recorded_utc": "2026-10-03T05:22:33Z",
+          "round": "K1K3K4补跑E"
+        }
+      ],
+      "download_bytes": 5616357711,
+      "download_bytes_basis": "max(轮子字节合计, 板上网卡收包增量)",
+      "items": [
+        {
+          "at_utc": "2026-10-02T23:05:27Z",
+          "kind": "sub1_pip",
+          "package": "torch",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://download.pytorch.org/whl/cu130",
+          "status": "downloaded_kept（~/eng-jet/wheels/sub1，sha 与提案题 4 索引页 sha 一致）；未安装",
+          "version": "2.9.1+cu130",
+          "wheel": "torch-2.9.1+cu130-cp312-cp312-manylinux_2_28_aarch64.whl",
+          "wheel_bytes": 512448274,
+          "wheel_sha256": "6e7f84cb10c7e7d9f862c318f056d64840544ab4f0bcbf8cf7ed6047fe04051f"
+        },
+        {
+          "at_utc": "2026-10-02T23:05:27Z",
+          "kind": "sub1_pip",
+          "package": "torchvision",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://download.pytorch.org/whl/cu130",
+          "status": "downloaded_kept（~/eng-jet/wheels/sub1，sha 与提案题 4 索引页 sha 一致）；未安装",
+          "version": "0.24.1",
+          "wheel": "torchvision-0.24.1-cp312-cp312-manylinux_2_28_aarch64.whl",
+          "wheel_bytes": 7823607,
+          "wheel_sha256": "89743dcee13e943f58b37c7647aff14b5bb24c11c84826376d457acf97586fec"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "torchvision",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）；PyPI 版 torchvision（与 cu130 版同名不同 sha），解析器取 PyPI 候选",
+          "version": "0.24.1",
+          "wheel": "torchvision-0.24.1-cp312-cp312-manylinux_2_28_aarch64.whl",
+          "wheel_bytes": 2386737,
+          "wheel_sha256": "7fb7590c737ebe3e1c077ad60c0e5e2e56bb26e7bccc3b9d04dbfc34fd09f050"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cublas",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "13.0.0.19",
+          "wheel": "nvidia_cublas-13.0.0.19-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 539001158,
+          "wheel_sha256": "381b1a0ca636fdcb6920a871e8fc89dbfd1f6157f421ed0a6f2673e14cffd3bd"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-cupti",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "13.0.48",
+          "wheel": "nvidia_cuda_cupti-13.0.48-py3-none-manylinux_2_25_aarch64.whl",
+          "wheel_bytes": 10171189,
+          "wheel_sha256": "67c22627ef436afcf080b48e4ad17b3f83d9e7c0d990ad0c6c0627b01fb92ccc"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-nvrtc",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "13.0.48",
+          "wheel": "nvidia_cuda_nvrtc-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 43013627,
+          "wheel_sha256": "6ccf1ef1b90a0763ac7536f3c17046659d89869d76b98ac358efc2e09b348365"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-runtime",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "13.0.48",
+          "wheel": "nvidia_cuda_runtime-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 2260687,
+          "wheel_sha256": "b807c0bb925a307bfa667a24f24d253aef8eda3ac4be66b333f2c9d357557008"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cudnn-cu13",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "9.13.0.50",
+          "wheel": "nvidia_cudnn_cu13-9.13.0.50-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 412337597,
+          "wheel_sha256": "33f0aa0b64230101b348648fd0693342188071d3f8a137c0cf50051c24b3584b"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cufft",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "12.0.0.15",
+          "wheel": "nvidia_cufft-12.0.0.15-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 214053580,
+          "wheel_sha256": "1885731254835797572ff075f3daf43a2a0a2801210dea26971940dae7e1a367"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cufile",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "1.15.0.42",
+          "wheel": "nvidia_cufile-1.15.0.42-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 1136527,
+          "wheel_sha256": "bced4036b5a8dbf57e4d78cd4fafefec58ad754b784a9eaa272b011896754c62"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-curand",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "10.4.0.35",
+          "wheel": "nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 61962106,
+          "wheel_sha256": "133df5a7509c3e292aaa2b477afd0194f06ce4ea24d714d616ff36439cee349a"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusolver",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "12.0.3.29",
+          "wheel": "nvidia_cusolver-12.0.3.29-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 193104180,
+          "wheel_sha256": "3bb6e65ce0beaeafdd069b320246e8f17c1cd30ddb27a0539143a3706733a4d8"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusparse",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "12.6.2.49",
+          "wheel": "nvidia_cusparse-12.6.2.49-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 155888587,
+          "wheel_sha256": "5d3269c19283a0057fb5ebfb003ae2a10c97a28a6958f4238354826b055827c7"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusparselt-cu13",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "0.8.0",
+          "wheel": "nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_aarch64.whl",
+          "wheel_bytes": 220791277,
+          "wheel_sha256": "400c6ed1cf6780fc6efedd64ec9f1345871767e6a1a0a552a1ea0578117ea77c"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-nccl-cu13",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "2.27.7",
+          "wheel": "nvidia_nccl_cu13-2.27.7-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 194014855,
+          "wheel_sha256": "5e3cc863e52bf9dd1e3ab1941bddb414098f489ae7342f6b3a274602303da123"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvjitlink",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "13.0.39",
+          "wheel": "nvidia_nvjitlink-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 38767126,
+          "wheel_sha256": "ce0d63fa5ebedf542056e7491c49feed2297c900980aa6269b6a55f478056ad7"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvshmem-cu13",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "3.3.24",
+          "wheel": "nvidia_nvshmem_cu13-3.3.24-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 60168129,
+          "wheel_sha256": "28ae82a4d14b322b93409535de62df6b7b83f4f7672ca97fc89107c2d40ce2c2"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvtx",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "13.0.39",
+          "wheel": "nvidia_nvtx-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 148037,
+          "wheel_sha256": "cddd2e08b35144f1000631c3880c9ebbcb8a2863d762e76f92d47d30ecaf87cc"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "triton",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "3.5.1",
+          "wheel": "triton-3.5.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "wheel_bytes": 159940689,
+          "wheel_sha256": "275a045b6ed670dd1bd005c3e6c2d61846c74c66f4512d6f33cc027b11de8fd4"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "fsspec",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "2026.9.0",
+          "wheel": "fsspec-2026.9.0-py3-none-any.whl",
+          "wheel_bytes": 221738,
+          "wheel_sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "networkx",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "3.7",
+          "wheel": "networkx-3.7-py3-none-any.whl",
+          "wheel_bytes": 2142205,
+          "wheel_sha256": "e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "sympy",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "1.14.0",
+          "wheel": "sympy-1.14.0-py3-none-any.whl",
+          "wheel_bytes": 6299353,
+          "wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "filelock",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "4.0.9",
+          "wheel": "filelock-4.0.9-py3-none-any.whl",
+          "wheel_bytes": 110368,
+          "wheel_sha256": "9287fd61b99a806e5202be29a83034c0808a1b9830e820537c2f5773981f7eeb"
+        },
+        {
+          "at_utc": "2026-10-02T23:07:08Z",
+          "bytes_basis": "PyPI JSON size（字节精确，sha 与 pip 报告 hashes 一致）",
+          "kind": "sub1_pip",
+          "package": "mpmath",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "source": "https://pypi.org/simple",
+          "status": "fetched_by_dry_run_discarded（pip 24.0 install --dry-run --report --no-cache-dir 取回轮子体到临时目录后删除；未安装）",
+          "version": "1.3.0",
+          "wheel": "mpmath-1.3.0-py3-none-any.whl",
+          "wheel_bytes": 536198,
+          "wheel_sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+        },
+        {
+          "at_utc": "2026-10-02T23:38:40Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cublas",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 586669374,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "13.0.0.19",
+          "wheel": "nvidia_cublas-13.0.0.19-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 539001158,
+          "wheel_sha256": "381b1a0ca636fdcb6920a871e8fc89dbfd1f6157f421ed0a6f2673e14cffd3bd"
+        },
+        {
+          "at_utc": "2026-10-02T23:38:41Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-cupti",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 11081148,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "13.0.48",
+          "wheel": "nvidia_cuda_cupti-13.0.48-py3-none-manylinux_2_25_aarch64.whl",
+          "wheel_bytes": 10171189,
+          "wheel_sha256": "67c22627ef436afcf080b48e4ad17b3f83d9e7c0d990ad0c6c0627b01fb92ccc"
+        },
+        {
+          "at_utc": "2026-10-02T23:38:44Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-nvrtc",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 46796075,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "13.0.48",
+          "wheel": "nvidia_cuda_nvrtc-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 43013627,
+          "wheel_sha256": "6ccf1ef1b90a0763ac7536f3c17046659d89869d76b98ac358efc2e09b348365"
+        },
+        {
+          "at_utc": "2026-10-02T23:38:45Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-runtime",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 2478477,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "13.0.48",
+          "wheel": "nvidia_cuda_runtime-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 2260687,
+          "wheel_sha256": "b807c0bb925a307bfa667a24f24d253aef8eda3ac4be66b333f2c9d357557008"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:03Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cudnn-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 448828079,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "9.13.0.50",
+          "wheel": "nvidia_cudnn_cu13-9.13.0.50-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 412337597,
+          "wheel_sha256": "33f0aa0b64230101b348648fd0693342188071d3f8a137c0cf50051c24b3584b"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:13Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cufft",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 232993149,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "12.0.0.15",
+          "wheel": "nvidia_cufft-12.0.0.15-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 214053580,
+          "wheel_sha256": "1885731254835797572ff075f3daf43a2a0a2801210dea26971940dae7e1a367"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:14Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cufile",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 1253668,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "1.15.0.42",
+          "wheel": "nvidia_cufile-1.15.0.42-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 1136527,
+          "wheel_sha256": "bced4036b5a8dbf57e4d78cd4fafefec58ad754b784a9eaa272b011896754c62"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:17Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-curand",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 67399016,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "10.4.0.35",
+          "wheel": "nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 61962106,
+          "wheel_sha256": "133df5a7509c3e292aaa2b477afd0194f06ce4ea24d714d616ff36439cee349a"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:26Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusolver",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 210321228,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "12.0.3.29",
+          "wheel": "nvidia_cusolver-12.0.3.29-py3-none-manylinux_2_27_aarch64.whl",
+          "wheel_bytes": 193104180,
+          "wheel_sha256": "3bb6e65ce0beaeafdd069b320246e8f17c1cd30ddb27a0539143a3706733a4d8"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusparse",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 169928858,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "12.6.2.49",
+          "wheel": "nvidia_cusparse-12.6.2.49-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 155888587,
+          "wheel_sha256": "5d3269c19283a0057fb5ebfb003ae2a10c97a28a6958f4238354826b055827c7"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:44Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusparselt-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 240531311,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "0.8.0",
+          "wheel": "nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_aarch64.whl",
+          "wheel_bytes": 220791277,
+          "wheel_sha256": "400c6ed1cf6780fc6efedd64ec9f1345871767e6a1a0a552a1ea0578117ea77c"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:53Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nccl-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 211320307,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "2.27.7",
+          "wheel": "nvidia_nccl_cu13-2.27.7-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 194014855,
+          "wheel_sha256": "5e3cc863e52bf9dd1e3ab1941bddb414098f489ae7342f6b3a274602303da123"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:55Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvjitlink",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 42272803,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "13.0.39",
+          "wheel": "nvidia_nvjitlink-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 38767126,
+          "wheel_sha256": "ce0d63fa5ebedf542056e7491c49feed2297c900980aa6269b6a55f478056ad7"
+        },
+        {
+          "at_utc": "2026-10-02T23:39:59Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvshmem-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 65638539,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "3.3.24",
+          "wheel": "nvidia_nvshmem_cu13-3.3.24-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 60168129,
+          "wheel_sha256": "28ae82a4d14b322b93409535de62df6b7b83f4f7672ca97fc89107c2d40ce2c2"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:00Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvtx",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 181050,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "13.0.39",
+          "wheel": "nvidia_nvtx-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+          "wheel_bytes": 148037,
+          "wheel_sha256": "cddd2e08b35144f1000631c3880c9ebbcb8a2863d762e76f92d47d30ecaf87cc"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:08Z",
+          "kind": "sub1_pip",
+          "package": "triton",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 174062577,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "3.5.1",
+          "wheel": "triton-3.5.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "wheel_bytes": 159940689,
+          "wheel_sha256": "275a045b6ed670dd1bd005c3e6c2d61846c74c66f4512d6f33cc027b11de8fd4"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:09Z",
+          "kind": "sub1_pip",
+          "package": "fsspec",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 281730,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "2026.9.0",
+          "wheel": "fsspec-2026.9.0-py3-none-any.whl",
+          "wheel_bytes": 221738,
+          "wheel_sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:10Z",
+          "kind": "sub1_pip",
+          "package": "networkx",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 2376895,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "3.7",
+          "wheel": "networkx-3.7-py3-none-any.whl",
+          "wheel_bytes": 2142205,
+          "wheel_sha256": "e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:12Z",
+          "kind": "sub1_pip",
+          "package": "sympy",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 6977513,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "1.14.0",
+          "wheel": "sympy-1.14.0-py3-none-any.whl",
+          "wheel_bytes": 6299353,
+          "wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:13Z",
+          "kind": "sub1_pip",
+          "package": "filelock",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 166976,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "4.0.9",
+          "wheel": "filelock-4.0.9-py3-none-any.whl",
+          "wheel_bytes": 110368,
+          "wheel_sha256": "9287fd61b99a806e5202be29a83034c0808a1b9830e820537c2f5773981f7eeb"
+        },
+        {
+          "at_utc": "2026-10-02T23:40:14Z",
+          "kind": "sub1_pip",
+          "package": "mpmath",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_delta": 610205,
+          "source": "https://pypi.org/simple",
+          "status": "downloaded_kept（K1K3K4补跑C：pip download --no-deps --only-binary=:all: --no-cache-dir，sha256 哈希锁定；~/eng-jet/wheels/sub1）",
+          "version": "1.3.0",
+          "wheel": "mpmath-1.3.0-py3-none-any.whl",
+          "wheel_bytes": 536198,
+          "wheel_sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "torch",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "2.9.1+cu130",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "torchvision",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "0.24.1",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cublas",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "13.0.0.19",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-cupti",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "13.0.48",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-nvrtc",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "13.0.48",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cuda-runtime",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "13.0.48",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cudnn-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "9.13.0.50",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cufft",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "12.0.0.15",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cufile",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "1.15.0.42",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-curand",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "10.4.0.35",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusolver",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "12.0.3.29",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusparse",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "12.6.2.49",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-cusparselt-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "0.8.0",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nccl-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "2.27.7",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvjitlink",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "13.0.39",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvshmem-cu13",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "3.3.24",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "nvidia-nvtx",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "13.0.39",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "triton",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "3.5.1",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "fsspec",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "2026.9.0",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "networkx",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "3.7",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "sympy",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "1.14.0",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "filelock",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "4.0.9",
+          "wheel_bytes": 0
+        },
+        {
+          "at_utc": "2026-10-02T23:41:33Z",
+          "kind": "sub1_pip",
+          "package": "mpmath",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "status": "installed（pip install --no-index --find-links wheels/sub1 按文件路径锁定官方 cu130 torch/torchvision；离线，零新增下载）",
+          "version": "1.3.0",
+          "wheel_bytes": 0
+        }
+      ],
+      "limit_download_bytes": 6500000000,
+      "limit_new_disk_bytes": 8000000000,
+      "limit_packages": 32,
+      "network_items": [
+        {
+          "breakdown": {
+            "after": 49359,
+            "baseline_to_download_start": 21343,
+            "between": 11377,
+            "dry_run": 2524864120,
+            "torch_torchvision_download": 568663496
+          },
+          "interface": "wlP1p1s0（板上唯一外网接口；tailscale0 封装于其内，不重复计）",
+          "kind": "sub1_network",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "rx_bytes": 3093609695,
+          "source": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-{0,1a,1b,2a,2b,3}.txt（/proc/net/dev rx_bytes 差）",
+          "window_utc": [
+            "2026-10-02T23:04:47Z",
+            "2026-10-02T23:08:09Z"
+          ]
+        },
+        {
+          "breakdown": {
+            "after": 146464,
+            "baseline_to_download_start": 417272,
+            "between": 14846,
+            "dep_download": 2522169434
+          },
+          "excluded": {
+            "onnx_protobuf_download_board_pip": 19807906
+          },
+          "interface": "wlP1p1s0（板上唯一外网接口；tailscale0 封装于其内，不重复计）",
+          "kind": "sub1_network",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "rx_bytes": 2522748016,
+          "source": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-{0,1a,1b,2a,2b,3}.txt"
+        }
+      ],
+      "network_rx_bytes": 5616357711,
+      "new_disk_bytes": 4829972625,
+      "package_names": [
+        "filelock",
+        "fsspec",
+        "mpmath",
+        "networkx",
+        "nvidia-cublas",
+        "nvidia-cuda-cupti",
+        "nvidia-cuda-nvrtc",
+        "nvidia-cuda-runtime",
+        "nvidia-cudnn-cu13",
+        "nvidia-cufft",
+        "nvidia-cufile",
+        "nvidia-curand",
+        "nvidia-cusolver",
+        "nvidia-cusparse",
+        "nvidia-cusparselt-cu13",
+        "nvidia-nccl-cu13",
+        "nvidia-nvjitlink",
+        "nvidia-nvshmem-cu13",
+        "nvidia-nvtx",
+        "sympy",
+        "torch",
+        "torchvision",
+        "triton"
+      ],
+      "packages": 23,
+      "signed_used": true,
+      "wheel_bytes": 5154797044,
+      "within": true
+    },
+    "system_settings": {
+      "changed": [],
+      "note": "只读核验；未执行 sudo / nvpmodel -m / systemctl isolate / jetson_clocks"
+    },
+    "to_board_transfer": {
+      "bytes": 18870709,
+      "items": [
+        {
+          "at_utc": "2026-10-02T19:32:48Z",
+          "bytes": 61440,
+          "kind": "to_board_transfer",
+          "label": "代码束 eng-jet-code.tar（tools/eng_jet 中继件 + controller 写桥函数）",
+          "recorded_utc": "2026-10-02T19:35:37Z",
+          "sha256": "7fe60013eedb51d29e3a6e72cb5f7df267fdfc8c7ad9afaf08c140591d158218"
+        },
+        {
+          "at_utc": "2026-10-02T21:13:35Z",
+          "bytes": 17858560,
+          "kind": "to_board_transfer",
+          "label": "S1/S2 到板件 eng-jet-s1s2.tar（tools/eng_jet 线束 + controller 冻结插件 + 规格/freeze/last.pt/frozen-V + a7 帧 0..320 JPEG）",
+          "recorded_utc": "2026-10-02T21:18:52Z",
+          "sha256": "f4c0c8e31bf395ddfbb73e85937fd6a944e45f09d745695413b3a72cdb7351dc"
+        },
+        {
+          "at_utc": "2026-10-02T23:04:47Z",
+          "bytes": 194560,
+          "kind": "to_board_transfer",
+          "label": "K1K3K4补跑B 代码更新件 eng-jet-s1s2-code.tar（tools/eng_jet 线束 + controller 冻结插件 + 规格/freeze；冻结资产与帧已在板上，逐文件 sha 复核）",
+          "recorded_utc": "2026-10-02T23:09:11Z",
+          "sha256": "12f4c3d02ebfb7682c882f744bb8653888e881a974348f8cff982db66230515c"
+        },
+        {
+          "at_utc": "2026-10-02T23:37:19Z",
+          "bytes": 194560,
+          "kind": "to_board_transfer",
+          "label": "K1K3K4补跑C 代码更新件 eng-jet-s1s2-code-c.tar（开工提交的线束/插件/规格/freeze；板上 11 文件 sha 复核全一致）",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "sha256": "3f75d3a168323cd89ef82dfb996eddccf74815aafb9d4a4d1619f11a8feaeeea"
+        },
+        {
+          "at_utc": "2026-10-02T23:38:16Z",
+          "bytes": 5355,
+          "kind": "to_board_transfer",
+          "label": "K1K3K4补跑C 取回脚本 sub1-fetch.sh + 依赖清单 sub1-deps.tsv（逐文件 sha 见 -env.json s1s2_system_stack_c.raw）",
+          "recorded_utc": "2026-10-02T23:45:22Z",
+          "sha256": null
+        },
+        {
+          "at_utc": "2026-10-03T04:50:15Z",
+          "bytes": 1469,
+          "kind": "to_board_transfer",
+          "label": "运行脚本 env.sh（275 B）+ run-s2.sh（1,194 B），经 ssh 标准输入写入 ~/eng-jet/logs/s2-system-e/（无代码、无资产上板）",
+          "recorded_utc": "2026-10-03T05:22:33Z",
+          "round": "K1K3K4补跑E",
+          "sha256": "env.sh 316c0f81c4a0bf594f76dbc90987e45269711034abb3e70ea678fd1b1c75b56a; run-s2.sh 0a941ceaf0b246b40f3f8bbf2b22b47bf307539f45344108668cf973d1c94265"
+        },
+        {
+          "at_utc": "2026-10-03T16:29:07Z",
+          "bytes": 552960,
+          "kind": "to_board_transfer",
+          "label": "SR 到板件 eng-jet-sr-code-f.tar（tools/eng_jet 中继/应答器线束 + TrackLoop 导入链 controller 原件 + 规格；逐文件 sha 见 -assets.json bundle_sr_f）",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "sha256": "9a6106db9920d1cb759e2f79d81d27a1dfee4691b35bab8a3cb2dd3ac71323f8"
+        },
+        {
+          "at_utc": "2026-10-03T16:29:07Z",
+          "bytes": 1805,
+          "kind": "to_board_transfer",
+          "label": "运行脚本 env.sh（275 B）+ run-sr.sh（1,530 B），经 ssh 标准输入写入 ~/eng-jet/logs/sr-f/",
+          "recorded_utc": "2026-10-03T17:03:03Z",
+          "round": "K1K3K4补跑F",
+          "sha256": "env.sh 316c0f81c4a0bf594f76dbc90987e45269711034abb3e70ea678fd1b1c75b56a; run-sr.sh e3509f9446b60d4d58a76cb1847a5057a5c753ead11f6e26a881223045b99e5d"
+        }
+      ],
+      "limit_bytes": 100000000
+    },
+    "training_gpu_h": 0,
+    "unity_play": 0
+  },
+  "envelope": {
+    "effective": {
+      "board_disk_bytes_max": 5000000000,
+      "board_pip_bytes_max": 300000000,
+      "board_pip_packages_max": 8,
+      "board_vlm_queries": 0,
+      "board_wall_s_max": 28800,
+      "consuming": "no",
+      "engine_export_wall_s_max_each": 1200,
+      "mac_models": 0,
+      "mac_outputs_bytes_max": 2000000000,
+      "mac_pip": 0,
+      "model_api": 0,
+      "model_downloads": 0,
+      "public_release": "no",
+      "quant_host_gpu_h": 0,
+      "scenario_session_run_ids": 0,
+      "sr_round_bytes_max": 100000000,
+      "sr_rounds_max": 5,
+      "system_settings": "read-only (no systemctl isolate, no nvpmodel -m, no jetson_clocks)",
+      "tailscale_smoke_rounds_max": 1,
+      "to_board_bytes_max": 100000000,
+      "training_gpu_h": 0,
+      "unity_play": 0
+    },
+    "source": "docs/authorizations.md 2026-09-28「P1-ENG-JET-001 — 用户签发 §5 阶段 A 执行信封…」；提案决策记录「§5 阶段 A 信封与 §7 (h)(n) 答复落实」",
+    "stage": "A",
+    "sub1": {
+      "effective": {
+        "board_disk_bytes_max_effective": 13000000000,
+        "deps_index": "https://pypi.org/simple",
+        "download_bytes_max": 6500000000,
+        "download_bytes_max_history": [
+          {
+            "source": "SUB:1 签发",
+            "value": 3500000000
+          },
+          {
+            "source": "SUB:3 签发",
+            "value": 6500000000
+          }
+        ],
+        "new_disk_bytes_max": 8000000000,
+        "packages_max": 32,
+        "pins": {
+          "torch": "2.9.1+cu130",
+          "torchvision": "0.24.1"
+        },
+        "source_index": "https://download.pytorch.org/whl/cu130"
+      },
+      "ledger_title": "2026-10-02 P1-ENG-JET-001 — 用户按申请值签发 torch/torchvision 下载与安装额度（官方 cu130 源；SUB:1；supervisor 会话代录）",
+      "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:1"
+    },
+    "sub2": {
+      "contract": "提案决策记录「SUB:2 落实：§5 Mac 与 IR-9（2026-10-03，CLARIFY）」；不是 supervisor SUB 代拍，执行信封子额度块仍未签；不把 SUB:2 读成阶段 B 已签（pending_user.n 不变）",
+      "effective": {
+        "downloads": 0,
+        "full_suite_runs_max": 1,
+        "machine": "Mac mini 本机 CPU",
+        "model_loads_max": {
+          "csrt": 2,
+          "dinov2": 2,
+          "nanotrack": 4,
+          "yoloe": 2
+        },
+        "new_models": 0,
+        "not_covered": [
+          "SR 重跑",
+          "阶段 B",
+          "§7 (i)–(m)",
+          "S3–S5"
+        ],
+        "other_models_max": 0,
+        "pip": 0
+      },
+      "ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户按推荐签发 SUB:2：停点全套的 Mac 本机 CPU 模型额度（一次全套）（supervisor 会话代录）",
+      "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:2"
+    },
+    "sub5": {
+      "contract": "提案决策记录「SUB:5 A 落实与 CPU 执行方案核对（2026-10-03，CLARIFY）」AC-10 修订 5 与「CPU-1 落实与下一实现范围（2026-10-03，CLARIFY）」AC-10 修订 6；用户直接签发，不是 supervisor SUB 代拍；不是阶段 B",
+      "cpu1_ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户选 SUB:5 CPU 执行方案 CPU-1：CarrierSelfTest 两例改用既存显式 CPU 构造参数（supervisor 会话代录）",
+      "effective": {
+        "acq_001": "两次部分回放不计入、不消费 P1-ENG-ACQ-001 信封，ACQ-001 暂停不变",
+        "det_assoc_loads_max": 2,
+        "det_assoc_model": "config/det-assoc-v1.models.json 冻结 weights（ultralytics YOLO）",
+        "execution": "CPU-1：CarrierSelfTest 两例 DetAssocTracker(spec_path=SPEC, device=\"cpu\")",
+        "full_suite": "与 SUB:2 共用 dimensions.mac.sub2.full_suite_runs（≤ 1），不另立全套额度",
+        "machine": "Mac mini 本机 CPU（不授权 MPS 推理）",
+        "not_covered": [
+          "MPS 推理",
+          "第二次全套",
+          "SR 重跑",
+          "阶段 B",
+          "§7 (i)–(m)",
+          "S3–S5",
+          "其他未列名模型"
+        ],
+        "partial_replay_frames_each": 60,
+        "partial_replay_test": "tests/test_det_assoc_carrier.py::ResidentCarrierReplay::test_resident_carrier_matches_replay",
+        "partial_replays_max": 2
+      },
+      "ledger_title": "2026-10-03 P1-ENG-JET-001 — 用户选 SUB:5 方案 A：停点全套内追加 det-assoc 检测器加载 ≤ 2 次、两次零模型部分回放归本项（supervisor 会话代录）",
+      "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:5"
+    },
+    "sub6": {
+      "contract": "提案决策记录「SUB:6 落实与新候选两项例外（2026-10-04，CLARIFY）」AC-10 修订 9/10、AC-13 修订 4；新候选的一次具名增量信封，不回退或转用 SUB:2/SUB:5 已用计数与旧上限；不是阶段 B",
+      "effective": {
+        "candidate": "新候选（K1K3K4R1注记修补 起）",
+        "csrt_construct_attempts_max": 2,
+        "csrt_instances_max": 0,
+        "det_assoc_cpu_loads_max": 2,
+        "dinov2_loads_max": 0,
+        "downloads": 0,
+        "full_suite_runs_max": 1,
+        "mac_outputs_increment_bytes_lt": 100000,
+        "mac_outputs_total_bytes_max": 2000000000,
+        "machine": "Mac mini 本机",
+        "mps_inference": "not_authorized",
+        "nanotrack_construct_attempts_max": 2,
+        "nanotrack_weight_reads_max": 0,
+        "other_models_max": 0,
+        "partial_replay_frames_each": 60,
+        "partial_replays_max": 2,
+        "pip": 0,
+        "second_full_suite": "not_authorized",
+        "skip_or_env_changes": "not_authorized",
+        "sr": 0,
+        "to_board": 0,
+        "wall_s_max": 900,
+        "yoloe_loads_max": 0
+      },
+      "ledger_title": "2026-10-04 P1-ENG-JET-001 — 用户签发 SUB:6（新候选停点全套，方案 (a)）并为新候选重新具名 Carrier/scene006 两项例外（supervisor 会话代录）",
+      "recorded_by": "实现角色 K1K3K4全套SUB6 手工追加（tools/eng_jet/ledger.py 无 SUB:6 维度；本轮禁止改代码，未运行 ledger build，其余字段逐字未改）",
+      "request_id": "P1-ENG-JET-001:b0a5f79c:SUB:6",
+      "scope": "授权范围 (1) 额度；(2) 新候选重新具名 Carrier（AC-10 修订 10）/scene006（AC-13 修订 4）两项例外，仅限原记录同名同类失败；(3) 用户直接签发、非 supervisor SUB 代拍、经接受落实（含 IR-26/27）后派实现"
+    }
+  },
+  "git_diff_assets_controller_config": {
+    "base": "4cbd7bd9a649af1f6e165fa4bd794a29dcc18c2d",
+    "committed_diff_stat": "",
+    "empty": true,
+    "head_at_build": "fba6e4f8c889255f2ad22cd115447f45f076f06e",
+    "paths": [
+      "Assets",
+      "controller",
+      "config"
+    ],
+    "worktree_diff_stat": ""
+  },
+  "pending_user": {
+    "h": {
+      "effect": "答复 = 按推荐接线 + 固定 IP；10-03 有线直连已接好（mini 192.168.8.1 ↔ Jetson 192.168.8.2；mini 代理经有线可达，known_hosts 已由用户授权追加，K1K3K4补跑E 以 StrictHostKeyChecking=yes 经有线 ssh 执行 S2）。现状（K1K3K4补跑F）：用户选 S2 处置 (α′) 后，正式 SR 已在该有线链路执行 4 轮（f1-echo 为 STOP(RELAY_INTEGRITY) 返工轮；f2-echo / f3-track 为 forward 零链路事件轮；f4-track-drops 为断链轮），读数见 -relay.json forward/return/disconnect；AC-4…6 是否满足由停点核对与复核判定。历史：K1K3K4补跑E 时正式 SR 尚未执行（须 S2 可继续后另派）；10-02 告知尚未接好时只跑 ≤ 1 轮 TAILSCALE_SMOKE（非结论小节，1/1 已用）",
+      "item": "中继正式链路",
+      "ledger_titles": [
+        "2026-09-28 P1-ENG-JET-001 — 用户签发 §5 阶段 A 执行信封并答复 §7 (h)(n)，(i)–(m) 暂不答复（supervisor 会话代录）",
+        "2026-10-02 P1-ENG-JET-001 — 用户告知 Jetson 配置完成、允许从 Mac mini 复制 frozen-V 缓存、有线链路未接（supervisor 会话代录）",
+        "2026-10-03 P1-ENG-JET-001 — 用户告知 Mac mini ↔ Jetson 有线直连成功（§7 (h) 答复；supervisor 会话代录）",
+        "2026-10-03 P1-ENG-JET-001 — 用户授权把 Jetson 有线地址主机密钥写入 Mac mini `~/.ssh/known_hosts`，并指示接受收工后直接派实现跑 S2（supervisor 会话代录）"
+      ],
+      "related_ledger_titles": [
+        "2026-10-03 P1-ENG-JET-001 — 用户选题 7 (α)：S1 STOP 记录偏差、以方形 FP16 引擎继续（supervisor 会话代录）",
+        "2026-10-03 P1-ENG-JET-001 — 用户选 S2 STOP 处置 (α′)：S2 记录偏差并继续，做原范围正式 SR（supervisor 会话代录）"
+      ],
+      "status": "answered"
+    },
+    "i": {
+      "effect": "不租云、不 WSL2、不合并 C2；3c、3b C2 自转 GGUF 及其 S4 零执行",
+      "item": "量化主机",
+      "status": "unanswered"
+    },
+    "j": {
+      "effect": "3a 零执行，不为 3a 下载 base",
+      "item": "S3a HF bf16 对照",
+      "status": "unanswered"
+    },
+    "k": {
+      "effect": "不重刷（S0 实测为 Super，未触发）",
+      "item": "S0 非 Super 配置",
+      "status": "unanswered"
+    },
+    "l": {
+      "effect": "未执行 systemctl isolate（S0 实测已 headless，未触发）",
+      "item": "会话级 systemctl isolate",
+      "status": "unanswered"
+    },
+    "m": {
+      "effect": "未执行 nvpmodel -m（S0 实测当前 MAXN_SUPER，未触发）",
+      "item": "功耗模式",
+      "status": "unanswered"
+    },
+    "n": {
+      "effect": "先签阶段 A；阶段 B 全部维度 0 → S3–S5 NOT_RUN(阶段 B 信封未签)",
+      "item": "信封签发方式",
+      "ledger_titles": [
+        "2026-09-28 P1-ENG-JET-001 — 用户签发 §5 阶段 A 执行信封并答复 §7 (h)(n)，(i)–(m) 暂不答复（supervisor 会话代录）"
+      ],
+      "status": "answered"
+    }
+  },
+  "stage_b": {
+    "all_dimensions": 0,
+    "signed": false
+  },
+  "within_envelope": true,
+  "work_id": "P1-ENG-JET-001"
+}

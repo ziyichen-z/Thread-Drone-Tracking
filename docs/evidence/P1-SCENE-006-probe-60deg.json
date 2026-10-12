@@ -1,0 +1,6041 @@
+{
+ "completeness": {
+  "image_present_count": 106,
+  "missing_inputs": [],
+  "ticks": [
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 15,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 20,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 25,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 30,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 35,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 40,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 45,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 50,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 55,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 60,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 65,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 70,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 75,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 80,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 85,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 90,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 95,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 100,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 105,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 110,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 115,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 120,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 125,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 130,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 135,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 140,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 145,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 150,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 155,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 160,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 165,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 170,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 175,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 180,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 185,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 190,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 195,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 200,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 205,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 210,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 215,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 220,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 225,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 230,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 235,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": false,
+    "image_present": true,
+    "tick_k": 240,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 245,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 250,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 255,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 260,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 265,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 270,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 275,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 280,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 285,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 290,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 295,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 300,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 305,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 310,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 315,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 320,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 325,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 330,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 335,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 340,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 345,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 350,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 355,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 360,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 365,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 370,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 375,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 380,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 385,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 390,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 395,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 400,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 405,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 410,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 415,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 420,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 425,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 430,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 435,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 440,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 445,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 450,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 455,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 460,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 465,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 470,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 475,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 480,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 485,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 490,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 495,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 500,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 505,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 510,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 515,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 520,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 525,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 530,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 535,
+    "truth_present": true
+   },
+   {
+    "geometrically_visible": true,
+    "image_present": true,
+    "tick_k": 540,
+    "truth_present": true
+   }
+  ],
+  "truth_present_count": 106,
+  "visible_tick_count": 99
+ },
+ "embedding": {
+  "gate_fraction": {
+   "evaluable_frames": 99,
+   "passing_frames": 18,
+   "value": 0.18181818181818182
+  },
+  "margin": {
+   "count": 99,
+   "median": -0.04983662417900059,
+   "p05": -0.29053833058680983,
+   "p25": -0.15411456046777303,
+   "p75": 0.05123758692769059,
+   "p95": 0.27324038957210134
+  },
+  "max_distractor_cosine": {
+   "count": 99,
+   "median": 0.47970263162759824,
+   "p05": 0.2827467128545541,
+   "p25": 0.4182810148309602,
+   "p75": 0.5617386673844926,
+   "p95": 0.6535065882224865
+  },
+  "reference": "prompt acquisition frame",
+  "report_only": true,
+  "target_cosine": {
+   "count": 99,
+   "median": 0.4149039475469452,
+   "p05": 0.28402983234566315,
+   "p25": 0.3508672474175243,
+   "p75": 0.5451723330351059,
+   "p95": 0.6771579474017316
+  }
+ },
+ "fail_reason": "RECALL_BELOW_FAIL_MAX",
+ "fidelity_contradictions": [],
+ "frozen_protocol": {
+  "detector_confidence_min": 0.25,
+  "detector_iou_min": 0.3,
+  "minimum_distractor_samples": 40,
+  "minimum_target_samples": 40,
+  "recall_fail_max": 0.85,
+  "recall_proceed_min": 0.9,
+  "registered_tick_count": 106,
+  "reid_margin": 0.1,
+  "reid_threshold": 0.5
+ },
+ "gate_state": null,
+ "gate_state_owner": "acceptance",
+ "model_identity": {
+  "appearance_source_sha256": "c27dcdaf50e9fb5bbdf2bb529da357716372e19c6afab17d5350f3f0094aed4b",
+  "appearance_weights_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "detector_weights_sha256": "8e439445c87338b79d9ce21dec109f4621e26df67e94d26ea1a98c1e64dce3e3",
+  "nanotrack_backbone_sha256": "530bdd0cd00f19afab79a863e71ba71e3312395a5dc9151af675082bdaaa2fc4",
+  "nanotrack_config_path": "~/TetheredDroneTracking/config/nanotrack-v2.models.json",
+  "nanotrack_config_sha256": "43c81ad9128cfb7892ee681ed5080edc4f8e1ae8be640eb4e407818c72e6026b",
+  "nanotrack_neckhead_sha256": "0d8c0637be849f092cc7236cae02e55c8b9455ebe37ba50601d6115db4247cd9",
+  "reanchor_config_path": "~/TetheredDroneTracking/config/detector-reanchor.models.json",
+  "reanchor_config_sha256": "593734d67ada73a0304d67d27c6ae536be616d2180f744336b85ff6e0ac706d2"
+ },
+ "probe": {
+  "created_by": "TetheredTracking.Scene006.Scene006EvidenceGenerator.RenderProbeFrames",
+  "k_star": 0,
+  "manifest_sha256": "4c15845be0b4460c067c354fe4bf29dcaeed0c1b06372f5e321c0e734a039d78",
+  "optics": {
+   "image_height": 480,
+   "image_width": 640,
+   "jpeg_quality": 85,
+   "vertical_fov_deg": 60.0
+  },
+  "pairing_rule": "target samples are the truth crops of the V=1 pre-registered ticks; distractor samples are every same-frame RateStudyDistractor and scene-vehicle crop; the prompt frame is the T6 acquisition frame s_{k*} with V=1",
+  "probe_id": "baseline-vfov60-selfcheck",
+  "prompt": {
+   "image_file": "frames/prompt_000000.jpg",
+   "image_sha256": "d29492c21e25b5f9b4c754ce84b7d897a0eddb1a0ad2349961d2d17b973226cb",
+   "tick_k": 0,
+   "truth_file": "truth/prompt_000000.json",
+   "truth_sha256": "e411c4001801648d44587c460c146897fb00fcfd484ae1bc686527dc112f2d0f"
+  },
+  "road_data_sha256": "111e0759d4b52821d08ce4ddd1aae3fc8cc8d24e12e6fa62513403c00b401894",
+  "s_init": 0.0,
+  "scenario_id": "deterministic-loop-default",
+  "scenario_sha256": "f9c9205249aacf7487579ca42f727c766800cc329d0523ec82a96140564a2ce3",
+  "tick_count": 106,
+  "trace_sha256": "682dfad0cd6b98272346ab4559d76c2ada9894688e69af183a9e9bf5b6d8cca8",
+  "weights_binding_detector_config": "config/detector-reanchor.models.json",
+  "weights_binding_tracker_config": "config/nanotrack-v2.models.json"
+ },
+ "recall": {
+  "closed_loop_recall_claimed": false,
+  "denominator": 99,
+  "hits": 16,
+  "interpretation": "ORACLE_POINTED_DETECTABILITY_UPPER_BOUND",
+  "value": 0.16161616161616163
+ },
+ "sample_counts": {
+  "distractor_samples": 820,
+  "target_samples": 99
+ },
+ "samples": [
+  {
+   "distractors": [
+    {
+     "cosine": 0.2576008624762526,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2516603825092314,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000015.jpg",
+   "margin": 0.13279700459389338,
+   "max_distractor_cosine": 0.2576008624762526,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.39039786707014595,
+   "target_embedding_error": null,
+   "tick_k": 15
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2572029643475731,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.17242079490613588,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000020.jpg",
+   "margin": 0.2303471038509387,
+   "max_distractor_cosine": 0.2572029643475731,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4875500681985118,
+   "target_embedding_error": null,
+   "tick_k": 20
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.23251183195956862,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.17053753754288778,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000025.jpg",
+   "margin": 0.3285452018666182,
+   "max_distractor_cosine": 0.23251183195956862,
+   "maximum_target_iou": 0.8932223879999888,
+   "recall_hit": true,
+   "target_cosine": 0.5610570338261868,
+   "target_embedding_error": null,
+   "tick_k": 25
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2529089574595842,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.24168531361337878,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000030.jpg",
+   "margin": 0.38716628760739025,
+   "max_distractor_cosine": 0.2529089574595842,
+   "maximum_target_iou": 0.824781211867913,
+   "recall_hit": true,
+   "target_cosine": 0.6400752450669744,
+   "target_embedding_error": null,
+   "tick_k": 30
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.269600160125566,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2839428655686787,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000035.jpg",
+   "margin": 0.3335811973467468,
+   "max_distractor_cosine": 0.2839428655686787,
+   "maximum_target_iou": 0.8575988067924941,
+   "recall_hit": true,
+   "target_cosine": 0.6175240629154255,
+   "target_embedding_error": null,
+   "tick_k": 35
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.2719813384274327,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000040.jpg",
+   "margin": 0.45398443612628187,
+   "max_distractor_cosine": 0.2719813384274327,
+   "maximum_target_iou": 0.8759318234725375,
+   "recall_hit": true,
+   "target_cosine": 0.7259657745537146,
+   "target_embedding_error": null,
+   "tick_k": 40
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4220694812158992,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.40138011995994455,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.26946092225246987,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000045.jpg",
+   "margin": 0.2607012950627818,
+   "max_distractor_cosine": 0.4220694812158992,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.682770776278681,
+   "target_embedding_error": null,
+   "tick_k": 45
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2797166680907657,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5110926237961421,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2467490147943575,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000050.jpg",
+   "margin": 0.11141278875687033,
+   "max_distractor_cosine": 0.5110926237961421,
+   "maximum_target_iou": 0.8706895775936007,
+   "recall_hit": true,
+   "target_cosine": 0.6225054125530124,
+   "target_embedding_error": null,
+   "tick_k": 50
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.32123456681685975,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5100133353889766,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2827464509074105,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000055.jpg",
+   "margin": 0.15834990812402083,
+   "max_distractor_cosine": 0.5100133353889766,
+   "maximum_target_iou": 0.8403780690203835,
+   "recall_hit": true,
+   "target_cosine": 0.6683632435129975,
+   "target_embedding_error": null,
+   "tick_k": 55
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4409905560858219,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32174309101287224,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.4228347132250375,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2573631567894836,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000060.jpg",
+   "margin": 0.2731042750809179,
+   "max_distractor_cosine": 0.4409905560858219,
+   "maximum_target_iou": 0.8436397965249472,
+   "recall_hit": true,
+   "target_cosine": 0.7140948311667398,
+   "target_embedding_error": null,
+   "tick_k": 60
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.40206887975598493,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31095455584529114,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.29627502877852313,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.24527911987832185,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000065.jpg",
+   "margin": 0.2744654199927523,
+   "max_distractor_cosine": 0.40206887975598493,
+   "maximum_target_iou": 0.8798622002275098,
+   "recall_hit": true,
+   "target_cosine": 0.6765342997487372,
+   "target_embedding_error": null,
+   "tick_k": 65
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.43475862507033547,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2665772016835412,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.29701665345744854,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "frame_file": "frames/frame_000070.jpg",
+   "margin": 0.18921637052745166,
+   "max_distractor_cosine": 0.43475862507033547,
+   "maximum_target_iou": 0.8790436261990475,
+   "recall_hit": true,
+   "target_cosine": 0.6239749955977871,
+   "target_embedding_error": null,
+   "tick_k": 70
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.39066008256966384,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2854221250036523,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.4610448218768024,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3250639820077285,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.42468132124005387,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.40850329412486686,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000075.jpg",
+   "margin": 0.23577548939228077,
+   "max_distractor_cosine": 0.4610448218768024,
+   "maximum_target_iou": 0.873282437571965,
+   "recall_hit": true,
+   "target_cosine": 0.6968203112690832,
+   "target_embedding_error": null,
+   "tick_k": 75
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.44321237592953094,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.2672017624987048,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.24287851374960603,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3733823816179471,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.24679912977210633,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3259809850074769,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3265636907537224,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.5128315749099454,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.37586175879421674,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.30922731219876437,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000080.jpg",
+   "margin": 0.12200852378655158,
+   "max_distractor_cosine": 0.5128315749099454,
+   "maximum_target_iou": 0.8638266191852509,
+   "recall_hit": true,
+   "target_cosine": 0.6348400986964969,
+   "target_embedding_error": null,
+   "tick_k": 80
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4332175842385014,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.26803791705709035,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2683262547652542,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34385240177917054,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.250212063897179,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30556546912040633,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3330936515505457,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.6111548826919114,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.332146820372449,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.35157167104905246,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.28317242495226935,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000085.jpg",
+   "margin": 0.0795150636443025,
+   "max_distractor_cosine": 0.6111548826919114,
+   "maximum_target_iou": 0.884847071262259,
+   "recall_hit": true,
+   "target_cosine": 0.6906699463362139,
+   "target_embedding_error": null,
+   "tick_k": 85
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4068802232385308,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.29687417766227897,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.35366501658834476,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30822138197726445,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2611299311985804,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2894456959542348,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.30551699554295164,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.5905032655271082,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.32901925014834443,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3602598498542183,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.33474870017311853,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000090.jpg",
+   "margin": 0.05934229226168064,
+   "max_distractor_cosine": 0.5905032655271082,
+   "maximum_target_iou": 0.8353824860567,
+   "recall_hit": true,
+   "target_cosine": 0.6498455577887888,
+   "target_embedding_error": null,
+   "tick_k": 90
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4081799981620145,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.29344569462013514,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.28130477103219254,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34383268557406865,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2519092744598297,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3043792115767152,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.36864926636622125,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.5991511761550378,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.3344673859746897,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.327749076366783,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.3085775445511729,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000095.jpg",
+   "margin": -0.0093080042347089,
+   "max_distractor_cosine": 0.5991511761550378,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5898431719203289,
+   "target_embedding_error": null,
+   "tick_k": 95
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.45717590822794557,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.2713245351169055,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.3242922879055352,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34445631305972274,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.26490159496120663,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3170805027542228,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3111229320592241,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.6094235291079498,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.322340983545102,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3891741103428865,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.29815763534870865,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000100.jpg",
+   "margin": 0.04769922526735959,
+   "max_distractor_cosine": 0.6094235291079498,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.6571227543753094,
+   "target_embedding_error": null,
+   "tick_k": 100
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4524410673330039,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.2795946930930667,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.31053675359108157,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3823615173714667,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2791772977673205,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2854548908593503,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.34769273879262236,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.6091669335388897,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.3349559433203233,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3354245076962533,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.25148120708214355,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000105.jpg",
+   "margin": 0.006399474948142969,
+   "max_distractor_cosine": 0.6091669335388897,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.6155664084870327,
+   "target_embedding_error": null,
+   "tick_k": 105
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4063558294290355,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.3238167246714938,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.316600918096533,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31508248824864465,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2416948563483458,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2804744100847893,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3527584114514266,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.48165810652261326,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.32084249733495424,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.36334561247097863,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000110.jpg",
+   "margin": 0.162938173388735,
+   "max_distractor_cosine": 0.48165810652261326,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.6445962799113483,
+   "target_embedding_error": null,
+   "tick_k": 110
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4016576884605132,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.29914321234649693,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.292455260655849,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3798335848499468,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.23709142052783083,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3193501895952032,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3375284924583557,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.49199004001694097,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.30654368294279555,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3313569278409329,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.3003509283057684,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000115.jpg",
+   "margin": 0.085345633857621,
+   "max_distractor_cosine": 0.49199004001694097,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.577335673874562,
+   "target_embedding_error": null,
+   "tick_k": 115
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.43209289281777646,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.2974651149420215,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.27175961201894877,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3656586677142951,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2721175339923617,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.27415854409763896,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.35695931456931485,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.5014084810629627,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.30533474018372736,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3756185765131868,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.2382527152138479,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000120.jpg",
+   "margin": 0.039690593561879206,
+   "max_distractor_cosine": 0.5014084810629627,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5410990746248419,
+   "target_embedding_error": null,
+   "tick_k": 120
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.41648745775836277,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28474353451885553,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2819817351720686,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34668576330881423,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.258249417920476,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2916827116577659,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3313178593410934,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.5057360922611842,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.40606556589077664,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.29333411153851024,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000125.jpg",
+   "margin": -0.14972349274461288,
+   "max_distractor_cosine": 0.5057360922611842,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3560125995165713,
+   "target_embedding_error": null,
+   "tick_k": 125
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.44185844358631904,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31573509111313625,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.49137446735538454,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3775064808183674,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2665756405359915,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.26826818109478856,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3819297027135494,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4392498094381347,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.5403738703951203,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.3218332795025978,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3388791560061876,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.30639493324429584,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000130.jpg",
+   "margin": -0.1845454546709715,
+   "max_distractor_cosine": 0.5403738703951203,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3558284157241488,
+   "target_embedding_error": null,
+   "tick_k": 130
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4144737703509212,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.36958459176971814,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.3560979266745943,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.28337055987286597,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2562932757570086,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3967368343747488,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3383278997578472,
+     "distractor_id": "Vehicle_SUV_color03 (7)",
+     "error": null
+    },
+    {
+     "cosine": 0.2849275243479594,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.3636643014124726,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.30851883094099075,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.32721540748711025,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000135.jpg",
+   "margin": 0.13477182109444868,
+   "max_distractor_cosine": 0.4144737703509212,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5492455914453699,
+   "target_embedding_error": null,
+   "tick_k": 135
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.47749621086847754,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35279645824358236,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2703575867672608,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32778113400652054,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3098194330621925,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.24166169098640247,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.41432402337721114,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.26044274974754583,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.39377903641544576,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3136411452066023,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.36421219849096415,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000140.jpg",
+   "margin": 0.14416302803767772,
+   "max_distractor_cosine": 0.47749621086847754,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.6216592389061553,
+   "target_embedding_error": null,
+   "tick_k": 140
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.37810731100331835,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35370528958640834,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2882358982436954,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32569483973436364,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.33099378444941074,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28070117115669163,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3931310050675314,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2788158887572749,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.36875193314287363,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3254086620393254,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.2523339368232135,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000145.jpg",
+   "margin": -0.10778123101150167,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.45395743637299096,
+   "target_embedding_error": null,
+   "tick_k": 145
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.41427745054499643,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.5063880869774219,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3573924779816804,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.275932868763504,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.402077975891574,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.5121831626764297,
+     "distractor_id": "Vehicle_Pick up Truck_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3184932741019492,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.23059133426529718,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4190706754967999,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.30206063016236023,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.43997832434129774,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3278234102491735,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    },
+    {
+     "cosine": 0.39306215632167385,
+     "distractor_id": "Vehicle_Truck_color02",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000150.jpg",
+   "margin": -0.039473488290443115,
+   "max_distractor_cosine": 0.5121831626764297,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4727096743859866,
+   "target_embedding_error": null,
+   "tick_k": 150
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4130365346748385,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.5246287069348876,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.387643356248092,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.25470476471646664,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.42715461301065916,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3978972918029088,
+     "distractor_id": "Vehicle_Pick up Truck_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3386619421334316,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.20988640722500376,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.41188283509004164,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.34165983723909704,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.46112268151683516,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.29680992740583795,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000155.jpg",
+   "margin": -0.016370384775135194,
+   "max_distractor_cosine": 0.5246287069348876,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5082583221597524,
+   "target_embedding_error": null,
+   "tick_k": 155
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3675709593732424,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.4954686112874158,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3665564614232817,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2795658277158768,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4286924432332603,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.42185018685242354,
+     "distractor_id": "Vehicle_Pick up Truck_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3003204653760027,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.22135056234430572,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.41005124964201534,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.37231130070884044,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.43362816705692864,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3181400662208208,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000160.jpg",
+   "margin": -0.11738341022001386,
+   "max_distractor_cosine": 0.4954686112874158,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.37808520106740195,
+   "target_embedding_error": null,
+   "tick_k": 160
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.34668589978297776,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4738123219397129,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.39816426543390976,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3812864725874485,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.28461613366671557,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.47001926159744006,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.36977882434890774,
+     "distractor_id": "Vehicle_Pick up Truck_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.221603959533143,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.21791184531035065,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.44607066638355586,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3450315753559172,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.42533899353342164,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3131460681700371,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000165.jpg",
+   "margin": -0.03541581549554301,
+   "max_distractor_cosine": 0.4738123219397129,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4383965064441699,
+   "target_embedding_error": null,
+   "tick_k": 165
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Ambulance (3)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.33676613112133347,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4199973410184177,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.40682929414787744,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3299780348440392,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.23936395777316952,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.40514106431170627,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.330380048774773,
+     "distractor_id": "Vehicle_Pick up Truck_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.29468384036947276,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.21222789121594204,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3520369242009138,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.30521995762455945,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.40590322687435726,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.2633242000266798,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000170.jpg",
+   "margin": -0.004498089526368709,
+   "max_distractor_cosine": 0.4199973410184177,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.41549925149204897,
+   "target_embedding_error": null,
+   "tick_k": 170
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.550227786206595,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.33589109590453053,
+     "distractor_id": "Vehicle_Ambulance (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.3410292007360523,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3763925111907396,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.40951858474196345,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3051152623106523,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2968412638329628,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3423196133863497,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3705321768172423,
+     "distractor_id": "Vehicle_Pick up Truck_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28652422975179304,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.20215522489032084,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3797178967587058,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3830498312613355,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.39981924103774774,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.306815695256447,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000175.jpg",
+   "margin": -0.09781945411778825,
+   "max_distractor_cosine": 0.550227786206595,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4524083320888067,
+   "target_embedding_error": null,
+   "tick_k": 175
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2700985992435374,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.25345598245054857,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.39064523069019585,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3346131023520927,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3391739496821773,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2794894406147687,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4120715497606651,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3764963866693821,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2794973563328236,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2426134179269465,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2648645175889725,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.30020447454727817,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3317747557714813,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.3992346432489296,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.300802750714507,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000180.jpg",
+   "margin": -0.0009692108043370951,
+   "max_distractor_cosine": 0.4120715497606651,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.41110233895632803,
+   "target_embedding_error": null,
+   "tick_k": 180
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3317448652040709,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.2923581593230631,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4206522165892635,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2695352398104669,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2725982994740902,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.28038808974861873,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.49889116111083986,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.278553221214984,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2728469311458481,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.22487189254151027,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3258752168493419,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2841259180224918,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4320681891487146,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.26925849139302627,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000185.jpg",
+   "margin": -0.15850562819093317,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.40323303919355946,
+   "target_embedding_error": null,
+   "tick_k": 185
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.34861385385881716,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.27835857318071766,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.39572985446367265,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32564371545162957,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2924841491112537,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.2648146459348145,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3897286599415298,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.23908046189719148,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.25393634619543093,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.22301827078872943,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.22544347439552279,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.23945936957601174,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.43653299770520254,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.24786195071144057,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000190.jpg",
+   "margin": -0.18573699965747542,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3760016677270172,
+   "target_embedding_error": null,
+   "tick_k": 190
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3362627330064328,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.26058967921377,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3807672435095769,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31204898170960893,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2964848139030154,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.23337015774707937,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34609684713737454,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.28139841167636126,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2560775797344779,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.24479500537477,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2534469708535968,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.29043795638430525,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4165646886435027,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.27537027499430505,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000195.jpg",
+   "margin": -0.13192926361378637,
+   "max_distractor_cosine": 0.4165646886435027,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.28463542502971634,
+   "target_embedding_error": null,
+   "tick_k": 195
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.40646757323850374,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.2986844817618119,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3417141452880657,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.46496902247261584,
+     "distractor_id": "Vehicle_Car_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2978598445975271,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.30773656518998765,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35662315041552384,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.24553883786518338,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.25929627755511614,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.26429255696097453,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.28021603089660263,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2899979657005105,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2601462405245024,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2631815677917215,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000200.jpg",
+   "margin": -0.17123531171775924,
+   "max_distractor_cosine": 0.46496902247261584,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.2937337107548566,
+   "target_embedding_error": null,
+   "tick_k": 200
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.40443193034514063,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.38053156621482626,
+     "distractor_id": "Vehicle_Bus_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.39180210052094694,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.559363036565958,
+     "distractor_id": "Vehicle_Car_color03 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.25840828615097144,
+     "distractor_id": "Vehicle_Container_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.22737741285816937,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.33789592460692186,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.31032648431650867,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.27148553325332836,
+     "distractor_id": "Vehicle_Police Car (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.25970726799189936,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.30797696466833757,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.25937331145467646,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3444005389517081,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.254635366621927,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000205.jpg",
+   "margin": -0.24515040354680973,
+   "max_distractor_cosine": 0.559363036565958,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.31421263301914826,
+   "target_embedding_error": null,
+   "tick_k": 205
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.39624522658501093,
+     "distractor_id": "Vehicle_Car_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.5049120470364431,
+     "distractor_id": "Vehicle_Car_color03 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.3112654802584769,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.380237432255501,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.26359704824056907,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.24637259890888058,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_SUV_color01 (3)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.29115144787942143,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.25917935451542445,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4245693394410175,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.23080026161923342,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2262764977317231,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000245.jpg",
+   "margin": -0.1476373165818371,
+   "max_distractor_cosine": 0.5049120470364431,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.357274730454606,
+   "target_embedding_error": null,
+   "tick_k": 245
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.42705009253512527,
+     "distractor_id": "Vehicle_Car_color03 (3)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Container_color02",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.2681663803362079,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3175178035165521,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.28468814781198465,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.24246250354481633,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3568543380152741,
+     "distractor_id": "Vehicle_SUV_color01 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.3917409297624355,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3587732498582356,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3962328782293174,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.24751752151319206,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.23792037407508496,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000250.jpg",
+   "margin": -0.035561695419591144,
+   "max_distractor_cosine": 0.42705009253512527,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3914883971155341,
+   "target_embedding_error": null,
+   "tick_k": 250
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4499055063643041,
+     "distractor_id": "Vehicle_Car_color03 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.3126869887540755,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.29785279917622415,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2674772063277089,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.5364805270246582,
+     "distractor_id": "Vehicle_Pick up Truck_color02 (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.2554155409985785,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.438234503846217,
+     "distractor_id": "Vehicle_SUV_color01 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.4434097619466944,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.32281974720209894,
+     "distractor_id": "Vehicle_SUV_color03 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.44357438750172135,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2731800619705278,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3362595533897488,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000255.jpg",
+   "margin": -0.12046340765585578,
+   "max_distractor_cosine": 0.5364805270246582,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4160171193688024,
+   "target_embedding_error": null,
+   "tick_k": 255
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Car_color03 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.33070055064639936,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3676440393672897,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.29792325226150945,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.5683038596463192,
+     "distractor_id": "Vehicle_Pick up Truck_color02 (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.22970840054916372,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.5723418234008266,
+     "distractor_id": "Vehicle_SUV_color01 (3)",
+     "error": null
+    },
+    {
+     "cosine": 0.32540664768384925,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.4389857393556572,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2824289525193724,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3509836494807514,
+     "distractor_id": "Vehicle_Taxi (8)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000260.jpg",
+   "margin": -0.12825569414614707,
+   "max_distractor_cosine": 0.5723418234008266,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.44408612925467955,
+   "target_embedding_error": null,
+   "tick_k": 260
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3170990790611805,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3600163430421895,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.25965806647447875,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Pick up Truck_color02 (2)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.21706219786667239,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4161116958790521,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3866801114840314,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.26678033882152374,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000265.jpg",
+   "margin": 0.16645785184191503,
+   "max_distractor_cosine": 0.4161116958790521,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5825695477209671,
+   "target_embedding_error": null,
+   "tick_k": 265
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2641423513891999,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3957032911342036,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.21974287352123972,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.25048541788251216,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4118476380782095,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.35070038267856884,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2594514883078626,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000270.jpg",
+   "margin": -0.01812398441924612,
+   "max_distractor_cosine": 0.4118476380782095,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3937236536589634,
+   "target_embedding_error": null,
+   "tick_k": 270
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2898893383871684,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.37009607549243384,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.27972945811472033,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2157178423876721,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4627366945997377,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.35130331767578227,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.27080317617446054,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000275.jpg",
+   "margin": -0.07729297913878391,
+   "max_distractor_cosine": 0.4627366945997377,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3854437154609538,
+   "target_embedding_error": null,
+   "tick_k": 275
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.33300874958066895,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.46835650659852973,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.32033551041450425,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2225468832252483,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.42271958769241236,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.45200402642578325,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2781875339296676,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000280.jpg",
+   "margin": -0.076730254948714,
+   "max_distractor_cosine": 0.46835650659852973,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.39162625164981574,
+   "target_embedding_error": null,
+   "tick_k": 280
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.27043242402671847,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2556757034031057,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2387998021379998,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.46341366569284165,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.39607008456674286,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2632498353288466,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000285.jpg",
+   "margin": -0.04983662417900059,
+   "max_distractor_cosine": 0.46341366569284165,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.41357704151384106,
+   "target_embedding_error": null,
+   "tick_k": 285
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.421580928646477,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32857085047869533,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2972401966108284,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.27234750368692434,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2160381728146329,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.44896455997608314,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.4176956160681175,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.287571670441836,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000290.jpg",
+   "margin": -0.053434843486604655,
+   "max_distractor_cosine": 0.44896455997608314,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3955297164894785,
+   "target_embedding_error": null,
+   "tick_k": 290
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.41597083645993244,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3407199958434965,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2977933612194373,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2389868754692447,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2517782420179661,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.4667312113274671,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.4421115203511641,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.26722188722239465,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000295.jpg",
+   "margin": -0.019635932422783275,
+   "max_distractor_cosine": 0.4667312113274671,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4470952789046838,
+   "target_embedding_error": null,
+   "tick_k": 295
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.31759929251129115,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3622765209475556,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2835591109218985,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.24766458388730367,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.21895887755615012,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.46867342834006176,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.38246969091535965,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2658487484464652,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000300.jpg",
+   "margin": -0.11527489471397345,
+   "max_distractor_cosine": 0.46867342834006176,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3533985336260883,
+   "target_embedding_error": null,
+   "tick_k": 300
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.28409825345003936,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3716066053219646,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30782335945678735,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.283878799731926,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2134886846395128,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3993274723388899,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.36900661455643946,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.30405810803898925,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000305.jpg",
+   "margin": -0.24553248054650106,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.31620618683799157,
+   "target_embedding_error": null,
+   "tick_k": 305
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3159836739024133,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3505872881498894,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3140252817565008,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2725520093078433,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.22581335136938369,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.3700036843664245,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.31545995745624034,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.27849969832341726,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2887434646182198,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000310.jpg",
+   "margin": 0.009105603690719943,
+   "max_distractor_cosine": 0.3700036843664245,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.37910928805714444,
+   "target_embedding_error": null,
+   "tick_k": 310
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.23354715185857705,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.38856663986621576,
+     "distractor_id": "Vehicle_Container_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31237432615953603,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.23645270461756254,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.1990744842476678,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.41064983638838426,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.38097953534502094,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3847566991070133,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.27469738707814,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.29983194578232947,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000315.jpg",
+   "margin": -0.11123301505843519,
+   "max_distractor_cosine": 0.41064983638838426,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.29941682132994907,
+   "target_embedding_error": null,
+   "tick_k": 315
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.36459815106343624,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.29427815879530594,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32868905628571893,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2219210880823167,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.3495383683541397,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.42730676816048724,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3542857891308867,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.2596742620265143,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32032728069629834,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000320.jpg",
+   "margin": -0.10309050076366666,
+   "max_distractor_cosine": 0.42730676816048724,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3242162673968206,
+   "target_embedding_error": null,
+   "tick_k": 320
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.307641473176339,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31465650330239975,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.27326977448347106,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.25705293493783304,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.26327986306843343,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.40790921141500996,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3488035248260043,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.28222376051373105,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30739911622762794,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000325.jpg",
+   "margin": 0.003675085526971933,
+   "max_distractor_cosine": 0.40790921141500996,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4115842969419819,
+   "target_embedding_error": null,
+   "tick_k": 325
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.336990223140847,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30638861559982566,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3362022014116107,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.40008874286581775,
+     "distractor_id": "Vehicle_Police Car (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2972700682766351,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.39794986583614783,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.32427640267673935,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.28534049028989206,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4054893979832506,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000330.jpg",
+   "margin": 0.030541051484929083,
+   "max_distractor_cosine": 0.4054893979832506,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4360304494681797,
+   "target_embedding_error": null,
+   "tick_k": 330
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3824084065895477,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2559767401578508,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3161725499548957,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.35838398529549725,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.34120784075979815,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.31221787586137967,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.25809612308564744,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.40924883881687263,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000335.jpg",
+   "margin": 0.020548480072397957,
+   "max_distractor_cosine": 0.40924883881687263,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4297973188892706,
+   "target_embedding_error": null,
+   "tick_k": 335
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.349260741117585,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2752895837116321,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30453796020999535,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.3258164523989171,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.37327010887333323,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3136742212642594,
+     "distractor_id": "Vehicle_Taxi",
+     "error": null
+    },
+    {
+     "cosine": 0.3114096517979337,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.430864833797372,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000340.jpg",
+   "margin": -0.005579347141408619,
+   "max_distractor_cosine": 0.430864833797372,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4252854866559634,
+   "target_embedding_error": null,
+   "tick_k": 340
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4566440532658701,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.38493544338592006,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28197289515178336,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2914460857722185,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.34260156988342494,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3730271149814539,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3038920279639975,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4670082141565328,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000345.jpg",
+   "margin": -0.05210426660958761,
+   "max_distractor_cosine": 0.4670082141565328,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4149039475469452,
+   "target_embedding_error": null,
+   "tick_k": 345
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.37044180957960965,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.3653307250729877,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.27094147310293376,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.33968137843584423,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.33584132199324795,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.36786690499139685,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.31678118935590177,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.41242207476047354,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000350.jpg",
+   "margin": -0.022809727484245423,
+   "max_distractor_cosine": 0.41242207476047354,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3896123472762281,
+   "target_embedding_error": null,
+   "tick_k": 350
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4209898408899647,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.37026970122161684,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3316158361031958,
+     "distractor_id": "Vehicle_Pick up Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3377358390193154,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.34322595653384497,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3466566225700619,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3568736462871303,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.47970263162759824,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000355.jpg",
+   "margin": 0.03801148434767815,
+   "max_distractor_cosine": 0.47970263162759824,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5177141159752764,
+   "target_embedding_error": null,
+   "tick_k": 355
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4849139548603271,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.251449696958678,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.346674279134124,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.3635878207660399,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.48972089285135345,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32760905998212825,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3737157579237531,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.46431776188735224,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000360.jpg",
+   "margin": -0.061534938048975196,
+   "max_distractor_cosine": 0.48972089285135345,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.42818595480237825,
+   "target_embedding_error": null,
+   "tick_k": 360
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.42948462649064545,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.29636762804467365,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3567828117624479,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.3254371317034141,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.37459620908145336,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31061324443524385,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3981907799651732,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4394647496699123,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000365.jpg",
+   "margin": 0.02093480801940545,
+   "max_distractor_cosine": 0.4394647496699123,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.46039955768931773,
+   "target_embedding_error": null,
+   "tick_k": 365
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3722251507397065,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.41086966941039044,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3941760577207735,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.36720441308485224,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3657031187186129,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2970568414284657,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3973473357705813,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.6055052445524101,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5182031032161171,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000370.jpg",
+   "margin": -0.11752787460209024,
+   "max_distractor_cosine": 0.6055052445524101,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4879773699503198,
+   "target_embedding_error": null,
+   "tick_k": 370
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.43928580788038296,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.47241467723385794,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3763052257049241,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3590668827533556,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.30102629377798457,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.34729709998299957,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3761288303570792,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3915942941818951,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.38399625609959065,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.324745850760973,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000375.jpg",
+   "margin": 0.10497912427783723,
+   "max_distractor_cosine": 0.47241467723385794,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5773938015116952,
+   "target_embedding_error": null,
+   "tick_k": 375
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.48294696903047263,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.46057135103466307,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.37661165611621433,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3758593769273074,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Pick up Truck_color03",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.33778747413098487,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.37276650828679503,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3532997992072882,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.39000037744608645,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.29551605798184577,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.574595228648426,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000380.jpg",
+   "margin": -0.06644730698956258,
+   "max_distractor_cosine": 0.574595228648426,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5081479216588635,
+   "target_embedding_error": null,
+   "tick_k": 380
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.35566546942017313,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.406705762655594,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3314452878488932,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3087775495997728,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.3513697964722405,
+     "distractor_id": "Vehicle_Pick up Truck_color03",
+     "error": null
+    },
+    {
+     "cosine": 0.3538881855263317,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.30147434620806235,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34047370160284585,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.34816871082883516,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3348829866092378,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000385.jpg",
+   "margin": 0.021933036910057213,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.5836717042945498,
+   "target_embedding_error": null,
+   "tick_k": 385
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4014032845892492,
+     "distractor_id": "Vehicle_Ambulance (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.4954604047718401,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.40275700170093165,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2916604997971917,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.40009659657140384,
+     "distractor_id": "Vehicle_Pick up Truck_color03",
+     "error": null
+    },
+    {
+     "cosine": 0.29263785757847616,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.45157490882334206,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3183586183351015,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3022039982340241,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3701505414082989,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000390.jpg",
+   "margin": -0.12543027187683897,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.43630839550765366,
+   "target_embedding_error": null,
+   "tick_k": 390
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6571415795500257,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.40061314247616,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.33303416851860007,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.414673355187745,
+     "distractor_id": "Vehicle_Pick up Truck_color03",
+     "error": null
+    },
+    {
+     "cosine": 0.3102293989574437,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.33712270023334034,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4289681650733047,
+     "distractor_id": "Vehicle_SUV_color03 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.34979986995493506,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34384757588792664,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.6546772331988646,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000395.jpg",
+   "margin": -0.26651927903576134,
+   "max_distractor_cosine": 0.6571415795500257,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3906223005142644,
+   "target_embedding_error": null,
+   "tick_k": 395
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5627668323069177,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3546628476680633,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.33419640242048243,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.32652939042785406,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.36970219790209813,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3358576917471443,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34767389013685235,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.568840936793124,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000400.jpg",
+   "margin": -0.11634685778871223,
+   "max_distractor_cosine": 0.568840936793124,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.45249407900441174,
+   "target_embedding_error": null,
+   "tick_k": 400
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6086317947578855,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3389155733677923,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32450871303828005,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.29614429282032034,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.40966409847633545,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2885063340441211,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35304822910610795,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000405.jpg",
+   "margin": -0.14619714710407372,
+   "max_distractor_cosine": 0.6086317947578855,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4624346476538118,
+   "target_embedding_error": null,
+   "tick_k": 405
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6043399860707637,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3712344590286279,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35032144623276595,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2644970130431989,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.38060338894912177,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30217062486347157,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.31353688437315747,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000410.jpg",
+   "margin": -0.18928152197417986,
+   "max_distractor_cosine": 0.6043399860707637,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4150584640965838,
+   "target_embedding_error": null,
+   "tick_k": 410
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6918303127805927,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.33383757581325557,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3170760211524114,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.3095464419318604,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.42393588598963955,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3336541986597647,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3685634682939981,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.6736335546463024,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000415.jpg",
+   "margin": -0.28726959148287756,
+   "max_distractor_cosine": 0.6918303127805927,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.40456072129771514,
+   "target_embedding_error": null,
+   "tick_k": 415
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.4546870229666486,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.33601420595285386,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30305245838701733,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.31567743716184343,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.37764906606190046,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3079825255783339,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35191516876306655,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5592334745500538,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000420.jpg",
+   "margin": -0.20685327105318357,
+   "max_distractor_cosine": 0.5592334745500538,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3523802034968702,
+   "target_embedding_error": null,
+   "tick_k": 420
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6049074292999965,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3237874574159802,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.27324349004181914,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.3183946978170544,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3895444200578842,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.32889193304311276,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34398935555677984,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000425.jpg",
+   "margin": -0.1966981864870786,
+   "max_distractor_cosine": 0.6049074292999965,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.4082092428129179,
+   "target_embedding_error": null,
+   "tick_k": 425
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5394801092270405,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3044127292903566,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3005365613994694,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2901825980751065,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3938608138079633,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28331283645321514,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3538557147104834,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000430.jpg",
+   "margin": -0.194255035825818,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.36748363155867464,
+   "target_embedding_error": null,
+   "tick_k": 430
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5763536635531161,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3145215998981739,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.284322376004399,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2570483399890261,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3592627057618817,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2585260411619209,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.36727101844716703,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.65315386357494,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000435.jpg",
+   "margin": -0.3430617282411842,
+   "max_distractor_cosine": 0.65315386357494,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3100921353337558,
+   "target_embedding_error": null,
+   "tick_k": 435
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.6429836078800328,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.33668596187274075,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.29365041889621313,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.28772602952349946,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.40423041275166066,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2826568006803314,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.37163386870745047,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.6566811100504055,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000440.jpg",
+   "margin": -0.325138177382173,
+   "max_distractor_cosine": 0.6566811100504055,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.33154293266823254,
+   "target_embedding_error": null,
+   "tick_k": 440
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3848019229003808,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.28091088998441943,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2849360088148492,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.28300648940608303,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.39095736218217203,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.24166145028406316,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.34401012920791857,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.6711887825784647,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000445.jpg",
+   "margin": -0.39480432719864367,
+   "max_distractor_cosine": 0.6711887825784647,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.27638445537982104,
+   "target_embedding_error": null,
+   "tick_k": 445
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.47534379458376463,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.24066414673745237,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.38818452187427904,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.31350395458340224,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.384683394325795,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2879863960371782,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3548323334181047,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.4956433051835295,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000450.jpg",
+   "margin": -0.17984164144893588,
+   "max_distractor_cosine": 0.4956433051835295,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3158016637345936,
+   "target_embedding_error": null,
+   "tick_k": 450
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.45542059473071744,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.2727978989815056,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.46586927738556966,
+     "distractor_id": "Vehicle_Pick up Truck_color02",
+     "error": null
+    },
+    {
+     "cosine": 0.2671354667840066,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.37861973539852983,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2921095025361402,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.36031207504480117,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5866607533555478,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000455.jpg",
+   "margin": -0.2546040223847607,
+   "max_distractor_cosine": 0.5866607533555478,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3320567309707871,
+   "target_embedding_error": null,
+   "tick_k": 455
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.38484311488123835,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.27647186095485965,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2612314833693702,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.40350172889493807,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30116986855485217,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.365637403594429,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.5476878642112487,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000460.jpg",
+   "margin": -0.21609919377325038,
+   "max_distractor_cosine": 0.5476878642112487,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.33158867043799833,
+   "target_embedding_error": null,
+   "tick_k": 460
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3580152510885364,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.24117578522125324,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.24977829132831786,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3550488691876576,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.27386010725024224,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3687340352671554,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.584195857640289,
+     "distractor_id": "Vehicle_Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.35088059537902505,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000465.jpg",
+   "margin": -0.3199569825222003,
+   "max_distractor_cosine": 0.584195857640289,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.26423887511808875,
+   "target_embedding_error": null,
+   "tick_k": 465
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Ambulance (4)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.26419276731694497,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2635135300841417,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.34765410345135384,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2659865606540332,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.39042529314999713,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.584195857640289,
+     "distractor_id": "Vehicle_Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.47557786163302096,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000470.jpg",
+   "margin": -0.24301527813263674,
+   "max_distractor_cosine": 0.584195857640289,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3411805795076523,
+   "target_embedding_error": null,
+   "tick_k": 470
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3046269619666712,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.26971911706313667,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.43073517253151516,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28763593237183505,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.38151480400987325,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.4491432222865766,
+     "distractor_id": "Vehicle_Truck_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.3583181047301914,
+     "distractor_id": "Vehicle_Truck_color02 (3)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000475.jpg",
+   "margin": -0.11544201736051096,
+   "max_distractor_cosine": 0.4491432222865766,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.33370120492606564,
+   "target_embedding_error": null,
+   "tick_k": 475
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3202851147237613,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2431893889426726,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.42073044140938903,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.30446762864030197,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.45038169072279016,
+     "distractor_id": "Vehicle_Truck_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.31696827116572657,
+     "distractor_id": "Vehicle_Truck_color01 (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000480.jpg",
+   "margin": -0.17180219253360568,
+   "max_distractor_cosine": 0.45038169072279016,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.2785794981891845,
+   "target_embedding_error": null,
+   "tick_k": 480
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3231507149165045,
+     "distractor_id": "Vehicle_Bus_color02 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2652525668390349,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3743933472084079,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.2953972447181962,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.47363221244108045,
+     "distractor_id": "Vehicle_Truck_color01 (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000485.jpg",
+   "margin": -0.17296201952518991,
+   "max_distractor_cosine": 0.47363221244108045,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.30067019291589053,
+   "target_embedding_error": null,
+   "tick_k": 485
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.31465678959782717,
+     "distractor_id": "Vehicle_Pick up Truck_color02 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.28066528291528003,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.6738978902913482,
+     "distractor_id": "Vehicle_SUV_color03 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28607982638216634,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000490.jpg",
+   "margin": -0.3787216150618497,
+   "max_distractor_cosine": 0.6738978902913482,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.29517627522949846,
+   "target_embedding_error": null,
+   "tick_k": 490
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.35791781998798927,
+     "distractor_id": "Vehicle_Pick up Truck_color02 (5)",
+     "error": null
+    },
+    {
+     "cosine": 0.2543182385680408,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    },
+    {
+     "cosine": 0.3225293375912189,
+     "distractor_id": "Vehicle_Taxi (1)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000495.jpg",
+   "margin": -0.07252959994035058,
+   "max_distractor_cosine": 0.35791781998798927,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.2853882200476387,
+   "target_embedding_error": null,
+   "tick_k": 495
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3001027756494853,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000500.jpg",
+   "margin": 0.054775948588021595,
+   "max_distractor_cosine": 0.3001027756494853,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3548787242375069,
+   "target_embedding_error": null,
+   "tick_k": 500
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Car_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.3082838045405865,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000505.jpg",
+   "margin": -0.2733749562089782,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.2883637111755144,
+   "target_embedding_error": null,
+   "tick_k": 505
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3688375935898024,
+     "distractor_id": "Vehicle_Car_color01",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.31753582634956057,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000510.jpg",
+   "margin": -0.01948330225162409,
+   "max_distractor_cosine": 0.3688375935898024,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.3493542913381783,
+   "target_embedding_error": null,
+   "tick_k": 510
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.2961822296210976,
+     "distractor_id": "Vehicle_Car_color01",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.258611567108882,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000515.jpg",
+   "margin": -0.009187281221698596,
+   "max_distractor_cosine": 0.2961822296210976,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.286994948399399,
+   "target_embedding_error": null,
+   "tick_k": 515
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3082320907627373,
+     "distractor_id": "Vehicle_Car_color01",
+     "error": null
+    },
+    {
+     "cosine": 0.21831736436400617,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.28737034051518023,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000520.jpg",
+   "margin": -0.0694609793715415,
+   "max_distractor_cosine": 0.3082320907627373,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.23877111139119578,
+   "target_embedding_error": null,
+   "tick_k": 520
+  },
+  {
+   "distractors": [
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Car_color01",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": "CROP_INVALID"
+    },
+    {
+     "cosine": 0.3187753961794553,
+     "distractor_id": "Vehicle_SUV_color01 (4)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000525.jpg",
+   "margin": -0.04025373113997138,
+   "max_distractor_cosine": 0.3187753961794553,
+   "maximum_target_iou": 0.0,
+   "recall_hit": false,
+   "target_cosine": 0.2785216650394839,
+   "target_embedding_error": null,
+   "tick_k": 525
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.30660473278814465,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.5617386673844926,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000530.jpg",
+   "margin": -0.22650279004388663,
+   "max_distractor_cosine": 0.5617386673844926,
+   "maximum_target_iou": 0.597509411543157,
+   "recall_hit": true,
+   "target_cosine": 0.335235877340606,
+   "target_embedding_error": null,
+   "tick_k": 530
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.3931709561087255,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": 0.4706689961502389,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": null
+    }
+   ],
+   "frame_file": "frames/frame_000535.jpg",
+   "margin": 0.06324216670528499,
+   "max_distractor_cosine": 0.4706689961502389,
+   "maximum_target_iou": 0.8103884022401775,
+   "recall_hit": true,
+   "target_cosine": 0.5339111628555239,
+   "target_embedding_error": null,
+   "tick_k": 535
+  },
+  {
+   "distractors": [
+    {
+     "cosine": 0.40666874044279405,
+     "distractor_id": "Vehicle_Container_color02 (2)",
+     "error": null
+    },
+    {
+     "cosine": 0.342427451507616,
+     "distractor_id": "Vehicle_SUV_color01 (1)",
+     "error": null
+    },
+    {
+     "cosine": null,
+     "distractor_id": "Vehicle_Taxi (2)",
+     "error": "CROP_INVALID"
+    }
+   ],
+   "frame_file": "frames/frame_000540.jpg",
+   "margin": 0.21605105169156585,
+   "max_distractor_cosine": 0.40666874044279405,
+   "maximum_target_iou": 0.8969254895160761,
+   "recall_hit": true,
+   "target_cosine": 0.6227197921343599,
+   "target_embedding_error": null,
+   "tick_k": 540
+  }
+ ],
+ "schema_version": "p1-scene-006-probe-result/v1",
+ "tool_state": "FAIL",
+ "weight_verification": {
+  "error": null,
+  "verified": true
+ },
+ "work_id": "P1-SCENE-006"
+}

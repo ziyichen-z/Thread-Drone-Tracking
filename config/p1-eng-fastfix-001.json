@@ -1,0 +1,12 @@
+{
+  "schema_version": "p1-eng-fastfix-001/v1",
+  "work_id": "P1-ENG-FASTFIX-001",
+  "note": "同名提案 §3.7：只在捕获模式（run --language off）读取；类别按 v3.1 B9。t_pub_s/k_pub 为合同继承的移植限值（LOOP-001 AC-10 修订 1），不称本机最优，只允许 {0.4/2, 0.6/3} 由用户签；N_drop/T_reacq 为设计预算占位（七题答复 VALUES），冒烟后只报读数不改值。无 rho_reacq（D2 接受裁定批准删除）。其余目标管理器参数读 config/p1-eng-capture-001.json，不复制。",
+  "params": {
+    "t_pub_s": {"value": 0.4, "category": "contract_inherited", "basis": "LOOP-001 AC-10 修订 1：T_pub = K_PUB/hz（5 Hz 时 0.4 s）；§3.4 预登记二选一"},
+    "k_pub": {"value": 2, "category": "contract_inherited", "basis": "LOOP-001 AC-10 修订 1：K_PUB = 2"},
+    "n_drop_frames": {"value": 3, "category": "design_budget", "basis": "占位（七题答复 VALUES）：纯发布中断不晚于 CAPTURE 报告时限（T_report = 3）升级；结构约束 1 ≤ N_drop ≤ T_report"},
+    "t_reacq_frames": {"value": 10, "category": "design_budget", "basis": "占位（七题答复 VALUES）：诊断重建约 3 帧；结构约束 T_reacq ≥ N_adopt + 1；5 Hz 时 2 s"},
+    "auto_reacquire": {"value": "on", "category": "config_axis", "basis": "on 为本项行为；off 为对照臂（现行行为）"}
+  }
+}

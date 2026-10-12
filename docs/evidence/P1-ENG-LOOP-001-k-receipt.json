@@ -1,0 +1,50 @@
+{
+  "backend": "http",
+  "decision": "5060",
+  "decision_reason": "gpu_tier_a",
+  "host": "5060",
+  "hz": 5.0,
+  "k_conf": 50,
+  "k_pub": 2,
+  "k_ret": 30,
+  "measurement_report": {
+    "gpu_5060": {
+      "p95_s": 5.429160666999451,
+      "tier": "A"
+    },
+    "mac": {
+      "p95_s": 8.7562978750002,
+      "tier": "B"
+    }
+  },
+  "model_form": "c2-adapter",
+  "model_identity": {
+    "backend": "http",
+    "base_repo_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "device": "cuda",
+    "g4_segment_sha256": null,
+    "model_form": "c2-adapter",
+    "prompt_template_sha256": "b28d2eb57afd9f0207ea935c0cd505189bfabc50e0117a80c177ce706cfc0b54",
+    "vocab_sha256": "65c59418680f2eda81c274316938470f8369a246b0fedfee2882b4a1fdf9177f",
+    "weights_sha256": "4044dd4f141cef6457a63364df51a0b4405f6e7c549b0961c35b785b6e7c2d37"
+  },
+  "p95_s": 5.429160666999451,
+  "qualifies": true,
+  "retained_frame_count": 128,
+  "scenario_id": "deterministic-loop-default",
+  "source_reports": {
+    "5060": {
+      "path": "docs/evidence/P1-ENG-LOOP-001-latency-5060.json",
+      "sha256": "f54ba053c3f6a3affb7b3914c8c41d15805d962f46725ddc74a148cb5c8f741a"
+    },
+    "mac": {
+      "path": "docs/evidence/P1-ENG-LOOP-001-latency-mac.json",
+      "sha256": "e7787e80ccefcbc9e9f0f7365b8116a422c8d007b8565debfd0fd8e5a8422091"
+    }
+  },
+  "t_conf_s": 10.0,
+  "t_pub_s": 0.4,
+  "t_ret_s": 6.0,
+  "t_stall_s": 3.0,
+  "work_id": "P1-ENG-LOOP-001"
+}

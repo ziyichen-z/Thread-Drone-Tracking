@@ -1,0 +1,182 @@
+# COORD-015 A8a：本批 diff 不改任何既有工作项的门值、verdict、未闭义务、授权原话（C1@落地 退回项修复，supervisor 协调批次，2026-09-25）
+# 命令：python3 a8a_check.py ~/TetheredDroneTracking   （脚本全文附于文末；退出码 0 = 全部 pass）
+# 比对：git diff bcc2c68 -- docs/current-status.md docs/parked-status.md docs/authorizations.md（bcc2c68 → 工作树；工作树 = HEAD 134a241 + 本批未提交的状态板改动，即本批提交后的候选内容）
+# 运行时刻：2026-09-26T03:55:15Z
+
+## 0. 改动规模（git diff --numstat bcc2c68 -- <文件>，含工作树未提交的本批改动）
+    72	4	docs/current-status.md
+    0	0	(无改动)
+    183	0	docs/authorizations.md
+
+## 1. docs/parked-status.md
+- [pass] bcc2c68 → 工作树 diff 为空（暂停/终止项门值、义务、停点逐字不变）
+
+## 2. docs/authorizations.md
+- [pass] 无删除或改写行（删除行数 = 0）：既有条目与授权原话逐字保留
+- [pass] bcc2c68 版全部行按原顺序逐字出现在工作树版（有序子序列；新条目按账本新在前插入）
+- [pass] 新增 `## ` 条目 10 条，全部为 COORD-015 条目（非本项新增 = []）
+    新增：## 2026-09-25 COORD-015 — 用户指示：A5/A7 演练接受角色改用 Kimi（k3-256k，经 codex exec；supervisor 会话代录）
+    新增：## 2026-09-25 COORD-015 — 用户指示：五角色运行地改回本机（取代同日「角色运行地部署」的 mini 部分；不授权启用与信封）
+    新增：## 2026-09-25 COORD-015 — 用户指示：角色运行地部署（supervisor 本机，五角色在 Mac mini）
+    新增：## 2026-09-25 COORD-015 — 用户指示修订 4：撤销修订 2/3，恢复 supervisor = Opus（直接恢复，不重写）
+    新增：## 2026-09-25 COORD-015 — 用户授权 Codex CLI 下载/安装与 A6 装后实测（协调批次执行）
+    新增：## 2026-09-25 COORD-015 — 用户授权 A5/A7 夹具演练协调批次（含 A4 验收入库）
+    新增：## 2026-09-25 COORD-015 — 用户指示：提案记录移至新文件（构思会话代录）
+    新增：## 2026-09-25 COORD-015 — 用户指示修订 3：不指定任何模型以及 CLI（待构思起草、接受确认，不授权启用）
+    新增：## 2026-09-25 COORD-015 — 用户指示修订 2 补充：改动范围与派发（构思会话代录）
+    新增：## 2026-09-25 COORD-015 — 用户指示修订 2：supervisor 运行地改本机、不绑定模型名称（待构思起草、接受确认，不授权启用）
+- [pass] bcc2c68 版含「原话」的 202 行逐行存在于工作树版（缺失 0）
+
+## 3. docs/current-status.md
+- [pass] Gate board：非 COORD-015 行 20 个标识逐字相同（含 Overall/Lifecycle/verdict 列；变化 = []）
+    Gate board 中 COORD-015 行：bcc2c68 1 行 → 工作树 1 行（本项自身推进，A8b）
+- [pass] Active handoffs：非 COORD-015 行 7 个标识逐字相同（含 Overall/Lifecycle/verdict 列；变化 = []）
+    Active handoffs 中 COORD-015 行：bcc2c68 1 行 → 工作树 1 行（本项自身推进，A8b）
+- [pass] Log：bcc2c68 的 125 条既有条目逐字保留（改动/丢失 = []）
+- [pass] Log：新增 15 条，全部为 COORD-015 条目
+    删除/改写行共 4 行，逐行归类：
+      · [本项行；同段他项 ['P1-ENG-FAST-001', 'P1-ENG-LOOP-001'] 分句逐字保留] **当前未闭义务（2026-09-25）：** `COORD-015` D6 设计与接受后修订 1 已确认（提案「接受后修订 1 审核」、BC-1…12）；协调…
+      · [本项行] | `COORD-015` | supervisor 接力调度、事实核查与有界代拍 | D6 ACCEPTED；接受后修订 1 已确认（2026-09-25）；…
+      · [本项行] | User | `COORD-015`@ACCEPTED | 决定是否授权提案 §9.2/§12 的协调落地与 Codex CLI 下载安装；§13 U1–U…
+      · [无工作项标识，内容仅涉 COORD-015（交接计数与 §13 U1–U9/落地授权）；工作树对应行：当前 0 条消耗性、1 条零消耗活跃交接；COORD-015 `C1@落地` 退回项已修复，交接受 `C2@落地`，见交接行。CLI 下载/A6 已完成（证据 `docs/evid…] 当前 0 条消耗性、1 条零消耗活跃交接；U1–U9 与落地/下载授权仍归用户。
+- [pass] 删除/改写行全部属于 COORD-015 或不含任何他项标识（同段他项义务分句在工作树版逐字保留）
+
+## 汇总
+10/10 pass；总判定 PASS
+# exit=0
+
+===== 附：脚本源码（a8a_check.py） =====
+#!/usr/bin/env python3
+"""COORD-015 A8a：bcc2c68 → 工作树（= 本批提交内容）对三份共享文件逐项比对。
+
+证明非 COORD-015 的 Gate 行、交接行（含 verdict/门值）、Log 条目、parked 内容与授权原话零改动。
+只读；用法：python3 a8a_check.py <仓库根>
+"""
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+REPO = Path(sys.argv[1]).resolve()
+BASE = "bcc2c68"
+OWN = "COORD-015"
+FILES = ["docs/current-status.md", "docs/parked-status.md", "docs/authorizations.md"]
+results = []
+
+
+def git(*args):
+    return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, check=True).stdout
+
+
+def record(ok, text):
+    results.append(ok)
+    print(f"- [{'pass' if ok else 'fail'}] {text}")
+
+
+def table(text, title):
+    rows, inside = [], False
+    for line in text.splitlines():
+        if line.startswith("## "):
+            inside = line.strip() == f"## {title}"
+            continue
+        if inside and line.startswith("|"):
+            rows.append(line)
+    return rows[2:]  # 去表头与分隔行
+
+
+def row_id(line):
+    cells = [c.strip() for c in line.strip("|").split("|")]
+    for c in cells[:2]:
+        m = re.search(r"`([A-Z][A-Z0-9-]+)`", c)
+        if m:
+            return m.group(1)
+    return None
+
+
+def log_entries(text):
+    part = text.split("\n## Log\n", 1)[1]
+    chunks = re.split(r"(?m)^(?=### )", part)
+    return {c.splitlines()[0]: c for c in chunks if c.startswith("### ")}
+
+
+print("## 0. 改动规模（git diff --numstat bcc2c68 -- <文件>，含工作树未提交的本批改动）")
+for f in FILES:
+    stat = git("diff", "--numstat", BASE, "--", f).strip() or "0\t0\t(无改动)"
+    print(f"    {stat}")
+
+# ---- parked-status
+print("\n## 1. docs/parked-status.md")
+d = git("diff", BASE, "--", "docs/parked-status.md")
+record(d == "", "bcc2c68 → 工作树 diff 为空（暂停/终止项门值、义务、停点逐字不变）")
+
+# ---- authorizations
+print("\n## 2. docs/authorizations.md")
+base_auth = git("show", f"{BASE}:docs/authorizations.md")
+head_auth = (REPO / "docs/authorizations.md").read_text(encoding="utf-8")
+diff = git("diff", "-U0", BASE, "--", "docs/authorizations.md").splitlines()
+removed = [l for l in diff if l.startswith("-") and not l.startswith("---")]
+record(not removed, f"无删除或改写行（删除行数 = {len(removed)}）：既有条目与授权原话逐字保留")
+it = iter(head_auth.splitlines())
+record(all(line in it for line in base_auth.splitlines()),
+       "bcc2c68 版全部行按原顺序逐字出现在工作树版（有序子序列；新条目按账本新在前插入）")
+added_heads = [l[1:] for l in diff if l.startswith("+## ")]
+non_own = [h for h in added_heads if OWN not in h]
+record(not non_own, f"新增 `## ` 条目 {len(added_heads)} 条，全部为 {OWN} 条目（非本项新增 = {non_own}）")
+for h in added_heads:
+    print(f"    新增：{h}")
+quotes_base = [l for l in base_auth.splitlines() if "原话" in l]
+missing = [q for q in quotes_base if q not in head_auth.splitlines()]
+record(not missing, f"bcc2c68 版含「原话」的 {len(quotes_base)} 行逐行存在于工作树版（缺失 {len(missing)}）")
+
+# ---- current-status
+print("\n## 3. docs/current-status.md")
+base_cs = git("show", f"{BASE}:docs/current-status.md")
+head_cs = (REPO / "docs/current-status.md").read_text(encoding="utf-8")
+for title in ("Gate board", "Active handoffs"):
+    b = {}
+    for r in table(base_cs, title):
+        b.setdefault(row_id(r), []).append(r)
+    h = {}
+    for r in table(head_cs, title):
+        h.setdefault(row_id(r), []).append(r)
+    others = sorted(k for k in set(b) | set(h) if k != OWN)
+    changed = [k for k in others if b.get(k) != h.get(k)]
+    record(not changed, f"{title}：非 {OWN} 行 {len(others)} 个标识逐字相同（含 Overall/Lifecycle/verdict 列；变化 = {changed}）")
+    print(f"    {title} 中 {OWN} 行：bcc2c68 {len(b.get(OWN, []))} 行 → 工作树 {len(h.get(OWN, []))} 行（本项自身推进，A8b）")
+bl, hl = log_entries(base_cs), log_entries(head_cs)
+lost = [k for k in bl if k not in hl or bl[k].rstrip() != hl[k].rstrip()]
+record(not lost, f"Log：bcc2c68 的 {len(bl)} 条既有条目逐字保留（改动/丢失 = {lost}）")
+new = [k for k in hl if k not in bl]
+record(all(OWN in k for k in new), f"Log：新增 {len(new)} 条，全部为 {OWN} 条目")
+diff = git("diff", "-U0", BASE, "--", "docs/current-status.md").splitlines()
+removed = [l[1:] for l in diff if l.startswith("-") and not l.startswith("---")]
+print(f"    删除/改写行共 {len(removed)} 行，逐行归类：")
+ok_all = True
+for line in removed:
+    if line.startswith("Last updated:"):
+        print("      · Last updated 行（日期戳）")
+        continue
+    if OWN not in line:
+        other = re.findall(r"`((?:P1|COORD|M)[A-Z0-9-]*)`", line)
+        if other:
+            ok_all = False
+            print(f"      · [非本项，含他项标识 {other}] {line[:120]}")
+        else:
+            print(f"      · [无工作项标识，内容仅涉 {OWN}（交接计数与 §13 U1–U9/落地授权）；工作树对应行："
+                  f"{next((l for l in head_cs.splitlines() if l.startswith('当前 0 条消耗性')), '')[:90]}…] {line[:120]}")
+        continue
+    # 含本项的段落若同时写到其他工作项，要求其他工作项的每个分句在工作树版逐字保留
+    ids = set(re.findall(r"`((?:P1|COORD|M)[A-Z0-9-]*)`", line)) - {OWN}
+    kept = True
+    for sent in re.split(r"(?<=[。；])", line):
+        if any(f"`{i}`" in sent for i in ids) and OWN not in sent:
+            if sent.strip() and sent.strip() not in head_cs:
+                kept = False
+                print(f"      · [他项分句未保留] {sent.strip()[:120]}")
+    ok_all &= kept
+    tag = f"本项行；同段他项 {sorted(ids)} 分句逐字保留" if ids else "本项行"
+    print(f"      · [{tag}] {line[:80]}…")
+record(ok_all, "删除/改写行全部属于 COORD-015 或不含任何他项标识（同段他项义务分句在工作树版逐字保留）")
+
+print(f"\n## 汇总\n{results.count(True)}/{len(results)} pass；总判定 {'PASS' if all(results) else 'FAIL'}")
+sys.exit(0 if all(results) else 1)

@@ -1,0 +1,116 @@
+{
+  "schema_version": "tethered-scenario/v1",
+  "scenario_id": "p1-scene-004-d2",
+  "random_seed": 0,
+  "road_data_sha256": "111e0759d4b52821d08ce4ddd1aae3fc8cc8d24e12e6fa62513403c00b401894",
+  "anchor_world_m": {
+    "x": 140.0,
+    "y": 1.3113418617649586e-06,
+    "z": 108.0
+  },
+  "drone": {
+    "initial_altitude_m": 25.0,
+    "tether_length_m": 35.0,
+    "minimum_altitude_m": 8.0,
+    "maximum_altitude_m": 32.0,
+    "maximum_speed_mps": 4.0,
+    "maximum_acceleration_mps2": 4.0
+  },
+  "gimbal": {
+    "maximum_off_nadir_deg": 45.0,
+    "slew_rate_deg_per_second": 120.0
+  },
+  "sensor": {
+    "width": 640,
+    "height": 480,
+    "vertical_fov_deg": 60.0,
+    "capture_hz": 20.0,
+    "jpeg_quality": 85,
+    "retained_frame_count": 4096
+  },
+  "target": {
+    "track_id": "target-0",
+    "speed_mps": 8.0,
+    "route_world_m": [
+      {
+        "x": 128.0,
+        "y": 0.2,
+        "z": 116.0
+      },
+      {
+        "x": 152.0,
+        "y": 0.2,
+        "z": 116.0
+      },
+      {
+        "x": 154.5,
+        "y": 0.2,
+        "z": 118.5
+      },
+      {
+        "x": 152.0,
+        "y": 0.2,
+        "z": 121.0
+      },
+      {
+        "x": 128.0,
+        "y": 0.2,
+        "z": 121.0
+      },
+      {
+        "x": 125.5,
+        "y": 0.2,
+        "z": 118.5
+      }
+    ]
+  },
+  "scene_adjustments": {
+    "vehicle_relocations": [
+      {
+        "prefab_name": "Vehicle_Taxi",
+        "original_xz_m": {
+          "x": 138.899994,
+          "z": 116.400002
+        },
+        "match_tolerance_m": 0.1,
+        "new_position_m": {
+          "x": 162.0,
+          "y": 0.0,
+          "z": 117.0
+        },
+        "mark_as_distractor": true
+      },
+      {
+        "prefab_name": "Vehicle_SUV_color01",
+        "original_xz_m": {
+          "x": 130.34343,
+          "z": 123.569504
+        },
+        "match_tolerance_m": 0.1,
+        "new_position_m": {
+          "x": 118.0,
+          "y": 0.0,
+          "z": 121.0
+        },
+        "mark_as_distractor": true
+      }
+    ],
+    "expected_distractor_count": 2,
+    "route_corridor": {
+      "target_half_width_m": 1.0,
+      "clearance_margin_m": 0.5,
+      "target_bottom_offset_m": 0.0,
+      "target_height_m": 1.55,
+      "vertical_clearance_margin_m": 0.5,
+      "road_sample_spacing_m": 0.5,
+      "enable_dynamic_intersection_audit": false,
+      "enable_jump_diagnostic": false,
+      "jump_epsilon_m": 0.001
+    }
+  },
+  "evaluation": {
+    "minimum_visible_sample_fraction": 0.2,
+    "tracking_iou_threshold": 0.3,
+    "maximum_pending_frame_count": 4096
+  }
+}

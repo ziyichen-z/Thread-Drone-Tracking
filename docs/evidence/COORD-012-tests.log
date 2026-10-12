@@ -1,0 +1,148 @@
+# COORD-012 协调批次测试证据（U1/U2/U3 落地，2026-09-20）
+
+## 1. 修复前必失败：新测试对修改前的 tools/check_docs.py（HEAD 2e600de 版本）
+
+命令：python3 -m unittest tests.test_check_docs.LogCompressiblePoolTest
+
+FFF.FF
+======================================================================
+FAIL: test_date_range_heading_counts_and_undated_heading_is_rejected (tests.test_check_docs.LogCompressiblePoolTest.test_date_range_heading_counts_and_undated_heading_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 506, in test_date_range_heading_counts_and_undated_heading_is_rejected
+    self.assertIn("可压池", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '可压池' not found in ''
+
+======================================================================
+FAIL: test_entries_linked_to_active_work_items_are_protected (tests.test_check_docs.LogCompressiblePoolTest.test_entries_linked_to_active_work_items_are_protected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 470, in test_entries_linked_to_active_work_items_are_protected
+    self.assertIn("可压池", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '可压池' not found in ''
+
+======================================================================
+FAIL: test_entries_new_in_this_batch_are_excluded_until_committed (tests.test_check_docs.LogCompressiblePoolTest.test_entries_new_in_this_batch_are_excluded_until_committed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 500, in test_entries_new_in_this_batch_are_excluded_until_committed
+    self.assertIn("可压池", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '可压池' not found in ''
+
+======================================================================
+FAIL: test_terminal_work_item_entries_over_cap_are_rejected (tests.test_check_docs.LogCompressiblePoolTest.test_terminal_work_item_entries_over_cap_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 447, in test_terminal_work_item_entries_over_cap_are_rejected
+    self.assertIn("可压池", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '可压池' not found in ''
+
+======================================================================
+FAIL: test_unlinked_entries_are_protected_only_within_seven_days (tests.test_check_docs.LogCompressiblePoolTest.test_unlinked_entries_are_protected_only_within_seven_days)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 478, in test_unlinked_entries_are_protected_only_within_seven_days
+    self.assertIn("可压池", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '可压池' not found in ''
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.234s
+
+FAILED (failures=5)
+
+退出码：1
+
+## 2. 修复后：focused 测试（tests.test_check_docs + tests.test_check_role_writes）
+
+命令：python3 -m unittest tests.test_check_docs tests.test_check_role_writes
+
+.............................................
+----------------------------------------------------------------------
+Ran 45 tests in 1.334s
+
+OK
+
+退出码：0
+
+## 3. 落地时对真实状态板运行 tools/check_docs.py（预期唯一违规 = 可压池 > 300，待 chore N2 消化）
+
+命令：python3 tools/check_docs.py
+
+docs 合规检查未通过，共 1 项违规：
+  1. '## Log' 可压池共 746 行（89 条：关联 work item 全部终态（DONE/CLOSED_*/OUT_OF_CURRENT_SCOPE）的条目 + 无关联 work ID 且早于 2026-09-13 的条目；本批次新写与关联进行中 work item 的条目不计），超过上限 300 行（COORD-012 U1）。处置见 docs/roles/chore.md「允许的任务」：按压缩标准压缩可压池条目（保留结论、证据指针、未闭义务；移出的叙述整段移入 docs/status-history.md，移动而非复制），不压本批次新条目与进行中 work item 的条目。最大的条目：21 行 '### 2026-09-18 — P1-ENG-SFT-002 C2@K3 核对通过，交 R1@K3 独立复核与 UNITY_NA 附议'；20 行 '### 2026-09-18 — P1-ENG-SFT-002 接受侧消费 R1@K3 与 UNITY_NA 附议：工作项 DONE'；20 行 '### 2026-09-18 — P1-ENG-SFT-002 R1@K3 PASS_WITH_NOTES（独立复核，含候选 2 UNITY_N…'；19 行 '### 2026-09-16 — 辅助角色代录 P1-ENG-SFT-002 表 J 用户新 #9–#11 判定原文（UT-P1-ENG-SFT…'；16 行 '### 2026-09-18 — P1-ENG-SFT-002 C1@K3：唯一核对退回与云端偏差裁定'。
+
+退出码：1
+
+## 4. 用户裁定（去 (iii)、Lifecycle 列、history 须同意）修复前：改写后的测试对提交 972bc7a 版本的 tools/check_docs.py
+
+命令：python3 -m unittest tests.test_check_docs.LogCompressiblePoolTest
+
+...FF.F
+======================================================================
+FAIL: test_heading_date_is_not_parsed_any_more (tests.test_check_docs.LogCompressiblePoolTest.test_heading_date_is_not_parsed_any_more)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 520, in test_heading_date_is_not_parsed_any_more
+    self.assertEqual(violations_for(undated), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ["'## Log' 条目标题 '### 未标日期的条目' 无法按 `### YYY[114 chars]标题。"] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+"'## Log' 条目标题 '### 未标日期的条目' 无法按 `### YYYY-MM-DD — 标题` 解析日期（合并条目可写 `YYYY-MM-DD/DD`）；该条目不关联任何 Gate board work ID，7 天保护无法判定，fail-closed 拒绝（COORD-012 U1）——请修正标题。"
+
++ []
+- ["'## Log' 条目标题 '### 未标日期的条目' 无法按 `### YYYY-MM-DD — 标题` 解析日期（合并条目可写 "
+-  '`YYYY-MM-DD/DD`）；该条目不关联任何 Gate board work ID，7 天保护无法判定，fail-closed '
+-  '拒绝（COORD-012 U1）——请修正标题。']
+
+======================================================================
+FAIL: test_lifecycle_column_is_required_and_closed_set (tests.test_check_docs.LogCompressiblePoolTest.test_lifecycle_column_is_required_and_closed_set)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 528, in test_lifecycle_column_is_required_and_closed_set
+    self.assertIn("Lifecycle", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Lifecycle' not found in ''
+
+======================================================================
+FAIL: test_unlinked_entries_enter_the_pool_regardless_of_date (tests.test_check_docs.LogCompressiblePoolTest.test_unlinked_entries_enter_the_pool_regardless_of_date)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_docs.py", line 487, in test_unlinked_entries_enter_the_pool_regardless_of_date
+    self.assertIn("可压池", joined)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '可压池' not found in ''
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.386s
+
+FAILED (failures=3)
+
+退出码：1
+
+## 5. 用户裁定修复后：focused 测试（tests.test_check_docs + tests.test_check_role_writes）
+
+命令：python3 -m unittest tests.test_check_docs tests.test_check_role_writes
+
+..............................................
+----------------------------------------------------------------------
+Ran 46 tests in 1.345s
+
+OK
+
+退出码：0
+
+## 6. 用户裁定落地后对真实状态板运行 tools/check_docs.py（预期唯一违规 = 可压池 > 300，待 chore N2 与用户同意）
+
+命令：python3 tools/check_docs.py
+
+docs 合规检查未通过，共 1 项违规：
+  1. '## Log' 可压池共 800 行（95 条：关联 work item 全部 Lifecycle=`ENDED` 的条目 + 无关联 work ID 的条目；本批次新写与关联未终止 work item 的条目不计），超过上限 300 行（COORD-012 U1，用户裁定 2026-09-20）。处置见 docs/roles/chore.md「允许的任务」：按压缩标准压缩可压池条目（保留结论、证据指针、未闭义务；移出的叙述整段移入 docs/status-history.md，移动而非复制，移入前须先经用户以 work item 为单位一次同意），不压本批次新条目与未终止 work item 的条目。最大的条目：21 行 '### 2026-09-18 — P1-ENG-SFT-002 C2@K3 核对通过，交 R1@K3 独立复核与 UNITY_NA 附议'；20 行 '### 2026-09-18 — P1-ENG-SFT-002 接受侧消费 R1@K3 与 UNITY_NA 附议：工作项 DONE'；20 行 '### 2026-09-18 — P1-ENG-SFT-002 R1@K3 PASS_WITH_NOTES（独立复核，含候选 2 UNITY_N…'；19 行 '### 2026-09-16 — 辅助角色代录 P1-ENG-SFT-002 表 J 用户新 #9–#11 判定原文（UT-P1-ENG-SFT…'；16 行 '### 2026-09-18 — P1-ENG-SFT-002 C1@K3：唯一核对退回与云端偏差裁定'。
+
+退出码：1

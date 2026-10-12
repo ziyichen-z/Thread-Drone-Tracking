@@ -1,0 +1,5 @@
+#!/bin/sh
+# 提交前自动运行状态板合规自检（AGENTS.md“共享状态更新”硬上限）。
+# 违规时拒绝提交；绕过（不推荐）：git commit --no-verify
+cd "$(git rev-parse --show-toplevel)" || exit 1
+exec python3 tools/check_docs.py

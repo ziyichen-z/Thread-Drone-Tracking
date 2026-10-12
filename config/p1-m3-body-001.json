@@ -1,0 +1,51 @@
+{
+  "schema_version": "p1-m3-body-001/v1",
+  "work_id": "P1-M3-BODY-001",
+  "batch": "1a-beta",
+  "policy": {
+    "margin_trigger_deg": 10.0,
+    "margin_release_deg": 20.0,
+    "v_cmd_mps": 4.0,
+    "altitude_hold_m": 25.0,
+    "tether_corridor_check": true,
+    "maximum_off_nadir_deg_source": "config/scenario.default.json gimbal.maximum_off_nadir_deg"
+  },
+  "command": {
+    "contract_version": "body-planner-contract/v1",
+    "modes": ["hold", "velocity_world"],
+    "capture_hz": 5.0,
+    "expires_after_s": 0.4,
+    "velocity_y_mps": 0.0
+  },
+  "corridor": {
+    "artifact_path": "config/p1-m3-body-001-corridor-prisms.json",
+    "artifact_sha256": "9e2956ad93a4a81cf638a913b9c806e1a316616bf090b125641d3f5c0b7fc800",
+    "corridor_nominal_radius_m": 0.5,
+    "clearance_margin_m": 0.5,
+    "instance_count": 779
+  },
+  "calibration": {
+    "sigma_px": 2.866112,
+    "artifact_path": "docs/evidence/P1-M3-BODY-001-sigma-px.json",
+    "artifact_sha256": "824d77f5c536ba584ca6c17c6f391e0b7366bbb48d7a96172bfc6ebbdf23a7bb",
+    "label": "conservative initial value, not a carrier measurement"
+  },
+  "measurement_window": {
+    "artifact_path": "docs/evidence/P1-M3-BODY-001-scene-body-margin.json",
+    "artifact_sha256": "c72c940736da9bb1d2924e0d8349f8cfeb08cfb06013e656b72793155f89576d",
+    "visible_arc_sha256": "4fe2eea5e831301be8fea76e4757e151113dcd0251941e88a2c21b1e1a6bdf55",
+    "route_sample_spacing_m": 0.5
+  },
+  "estimator": {
+    "priors_status": "pre-data uncalibrated heuristic priors frozen per BC-BODY1-18: not a calibration, not a physical bound; frozen before any 1c data and never retuned afterwards - a significant mismatch is reported as-is and returned to Acceptance",
+    "q_accel_mps2": 8.377580,
+    "q_accel_mps2_derivation": "heuristic process-noise scale frozen before any data: frozen target speed 2.0 m/s (scenario target.speed_mps) x turn rate 240 deg/s in rad/s (LoopTargetVehicle.cs:9). turnRate only rotates the body orientation via Quaternion.RotateTowards and does not constrain translation, so the product is an order-of-magnitude scale, not a physical bound on target translation",
+    "sigma_att_deg": 1.0,
+    "sigma_att_deg_derivation": "no attitude-noise calibration source exists anywhere in the project; 1.0 deg is a conservative placeholder and nothing more",
+    "sigma_y_m": 0.05,
+    "sigma_y_m_derivation": "reuses the existing 0.05 m spatial tolerance (config/p1-m3-body-001-anchor-placement.json) only as a conservative scale; it is not ground-plane noise derived from the anchor support tolerance",
+    "initial_velocity_sigma_mps": 2.0,
+    "initial_velocity_sigma_mps_derivation": "conservative initial prior scaled to the frozen target speed (scenario target.speed_mps); not a measured standard deviation",
+    "note": "batch 1 decisions never consume this estimate (BC-M34-3); the covariance is logged for batch 2 and the 1c NEES/NIS analysis, which reports consistency diagnostics under uncalibrated priors only - never a calibrated or validated estimator (BC-BODY1-18 (d))"
+  }
+}

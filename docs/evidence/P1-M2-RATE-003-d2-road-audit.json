@@ -1,0 +1,17 @@
+{
+    "schema_version": "p1-scene-road-audit/v1",
+    "scenario_id": "p1-scene-004-d2",
+    "status": "CLEAR",
+    "route_sample_count": 126,
+    "road_violation_count": 0,
+    "road_violations": [],
+    "audited_obstacle_count": 782,
+    "overhead_exemption_count": 1,
+    "obstacle_violation_count": 0,
+    "vehicle_violation_count": 0,
+    "prop_violation_count": 0,
+    "nature_violation_count": 0,
+    "building_violation_count": 0,
+    "other_violation_count": 0,
+    "obstacle_violations": []
+}

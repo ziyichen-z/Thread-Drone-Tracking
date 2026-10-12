@@ -1,0 +1,31 @@
+# P1-ENG-LOOP-001 阶段 A 的语言选框闭环环境（AC-12）。
+#
+# 装进**新**虚拟环境 `.venv-language`，不改 `.venv-track`（OpenCV/NanoTrack-v2）
+# 与 `.venv-yoloe`（另一族 OpenCV 轮子）；三者的 cv2 命名空间互斥，不得合并。
+#
+# 版本钉 `tools/requirements-eng-sft.txt`（P1-ENG-SFT-002 表 K）同版，好让本项的
+# 推理与产出 C2 的那次训练/评估在同一套库上运行。**唯一的平台差异是 torch 轮子**：
+#   * 5060（Windows/Linux，Blackwell sm_120）：CUDA 12.8 轮子，装 `torch==2.11.0+cu128`
+#     并加 `--extra-index-url https://download.pytorch.org/whl/cu128`；
+#   * Mac（M4，MPS）：同版号的默认轮子 `torch==2.11.0`，不带 CUDA 后缀。
+# 本文件写 Mac 侧的默认轮子；5060 侧按操作单 B 追加 `--extra-index-url` 与
+# `+cu128` 后缀安装。若目标平台没有该**确切版本**的轮子，按合同这属于要如实披露
+# 并退回接受角色的偏差，不得自行换版本。
+#
+# 安装（操作单 A/B 有逐条命令）：
+#   python3 -m venv .venv-language
+#   .venv-language/bin/python -m pip install -r tools/requirements-language.txt
+#   .venv-language/bin/python -m pip check
+#
+# 闭环本身（桥文件、状态机、发布门、CLI、测试）只用标准库；下面这些只有
+# `local-hf` / `http` 两个后端与预览渲染需要。`replay` 后端与全部无 GPU 测试
+# 在系统解释器上就能跑。
+torch==2.11.0
+torchvision==0.26.0
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0
+pillow==12.3.0
+tokenizers==0.23.2
+huggingface-hub==1.30.0
+safetensors==0.8.0

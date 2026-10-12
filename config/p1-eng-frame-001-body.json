@@ -1,0 +1,29 @@
+{
+  "schema_version": "p1-eng-frame-001-body/v1",
+  "work_id": "P1-ENG-FRAME-001",
+  "planner": "standoff-band-v1",
+  "selected_candidate": "C3",
+  "params": {
+    "band_w_m": 4.0,
+    "d_star_m": 12.0,
+    "k_p_per_s": 0.4,
+    "t_lead_s": 2.5
+  },
+  "fixed": {
+    "corridor_pad_m": 1.0,
+    "d_plaus_m": 65.0,
+    "min_residual_speed_mps": 0.05,
+    "obstacle_pad_m": 2.1,
+    "shorten_step_m": 0.05,
+    "target_velocity_clamp_mps": 4.0,
+    "v_max_mps": 4.0
+  },
+  "body_001_config": {
+    "path": "config/p1-m3-body-001.json",
+    "sha256": "3d1c4b54d152520503ca87dff1e2df95eacdc7a74ced7301182cee9a7ad7f9ae"
+  },
+  "replay_evidence": {
+    "path": "docs/evidence/P1-ENG-FRAME-001-replay.json",
+    "sha256": "8e35ca3b9b1b094ed246df71d1f7c43c672e27c0ed6c8c141578aa00ebeb1d04"
+  }
+}

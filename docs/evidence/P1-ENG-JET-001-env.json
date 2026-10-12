@@ -1,0 +1,1955 @@
+{
+  "checks": [
+    {
+      "criterion": "nv_boot_control.conf 含 super",
+      "observed": [
+        "TNSPEC 3767-300-0005-W.1-1-1-jetson-orin-nano-devkit-super-",
+        "COMPATIBLE_SPEC 3767--0005--1--jetson-orin-nano-devkit-super-"
+      ],
+      "pass": true,
+      "stop_code": "NOT_SUPER"
+    },
+    {
+      "criterion": "GPU 上限 ≥ 1020 MHz（devfreq max_freq 与 available_frequencies 最大值）",
+      "observed": {
+        "available_max_hz": 1020000000,
+        "governor": "nvhost_podgov",
+        "max_freq_hz": 1020000000
+      },
+      "pass": true,
+      "stop_code": "FREQ_CAPPED"
+    },
+    {
+      "criterion": "CPU 上限 ≥ 1.7 GHz（全部在线核 scaling_max_freq）",
+      "observed": {
+        "cpuinfo_max_freq_khz": [
+          1728000
+        ],
+        "online_cores": 6,
+        "scaling_max_freq_khz": [
+          1728000
+        ]
+      },
+      "pass": true,
+      "stop_code": "FREQ_CAPPED"
+    },
+    {
+      "criterion": "nvpmodel -q 当前模式 = MAXN_SUPER（AR1-3：可选未选不算过）",
+      "observed": "MAXN_SUPER",
+      "pass": true,
+      "stop_code": "POWER_MODE_NOT_MAXN_SUPER"
+    },
+    {
+      "criterion": "get-default = multi-user.target 且 display-manager inactive",
+      "observed": {
+        "default_target": "multi-user.target",
+        "gdm": "inactive",
+        "gdm3": "inactive",
+        "gui_procs": "0",
+        "is-active": "inactive",
+        "is-enabled": "not-found",
+        "lightdm": "inactive",
+        "sddm": "inactive"
+      },
+      "pass": true,
+      "stop_code": "NOT_HEADLESS"
+    },
+    {
+      "criterion": "headless 空闲 RAM ≤ 1.2 GB（tegrastats 5 min 每秒样本的最大值 ≤ 1200 MB）",
+      "observed": {
+        "max": 725.0,
+        "min": 712.0,
+        "n": 298,
+        "p50": 718.0,
+        "p95": 723.0,
+        "samples": 298,
+        "unit": "MB（tegrastats 原文单位）"
+      },
+      "pass": true,
+      "stop_code": "IDLE_RAM_OVER"
+    }
+  ],
+  "not_executed": [
+    "sudo（任何）",
+    "nvpmodel -m",
+    "systemctl isolate",
+    "jetson_clocks",
+    "任何系统设置改动"
+  ],
+  "raw_path": "outputs/eng-jet/P1-ENG-JET-001/s0/probe-raw.json",
+  "raw_sha256": "813b510a6f3c4db31cffc861fe40e257679df9caa05b33cdbb150f7e4af60436",
+  "readings": {
+    "cpu_cpufreq": {
+      "command": "for c in /sys/devices/system/cpu/cpu[0-9]*; do n=$(basename $c); echo \"$n online=$(cat $c/online 2>/dev/null || echo 1) cpuinfo_max_freq=$(cat $c/cpufreq/cpuinfo_max_freq 2>&1) scaling_max_freq=$(cat $c/cpufreq/scaling_max_freq 2>&1) scaling_governor=$(cat $c/cpufreq/scaling_governor 2>&1)\"; done",
+      "contract": "CPU 最高频率（cpufreq sysfs）",
+      "ended_utc": "2026-10-02T19:22:17Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:16Z",
+      "stderr": "",
+      "stdout": "cpu0 online=1 cpuinfo_max_freq=1728000 scaling_max_freq=1728000 scaling_governor=schedutil\ncpu1 online=1 cpuinfo_max_freq=1728000 scaling_max_freq=1728000 scaling_governor=schedutil\ncpu2 online=1 cpuinfo_max_freq=1728000 scaling_max_freq=1728000 scaling_governor=schedutil\ncpu3 online=1 cpuinfo_max_freq=1728000 scaling_max_freq=1728000 scaling_governor=schedutil\ncpu4 online=1 cpuinfo_max_freq=1728000 scaling_max_freq=1728000 scaling_governor=schedutil\ncpu5 online=1 cpuinfo_max_freq=1728000 scaling_max_freq=1728000 scaling_governor=schedutil\n"
+    },
+    "default_target": {
+      "command": "systemctl get-default",
+      "contract": "systemctl get-default",
+      "ended_utc": "2026-10-02T19:22:18Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:17Z",
+      "stderr": "",
+      "stdout": "multi-user.target\n"
+    },
+    "disk": {
+      "command": "df -B1 / $HOME",
+      "contract": "磁盘余量",
+      "ended_utc": "2026-10-02T19:22:24Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:23Z",
+      "stderr": "",
+      "stdout": "Filesystem        1B-blocks        Used    Available Use% Mounted on\n/dev/nvme0n1p1 249326301184 65712009216 170874687488  28% /\n/dev/nvme0n1p1 249326301184 65712009216 170874687488  28% /\n"
+    },
+    "display_manager": {
+      "command": "echo is-active=$(systemctl is-active display-manager 2>&1); echo is-enabled=$(systemctl is-enabled display-manager 2>&1); for u in gdm gdm3 lightdm sddm; do echo $u=$(systemctl is-active $u 2>&1); done; echo gui_procs=$(ps -eo comm= | grep -c -E '^(Xorg|Xwayland|gnome-shell|gdm-session-wor)$')",
+      "contract": "display-manager 状态",
+      "ended_utc": "2026-10-02T19:22:19Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:18Z",
+      "stderr": "",
+      "stdout": "is-active=inactive\nis-enabled=not-found\ngdm=inactive\ngdm3=inactive\nlightdm=inactive\nsddm=inactive\ngui_procs=0\n"
+    },
+    "dmesg_nvmap": {
+      "command": "echo '# dmesg (non-root):'; dmesg 2>&1 | head -1; echo '# journalctl -k -b 0 | grep -i nvmap:'; journalctl -k -b 0 --no-pager 2>&1 | grep -i nvmap; echo journal_kernel_lines=$(journalctl -k -b 0 --no-pager 2>/dev/null | wc -l); echo journal_first=\"$(journalctl -k -b 0 --no-pager 2>/dev/null | head -2 | tail -1 | cut -c1-80)\"; echo kern_log_nvmap_lines=$(grep -ci nvmap /var/log/kern.log 2>&1)",
+      "contract": "dmesg | grep -i nvmap",
+      "ended_utc": "2026-10-02T19:22:20Z",
+      "rc": 0,
+      "source_note": "`kernel.dmesg_restrict=1`、无免密 sudo：非 root `dmesg` 被拒（原文首行保留）；以 adm 组可读的 `journalctl -k -b 0`（本次启动全部内核日志）替代，另记 `/var/log/kern.log` 命中行数",
+      "started_utc": "2026-10-02T19:22:19Z",
+      "stderr": "",
+      "stdout": "# dmesg (non-root):\ndmesg: read kernel buffer failed: Operation not permitted\n# journalctl -k -b 0 | grep -i nvmap:\nOct 01 23:10:23 jetson kernel: nvmap_heap_init: nvmap_heap_init: created heap block cache\nOct 01 23:10:23 jetson kernel: nvmap_init_ivc_queue: nvmap-sci-ipc-ivc-queue property not found\nOct 01 23:10:23 jetson kernel: nvmap_page_pool_init: Total RAM pages: 1916273\nOct 01 23:10:23 jetson kernel: nvmap_page_pool_init: nvmap page pool size: 239534 pages (935 MB)\nOct 01 23:10:23 jetson kernel: nvmap_background_zero_thread: PP zeroing thread starting.\njournal_kernel_lines=1136\njournal_first=Jun 05 11:36:29 jetson kernel: Linux version 6.8.12-1021-tegra (buildbrain@03d5624\nkern_log_nvmap_lines=81\n"
+    },
+    "free_m": {
+      "command": "free -m",
+      "contract": "free -m",
+      "ended_utc": "2026-10-02T19:22:21Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:20Z",
+      "stderr": "",
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:            7485         805        4500           2        2407        6679\nSwap:              0           0           0\n"
+    },
+    "gpu_devfreq": {
+      "command": "for f in max_freq min_freq cur_freq available_frequencies governor; do echo \"$f=$(cat /sys/class/devfreq/17000000.gpu/$f 2>&1)\"; done",
+      "contract": "GPU 最高频率（devfreq sysfs）",
+      "ended_utc": "2026-10-02T19:22:16Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:15Z",
+      "stderr": "",
+      "stdout": "max_freq=1020000000\nmin_freq=306000000\ncur_freq=306000000\navailable_frequencies=306000000 408000000 510000000 612000000 714000000 816000000 918000000 1020000000\ngovernor=nvhost_podgov\n"
+    },
+    "load_idle": {
+      "command": "uptime; ps -eo pid,comm,%cpu,rss --sort=-rss | head -8",
+      "contract": "（上下文）空闲负载",
+      "ended_utc": "2026-10-02T19:22:30Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:29Z",
+      "stderr": "",
+      "stdout": " 15:22:30 up 16:09,  1 user,  load average: 0.17, 0.06, 0.01\n    PID COMMAND         %CPU   RSS\n   2225 dockerd          0.0 101180\n   2161 tailscaled       0.0 83380\n   5722 fwupd            0.0 64804\n   2162 containerd       0.0 64540\n    966 snapd            0.0 52536\n    218 systemd-journal  0.0 20676\n   2149 nvargus-daemon   0.0 19772\n"
+    },
+    "nv_boot_control": {
+      "command": "cat /etc/nv_boot_control.conf",
+      "contract": "cat /etc/nv_boot_control.conf",
+      "ended_utc": "2026-10-02T19:22:15Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:14Z",
+      "stderr": "",
+      "stdout": "TNSPEC 3767-300-0005-W.1-1-1-jetson-orin-nano-devkit-super-\nCOMPATIBLE_SPEC 3767--0005--1--jetson-orin-nano-devkit-super-\nTEGRA_BOOT_STORAGE nvme0n1\nTEGRA_CHIPID 0x23\nTEGRA_OTA_BOOT_DEVICE /dev/mtdblock0\nTEGRA_OTA_GPT_DEVICE /dev/mtdblock0\n"
+    },
+    "nvcc_version": {
+      "command": "/usr/local/cuda/bin/nvcc --version",
+      "contract": "nvcc --version",
+      "ended_utc": "2026-10-02T19:22:25Z",
+      "rc": 0,
+      "source_note": "非登录 ssh 的 PATH 不含 /usr/local/cuda/bin，取绝对路径",
+      "started_utc": "2026-10-02T19:22:24Z",
+      "stderr": "",
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_11:11:41_PM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0\n"
+    },
+    "nvpmodel_q": {
+      "command": "nvpmodel -q",
+      "contract": "sudo nvpmodel -q",
+      "ended_utc": "2026-10-02T19:22:14Z",
+      "rc": 0,
+      "source_note": "无免密 sudo；非 root `nvpmodel -q` 读当前模式（只读查询，不改模式）",
+      "started_utc": "2026-10-02T19:22:13Z",
+      "stderr": "",
+      "stdout": "NV Power Mode: MAXN_SUPER\n2\n"
+    },
+    "platform": {
+      "command": "tr -d '\\0' < /proc/device-tree/model; echo; cat /etc/nv_tegra_release | head -1; uname -r; python3 --version; dpkg-query -W -f='${Package} ${Version}\\n' nvidia-l4t-core tensorrt cuda-toolkit-13-2 2>&1 | head -5",
+      "contract": "（上下文）板型/版本",
+      "ended_utc": "2026-10-02T19:22:28Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:27Z",
+      "stderr": "",
+      "stdout": "NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super\n# R39 (release), REVISION: 2.0, GCID: 45755727, BOARD: generic, EABI: aarch64, DATE: Mon Jun  1 09:28:48 PM UTC 2026\n6.8.12-1021-tegra\nPython 3.12.3\ncuda-toolkit-13-2 13.2.1-1\nnvidia-l4t-core 39.2.0-20260601141651\ntensorrt 10.16.2.10-1+cuda13.2\n"
+    },
+    "python_import_tensorrt_torch": {
+      "command": "python3 -c \"import tensorrt, torch; print(tensorrt.__version__, torch.__version__)\" 2>&1; echo rc=$?; python3 -c \"import tensorrt; print('tensorrt', tensorrt.__version__)\" 2>&1; python3 -c \"import torch; print('torch', torch.__version__, torch.cuda.is_available())\" 2>&1 | tail -1",
+      "contract": "python3 -c \"import tensorrt, torch\"",
+      "ended_utc": "2026-10-02T19:22:27Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:25Z",
+      "stderr": "",
+      "stdout": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'torch'\nrc=1\ntensorrt 10.16.2.10\nModuleNotFoundError: No module named 'torch'\n"
+    },
+    "swap": {
+      "command": "swapon --show --bytes 2>&1; echo '# /proc/swaps'; cat /proc/swaps; echo '# zramctl'; zramctl 2>&1",
+      "contract": "swap 配置",
+      "ended_utc": "2026-10-02T19:22:23Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:21Z",
+      "stderr": "",
+      "stdout": "# /proc/swaps\nFilename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n# zramctl\n"
+    },
+    "torch_availability": {
+      "command": "python3 -m pip --version 2>&1 | tail -1; ls -d /usr/lib/python3*/dist-packages/torch /usr/local/lib/python3*/dist-packages/torch 2>&1; docker image ls --format '{{.Repository}}:{{.Tag}} {{.Size}}' 2>&1; docker image inspect nvcr.io/nvidia/pytorch:25.08-py3 --format '{{range .Config.Env}}{{println .}}{{end}}' 2>&1 | grep -E '^(TRT_VERSION|CUDA_VERSION|PYTORCH_VERSION|NVIDIA_PYTORCH_VERSION)='",
+      "contract": "（上下文）板上 torch 来源",
+      "ended_utc": "2026-10-02T19:22:29Z",
+      "rc": 0,
+      "source_note": null,
+      "started_utc": "2026-10-02T19:22:28Z",
+      "stderr": "",
+      "stdout": "/usr/bin/python3: No module named pip\nls: cannot access '/usr/lib/python3*/dist-packages/torch': No such file or directory\nls: cannot access '/usr/local/lib/python3*/dist-packages/torch': No such file or directory\nnvcr.io/nvidia/pytorch:25.08-py3 33.9GB\nCUDA_VERSION=13.0.0.044\nTRT_VERSION=10.13.2.6\nPYTORCH_VERSION=2.8.0a0+34c6371\nNVIDIA_PYTORCH_VERSION=25.08\n"
+    }
+  },
+  "s1s2_container_stack": {
+    "image": "nvcr.io/nvidia/pytorch:25.08-py3",
+    "image_digest": "nvcr.io/nvidia/pytorch@sha256:ace9a848c0ae543317e3c4763b6b4248961c47902625abfe3c77a0fb931c50fb",
+    "measured": {
+      "cuda_available": true,
+      "cuda_device": "Orin",
+      "cudnn": 91200,
+      "cv2": "4.11.0",
+      "image_env": {
+        "CUDA_VERSION": "13.0.0.044",
+        "ENG_JET_IMAGE": "nvcr.io/nvidia/pytorch:25.08-py3",
+        "NVIDIA_PYTORCH_VERSION": "25.08",
+        "PYTORCH_VERSION": "2.8.0a0+34c6371",
+        "TRT_VERSION": "10.13.2.6"
+      },
+      "in_container": true,
+      "lap": "0.5.13",
+      "machine": "aarch64",
+      "numpy": "1.26.4",
+      "onnx": "1.18.0",
+      "python": "3.12.3",
+      "tensorrt": "10.13.2.6",
+      "torch": "2.8.0a0+34c6371d24.nv25.08",
+      "torch_cuda": "13.0",
+      "torchvision": "0.23.0a0+428a54c9",
+      "ultralytics": "8.4.104"
+    },
+    "note": "S1/S2 执行栈 = 板上 NGC 容器实跑读数（`fastlayer_bench stack` 在容器内 import 实测），不代表 S0 的 JP7.2 系统栈（CUDA 13.2 / TensorRT 10.16，见本文件 readings）；二者分列不混记（提案决策记录「S1/S2 容器栈落实」）。",
+    "raw": {
+      "bytes": 604,
+      "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/stack-summary.json",
+      "sha256": "777a93b9a3bc575dd20c547d058fc37293b4a28bcc5b5d5b0ef7cdc5e45c8349"
+    },
+    "runtime": "docker 缺省 runtime = nvidia；--user 1000:1000 + video/render 组",
+    "tensorrt_sm87": {
+      "evidence": [
+        "[10/02/2026-21:17:16] [I] Compute Capability: 8.7",
+        "[10/02/2026-21:17:16] [I] TensorRT version: 10.13.2",
+        "[10/02/2026-21:17:17] [E] Error[9]: IBuilder::buildSerializedNetwork: Error Code 9: API Usage Error (Target GPU SM 87 is not supported by this TensorRT release. In checkCurrentSMEnabled at optimizer/common/builderHelpers.cpp:707)"
+      ],
+      "raw": {
+        "bytes": 9312,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2/trtexec-onnx-sm87-check.log",
+        "sha256": "fcf0d799de61b9ad1d16ff297a939a84341b77d69443269777c8410ffbbdefdb"
+      },
+      "supported": false
+    }
+  },
+  "s1s2_system_stack": {
+    "coexistence_baseline": {
+      "ld_library_path": "空（板上 ssh 会话）",
+      "ldconfig_cudss": "NO_CUDSS_IN_LDCONFIG",
+      "ldd_trtexec": [
+        "linux-vdso.so.1 (0x0000ffffb57b7000)",
+        "\tlibstdc++.so.6 => /lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000ffffb5330000)",
+        "\tlibm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000ffffb5280000)",
+        "\tlibgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x0000ffffb5240000)",
+        "\tlibc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffffb5080000)",
+        "\t/lib/ld-linux-aarch64.so.1 (0x0000ffffb5770000)"
+      ],
+      "ldd_trtexec_note": "/usr/src/tensorrt/bin/trtexec 运行期 dlopen libnvinfer/CUDA，ldd 只列 C 运行库；进程级库来源待装好 torch 后由 `fastlayer_bench verify` 读 /proc/self/maps 记录"
+    },
+    "note": "S1/S2 执行栈 = 板上系统 Python 3.12 的 --system-site-packages venv（复用系统 TensorRT 10.16）；本轮因 SUB:1 下载额度将超停在 torch 安装之前，torch/torchvision 未安装，故无实跑 torch/CUDA 读数（AC-2 修订 5 的实跑读数待安装完成后记录）。",
+    "python312_patch_change": {
+      "dpkg_now": "ii  python3.12     3.12.3-1ubuntu0.17 arm64        Interactive high-level object-oriented language (version 3.12)",
+      "s0_recorded": "3.12.3-1ubuntu0.15（S0 readings 原文不改写）",
+      "source": "docs/authorizations.md 2026-10-02「P1-ENG-JET-001 — 用户选执行栈 B 的前置：经 Mac mini ssh 在板上 sudo 安装 python3-pip/python3-venv（用户输入密码；supervisor 会话代录）」授权范围 (b)：用户本人 sudo apt 把 python3.12 由 3.12.3-1ubuntu0.15 升至 0.17（提案「S1/S2 系统栈落实（B）」给实现角色的提示）"
+    },
+    "round": "K1K3K4补跑B",
+    "sub1_install": {
+      "downloaded_kept": [
+        "torch-2.9.1+cu130-cp312-cp312-manylinux_2_28_aarch64.whl（512,448,274 B，sha 6e7f84cb…fe04051f）",
+        "torchvision-0.24.1-cp312-cp312-manylinux_2_28_aarch64.whl（7,823,607 B，sha 89743dce…97586fec）"
+      ],
+      "dry_run_fetched_discarded_bytes": 2318455950,
+      "dry_run_resolution": [
+        {
+          "package": "torch",
+          "sha256": "6e7f84cb10c7e7d9f862c318f056d64840544ab4f0bcbf8cf7ed6047fe04051f",
+          "source": "local",
+          "version": "2.9.1+cu130",
+          "wheel_bytes": null
+        },
+        {
+          "package": "torchvision",
+          "sha256": "7fb7590c737ebe3e1c077ad60c0e5e2e56bb26e7bccc3b9d04dbfc34fd09f050",
+          "source": "pypi",
+          "version": "0.24.1",
+          "wheel_bytes": 2386737
+        },
+        {
+          "package": "nvidia-cublas",
+          "sha256": "381b1a0ca636fdcb6920a871e8fc89dbfd1f6157f421ed0a6f2673e14cffd3bd",
+          "source": "pypi",
+          "version": "13.0.0.19",
+          "wheel_bytes": 539001158
+        },
+        {
+          "package": "nvidia-cuda-cupti",
+          "sha256": "67c22627ef436afcf080b48e4ad17b3f83d9e7c0d990ad0c6c0627b01fb92ccc",
+          "source": "pypi",
+          "version": "13.0.48",
+          "wheel_bytes": 10171189
+        },
+        {
+          "package": "nvidia-cuda-nvrtc",
+          "sha256": "6ccf1ef1b90a0763ac7536f3c17046659d89869d76b98ac358efc2e09b348365",
+          "source": "pypi",
+          "version": "13.0.48",
+          "wheel_bytes": 43013627
+        },
+        {
+          "package": "nvidia-cuda-runtime",
+          "sha256": "b807c0bb925a307bfa667a24f24d253aef8eda3ac4be66b333f2c9d357557008",
+          "source": "pypi",
+          "version": "13.0.48",
+          "wheel_bytes": 2260687
+        },
+        {
+          "package": "nvidia-cudnn-cu13",
+          "sha256": "33f0aa0b64230101b348648fd0693342188071d3f8a137c0cf50051c24b3584b",
+          "source": "pypi",
+          "version": "9.13.0.50",
+          "wheel_bytes": 412337597
+        },
+        {
+          "package": "nvidia-cufft",
+          "sha256": "1885731254835797572ff075f3daf43a2a0a2801210dea26971940dae7e1a367",
+          "source": "pypi",
+          "version": "12.0.0.15",
+          "wheel_bytes": 214053580
+        },
+        {
+          "package": "nvidia-cufile",
+          "sha256": "bced4036b5a8dbf57e4d78cd4fafefec58ad754b784a9eaa272b011896754c62",
+          "source": "pypi",
+          "version": "1.15.0.42",
+          "wheel_bytes": 1136527
+        },
+        {
+          "package": "nvidia-curand",
+          "sha256": "133df5a7509c3e292aaa2b477afd0194f06ce4ea24d714d616ff36439cee349a",
+          "source": "pypi",
+          "version": "10.4.0.35",
+          "wheel_bytes": 61962106
+        },
+        {
+          "package": "nvidia-cusolver",
+          "sha256": "3bb6e65ce0beaeafdd069b320246e8f17c1cd30ddb27a0539143a3706733a4d8",
+          "source": "pypi",
+          "version": "12.0.3.29",
+          "wheel_bytes": 193104180
+        },
+        {
+          "package": "nvidia-cusparse",
+          "sha256": "5d3269c19283a0057fb5ebfb003ae2a10c97a28a6958f4238354826b055827c7",
+          "source": "pypi",
+          "version": "12.6.2.49",
+          "wheel_bytes": 155888587
+        },
+        {
+          "package": "nvidia-cusparselt-cu13",
+          "sha256": "400c6ed1cf6780fc6efedd64ec9f1345871767e6a1a0a552a1ea0578117ea77c",
+          "source": "pypi",
+          "version": "0.8.0",
+          "wheel_bytes": 220791277
+        },
+        {
+          "package": "nvidia-nccl-cu13",
+          "sha256": "5e3cc863e52bf9dd1e3ab1941bddb414098f489ae7342f6b3a274602303da123",
+          "source": "pypi",
+          "version": "2.27.7",
+          "wheel_bytes": 194014855
+        },
+        {
+          "package": "nvidia-nvjitlink",
+          "sha256": "ce0d63fa5ebedf542056e7491c49feed2297c900980aa6269b6a55f478056ad7",
+          "source": "pypi",
+          "version": "13.0.39",
+          "wheel_bytes": 38767126
+        },
+        {
+          "package": "nvidia-nvshmem-cu13",
+          "sha256": "28ae82a4d14b322b93409535de62df6b7b83f4f7672ca97fc89107c2d40ce2c2",
+          "source": "pypi",
+          "version": "3.3.24",
+          "wheel_bytes": 60168129
+        },
+        {
+          "package": "nvidia-nvtx",
+          "sha256": "cddd2e08b35144f1000631c3880c9ebbcb8a2863d762e76f92d47d30ecaf87cc",
+          "source": "pypi",
+          "version": "13.0.39",
+          "wheel_bytes": 148037
+        },
+        {
+          "package": "triton",
+          "sha256": "275a045b6ed670dd1bd005c3e6c2d61846c74c66f4512d6f33cc027b11de8fd4",
+          "source": "pypi",
+          "version": "3.5.1",
+          "wheel_bytes": 159940689
+        },
+        {
+          "package": "fsspec",
+          "sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+          "source": "pypi",
+          "version": "2026.9.0",
+          "wheel_bytes": 221738
+        },
+        {
+          "package": "networkx",
+          "sha256": "e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0",
+          "source": "pypi",
+          "version": "3.7",
+          "wheel_bytes": 2142205
+        },
+        {
+          "package": "sympy",
+          "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+          "source": "pypi",
+          "version": "1.14.0",
+          "wheel_bytes": 6299353
+        },
+        {
+          "package": "filelock",
+          "sha256": "9287fd61b99a806e5202be29a83034c0808a1b9830e820537c2f5773981f7eeb",
+          "source": "pypi",
+          "version": "4.0.9",
+          "wheel_bytes": 110368
+        },
+        {
+          "package": "mpmath",
+          "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+          "source": "pypi",
+          "version": "1.3.0",
+          "wheel_bytes": 536198
+        }
+      ],
+      "installed": [],
+      "raw": [
+        {
+          "bytes": 1144,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/sub1-download-torch.log",
+          "sha256": "0d882d695c7dd13d23856a4814ec41f75c9b446eaf95df9bbedf9276341f28ac"
+        },
+        {
+          "bytes": 9961,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/sub1-dryrun.log",
+          "sha256": "c6fee67ba465f754f4a815d7608a9202b2f996a978fa473a91d520e49eba1183"
+        },
+        {
+          "bytes": 139087,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/sub1-dryrun-report.json",
+          "sha256": "b9e6f9304dd79b947b67a2d12de07b2da2e3f52ae70741f3dfe4065a6c053e8d"
+        },
+        {
+          "bytes": 6051,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/sub1-dryrun-fetched.json",
+          "sha256": "d3424e409460c50285828548059a8cc1785f57e3ae0ea6cac1b24469fd889e39"
+        },
+        {
+          "bytes": 1319,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-0.txt",
+          "sha256": "1570fffd4e8c35a23645c8c279dbf168bedbaba55ab918524ad19a3b94be05cc"
+        },
+        {
+          "bytes": 1319,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-1a.txt",
+          "sha256": "1f0067b1a7613eec9ff46fd4e8eb1d79a47508b81489c630d400a65673b8d354"
+        },
+        {
+          "bytes": 1319,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-1b.txt",
+          "sha256": "2098b46a0b36989620303215a8cae01a34096cd5a0d44a99c31b7549a159900b"
+        },
+        {
+          "bytes": 1319,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-2a.txt",
+          "sha256": "bd5d9a221715659b17fab426c4d39094b7fb661f39e87155ec0d1253a32e6d1b"
+        },
+        {
+          "bytes": 1320,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-2b.txt",
+          "sha256": "a5116670dc9ecfd6232f31ee278a4ea8da29b5853c80ef6681aba773d74431fa"
+        },
+        {
+          "bytes": 1320,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/netdev-3.txt",
+          "sha256": "edabf3b2b16db64578227fbb3f97038ee71623d668ff775cd4695d23f7187af4"
+        },
+        {
+          "bytes": 29,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/du-0.txt",
+          "sha256": "f6b16193cd1cef7f8441eb05872647967022bffc6c932f4d01686478a10081ff"
+        },
+        {
+          "bytes": 29,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/du-3.txt",
+          "sha256": "8f72b4f5cda0bc4b3447d45bad05575fa2ce564a7f13ef34635c83703b9dac3d"
+        },
+        {
+          "bytes": 129,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/df-0.txt",
+          "sha256": "8030193775cb93ed19944643a0b7c8d0d13184c6a9a20778d9b1ce129f24df1b"
+        },
+        {
+          "bytes": 129,
+          "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system/df-3.txt",
+          "sha256": "11360bf8b3dd7d27b3d7ca0744555a763229735ae16bcea6cc05ec326b696e3f"
+        }
+      ],
+      "stop_reason": "提案决策记录「S1/S2 系统栈落实（B）」与「needs_user」题 4（CLARIFY-B2）：在板上系统 Python 的 --system-site-packages venv 中从官方 cu130 索引安装 torch 2.9.1+cu130 / torchvision 0.24.1，依赖从 PyPI 解析，SUB:1 额度 ≤ 32 包 / 下载 ≤ 3.5 GB / 新增磁盘 ≤ 8 GB。本轮先以 pip download --no-deps 取回两枚官方轮子（520,271,881 B，sha 与题 4 一致），再以 pip 24.0 `install --dry-run --report --no-cache-dir` 解析依赖——该版 pip 干跑会把每个依赖的轮子体完整取回到临时目录后丢弃，22 个轮子共 2,318,455,950 B（含解析器选中的 PyPI 同名 torchvision 2,386,737 B）被取回且未留存。累计下载按保守口径（板上外网接口收包）3,093,609,695 B ≤ 3.5 GB；完成安装还须重新取回 21 个依赖轮子 2,316,069,213 B，合计约 5.4 GB（收包口径约 5.6 GB）> 3.5 GB。按派发「任一上限将超即停」停在安装之前：torch 未安装，题 4 的安装后先验证（get_arch_list / CUDA matmul / TensorRT 共存）未执行，S1/S2 未运行；未换源、未 --no-deps 变通、未 sudo/apt。",
+      "verify": "NOT_RUN（torch 未安装）"
+    },
+    "system_packages_visible": {
+      "PIL": "10.2.0",
+      "cv2": "4.8.0（系统）",
+      "jinja2": "3.1.2",
+      "matplotlib": "3.6.3",
+      "missing": [
+        "torch",
+        "torchvision",
+        "onnx",
+        "protobuf",
+        "filelock",
+        "networkx",
+        "fsspec",
+        "psutil",
+        "polars",
+        "pynvml"
+      ],
+      "mpmath": "1.2.1",
+      "numpy": "1.26.4",
+      "scipy": "1.11.4",
+      "setuptools": "68.1.2",
+      "source": "本轮 22:58Z 板上只读 import 探测",
+      "sympy": "1.12",
+      "tensorrt": "10.16.2.10（/usr/lib/python3.12/dist-packages）",
+      "typing_extensions": "4.10.0",
+      "yaml": "6.0.1"
+    },
+    "venv": {
+      "command": "python3 -m venv --system-site-packages ~/eng-jet/sysvenv",
+      "path": "~/eng-jet/sysvenv",
+      "pip": "24.0（venv 自带，来自系统 python3-pip-whl，未联网）",
+      "pyvenv_cfg": "home = /usr/bin\ninclude-system-site-packages = true\nversion = 3.12.3\nexecutable = /usr/bin/python3.12\ncommand = /usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv\n"
+    }
+  },
+  "s1s2_system_stack_c": {
+    "coexistence": {
+      "ld_library_path": null,
+      "ldconfig_cudss_count_before": "0",
+      "libraries_torch_trt_process": {
+        "system": [
+          "/opt/nvidia/l4t-gpu-libs/nvgpu/libcuda.so.1.1",
+          "/usr/lib/aarch64-linux-gnu/libnvinfer.so.10.16.2",
+          "/usr/lib/aarch64-linux-gnu/libnvinfer_plugin.so.10.16.2"
+        ],
+        "venv": [
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcublasLt.so.13",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcudart.so.13",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcufft.so.12",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcupti.so.13",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcurand.so.10",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libcusparse.so.12",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libnvJitLink.so.13",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libnvrtc-builtins.so.13.0",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cu13/lib/libnvrtc.so.13",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/cudnn/lib/libcudnn.so.9",
+          "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/nvidia/nccl/lib/libnccl.so.2"
+        ]
+      },
+      "reading": "torch 进程的 CUDA 数学库取 venv 内 pip 轮子（nvidia/cu13、cudnn、nccl），TensorRT 与驱动取系统库（libnvinfer 10.16.2、l4t libcuda）；干净进程（未 import torch）只映射系统库与 /usr/local/cuda-13.2 的 libnvrtc。未设 LD_LIBRARY_PATH，无串扰迹象。",
+      "trt_clean_process": {
+        "libraries": [
+          "/opt/nvidia/l4t-gpu-libs/nvgpu/libcuda.so.1.1",
+          "/usr/lib/aarch64-linux-gnu/libnvinfer.so.10.16.2",
+          "/usr/lib/aarch64-linux-gnu/libnvinfer_plugin.so.10.16.2",
+          "/usr/local/cuda-13.2/targets/sbsa-linux/lib/libnvrtc.so.13.2.78"
+        ],
+        "ok": true,
+        "tensorrt": "10.16.2.10",
+        "tensorrt_file": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+        "torch_imported": false,
+        "wall_ms": 31116.537
+      },
+      "trt_with_torch": {
+        "executed": true,
+        "max_abs_diff": 0.0,
+        "ok": true,
+        "serialized_bytes": 18780,
+        "tensorrt": "10.16.2.10",
+        "tensorrt_file": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+        "wall_ms": 26735.322
+      }
+    },
+    "diagnostic_sm80_compat": {
+      "arch_list": [
+        "sm_80",
+        "sm_90",
+        "sm_100",
+        "sm_110",
+        "sm_120",
+        "compute_120"
+      ],
+      "capability": [
+        8,
+        7
+      ],
+      "checks": {
+        "cudnn_conv2d_fp16": {
+          "ok": true,
+          "rel_max_diff": 0.000439173939856971,
+          "wall_ms": 52.778
+        },
+        "cudnn_conv2d_fp32": {
+          "ok": true,
+          "rel_max_diff": 1.9950960564382677e-07,
+          "wall_ms": 270.656
+        },
+        "elementwise_reduce": {
+          "ok": true,
+          "sum": 499500.0,
+          "wall_ms": 14.515
+        },
+        "torchvision_nms_cuda": {
+          "keep": [
+            0,
+            2
+          ],
+          "keep_cpu": [
+            0,
+            2
+          ],
+          "ok": true,
+          "wall_ms": 110.548
+        }
+      },
+      "cudnn": 91300,
+      "note": "verify 失败后的附加只读诊断（零下载、零模型），不构成 verify 通过，仅供 IR-16/needs_user 裁定参考；CUDA 文档的同主版本二进制兼容（sm_80 cubin 可在 8.x≥8.0 设备运行）是解释，不是本项判据",
+      "torch": "2.9.1+cu130",
+      "torchvision": "0.24.1"
+    },
+    "disk": {
+      "df_after": "/dev/nvme0n1p1 249326301184 73690308608 162896388096  32% /",
+      "df_before": "/dev/nvme0n1p1 249326301184 66553794560 170032902144  29% /",
+      "du_after": {
+        "/home/jetson/eng-jet": 7783123942,
+        "sysvenv": 4687931480,
+        "venv": 101751706,
+        "wheels": 92632836,
+        "wheels/sub1": 2836341094
+      },
+      "du_eng_jet_before": 774600207
+    },
+    "install_method": {
+      "contract": "提案决策记录「SUB:3 落实与安装方式合同解释」：禁 dry-run/--report；逐个 pip download --no-deps 核 sha256；--no-index --find-links 离线按文件安装",
+      "env": "unset LD_LIBRARY_PATH；运行一律 YOLO_AUTOINSTALL=false YOLO_OFFLINE=true",
+      "existing_reinstall": "sysvenv/bin/pip install --no-index --no-deps --no-cache-dir <ultralytics/lap/ultralytics-thop/opencv-python-headless 板上已有轮子>",
+      "onnx": "pip download --no-deps 哈希锁定 onnx==1.18.0 + protobuf==6.31.1 至 wheels/，再 --no-index --find-links wheels 离线安装（AC-10 修订 2）",
+      "reused_kept_wheels": [
+        "torch-2.9.1+cu130（512,448,274 B，sha 6e7f84cb…fe04051f）",
+        "torchvision-0.24.1 cu130（7,823,607 B，sha 89743dce…97586fec）"
+      ],
+      "sub1_download": "sysvenv/bin/pip download --no-deps --only-binary=:all: --no-cache-dir --progress-bar off --index-url https://pypi.org/simple -d wheels/sub1 -r <单包 name==ver --hash=sha256:…>（逐包循环，取回前按 SUB:3 上限做额度预检，见 sub1-fetch.sh）",
+      "sub1_install": "sysvenv/bin/pip install --no-index --find-links wheels/sub1 --no-cache-dir <torch 官方 cu130 轮子文件> <torchvision 官方 cu130 轮子文件>"
+    },
+    "installed_other": {
+      "board_pip_new": "Successfully installed onnx-1.18.0 protobuf-6.31.1",
+      "existing_no_new_count": "Successfully installed lap-0.5.13 opencv-python-headless-4.11.0.86 ultralytics-8.4.104 ultralytics-thop-2.2.2",
+      "installed_record_bytes": {
+        "lap": {
+          "installed_bytes": 2692076,
+          "version": "0.5.13"
+        },
+        "onnx": {
+          "installed_bytes": 37570547,
+          "version": "1.18.0"
+        },
+        "opencv-python-headless": {
+          "installed_bytes": 76899523,
+          "version": "4.11.0.86"
+        },
+        "protobuf": {
+          "installed_bytes": 2312113,
+          "version": "6.31.1"
+        },
+        "ultralytics": {
+          "installed_bytes": 8852226,
+          "version": "8.4.104"
+        },
+        "ultralytics-thop": {
+          "installed_bytes": 146834,
+          "version": "2.2.2"
+        }
+      }
+    },
+    "installed_sub1": "Successfully installed filelock-4.0.9 fsspec-2026.9.0 mpmath-1.3.0 networkx-3.7 nvidia-cublas-13.0.0.19 nvidia-cuda-cupti-13.0.48 nvidia-cuda-nvrtc-13.0.48 nvidia-cuda-runtime-13.0.48 nvidia-cudnn-cu13-9.13.0.50 nvidia-cufft-12.0.0.15 nvidia-cufile-1.15.0.42 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.3.29 nvidia-cusparse-12.6.2.49 nvidia-cusparselt-cu13-0.8.0 nvidia-nccl-cu13-2.27.7 nvidia-nvjitlink-13.0.39 nvidia-nvshmem-cu13-3.3.24 nvidia-nvtx-13.0.39 sympy-1.14.0 torch-2.9.1+cu130 torchvision-0.24.1 triton-3.5.1",
+    "network_rx_wlP1p1s0": {
+      "onnx_protobuf_2a_2b": 19807906,
+      "round_total_0_3": 2542555922,
+      "snapshots": {
+        "0": 3390332792,
+        "1a": 3390750064,
+        "1b": 5912919498,
+        "2a": 5912934344,
+        "2b": 5932742250,
+        "3": 5932888714
+      },
+      "sub1_window_1a_1b": 2522169434
+    },
+    "note": "S1/S2 执行栈 = 板上系统 Python 3.12 的 --system-site-packages venv ~/eng-jet/sysvenv（复用系统 TensorRT 10.16）；本轮装好 torch 栈后 verify 未过（arch list 不含 sm_87），按合同停在 S1 之前。下列 runtime_stack 是 verify 进程内的实跑读数（AC-2 修订 5），与 S0 `readings`、容器栈 `s1s2_container_stack`、补跑B `s1s2_system_stack` 分列。",
+    "outside_eng_jet_writes": {
+      "note": "import ultralytics 在 ~/.config/Ultralytics/ 新建 settings.json（482 B）；CUDA 驱动 JIT 缓存 ~/.nv/ComputeCache 新增 545 文件（26,215,934 B）。二者在 ~/eng-jet 之外、不含本项数据或真值，保留未删；后续轮可用 YOLO_CONFIG_DIR / CUDA_CACHE_PATH 指到 ~/eng-jet 下",
+      "raw": [
+        "computecache_new_files 545 26215934",
+        "/home/jetson/.config/Ultralytics/settings.json 482 2026-10-02 19:43:04.935480073 -0400",
+        "f9c2e7ca256e6e77eb8ae8e2632a964872d767f57f0f17c685593d4be9471dd1  /home/jetson/.config/Ultralytics/settings.json"
+      ]
+    },
+    "pip_check": [
+      "ultralytics 8.4.104 requires nvidia-ml-py, which is not installed.",
+      "ultralytics 8.4.104 requires opencv-python, which is not installed.",
+      "ultralytics 8.4.104 requires polars, which is not installed.",
+      "ultralytics 8.4.104 requires psutil, which is not installed.",
+      "pynacl 1.5.0 requires cffi, which is not installed."
+    ],
+    "pip_check_note": "ultralytics 声明依赖 nvidia-ml-py/opencv-python/polars/psutil 未装属 IR-15 已接受读法（惰性导入，S1/S2 路径不触达；须复核轮核对）；pynacl→cffi 为系统包既有状况，与本项无关",
+    "raw": [
+      {
+        "bytes": 3338,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/sub1-deps.tsv",
+        "sha256": "b417f32fded4c360b056417d8208e5095b9af87757ace2508b41655f35384a4d"
+      },
+      {
+        "bytes": 2017,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/sub1-fetch.sh",
+        "sha256": "4451c7817cba8f68656332e8b261540f973d9fd98d0d04560ffc04e55decb027"
+      },
+      {
+        "bytes": 3233,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/sub1-fetch.log",
+        "sha256": "6e876d77874dd48c41feffbb55f3ce63ff6e848ac5f51e0eb0c5d857979c4e60"
+      },
+      {
+        "bytes": 6138,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/sub1-fetch-pip.log",
+        "sha256": "041dc4d2a78e5dc8ef46e81f15e6970955d36424c78ac4766a6284a22e0f28d8"
+      },
+      {
+        "bytes": 846,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/pypi-meta-onnx-protobuf.txt",
+        "sha256": "afe545a7ae1fe25d1205bc7103b422cab21d39b8310d67b806d836e3e7658cda"
+      },
+      {
+        "bytes": 188,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/req-onnx.txt",
+        "sha256": "5f71019b401ad5d4e78d53026afe39041c7afe19e65eec73c956bf0f46029e56"
+      },
+      {
+        "bytes": 519,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/onnx-download.log",
+        "sha256": "b6b6281f49bb4f25cf0143df38cdaf69a3a9dab7d0ac243919176b39595e5b23"
+      },
+      {
+        "bytes": 2438,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/preinstall-sizes.txt",
+        "sha256": "026ec6203db9195edc85cb11bdd9e3cb21663506465e55f6db39169f49f934b0"
+      },
+      {
+        "bytes": 4565,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/pip-install-torch.log",
+        "sha256": "4bf046a531cfd1c15c2e9e30eac970446095a4c1c153eb54bdc51c402af33efa"
+      },
+      {
+        "bytes": 544,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/pip-install-existing5.log",
+        "sha256": "b7e4e986355046aad712b6cd202c0381d63cbc34de18d28ec9ed33869a967108"
+      },
+      {
+        "bytes": 532,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/pip-install-onnx.log",
+        "sha256": "e14f8841cbd6d6076178ea42b8f4c537b0ab0e182070d712567d51818fa7f5fb"
+      },
+      {
+        "bytes": 873,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/install-summary.txt",
+        "sha256": "858a5d914390723d21cecf1ded01527507147c528743f5cb10546b979e9a3f10"
+      },
+      {
+        "bytes": 3988,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/pip-list.txt",
+        "sha256": "1298893f38c4fd5a1da3a42c31b16d775b9ec03ce682ea0f2503d983cab9f273"
+      },
+      {
+        "bytes": 309,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/pip-check.txt",
+        "sha256": "682f89130a8358756dfc364f2a5f8b6126a5d489d37929d3f375f18daa167b49"
+      },
+      {
+        "bytes": 753,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/verify.log",
+        "sha256": "99293e7605e638106ea7876afcfcbe911cbfda06ecfe51c740833994b7eb66c0"
+      },
+      {
+        "bytes": 5298,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/results-c/verify-summary.json",
+        "sha256": "2748d176bad8b038910563075a73ae697e526a2f0ee2100737b590cdee65972a"
+      },
+      {
+        "bytes": 437,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/results-c/verify-trt-only-summary.json",
+        "sha256": "bd1fd26d3ffe3e68f373f62839f8f4078fe8cbcdc71df08506b1c0fbd5573091"
+      },
+      {
+        "bytes": 653,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/diag-sm80-compat.json",
+        "sha256": "c6d6a81301591c57c0f13d0a47da042a5485ef780328439cba6a5809a80dc005"
+      },
+      {
+        "bytes": 0,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/diag-sm80-compat.err",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 232,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/outside-eng-jet-writes.txt",
+        "sha256": "75b22f2028e8bf8dc35e54ffaefcc3c9cdc10e7dc5647748aa5c283c294b2ed8"
+      },
+      {
+        "bytes": 1320,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-0.txt",
+        "sha256": "65e1f30e6aaeeb306c4573489ff15513b6a2479d6b8fb2099eca33e8af234db7"
+      },
+      {
+        "bytes": 1320,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-1a.txt",
+        "sha256": "eccf4dc2fb68011fd35548615a52761d5bb043e64ff9da1acdcf93abf4e9a4cb"
+      },
+      {
+        "bytes": 1321,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-1b.txt",
+        "sha256": "2588eb2878b4e522ed406efc14dcf7173d65d5914d5b3d18dbe40ab2b119ae08"
+      },
+      {
+        "bytes": 1321,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-2a.txt",
+        "sha256": "2d7a00d2071799504b5984ae38280fe3570845512d14bb11740975980e8bb284"
+      },
+      {
+        "bytes": 1321,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-2b.txt",
+        "sha256": "9629d5af1d10504e593292b2a7d56e989ae509c6f2f299a1277ca03fd886dd1f"
+      },
+      {
+        "bytes": 1321,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/netdev-3.txt",
+        "sha256": "ebd2296d2cb294a9389fec696743a7d05d5789e206d1629d0eb6a71dd463bf0d"
+      },
+      {
+        "bytes": 29,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/du-0.txt",
+        "sha256": "9e0599d4a53ec515b825399505dd9e112ab0c3c7ff391f08ec72611373542de2"
+      },
+      {
+        "bytes": 103,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/du-3.txt",
+        "sha256": "9a188a540c1324513766577fe37f8416996f43d7ff1bf1b41382ff3e63e314b7"
+      },
+      {
+        "bytes": 129,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/df-0.txt",
+        "sha256": "9605ebba908b5e025feba7ba85375318e2274d090b7bc04c5c5af61dd6af48cb"
+      },
+      {
+        "bytes": 129,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/df-3.txt",
+        "sha256": "8e39d604cee4bbfc43492ee976d4039e7bb72370f38492b574eb3f9e01bcacd1"
+      },
+      {
+        "bytes": 2,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/ldconfig-cudss-baseline.txt",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      },
+      {
+        "bytes": 21,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/t-start.txt",
+        "sha256": "4e3c7176a13e3a5f68d8e6d85b1662f3c0676bd83b4a3e6d93b7e3c79f01f6c2"
+      },
+      {
+        "bytes": 21,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/t-install-start.txt",
+        "sha256": "eb4a3766767c89481adaed3462c298a992f021c0ba786a762d01a2cf1a9b824a"
+      },
+      {
+        "bytes": 21,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/t-install-end.txt",
+        "sha256": "9eb0b8e4b4dca12da231772618f9366fee005e9a3ae9965ad857cae4fc08d0b1"
+      },
+      {
+        "bytes": 21,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-c/t-end.txt",
+        "sha256": "fdc16db77bae6970d07d210a485466ea12c7f4936c891348978f2e9b3738224c"
+      }
+    ],
+    "round": "K1K3K4补跑C",
+    "runtime_stack": {
+      "cuda_arch_list": [
+        "sm_80",
+        "sm_90",
+        "sm_100",
+        "sm_110",
+        "sm_120",
+        "compute_120"
+      ],
+      "cuda_available": true,
+      "cuda_capability": [
+        8,
+        7
+      ],
+      "cuda_device": "Orin",
+      "cudnn": 91300,
+      "cv2": "4.11.0",
+      "image_env": {
+        "CUDA_VERSION": null,
+        "ENG_JET_IMAGE": null,
+        "NVIDIA_PYTORCH_VERSION": null,
+        "PYTORCH_VERSION": null,
+        "TRT_VERSION": null
+      },
+      "in_container": false,
+      "lap": "0.5.13",
+      "ld_library_path": null,
+      "machine": "aarch64",
+      "module_files": {
+        "cv2": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/cv2/__init__.py",
+        "lap": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/lap/__init__.py",
+        "numpy": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+        "onnx": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/onnx/__init__.py",
+        "tensorrt": "/usr/lib/python3.12/dist-packages/tensorrt/__init__.py",
+        "torch": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torch/__init__.py",
+        "torchvision": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/torchvision/__init__.py",
+        "ultralytics": "/home/jetson/eng-jet/sysvenv/lib/python3.12/site-packages/ultralytics/__init__.py"
+      },
+      "numpy": "1.26.4",
+      "onnx": "1.18.0",
+      "python": "3.12.3",
+      "tensorrt": "10.16.2.10",
+      "torch": "2.9.1+cu130",
+      "torch_cuda": "13.0",
+      "torchvision": "0.24.1",
+      "ultralytics": "8.4.104",
+      "venv": {
+        "is_venv": true,
+        "pyvenv_cfg": {
+          "command": "/usr/bin/python3 -m venv --system-site-packages /home/jetson/eng-jet/sysvenv",
+          "executable": "/usr/bin/python3.12",
+          "home": "/usr/bin",
+          "include-system-site-packages": "true",
+          "version": "3.12.3"
+        },
+        "sys_base_prefix": "/usr",
+        "sys_prefix": "/home/jetson/eng-jet/sysvenv",
+        "system_site_packages": true
+      }
+    },
+    "sub1_fetched": [
+      {
+        "bytes": 539001158,
+        "end": "2026-10-02T23:38:40Z",
+        "expected_bytes": 539001158,
+        "package": "nvidia-cublas",
+        "rx_delta": 586669374,
+        "sha_ok": true,
+        "start": "2026-10-02T23:38:17Z",
+        "version": "13.0.0.19"
+      },
+      {
+        "bytes": 10171189,
+        "end": "2026-10-02T23:38:41Z",
+        "expected_bytes": 10171189,
+        "package": "nvidia-cuda-cupti",
+        "rx_delta": 11081148,
+        "sha_ok": true,
+        "start": "2026-10-02T23:38:40Z",
+        "version": "13.0.48"
+      },
+      {
+        "bytes": 43013627,
+        "end": "2026-10-02T23:38:44Z",
+        "expected_bytes": 43013627,
+        "package": "nvidia-cuda-nvrtc",
+        "rx_delta": 46796075,
+        "sha_ok": true,
+        "start": "2026-10-02T23:38:41Z",
+        "version": "13.0.48"
+      },
+      {
+        "bytes": 2260687,
+        "end": "2026-10-02T23:38:45Z",
+        "expected_bytes": 2260687,
+        "package": "nvidia-cuda-runtime",
+        "rx_delta": 2478477,
+        "sha_ok": true,
+        "start": "2026-10-02T23:38:44Z",
+        "version": "13.0.48"
+      },
+      {
+        "bytes": 412337597,
+        "end": "2026-10-02T23:39:03Z",
+        "expected_bytes": 412337597,
+        "package": "nvidia-cudnn-cu13",
+        "rx_delta": 448828079,
+        "sha_ok": true,
+        "start": "2026-10-02T23:38:45Z",
+        "version": "9.13.0.50"
+      },
+      {
+        "bytes": 214053580,
+        "end": "2026-10-02T23:39:13Z",
+        "expected_bytes": 214053580,
+        "package": "nvidia-cufft",
+        "rx_delta": 232993149,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:03Z",
+        "version": "12.0.0.15"
+      },
+      {
+        "bytes": 1136527,
+        "end": "2026-10-02T23:39:14Z",
+        "expected_bytes": 1136527,
+        "package": "nvidia-cufile",
+        "rx_delta": 1253668,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:13Z",
+        "version": "1.15.0.42"
+      },
+      {
+        "bytes": 61962106,
+        "end": "2026-10-02T23:39:17Z",
+        "expected_bytes": 61962106,
+        "package": "nvidia-curand",
+        "rx_delta": 67399016,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:14Z",
+        "version": "10.4.0.35"
+      },
+      {
+        "bytes": 193104180,
+        "end": "2026-10-02T23:39:26Z",
+        "expected_bytes": 193104180,
+        "package": "nvidia-cusolver",
+        "rx_delta": 210321228,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:17Z",
+        "version": "12.0.3.29"
+      },
+      {
+        "bytes": 155888587,
+        "end": "2026-10-02T23:39:33Z",
+        "expected_bytes": 155888587,
+        "package": "nvidia-cusparse",
+        "rx_delta": 169928858,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:26Z",
+        "version": "12.6.2.49"
+      },
+      {
+        "bytes": 220791277,
+        "end": "2026-10-02T23:39:44Z",
+        "expected_bytes": 220791277,
+        "package": "nvidia-cusparselt-cu13",
+        "rx_delta": 240531311,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:33Z",
+        "version": "0.8.0"
+      },
+      {
+        "bytes": 194014855,
+        "end": "2026-10-02T23:39:53Z",
+        "expected_bytes": 194014855,
+        "package": "nvidia-nccl-cu13",
+        "rx_delta": 211320307,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:44Z",
+        "version": "2.27.7"
+      },
+      {
+        "bytes": 38767126,
+        "end": "2026-10-02T23:39:55Z",
+        "expected_bytes": 38767126,
+        "package": "nvidia-nvjitlink",
+        "rx_delta": 42272803,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:53Z",
+        "version": "13.0.39"
+      },
+      {
+        "bytes": 60168129,
+        "end": "2026-10-02T23:39:59Z",
+        "expected_bytes": 60168129,
+        "package": "nvidia-nvshmem-cu13",
+        "rx_delta": 65638539,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:55Z",
+        "version": "3.3.24"
+      },
+      {
+        "bytes": 148037,
+        "end": "2026-10-02T23:40:00Z",
+        "expected_bytes": 148037,
+        "package": "nvidia-nvtx",
+        "rx_delta": 181050,
+        "sha_ok": true,
+        "start": "2026-10-02T23:39:59Z",
+        "version": "13.0.39"
+      },
+      {
+        "bytes": 159940689,
+        "end": "2026-10-02T23:40:08Z",
+        "expected_bytes": 159940689,
+        "package": "triton",
+        "rx_delta": 174062577,
+        "sha_ok": true,
+        "start": "2026-10-02T23:40:00Z",
+        "version": "3.5.1"
+      },
+      {
+        "bytes": 221738,
+        "end": "2026-10-02T23:40:09Z",
+        "expected_bytes": 221738,
+        "package": "fsspec",
+        "rx_delta": 281730,
+        "sha_ok": true,
+        "start": "2026-10-02T23:40:08Z",
+        "version": "2026.9.0"
+      },
+      {
+        "bytes": 2142205,
+        "end": "2026-10-02T23:40:10Z",
+        "expected_bytes": 2142205,
+        "package": "networkx",
+        "rx_delta": 2376895,
+        "sha_ok": true,
+        "start": "2026-10-02T23:40:09Z",
+        "version": "3.7"
+      },
+      {
+        "bytes": 6299353,
+        "end": "2026-10-02T23:40:12Z",
+        "expected_bytes": 6299353,
+        "package": "sympy",
+        "rx_delta": 6977513,
+        "sha_ok": true,
+        "start": "2026-10-02T23:40:10Z",
+        "version": "1.14.0"
+      },
+      {
+        "bytes": 110368,
+        "end": "2026-10-02T23:40:13Z",
+        "expected_bytes": 110368,
+        "package": "filelock",
+        "rx_delta": 166976,
+        "sha_ok": true,
+        "start": "2026-10-02T23:40:12Z",
+        "version": "4.0.9"
+      },
+      {
+        "bytes": 536198,
+        "end": "2026-10-02T23:40:14Z",
+        "expected_bytes": 536198,
+        "package": "mpmath",
+        "rx_delta": 610205,
+        "sha_ok": true,
+        "start": "2026-10-02T23:40:13Z",
+        "version": "1.3.0"
+      }
+    ],
+    "sub1_fetched_all_sha_ok": true,
+    "sub1_fetched_total_bytes": 2316069213,
+    "verify": {
+      "arch_list": [
+        "sm_80",
+        "sm_90",
+        "sm_100",
+        "sm_110",
+        "sm_120",
+        "compute_120"
+      ],
+      "capability": [
+        8,
+        7
+      ],
+      "cuda_is_available": true,
+      "device": "Orin",
+      "matmul": {
+        "fp16_rel_max_diff": 0.000435083172589606,
+        "fp32_rel_max_diff": 2.790049036083591e-07,
+        "limits": {
+          "fp16": 0.02,
+          "fp32": 0.001
+        },
+        "n": 512,
+        "ok": true,
+        "ones_exact": true,
+        "tf32_allowed": false,
+        "wall_ms": 171.245
+      },
+      "summary": {
+        "checks": {
+          "cuda_matmul_readback": true,
+          "sm_87_in_arch_list": false,
+          "trt_clean_process_without_torch": true,
+          "trt_with_torch_same_process": true
+        },
+        "failed": [
+          "sm_87_in_arch_list"
+        ],
+        "pass": false
+      },
+      "torch": "2.9.1+cu130",
+      "torch_cuda": "13.0",
+      "verdict": "FAIL（sm_87_in_arch_list = false；其余三项通过）"
+    }
+  },
+  "s1s2_system_stack_d": {
+    "container_venv_delete": {
+      "deleted": false,
+      "path": "~/eng-jet/venv",
+      "reason": "决策记录「S1/S2 系统栈落实（B）」的删除条件是「系统栈 S1/S2 有读数后」；本轮 S1 STOP(FP16_BOX_DIVERGENCE)，S2 按停止总则未运行、无读数 → 条件未全满足，保留（101,751,706 B 继续计入板上磁盘维度）"
+    },
+    "df": {
+      "df-0.txt": "/dev/nvme0n1p1 249326301184 73690521600 162896175104  32% /",
+      "df-3.txt": "/dev/nvme0n1p1 249326301184 71081193472 165505503232  31% /"
+    },
+    "du": {
+      "du-0.txt": [
+        [
+          "7783131483",
+          "/home/jetson/eng-jet"
+        ],
+        [
+          "18309120",
+          "/home/jetson/eng-jet/bundle"
+        ],
+        [
+          "16538687",
+          "/home/jetson/eng-jet/code"
+        ],
+        [
+          "11848394",
+          "/home/jetson/eng-jet/frames"
+        ],
+        [
+          "117216",
+          "/home/jetson/eng-jet/home"
+        ],
+        [
+          "2603421",
+          "/home/jetson/eng-jet/logs"
+        ],
+        [
+          "6339",
+          "/home/jetson/eng-jet/results"
+        ],
+        [
+          "15051354",
+          "/home/jetson/eng-jet/runtime"
+        ],
+        [
+          "4687931480",
+          "/home/jetson/eng-jet/sysvenv"
+        ],
+        [
+          "101751706",
+          "/home/jetson/eng-jet/venv"
+        ],
+        [
+          "2928973930",
+          "/home/jetson/eng-jet/wheels"
+        ]
+      ],
+      "du-1a.txt": [
+        [
+          "7783134099",
+          "/home/jetson/eng-jet"
+        ]
+      ],
+      "du-1b.txt": [
+        [
+          "4946793035",
+          "/home/jetson/eng-jet"
+        ]
+      ],
+      "du-3.txt": [
+        [
+          "5166250022",
+          "/home/jetson/eng-jet"
+        ],
+        [
+          "18309120",
+          "/home/jetson/eng-jet/bundle"
+        ],
+        [
+          "5972902",
+          "/home/jetson/eng-jet/code"
+        ],
+        [
+          "11848394",
+          "/home/jetson/eng-jet/frames"
+        ],
+        [
+          "174881120",
+          "/home/jetson/eng-jet/home"
+        ],
+        [
+          "2642186",
+          "/home/jetson/eng-jet/logs"
+        ],
+        [
+          "55229090",
+          "/home/jetson/eng-jet/results"
+        ],
+        [
+          "15051354",
+          "/home/jetson/eng-jet/runtime"
+        ],
+        [
+          "4687931480",
+          "/home/jetson/eng-jet/sysvenv"
+        ],
+        [
+          "101751706",
+          "/home/jetson/eng-jet/venv"
+        ],
+        [
+          "92632836",
+          "/home/jetson/eng-jet/wheels"
+        ]
+      ]
+    },
+    "env": {
+      "file": {
+        "bytes": 232,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s1s2-system-d/env.sh",
+        "sha256": "f2be65c966fa2ad46d36731ea5be73397e567390d45a7f2de9fb19f9e4b4299b"
+      },
+      "ir16c": "YOLO_CONFIG_DIR、CUDA_CACHE_PATH 指到 ~/eng-jet/home/ 下（IR-16 (c)）；YOLO_AUTOINSTALL=false YOLO_OFFLINE=true（IR-15）",
+      "lines": [
+        "unset LD_LIBRARY_PATH",
+        "export YOLO_AUTOINSTALL=false YOLO_OFFLINE=true",
+        "export YOLO_CONFIG_DIR=$HOME/eng-jet/home/yolo-config",
+        "export CUDA_CACHE_PATH=$HOME/eng-jet/home/cuda-cache",
+        "export PYTHONDONTWRITEBYTECODE=1",
+        "cd $HOME/eng-jet/code"
+      ]
+    },
+    "note": "S1/S2 在 ~/eng-jet/sysvenv 实跑（torch 2.9.1+cu130 / torchvision 0.24.1 / 系统 TensorRT 10.16）；官方 cu130 torch 2.9.1 无 sm_87 原生 SASS，按同主版本二进制兼容（sm_80 cubin）运行；检测推理走原生支持 SM 87 的系统 TensorRT 10.16（AC-2 修订 6）。实跑栈逐进程读数见 -fastlayer.json engines.*.s1.runtime_stack 与 export.runtime_stack。",
+    "nvpmodel_q": [
+      "NV Power Mode: MAXN_SUPER",
+      "2"
+    ],
+    "outside_eng_jet": {
+      "after": [
+        "== ~/.config/Ultralytics",
+        "total 12",
+        "drwxrwxr-x  2 jetson jetson 4096 2026-10-02 19:43:04.935480073 -0400 .",
+        "drwxrwxr-x 15 jetson jetson 4096 2026-10-02 19:43:04.919479779 -0400 ..",
+        "-rw-rw-r--  1 jetson jetson  482 2026-10-02 19:43:04.935480073 -0400 settings.json",
+        "f9c2e7ca256e6e77eb8ae8e2632a964872d767f57f0f17c685593d4be9471dd1  /home/jetson/.config/Ultralytics/settings.json",
+        "== ~/.nv/ComputeCache",
+        "911",
+        "55019638\t/home/jetson/.nv/ComputeCache",
+        "== ~/eng-jet/home/yolo-config",
+        "Ultralytics/settings.json\t483",
+        "Ultralytics/persistent_cache.json\t27",
+        "== ~/eng-jet/home/cuda-cache",
+        "2425",
+        "174763394\t/home/jetson/eng-jet/home/cuda-cache"
+      ],
+      "baseline": [
+        "== ~/.config/Ultralytics",
+        "total 12",
+        "drwxrwxr-x  2 jetson jetson 4096 2026-10-02 19:43:04.935480073 -0400 .",
+        "drwxrwxr-x 15 jetson jetson 4096 2026-10-02 19:43:04.919479779 -0400 ..",
+        "-rw-rw-r--  1 jetson jetson  482 2026-10-02 19:43:04.935480073 -0400 settings.json",
+        "f9c2e7ca256e6e77eb8ae8e2632a964872d767f57f0f17c685593d4be9471dd1  /home/jetson/.config/Ultralytics/settings.json",
+        "== ~/.nv/ComputeCache",
+        "911",
+        "55019638\t/home/jetson/.nv/ComputeCache"
+      ],
+      "newer_than_marker": [
+        "/home/jetson/.local/state/wireplumber/restore-stream",
+        "/home/jetson/.cache/matplotlib/fontlist-v330.json"
+      ]
+    },
+    "round": "K1K3K4补跑D",
+    "wheels_sub1_cleanup": {
+      "basis": "IR-16 (d)：S1 引擎导出前删除 ~/eng-jet/wheels/sub1/ 下全部已安装轮子文件；只删轮子、不动 sysvenv（未 pip uninstall）",
+      "bytes": 2836341094,
+      "count": 23,
+      "files": [
+        {
+          "bytes": 110368,
+          "name": "filelock-4.0.9-py3-none-any.whl"
+        },
+        {
+          "bytes": 221738,
+          "name": "fsspec-2026.9.0-py3-none-any.whl"
+        },
+        {
+          "bytes": 536198,
+          "name": "mpmath-1.3.0-py3-none-any.whl"
+        },
+        {
+          "bytes": 2142205,
+          "name": "networkx-3.7-py3-none-any.whl"
+        },
+        {
+          "bytes": 539001158,
+          "name": "nvidia_cublas-13.0.0.19-py3-none-manylinux_2_27_aarch64.whl"
+        },
+        {
+          "bytes": 10171189,
+          "name": "nvidia_cuda_cupti-13.0.48-py3-none-manylinux_2_25_aarch64.whl"
+        },
+        {
+          "bytes": 43013627,
+          "name": "nvidia_cuda_nvrtc-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 2260687,
+          "name": "nvidia_cuda_runtime-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 412337597,
+          "name": "nvidia_cudnn_cu13-9.13.0.50-py3-none-manylinux_2_27_aarch64.whl"
+        },
+        {
+          "bytes": 214053580,
+          "name": "nvidia_cufft-12.0.0.15-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 1136527,
+          "name": "nvidia_cufile-1.15.0.42-py3-none-manylinux_2_27_aarch64.whl"
+        },
+        {
+          "bytes": 61962106,
+          "name": "nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl"
+        },
+        {
+          "bytes": 193104180,
+          "name": "nvidia_cusolver-12.0.3.29-py3-none-manylinux_2_27_aarch64.whl"
+        },
+        {
+          "bytes": 155888587,
+          "name": "nvidia_cusparse-12.6.2.49-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 220791277,
+          "name": "nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_aarch64.whl"
+        },
+        {
+          "bytes": 194014855,
+          "name": "nvidia_nccl_cu13-2.27.7-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 38767126,
+          "name": "nvidia_nvjitlink-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 60168129,
+          "name": "nvidia_nvshmem_cu13-3.3.24-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 148037,
+          "name": "nvidia_nvtx-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+        },
+        {
+          "bytes": 6299353,
+          "name": "sympy-1.14.0-py3-none-any.whl"
+        },
+        {
+          "bytes": 512448274,
+          "name": "torch-2.9.1+cu130-cp312-cp312-manylinux_2_28_aarch64.whl"
+        },
+        {
+          "bytes": 7823607,
+          "name": "torchvision-0.24.1-cp312-cp312-manylinux_2_28_aarch64.whl"
+        },
+        {
+          "bytes": 159940689,
+          "name": "triton-3.5.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl"
+        }
+      ],
+      "remaining_entries": [],
+      "t": [
+        "2026-10-03T00:19:55Z",
+        "2026-10-03T00:20:01Z"
+      ]
+    }
+  },
+  "s2_system_stack_e": {
+    "boot": {
+      "note": "板子在补跑D（00:35Z 收尾）之后、本轮之前重启过（uptime -s 为板本地时间）；功耗模式仍为 MAXN_SUPER",
+      "uptime": [
+        "2026-10-02 22:50:43",
+        " 00:49:54 up  1:59,  1 user,  load average: 0.04, 0.01, 0.00",
+        "7150.62 42622.33"
+      ]
+    },
+    "container_venv_delete": {
+      "basis": "IR-19（提案「待裁定」IR-19 行）与决策记录「S1/S2 系统栈落实（B）」：系统栈 S1（补跑D）与 S2（本轮 STOP(FRAME_DROP)，有读数）均已实跑有读数 → 本派发内删除容器 venv；不动 sysvenv；pip 包数/下载字节不回退；wheels 保留",
+      "bytes": 101751706,
+      "deleted": true,
+      "df_after": "/dev/nvme0n1p1 249326301184 71006892032 165579804672  31% /",
+      "df_before": "/dev/nvme0n1p1 249326301184 71113900032 165472796672  31% /",
+      "dirs": 283,
+      "du_eng_jet_after": 5070463807,
+      "du_eng_jet_before": 5172051851,
+      "file_bytes_sum": 101751673,
+      "files": 1796,
+      "kept": "~/eng-jet/wheels（92,632,836 B，处置待接受角色补记录）、外部缓存/会话文件不删",
+      "listing": {
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/venv-listing.tsv",
+        "format": "类型\\t字节\\t相对路径（find -printf %y %s %P）",
+        "sha256": "8cb4c4dfa9cb274d5a7e3e7a022e413203b67d6d77db197cc8bbf80881c61cb7"
+      },
+      "path": "~/eng-jet/venv",
+      "pyvenv_cfg": [
+        "home = /usr/bin",
+        "include-system-site-packages = true",
+        "version = 3.12.3",
+        "executable = /usr/bin/python3.12",
+        "command = /usr/bin/python3 -m venv --system-site-packages /work/venv"
+      ],
+      "symlinks": 4,
+      "sysvenv_untouched": {
+        "du_after": "4687931480",
+        "pyvenv_cfg_sha256": "16bed38f0e25db344e19eea264b10cf47c1bc6d218f11f2597fd1e8d29181238"
+      },
+      "t": [
+        "2026-10-03T05:21:11Z",
+        "2026-10-03T05:21:11Z"
+      ]
+    },
+    "df": {
+      "df-0.txt": "/dev/nvme0n1p1 249326301184 71107379200 165479317504  31% /",
+      "df-1.txt": "/dev/nvme0n1p1 249326301184 71113654272 165473042432  31% /",
+      "df-3.txt": "/dev/nvme0n1p1 249326301184 71006892032 165579804672  31% /"
+    },
+    "du": {
+      "du-0.txt": [
+        "5166250549\t/home/jetson/eng-jet"
+      ],
+      "du-1.txt": [
+        "5172049405\t/home/jetson/eng-jet",
+        "18309120\t/home/jetson/eng-jet/bundle",
+        "5972902\t/home/jetson/eng-jet/code",
+        "11848394\t/home/jetson/eng-jet/frames",
+        "175021226\t/home/jetson/eng-jet/home",
+        "3229902\t/home/jetson/eng-jet/logs",
+        "60300651\t/home/jetson/eng-jet/results",
+        "15051354\t/home/jetson/eng-jet/runtime",
+        "4687931480\t/home/jetson/eng-jet/sysvenv",
+        "101751706\t/home/jetson/eng-jet/venv",
+        "92632836\t/home/jetson/eng-jet/wheels"
+      ],
+      "du-3.txt": [
+        "5070463807\t/home/jetson/eng-jet",
+        "18309120\t/home/jetson/eng-jet/bundle",
+        "5972902\t/home/jetson/eng-jet/code",
+        "11848394\t/home/jetson/eng-jet/frames",
+        "175021226\t/home/jetson/eng-jet/home",
+        "3396010\t/home/jetson/eng-jet/logs",
+        "60300651\t/home/jetson/eng-jet/results",
+        "15051354\t/home/jetson/eng-jet/runtime",
+        "4687931480\t/home/jetson/eng-jet/sysvenv",
+        "92632836\t/home/jetson/eng-jet/wheels"
+      ]
+    },
+    "env": {
+      "ac16": {
+        "MPLCONFIGDIR_actual": "/home/jetson/eng-jet/home/mpl",
+        "MPLCONFIGDIR_expected": "/home/jetson/eng-jet/home/mpl",
+        "basis": "AC-16（来源 IR-18）：板上本项 Python 进程启动前显式设 MPLCONFIGDIR=$HOME/eng-jet/home/mpl",
+        "match": true
+      },
+      "actual": [
+        "CUDA_CACHE_PATH=/home/jetson/eng-jet/home/cuda-cache",
+        "MPLCONFIGDIR=/home/jetson/eng-jet/home/mpl",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "YOLO_AUTOINSTALL=false",
+        "YOLO_CONFIG_DIR=/home/jetson/eng-jet/home/yolo-config",
+        "YOLO_OFFLINE=true",
+        "LD_LIBRARY_PATH_set=",
+        "pwd=/home/jetson/eng-jet/code"
+      ],
+      "file": {
+        "bytes": 275,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/s2-system-e/env.sh",
+        "sha256": "316c0f81c4a0bf594f76dbc90987e45269711034abb3e70ea678fd1b1c75b56a"
+      },
+      "ir16c": {
+        "CUDA_CACHE_PATH": "/home/jetson/eng-jet/home/cuda-cache",
+        "YOLO_CONFIG_DIR": "/home/jetson/eng-jet/home/yolo-config"
+      },
+      "ld_library_path_unset": true,
+      "lines": [
+        "unset LD_LIBRARY_PATH",
+        "export YOLO_AUTOINSTALL=false YOLO_OFFLINE=true",
+        "export YOLO_CONFIG_DIR=$HOME/eng-jet/home/yolo-config",
+        "export CUDA_CACHE_PATH=$HOME/eng-jet/home/cuda-cache",
+        "export MPLCONFIGDIR=$HOME/eng-jet/home/mpl",
+        "export PYTHONDONTWRITEBYTECODE=1",
+        "cd $HOME/eng-jet/code"
+      ]
+    },
+    "netdev_rx_delta_bytes": {
+      "can0": 0,
+      "docker0": 0,
+      "enP8p1s0": 375640,
+      "l4tbr0": 0,
+      "lo": 352,
+      "tailscale0": 0,
+      "usb0": 0,
+      "usb1": 0,
+      "wlP1p1s0": 178039
+    },
+    "note": "S2 在 ~/eng-jet/sysvenv 实跑（torch 2.9.1+cu130 / torchvision 0.24.1 / 系统 TensorRT 10.16）；官方 cu130 torch 2.9.1 无 sm_87 原生 SASS，按同主版本二进制兼容（sm_80 cubin）运行；检测推理走原生支持 SM 87 的系统 TensorRT 10.16（AC-2 修订 6）。本轮为用户题 7 (α) 后续跑，标 RESUMED_AFTER_USER_RULING(S1)（账本：2026-10-03 P1-ENG-JET-001 — 用户选题 7 (α)：S1 STOP 记录偏差、以方形 FP16 引擎继续（supervisor 会话代录））。实跑栈逐进程读数见 -fastlayer.json S2.runs.15hz.runtime_stack。",
+    "nvpmodel_q": [
+      "NV Power Mode: MAXN_SUPER",
+      "2"
+    ],
+    "outside_eng_jet": {
+      "after": [
+        "== ~/.config/Ultralytics",
+        "total 12",
+        "drwxrwxr-x  2 jetson jetson 4096 2026-10-02 19:43:04.935480073 -0400 .",
+        "drwxrwxr-x 15 jetson jetson 4096 2026-10-02 19:43:04.919479779 -0400 ..",
+        "-rw-rw-r--  1 jetson jetson  482 2026-10-02 19:43:04.935480073 -0400 settings.json",
+        "f9c2e7ca256e6e77eb8ae8e2632a964872d767f57f0f17c685593d4be9471dd1  /home/jetson/.config/Ultralytics/settings.json",
+        "== ~/.nv/ComputeCache",
+        "911",
+        "55019638\t/home/jetson/.nv/ComputeCache",
+        "== ~/.cache/matplotlib",
+        "total 148",
+        "drwxrwxr-x  2 jetson jetson   4096 2026-10-02 20:20:15.601886797 -0400 .",
+        "drwx------ 15 jetson jetson   4096 2026-10-02 20:20:14.105852396 -0400 ..",
+        "-rw-rw-r--  1 jetson jetson 140106 2026-10-02 20:20:15.601886797 -0400 fontlist-v330.json",
+        "== ~/.local/state/wireplumber",
+        "total 12",
+        "drwx------ 2 jetson jetson 4096 2026-10-03 00:50:22.296120039 -0400 .",
+        "drwx------ 3 jetson jetson 4096 2026-08-07 19:11:42.225196629 -0400 ..",
+        "-rw-rw-r-- 1 jetson jetson  899 2026-10-03 00:50:22.292119970 -0400 restore-stream",
+        "== ~/eng-jet/home/yolo-config",
+        "Ultralytics/settings.json\t483",
+        "Ultralytics/persistent_cache.json\t27",
+        "== ~/eng-jet/home/cuda-cache",
+        "2425",
+        "174763394\t/home/jetson/eng-jet/home/cuda-cache",
+        "== ~/eng-jet/home/mpl",
+        "fontlist-v330.json\t140106"
+      ],
+      "baseline": [
+        "== ~/.config/Ultralytics",
+        "total 12",
+        "drwxrwxr-x  2 jetson jetson 4096 2026-10-02 19:43:04.935480073 -0400 .",
+        "drwxrwxr-x 15 jetson jetson 4096 2026-10-02 19:43:04.919479779 -0400 ..",
+        "-rw-rw-r--  1 jetson jetson  482 2026-10-02 19:43:04.935480073 -0400 settings.json",
+        "f9c2e7ca256e6e77eb8ae8e2632a964872d767f57f0f17c685593d4be9471dd1  /home/jetson/.config/Ultralytics/settings.json",
+        "== ~/.nv/ComputeCache",
+        "911",
+        "55019638\t/home/jetson/.nv/ComputeCache",
+        "== ~/.cache/matplotlib",
+        "total 148",
+        "drwxrwxr-x  2 jetson jetson   4096 2026-10-02 20:20:15.601886797 -0400 .",
+        "drwx------ 15 jetson jetson   4096 2026-10-02 20:20:14.105852396 -0400 ..",
+        "-rw-rw-r--  1 jetson jetson 140106 2026-10-02 20:20:15.601886797 -0400 fontlist-v330.json",
+        "== ~/.local/state/wireplumber",
+        "total 12",
+        "drwx------ 2 jetson jetson 4096 2026-10-03 00:49:54.991644152 -0400 .",
+        "drwx------ 3 jetson jetson 4096 2026-08-07 19:11:42.225196629 -0400 ..",
+        "-rw-rw-r-- 1 jetson jetson  899 2026-10-03 00:49:54.987644082 -0400 restore-stream",
+        "== ~/eng-jet/home",
+        "total 124",
+        "drwxrwxr-x  7 jetson jetson  4096 Oct  2 20:20 .",
+        "drwxrwxr-x 12 jetson jetson  4096 Oct  2 19:04 ..",
+        "drwxr-xr-x  3 jetson jetson  4096 Oct  2 17:17 .cache",
+        "drwxr-xr-x  4 jetson jetson  4096 Oct  2 17:15 .config",
+        "drwxrwxr-x 18 jetson jetson  4096 Oct  2 20:20 cuda-cache",
+        "-rw-r--r--  1 jetson jetson    14 Oct  2 17:13 numpy-pin.txt",
+        "drwx------  3 jetson jetson  4096 Oct  2 17:07 .nv",
+        "-rw-r--r--  1 jetson jetson 92306 Oct  2 17:08 pip-dryrun.json",
+        "drwxrwxr-x  3 jetson jetson  4096 Oct  2 20:20 yolo-config",
+        "== ~/eng-jet/home/yolo-config",
+        "Ultralytics/settings.json\t483",
+        "Ultralytics/persistent_cache.json\t27",
+        "== ~/eng-jet/home/cuda-cache",
+        "2425",
+        "174763394\t/home/jetson/eng-jet/home/cuda-cache",
+        "== ~/eng-jet/home/mpl",
+        "ls: cannot access '/home/jetson/eng-jet/home/mpl': No such file or directory"
+      ],
+      "basis": "AC-16 外部新写入核查：marker-start（S2 启动前）之后 ~ 下除 ~/eng-jet 外的新文件；既有外部缓存不删除",
+      "newer_than_marker": []
+    },
+    "round": "K1K3K4补跑E",
+    "trt_plan_device_warning": {
+      "diagnostic": {
+        "gpu_available": "306000000 408000000 510000000 612000000 714000000 816000000 918000000 1020000000",
+        "gpu_max_freq": "1020000000",
+        "l2_cache_size": 4194304,
+        "major": 8,
+        "meminfo": [
+          "MemTotal:        7665092 kB",
+          "CmaTotal:         262144 kB"
+        ],
+        "minor": 7,
+        "multi_processor_count": 8,
+        "name": "Orin",
+        "total_memory": 7849054208,
+        "uuid": "3ae69d98-5f0e-568e-a79e-06168dab81f6"
+      },
+      "log_lines": [
+        "[10/03/2026-00:50:32] [TRT] [W] Using an engine plan file across different models of devices is not supported and is likely to affect performance or even cause errors or deadlock."
+      ]
+    }
+  },
+  "sr_system_stack_f": {
+    "ac16": {
+      "MPLCONFIGDIR_expected": "/home/jetson/eng-jet/home/mpl",
+      "all_match": true,
+      "outside_basis": "每轮 marker-start（板上 Python 进程启动前）之后 ~ 下除 ~/eng-jet 外的新文件；唯一命中 ~/.local/state/wireplumber/restore-stream 为 ssh 登录启动的用户会话服务写入（IR-18 已记同一来源），非本项进程；既有外部缓存不删除",
+      "rounds": {
+        "f1-echo": {
+          "CUDA_CACHE_PATH": "/home/jetson/eng-jet/home/cuda-cache",
+          "MPLCONFIGDIR_match": true,
+          "YOLO_CONFIG_DIR": "/home/jetson/eng-jet/home/yolo-config",
+          "actual": [
+            "CUDA_CACHE_PATH=/home/jetson/eng-jet/home/cuda-cache",
+            "MPLCONFIGDIR=/home/jetson/eng-jet/home/mpl",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "YOLO_AUTOINSTALL=false",
+            "YOLO_CONFIG_DIR=/home/jetson/eng-jet/home/yolo-config",
+            "YOLO_OFFLINE=true",
+            "LD_LIBRARY_PATH_set=",
+            "pwd=/home/jetson/eng-jet/code"
+          ],
+          "ld_library_path_unset": true,
+          "outside_newer_than_marker": [],
+          "yolo_offline": [
+            "false",
+            "true"
+          ]
+        },
+        "f2-echo": {
+          "CUDA_CACHE_PATH": "/home/jetson/eng-jet/home/cuda-cache",
+          "MPLCONFIGDIR_match": true,
+          "YOLO_CONFIG_DIR": "/home/jetson/eng-jet/home/yolo-config",
+          "actual": [
+            "CUDA_CACHE_PATH=/home/jetson/eng-jet/home/cuda-cache",
+            "MPLCONFIGDIR=/home/jetson/eng-jet/home/mpl",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "YOLO_AUTOINSTALL=false",
+            "YOLO_CONFIG_DIR=/home/jetson/eng-jet/home/yolo-config",
+            "YOLO_OFFLINE=true",
+            "LD_LIBRARY_PATH_set=",
+            "pwd=/home/jetson/eng-jet/code"
+          ],
+          "ld_library_path_unset": true,
+          "outside_newer_than_marker": [
+            "/home/jetson/.local/state/wireplumber/restore-stream"
+          ],
+          "yolo_offline": [
+            "false",
+            "true"
+          ]
+        },
+        "f3-track": {
+          "CUDA_CACHE_PATH": "/home/jetson/eng-jet/home/cuda-cache",
+          "MPLCONFIGDIR_match": true,
+          "YOLO_CONFIG_DIR": "/home/jetson/eng-jet/home/yolo-config",
+          "actual": [
+            "CUDA_CACHE_PATH=/home/jetson/eng-jet/home/cuda-cache",
+            "MPLCONFIGDIR=/home/jetson/eng-jet/home/mpl",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "YOLO_AUTOINSTALL=false",
+            "YOLO_CONFIG_DIR=/home/jetson/eng-jet/home/yolo-config",
+            "YOLO_OFFLINE=true",
+            "LD_LIBRARY_PATH_set=",
+            "pwd=/home/jetson/eng-jet/code"
+          ],
+          "ld_library_path_unset": true,
+          "outside_newer_than_marker": [
+            "/home/jetson/.local/state/wireplumber/restore-stream"
+          ],
+          "yolo_offline": [
+            "false",
+            "true"
+          ]
+        },
+        "f4-track-drops": {
+          "CUDA_CACHE_PATH": "/home/jetson/eng-jet/home/cuda-cache",
+          "MPLCONFIGDIR_match": true,
+          "YOLO_CONFIG_DIR": "/home/jetson/eng-jet/home/yolo-config",
+          "actual": [
+            "CUDA_CACHE_PATH=/home/jetson/eng-jet/home/cuda-cache",
+            "MPLCONFIGDIR=/home/jetson/eng-jet/home/mpl",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "YOLO_AUTOINSTALL=false",
+            "YOLO_CONFIG_DIR=/home/jetson/eng-jet/home/yolo-config",
+            "YOLO_OFFLINE=true",
+            "LD_LIBRARY_PATH_set=",
+            "pwd=/home/jetson/eng-jet/code"
+          ],
+          "ld_library_path_unset": true,
+          "outside_newer_than_marker": [
+            "/home/jetson/.local/state/wireplumber/restore-stream"
+          ],
+          "yolo_offline": [
+            "false",
+            "true"
+          ]
+        }
+      }
+    },
+    "board_link_events": [
+      "Oct 02 22:47:08 jetson kernel: r8168 0008:01:00.0 enP8p1s0: renamed from eth0",
+      "Dec 31 19:01:03 jetson kernel: enP8p1s0: 0xffff800080aad000, 4c:bb:47:c8:bb:ec, IRQ 207",
+      "Dec 31 19:01:07 jetson kernel: r8168: enP8p1s0: link up",
+      "Oct 03 12:52:11 jetson kernel: r8168: enP8p1s0: link down",
+      "Oct 03 12:52:14 jetson kernel: r8168: enP8p1s0: link up"
+    ],
+    "board_post": [
+      "Dec 31 19:01:07 jetson kernel: r8168: enP8p1s0: link up",
+      "Oct 03 12:52:11 jetson kernel: r8168: enP8p1s0: link down",
+      "Oct 03 12:52:14 jetson kernel: r8168: enP8p1s0: link up",
+      "5163883873",
+      "165474566144",
+      "enP8p1s0: 240174992  198388    0    0    0     0          0       223 22290246   44927    0    0    0     0       0          0",
+      "wlP1p1s0: 13540366   36308    0    0    0     0          0         0  2521757   18729    0    0    0     0       0          0"
+    ],
+    "board_time_sync": [
+      "Timezone=America/New_York",
+      "CanNTP=yes",
+      "NTP=yes",
+      "NTPSynchronized=yes",
+      "bash: line 1: chronyc: command not found",
+      "chronyc: n/a"
+    ],
+    "env_script": {
+      "file": {
+        "bytes": 275,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/sr-f/env.sh",
+        "sha256": "316c0f81c4a0bf594f76dbc90987e45269711034abb3e70ea678fd1b1c75b56a"
+      },
+      "run_script": {
+        "bytes": 1530,
+        "file": "outputs/eng-jet/P1-ENG-JET-001/sr-f/run-sr.sh",
+        "sha256": "e3509f9446b60d4d58a76cb1847a5057a5c753ead11f6e26a881223045b99e5d"
+      }
+    },
+    "note": "正式 SR：板侧中继/回声/真实应答器均以 ~/eng-jet/sysvenv/bin/python 运行（AC-16 环境由 env.sh 在每个进程启动前设定）；AC-2 修订 6：官方 cu130 torch 2.9.1 无 sm_87 原生 SASS，按同主版本二进制兼容（sm_80 cubin）运行；检测推理走原生支持 SM 87 的系统 TensorRT 10.16（方形 FP16 引擎，补跑D 导出）；标 RESUMED_AFTER_USER_RULING(S1)（账本：2026-10-03 P1-ENG-JET-001 — 用户选题 7 (α)：S1 STOP 记录偏差、以方形 FP16 引擎继续（supervisor 会话代录））与 RESUMED_AFTER_USER_RULING(S2)（账本：2026-10-03 P1-ENG-JET-001 — 用户选 S2 STOP 处置 (α′)：S2 记录偏差并继续，做原范围正式 SR（supervisor 会话代录））。",
+    "preflight": {
+      "dir": "~/eng-jet/logs/sr-f/preflight",
+      "label": "应答器预检（引擎身份复核 + 加载，无帧，4 s）",
+      "result": "engine_identity_ok；ready model_load_s 5.338；NO_FRAME（预期，未进入任何 SR 轮）"
+    },
+    "round": "K1K3K4补跑F"
+  },
+  "step": "S0",
+  "tegrastats_idle": {
+    "command": "nohup timeout 300 tegrastats --interval 1000",
+    "first_stamp_board_local": "10-02-2026 15:16:16",
+    "gr3d_pct": {
+      "max": 0.0,
+      "min": 0.0,
+      "n": 298,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "last_stamp_board_local": "10-02-2026 15:21:15",
+    "ram_total_mb": 7485,
+    "ram_used_mb": {
+      "max": 725.0,
+      "min": 712.0,
+      "n": 298,
+      "p50": 718.0,
+      "p95": 723.0
+    },
+    "raw_log_path": "outputs/eng-jet/P1-ENG-JET-001/s0/s0-tegrastats.log",
+    "raw_log_sha256": "68244c7566d1789d65b29120dd1d905a46216dda79779947f87915ea3abb683b",
+    "samples": 298,
+    "temps_c": {
+      "cpu": {
+        "max": 48.75,
+        "min": 48.12,
+        "n": 298,
+        "p50": 48.41,
+        "p95": 48.62
+      },
+      "gpu": {
+        "max": 48.25,
+        "min": 47.66,
+        "n": 298,
+        "p50": 47.84,
+        "p95": 48.16
+      },
+      "tj": {
+        "max": 49.12,
+        "min": 48.72,
+        "n": 298,
+        "p50": 48.91,
+        "p95": 49.03
+      }
+    }
+  },
+  "verdict": "PASS",
+  "verdict_is_reading_not_acceptance": true,
+  "work_id": "P1-ENG-JET-001"
+}

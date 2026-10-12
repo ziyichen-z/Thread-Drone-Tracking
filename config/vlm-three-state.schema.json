@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P1-ENG-LOOP-002 c2q4-json-v1 three-state reply (prompt v2 / parse.py table B)",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "status": {"const": "unique"},
+        "bbox_2d": {
+          "type": "array",
+          "items": {"type": "integer", "minimum": 0, "maximum": 1000},
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": ["status", "bbox_2d"],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "status": {"const": "ambiguous"},
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "bbox_2d": {
+                "type": "array",
+                "items": {"type": "integer", "minimum": 0, "maximum": 1000},
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": ["bbox_2d"],
+            "additionalProperties": false
+          },
+          "minItems": 2,
+          "maxItems": 8
+        }
+      },
+      "required": ["status", "candidates"],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "status": {"const": "none"}
+      },
+      "required": ["status"],
+      "additionalProperties": false
+    }
+  ]
+}

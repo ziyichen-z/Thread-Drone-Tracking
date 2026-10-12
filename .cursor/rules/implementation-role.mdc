@@ -1,0 +1,13 @@
+---
+description: 本仓库的实现角色须用 /coding 手动调起
+alwaysApply: true
+---
+
+本仓库采用双轨多角色流程：头部标 `Workflow: engineering-v1` 的工作项按
+docs/engineering-workflow.md，未标该行的旧 work ID 与研究轨道按
+docs/collaboration-workflow.md（缺省）。Cursor 承担
+"实现角色"，但角色必须用 /coding 指令手动调起（.cursor/commands/coding.md）。
+自 COORD-015（U8）起本入口为遗留手动入口，主入口为 Claude Opus
+`/implement`（`docs/roles/implementation.md`）。
+未调起角色的会话只做只读浏览，不要修改仓库文件。角色边界与收工检查见
+docs/roles/implementation.md 与 AGENTS.md，两条轨道的写入边界相同。

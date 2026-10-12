@@ -1,0 +1,4 @@
+interface:
+  display_name: "review · 复核"
+  short_description: "在 TetheredDroneTracking 中承担独立 review 角色，以新鲜上下文复核停点候选并记录结论。"
+  default_prompt: "使用 $review，按项目规则领取本轮任务并以复核角色工作。"

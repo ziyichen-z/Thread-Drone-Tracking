@@ -1,0 +1,14 @@
+# P1-ENG-SFT-002 K3 云端依赖（表 K：钉版本；随代码束上云）。
+# RTX 5090 是 Blackwell（sm_120），需要 CUDA 12.8 轮子；torch/transformers 与用户 5060
+# 零样本探针环境同版（torch 2.11.0+cu128、transformers 5.17.0，UT-OFFLINE-PROBE-2026-09-12）。
+# 安装：python -m pip install -r code/tools/requirements-eng-sft.txt
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0
+pillow==12.3.0
+tokenizers==0.23.2
+huggingface-hub==1.30.0
+safetensors==0.8.0

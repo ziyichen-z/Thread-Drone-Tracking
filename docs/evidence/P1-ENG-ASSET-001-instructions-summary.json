@@ -1,0 +1,2834 @@
+{
+  "attempt": "attempt-2",
+  "frozen_evaluation_set": false,
+  "object_overlap": {
+    "dev_inter_test": [
+      "Vehicle_Bus_color03 (1)",
+      "Vehicle_Container_color01",
+      "Vehicle_Police Car (1)",
+      "Vehicle_Police Car (5)",
+      "Vehicle_SUV_color01 (1)",
+      "Vehicle_SUV_color01 (4)",
+      "Vehicle_SUV_color03 (1)",
+      "Vehicle_Taxi (1)",
+      "Vehicle_Taxi (2)",
+      "Vehicle_Taxi (8)"
+    ],
+    "dev_objects": 36,
+    "domain": "各 split 的 UNIQUE_* 目标行（去重对象）",
+    "held_out_marked_in_test": [
+      "Vehicle_Bus_color03 (1)",
+      "Vehicle_Car_color01",
+      "Vehicle_Car_color03 (1)",
+      "Vehicle_Container_color01",
+      "Vehicle_Container_color02 (2)",
+      "Vehicle_Container_color02 (5)",
+      "Vehicle_Pick up Truck_color02 (5)",
+      "Vehicle_Pick up Truck_color03 (3)",
+      "Vehicle_Police Car (4)",
+      "Vehicle_Police Car (5)",
+      "Vehicle_SUV_color01 (6)",
+      "Vehicle_SUV_color01 (8)",
+      "Vehicle_SUV_color01 (9)",
+      "Vehicle_SUV_color03 (3)",
+      "Vehicle_SUV_color03 (7)",
+      "Vehicle_Taxi (5)",
+      "Vehicle_Taxi (6)",
+      "Vehicle_Taxi (8)",
+      "Vehicle_Taxi (9)",
+      "Vehicle_Truck_color02"
+    ],
+    "held_out_object_ids": [
+      "Vehicle_Ambulance (2)",
+      "Vehicle_Ambulance (4)",
+      "Vehicle_Bus_color02 (1)",
+      "Vehicle_Bus_color03 (1)",
+      "Vehicle_Car_color01",
+      "Vehicle_Car_color01 (2)",
+      "Vehicle_Car_color02 (3)",
+      "Vehicle_Car_color03 (1)",
+      "Vehicle_Container_color01",
+      "Vehicle_Container_color02 (2)",
+      "Vehicle_Container_color02 (5)",
+      "Vehicle_Pick up Truck_color01",
+      "Vehicle_Pick up Truck_color01 (1)",
+      "Vehicle_Pick up Truck_color01 (3)",
+      "Vehicle_Pick up Truck_color02",
+      "Vehicle_Pick up Truck_color02 (4)",
+      "Vehicle_Pick up Truck_color02 (5)",
+      "Vehicle_Pick up Truck_color03 (3)",
+      "Vehicle_Police Car (4)",
+      "Vehicle_Police Car (5)",
+      "Vehicle_SUV_color01 (3)",
+      "Vehicle_SUV_color01 (6)",
+      "Vehicle_SUV_color01 (8)",
+      "Vehicle_SUV_color01 (9)",
+      "Vehicle_SUV_color03 (3)",
+      "Vehicle_SUV_color03 (7)",
+      "Vehicle_Taxi (5)",
+      "Vehicle_Taxi (6)",
+      "Vehicle_Taxi (8)",
+      "Vehicle_Taxi (9)",
+      "Vehicle_Truck_color02",
+      "Vehicle_Truck_color03"
+    ],
+    "note": "S4 held_out_objects 标记原样继承；本表只描述既有划分，两者都不得读作「对象从未出现在训练图像中」，也不构成正式评估集",
+    "test_objects": 53,
+    "test_only": [
+      "Vehicle_Ambulance (3)",
+      "Vehicle_Bus_color01 (1)",
+      "Vehicle_Bus_color02",
+      "Vehicle_Bus_color03",
+      "Vehicle_Car_color01",
+      "Vehicle_Car_color02 (1)",
+      "Vehicle_Car_color02 (2)",
+      "Vehicle_Car_color02 (5)",
+      "Vehicle_Container_color02 (2)",
+      "Vehicle_Container_color02 (3)",
+      "Vehicle_Container_color03",
+      "Vehicle_Pick up Truck_color01 (5)",
+      "Vehicle_Pick up Truck_color01 (6)",
+      "Vehicle_Pick up Truck_color01 (9)",
+      "Vehicle_Pick up Truck_color02 (1)",
+      "Vehicle_Pick up Truck_color02 (5)",
+      "Vehicle_Pick up Truck_color02 (8)",
+      "Vehicle_Pick up Truck_color03 (1)",
+      "Vehicle_Pick up Truck_color03 (3)",
+      "Vehicle_SUV_color01",
+      "Vehicle_SUV_color01 (8)",
+      "Vehicle_SUV_color01 (9)",
+      "Vehicle_SUV_color03 (3)",
+      "Vehicle_SUV_color03 (5)",
+      "Vehicle_SUV_color03 (7)",
+      "Vehicle_Taxi (3)",
+      "Vehicle_Taxi (5)",
+      "Vehicle_Taxi (6)",
+      "Vehicle_Taxi (7)",
+      "Vehicle_Taxi (9)",
+      "Vehicle_Truck_color02"
+    ],
+    "train_inter_test": [
+      "Vehicle_Ambulance (1)",
+      "Vehicle_Car_color03 (1)",
+      "Vehicle_Container_color02 (5)",
+      "Vehicle_Pick up Truck_color03",
+      "Vehicle_Police Car (4)",
+      "Vehicle_SUV_color01 (6)",
+      "Vehicle_SUV_color03",
+      "Vehicle_SUV_color03 (1)",
+      "Vehicle_Taxi (1)",
+      "Vehicle_Taxi (10)",
+      "Vehicle_Taxi (4)",
+      "Vehicle_Truck_color01",
+      "Vehicle_Truck_color01 (1)",
+      "Vehicle_Truck_color02 (1)"
+    ],
+    "train_objects": 19
+  },
+  "per_object": [
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Ambulance",
+      "programs": [
+        "the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [
+          "the ambulance"
+        ],
+        "unassigned": [
+          "the ambulance"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 11,
+        "unassigned": 1
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Ambulance (1)",
+      "programs": [
+        "the ambulance",
+        "the ambulance to the viewer's left of the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the ambulance",
+          "the ambulance to the viewer's left of the bus"
+        ],
+        "train": [
+          "the ambulance"
+        ],
+        "unassigned": [
+          "the ambulance",
+          "the ambulance to the viewer's left of the bus"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 157,
+        "train": 52,
+        "unassigned": 105
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Ambulance (2)",
+      "programs": [
+        "the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the ambulance"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 1148,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Ambulance (3)",
+      "programs": [
+        "the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the ambulance"
+        ],
+        "train": [],
+        "unassigned": [
+          "the ambulance"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 105,
+        "train": 0,
+        "unassigned": 241
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Ambulance (4)",
+      "programs": [
+        "the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [
+          "the ambulance"
+        ],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 65,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Bus_color01 (1)",
+      "programs": [
+        "the bus",
+        "the bus to the viewer's left of the ambulance",
+        "the bus to the viewer's left of the taxi",
+        "the bus to the viewer's right of the ambulance",
+        "the bus to the viewer's right of the pickup truck",
+        "the bus to the viewer's right of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the bus",
+          "the bus to the viewer's left of the ambulance",
+          "the bus to the viewer's left of the taxi",
+          "the bus to the viewer's right of the ambulance",
+          "the bus to the viewer's right of the pickup truck",
+          "the bus to the viewer's right of the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the bus",
+          "the bus to the viewer's left of the ambulance",
+          "the bus to the viewer's left of the taxi",
+          "the bus to the viewer's right of the ambulance",
+          "the bus to the viewer's right of the pickup truck",
+          "the bus to the viewer's right of the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 245,
+        "train": 0,
+        "unassigned": 235
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Bus_color02",
+      "programs": [
+        "the bus",
+        "the bus to the viewer's left of the ambulance",
+        "the bus to the viewer's left of the police car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the bus",
+          "the bus to the viewer's left of the ambulance"
+        ],
+        "train": [],
+        "unassigned": [
+          "the bus",
+          "the bus to the viewer's left of the ambulance",
+          "the bus to the viewer's left of the police car"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 72,
+        "train": 0,
+        "unassigned": 56
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Bus_color02 (1)",
+      "programs": [
+        "the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the bus"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": [
+          "the bus"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 39,
+        "test": 0,
+        "train": 0,
+        "unassigned": 1
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Bus_color03",
+      "programs": [
+        "the bus",
+        "the bus to the viewer's left of the pickup truck",
+        "the bus to the viewer's left of the taxi",
+        "the bus to the viewer's right of the pickup truck",
+        "the bus to the viewer's right of the police car",
+        "the bus to the viewer's right of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the bus",
+          "the bus to the viewer's left of the pickup truck",
+          "the bus to the viewer's left of the taxi",
+          "the bus to the viewer's right of the pickup truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the bus",
+          "the bus to the viewer's left of the pickup truck",
+          "the bus to the viewer's left of the taxi",
+          "the bus to the viewer's right of the pickup truck",
+          "the bus to the viewer's right of the police car",
+          "the bus to the viewer's right of the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 130,
+        "train": 0,
+        "unassigned": 96
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Bus_color03 (1)",
+      "programs": [
+        "the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the bus"
+        ],
+        "test": [
+          "the bus"
+        ],
+        "train": [],
+        "unassigned": [
+          "the bus"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 1311,
+        "test": 546,
+        "train": 0,
+        "unassigned": 974
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Car_color01",
+      "programs": [
+        "the car",
+        "the car to the viewer's left of the bus",
+        "the car to the viewer's left of the red container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the car",
+          "the car to the viewer's left of the bus",
+          "the car to the viewer's left of the red container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the car",
+          "the car to the viewer's left of the bus",
+          "the car to the viewer's left of the red container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 91,
+        "train": 0,
+        "unassigned": 91
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color01 (1)",
+      "programs": [
+        "the car",
+        "the gray car to the viewer's left of the blue container truck",
+        "the gray car to the viewer's left of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the car",
+          "the gray car to the viewer's left of the blue container truck",
+          "the gray car to the viewer's left of the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 10,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color02",
+      "programs": [
+        "the car",
+        "the car to the viewer's left of the ambulance",
+        "the car to the viewer's left of the container truck",
+        "the car to the viewer's left of the pickup truck",
+        "the car to the viewer's right of the container truck",
+        "the car to the viewer's right of the green container truck",
+        "the car to the viewer's right of the pickup truck",
+        "the car to the viewer's right of the red container truck",
+        "the car to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the car",
+          "the car to the viewer's left of the ambulance",
+          "the car to the viewer's left of the container truck",
+          "the car to the viewer's left of the pickup truck",
+          "the car to the viewer's right of the container truck",
+          "the car to the viewer's right of the green container truck",
+          "the car to the viewer's right of the pickup truck",
+          "the car to the viewer's right of the red container truck",
+          "the car to the viewer's right of the suv"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 388,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color02 (1)",
+      "programs": [
+        "the car",
+        "the car to the viewer's right of the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the car",
+          "the car to the viewer's right of the ambulance"
+        ],
+        "train": [],
+        "unassigned": [
+          "the car",
+          "the car to the viewer's right of the ambulance"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 24,
+        "train": 0,
+        "unassigned": 18
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color02 (2)",
+      "programs": [
+        "the car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the car"
+        ],
+        "train": [],
+        "unassigned": [
+          "the car"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 12,
+        "train": 0,
+        "unassigned": 4
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color02 (4)",
+      "programs": [
+        "the car",
+        "the car to the viewer's left of the green container truck",
+        "the car to the viewer's left of the pickup truck",
+        "the car to the viewer's left of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the car",
+          "the car to the viewer's left of the green container truck",
+          "the car to the viewer's left of the pickup truck",
+          "the car to the viewer's left of the taxi"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 59,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color02 (5)",
+      "programs": [
+        "the car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the car"
+        ],
+        "train": [],
+        "unassigned": [
+          "the car"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 6,
+        "train": 0,
+        "unassigned": 6
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color03",
+      "programs": [
+        "the car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [
+          "the car"
+        ],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 1,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Car_color03 (1)",
+      "programs": [
+        "the car",
+        "the car to the viewer's right of the ambulance",
+        "the car to the viewer's right of the bus",
+        "the gray car",
+        "the gray car to the viewer's right of the red container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the car",
+          "the car to the viewer's right of the bus",
+          "the gray car",
+          "the gray car to the viewer's right of the red container truck"
+        ],
+        "train": [
+          "the car",
+          "the car to the viewer's right of the ambulance"
+        ],
+        "unassigned": [
+          "the car",
+          "the car to the viewer's right of the ambulance",
+          "the car to the viewer's right of the bus",
+          "the gray car",
+          "the gray car to the viewer's right of the red container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 109,
+        "train": 23,
+        "unassigned": 91
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Car_color03 (3)",
+      "programs": [
+        "the car",
+        "the car to the viewer's left of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the car",
+          "the car to the viewer's left of the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 20,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Container_color01",
+      "programs": [
+        "the container truck",
+        "the green container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the container truck",
+          "the green container truck"
+        ],
+        "test": [
+          "the container truck",
+          "the green container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the container truck",
+          "the green container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 2607,
+        "test": 809,
+        "train": 0,
+        "unassigned": 2369
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Container_color01 (1)",
+      "programs": [
+        "the green container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the green container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 101,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Container_color02",
+      "programs": [
+        "the blue container truck",
+        "the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the blue container truck",
+          "the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 171,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Container_color02 (1)",
+      "programs": [
+        "the blue container truck",
+        "the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the blue container truck",
+          "the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 504,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Container_color02 (2)",
+      "programs": [
+        "the blue container truck",
+        "the blue container truck to the viewer's left of the taxi",
+        "the blue container truck to the viewer's left of the truck",
+        "the container truck",
+        "the container truck to the viewer's left of the car",
+        "the container truck to the viewer's left of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the blue container truck",
+          "the blue container truck to the viewer's left of the taxi",
+          "the container truck",
+          "the container truck to the viewer's left of the car",
+          "the container truck to the viewer's left of the truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the blue container truck",
+          "the blue container truck to the viewer's left of the taxi",
+          "the blue container truck to the viewer's left of the truck",
+          "the container truck",
+          "the container truck to the viewer's left of the car",
+          "the container truck to the viewer's left of the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 1216,
+        "train": 0,
+        "unassigned": 3192
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Container_color02 (3)",
+      "programs": [
+        "the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 30,
+        "train": 0,
+        "unassigned": 13
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Container_color02 (5)",
+      "programs": [
+        "the container truck",
+        "the container truck to the viewer's left of the ambulance",
+        "the container truck to the viewer's left of the green suv",
+        "the container truck to the viewer's left of the suv",
+        "the container truck to the viewer's left of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the container truck"
+        ],
+        "train": [
+          "the container truck",
+          "the container truck to the viewer's left of the suv"
+        ],
+        "unassigned": [
+          "the container truck",
+          "the container truck to the viewer's left of the ambulance",
+          "the container truck to the viewer's left of the green suv",
+          "the container truck to the viewer's left of the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 342,
+        "train": 115,
+        "unassigned": 841
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Container_color03",
+      "programs": [
+        "the container truck",
+        "the container truck to the viewer's right of the bus",
+        "the red container truck",
+        "the red container truck to the viewer's left of the taxi",
+        "the red container truck to the viewer's left of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the container truck",
+          "the red container truck",
+          "the red container truck to the viewer's left of the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the container truck",
+          "the container truck to the viewer's right of the bus",
+          "the red container truck",
+          "the red container truck to the viewer's left of the taxi",
+          "the red container truck to the viewer's left of the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 575,
+        "train": 0,
+        "unassigned": 792
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Container_color03 (1)",
+      "programs": [
+        "the container truck",
+        "the red container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the container truck",
+          "the red container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 283,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Pick up Truck_color01 (1)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the ambulance",
+        "the pickup truck to the viewer's left of the bus",
+        "the pickup truck to the viewer's left of the container truck",
+        "the pickup truck to the viewer's left of the taxi",
+        "the pickup truck to the viewer's right of the bus",
+        "the pickup truck to the viewer's right of the police car",
+        "the pickup truck to the viewer's right of the suv",
+        "the pickup truck to the viewer's right of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the ambulance",
+          "the pickup truck to the viewer's left of the bus",
+          "the pickup truck to the viewer's left of the container truck",
+          "the pickup truck to the viewer's left of the taxi",
+          "the pickup truck to the viewer's right of the bus",
+          "the pickup truck to the viewer's right of the police car",
+          "the pickup truck to the viewer's right of the suv",
+          "the pickup truck to the viewer's right of the taxi"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 615,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color01 (2)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the ambulance",
+        "the pickup truck to the viewer's left of the blue container truck",
+        "the pickup truck to the viewer's left of the container truck",
+        "the pickup truck to the viewer's right of the ambulance",
+        "the pickup truck to the viewer's right of the car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the ambulance",
+          "the pickup truck to the viewer's left of the blue container truck",
+          "the pickup truck to the viewer's left of the container truck",
+          "the pickup truck to the viewer's right of the ambulance",
+          "the pickup truck to the viewer's right of the car"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 932,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Pick up Truck_color01 (3)",
+      "programs": [
+        "the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 3,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color01 (4)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's right of the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's right of the bus"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 10,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color01 (5)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's right of the ambulance",
+        "the pickup truck to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck",
+          "the pickup truck to the viewer's right of the ambulance",
+          "the pickup truck to the viewer's right of the container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck",
+          "the pickup truck to the viewer's right of the ambulance",
+          "the pickup truck to the viewer's right of the container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 72,
+        "train": 0,
+        "unassigned": 35
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color01 (6)",
+      "programs": [
+        "the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 12,
+        "train": 0,
+        "unassigned": 4
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color01 (8)",
+      "programs": [
+        "the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 2
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color01 (9)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the container truck",
+        "the pickup truck to the viewer's right of the container truck",
+        "the pickup truck to the viewer's right of the red container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the container truck",
+          "the pickup truck to the viewer's right of the container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the container truck",
+          "the pickup truck to the viewer's right of the container truck",
+          "the pickup truck to the viewer's right of the red container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 117,
+        "train": 0,
+        "unassigned": 106
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Pick up Truck_color02",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the taxi",
+        "the pickup truck to the viewer's right of the ambulance",
+        "the pickup truck to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the taxi",
+          "the pickup truck to the viewer's right of the ambulance",
+          "the pickup truck to the viewer's right of the suv"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 69,
+        "test": 0,
+        "train": 0,
+        "unassigned": 1
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color02 (1)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the red container truck",
+        "the pickup truck to the viewer's left of the suv",
+        "the pickup truck to the viewer's right of the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the suv",
+          "the pickup truck to the viewer's right of the bus"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the red container truck",
+          "the pickup truck to the viewer's left of the suv",
+          "the pickup truck to the viewer's right of the bus"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 43,
+        "train": 0,
+        "unassigned": 40
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color02 (2)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's right of the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 60,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Pick up Truck_color02 (4)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the container truck",
+        "the pickup truck to the viewer's left of the taxi",
+        "the pickup truck to the viewer's right of the car",
+        "the pickup truck to the viewer's right of the container truck",
+        "the pickup truck to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the container truck",
+          "the pickup truck to the viewer's left of the taxi",
+          "the pickup truck to the viewer's right of the car",
+          "the pickup truck to the viewer's right of the container truck",
+          "the pickup truck to the viewer's right of the suv"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 125,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Pick up Truck_color02 (5)",
+      "programs": [
+        "the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 94,
+        "train": 0,
+        "unassigned": 603
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color02 (7)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the car"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 41,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color02 (8)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's right of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck to the viewer's right of the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck",
+          "the pickup truck to the viewer's right of the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 6,
+        "train": 0,
+        "unassigned": 3
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color03",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's right of the ambulance",
+        "the pickup truck to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck"
+        ],
+        "train": [
+          "the pickup truck",
+          "the pickup truck to the viewer's right of the ambulance",
+          "the pickup truck to the viewer's right of the suv"
+        ],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 18,
+        "train": 100,
+        "unassigned": 39
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color03 (1)",
+      "programs": [
+        "the pickup truck",
+        "the pickup truck to the viewer's left of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck",
+          "the pickup truck to the viewer's left of the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 24,
+        "train": 0,
+        "unassigned": 10
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Pick up Truck_color03 (2)",
+      "programs": [
+        "the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 0,
+        "unassigned": 2
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Pick up Truck_color03 (3)",
+      "programs": [
+        "the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the pickup truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 6,
+        "train": 0,
+        "unassigned": 2
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Police Car",
+      "programs": [
+        "the police car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the police car"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 9,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Police Car (1)",
+      "programs": [
+        "the police car",
+        "the police car to the viewer's left of the bus",
+        "the police car to the viewer's right of the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the police car to the viewer's right of the bus"
+        ],
+        "test": [
+          "the police car",
+          "the police car to the viewer's left of the bus"
+        ],
+        "train": [],
+        "unassigned": [
+          "the police car",
+          "the police car to the viewer's left of the bus"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 25,
+        "test": 43,
+        "train": 0,
+        "unassigned": 47
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Police Car (4)",
+      "programs": [
+        "the police car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the police car"
+        ],
+        "train": [
+          "the police car"
+        ],
+        "unassigned": [
+          "the police car"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 73,
+        "train": 1,
+        "unassigned": 39
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Police Car (5)",
+      "programs": [
+        "the police car",
+        "the police car to the viewer's left of the bus",
+        "the police car to the viewer's right of the bus",
+        "the police car to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the police car",
+          "the police car to the viewer's left of the bus"
+        ],
+        "test": [
+          "the police car to the viewer's right of the bus"
+        ],
+        "train": [],
+        "unassigned": [
+          "the police car",
+          "the police car to the viewer's right of the bus",
+          "the police car to the viewer's right of the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 151,
+        "test": 6,
+        "train": 0,
+        "unassigned": 5
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color01",
+      "programs": [
+        "the purple suv",
+        "the suv",
+        "the suv to the viewer's left of the blue container truck",
+        "the suv to the viewer's right of the blue container truck",
+        "the suv to the viewer's right of the bus",
+        "the suv to the viewer's right of the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the purple suv",
+          "the suv",
+          "the suv to the viewer's left of the blue container truck",
+          "the suv to the viewer's right of the bus"
+        ],
+        "train": [],
+        "unassigned": [
+          "the purple suv",
+          "the suv",
+          "the suv to the viewer's left of the blue container truck",
+          "the suv to the viewer's right of the blue container truck",
+          "the suv to the viewer's right of the bus",
+          "the suv to the viewer's right of the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 68,
+        "train": 0,
+        "unassigned": 83
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color01 (1)",
+      "programs": [
+        "the purple suv",
+        "the purple suv to the viewer's left of the container truck",
+        "the suv",
+        "the suv to the viewer's left of the blue container truck",
+        "the suv to the viewer's left of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the suv"
+        ],
+        "test": [
+          "the purple suv",
+          "the suv",
+          "the suv to the viewer's left of the blue container truck",
+          "the suv to the viewer's left of the container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the purple suv",
+          "the purple suv to the viewer's left of the container truck",
+          "the suv",
+          "the suv to the viewer's left of the blue container truck",
+          "the suv to the viewer's left of the container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 2977,
+        "test": 1265,
+        "train": 0,
+        "unassigned": 4674
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_SUV_color01 (3)",
+      "programs": [
+        "the suv",
+        "the suv to the viewer's right of the blue container truck",
+        "the suv to the viewer's right of the car",
+        "the suv to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the suv",
+          "the suv to the viewer's right of the blue container truck",
+          "the suv to the viewer's right of the car",
+          "the suv to the viewer's right of the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 98,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color01 (4)",
+      "programs": [
+        "the suv",
+        "the suv to the viewer's right of the blue container truck",
+        "the suv to the viewer's right of the bus",
+        "the suv to the viewer's right of the container truck",
+        "the suv to the viewer's right of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the suv",
+          "the suv to the viewer's right of the bus",
+          "the suv to the viewer's right of the truck"
+        ],
+        "test": [
+          "the suv to the viewer's right of the container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the suv to the viewer's right of the blue container truck",
+          "the suv to the viewer's right of the container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 44,
+        "test": 6,
+        "train": 0,
+        "unassigned": 19
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color01 (5)",
+      "programs": [
+        "the suv",
+        "the suv to the viewer's right of the ambulance",
+        "the suv to the viewer's right of the red container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the suv",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the red container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 149,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_SUV_color01 (6)",
+      "programs": [
+        "the suv",
+        "the suv to the viewer's left of the ambulance",
+        "the suv to the viewer's left of the bus",
+        "the suv to the viewer's left of the car",
+        "the suv to the viewer's left of the pickup truck",
+        "the suv to the viewer's right of the ambulance",
+        "the suv to the viewer's right of the car",
+        "the suv to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the suv",
+          "the suv to the viewer's left of the ambulance",
+          "the suv to the viewer's left of the bus",
+          "the suv to the viewer's left of the car",
+          "the suv to the viewer's left of the pickup truck",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the car"
+        ],
+        "train": [
+          "the suv to the viewer's left of the ambulance"
+        ],
+        "unassigned": [
+          "the suv",
+          "the suv to the viewer's left of the ambulance",
+          "the suv to the viewer's left of the bus",
+          "the suv to the viewer's left of the car",
+          "the suv to the viewer's left of the pickup truck",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the car",
+          "the suv to the viewer's right of the container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 96,
+        "train": 7,
+        "unassigned": 82
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_SUV_color01 (8)",
+      "programs": [
+        "the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the suv"
+        ],
+        "train": [],
+        "unassigned": [
+          "the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 12,
+        "train": 0,
+        "unassigned": 9
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_SUV_color01 (9)",
+      "programs": [
+        "the suv",
+        "the suv to the viewer's left of the red container truck",
+        "the suv to the viewer's right of the container truck",
+        "the suv to the viewer's right of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the suv",
+          "the suv to the viewer's right of the container truck",
+          "the suv to the viewer's right of the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the suv",
+          "the suv to the viewer's left of the red container truck",
+          "the suv to the viewer's right of the container truck",
+          "the suv to the viewer's right of the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 18,
+        "train": 0,
+        "unassigned": 7
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color02",
+      "programs": [
+        "the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [
+          "the suv"
+        ],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 1,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color03",
+      "programs": [
+        "the green suv",
+        "the suv",
+        "the suv to the viewer's left of the ambulance",
+        "the suv to the viewer's right of the ambulance",
+        "the suv to the viewer's right of the car",
+        "the suv to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the suv",
+          "the suv to the viewer's left of the ambulance",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the car"
+        ],
+        "train": [
+          "the suv",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the container truck"
+        ],
+        "unassigned": [
+          "the green suv",
+          "the suv",
+          "the suv to the viewer's left of the ambulance",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the car"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 36,
+        "train": 25,
+        "unassigned": 17
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color03 (1)",
+      "programs": [
+        "the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the suv"
+        ],
+        "test": [
+          "the suv"
+        ],
+        "train": [
+          "the suv"
+        ],
+        "unassigned": [
+          "the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 1,
+        "test": 12,
+        "train": 24,
+        "unassigned": 32
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_SUV_color03 (3)",
+      "programs": [
+        "the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the suv"
+        ],
+        "train": [],
+        "unassigned": [
+          "the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 24,
+        "train": 0,
+        "unassigned": 9
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color03 (4)",
+      "programs": [
+        "the green suv to the viewer's left of the ambulance",
+        "the suv",
+        "the suv to the viewer's left of the ambulance",
+        "the suv to the viewer's left of the pickup truck",
+        "the suv to the viewer's left of the taxi",
+        "the suv to the viewer's right of the ambulance",
+        "the suv to the viewer's right of the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the green suv to the viewer's left of the ambulance",
+          "the suv",
+          "the suv to the viewer's left of the ambulance",
+          "the suv to the viewer's left of the pickup truck",
+          "the suv to the viewer's left of the taxi",
+          "the suv to the viewer's right of the ambulance",
+          "the suv to the viewer's right of the taxi"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 621,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_SUV_color03 (5)",
+      "programs": [
+        "the green suv",
+        "the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the green suv"
+        ],
+        "train": [],
+        "unassigned": [
+          "the green suv",
+          "the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 6,
+        "train": 0,
+        "unassigned": 8
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_SUV_color03 (7)",
+      "programs": [
+        "the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the suv"
+        ],
+        "train": [],
+        "unassigned": [
+          "the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 25,
+        "train": 0,
+        "unassigned": 8
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the bus",
+        "the taxi to the viewer's left of the container truck",
+        "the taxi to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the taxi",
+          "the taxi to the viewer's left of the bus",
+          "the taxi to the viewer's left of the container truck",
+          "the taxi to the viewer's right of the container truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 539,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi (1)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the police car",
+        "the taxi to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the taxi",
+          "the taxi to the viewer's left of the police car",
+          "the taxi to the viewer's right of the suv"
+        ],
+        "test": [
+          "the taxi"
+        ],
+        "train": [
+          "the taxi"
+        ],
+        "unassigned": [
+          "the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 55,
+        "test": 7,
+        "train": 10,
+        "unassigned": 2
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi (10)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the ambulance",
+        "the taxi to the viewer's left of the bus",
+        "the taxi to the viewer's left of the container truck",
+        "the taxi to the viewer's left of the suv",
+        "the taxi to the viewer's left of the truck",
+        "the taxi to the viewer's right of the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi",
+          "the taxi to the viewer's left of the bus",
+          "the taxi to the viewer's left of the container truck",
+          "the taxi to the viewer's left of the suv"
+        ],
+        "train": [
+          "the taxi"
+        ],
+        "unassigned": [
+          "the taxi",
+          "the taxi to the viewer's left of the ambulance",
+          "the taxi to the viewer's left of the bus",
+          "the taxi to the viewer's left of the container truck",
+          "the taxi to the viewer's left of the suv",
+          "the taxi to the viewer's left of the truck",
+          "the taxi to the viewer's right of the ambulance"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 51,
+        "train": 1,
+        "unassigned": 585
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi (2)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the bus",
+        "the taxi to the viewer's right of the police car"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the taxi",
+          "the taxi to the viewer's left of the bus"
+        ],
+        "test": [
+          "the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi",
+          "the taxi to the viewer's right of the police car"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 3076,
+        "test": 300,
+        "train": 0,
+        "unassigned": 1614
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi (3)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the ambulance",
+        "the taxi to the viewer's left of the bus",
+        "the taxi to the viewer's left of the container truck",
+        "the taxi to the viewer's left of the truck",
+        "the taxi to the viewer's right of the ambulance",
+        "the taxi to the viewer's right of the bus",
+        "the taxi to the viewer's right of the car",
+        "the taxi to the viewer's right of the container truck",
+        "the taxi to the viewer's right of the red container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi",
+          "the taxi to the viewer's left of the ambulance",
+          "the taxi to the viewer's left of the truck",
+          "the taxi to the viewer's right of the ambulance",
+          "the taxi to the viewer's right of the bus"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi",
+          "the taxi to the viewer's left of the ambulance",
+          "the taxi to the viewer's left of the bus",
+          "the taxi to the viewer's left of the container truck",
+          "the taxi to the viewer's left of the truck",
+          "the taxi to the viewer's right of the ambulance",
+          "the taxi to the viewer's right of the bus",
+          "the taxi to the viewer's right of the car",
+          "the taxi to the viewer's right of the container truck",
+          "the taxi to the viewer's right of the red container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 295,
+        "train": 0,
+        "unassigned": 403
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi (4)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the ambulance",
+        "the taxi to the viewer's left of the truck",
+        "the taxi to the viewer's right of the ambulance",
+        "the taxi to the viewer's right of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi",
+          "the taxi to the viewer's right of the ambulance",
+          "the taxi to the viewer's right of the truck"
+        ],
+        "train": [
+          "the taxi to the viewer's left of the ambulance",
+          "the taxi to the viewer's left of the truck"
+        ],
+        "unassigned": [
+          "the taxi",
+          "the taxi to the viewer's right of the ambulance",
+          "the taxi to the viewer's right of the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 42,
+        "train": 16,
+        "unassigned": 28
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Taxi (5)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the blue container truck",
+        "the taxi to the viewer's right of the container truck",
+        "the taxi to the viewer's right of the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi",
+          "the taxi to the viewer's right of the container truck",
+          "the taxi to the viewer's right of the pickup truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi",
+          "the taxi to the viewer's left of the blue container truck",
+          "the taxi to the viewer's right of the container truck",
+          "the taxi to the viewer's right of the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 138,
+        "train": 0,
+        "unassigned": 102
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Taxi (6)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's left of the ambulance",
+        "the taxi to the viewer's left of the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi",
+          "the taxi to the viewer's left of the ambulance"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi",
+          "the taxi to the viewer's left of the ambulance",
+          "the taxi to the viewer's left of the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 93,
+        "train": 0,
+        "unassigned": 165
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Taxi (7)",
+      "programs": [
+        "the taxi"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 56,
+        "train": 0,
+        "unassigned": 22
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Taxi (8)",
+      "programs": [
+        "the taxi",
+        "the taxi to the viewer's right of the bus"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the taxi to the viewer's right of the bus"
+        ],
+        "test": [
+          "the taxi"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 69,
+        "test": 6,
+        "train": 0,
+        "unassigned": 4
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Taxi (9)",
+      "programs": [
+        "the taxi to the viewer's right of the container truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the taxi to the viewer's right of the container truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the taxi to the viewer's right of the container truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 13,
+        "train": 0,
+        "unassigned": 5
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Truck_color01",
+      "programs": [
+        "the truck",
+        "the truck to the viewer's left of the ambulance",
+        "the truck to the viewer's right of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the truck",
+          "the truck to the viewer's right of the suv"
+        ],
+        "train": [
+          "the truck",
+          "the truck to the viewer's left of the ambulance",
+          "the truck to the viewer's right of the suv"
+        ],
+        "unassigned": [
+          "the truck",
+          "the truck to the viewer's right of the suv"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 74,
+        "train": 21,
+        "unassigned": 70
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Truck_color01 (1)",
+      "programs": [
+        "the truck",
+        "the truck to the viewer's left of the container truck",
+        "the truck to the viewer's left of the suv",
+        "the truck to the viewer's left of the taxi",
+        "the truck to the viewer's right of the ambulance",
+        "the truck to the viewer's right of the container truck",
+        "the truck to the viewer's right of the pickup truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the truck",
+          "the truck to the viewer's left of the container truck",
+          "the truck to the viewer's left of the suv",
+          "the truck to the viewer's right of the container truck"
+        ],
+        "train": [
+          "the truck",
+          "the truck to the viewer's left of the taxi",
+          "the truck to the viewer's right of the ambulance",
+          "the truck to the viewer's right of the container truck"
+        ],
+        "unassigned": [
+          "the truck",
+          "the truck to the viewer's left of the container truck",
+          "the truck to the viewer's left of the suv",
+          "the truck to the viewer's left of the taxi",
+          "the truck to the viewer's right of the ambulance",
+          "the truck to the viewer's right of the container truck",
+          "the truck to the viewer's right of the pickup truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 264,
+        "train": 101,
+        "unassigned": 834
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Truck_color02",
+      "programs": [
+        "the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the truck"
+        ],
+        "train": [],
+        "unassigned": [
+          "the truck"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 157,
+        "train": 0,
+        "unassigned": 164
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Truck_color02 (1)",
+      "programs": [
+        "the truck",
+        "the truck to the viewer's left of the container truck",
+        "the truck to the viewer's right of the ambulance"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [
+          "the truck"
+        ],
+        "train": [
+          "the truck",
+          "the truck to the viewer's left of the container truck"
+        ],
+        "unassigned": [
+          "the truck",
+          "the truck to the viewer's left of the container truck",
+          "the truck to the viewer's right of the ambulance"
+        ]
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 18,
+        "train": 116,
+        "unassigned": 10
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Truck_color02 (2)",
+      "programs": [
+        "the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 33,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Truck_color02 (3)",
+      "programs": [
+        "the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the truck"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 67,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": true,
+      "object_id": "Vehicle_Truck_color03",
+      "programs": [
+        "the truck"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [],
+        "test": [],
+        "train": [
+          "the truck"
+        ],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 0,
+        "test": 0,
+        "train": 10,
+        "unassigned": 0
+      }
+    },
+    {
+      "held_out_object": false,
+      "object_id": "Vehicle_Truck_color03 (1)",
+      "programs": [
+        "the truck",
+        "the truck to the viewer's left of the suv"
+      ],
+      "programs_by_split": {
+        "d3": [],
+        "dev": [
+          "the truck",
+          "the truck to the viewer's left of the suv"
+        ],
+        "test": [],
+        "train": [],
+        "unassigned": []
+      },
+      "unique_rows_by_split": {
+        "d3": 0,
+        "dev": 40,
+        "test": 0,
+        "train": 0,
+        "unassigned": 0
+      }
+    }
+  ],
+  "per_split_dedup": {
+    "d3": {
+      "object_program_pairs": 0,
+      "objects": 0
+    },
+    "dev": {
+      "object_program_pairs": 99,
+      "objects": 36
+    },
+    "test": {
+      "object_program_pairs": 116,
+      "objects": 53
+    },
+    "train": {
+      "object_program_pairs": 32,
+      "objects": 19
+    },
+    "unassigned": {
+      "object_program_pairs": 161,
+      "objects": 58
+    }
+  },
+  "prospective_mother_eligible": {
+    "assigned_frames_total": 17337,
+    "by_split": {
+      "d3": 0,
+      "dev": 8572,
+      "test": 8065,
+      "train": 700,
+      "unassigned": 9737
+    },
+    "data002_upper_bound_report": 27074,
+    "difference_assigned_vs_report": -9737,
+    "difference_domain_vs_report": 0,
+    "difference_source": "AC-3 要求的复算域是 S4 已划分帧（train/dev/test/d3），而 DATA-002 上界报告的冻结候选外延覆盖对账域全部帧；两者之差恰为未入划分帧上的候选数，谓词本身逐字复用 build_catalog.prospective_mother_eligible，未作任何放宽。",
+    "domain_total": 27074
+  },
+  "schema_version": "p1-eng-asset-001/instructions-summary/v1",
+  "source_artifact_sha256": {
+    "contract": "24865505acfe103d8faec18b4337567639da0977a6c830ebdcbe70b6d620fc12",
+    "field_catalog": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+    "frames_catalog": "fea0a0693652ea4661c01c3f2ebaf29d1a01c83ccf5c27b8051cc0b207b2c1da",
+    "inventory": "11738a88f78491bdc4dc3fd5d13727ef543b9d1579a85cb02d8229700513024a",
+    "layout": "391e5a1c56b53e1c4f01b8e46170c6ce3f3455cfe7cc9c38839bd3f1589dfe40",
+    "splits": "e7e4e1d3726f737c9adaf9ffd49fa764d51fd64936e7aacfe20d36ee2d4dbef4"
+  },
+  "uniqueness_status_histogram": {
+    "d3": {
+      "mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 0,
+        "COLOR_UNVERIFIED": 0,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 0,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 0,
+        "WILDCARD_UNKNOWN_CLASS": 0
+      },
+      "non_mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 0,
+        "COLOR_UNVERIFIED": 0,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 0,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 0,
+        "WILDCARD_UNKNOWN_CLASS": 0
+      }
+    },
+    "dev": {
+      "mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 625,
+        "COLOR_UNVERIFIED": 3491,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 14901,
+        "UNIQUE_CLASS_COLOR": 447,
+        "UNIQUE_RELATION": 1102,
+        "WILDCARD_UNKNOWN_CLASS": 51
+      },
+      "non_mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 0,
+        "COLOR_UNVERIFIED": 0,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 0,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 0,
+        "WILDCARD_UNKNOWN_CLASS": 0
+      }
+    },
+    "test": {
+      "mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 809,
+        "COLOR_UNVERIFIED": 1108,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 6553,
+        "UNIQUE_CLASS_COLOR": 934,
+        "UNIQUE_RELATION": 578,
+        "WILDCARD_UNKNOWN_CLASS": 1249
+      },
+      "non_mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 0,
+        "COLOR_UNVERIFIED": 0,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 0,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 0,
+        "WILDCARD_UNKNOWN_CLASS": 0
+      }
+    },
+    "train": {
+      "mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 848,
+        "COLOR_UNVERIFIED": 247,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 605,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 95,
+        "WILDCARD_UNKNOWN_CLASS": 1510
+      },
+      "non_mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 0,
+        "COLOR_UNVERIFIED": 0,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 0,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 0,
+        "WILDCARD_UNKNOWN_CLASS": 0
+      }
+    },
+    "unassigned": {
+      "mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 1009,
+        "COLOR_UNVERIFIED": 1219,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 16913,
+        "UNIQUE_CLASS_COLOR": 1545,
+        "UNIQUE_RELATION": 562,
+        "WILDCARD_UNKNOWN_CLASS": 1029
+      },
+      "non_mother_usage": {
+        "AMBIGUOUS_SAME_CLASS": 0,
+        "COLOR_UNVERIFIED": 0,
+        "NOT_CLASS_VERIFIED": 0,
+        "UNIQUE_CLASS": 0,
+        "UNIQUE_CLASS_COLOR": 0,
+        "UNIQUE_RELATION": 0,
+        "WILDCARD_UNKNOWN_CLASS": 0
+      }
+    }
+  },
+  "work_id": "P1-ENG-ASSET-001"
+}

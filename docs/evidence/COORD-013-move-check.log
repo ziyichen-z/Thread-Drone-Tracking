@@ -1,0 +1,46 @@
+§6-1 结构节字节：迁移前 68224 B → 迁移后 22934 B
+§6-3 被删除非空行 168 条：在 parked 中逐字找到 160 条；规则改写豁免 8 条
+    豁免（规则改写）：with git history as the authoritative archive.
+    豁免（规则改写）：**Other dispositions and evidence:** consult each work ID in the Gate board;
+    豁免（规则改写）：`Lifecycle` column (user ruling 2026-09-20, COORD-012): `ACTIVE` = has an active handoff;
+    豁免（规则改写）：`PAUSED` = stopped but not terminated (deferred, blocked, awaiting revision or validation,
+    豁免（规则改写）：paused by user); `ENDED` = terminated (DONE, CLOSED_*, OUT_OF_CURRENT_SCOPE, terminated or
+    豁免（规则改写）：superseded). Only `ENDED` rows' Log entries enter the compressible pool; the acceptance ro
+    豁免（规则改写）：(or the user) sets this column together with Overall, chore never edits it.
+    豁免（规则改写）：| Cite BODY-001 results, inspect a trial or resume M3′ | `docs/implementation-status.md` →
+新增非空行 34 条（一行索引、规则改写、指针）：
+    + with git history as the authoritative archive. Non-active items live in `docs/parked-status.md` (COORD-013).
+    + **Non-active work items** (`PAUSED`/`ENDED`): gate values, open obligations, stop points and constraints live 
+    + **Other dispositions and evidence:** consult each work ID in the Gate board or `docs/parked-status.md`;
+    + `Lifecycle` (COORD-012/013): `ACTIVE` = has an active handoff; `PAUSED` = stopped, not
+    + terminated — one-line index here (≤ 400 B), original row and detail in `docs/parked-status.md`;
+    + `ENDED` rows are not kept here: the closing role moves the whole row to `docs/parked-status.md`
+    + 「已终止（ENDED）」 in the same commit. Acceptance (or the user) sets it with Overall; chore never does.
+    + | `P1-DETECT-001` | Minimal safe triple-gated re-anchor carrier +… | → parked | → parked | → parked | → parked
+    + | `P1-SCENE-003` | Option B anchor relocation to loop center | → parked | → parked | `N/A` | → parked | `BLOCK
+    + | `P1-SCENE-004` | Benign-coverage carrier development circuit | → parked | → parked | → parked | → parked | `
+    + | `P1-M2-RATE-003` | Preserved optional same-tracker cross-rate sen… | → parked | → parked | → parked | → park
+    + | `P1-M3M4-SCOPE-001` | M3′ stay-visible / M4′ loss-recovery recharter | → parked | → parked | `N/A` | → parke
+    + | `P1-SCENE-005` | Existing difficult-route suitability first | → parked | → parked | `N/A` | → parked | `REVI
+    + | `P1-SCENE-007` | Minimal anchor relocation out of the frozen ro… | → parked | → parked | `N/A` | → parked | 
+    + | `P1-VLM-SCOPE-001` | Phase 1 recharter | → parked | → parked | `N/A` | → parked | `REVISION_REQUESTED_ROUND_
+    + | `M1` | Scene visual validation + parameterization | → parked | → parked | `N/A` | → parked | `OPEN_AWAITING_
+    + | `P1-VLM-CAL-001` | Empirical calibration pack | → parked | → parked | `N/A` | → parked | `REVISION_REQUESTED
+    + | `P1-VLM-SCOPE-002` | Phase 1 recharter v2 | → parked | → parked | `N/A` | → parked | `REVISION_REQUESTED_ROU
+    + | `P1-VLM-DIST-001` | Verified language-data distillation charter | → parked | → parked | `N/A` | → parked | `
+    + | `P1-EVAL-001` | Evaluator/sensor frustum aspect consistency | → parked | → parked | → parked | → parked | `I
+    + | `COORD-008` | 流程减法：停点自证直接交复核、复核结论直通实现、提案不逐轮追加、授权信封、真数据试跑先于合同… | → parked | → parked | `N/A` | → parked | `LA
+    + | `COORD-009` | 复核收敛：核对轮取代无边界拒收权、复核范围判据/双基线/轮次上限、BC 标签与自检、归因机械… | → parked | → parked | `N/A` | → parked | `LA
+    + | `COORD-010` | 工程换轨与旧采集收口（提案 §3/§7/§9） | → parked | → parked | → parked | → parked | `STATE_MIGRATION_USER_AC
+    + | `P1-ENG-SFT-003` | 工程轨道第四项（用户 2026-09-12 选定、2026-09-13 指示继续） | → parked | → parked | `N/A` | → parked | `PRO
+    + | `COORD-013` | 状态板接力成本（开工只读当前工作、交接一件事只写一处） | 用户直接授权（账本 2026-09-21） | 已落地 → parked | `N/A` | `N/A` | `LANDED_A
+    + | Acceptance | `P1-ENG-SFT-003`@PROPOSED_D2 | 暂停；停点与恢复条件见 `docs/parked-status.md` | — | — | `PAUSED_BY_USER` |
+    + | Ideation | `P1-VLM-SCOPE-002`@REVISION_REQUESTED_ROUND_2 | 暂停；停点与恢复条件见 `docs/parked-status.md` | — | — | `PA
+    + | Ideation | `P1-VLM-CAL-001`@REVISION_REQUESTED_ROUND_4 | 暂停；停点与恢复条件见 `docs/parked-status.md` | — | — | `PAUS
+    + | Ideation | `P1-VLM-SCOPE-001`@REVISION_REQUESTED_ROUND_4 | 暂停；停点与恢复条件见 `docs/parked-status.md` | — | — | `PA
+    + | Ideation | `P1-SCENE-005`@REVISION_REQUESTED_ROUND_4 revision 4 + `P1-SCENE-007`@REVISION_REQUESTED_ROUND_2 
+    + | Resume a paused item, cite an ended item's result or wording, or start a new work item | `docs/parked-status
+    + | Cite BODY-001 results, inspect a trial or resume M3′ | `docs/implementation-status.md` → **Workflow gate sum
+    + ### 2026-09-21 — COORD-013 落地：非活跃项移入 parked，状态板加字节上限
+    + 用户直接授权（账本同日 COORD-013 条目）。ENDED 20 行、PAUSED 17 行与暂停交接 5 行原文及非活跃段落移入 `docs/parked-status.md`；结构节 68224→22934 B；
+PASS：§6-2 无含活跃项 ID 的行被删改；§6-3 移动完整。

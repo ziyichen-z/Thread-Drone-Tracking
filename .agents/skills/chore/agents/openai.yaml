@@ -1,0 +1,4 @@
+interface:
+  display_name: "chore · 辅助"
+  short_description: "在 TetheredDroneTracking 中承担 chore 角色，执行代录、检索、状态板维护或非权威预筛。"
+  default_prompt: "使用 $chore，按项目规则领取本轮任务并以辅助角色工作。"

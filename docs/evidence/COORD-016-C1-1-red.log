@@ -1,0 +1,18 @@
+# COORD-016 C1-1 红（修复前）：新增负例在未改的 tools/check_route_text.py（HEAD 1c8728d 版本）上运行
+# cmd: python3 -m unittest tests.test_check_route_text（不带 -v）
+# 预期：两个「原位置改写、别处补旧句」负例失败（旧工具只比全文计数，返回 0）；删除/复制负例与正例在旧工具上已通过
+
+FAIL: test_cross_line_sentence_rewritten_in_place_but_copied_elsewhere_fails (tests.test_check_route_text.RouteTextTests)
+AssertionError: 0 != 1 : baseline: c181a8e952bd56ad5e26d983ae2d534489eab325（首个匹配 ^COORD-016 协调落地 的提交的首父）
+PASS U1 unchanged docs/a.md：与基线相同（1 次）
+PASS U2 unchanged docs/a.md：与基线相同（1 次）
+PASS U3 unchanged docs/b.md：与基线相同（1 次）
+路由检查通过：5/5 项。
+FAIL: test_rewritten_in_place_but_copied_elsewhere_fails (tests.test_check_route_text.RouteTextTests)
+AssertionError: 0 != 1 : baseline: dfe6f067abb68787c1ae15a507bd6aebba3a3514（首个匹配 ^COORD-016 协调落地 的提交的首父）
+PASS U1 unchanged docs/a.md：与基线相同（1 次）
+PASS U2 unchanged docs/a.md：与基线相同（1 次）
+PASS U3 unchanged docs/b.md：与基线相同（1 次）
+路由检查通过：5/5 项。
+Ran 13 tests in 2.425s
+FAILED (failures=2)

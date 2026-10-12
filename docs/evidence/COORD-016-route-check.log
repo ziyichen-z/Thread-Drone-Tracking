@@ -1,0 +1,72 @@
+baseline: 43aba45f05543fe003041c6458a0a8c42d2735e5（首个匹配 ^COORD-016 协调落地 的提交的首父）
+PASS R01-workflow-4.4-终局句 expected docs/collaboration-workflow.md：1 次
+PASS R02-review.md-轮次上限 expected docs/roles/review.md：1 次
+PASS R03-review.md-工程轨道 expected docs/roles/review.md：1 次
+PASS R04-AGENTS-轮次命名 expected AGENTS.md：1 次
+PASS R05-AGENTS-复核强制停点 expected AGENTS.md：1 次
+PASS R06-acceptance.md-收敛与终止 expected docs/roles/acceptance.md：1 次
+PASS R07-accept.md-共同不变 expected .claude/commands/accept.md：1 次
+PASS R08-review-cmd-共同不变 expected .claude/commands/review.md：1 次
+PASS R09-review-cmd-第5步 expected .claude/commands/review.md：1 次
+PASS BC4-workflow-回归核实 expected docs/collaboration-workflow.md：1 次
+PASS S01-边界表复核行 expected docs/roles/supervisor.md：1 次
+PASS S02-D1行 expected docs/roles/supervisor.md：1 次
+PASS S03-D2b行 expected docs/roles/supervisor.md：1 次
+PASS S04-D7行 expected docs/roles/supervisor.md：1 次
+PASS S05-永不代拍例外句 expected docs/roles/supervisor.md：1 次
+PASS S06-信封块注释 expected docs/roles/supervisor.md：1 次
+PASS S07-D1判据段 expected docs/roles/supervisor.md：1 次
+PASS S08-必填字段D7 expected docs/roles/supervisor.md：1 次
+PASS S09-失败关闭D1D7 expected docs/roles/supervisor.md：1 次
+PASS S10-delegated_class闭集 expected docs/roles/supervisor.md：1 次
+PASS S11-D7语法句 expected docs/roles/supervisor.md：1 次
+PASS A01-acceptance.md-d7_range句 expected docs/roles/acceptance.md：1 次
+PASS A02-acceptance.md-d7_recommend句 expected docs/roles/acceptance.md：1 次
+PASS A03-accept.md-d7_range句 expected .claude/commands/accept.md：1 次
+PASS A04-accept.md-d7_recommend句 expected .claude/commands/accept.md：1 次
+PASS H01-账本文件头D7字段 expected docs/authorizations.md：1 次
+PASS S01-补充同步-collaboration-workflow.md expected docs/collaboration-workflow.md：1 次
+PASS S02-补充同步-acceptance.md expected docs/roles/acceptance.md：1 次
+PASS S03-补充同步-ideation.md expected docs/roles/ideation.md：1 次
+PASS S04-补充同步-ideation.md expected docs/roles/ideation.md：1 次
+PASS S05-补充同步-accept.md expected .claude/commands/accept.md：1 次
+PASS S06-补充同步-accept.md expected .claude/commands/accept.md：1 次
+PASS S07-补充同步-supervisor.md expected .claude/commands/supervisor.md：1 次
+PASS S00-旧句归零-collaboration-workflow.md expected docs/collaboration-workflow.md：0 次
+PASS S00-旧句归零-acceptance.md expected docs/roles/acceptance.md：0 次
+PASS S00-旧句归零-ideation.md expected docs/roles/ideation.md：0 次
+PASS S00-旧句归零-accept.md expected .claude/commands/accept.md：0 次
+PASS S00-旧句归零-supervisor.md expected .claude/commands/supervisor.md：0 次
+PASS S08-补充同步2-engineering-workflow.md expected docs/engineering-workflow.md：1 次
+PASS S09-补充同步2-proposals-README.md expected docs/proposals/README.md：1 次
+PASS S00-旧句归零-engineering-workflow.md expected docs/engineering-workflow.md：0 次
+PASS S00-旧句归零-proposals-README.md expected docs/proposals/README.md：0 次
+PASS closure「决策信封 D2b 在效时」：10 次 = 规格合计
+PASS closure「轮 3 终局」：9 次 = 规格合计
+PASS closure「轮 4 终局」：8 次 = 规格合计
+PASS closure「d7_range:」：2 次 = 规格合计
+PASS closure「d7_recommend:」：2 次 = 规格合计
+PASS closure「（例外：」：1 次 = 规格合计
+PASS closure「残留数非递增」：6 次 = 规格合计
+PASS N-supervisor-D2a行 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 283→283）
+PASS N-supervisor-D3行 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 285→285）
+PASS N-supervisor-D4行 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 286→286）
+PASS N-supervisor-D5行 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 287→287）
+PASS N-supervisor-D6行 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 288→288）
+PASS N-supervisor-SUB行 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 289→290）
+PASS N-永不代拍-前段 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 305→327）
+PASS N-永不代拍-后段 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 309→331）
+PASS N-不做闭集 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 30→30）
+PASS N-直达用户不加审批 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 64→64）
+PASS N-信封前提 unchanged docs/roles/supervisor.md：与基线原位逐字相同（1 次；基线行→当前行 274→274）
+PASS N-AGENTS-新设备独立立项 unchanged AGENTS.md：与基线原位逐字相同（1 次；基线行→当前行 60→60）
+PASS N-AGENTS-infra仅协调批次 unchanged AGENTS.md：与基线原位逐字相同（1 次；基线行→当前行 224→224）
+PASS N-AGENTS-不可代拍直达用户 unchanged AGENTS.md：与基线原位逐字相同（1 次；基线行→当前行 123→123）
+PASS N-AGENTS-信封只能用户签 unchanged AGENTS.md：与基线原位逐字相同（1 次；基线行→当前行 240→240）
+PASS N-workflow-范围蔓延句 unchanged docs/collaboration-workflow.md：与基线原位逐字相同（1 次；基线行→当前行 394→394）
+PASS N-workflow-机读通过指针 unchanged docs/collaboration-workflow.md：与基线原位逐字相同（1 次；基线行→当前行 408→408）
+PASS N-workflow-冻结集裁定 unchanged docs/collaboration-workflow.md：与基线原位逐字相同（1 次；基线行→当前行 391→391）
+PASS N-review.md-开轮资格不变 unchanged docs/roles/review.md：与基线原位逐字相同（1 次；基线行→当前行 82→82）
+PASS N-账本-COORD-016授权原话 unchanged docs/authorizations.md：与基线原位逐字相同（1 次；基线行→当前行 50→173）
+PASS N-账本头-D1字段 unchanged docs/authorizations.md：与基线原位逐字相同（1 次；基线行→当前行 37→37）
+路由检查通过：70/70 项。

@@ -1,0 +1,47 @@
+{
+  "schema_version": "tethered-tracker-models/v1",
+  "tracker": "nanotrack-v2",
+  "source": {
+    "repository": "https://github.com/HonglinChu/SiamTrackers",
+    "commit": "248663fde6bf7c40190cf10ee396d5662919ecd3",
+    "tree_url": "https://github.com/HonglinChu/SiamTrackers/tree/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/models/nanotrackv2",
+    "license_spdx": "Apache-2.0",
+    "license_path": "NanoTrack/LICENSE",
+    "license_url": "https://github.com/HonglinChu/SiamTrackers/blob/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "opencv": {
+    "tested_version": "5.0.0",
+    "package_pin": "opencv-contrib-python==5.0.0.93",
+    "dnn_backend": "DNN_BACKEND_DEFAULT",
+    "dnn_target": "DNN_TARGET_CPU"
+  },
+  "preprocessing": {
+    "id": "opencv-tracker-nano-5.0.0-default-v1",
+    "implementation_url": "https://github.com/opencv/opencv/blob/5.0.0/modules/video/src/tracking/tracker_nano.cpp",
+    "exemplar_size_px": 127,
+    "instance_size_px": 255,
+    "blob_scale": 1.0,
+    "blob_mean_bgr": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "swap_rb": true,
+    "padding": "per-image channel mean"
+  },
+  "models": {
+    "backbone": {
+      "filename": "nanotrack_backbone_sim.onnx",
+      "url": "https://raw.githubusercontent.com/HonglinChu/SiamTrackers/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/models/nanotrackv2/nanotrack_backbone_sim.onnx",
+      "sha256": "530bdd0cd00f19afab79a863e71ba71e3312395a5dc9151af675082bdaaa2fc4",
+      "size_bytes": 1056849
+    },
+    "neckhead": {
+      "filename": "nanotrack_head_sim.onnx",
+      "url": "https://raw.githubusercontent.com/HonglinChu/SiamTrackers/248663fde6bf7c40190cf10ee396d5662919ecd3/NanoTrack/models/nanotrackv2/nanotrack_head_sim.onnx",
+      "sha256": "0d8c0637be849f092cc7236cae02e55c8b9455ebe37ba50601d6115db4247cd9",
+      "size_bytes": 726198
+    }
+  }
+}

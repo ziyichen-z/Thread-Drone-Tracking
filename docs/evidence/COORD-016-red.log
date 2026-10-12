@@ -1,0 +1,38 @@
+# COORD-016 红（修复前）摘要：新测试在未改工具（tools/check_ledger.py、tools/make_supervisor_drill.py 为 8c08220 版本；tools/check_route_text.py 不存在）上运行
+# cmd: python3 -m unittest tests.test_check_ledger tests.test_supervisor_drill tests.test_check_route_text（不带 -v；全文未入库，只保留摘要）
+# 运行时刻 HEAD = 8c08220（COORD-016 协调落地首笔文档提交）
+
+ERROR: test_check_route_text
+ERROR: test_inject_open_items_targets_round_section
+ERROR: test_open_items_injection_matches_ledger_checker
+FAIL: test_d1_flat_passes
+FAIL: test_d1_increase_rejected
+FAIL: test_d1_newest_first_layout_increase_rejected
+FAIL: test_d1_third_passes_fourth_rejected_same_work_id
+FAIL: test_d1_vetoed_entries_still_count
+FAIL: test_d7_bc_mismatch_rejected
+FAIL: test_d7_big_integer_exact_decimal_rejected
+FAIL: test_d7_closed_set_valid_passes
+FAIL: test_d7_decision_not_recommend_literal_rejected
+FAIL: test_d7_envelope_without_d7_rejected
+FAIL: test_d7_historical_precheck_not_first_parent_rejected
+FAIL: test_d7_interval_valid_passes_both_views
+FAIL: test_d7_kind_missing_rejected
+FAIL: test_d7_kind_not_in_closed_set_rejected
+FAIL: test_d7_missing_question_id_and_range_rejected
+FAIL: test_d7_missing_range_rejected
+FAIL: test_d7_range_field_not_verbatim_rejected
+FAIL: test_d7_range_outside_clause_cell_rejected
+FAIL: test_d7_recommend_inside_round_section_rejected
+FAIL: test_d7_same_batch_staged_range_rejected_both_views
+FAIL: test_d7_second_entry_same_id_rejected
+FAIL: test_d7_status_not_accepted_rejected
+FAIL: test_d7_two_recommend_lines_rejected
+FAIL: test_d7_value_outside_closed_set_rejected
+FAIL: test_d7_value_outside_interval_rejected
+FAIL: test_d7_widened_range_after_commit_historical_unchanged
+FAIL: test_fixture_proposal_has_d7_sample_lines
+
+Ran 89 tests in 31.416s
+
+FAILED (failures=27, errors=3)

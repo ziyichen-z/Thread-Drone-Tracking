@@ -1,0 +1,170 @@
+{
+  "G-7": {
+    "cells": {
+      "cpu": {
+        "n": 320,
+        "p50_ms": 43.740438,
+        "p95_ms": 48.418613,
+        "threshold_ms": 200.0,
+        "verdict": "MET"
+      },
+      "mps": {
+        "n": 320,
+        "p50_ms": 19.801291,
+        "p95_ms": 31.863848,
+        "threshold_ms": 200.0,
+        "verdict": "MET"
+      }
+    },
+    "verdict": "MET"
+  },
+  "cells": {
+    "cpu": {
+      "n": 320,
+      "p50_ms": 43.740438,
+      "p95_ms": 48.418613,
+      "threshold_ms": 200.0,
+      "verdict": "MET"
+    },
+    "mps": {
+      "n": 320,
+      "p50_ms": 19.801291,
+      "p95_ms": 31.863848,
+      "threshold_ms": 200.0,
+      "verdict": "MET"
+    }
+  },
+  "cpu_vs_mps": {
+    "detection_box_max_abs_diff_norm_first_50": 2e-07,
+    "detection_count_mismatch_frames_first_50": 0,
+    "limit": 0.001,
+    "plugin_box_max_abs_diff_norm": 1.3e-07,
+    "plugin_state_mismatch_frames": 0,
+    "within_limit": true
+  },
+  "frames": {
+    "count_updates": 320,
+    "domain": "V",
+    "first": "runtime/test-results/p1-vlm-survey/p1-vlm-survey-a7-p1-c1-s1/frames/frame_0000000000.jpg",
+    "init_box": [
+      0.4446039270172931,
+      0.7078459879432423,
+      0.0553960729827069,
+      0.16146109855182247
+    ]
+  },
+  "note": "单进程离线，无 Unity 同机负载；不推断 Play 机或 Jetson",
+  "per_device": {
+    "cpu": {
+      "device": "cpu",
+      "frames_measured": 320,
+      "manifest": {
+        "association": {
+          "algorithm": "botsort",
+          "args": {
+            "appearance_thresh": 0.8,
+            "fuse_score": true,
+            "gmc_method": "sparseOptFlow",
+            "match_thresh": 0.7,
+            "model": "auto",
+            "new_track_thresh": 0.25,
+            "proximity_thresh": 0.5,
+            "track_buffer": 30,
+            "track_high_thresh": 0.25,
+            "track_low_thresh": 0.1,
+            "tracker_type": "botsort",
+            "with_reid": false
+          }
+        },
+        "backend": "ultralytics",
+        "bind_iou": 0.5,
+        "device": "cpu",
+        "device_fallback": null,
+        "freeze_sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c",
+        "imgsz": 640,
+        "name": "det-assoc-v1",
+        "nms_iou": 0.7,
+        "pinned_version": "8.4.104",
+        "score_threshold": 0.25,
+        "spec_sha256": "76919cf73ff47b2dffca84419758b06171393bdf9d19d6a108f40bea547e6c1d",
+        "threshold_source": "spec",
+        "ultralytics_version": "8.4.104",
+        "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+      },
+      "max_ms": 58.224,
+      "p50_ms": 43.740438,
+      "quantiles_ms": {
+        "p50": 43.740438,
+        "p95": 48.418613
+      },
+      "warmup_first_10_ms": [
+        42.362,
+        41.816,
+        42.007,
+        42.274,
+        41.67,
+        42.125,
+        42.533,
+        42.684,
+        42.534,
+        42.53
+      ]
+    },
+    "mps": {
+      "device": "mps",
+      "frames_measured": 320,
+      "manifest": {
+        "association": {
+          "algorithm": "botsort",
+          "args": {
+            "appearance_thresh": 0.8,
+            "fuse_score": true,
+            "gmc_method": "sparseOptFlow",
+            "match_thresh": 0.7,
+            "model": "auto",
+            "new_track_thresh": 0.25,
+            "proximity_thresh": 0.5,
+            "track_buffer": 30,
+            "track_high_thresh": 0.25,
+            "track_low_thresh": 0.1,
+            "tracker_type": "botsort",
+            "with_reid": false
+          }
+        },
+        "backend": "ultralytics",
+        "bind_iou": 0.5,
+        "device": "mps",
+        "device_fallback": null,
+        "freeze_sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c",
+        "imgsz": 640,
+        "name": "det-assoc-v1",
+        "nms_iou": 0.7,
+        "pinned_version": "8.4.104",
+        "score_threshold": 0.25,
+        "spec_sha256": "76919cf73ff47b2dffca84419758b06171393bdf9d19d6a108f40bea547e6c1d",
+        "threshold_source": "spec",
+        "ultralytics_version": "8.4.104",
+        "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+      },
+      "max_ms": 44.728,
+      "p50_ms": 19.801291,
+      "quantiles_ms": {
+        "p50": 19.801291,
+        "p95": 31.863848
+      },
+      "warmup_first_10_ms": [
+        20.916,
+        18.959,
+        18.201,
+        23.657,
+        25.256,
+        19.008,
+        25.073,
+        19.523,
+        19.186,
+        25.393
+      ]
+    }
+  },
+  "work_id": "P1-ENG-FAST-002"
+}

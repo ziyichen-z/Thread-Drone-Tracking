@@ -1,0 +1,7 @@
+# Tested on macOS arm64 with CPython 3.12.13.
+torch==2.13.0
+torchvision==0.28.0
+ultralytics==8.4.104
+onnx==1.22.0
+onnxruntime==1.27.0
+onnxslim==0.1.94

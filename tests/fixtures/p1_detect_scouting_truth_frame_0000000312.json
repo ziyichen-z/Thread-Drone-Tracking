@@ -1,0 +1,25 @@
+{
+    "schema_version": "p1-detect-scouting-truth/v1",
+    "work_id": "P1-DETECT-001",
+    "session_id": "p1-detect-001-scout-1",
+    "scenario_id": "p1-detect-scouting",
+    "gimbal_driver": "truth_directed_scouting",
+    "frame_id": 312,
+    "simulation_time_s": 48.81259536743164,
+    "target_track_id": "target-0",
+    "target_visible": true,
+    "target_visible_sample_fraction": 0.20000000298023225,
+    "target_slant_range_m": 69.588134765625,
+    "target_bbox_xywh_norm": {
+        "x": 0.4806014895439148,
+        "y": 0.08261549472808838,
+        "width": 0.04428505897521973,
+        "height": 0.04453420639038086
+    },
+    "distractors": [
+        {
+            "distractor_id": "Vehicle_Taxi (2)",
+            "bbox_xywh_norm": null
+        }
+    ]
+}

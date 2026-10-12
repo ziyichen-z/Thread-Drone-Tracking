@@ -1,0 +1,198 @@
+# COORD-015 R1@落地 返工红绿证据（docs/reviews/COORD-015.md §2 R1-1…R1-4 的具名回归测试，修复前必失败）
+# 执行者：R1 返工协调批次（用户直接指挥，Opus 子代理；账本 2026-09-26「用户授权 R1 返工协调批次（含接受复判 R1-1 与 `R2@落地`，构思会话代录）」第 (2) 项）
+# 基线：HEAD 97166c9 的 tools/check_ledger.py（未修）+ 本批新增测试；命令不带 -v，每条单独运行，输出逐字追加。
+# 红 = 修前（tools/check_ledger.py 未改）；绿 = 修后（同一测试文件 + 本批修复的 tools/check_ledger.py）。
+# 另附非必需的失败关闭用例 D1Tests.test_d1_section_binding_fail_closed（BC-14 (3)），红绿同样记录。
+
+===== [红·修前] R1-1 D1Tests.test_d1_newest_first_layout_legal_passes =====
+$ python3 -m unittest tests.test_check_ledger.D1Tests.test_d1_newest_first_layout_legal_passes
+F
+======================================================================
+FAIL: test_d1_newest_first_layout_legal_passes (tests.test_check_ledger.D1Tests.test_d1_newest_first_layout_legal_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 572, in test_d1_newest_first_layout_legal_passes
+    self.assertEqual(self.precommit_errors(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['第 35 行条目「supervisor 代拍：D1 代拍」：open_items[92 chars] 0）'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'第 35 行条目「supervisor 代拍：D1 代拍」：open_items_prev=4 与提案第 1 轮 open_items: 行（0 项）不符'
+
++ []
+- ['第 35 行条目「supervisor 代拍：D1 代拍」：open_items_prev=4 与提案第 1 轮 open_items: 行（0 '
+-  '项）不符',
+-  '第 35 行条目「supervisor 代拍：D1 代拍」：open_items 未严格递减（2 >= 0）']
+
+----------------------------------------------------------------------
+Ran 1 test in 0.138s
+
+FAILED (failures=1)
+--- 结果摘要：FAILED (failures=1)
+
+===== [红·修前] R1-1 D1Tests.test_d1_newest_first_layout_increase_rejected =====
+$ python3 -m unittest tests.test_check_ledger.D1Tests.test_d1_newest_first_layout_increase_rejected
+F
+======================================================================
+FAIL: test_d1_newest_first_layout_increase_rejected (tests.test_check_ledger.D1Tests.test_d1_newest_first_layout_increase_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 581, in test_d1_newest_first_layout_increase_rejected
+    self.assertTrue(any("未严格递减（4 >= 2）" in e for e in errors), msg=errors)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ['第 35 行条目「supervisor 代拍：D1 代拍」：open_items_now=2 与提案第 2 轮 open_items: 行（4 项）不符', '第 35 行条目「supervisor 代拍：D1 代拍」：open_items_prev=4 与提案第 1 轮 open_items: 行（0 项）不符', '第 35 行条目「supervisor 代拍：D1 代拍」：open_items 未严格递减（4 >= 0）']
+
+----------------------------------------------------------------------
+Ran 1 test in 0.144s
+
+FAILED (failures=1)
+--- 结果摘要：FAILED (failures=1)
+
+===== [红·修前] R1-2 StructuralTests.test_sub_citing_global_envelope_rejected =====
+$ python3 -m unittest tests.test_check_ledger.StructuralTests.test_sub_citing_global_envelope_rejected
+F
+======================================================================
+FAIL: test_sub_citing_global_envelope_rejected (tests.test_check_ledger.StructuralTests.test_sub_citing_global_envelope_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 311, in test_sub_citing_global_envelope_rejected
+    self.assertTrue(any("串用他工作项信封" in e for e in structural(text)))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)
+--- 结果摘要：FAILED (failures=1)
+
+===== [红·修前] R1-3 StructuralTests.test_same_at_upper_entry_is_newer =====
+$ python3 -m unittest tests.test_check_ledger.StructuralTests.test_same_at_upper_entry_is_newer
+FF
+======================================================================
+FAIL: test_same_at_upper_entry_is_newer (tests.test_check_ledger.StructuralTests.test_same_at_upper_entry_is_newer) (case='envelope above entry → envelope newer → rejected')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 320, in test_same_at_upper_entry_is_newer
+    self.assertTrue(any("签发不先于代拍" in e for e in structural(text)))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_at_upper_entry_is_newer (tests.test_check_ledger.StructuralTests.test_same_at_upper_entry_is_newer) (case='envelope below entry → envelope older → passes')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 323, in test_same_at_upper_entry_is_newer
+    self.assertEqual(structural(text), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['第 7 行条目「supervisor 代拍：同 at 的代拍」：信封「执行信封：W-001 K4 阶段」签发不先于代拍（事件全序）'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'第 7 行条目「supervisor 代拍：同 at 的代拍」：信封「执行信封：W-001 K4 阶段」签发不先于代拍（事件全序）'
+
+- ['第 7 行条目「supervisor 代拍：同 at 的代拍」：信封「执行信封：W-001 K4 阶段」签发不先于代拍（事件全序）']
++ []
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=2)
+--- 结果摘要：FAILED (failures=2)
+
+===== [红·修前] R1-4 StructuralTests.test_veto_missing_at_rejected =====
+$ python3 -m unittest tests.test_check_ledger.StructuralTests.test_veto_missing_at_rejected
+F
+======================================================================
+FAIL: test_veto_missing_at_rejected (tests.test_check_ledger.StructuralTests.test_veto_missing_at_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 331, in test_veto_missing_at_rejected
+    self.assertTrue(any("缺必填 at:" in e for e in structural(text)))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (failures=1)
+--- 结果摘要：FAILED (failures=1)
+
+===== [红·修前] R1-1（附加，失败关闭） D1Tests.test_d1_section_binding_fail_closed =====
+$ python3 -m unittest tests.test_check_ledger.D1Tests.test_d1_section_binding_fail_closed
+F
+======================================================================
+FAIL: test_d1_section_binding_fail_closed (tests.test_check_ledger.D1Tests.test_d1_section_binding_fail_closed) (case='no D2 heading')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~/TetheredDroneTracking/tests/test_check_ledger.py", line 602, in test_d1_section_binding_fail_closed
+    self.assertTrue(any("open_items" in e or "### D" in e
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        for e in self.precommit_errors()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.730s
+
+FAILED (failures=1)
+--- 结果摘要：FAILED (failures=1)
+
+# 红段说明：increase_rejected 的断言钉住按节绑定的正确读数「未严格递减（4 >= 2）」。修前工具按文件序
+# 把上方非 D 节「接受后修订 1 审核」的 `open_items: none` 当第 1 轮（0 项），得「4 >= 0」，故修前必失败；
+# legal_passes 修前被误拒（同一原因），same_at 两个子用例方向全反（上方信封放过、下方信封误拒）。
+
+===== [绿·修后] R1-1 D1Tests.test_d1_newest_first_layout_legal_passes =====
+$ python3 -m unittest tests.test_check_ledger.D1Tests.test_d1_newest_first_layout_legal_passes
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.145s
+
+OK
+--- 结果摘要：OK
+
+===== [绿·修后] R1-1 D1Tests.test_d1_newest_first_layout_increase_rejected =====
+$ python3 -m unittest tests.test_check_ledger.D1Tests.test_d1_newest_first_layout_increase_rejected
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.138s
+
+OK
+--- 结果摘要：OK
+
+===== [绿·修后] R1-2 StructuralTests.test_sub_citing_global_envelope_rejected =====
+$ python3 -m unittest tests.test_check_ledger.StructuralTests.test_sub_citing_global_envelope_rejected
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+--- 结果摘要：OK
+
+===== [绿·修后] R1-3 StructuralTests.test_same_at_upper_entry_is_newer =====
+$ python3 -m unittest tests.test_check_ledger.StructuralTests.test_same_at_upper_entry_is_newer
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+--- 结果摘要：OK
+
+===== [绿·修后] R1-4 StructuralTests.test_veto_missing_at_rejected =====
+$ python3 -m unittest tests.test_check_ledger.StructuralTests.test_veto_missing_at_rejected
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+--- 结果摘要：OK
+
+===== [绿·修后] R1-1（附加，失败关闭） D1Tests.test_d1_section_binding_fail_closed =====
+$ python3 -m unittest tests.test_check_ledger.D1Tests.test_d1_section_binding_fail_closed
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.700s
+
+OK
+--- 结果摘要：OK

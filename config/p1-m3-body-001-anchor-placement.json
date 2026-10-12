@@ -1,0 +1,15 @@
+{
+  "schema_version": "p1-m3-body-001-anchor-placement/v1",
+  "work_id": "P1-M3-BODY-001",
+  "audited_anchor_world_m": { "x": 132.0, "y": 0.2, "z": 117.0 },
+  "hover_offset_y_m": 25.0,
+  "support_surface_allowlist": [
+    "Natures_Grass Tile",
+    "Natures_Grass Tile Small"
+  ],
+  "support_height_tolerance_m": 0.05,
+  "anchor_nominal_radius_m": 1.0,
+  "hover_nominal_radius_m": 1.0,
+  "corridor_nominal_radius_m": 0.5,
+  "clearance_margin_m": 0.5
+}

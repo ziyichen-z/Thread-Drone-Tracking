@@ -1,0 +1,891 @@
+{
+ "provenance": {
+  "command": ".venv-yoloe/bin/python tests/test_eng_loop2_analyze.py --write-evidence docs/evidence/P1-ENG-LOOP-002-four-numbers-fixture.json",
+  "generated_at_utc": "2026-10-06T23:45:49Z",
+  "git_head_at_run": "6b18b4e5ddc727404cbd868890ffcc8b3e70020d",
+  "fixture": "tests/test_eng_loop2_analyze.py::build_comprehensive（合成夹具，迷你几何；非真实归档）"
+ },
+ "schema": "p1-eng-loop-002-four-numbers/v1",
+ "layout_binding": {
+  "status": "BOUND",
+  "detail": "scene_adjustments_equal_use_load_base_geometry",
+  "scenario_copy_sha256": "4e50a821463994e6cb8be1e660aacf71d9f04e6324ed94e968487c12a245a36d",
+  "scenario_copy_id": "deterministic-loop-untethered"
+ },
+ "frame_identity_mismatch": {
+  "frames": 0,
+  "by_check": {},
+  "result_frame_sha256_mismatch": 0,
+  "total": 0,
+  "examples": []
+ },
+ "result_frame_sha256_checks": {},
+ "h2_scenario_check_unavailable_frames": 0,
+ "unattributed_rows": {},
+ "duplicate_event_rows": 1,
+ "duplicate_event_rows_by_kind": {
+  "COASTING_TO_TRACK_ENDED": 1
+ },
+ "duplicate_frame_rows": 0,
+ "frame_time_fallback_to_segment_log": 0,
+ "attribution_conflicts": {
+  "C1": 2
+ },
+ "command_invalid": {
+  "ask:REQUEST_INVALID:instruction_unsupported": 1
+ },
+ "funnel": {
+  "n_accepted": 17,
+  "classes": {
+   "ATTRIBUTION_CONFLICT": 2,
+   "SUPERSEDED": 1,
+   "INTERRUPTED": 1,
+   "QUERY_FAILED": 1,
+   "STALE_REJECTED": 1,
+   "VLM_REPORTED": 1,
+   "OPERATOR_REJECTED": 1,
+   "UNCONFIRMED_SUPERSEDED": 1,
+   "UNCONFIRMED_AT_END": 1,
+   "DESIGNATE_REPORTED": 1,
+   "ACQUIRE_PATH": 2,
+   "BOUND_DIRECT": 4
+  },
+  "labels": {
+   "ACQUIRE_PATH(coasting_timeout)": 1,
+   "ACQUIRE_PATH(track_ended)": 1,
+   "ATTRIBUTION_CONFLICT(C1)": 2,
+   "BOUND_DIRECT(bound)": 4,
+   "DESIGNATE_REPORTED(AMBIGUOUS)": 1,
+   "INTERRUPTED(designation_unavailable, resident_loop_absent)": 1,
+   "OPERATOR_REJECTED": 1,
+   "QUERY_FAILED(parse_failed)": 1,
+   "STALE_REJECTED(query, frames_late_exceeded)": 1,
+   "SUPERSEDED(query_pending)": 1,
+   "UNCONFIRMED_AT_END(operator_stop)": 1,
+   "UNCONFIRMED_SUPERSEDED": 1,
+   "VLM_REPORTED(none)": 1
+  },
+  "conservation": {
+   "n_accepted": 17,
+   "sum_classes": 17,
+   "sum_intent_status": 17
+  }
+ },
+ "funnel_x_intent_status": {
+  "ATTRIBUTION_CONFLICT": {
+   "valid": 2,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "SUPERSEDED": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "INTERRUPTED": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "QUERY_FAILED": {
+   "valid": 0,
+   "no_intent": 0,
+   "intent_unknown": 1
+  },
+  "STALE_REJECTED": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "VLM_REPORTED": {
+   "valid": 0,
+   "no_intent": 1,
+   "intent_unknown": 0
+  },
+  "OPERATOR_REJECTED": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "UNCONFIRMED_SUPERSEDED": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "UNCONFIRMED_AT_END": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "DESIGNATE_REPORTED": {
+   "valid": 1,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "ACQUIRE_PATH": {
+   "valid": 2,
+   "no_intent": 0,
+   "intent_unknown": 0
+  },
+  "BOUND_DIRECT": {
+   "valid": 4,
+   "no_intent": 0,
+   "intent_unknown": 0
+  }
+ },
+ "intent_status": {
+  "valid": 15,
+  "no_intent": 1,
+  "intent_unknown": 1
+ },
+ "number_one": {
+  "n_raw": 7,
+  "counts": {
+   "BOUND_NO_PUBLISH": 1,
+   "REPORTED": 1,
+   "RESOLVED_CORRECT": 2,
+   "RESOLVED_WRONG": 1,
+   "TO_ACQUIRE": 2
+  },
+  "rates": {
+   "conditional_RC_over_RC_RW": {
+    "value": 0.6666666666666666,
+    "numerator": 2,
+    "denominator": 3,
+    "flags": [
+     "INSUFFICIENT_N"
+    ]
+   },
+   "overall": {
+    "value": 0.2857142857142857,
+    "numerator": 2,
+    "denominator": 7,
+    "flags": []
+   }
+  },
+  "by_delta_eff_bucket": {
+   "[0,1)": {
+    "n": 7,
+    "counts": {
+     "BOUND_NO_PUBLISH": 1,
+     "REPORTED": 1,
+     "RESOLVED_CORRECT": 2,
+     "RESOLVED_WRONG": 1,
+     "TO_ACQUIRE": 2
+    },
+    "flags": [],
+    "rates": {
+     "conditional_RC_over_RC_RW": {
+      "value": 0.6666666666666666,
+      "numerator": 2,
+      "denominator": 3,
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     },
+     "overall": {
+      "value": 0.2857142857142857,
+      "numerator": 2,
+      "denominator": 7,
+      "flags": []
+     }
+    }
+   }
+  }
+ },
+ "number_two": {
+  "n_raw_bound_samples": 6,
+  "entry_gate": {
+   "NO_FIRST_PUBLISH": 2
+  },
+  "n_S": 4,
+  "windows": {
+   "W_13s": {
+    "n_S": 4,
+    "counts": {
+     "KEPT": 3,
+     "UNBOUND_START": 1
+    },
+    "survival_KEPT_over_D": {
+     "value": 1.0,
+     "numerator": 3,
+     "denominator": 3,
+     "flags": [
+      "INSUFFICIENT_N"
+     ]
+    },
+    "pointer_track_changed": 0,
+    "by_entry_path": {
+     "direct": {
+      "n": 3,
+      "counts": {
+       "KEPT": 2,
+       "UNBOUND_START": 1
+      },
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     },
+     "via_acquiring": {
+      "n": 1,
+      "counts": {
+       "KEPT": 1
+      },
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     }
+    },
+    "by_off_axis_bucket": {
+     "in_view": {
+      "n": 4,
+      "counts": {
+       "KEPT": 3,
+       "UNBOUND_START": 1
+      },
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     }
+    }
+   },
+   "W_8s": {
+    "n_S": 4,
+    "counts": {
+     "KEPT": 3,
+     "UNBOUND_START": 1
+    },
+    "survival_KEPT_over_D": {
+     "value": 1.0,
+     "numerator": 3,
+     "denominator": 3,
+     "flags": [
+      "INSUFFICIENT_N"
+     ]
+    },
+    "pointer_track_changed": 0,
+    "by_entry_path": {
+     "direct": {
+      "n": 3,
+      "counts": {
+       "KEPT": 2,
+       "UNBOUND_START": 1
+      },
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     },
+     "via_acquiring": {
+      "n": 1,
+      "counts": {
+       "KEPT": 1
+      },
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     }
+    },
+    "by_off_axis_bucket": {
+     "in_view": {
+      "n": 4,
+      "counts": {
+       "KEPT": 3,
+       "UNBOUND_START": 1
+      },
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     }
+    }
+   }
+  },
+  "differences_from_window_outcome": [
+   "起点为每个绑定样本的 f_p，而非全部可见帧",
+   "身份按意图对象 IoU ≥ 0.3，而非 track_id；指针 track_id 在 ON 帧之间变化只计 pointer_track_changed",
+   "序列末端改为观察终点 E",
+   "新增 TRUTH_GAP(no_pose|no_pose_ext) 与 TRUTH_GAP(empty_window)（e2 原为抛 EmptyWindow）",
+   "其余（漏检段含不可见帧、跨窗口尾延伸、31 帧判据）同原函数"
+  ]
+ },
+ "number_three": {
+  "n_raw": 6,
+  "counts": {
+   "ACQUIRE_FAILED(geometry_rejected)": 1,
+   "CAPTURED": 3,
+   "CENSORED": 1,
+   "WRONG_CAPTURE": 1
+  },
+  "rates": {
+   "success": {
+    "value": 0.6,
+    "numerator": 3,
+    "denominator": 5,
+    "flags": []
+   },
+   "success_including_censored": {
+    "value": 0.5,
+    "numerator": 3,
+    "denominator": 6,
+    "flags": []
+   }
+  },
+  "by_entry_path": {
+   "direct": {
+    "n": 4,
+    "counts": {
+     "CAPTURED": 2,
+     "CENSORED": 1,
+     "WRONG_CAPTURE": 1
+    },
+    "flags": [
+     "INSUFFICIENT_N"
+    ],
+    "rates": {
+     "success": {
+      "value": 0.6666666666666666,
+      "numerator": 2,
+      "denominator": 3,
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     },
+     "success_including_censored": {
+      "value": 0.5,
+      "numerator": 2,
+      "denominator": 4,
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     }
+    }
+   },
+   "via_acquiring": {
+    "n": 2,
+    "counts": {
+     "ACQUIRE_FAILED(geometry_rejected)": 1,
+     "CAPTURED": 1
+    },
+    "flags": [
+     "INSUFFICIENT_N"
+    ],
+    "rates": {
+     "success": {
+      "value": 0.5,
+      "numerator": 1,
+      "denominator": 2,
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     },
+     "success_including_censored": {
+      "value": 0.5,
+      "numerator": 1,
+      "denominator": 2,
+      "flags": [
+       "INSUFFICIENT_N"
+      ]
+     }
+    }
+   }
+  },
+  "by_off_axis_x_slant": {
+   "in_view|20_35m": {
+    "n": 6,
+    "counts": {
+     "ACQUIRE_FAILED(geometry_rejected)": 1,
+     "CAPTURED": 3,
+     "CENSORED": 1,
+     "WRONG_CAPTURE": 1
+    },
+    "flags": []
+   }
+  },
+  "time_to_bind_s": {
+   "n": 3,
+   "median": 0.1999999999999993,
+   "values": [
+    0.1999999999999993,
+    0.1999999999999993,
+    1.8000000000000043
+   ]
+  },
+  "time_to_center": {
+   "CENTERED": 1,
+   "CENTER_NOT_REACHED": 2
+  }
+ },
+ "mislock": {
+  "n_S": 4,
+  "mislock": 1,
+  "mislock_rate": {
+   "value": 0.25,
+   "numerator": 1,
+   "denominator": 4,
+   "flags": [
+    "INSUFFICIENT_N"
+   ]
+  },
+  "mislock_window_partial": 0,
+  "durations": [
+   {
+    "request_id": "r-wrong",
+    "off_published_frames": 66,
+    "duration_s": 13.2,
+    "written_receipts": {}
+   }
+  ],
+  "duration_total_s": 13.2
+ },
+ "explicit_report": {
+  "funnel_scope": {
+   "explicit": 3,
+   "silent_error": 1,
+   "ratio_explicit_over_explicit_plus_silent": {
+    "value": 0.75,
+    "numerator": 3,
+    "denominator": 4,
+    "flags": [
+     "INSUFFICIENT_N"
+    ]
+   },
+   "set_aside": {
+    "ATTRIBUTION_CONFLICT": 2,
+    "INTERRUPTED": 1,
+    "OPERATOR_REJECTED": 1,
+    "SUPERSEDED": 1,
+    "UNCONFIRMED_AT_END": 1,
+    "UNCONFIRMED_SUPERSEDED": 1,
+    "intent:intent_unknown": 1,
+    "intent:no_intent": 1
+   },
+   "invalid_intent_explicit_classes": {
+    "QUERY_FAILED": 1,
+    "VLM_REPORTED": 1
+   },
+   "silent_undeterminable_layout": 0
+  },
+  "acq_3_10_scope": {
+   "n_designations": 7,
+   "six_value_distribution": {
+    "AMBIGUOUS": 1,
+    "BOUND": 4,
+    "BOUND_COASTING": 1,
+    "TRACK_ENDED": 1
+   },
+   "acquire_failed": 1,
+   "explicit_over_designations": {
+    "value": 0.2857142857142857,
+    "numerator": 2,
+    "denominator": 7,
+    "flags": []
+   }
+  }
+ },
+ "samples": [
+  {
+   "request_id": "r-bound",
+   "action": "ask",
+   "epoch": 1,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "BOUND_DIRECT(bound)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "BOUND",
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": 0.3999999999999999,
+   "worker_abandoned": false,
+   "k": 17,
+   "h": 19,
+   "E": 99,
+   "f_p": 20
+  },
+  {
+   "request_id": "r-respecify",
+   "action": "respecify",
+   "epoch": 2,
+   "intent": "Vehicle_Test_SUV (1)",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "BOUND_DIRECT(bound)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "BOUND",
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": 0.3999999999999986,
+   "worker_abandoned": false,
+   "k": 97,
+   "h": 99,
+   "E": 179,
+   "f_p": 100
+  },
+  {
+   "request_id": "r-none",
+   "action": "ask",
+   "epoch": 3,
+   "intent": null,
+   "intent_status": "no_intent",
+   "delay_s": 0.0,
+   "funnel": "VLM_REPORTED(none)",
+   "attempt_statuses": [
+    "none",
+    "none",
+    "retry_exhausted"
+   ],
+   "vlm_status_at_arrival": null,
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-parse",
+   "action": "ask",
+   "epoch": 4,
+   "intent": "Vehicle_Not_There",
+   "intent_status": "intent_unknown",
+   "delay_s": 0.0,
+   "funnel": "QUERY_FAILED(parse_failed)",
+   "attempt_statuses": [
+    "retry_exhausted"
+   ],
+   "vlm_status_at_arrival": null,
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-stale",
+   "action": "ask",
+   "epoch": 5,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "STALE_REJECTED(query, frames_late_exceeded)",
+   "attempt_statuses": [
+    "retry_exhausted"
+   ],
+   "vlm_status_at_arrival": null,
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-reject",
+   "action": "ask",
+   "epoch": 6,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "OPERATOR_REJECTED",
+   "attempt_statuses": [
+    "none",
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-unconfirmed",
+   "action": "ask",
+   "epoch": 7,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "UNCONFIRMED_SUPERSEDED",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-pending",
+   "action": "ask",
+   "epoch": 8,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "SUPERSEDED(query_pending)",
+   "attempt_statuses": [],
+   "vlm_status_at_arrival": null,
+   "finish_reason": null,
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-ambiguous",
+   "action": "ask",
+   "epoch": 9,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "DESIGNATE_REPORTED(AMBIGUOUS)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "AMBIGUOUS",
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": 0.3999999999999986,
+   "worker_abandoned": false,
+   "k": 181,
+   "h": 183,
+   "E": 185,
+   "f_p": null
+  },
+  {
+   "request_id": "r-unavailable",
+   "action": "ask",
+   "epoch": 10,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "INTERRUPTED(designation_unavailable, resident_loop_absent)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-coast",
+   "action": "ask",
+   "epoch": 11,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "ACQUIRE_PATH(coasting_timeout)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "BOUND_COASTING",
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": 0.3999999999999986,
+   "worker_abandoned": false,
+   "k": 183,
+   "h": 185,
+   "E": 273,
+   "f_p": 194
+  },
+  {
+   "request_id": "r-nopublish",
+   "action": "ask",
+   "epoch": 12,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "BOUND_DIRECT(bound)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "BOUND",
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": 0.3999999999999986,
+   "worker_abandoned": false,
+   "k": 271,
+   "h": 273,
+   "E": 313,
+   "f_p": null
+  },
+  {
+   "request_id": "r-wrong",
+   "action": "ask",
+   "epoch": 13,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "BOUND_DIRECT(bound)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "BOUND",
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": 0.3999999999999986,
+   "worker_abandoned": false,
+   "k": 311,
+   "h": 313,
+   "E": 393,
+   "f_p": 314
+  },
+  {
+   "request_id": "r-acqfail",
+   "action": "ask",
+   "epoch": 14,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "ACQUIRE_PATH(track_ended)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": "TRACK_ENDED",
+   "acquire_failed_cause": "geometry_rejected",
+   "delay_injected_s": null,
+   "delta_eff_s": 0.4000000000000057,
+   "worker_abandoned": false,
+   "k": 391,
+   "h": 393,
+   "E": 397,
+   "f_p": null
+  },
+  {
+   "request_id": "r-dup",
+   "action": "ask",
+   "epoch": 15,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "ATTRIBUTION_CONFLICT(C1)",
+   "attempt_statuses": [],
+   "vlm_status_at_arrival": null,
+   "finish_reason": null,
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-dup",
+   "action": "ask",
+   "epoch": 16,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "ATTRIBUTION_CONFLICT(C1)",
+   "attempt_statuses": [],
+   "vlm_status_at_arrival": null,
+   "finish_reason": null,
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  },
+  {
+   "request_id": "r-atend",
+   "action": "ask",
+   "epoch": 17,
+   "intent": "red_car",
+   "intent_status": "valid",
+   "delay_s": 0.0,
+   "funnel": "UNCONFIRMED_AT_END(operator_stop)",
+   "attempt_statuses": [
+    "unique"
+   ],
+   "vlm_status_at_arrival": "unique",
+   "finish_reason": "stop",
+   "parse_error": null,
+   "designation_result": null,
+   "acquire_failed_cause": null,
+   "delay_injected_s": null,
+   "delta_eff_s": null,
+   "worker_abandoned": false,
+   "k": null,
+   "h": null,
+   "E": null,
+   "f_p": null
+  }
+ ]
+}

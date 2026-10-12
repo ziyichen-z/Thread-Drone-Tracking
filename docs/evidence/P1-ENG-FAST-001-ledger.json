@@ -1,0 +1,202 @@
+{
+  "counters": {
+    "download": 1,
+    "gpu5060_base_start": 2,
+    "gpu5060_query": 1201,
+    "gpu5060_query_retry": 35,
+    "mac_start_dinov2": 3,
+    "mac_start_yoloe": 2,
+    "model_api_call": 0,
+    "pip_install_5060": 0,
+    "pip_install_mac": 1,
+    "scenario_session_run_id": 0,
+    "training_gpu_hours": 0,
+    "unity_play": 0
+  },
+  "envelope": {
+    "download": 1,
+    "gpu5060_base_start": 4,
+    "gpu5060_query": 1700,
+    "gpu5060_query_retry": 183,
+    "mac_start_dinov2": 8,
+    "mac_start_yoloe": 10,
+    "model_api_call": 0,
+    "pip_install_5060": 0,
+    "pip_install_mac": 1,
+    "scenario_session_run_id": 0,
+    "training_gpu_hours": 0,
+    "unity_play": 0
+  },
+  "envelope_source": "docs/authorizations.md 2026-09-24「P1-ENG-FAST-001 — 用户签发 §5 执行信封」",
+  "events": [
+    {
+      "amount": 1,
+      "at": "2026-09-25T02:14:00Z",
+      "counter": "mac_start_yoloe",
+      "note": "T0-bank ['a2', 'td'] + T0-oracle ['scout-1', 'scout-4']，cpu",
+      "stage": "detect"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T02:15:27Z",
+      "counter": "download",
+      "expected_bytes": 1478096,
+      "expected_sha256": "8a793935e238f5430f764c38a1757331e86487738e5c7e8b82c374860e5a1074",
+      "item": "lap-0.5.13-cp312-cp312-macosx_11_0_arm64.whl",
+      "source": "PyPI JSON API 元数据",
+      "url": "https://files.pythonhosted.org/packages/6c/c8/c16081ffcc8bf9f123940af8b74bfc8a1fac4f36b3cd7e9b440fdecd9fbc/lap-0.5.13-cp312-cp312-macosx_11_0_arm64.whl"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T02:15:35Z",
+      "counter": "pip_install_mac",
+      "item": "lap 0.5.13 (local wheel)",
+      "target": ".venv-yoloe",
+      "tool": "uv pip install --no-deps --offline"
+    },
+    {
+      "at": "2026-09-25T02:15:35Z",
+      "bytes": 1478096,
+      "counter": "note:lap_installed",
+      "deps_installed": "none (--no-deps; numpy 2.5.1 已在环境)",
+      "sha256": "8a793935e238f5430f764c38a1757331e86487738e5c7e8b82c374860e5a1074",
+      "version": "0.5.13",
+      "wheel": "lap-0.5.13-cp312-cp312-macosx_11_0_arm64.whl"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T02:50:51Z",
+      "counter": "mac_start_dinov2",
+      "note": "P2a DINOv2 cpu",
+      "stage": "margin"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T02:52:24Z",
+      "counter": "mac_start_dinov2",
+      "note": "臂 D 裁图库 + 候选嵌入，cpu",
+      "stage": "armd"
+    },
+    {
+      "at": "2026-09-25T02:54:10Z",
+      "bytes": 112129,
+      "contents": "index.jsonl(盲索引,无 gold)+manifest.json+vlm_remote.py",
+      "counter": "transfer:code_and_manifests",
+      "direction": "Mac→5060",
+      "file": "fast001-code.tar.gz",
+      "sha256": "4e6a7cae65b5a75e8e36b773cdf2540c44d9046a221d25f7ec69f17411a1cd3a"
+    },
+    {
+      "at": "2026-09-25T02:54:10Z",
+      "bytes": 44283392,
+      "contents": "736 张渲染图（臂 B 网格 / 臂 C 叠框），无原始帧",
+      "counter": "transfer:image_packs",
+      "direction": "Mac→5060",
+      "file": "fast001-images.tar",
+      "sha256": "d9a464e39cd59daa3ec90ec3aadcb1b99a66b384228b85c79487c3cae8ebea61"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T02:54:37Z",
+      "counter": "gpu5060_base_start",
+      "host": "win5060 (RTX 5060 Laptop)",
+      "note": "vlm_remote run：臂 B/C 基线 1,166 + INVALID 重试；5060 端 budget.json 同步扣额"
+    },
+    {
+      "at": "2026-09-25T03:05:11Z",
+      "counted_base_starts": 1,
+      "counter": "note:gpu5060_launch_failed_before_model_load",
+      "detail": "首次启动命令 PowerShell ParserError（嵌套引号），脚本未执行：5060 端 work/ 为空、无 budget.json、python 进程 0、零模型加载、零查询；Mac 端已扣的 base 启动 1 次按保守口径保留计数"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T03:05:30Z",
+      "counter": "gpu5060_base_start",
+      "host": "win5060 (RTX 5060 Laptop)",
+      "note": "重发：PowerShell -EncodedCommand 启动 vlm_remote run（上一次解析失败未加载模型）"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T03:06:40Z",
+      "counter": "mac_start_yoloe",
+      "note": "T0-bank-a2 cpu+mps 同进程",
+      "stage": "latency"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-25T03:06:40Z",
+      "counter": "mac_start_dinov2",
+      "note": "DINOv2 cpu+mps 同进程",
+      "stage": "latency"
+    },
+    {
+      "at": "2026-09-25T03:49:45Z",
+      "bytes": 803965,
+      "counter": "transfer:returned_results",
+      "direction": "5060→Mac",
+      "files": {
+        "budget.json": "78b2bf8f048b3e8d3064a940512ec8aa2a0f2e4651a1273bf56dec51b005b10a",
+        "results.jsonl": "29d2e8b879f2d830f9e28dcc765b8e2411eb7120ba3bab045bd6b7acbb7db917",
+        "run-summary-1790308158.json": "6d4745c790d3874d013228c85b0cf5a4d846a0cb0ed59c0434710fe49646f0ff",
+        "run.log": "b8456248759e01d7d4002145f323ed1354f57b38d4b5ff32dd7112bf2450d48b",
+        "state.json": "1ed19e1865228d76aca0f2d5b34191f0e63f62debc755f7ca25e0b3595d0b115"
+      }
+    },
+    {
+      "amount": 1201,
+      "at": "2026-09-25T03:49:45Z",
+      "baseline": 1166,
+      "counter": "gpu5060_query",
+      "retry": 35,
+      "source": "5060 budget.json（远端动作前逐次扣额）"
+    },
+    {
+      "amount": 35,
+      "at": "2026-09-25T03:49:45Z",
+      "counter": "gpu5060_query_retry",
+      "source": "5060 budget.json"
+    },
+    {
+      "at": "2026-09-25T03:49:45Z",
+      "base_model_safetensors_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+      "counter": "note:gpu5060_remote_budget",
+      "mac_base_starts": 2,
+      "reconcile": "Mac 计 2 次（含解析失败未加载的 1 次）≥ 远端实际加载 1 次",
+      "remote_base_starts": 1,
+      "used": {
+        "base_start": 1,
+        "query_baseline": 1166,
+        "query_retry": 35,
+        "query_total": 1201
+      }
+    }
+  ],
+  "runtime_readonly": {
+    "added_or_changed": [],
+    "after": {
+      "files": 97505,
+      "tree_sha256": "bb2c71d3ab051ccbf72f81b482f9b24a7d299a29f2085ba6d1fd6ea03ed3065f"
+    },
+    "before": {
+      "files": 97505,
+      "root": "runtime",
+      "tree_sha256": "bb2c71d3ab051ccbf72f81b482f9b24a7d299a29f2085ba6d1fd6ea03ed3065f"
+    },
+    "git_status_porcelain_runtime": "",
+    "identical": true,
+    "method": "runtime/ 全树逐文件 (相对路径, 字节, sha256) 清单前后比对 + git status --porcelain -- runtime",
+    "removed_or_changed": []
+  },
+  "schema_version": "p1-eng-fast-ledger/v1",
+  "transfer_bytes": {
+    "code_and_manifests": 112129,
+    "image_packs": 44283392,
+    "returned_results": 803965
+  },
+  "transfer_caps_bytes": {
+    "code_and_manifests": 307200,
+    "image_packs": 157286400,
+    "returned_results": 5242880
+  },
+  "work_id": "P1-ENG-FAST-001"
+}

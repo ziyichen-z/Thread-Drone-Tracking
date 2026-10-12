@@ -1,0 +1,616 @@
+{
+  "constants": {
+    "ambiguous_key_quota": 60,
+    "ambiguous_share": 0.15,
+    "class_quota": 700,
+    "copy_max": 8,
+    "g4_segment_sha256": "0639906112fe6ad6a136a8713df4b04f00c5273e8ed2683418324178b7e06b07",
+    "gold_token_max": 152,
+    "none_share": 0.1,
+    "object_quota": 350,
+    "prompt_template_sha256": "b28d2eb57afd9f0207ea935c0cd505189bfabc50e0117a80c177ce706cfc0b54",
+    "select_none_cap": 100,
+    "select_unique_cap": 300,
+    "vocab_sha256": "65c59418680f2eda81c274316938470f8369a246b0fedfee2882b4a1fdf9177f"
+  },
+  "files": {
+    "audit-j7-candidates.jsonl": {
+      "bytes": 155374,
+      "lines": 341,
+      "sha256": "4bb4003843dbc3ced262c224742aa71d9ff7f2a3ad2bfc0fb07de17df046fc1b"
+    },
+    "eval.blind.jsonl": {
+      "bytes": 112096,
+      "lines": 609,
+      "sha256": "876c9dbebf56c8a2c60eef2f0ea7a771a72426e7b365878769cc0238086edca8"
+    },
+    "eval.jsonl": {
+      "bytes": 634764,
+      "lines": 609,
+      "sha256": "5d86013f06b4d64a9e3fd92a1d8f99eb06b4910187a0851cf595d75ebe93d0bb"
+    },
+    "predictions.jsonl": {
+      "bytes": 195637,
+      "lines": null,
+      "sha256": "25702e85876f9ac0fefc4edda51e0c667dc0141eb2e0a2c2568ab3fed950f762"
+    },
+    "select-eval.blind.jsonl": {
+      "bytes": 77927,
+      "lines": 441,
+      "sha256": "85c9dcebe346b9517f5c8b0ac8f18237d45dd3343b17c0543c1dbc821762e1d7"
+    },
+    "select-eval.jsonl": {
+      "bytes": 341500,
+      "lines": 441,
+      "sha256": "91ad8ed7f62aa885d082512c172fc7fe0ceed6b205cda24c1da6e49961785d81"
+    },
+    "smoke.jsonl": {
+      "bytes": 26108,
+      "lines": 32,
+      "sha256": "26df6f217300c6c76c2f96a76c7d3a38e1e37f00f25a7f73b7beaf95d57d0971"
+    },
+    "train.jsonl": {
+      "bytes": 3975066,
+      "lines": 4907,
+      "sha256": "1a6d38a9d951ee549b9db1be2146a7bec79a5a2a77a824862d51a23f65a62afc"
+    }
+  },
+  "frame_binding": {
+    "eval": {
+      "bytes": 19757920,
+      "frames": 448
+    },
+    "select_eval": {
+      "bytes": 19746850,
+      "frames": 322
+    },
+    "train": {
+      "bytes": 150188287,
+      "frames": 3198
+    },
+    "union": {
+      "bytes": 189693057,
+      "frames": 3968
+    }
+  },
+  "reconciliation": {
+    "field_catalog_sha256": "8d0ff722d62b66ac67391b4f37572e173a70cdce2850a29043b941d290691a4f",
+    "instructions_sha256": "06565a95d0d1dc7c7fa84406411be52d1e3a97b5b0135045e9c0467e8ccc7eaa",
+    "probe_manifest_sha256": "7c259a347603d0065709b8f70ff28ccf70ea85edb915b5aa2de94e28f3879bd3",
+    "probe_predictions_sha256": "25702e85876f9ac0fefc4edda51e0c667dc0141eb2e0a2c2568ab3fed950f762",
+    "s0_constants_checked": [
+      "class_words",
+      "dynamic_target_referable",
+      "nearest_to_dominance_ratio",
+      "relation_types",
+      "viewer_side_min_separation_px"
+    ],
+    "s3": {
+      "frames": 43535,
+      "shard_lines": 43535,
+      "shards": 151
+    },
+    "s3_declared_lines_by_shard": {
+      "00000": 294,
+      "00001": 290,
+      "00002": 285,
+      "00003": 289,
+      "00004": 285,
+      "00005": 290,
+      "00006": 284,
+      "00007": 290,
+      "00008": 285,
+      "00009": 289,
+      "00010": 285,
+      "00011": 289,
+      "00012": 288,
+      "00013": 288,
+      "00014": 288,
+      "00015": 282,
+      "00016": 278,
+      "00017": 289,
+      "00018": 284,
+      "00019": 284,
+      "00020": 284,
+      "00021": 284,
+      "00022": 284,
+      "00023": 284,
+      "00024": 284,
+      "00025": 282,
+      "00026": 275,
+      "00027": 289,
+      "00028": 285,
+      "00029": 289,
+      "00030": 285,
+      "00031": 288,
+      "00032": 286,
+      "00033": 288,
+      "00034": 287,
+      "00035": 287,
+      "00036": 287,
+      "00037": 283,
+      "00038": 283,
+      "00039": 286,
+      "00040": 292,
+      "00041": 290,
+      "00042": 294,
+      "00043": 293,
+      "00044": 300,
+      "00045": 297,
+      "00046": 288,
+      "00047": 287,
+      "00048": 288,
+      "00049": 288,
+      "00050": 287,
+      "00051": 288,
+      "00052": 287,
+      "00053": 288,
+      "00054": 286,
+      "00055": 290,
+      "00056": 285,
+      "00057": 290,
+      "00058": 285,
+      "00059": 290,
+      "00060": 286,
+      "00061": 290,
+      "00062": 286,
+      "00063": 297,
+      "00064": 312,
+      "00065": 309,
+      "00066": 302,
+      "00067": 302,
+      "00068": 293,
+      "00069": 299,
+      "00070": 296,
+      "00071": 307,
+      "00072": 298,
+      "00073": 298,
+      "00074": 289,
+      "00075": 309,
+      "00076": 290,
+      "00077": 290,
+      "00078": 289,
+      "00079": 295,
+      "00080": 297,
+      "00081": 296,
+      "00082": 303,
+      "00083": 304,
+      "00084": 296,
+      "00085": 297,
+      "00086": 285,
+      "00087": 293,
+      "00088": 288,
+      "00089": 285,
+      "00090": 288,
+      "00091": 293,
+      "00092": 294,
+      "00093": 297,
+      "00094": 298,
+      "00095": 286,
+      "00096": 284,
+      "00097": 284,
+      "00098": 287,
+      "00099": 284,
+      "00100": 296,
+      "00101": 298,
+      "00102": 299,
+      "00103": 299,
+      "00104": 297,
+      "00105": 288,
+      "00106": 284,
+      "00107": 285,
+      "00108": 285,
+      "00109": 281,
+      "00110": 296,
+      "00111": 309,
+      "00112": 304,
+      "00113": 306,
+      "00114": 307,
+      "00115": 306,
+      "00116": 298,
+      "00117": 299,
+      "00118": 303,
+      "00119": 294,
+      "00120": 276,
+      "00121": 297,
+      "00122": 287,
+      "00123": 301,
+      "00124": 297,
+      "00125": 288,
+      "00126": 290,
+      "00127": 290,
+      "00128": 286,
+      "00129": 282,
+      "00130": 278,
+      "00131": 274,
+      "00132": 274,
+      "00133": 274,
+      "00134": 274,
+      "00135": 275,
+      "00136": 275,
+      "00137": 275,
+      "00138": 274,
+      "00139": 274,
+      "00140": 284,
+      "00141": 293,
+      "00142": 293,
+      "00143": 293,
+      "00144": 293,
+      "00145": 293,
+      "00146": 293,
+      "00147": 284,
+      "00148": 283,
+      "00149": 289,
+      "00150": 57
+    },
+    "s4": {
+      "d3": 0,
+      "dev": 13144,
+      "test": 8450,
+      "train": 2523
+    },
+    "s5": {
+      "class_verified": 93,
+      "dual_verified": 37,
+      "objects": 690
+    }
+  },
+  "scan_counters": {
+    "('dev', 'class', 'ambiguous')": 555,
+    "('dev', 'class', 'gray_definite_plus_uncertain')": 5910,
+    "('dev', 'class', 'gray_uncertain_none')": 36099,
+    "('dev', 'class', 'none')": 58288,
+    "('dev', 'class', 'unique')": 17444,
+    "('dev', 'color', 'ambiguous')": 11,
+    "('dev', 'color', 'gray_definite_plus_uncertain')": 1796,
+    "('dev', 'color', 'unique')": 1303,
+    "('dev', 'color', 'unique_no_color_needed')": 9565,
+    "('test', 'class', 'ambiguous')": 552,
+    "('test', 'class', 'gray_definite_plus_uncertain')": 4268,
+    "('test', 'class', 'gray_uncertain_none')": 17487,
+    "('test', 'class', 'none')": 43659,
+    "('test', 'class', 'unique')": 10084,
+    "('test', 'color', 'ambiguous')": 24,
+    "('test', 'color', 'excluded_color_counterexample')": 316,
+    "('test', 'color', 'gray_definite_plus_uncertain')": 2292,
+    "('test', 'color', 'unique')": 1110,
+    "('test', 'color', 'unique_no_color_needed')": 7523,
+    "('train', 'class', 'ambiguous')": 198,
+    "('train', 'class', 'gray_definite_plus_uncertain')": 2133,
+    "('train', 'class', 'gray_uncertain_none')": 9538,
+    "('train', 'class', 'none')": 9341,
+    "('train', 'class', 'unique')": 1497,
+    "('train', 'color', 'ambiguous')": 174,
+    "('train', 'color', 'excluded_color_counterexample')": 25,
+    "('train', 'color', 'gray_definite_plus_uncertain')": 1107,
+    "('train', 'color', 'unique_no_color_needed')": 1120,
+    "frames_in_domain": 43535,
+    "frames_unassigned": 19418,
+    "frames_with_dynamic_target": 10364
+  },
+  "schema_version": "p1-eng-sft-002/dataset-manifest/v1",
+  "seed": "tdt-eng-sft-002-2026-09-13",
+  "select_eval": {
+    "frames": 322,
+    "rows": 441,
+    "state_counts": {
+      "ambiguous": 41,
+      "none": 100,
+      "unique": 300
+    }
+  },
+  "serialisation": {
+    "select-eval.blind.jsonl": {
+      "line_max": 191,
+      "line_min": 173,
+      "line_p50": 177,
+      "rows": 441,
+      "total_bytes": 77927
+    },
+    "select-eval.jsonl": {
+      "line_max": 918,
+      "line_min": 651,
+      "line_p50": 789,
+      "rows": 441,
+      "total_bytes": 341500
+    },
+    "smoke.jsonl": {
+      "line_max": 1009,
+      "line_min": 659,
+      "line_p50": 809,
+      "rows": 32,
+      "total_bytes": 26108
+    },
+    "train.jsonl": {
+      "line_max": 1108,
+      "line_min": 630,
+      "line_p50": 808,
+      "rows": 4907,
+      "total_bytes": 3975066
+    }
+  },
+  "smoke": {
+    "composition": {
+      "ambiguous/class": 5,
+      "ambiguous/color": 3,
+      "none/class": 8,
+      "unique/class": 8,
+      "unique/color": 8
+    },
+    "rows": 32
+  },
+  "steps": {
+    "E1": {
+      "pre_thin_samples_by_family": {
+        "detect-scout1": 4796,
+        "m3-armA": 3889,
+        "p1-vlm-survey-a1-p1-c1-s2": 19250,
+        "p1-vlm-survey-a2-p1-c1-s1": 12330,
+        "p1-vlm-survey-a7-p1-c1-s1": 22255,
+        "rate": 34416,
+        "scene-val": 2560
+      },
+      "selection_family": "detect-scout1",
+      "selection_thinned": {
+        "ambiguous": 41,
+        "none": 504,
+        "unique": 925
+      },
+      "train_pool_families": [
+        "p1-vlm-survey-a2-p1-c1-s1",
+        "detect-scout1",
+        "m3-armA",
+        "p1-vlm-survey-a1-p1-c1-s2",
+        "p1-vlm-survey-a7-p1-c1-s1",
+        "rate",
+        "scene-val"
+      ],
+      "training_families": [
+        "p1-vlm-survey-a2-p1-c1-s1",
+        "m3-armA",
+        "p1-vlm-survey-a1-p1-c1-s2",
+        "p1-vlm-survey-a7-p1-c1-s1",
+        "rate",
+        "scene-val"
+      ]
+    },
+    "E2": {
+      "gaps": {
+        "ambiguous": 2,
+        "none": 5,
+        "unique_other": 5,
+        "unique_weak_or_small": 2
+      },
+      "thinned": {
+        "ambiguous": 466,
+        "none": 11202,
+        "unique": 8991
+      },
+      "thinned_by_family": {
+        "m3-armA": {
+          "ambiguous": 0,
+          "none": 185,
+          "unique": 694
+        },
+        "p1-vlm-survey-a1-p1-c1-s2": {
+          "ambiguous": 103,
+          "none": 2906,
+          "unique": 2143
+        },
+        "p1-vlm-survey-a2-p1-c1-s1": {
+          "ambiguous": 203,
+          "none": 1990,
+          "unique": 1299
+        },
+        "p1-vlm-survey-a7-p1-c1-s1": {
+          "ambiguous": 160,
+          "none": 3306,
+          "unique": 2613
+        },
+        "rate": {
+          "ambiguous": 0,
+          "none": 2451,
+          "unique": 1934
+        },
+        "scene-val": {
+          "ambiguous": 0,
+          "none": 364,
+          "unique": 308
+        }
+      }
+    },
+    "E3": {
+      "class_quota": 700,
+      "dynamic_target_unique": 350,
+      "kept": 4006,
+      "object_quota": 350,
+      "per_class": {
+        "ambulance": 285,
+        "bus": 334,
+        "car": 517,
+        "container truck": 700,
+        "pickup truck": 700,
+        "police car": 98,
+        "suv": 700,
+        "taxi": 400,
+        "truck": 272
+      }
+    },
+    "E4": {
+      "dynamic_target_ambiguous": 65,
+      "kept": 411,
+      "key_quota": 60,
+      "per_class": {
+        "car": 90,
+        "container truck": 28,
+        "pickup truck": 75,
+        "police car": 18,
+        "suv": 4,
+        "taxi": 16,
+        "truck": 180
+      }
+    },
+    "E5": {
+      "kept": 490,
+      "n_none_target": 490,
+      "per_class": {
+        "ambulance": 55,
+        "bus": 55,
+        "car": 55,
+        "container truck": 55,
+        "pickup truck": 54,
+        "police car": 54,
+        "suv": 54,
+        "taxi": 54,
+        "truck": 54
+      },
+      "per_class_cap": 55
+    },
+    "E6": {
+      "copies": 2,
+      "share": 0.1546
+    },
+    "E7": {
+      "distinct_samples": 4907,
+      "frames": 3198,
+      "multiset_samples": 5318
+    },
+    "E8": {
+      "frames": 322,
+      "rows": 441
+    },
+    "E9": {
+      "seen_objects": 76
+    },
+    "confusion_exposure_unique_kept": {
+      "ambulance": {
+        "bus": 36,
+        "car": 248,
+        "container truck": 125,
+        "pickup truck": 226,
+        "police car": 23,
+        "suv": 171,
+        "taxi": 68,
+        "truck": 118
+      },
+      "bus": {
+        "ambulance": 210,
+        "car": 332,
+        "container truck": 334,
+        "pickup truck": 334,
+        "police car": 334,
+        "suv": 334,
+        "taxi": 334,
+        "truck": 4
+      },
+      "car": {
+        "ambulance": 176,
+        "bus": 67,
+        "container truck": 272,
+        "pickup truck": 389,
+        "police car": 86,
+        "suv": 220,
+        "taxi": 194,
+        "truck": 193
+      },
+      "container truck": {
+        "ambulance": 383,
+        "bus": 195,
+        "car": 616,
+        "pickup truck": 654,
+        "police car": 388,
+        "suv": 523,
+        "taxi": 507,
+        "truck": 158
+      },
+      "pickup truck": {
+        "ambulance": 331,
+        "bus": 19,
+        "car": 584,
+        "container truck": 220,
+        "police car": 66,
+        "suv": 191,
+        "taxi": 226,
+        "truck": 109
+      },
+      "police car": {
+        "ambulance": 30,
+        "bus": 30,
+        "car": 44,
+        "container truck": 38,
+        "pickup truck": 94,
+        "suv": 68,
+        "taxi": 66,
+        "truck": 22
+      },
+      "suv": {
+        "ambulance": 266,
+        "bus": 39,
+        "car": 211,
+        "container truck": 154,
+        "pickup truck": 238,
+        "police car": 16,
+        "taxi": 445,
+        "truck": 87
+      },
+      "taxi": {
+        "ambulance": 39,
+        "bus": 25,
+        "car": 112,
+        "container truck": 79,
+        "pickup truck": 132,
+        "police car": 26,
+        "suv": 339,
+        "truck": 55
+      },
+      "truck": {
+        "ambulance": 52,
+        "bus": 35,
+        "car": 188,
+        "container truck": 118,
+        "pickup truck": 145,
+        "police car": 26,
+        "suv": 98,
+        "taxi": 83
+      }
+    },
+    "strata_unique": {
+      "L": 1801,
+      "M": 1747,
+      "S": 458
+    }
+  },
+  "training": {
+    "class_counts": {
+      "ambulance": 340,
+      "bus": 389,
+      "car": 662,
+      "container truck": 783,
+      "pickup truck": 829,
+      "police car": 170,
+      "suv": 758,
+      "taxi": 470,
+      "truck": 506
+    },
+    "distinct_rows": 4907,
+    "frames": 3198,
+    "multiset_samples": 5318,
+    "noun_type_counts": {
+      "class": 3694,
+      "color": 1213
+    },
+    "state_counts": {
+      "ambiguous": 411,
+      "none": 490,
+      "unique": 4006
+    },
+    "stratum_counts": {
+      "L": 1923,
+      "M": 1930,
+      "NA": 490,
+      "S": 564
+    }
+  },
+  "vocab": "unity-v2",
+  "work_id": "P1-ENG-SFT-002"
+}

@@ -1,0 +1,206 @@
+{
+ "amendment": "DR-B B2 (acceptance round 4, BC-DRB-2/BC-DRB-3)",
+ "d1_baseline": {
+  "geometry_artifact_path": "docs/evidence/P1-SCENE-004-geometry.json",
+  "geometry_artifact_sha256": "248ae0b3a19dc43eea4383a1e2d50ac15985193aec0f40a79c3d7bd706fffefe",
+  "regenerated": false,
+  "scenario_id": "p1-scene-004",
+  "scenario_path": "config/scenario.p1-scene-004.json",
+  "scenario_sha256": "00c8802aaacfe9732b7128f6a143895f088a8e9a3f44fb2eb39f2eed7bb8b514",
+  "target_speed_mps": 2.0
+ },
+ "difficulty": {
+  "label": "D2",
+  "scenario_id": "p1-scene-004-d2",
+  "scenario_path": "config/scenario.p1-scene-004-d2.json",
+  "scenario_sha256": "90d4565108a98106f11c0cca8af199fd853eba1c14f64bca48b661db200443fc",
+  "target_speed_mps": 8.0
+ },
+ "equality_rule": {
+  "bit_equal_preferred": true,
+  "clause": "BC-DRB-2",
+  "exact_types": [
+   "int",
+   "bool",
+   "str",
+   "enum",
+   "array length",
+   "key set",
+   "canonical order"
+  ],
+  "float_abs_tolerance": 1e-09
+ },
+ "failures": [],
+ "generated_unix_s": 1785510782.910781,
+ "must_pass": {
+  "declared_config_difference": {
+   "declared_difference_keys": [
+    "scenario_id",
+    "target.speed_mps"
+   ],
+   "findings": [],
+   "observed_difference_keys": [
+    "scenario_id",
+    "target.speed_mps"
+   ],
+   "passed": true
+  },
+  "gates": {
+   "max_off_nadir_deg": {
+    "d1_baseline": {
+     "limit": 45.0,
+     "margin": 9.17540428837038,
+     "margin_minimum": 5.0,
+     "passed": true,
+     "value": 35.82459571162962
+    },
+    "difficulty": {
+     "limit": 45.0,
+     "margin": 9.17540428837038,
+     "margin_minimum": 5.0,
+     "passed": true,
+     "value": 35.82459571162962
+    },
+    "equal_to_d1_baseline": true,
+    "equality_findings": [],
+    "gate_passed": true,
+    "passed": true
+   },
+   "max_slant_range_m": {
+    "d1_baseline": {
+     "limit": 32.0,
+     "margin": 1.4134005642575858,
+     "passed": true,
+     "value": 30.586599435742414
+    },
+    "difficulty": {
+     "limit": 32.0,
+     "margin": 1.4134005642575858,
+     "passed": true,
+     "value": 30.586599435742414
+    },
+    "equal_to_d1_baseline": true,
+    "equality_findings": [],
+    "gate_passed": true,
+    "passed": true
+   },
+   "predicted_min_side_p05_px": {
+    "d1_baseline": {
+     "limit": 25.0,
+     "margin": 5.088339893207287,
+     "note": "pose-invariant percentile (BC1); scout-3 measures it",
+     "passed": true,
+     "value": 30.088339893207287
+    },
+    "difficulty": {
+     "limit": 25.0,
+     "margin": 5.088339893207287,
+     "note": "pose-invariant percentile (BC1); scout-3 measures it",
+     "passed": true,
+     "value": 30.088339893207287
+    },
+    "equal_to_d1_baseline": true,
+    "equality_findings": [],
+    "gate_passed": true,
+    "passed": true
+   }
+  },
+  "geometry_value_equality": {
+   "excluded_speed_derived_keys": [
+    "loop_period_s"
+   ],
+   "findings": [],
+   "passed": true
+  },
+  "route_legality": {
+   "clause": "BC-DRB-3",
+   "compared_fields": [
+    "schema_version",
+    "status",
+    "route_sample_count",
+    "road_violation_count",
+    "audited_obstacle_count",
+    "overhead_exemption_count",
+    "obstacle_violation_count",
+    "vehicle_violation_count",
+    "prop_violation_count",
+    "nature_violation_count",
+    "building_violation_count",
+    "other_violation_count",
+    "road_violations",
+    "obstacle_violations"
+   ],
+   "d1_baseline_report_path": "docs/evidence/P1-M2-RATE-003-d1-road-audit.json",
+   "d1_baseline_report_sha256": "9dddecaa578a83a793707b5ecbd91288a14f28d7abecc8648bb50a8245611775",
+   "difficulty_report_path": "docs/evidence/P1-M2-RATE-003-d2-road-audit.json",
+   "difficulty_report_sha256": "492d3d1f9701b38b0e701ff865c75c0256f80d84ba8c92f4df8df6cb3b798636",
+   "equal_to_d1_baseline": true,
+   "equality_findings": [],
+   "exempt_fields": [
+    "scenario_id"
+   ],
+   "gate_findings": [],
+   "gate_passed": true,
+   "note": "field equality never replaces the CLEAR / zero-violation gate",
+   "passed": true
+  }
+ },
+ "partition_mode": "must_pass_speed_independent_plus_record_only_speed_derived",
+ "record_only": {
+  "distractor_opportunities": {
+   "d1_baseline_value": 49,
+   "delta": -37,
+   "difficulty_value": 12,
+   "gating": false,
+   "note": "speed-derived; recorded only (BC-DRB-2 / B2.1)"
+  },
+  "loop_period_s": {
+   "d1_baseline_value": 31.071067811865476,
+   "delta": -23.303300858899107,
+   "difficulty_value": 7.767766952966369,
+   "gating": false,
+   "note": "speed-derived; recorded only (BC-DRB-2 / B2.1)"
+  },
+  "per_distractor": [
+   {
+    "fully_in_frame_ticks": {
+     "d1_baseline_value": 26,
+     "delta": -20,
+     "difficulty_value": 6
+    },
+    "position_world_m": {
+     "x": 118.0,
+     "z": 121.0
+    },
+    "prefab_name": "Vehicle_SUV_color01",
+    "tick_count": {
+     "d1_baseline_value": 62,
+     "delta": -47,
+     "difficulty_value": 15
+    }
+   },
+   {
+    "fully_in_frame_ticks": {
+     "d1_baseline_value": 23,
+     "delta": -17,
+     "difficulty_value": 6
+    },
+    "position_world_m": {
+     "x": 162.0,
+     "z": 117.0
+    },
+    "prefab_name": "Vehicle_Taxi",
+    "tick_count": {
+     "d1_baseline_value": 62,
+     "delta": -47,
+     "difficulty_value": 15
+    }
+   }
+  ],
+  "per_distractor_findings": []
+ },
+ "schema_version": "p1-rate3-difficulty-audit/v1",
+ "status": "ENVELOPE_OK",
+ "status_scope": "computed on the must-pass gate set only; record-only triples never enter the status",
+ "work_id": "P1-M2-RATE-003"
+}

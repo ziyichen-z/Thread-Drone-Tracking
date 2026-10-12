@@ -1,0 +1,217 @@
+{
+  "files": {
+    "eval.blind.jsonl": {
+      "bytes": 112096,
+      "lines": 609,
+      "sha256": "876c9dbebf56c8a2c60eef2f0ea7a771a72426e7b365878769cc0238086edca8"
+    },
+    "eval.jsonl": {
+      "bytes": 634764,
+      "lines": 609,
+      "sha256": "5d86013f06b4d64a9e3fd92a1d8f99eb06b4910187a0851cf595d75ebe93d0bb"
+    }
+  },
+  "frames": {
+    "binding": {
+      "bytes": 19757920,
+      "frames": 448
+    },
+    "count": 448
+  },
+  "gate_rows": 407,
+  "gold_lengths": {
+    "G1": {
+      "gold_chars_max": 55,
+      "gold_chars_p50": 52,
+      "rows": 210,
+      "skeletons": {
+        "unique": 210
+      },
+      "with_gold": 210
+    },
+    "G1t": {
+      "gold_chars_max": 55,
+      "gold_chars_p50": 53,
+      "rows": 23,
+      "skeletons": {
+        "unique": 23
+      },
+      "with_gold": 23
+    },
+    "G2": {
+      "gold_chars_max": 55,
+      "gold_chars_p50": 52,
+      "rows": 49,
+      "skeletons": {
+        "unique": 49
+      },
+      "with_gold": 49
+    },
+    "G2t": {
+      "gold_chars_max": 55,
+      "gold_chars_p50": 53,
+      "rows": 23,
+      "skeletons": {
+        "unique": 23
+      },
+      "with_gold": 23
+    },
+    "G3": {
+      "gold_chars_max": 145,
+      "gold_chars_p50": 107,
+      "rows": 48,
+      "skeletons": {
+        "ambiguous": 48
+      },
+      "with_gold": 48
+    },
+    "G3p": {
+      "gold_chars_max": null,
+      "gold_chars_p50": null,
+      "rows": 50,
+      "skeletons": {
+        "None": 50
+      },
+      "with_gold": 0
+    },
+    "G3t": {
+      "gold_chars_max": 145,
+      "gold_chars_p50": 109,
+      "rows": 12,
+      "skeletons": {
+        "ambiguous": 12
+      },
+      "with_gold": 12
+    },
+    "G4": {
+      "gold_chars_max": 54,
+      "gold_chars_p50": 53,
+      "rows": 86,
+      "skeletons": {
+        "unique": 86
+      },
+      "with_gold": 86
+    },
+    "G5": {
+      "gold_chars_max": 18,
+      "gold_chars_p50": 18,
+      "rows": 100,
+      "skeletons": {
+        "none": 100
+      },
+      "with_gold": 100
+    },
+    "LEGACY_ONLY": {
+      "gold_chars_max": null,
+      "gold_chars_p50": null,
+      "rows": 8,
+      "skeletons": {
+        "None": 8
+      },
+      "with_gold": 0
+    }
+  },
+  "group_counts": {
+    "G1": 210,
+    "G1t": 23,
+    "G2": 49,
+    "G2t": 23,
+    "G3": 48,
+    "G3p": 50,
+    "G3t": 12,
+    "G4": 86,
+    "G5": 100,
+    "LEGACY_ONLY": 8
+  },
+  "group_legacy_rows": {
+    "G1": 210,
+    "G1t": 0,
+    "G2": 49,
+    "G2t": 0,
+    "G3": 12,
+    "G3p": 37,
+    "G3t": 2,
+    "G4": 86,
+    "G5": 0,
+    "LEGACY_ONLY": 9
+  },
+  "group_strata": {
+    "G1": {
+      "L": 85,
+      "M": 95,
+      "S": 30
+    },
+    "G1t": {
+      "L": 5,
+      "M": 7,
+      "S": 11
+    },
+    "G2": {
+      "L": 18,
+      "M": 18,
+      "S": 13
+    },
+    "G2t": {
+      "L": 5,
+      "M": 7,
+      "S": 11
+    },
+    "G3": {
+      "L": 13,
+      "M": 14,
+      "S": 21
+    },
+    "G3p": {
+      "L": 16,
+      "M": 21,
+      "S": 13
+    },
+    "G3t": {
+      "M": 8,
+      "S": 4
+    },
+    "G4": {
+      "L": 26,
+      "M": 38,
+      "S": 22
+    },
+    "G5": {
+      "NA": 100
+    },
+    "LEGACY_ONLY": {
+      "L": 3,
+      "M": 3,
+      "S": 2
+    }
+  },
+  "legacy_manifest_sha256": "7c259a347603d0065709b8f70ff28ccf70ea85edb915b5aa2de94e28f3879bd3",
+  "legacy_probe_entries": 405,
+  "rows": 609,
+  "schema_version": "p1-eng-sft-002/eval-manifest/v1",
+  "seed": "tdt-eng-sft-002-2026-09-13",
+  "serialisation": {
+    "eval.blind.jsonl": {
+      "line_max": 227,
+      "line_min": 174,
+      "line_p50": 180,
+      "rows": 609,
+      "total_bytes": 112096
+    },
+    "eval.jsonl": {
+      "line_max": 1644,
+      "line_min": 709,
+      "line_p50": 1091,
+      "rows": 609,
+      "total_bytes": 634764
+    }
+  },
+  "union_frames": {
+    "binding": {
+      "bytes": 189693057,
+      "frames": 3968
+    },
+    "count": 3968
+  },
+  "vocab": "unity-v2",
+  "work_id": "P1-ENG-SFT-002"
+}

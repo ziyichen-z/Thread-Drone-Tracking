@@ -1,0 +1,214 @@
+{
+  "counters": {
+    "cloud_gpu_hour": 0,
+    "download": 1,
+    "h_evaluation": 1,
+    "model_api_call": 0,
+    "model_start": 13,
+    "pip_install": 0,
+    "scenario_session_run_id": 0,
+    "training_run": 1,
+    "transfer": 0,
+    "unity_play": 0
+  },
+  "disk_cap_bytes": 5368709120,
+  "envelope": {
+    "cloud_gpu_hour": 0,
+    "download": 1,
+    "h_evaluation": 1,
+    "model_api_call": 0,
+    "model_start": null,
+    "pip_install": 0,
+    "scenario_session_run_id": 0,
+    "training_run": 3,
+    "transfer": 0,
+    "unity_play": 0
+  },
+  "envelope_source": "docs/authorizations.md 2026-09-27「P1-ENG-FAST-002 — 用户按推荐确认阶段 1 门值与合取映射、AC-12 通过条件四条、§7(h) 本项独立 1 次诊断 Play，并选签 §5 线 A」·「信封 · 阶段 1（线 A）」",
+  "events": [
+    {
+      "at": "2026-09-27T22:16:39Z",
+      "counter": "note:runtime_trees_before",
+      "data_root_runtime": {
+        "files": 97505,
+        "root": "~/TetheredDroneTracking-full/runtime",
+        "tree_sha256": "bb2c71d3ab051ccbf72f81b482f9b24a7d299a29f2085ba6d1fd6ea03ed3065f"
+      },
+      "repo_runtime": {
+        "files": 1,
+        "root": "~/TetheredDroneTracking/runtime",
+        "tree_sha256": "a9409bd186daaf66e1b5572bbe715f47a12d5d20c78c201dfb3251ed18f2fc11"
+      }
+    },
+    {
+      "at": "2026-09-27T22:34:30Z",
+      "counter": "note:interpreter",
+      "path": "~/TetheredDroneTracking-full/.venv-yoloe/bin/python",
+      "reason": "主树 .venv-yoloe 无 lap；信封 pip 0，不新增安装，只读调用数据根解释器"
+    },
+    {
+      "at": "2026-09-27T22:34:30Z",
+      "counter": "note:yolo11n_official",
+      "downloaded": false,
+      "local_copy": false,
+      "sha256_published": null,
+      "size_bytes_api": 5613764,
+      "t7_mounted": false
+    },
+    {
+      "at": "2026-09-27T22:34:30Z",
+      "counter": "note:stage1_stop_before_consumption",
+      "disk_bytes": 53643918,
+      "pointer": "docs/evidence/P1-ENG-FAST-002-K3K4-handoff.md",
+      "reason": "抽查处置使 G-1s 训练前即 NOT_EVALUABLE，且 target_unbounded 帧含未标注可见红立方体；待裁定 Q-1/Q-2"
+    },
+    {
+      "at": "2026-09-27T22:34:50Z",
+      "counter": "note:runtime_trees_after",
+      "data_root_runtime": {
+        "files": 97505,
+        "root": "~/TetheredDroneTracking-full/runtime",
+        "tree_sha256": "bb2c71d3ab051ccbf72f81b482f9b24a7d299a29f2085ba6d1fd6ea03ed3065f"
+      },
+      "identical": true,
+      "repo_runtime": {
+        "files": 1,
+        "root": "~/TetheredDroneTracking/runtime",
+        "tree_sha256": "a9409bd186daaf66e1b5572bbe715f47a12d5d20c78c201dfb3251ed18f2fc11"
+      }
+    },
+    {
+      "at": "2026-09-28T03:20:37Z",
+      "counter": "note:runtime_trees_before",
+      "data_root_runtime": {
+        "files": 97505,
+        "root": "~/TetheredDroneTracking-full/runtime",
+        "tree_sha256": "bb2c71d3ab051ccbf72f81b482f9b24a7d299a29f2085ba6d1fd6ea03ed3065f"
+      },
+      "repo_runtime": {
+        "files": 1,
+        "root": "~/TetheredDroneTracking/runtime",
+        "tree_sha256": "a9409bd186daaf66e1b5572bbe715f47a12d5d20c78c201dfb3251ed18f2fc11"
+      }
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T03:35:39Z",
+      "counter": "download",
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+      "what": "yolo11n.pt"
+    },
+    {
+      "at": "2026-09-28T03:35:40Z",
+      "bytes": 5613764,
+      "bytes_match": true,
+      "bytes_published": 5613764,
+      "counter": "note:download_done",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T03:35:45Z",
+      "counter": "training_run",
+      "imgsz": 640,
+      "reason": "run-1 基线（§3.2：imgsz 640、库默认增广、seed 20260926；Q-1/Q-2 重建后首跑）",
+      "run_id": "run-1"
+    },
+    {
+      "at": "2026-09-28T07:17:01Z",
+      "counter": "note:training_wall_s",
+      "run_id": "run-1",
+      "seconds": 13276.224
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:17:22Z",
+      "counter": "model_start",
+      "device": "mps",
+      "imgsz": 640,
+      "label": "select-vtable-run-1",
+      "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:21:05Z",
+      "counter": "model_start",
+      "device": "mps",
+      "imgsz": 640,
+      "label": "dryrun-B-nonH",
+      "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:21:49Z",
+      "counter": "model_start",
+      "device": "mps",
+      "label": "dryrun-plugin-nonH"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:22:20Z",
+      "counter": "model_start",
+      "device": "cpu",
+      "label": "latency-cpu"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:22:38Z",
+      "counter": "model_start",
+      "device": "mps",
+      "label": "latency-mps"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:22:54Z",
+      "counter": "h_evaluation",
+      "freeze_sha256": "f231e450d967c301f0a4651bd9102d9e5c6073abfbed3d026fedc96fa590c93c"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:22:55Z",
+      "counter": "model_start",
+      "device": "mps",
+      "imgsz": 640,
+      "label": "qualify-frozen",
+      "weights_sha256": "d6a0d6a9cdee06a0790f5d9812a1fe98db033520981c0ffafe786c3cbbe059c9"
+    },
+    {
+      "amount": 1,
+      "at": "2026-09-28T07:31:24Z",
+      "counter": "model_start",
+      "device": "mps",
+      "label": "qualify-plugin-caliber-B"
+    },
+    {
+      "amount": 6,
+      "at": "2026-09-28T07:47:23Z",
+      "counter": "model_start",
+      "device": "mps",
+      "label": "tests.test_det_assoc_carrier（3 次运行 × 2 次插件实例化：首跑因观测键名断言写错失败 1 次、修正后 1 次、focused 套件 1 次）"
+    },
+    {
+      "at": "2026-09-28T07:47:43Z",
+      "counter": "note:runtime_trees_after",
+      "data_root_runtime": {
+        "files": 97505,
+        "root": "~/TetheredDroneTracking-full/runtime",
+        "tree_sha256": "bb2c71d3ab051ccbf72f81b482f9b24a7d299a29f2085ba6d1fd6ea03ed3065f"
+      },
+      "identical": true,
+      "repo_runtime": {
+        "files": 1,
+        "root": "~/TetheredDroneTracking/runtime",
+        "tree_sha256": "a9409bd186daaf66e1b5572bbe715f47a12d5d20c78c201dfb3251ed18f2fc11"
+      }
+    }
+  ],
+  "line": "A（Mac .venv-yoloe）",
+  "schema_version": "p1-eng-fast-002-ledger/v1",
+  "training_run_wall_cap_s": 21600,
+  "training_total_wall_cap_s": 50400,
+  "training_wall_s_used": 13276.224,
+  "work_id": "P1-ENG-FAST-002"
+}
